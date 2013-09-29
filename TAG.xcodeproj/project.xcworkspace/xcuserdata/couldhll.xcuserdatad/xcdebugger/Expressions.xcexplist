@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[GMGridView gestureRecognizerShouldBegin:]:GMGridView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "!self.isEditing">
+            </PersistentString>
+            <PersistentString
+               value = "editing">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HLLProductListViewController addMoreItem]:HLLProductListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[_currentData count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

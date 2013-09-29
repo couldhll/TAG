@@ -8,11 +8,36 @@
 
 #import "HLLAppDelegate.h"
 
+#import "IIViewDeckController.h"
+#import "HLLMainMenuViewController.h"
+#import "HLLProductListViewController.h"
+
+#import <SDWebImage/SDImageCache.h>
+
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Add a custom read-only cache path
+    NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
+    [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
+    
     // Override point for customization after application launch.
+    
+    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
+    
+    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
+    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+                                                                                    leftViewController:leftController];
+    
+    self.window.rootViewController = deckController;
+    [self.window makeKeyAndVisible];
+    
+    // first to show center view
+    [centerController.viewDeckController openLeftViewAnimated:NO];
+    
     return YES;
 }
 							

@@ -8,6 +8,8 @@
 
 #import "HLLViewController.h"
 
+#import "IIViewDeckController.h"
+
 @interface HLLViewController ()
 
 @end
@@ -17,7 +19,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+//    // prepare view controllers
+//    UIViewController* leftController = [[UIViewController alloc] init];
+//    UIViewController* rightController = [[UIViewController alloc] init];
+//    
+//    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController leftViewController:leftController
+//                                                                                   rightViewController:rightController];
 }
 
 - (void)didReceiveMemoryWarning
