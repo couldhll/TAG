@@ -54,7 +54,7 @@
     
     // navigation bar
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
-                                              [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
+                                              [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MenuTitle",nil) style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
                                               nil];
     
     // data
