@@ -1,0 +1,15 @@
+[submodule "GMGridView"]
+	path = GMGridView
+	url = https://github.com/gmoledina/GMGridView.git
+[submodule "RRBaseInternationalization"]
+	path = RRBaseInternationalization
+	url = https://github.com/RolandasRazma/RRBaseInternationalization.git
+[submodule "SDWebImage"]
+	path = SDWebImage
+	url = https://github.com/rs/SDWebImage.git
+[submodule "SVPullToRefresh"]
+	path = SVPullToRefresh
+	url = https://github.com/samvermette/SVPullToRefresh.git
+[submodule "ViewDeck"]
+	path = ViewDeck
+	url = https://github.com/Inferis/ViewDeck.git
