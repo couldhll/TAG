@@ -18,20 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Add a custom read-only cache path
+    // add a custom read-only cache path
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
-    // Override point for customization after application launch.
-    
+    // create left and center and right controller
     HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
-    
     UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
     centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
                                                                                     leftViewController:leftController];
     
+    // add controller
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     

@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>078F5E47-D2D8-4B81-8603-97F2604371AA</string>
+	<string>837180FB-72CD-4EF3-BC8C-4AB8B42D8897</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TAG</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -35,6 +35,8 @@
 		<string>../GMGridView</string>
 		<key>5EF6BADF-3279-4188-AB7C-8CEC0B87DD95</key>
 		<string>../SVPullToRefresh</string>
+		<key>63A0636A-1751-424D-BABD-853B4542872B</key>
+		<string>../TAG</string>
 		<key>70B5BD07-8F1C-4106-A445-E31A01667AA7</key>
 		<string>../SDWebImage/Vendors/libwebp</string>
 		<key>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</key>
@@ -43,8 +45,6 @@
 		<string>../ViewDeck</string>
 		<key>EC0A5F01-95A4-44C1-8976-7BBDC89857D1</key>
 		<string>../SDWebImage</string>
-		<key>FA2A6CCE-06C4-471A-9C99-06F4F6B884D1</key>
-		<string>../TAG</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/couldhll/TAG.git</string>
@@ -106,7 +106,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FA2A6CCE-06C4-471A-9C99-06F4F6B884D1</string>
+			<string>63A0636A-1751-424D-BABD-853B4542872B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TAG</string>
 		</dict>

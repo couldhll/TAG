@@ -52,10 +52,62 @@
     
     self.title = @"Product List";
     
-    // navigation bar
-    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
-                                              [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MenuTitle",nil) style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
-                                              nil];
+//    // navigation bar
+//    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
+//                                              [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MenuTitle",nil) style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
+//                                              nil];
+    
+    //设置导航栏背景图片
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_background.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    
+    //导航栏正中央图片
+    UIImage * titleImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_logo.png"];
+    UIImageView * titleview = [[UIImageView alloc]initWithImage:titleImage];
+    //加在导航栏中
+    self.navigationItem.titleView =titleview;
+    
+    //绘制导航栏右侧的图片按钮
+    UIImage *rightButtonImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
+    UIImage *rightbuttonNormal = [rightButtonImage
+                                  stretchableImageWithLeftCapWidth:10 topCapHeight:10];
+    
+    //设置按钮类型为自定义
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    //设置按钮的显示区域
+    [rightButton setFrame: CGRectMake(0, 0, 50, 40)];
+    //设置按钮的背景显示图
+    [rightButton setBackgroundImage:rightbuttonNormal forState:UIControlStateNormal];
+    //设置按钮的前景显示图
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateHighlighted];
+    //监听点击事件
+    [rightButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
+    //加载导航栏中
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    
+    
+    
+    //含义和上面类似就不详解了
+    //绘制导航栏左侧的图片按钮
+    UIImage *leftButtonImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
+    UIImage *leftbuttonNormal = [leftButtonImage
+                                 stretchableImageWithLeftCapWidth:10 topCapHeight:10];
+    
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [leftButton setFrame: CGRectMake(0, 0, 50, 40)];
+    
+    [leftButton setBackgroundImage:leftbuttonNormal forState:UIControlStateNormal];
+    
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_menu_icon.png"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_menu_icon.png"] forState:UIControlStateHighlighted];
+    [leftButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    
+    
+    
+    
     
     // data
     NSMutableArray *_data = [[NSMutableArray alloc] init];
