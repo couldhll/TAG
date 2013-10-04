@@ -6,6 +6,12 @@
 // project.
 
 
+// Facebook-iOS-SDK
+#define COCOAPODS_POD_AVAILABLE_Facebook_iOS_SDK
+#define COCOAPODS_VERSION_MAJOR_Facebook_iOS_SDK 3
+#define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 8
+#define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
+
 // FoundationExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension 0
@@ -29,6 +35,36 @@
 #define COCOAPODS_VERSION_MAJOR_GIKPopoverBackgroundView_Core 0
 #define COCOAPODS_VERSION_MINOR_GIKPopoverBackgroundView_Core 0
 #define COCOAPODS_VERSION_PATCH_GIKPopoverBackgroundView_Core 1
+
+// GMGridView
+#define COCOAPODS_POD_AVAILABLE_GMGridView
+#define COCOAPODS_VERSION_MAJOR_GMGridView 1
+#define COCOAPODS_VERSION_MINOR_GMGridView 1
+#define COCOAPODS_VERSION_PATCH_GMGridView 1
+
+// Parse
+#define COCOAPODS_POD_AVAILABLE_Parse
+#define COCOAPODS_VERSION_MAJOR_Parse 1
+#define COCOAPODS_VERSION_MINOR_Parse 2
+#define COCOAPODS_VERSION_PATCH_Parse 15
+
+// SDWebImage
+#define COCOAPODS_POD_AVAILABLE_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_SDWebImage 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage 4
+#define COCOAPODS_VERSION_PATCH_SDWebImage 0
+
+// SDWebImage/Core
+#define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
+#define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 4
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 0
+
+// SVPullToRefresh
+#define COCOAPODS_POD_AVAILABLE_SVPullToRefresh
+#define COCOAPODS_VERSION_MAJOR_SVPullToRefresh 0
+#define COCOAPODS_VERSION_MINOR_SVPullToRefresh 4
+#define COCOAPODS_VERSION_PATCH_SVPullToRefresh 1
 
 // SevenSwitch
 #define COCOAPODS_POD_AVAILABLE_SevenSwitch
@@ -233,6 +269,12 @@
 #define COCOAPODS_VERSION_MAJOR_UIKitResources_UITabBar 7
 #define COCOAPODS_VERSION_MINOR_UIKitResources_UITabBar 0
 #define COCOAPODS_VERSION_PATCH_UIKitResources_UITabBar 0
+
+// ViewDeck
+#define COCOAPODS_POD_AVAILABLE_ViewDeck
+#define COCOAPODS_VERSION_MAJOR_ViewDeck 2
+#define COCOAPODS_VERSION_MINOR_ViewDeck 3
+#define COCOAPODS_VERSION_PATCH_ViewDeck 1
 
 // cdebug
 #define COCOAPODS_POD_AVAILABLE_cdebug
