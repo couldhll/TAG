@@ -1,18 +1,19 @@
 PODS:
   - cdebug (0.1.1)
   - Facebook-iOS-SDK (3.8.0)
-  - FoundationExtension (0.44):
+  - FoundationExtension (0.45):
     - cdebug (~> 0.1)
     - FoundationExtension/CocoaExtension
     - FoundationExtension/FoundationExtension
     - FoundationExtension/UIKitExtension
-  - FoundationExtension/FoundationExtension (0.44):
+  - FoundationExtension/FoundationExtension (0.45):
     - cdebug (~> 0.1)
-  - FoundationExtension/UIKitExtension (0.44):
+  - FoundationExtension/UIKitExtension (0.45):
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
   - GIKPopoverBackgroundView/Core (0.0.1)
   - GMGridView (1.1.1)
+  - MBProgressHUD (0.8)
   - Parse (1.2.15):
     - Facebook-iOS-SDK (~> 3.7)
   - SDWebImage (3.4):
@@ -157,6 +158,7 @@ PODS:
 
 DEPENDENCIES:
   - GMGridView (~> 1.1.1)
+  - MBProgressHUD (~> 0.8)
   - Parse (~> 1.2.15)
   - SDWebImage (~> 3.4)
   - SVPullToRefresh (~> 0.4.1)
@@ -166,9 +168,10 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
   Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
-  FoundationExtension: 00eb8d6be8f5469493dc29a163db1355c4e45a21
+  FoundationExtension: 9ea775b06ff4a3914db341cefdcaa8180c6e0366
   GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
   SDWebImage: 366188f04c019bfd712d45e3b36aa52070f4abd8
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c

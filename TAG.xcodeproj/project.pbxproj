@@ -73,6 +73,11 @@
 		B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */; };
 		B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */; };
 		B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */; };
+		B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */; };
+		B29AB58517FEF003007D884E /* HLLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLAPI.m */; };
+		B29AB58817FF953A007D884E /* HLLTAGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB58A17FF953A007D884E /* HLLTAGLoginViewController.xib */; };
+		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
+		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
 		B2ADC1F917F18B950055F275 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = B2ADC1F817F18B950055F275 /* Resource */; };
 		B2B4E5DD17FE712A00636E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */; };
@@ -204,6 +209,16 @@
 		B2480ECB17F3DCD0005DE75D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B255814F17F7F6F700E679FE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductListViewController.xib; sourceTree = "<group>"; };
+		B29AB57D17FE924B007D884E /* HLLTAGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTAGLoginViewController.h; sourceTree = "<group>"; };
+		B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTAGLoginViewController.m; sourceTree = "<group>"; };
+		B29AB58317FEF003007D884E /* HLLAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLAPI.h; sourceTree = "<group>"; };
+		B29AB58417FEF003007D884E /* HLLAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLAPI.m; sourceTree = "<group>"; };
+		B29AB58917FF953A007D884E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HLLTAGLoginViewController.xib; sourceTree = "<group>"; };
+		B29AB58D17FF9544007D884E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HLLTAGLoginViewController.xib; sourceTree = "<group>"; };
+		B29AB59017FF9548007D884E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/HLLTAGLoginViewController.xib"; sourceTree = "<group>"; };
+		B29AB59617FFFD25007D884E /* HLLUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserLoginViewController.h; sourceTree = "<group>"; };
+		B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserLoginViewController.m; sourceTree = "<group>"; };
+		B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserLoginViewController.xib; sourceTree = "<group>"; };
 		B2ADC1F117F188880055F275 /* HLLProductUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductUnitView.h; sourceTree = "<group>"; };
 		B2ADC1F217F188880055F275 /* HLLProductUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductUnitView.m; sourceTree = "<group>"; };
 		B2ADC1F817F18B950055F275 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = TAG/Resource; sourceTree = "<group>"; };
@@ -504,6 +519,28 @@
 			name = Product;
 			sourceTree = "<group>";
 		};
+		B29AB58217FE9252007D884E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B29AB59617FFFD25007D884E /* HLLUserLoginViewController.h */,
+				B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */,
+				B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */,
+				B29AB57D17FE924B007D884E /* HLLTAGLoginViewController.h */,
+				B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */,
+				B29AB58A17FF953A007D884E /* HLLTAGLoginViewController.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		B29AB58617FEF00B007D884E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B29AB58317FEF003007D884E /* HLLAPI.h */,
+				B29AB58417FEF003007D884E /* HLLAPI.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		B2ADC1EF17F187D10055F275 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,9 +629,11 @@
 			isa = PBXGroup;
 			children = (
 				B22A48FE17FC500700DDE92E /* Resource */,
+				B29AB58617FEF00B007D884E /* Data */,
 				B2BC0FCD17EEECA40071036D /* HLLAppDelegate.h */,
 				B2BC0FCE17EEECA40071036D /* HLLAppDelegate.m */,
 				B243927017F00D57002FD388 /* Frame */,
+				B29AB58217FE9252007D884E /* User */,
 				B243927617F02D3F002FD388 /* Product */,
 				B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */,
 				B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */,
@@ -723,9 +762,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29AB58817FF953A007D884E /* HLLTAGLoginViewController.xib in Resources */,
 				B2ADC1F917F18B950055F275 /* Resource in Resources */,
 				B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */,
 				B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */,
+				B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */,
 				B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */,
 				B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */,
 				B2BC0FDA17EEECA40071036D /* Images.xcassets in Resources */,
@@ -801,8 +842,11 @@
 				B2BC0FCB17EEECA40071036D /* main.m in Sources */,
 				B2BC0FCF17EEECA40071036D /* HLLAppDelegate.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
+				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
+				B29AB58517FEF003007D884E /* HLLAPI.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
+				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -853,6 +897,16 @@
 				B22A490917FC50A000DDE92E /* zh-Hans */,
 			);
 			name = HLLProductDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		B29AB58A17FF953A007D884E /* HLLTAGLoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B29AB58917FF953A007D884E /* Base */,
+				B29AB58D17FF9544007D884E /* en */,
+				B29AB59017FF9548007D884E /* zh-Hans */,
+			);
+			name = HLLTAGLoginViewController.xib;
 			sourceTree = "<group>";
 		};
 		B2BC0FC717EEECA40071036D /* InfoPlist.strings */ = {

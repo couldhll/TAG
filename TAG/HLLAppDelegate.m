@@ -12,33 +12,60 @@
 #import "HLLMainMenuViewController.h"
 #import "HLLProductListViewController.h"
 
+#import <Parse/Parse.h>
+#import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
+
+#import "HLLUserLoginViewController.h" // test
 
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // init parse
+    [Parse setApplicationId:@"vkPdg2r3Q9hdUNOWYY9CFrPwDXQVsYM47QLDUAIl"
+                  clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
+    
+    // init share
+    [ShareSDK registerApp:@"9fae2ee15ce" useAppTrusteeship:YES];
+    
     // add a custom read-only cache path
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
-    // create left and center and right controller
-    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
-    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
-    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
-                                                                                    leftViewController:leftController];
+//    // create left and center and right controller
+//    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
+//    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
+//    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+//    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+//                                                                                    leftViewController:leftController];
+    
+    UIViewController *centerController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
+    UIViewController *deckController = [[UINavigationController alloc] initWithRootViewController:centerController];
     
     // add controller
     self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     
-    // first to show center view
-    [centerController.viewDeckController openLeftViewAnimated:NO];
+//    // first to show center view
+//    [centerController.viewDeckController openLeftViewAnimated:NO];
     
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [ShareSDK handleOpenURL:url wxDelegate:nil];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [ShareSDK handleOpenURL:url
+                 sourceApplication:sourceApplication
+                        annotation:annotation
+                        wxDelegate:nil];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

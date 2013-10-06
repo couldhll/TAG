@@ -5,46 +5,26 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>837180FB-72CD-4EF3-BC8C-4AB8B42D8897</string>
+	<string>9F714191-B7C4-4DD0-A941-4BA002DCA71E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TAG</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</key>
 		<string>https://github.com/RolandasRazma/RRBaseInternationalization.git</string>
-		<key>26FA6C0F-914C-40F6-9464-88005E666E9E</key>
-		<string>https://github.com/gmoledina/GMGridView.git</string>
-		<key>5EF6BADF-3279-4188-AB7C-8CEC0B87DD95</key>
-		<string>https://github.com/samvermette/SVPullToRefresh.git</string>
-		<key>70B5BD07-8F1C-4106-A445-E31A01667AA7</key>
-		<string>http://git.chromium.org/webm/libwebp.git</string>
 		<key>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</key>
 		<string>https://github.com/couldhll/TAG.git</string>
-		<key>76961179-9CAA-42C3-B07A-ABF5CB697F69</key>
-		<string>https://github.com/Inferis/ViewDeck.git</string>
-		<key>EC0A5F01-95A4-44C1-8976-7BBDC89857D1</key>
-		<string>https://github.com/rs/SDWebImage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TAG.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>166207D4-33D3-4E7A-8080-1D4D584E3D10</key>
+		<string>../TAG</string>
 		<key>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</key>
 		<string>../RRBaseInternationalization</string>
-		<key>26FA6C0F-914C-40F6-9464-88005E666E9E</key>
-		<string>../GMGridView</string>
-		<key>5EF6BADF-3279-4188-AB7C-8CEC0B87DD95</key>
-		<string>../SVPullToRefresh</string>
-		<key>63A0636A-1751-424D-BABD-853B4542872B</key>
-		<string>../TAG</string>
-		<key>70B5BD07-8F1C-4106-A445-E31A01667AA7</key>
-		<string>../SDWebImage/Vendors/libwebp</string>
 		<key>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</key>
 		<string>..</string>
-		<key>76961179-9CAA-42C3-B07A-ABF5CB697F69</key>
-		<string>../ViewDeck</string>
-		<key>EC0A5F01-95A4-44C1-8976-7BBDC89857D1</key>
-		<string>../SDWebImage</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/couldhll/TAG.git</string>
@@ -58,41 +38,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>26FA6C0F-914C-40F6-9464-88005E666E9E</string>
-			<key>IDESourceControlWCCName</key>
-			<string>GMGridView</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>70B5BD07-8F1C-4106-A445-E31A01667AA7</string>
-			<key>IDESourceControlWCCName</key>
-			<string>libwebp</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RRBaseInternationalization</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EC0A5F01-95A4-44C1-8976-7BBDC89857D1</string>
-			<key>IDESourceControlWCCName</key>
-			<string>SDWebImage</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5EF6BADF-3279-4188-AB7C-8CEC0B87DD95</string>
-			<key>IDESourceControlWCCName</key>
-			<string>SVPullToRefresh</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
@@ -106,17 +54,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>63A0636A-1751-424D-BABD-853B4542872B</string>
+			<string>166207D4-33D3-4E7A-8080-1D4D584E3D10</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TAG</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>76961179-9CAA-42C3-B07A-ABF5CB697F69</string>
-			<key>IDESourceControlWCCName</key>
-			<string>ViewDeck</string>
 		</dict>
 	</array>
 </dict>

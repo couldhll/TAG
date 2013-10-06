@@ -15,19 +15,19 @@
 // FoundationExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension 44
+#define COCOAPODS_VERSION_MINOR_FoundationExtension 45
 #define COCOAPODS_VERSION_PATCH_FoundationExtension 0
 
 // FoundationExtension/FoundationExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension_FoundationExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension_FoundationExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension_FoundationExtension 44
+#define COCOAPODS_VERSION_MINOR_FoundationExtension_FoundationExtension 45
 #define COCOAPODS_VERSION_PATCH_FoundationExtension_FoundationExtension 0
 
 // FoundationExtension/UIKitExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension_UIKitExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension_UIKitExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension_UIKitExtension 44
+#define COCOAPODS_VERSION_MINOR_FoundationExtension_UIKitExtension 45
 #define COCOAPODS_VERSION_PATCH_FoundationExtension_UIKitExtension 0
 
 // GIKPopoverBackgroundView/Core
@@ -41,6 +41,12 @@
 #define COCOAPODS_VERSION_MAJOR_GMGridView 1
 #define COCOAPODS_VERSION_MINOR_GMGridView 1
 #define COCOAPODS_VERSION_PATCH_GMGridView 1
+
+// MBProgressHUD
+#define COCOAPODS_POD_AVAILABLE_MBProgressHUD
+#define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
+#define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
+#define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
 // Parse
 #define COCOAPODS_POD_AVAILABLE_Parse
