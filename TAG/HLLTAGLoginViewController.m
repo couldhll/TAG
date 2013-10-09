@@ -109,6 +109,9 @@
             // Do something...
             [MBProgressHUD hideHUDForView:self.view animated:YES];
         });
+    
+    // exit
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (IBAction)backgroundPressed:(id)sender

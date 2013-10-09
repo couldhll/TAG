@@ -32,8 +32,13 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
+        // for iOS7 SVPullToRefresh
+        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+        {
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+        }
     }
     return self;
 }
@@ -257,7 +262,7 @@
         NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
         [_currentData addObject:newItem];
         [_gmGridView insertObjectAtIndex:0 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-                
+        
         [_gmGridView.pullToRefreshView stopAnimating];
     });
 }

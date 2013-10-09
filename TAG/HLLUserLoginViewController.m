@@ -8,6 +8,8 @@
 
 #import "HLLUserLoginViewController.h"
 
+#import "HLLTAGLoginViewController.h"
+
 #import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
 
@@ -66,6 +68,16 @@
 
 #pragma mark - Actions
 
+- (IBAction)tagRegisterPressed:(id)sender
+{
+    
+}
+- (IBAction)tagLoginButtonPressed:(id)sender
+{
+    HLLTAGLoginViewController *tagLoginViewController = [[HLLTAGLoginViewController alloc] initWithNibName:@"HLLTAGLoginViewController" bundle:nil];
+    [self.navigationController pushViewController:tagLoginViewController animated:YES];
+}
+
 - (IBAction)sinaWeiboLoginButtonPressed:(id)sender
 {
     id<ISSAuthOptions> authOptions=[ShareSDK authOptionsWithAutoAuth:YES
@@ -102,7 +114,8 @@
                                        }
                                    }];
                                    
-                                   [self exit];
+                                   // exit
+                                   [self dismissModalViewControllerAnimated:YES];
 
 //                                   UserViewController *userVC = [[UserViewController alloc] initWithUser:_userInfo];
 //                                   [self.navigationController pushViewController:userVC animated:YES];
@@ -122,13 +135,6 @@
                                    }
                                }
                            }];
-}
-
-#pragma mark - Private method
-
-- (void)exit
-{
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

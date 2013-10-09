@@ -33,15 +33,15 @@
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
-//    // create left and center and right controller
-//    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
-//    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
-//    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-//    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
-//                                                                                    leftViewController:leftController];
-    
-    UIViewController *centerController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
-    UIViewController *deckController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    // create left and center and right controller
+    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
+    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
+    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+                                                                                    leftViewController:leftController];
+//    // test
+//    UIViewController *centerController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
+//    UIViewController *deckController = [[UINavigationController alloc] initWithRootViewController:centerController];
     
     // add controller
     self.window.rootViewController = deckController;

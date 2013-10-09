@@ -208,6 +208,7 @@
 		B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductDetailViewController.m; sourceTree = "<group>"; };
 		B2480ECB17F3DCD0005DE75D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B255814F17F7F6F700E679FE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B292A73318050AF5004225B5 /* MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductListViewController.xib; sourceTree = "<group>"; };
 		B29AB57D17FE924B007D884E /* HLLTAGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTAGLoginViewController.h; sourceTree = "<group>"; };
 		B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTAGLoginViewController.m; sourceTree = "<group>"; };
@@ -628,10 +629,11 @@
 		B2BC0FC417EEECA40071036D /* TAG */ = {
 			isa = PBXGroup;
 			children = (
-				B22A48FE17FC500700DDE92E /* Resource */,
-				B29AB58617FEF00B007D884E /* Data */,
+				B292A73318050AF5004225B5 /* MacroDefinition.h */,
 				B2BC0FCD17EEECA40071036D /* HLLAppDelegate.h */,
 				B2BC0FCE17EEECA40071036D /* HLLAppDelegate.m */,
+				B22A48FE17FC500700DDE92E /* Resource */,
+				B29AB58617FEF00B007D884E /* Data */,
 				B243927017F00D57002FD388 /* Frame */,
 				B29AB58217FE9252007D884E /* User */,
 				B243927617F02D3F002FD388 /* Product */,
@@ -725,7 +727,7 @@
 				ORGANIZATIONNAME = CouldHll;
 				TargetAttributes = {
 					B2BC0FBA17EEECA40071036D = {
-						DevelopmentTeam = JUNF7ZZX9D;
+						DevelopmentTeam = D5VEAA274K;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;

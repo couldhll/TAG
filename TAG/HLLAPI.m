@@ -7,6 +7,7 @@
 //
 
 #import "HLLAPI.h"
+#import "HLLUserLoginViewController.h"
 
 @implementation HLLAPI
 
@@ -26,6 +27,22 @@
         });
 
     return sharedInstance;
+}
+
+-(void)save:(UIViewController*)sender
+{
+    UIViewController *viewController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
+    viewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+//        [self.popoverController dismissPopoverAnimated:NO];
+//        self.popoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
+//        [self.popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//    }
+//    else {
+        [sender presentModalViewController:viewController animated:YES];
+//    }
+    
+    
 }
 
 @end

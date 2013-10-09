@@ -10,4 +10,6 @@
 
 @interface HLLProductDetailViewController : UIViewController
 
+- (IBAction)saveButtonPressed:(id)sender;
+
 @end

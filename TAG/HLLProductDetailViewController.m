@@ -10,6 +10,7 @@
 
 #import "IIViewDeckController.h"
 #import "HLLVideoView.h"
+#import "HLLAPI.h"
 
 #import <ShareSDK/ShareSDK.h>
 
@@ -98,6 +99,13 @@
     [super viewDidDisappear:animated];
 }
 
+#pragma mark - Actions
+
+- (IBAction)saveButtonPressed:(id)sender
+{
+    [self save];
+}
+
 #pragma mark - Share
 
 - (void)share
@@ -135,30 +143,7 @@
 
 - (void)save
 {
-    
-}
-
-#pragma mark - User login
-
-- (void)openUserLogin:(id)sender {
-    
-//    UIImagePickerController* picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
-//    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-//        picker.sourceType =  UIImagePickerControllerSourceTypeCamera;
-//    
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-//        [self.popoverController dismissPopoverAnimated:NO];
-//        self.popoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
-//        [self.popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-//    }
-//    else {
-//        [self presentModalViewController:picker animated:YES];
-//    }
-}
-
-- (void)closeUserLogin:(id)sender {
-    [sender dismissModalViewControllerAnimated:YES];
+    [[HLLAPI sharedInstance] save:self];
 }
 
 #pragma mark - test
