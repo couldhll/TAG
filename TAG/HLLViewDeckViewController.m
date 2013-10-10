@@ -1,21 +1,20 @@
 //
-//  HLLMainMenuViewController.m
+//  HLLViewDeckViewController.m
 //  TAG
 //
-//  Created by CouldHll on 13-10-5.
+//  Created by CouldHll on 13-10-10.
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
-
-#import "HLLMainMenuViewController.h"
+#import "HLLViewDeckViewController.h"
 
 #import "IIViewDeckController.h"
 
-@interface HLLMainMenuViewController ()
+@interface HLLViewDeckViewController ()
 
 @end
 
-@implementation HLLMainMenuViewController
+@implementation HLLViewDeckViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +36,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // navigation background image
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_background.png"] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)viewDidUnload
@@ -47,6 +49,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    // close left controller
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -57,13 +62,14 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    // close left controller
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
 }
-
-#pragma mark - Actions
 
 @end

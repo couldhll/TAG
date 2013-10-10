@@ -49,6 +49,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    // show navigation bar
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -59,6 +62,9 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    // hide navigation bar
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -83,8 +89,8 @@
     id<ISSAuthOptions> authOptions=[ShareSDK authOptionsWithAutoAuth:YES
                                               allowCallback:NO
                                               authViewStyle:SSAuthViewStyleModal
-                                               viewDelegate:self
-                                    authManagerViewDelegate:self];
+                                               viewDelegate:nil
+                                    authManagerViewDelegate:nil];
     [ShareSDK getUserInfoWithType:ShareTypeSinaWeibo
                       authOptions:authOptions
                            result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {

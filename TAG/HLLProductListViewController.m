@@ -14,7 +14,8 @@
 
 #import "HLLProductDetailViewController.h"
 #import "HLLProductUnitView.h"
-
+#import "HLLProductFilterViewController.h"
+#import "HLLMainMenuViewController.h"//test
 #define GMGRIDVIEW_SPACING 5
 #define GMGRIDVIEW_SIZE CGSizeMake(100, 100)
 
@@ -62,8 +63,6 @@
 //                                              [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MenuTitle",nil) style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
 //                                              nil];
     
-    // navigation background image
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_background.png"] forBarMetrics:UIBarMetricsDefault];
     
     // navigation center image
     UIImage * titleImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_logo.png"];
@@ -91,9 +90,8 @@
     [rightButton setBackgroundImage:rightbuttonBackground9patchImage forState:UIControlStateNormal];
     [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateNormal];
     [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateHighlighted];
-    [rightButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
+    [rightButton addTarget:self.viewDeckController action:@selector(toggleRightView) forControlEvents:UIControlEventTouchDown];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
-    
     
     
     // data
@@ -139,18 +137,26 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    // create right controller
+    UIViewController* rightController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
+    self.viewDeckController.rightController = rightController;
+    
+    // auto refresh
+    [_gmGridView triggerPullToRefresh];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.viewDeckController closeLeftViewAnimated:YES];
-    [_gmGridView triggerPullToRefresh];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    // close right controller
+    [self.viewDeckController closeRightViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {self.viewDeckController.rightController = nil;}];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -266,7 +272,6 @@
         [_gmGridView.pullToRefreshView stopAnimating];
     });
 }
-
 
 - (void)InfiniteScrolling {
     NSLog(@"InfiniteScrolling");

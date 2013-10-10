@@ -86,7 +86,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

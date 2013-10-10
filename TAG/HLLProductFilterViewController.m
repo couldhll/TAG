@@ -1,21 +1,18 @@
 //
-//  HLLMainMenuViewController.m
+//  HLLProductFilterViewController.m
 //  TAG
 //
-//  Created by CouldHll on 13-10-5.
+//  Created by CouldHll on 13-10-10.
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
+#import "HLLProductFilterViewController.h"
 
-#import "HLLMainMenuViewController.h"
-
-#import "IIViewDeckController.h"
-
-@interface HLLMainMenuViewController ()
+@interface HLLProductFilterViewController ()
 
 @end
 
-@implementation HLLMainMenuViewController
+@implementation HLLProductFilterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,5 +62,6 @@
 }
 
 #pragma mark - Actions
+
 
 @end

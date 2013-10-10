@@ -16,7 +16,8 @@
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
 
-#import "HLLUserLoginViewController.h" // test
+#import "HLLProductFilterViewController.h"// test
+#import "HLLUserLoginViewController.h"// test
 
 @implementation HLLAppDelegate
 
@@ -33,8 +34,8 @@
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
-    // create left and center and right controller
-    HLLMainMenuViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
+    // create left and right and center controller
+    UIViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
     UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
     centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController

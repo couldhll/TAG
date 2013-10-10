@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLLProductListViewController : UIViewController
+@interface HLLProductListViewController : HLLViewDeckViewController
 
 @end

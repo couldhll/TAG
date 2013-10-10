@@ -29,6 +29,11 @@
     return sharedInstance;
 }
 
+-(BOOL)isAuthorized
+{
+    return YES;
+}
+
 -(void)save:(UIViewController*)sender
 {
     UIViewController *viewController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
