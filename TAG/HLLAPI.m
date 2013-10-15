@@ -36,6 +36,14 @@
 -(void)save:(UIViewController*)sender
 {
     [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
+    
+    
+    
+    // notification
+    NSMutableDictionary *userInfo=[NSMutableDictionary dictionary];
+    [userInfo setValue:[NSNumber numberWithBool:YES] forKey:@"logined"];
+    [userInfo setValue:sender forKey:@"sender"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:userInfo];
 }
 
 @end

@@ -34,6 +34,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // init button name
+    self.csButton.name=@"csButton";
+    self.toButton.name=@"toButton";
+    self.womenButton.name=@"womenButton";
+    self.menButton.name=@"menButton";
+    self.kidButton.name=@"kidButton";
+    self.geekButton.name=@"geekButton";
+    self.cheapButton.name=@"cheapButton";
+    self.expensiveButton.name=@"expensiveButton";
+    self.saleButton.name=@"saleButton";
+    self.comicButton.name=@"comicButton";
+    self.toonButton.name=@"toonButton";
+    self.freeButton.name=@"freeButton";
+//    self.searchButton.name=@"searchButton";
+//    self.clearButton.name=@"clearButton";
 }
 
 - (void)viewDidUnload
@@ -63,5 +79,10 @@
 
 #pragma mark - Actions
 
+- (IBAction)buttonPressed:(id)sender
+{
+    HLLButton *button=(HLLButton*)sender;
+    [button setSelected:!button.selected];
+}
 
 @end

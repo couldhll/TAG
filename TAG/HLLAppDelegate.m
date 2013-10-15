@@ -43,21 +43,28 @@
     
     // create left and right and center controller
     UIViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
-    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
-    self.navigationController = [[HLLNavigationController alloc] initWithRootViewController:centerController];// navagation controller
-    centerController=self.navigationController;
-    self.deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+//    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
+//    self.navigationController = [[HLLNavigationController alloc] initWithRootViewController:centerController];// navagation controller
+//    centerController=self.navigationController;
+//    self.deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+//                                                                   leftViewController:leftController];
+    self.deckController =  [[IIViewDeckController alloc] initWithCenterViewController:nil
                                                                                     leftViewController:leftController];
     
     // add controller
     self.window.rootViewController = self.deckController;
     [self.window makeKeyAndVisible];
     
+    // first page
+    [self openViewController:@"HLLProductListViewController" sender:nil];
+    
     // first launch to show the side
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
     {
         [self.deckController previewBounceView:IIViewDeckLeftSide withCompletion:^(IIViewDeckController *controller, BOOL success) {[self.deckController previewBounceView:IIViewDeckRightSide];}];
     }
+    
+
     
     return YES;
 }
@@ -108,6 +115,11 @@
 {
     NSLog(@"Change center controller:%@",name);
     
+    if (!name)
+    {
+        return;
+    }
+    
     if ([name isEqual:@"HLLUserLoginViewController"])
     {
         // popup login page
@@ -121,7 +133,8 @@
         //    else {
         [sender presentModalViewController:viewController animated:YES];
         //    }
-    } else
+    }
+    else
     {
         // create center controller class
         Class centerControllerClass =  NSClassFromString(name);
@@ -133,8 +146,8 @@
         self.deckController.centerController=centerController;
     }
     
-    // Notification
-    NSDictionary *userInfo=[NSDictionary dictionary];
+    // notification
+    NSMutableDictionary *userInfo=[NSMutableDictionary dictionary];
     [userInfo setValue:name forKey:@"name"];
     [userInfo setValue:sender forKey:@"sender"];
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_OPENVIEWCONTROLLER object:self userInfo:userInfo];

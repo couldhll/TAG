@@ -15,7 +15,5 @@
     #import <Foundation/Foundation.h>
     #import "HLLMacroDefinition.h"
     #import "HLLAppConfig.h"
-    #import "HLLAppDelegate.h"
-    #import "HLLViewDeckViewController.h"
 
 #endif

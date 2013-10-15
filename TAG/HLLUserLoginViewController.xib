@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -64,7 +64,7 @@
                         <action selector="exitButtonPressed:" destination="-1" eventType="touchUpInside" id="B2F-Q5-uZY"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_icon.png" id="14X-Kv-coh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resource/User/Login/Main/logo_icon.png" id="14X-Kv-coh">
                     <rect key="frame" x="40" y="84" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -89,6 +89,6 @@
     </objects>
     <resources>
         <image name="Resource/User/Login/Main/back_button.png" width="16" height="16"/>
-        <image name="logo_icon.png" width="219" height="140"/>
+        <image name="Resource/User/Login/Main/logo_icon.png" width="16" height="16"/>
     </resources>
 </document>

@@ -10,26 +10,10 @@
 
 @implementation HLLBorderButton
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self initialize];
-    }
-    return self;
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initialize];
-    }
-    return self;
-}
-
 - (void)initialize
 {
+    [super initialize];
+    
     // exit button add border with color
     [self.layer setBorderWidth:1.0f];
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

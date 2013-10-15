@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -7,28 +7,242 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLLProductFilterViewController">
             <connections>
+                <outlet property="cheapButton" destination="jsp-ng-cfC" id="ARY-yj-uB6"/>
+                <outlet property="clearButton" destination="w6y-b5-Tqs" id="Qhk-xK-YIc"/>
+                <outlet property="comicButton" destination="3M8-dZ-XVb" id="cfd-xo-ITo"/>
+                <outlet property="csButton" destination="MVm-aJ-UDH" id="O5Q-qu-S4a"/>
+                <outlet property="expensiveButton" destination="Vrn-fH-R7B" id="bkn-Vd-pdH"/>
+                <outlet property="freeButton" destination="j7Q-Bd-qb3" id="uI3-pd-UDr"/>
+                <outlet property="geekButton" destination="AiR-Eg-mvt" id="kBJ-xq-WYn"/>
+                <outlet property="kidButton" destination="sJU-Mg-mHT" id="Az5-Fj-2cC"/>
+                <outlet property="menButton" destination="o21-ca-cTW" id="e6j-an-LQ5"/>
+                <outlet property="saleButton" destination="AMi-pt-sXF" id="y3W-az-jRm"/>
+                <outlet property="searchButton" destination="6cl-Bp-tvZ" id="p1a-hI-8q4"/>
+                <outlet property="toButton" destination="otS-nc-SWi" id="LEp-p9-ibi"/>
+                <outlet property="toonButton" destination="dEA-Bh-NG8" id="lnP-zq-IVS"/>
                 <outlet property="view" destination="1" id="3"/>
+                <outlet property="womenButton" destination="067-Gm-GPp" id="XaH-ou-NK2"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nc0-o7-8TR">
-                    <rect key="frame" x="80" y="124" width="94" height="46"/>
+                <view contentMode="scaleToFill" id="NdM-pY-Od2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.98823535439999999" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="tintColor" red="0.38431376220000002" green="0.49411767719999999" blue="0.44313728810000003" alpha="1" colorSpace="deviceRGB"/>
-                    <state key="normal" title="MAN">
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uy3-F6-nBs">
+                            <rect key="frame" x="61" y="2" width="82" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                            <color key="textColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607849120000003" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6cl-Bp-tvZ">
+                    <rect key="frame" x="65" y="378" width="237" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99607849120000003" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ADD FILTER">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MVm-aJ-UDH" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="107" width="237" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="CROWD SOURCE (CS)">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="hi6-Kn-OQz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="otS-nc-SWi" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="137" width="237" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="ITEMS AVAILABLE NOW">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="TCU-iw-X0G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="067-Gm-GPp" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="180" width="113" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="WOMEN">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Rmb-YB-gSY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o21-ca-cTW" customClass="HLLSelectButton">
+                    <rect key="frame" x="189" y="180" width="113" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="MEN">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Lis-RH-S57"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sJU-Mg-mHT" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="216" width="113" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="KIDS">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="S0e-HV-51J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jsp-ng-cfC" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="251" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="$">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="VZr-Vm-d02"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3M8-dZ-XVb" customClass="HLLSelectButton">
+                    <rect key="frame" x="65" y="301" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="COMICS">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="JsU-53-PQY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dEA-Bh-NG8" customClass="HLLSelectButton">
+                    <rect key="frame" x="148" y="301" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="TOONS">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="jzU-pl-eP0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j7Q-Bd-qb3" customClass="HLLSelectButton">
+                    <rect key="frame" x="229" y="301" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="FREE">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="urr-ms-LxD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vrn-fH-R7B" customClass="HLLSelectButton">
+                    <rect key="frame" x="147" y="251" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="$$">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="HPW-hm-W38"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AMi-pt-sXF" customClass="HLLSelectButton">
+                    <rect key="frame" x="229" y="251" width="73" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="SALE">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="CS4-W8-NeH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AiR-Eg-mvt" customClass="HLLSelectButton">
+                    <rect key="frame" x="189" y="216" width="113" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="GEEK">
+                        <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="suI-PA-Xip"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w6y-b5-Tqs" customClass="HLLBorderButton">
+                    <rect key="frame" x="65" y="426" width="237" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="CLEAR FILTER"/>
+                </button>
+                <view contentMode="scaleToFill" id="jQb-d9-Zau">
+                    <rect key="frame" x="65" y="354" width="237" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter keyword(s)" minimumFontSize="17" id="HUg-j7-rHB">
+                    <rect key="frame" x="65" y="60" width="237" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <color key="backgroundColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

@@ -10,27 +10,26 @@
 
 @implementation HLLSelectButton
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self initialize];
-    }
-    return self;
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initialize];
-    }
-    return self;
-}
-
 - (void)initialize
 {
+    [super initialize];
     
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    
+    if (selected)
+    {
+        self.backgroundColor=HexRGB(0xFFE719);
+        self.titleLabel.font=[UIFont fontWithName:@"Helvetica-Bold" size:self.titleLabel.font.pointSize];
+    }
+    else
+    {
+        self.backgroundColor=[UIColor whiteColor];
+        self.titleLabel.font=[UIFont fontWithName:@"Helvetica-Light" size:self.titleLabel.font.pointSize];
+    }
 }
 
 /*

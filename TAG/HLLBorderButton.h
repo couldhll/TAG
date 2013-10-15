@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLLBorderButton : UIButton
+#import "HLLButton.h"
+
+@interface HLLBorderButton : HLLButton
 
 @end
