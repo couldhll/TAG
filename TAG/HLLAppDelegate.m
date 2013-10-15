@@ -8,16 +8,14 @@
 
 #import "HLLAppDelegate.h"
 
-#import "IIViewDeckController.h"
 #import "HLLMainMenuViewController.h"
 #import "HLLProductListViewController.h"
+#import "HLLNavigationController.h"
+#import "HLLUserLoginViewController.h"
 
 #import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
-
-#import "HLLProductFilterViewController.h"// test
-#import "HLLUserLoginViewController.h"// test
 
 @implementation HLLAppDelegate
 
@@ -34,22 +32,32 @@
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
+    // first launch
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+    }
+    else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+    }
+    
     // create left and right and center controller
     UIViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
     UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];
-    centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
+    self.navigationController = [[HLLNavigationController alloc] initWithRootViewController:centerController];// navagation controller
+    centerController=self.navigationController;
+    self.deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
                                                                                     leftViewController:leftController];
-//    // test
-//    UIViewController *centerController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
-//    UIViewController *deckController = [[UINavigationController alloc] initWithRootViewController:centerController];
     
     // add controller
-    self.window.rootViewController = deckController;
+    self.window.rootViewController = self.deckController;
     [self.window makeKeyAndVisible];
     
-//    // first to show center view
-//    [centerController.viewDeckController openLeftViewAnimated:NO];
+    // first launch to show the side
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
+    {
+        [self.deckController previewBounceView:IIViewDeckLeftSide withCompletion:^(IIViewDeckController *controller, BOOL success) {[self.deckController previewBounceView:IIViewDeckRightSide];}];
+    }
     
     return YES;
 }
@@ -92,6 +100,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Controller
+
+- (void)openViewController:(NSString *)name sender:(UIViewController*)sender
+{
+    NSLog(@"Change center controller:%@",name);
+    
+    if ([name isEqual:@"HLLUserLoginViewController"])
+    {
+        // popup login page
+        UIViewController *viewController = [[HLLUserLoginViewController alloc] initWithNibName:@"HLLUserLoginViewController" bundle:nil];
+        viewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        //        [self.popoverController dismissPopoverAnimated:NO];
+        //        self.popoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
+        //        [self.popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        //    }
+        //    else {
+        [sender presentModalViewController:viewController animated:YES];
+        //    }
+    } else
+    {
+        // create center controller class
+        Class centerControllerClass =  NSClassFromString(name);
+        UIViewController * centerController = [[centerControllerClass alloc] initWithNibName:name bundle:nil];
+        
+        // create new navagation bar
+        self.navigationController = [[HLLNavigationController alloc] initWithRootViewController:centerController];// navagation controller
+        centerController=self.navigationController;
+        self.deckController.centerController=centerController;
+    }
+    
+    // Notification
+    NSDictionary *userInfo=[NSDictionary dictionary];
+    [userInfo setValue:name forKey:@"name"];
+    [userInfo setValue:sender forKey:@"sender"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_OPENVIEWCONTROLLER object:self userInfo:userInfo];
 }
 
 @end

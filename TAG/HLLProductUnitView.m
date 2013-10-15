@@ -42,7 +42,7 @@
 //    [imageView setImage:image];
     
     // use normal UIImageView+WebCache
-    [imageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/product_list_loading.jpg"]];
+    [imageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/List/loading_picture.png"]];
 }
 
 /*

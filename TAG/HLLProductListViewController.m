@@ -15,7 +15,7 @@
 #import "HLLProductDetailViewController.h"
 #import "HLLProductUnitView.h"
 #import "HLLProductFilterViewController.h"
-#import "HLLMainMenuViewController.h"//test
+
 #define GMGRIDVIEW_SPACING 5
 #define GMGRIDVIEW_SIZE CGSizeMake(100, 100)
 
@@ -55,44 +55,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Product List";
-    
-//    // navigation bar
-//    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
-//                                              [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"MenuTitle",nil) style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
-//                                              nil];
-    
-    
-    // navigation center image
-    UIImage * titleImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_logo.png"];
-    UIImageView * titleview = [[UIImageView alloc]initWithImage:titleImage];
-    self.navigationItem.titleView =titleview;
-    
-    // navigation left button background image
-    UIImage *leftButtonBackgroundImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
-    UIImage *leftbuttonBackground9patchImage = [leftButtonBackgroundImage stretchableImageWithLeftCapWidth:10 topCapHeight:10];
-    // navigation left button
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setFrame: CGRectMake(0, 0, 50, 40)];
-    [leftButton setBackgroundImage:leftbuttonBackground9patchImage forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_menu_icon.png"] forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_menu_icon.png"] forState:UIControlStateHighlighted];
-    [leftButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
-    
-    // navigation right button background image
-    UIImage *rightButtonBackgroundImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
-    UIImage *rightbuttonBackground9patchImage = [rightButtonBackgroundImage stretchableImageWithLeftCapWidth:10 topCapHeight:10];
-    // navigation right button
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setFrame: CGRectMake(0, 0, 50, 40)];
-    [rightButton setBackgroundImage:rightbuttonBackground9patchImage forState:UIControlStateNormal];
-    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateNormal];
-    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateHighlighted];
-    [rightButton addTarget:self.viewDeckController action:@selector(toggleRightView) forControlEvents:UIControlEventTouchDown];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
-    
     
     // data
     NSMutableArray *_data = [[NSMutableArray alloc] init];
@@ -140,7 +102,7 @@
     
     // create right controller
     UIViewController* rightController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
-    self.viewDeckController.rightController = rightController;
+//    self.viewDeckController.rightController = rightController;
     
     // auto refresh
     [_gmGridView triggerPullToRefresh];
@@ -247,7 +209,6 @@
     
     // goto product detail view
     HLLProductDetailViewController *productDetailController = [[HLLProductDetailViewController alloc] initWithNibName:@"HLLProductDetailViewController" bundle:nil];
-    //    self.viewDeckController.centerController=productDetailController;
     [self.navigationController pushViewController:productDetailController animated:YES];
 }
 

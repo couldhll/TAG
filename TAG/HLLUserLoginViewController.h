@@ -10,9 +10,16 @@
 
 @interface HLLUserLoginViewController : UIViewController
 
-- (IBAction)tagRegisterPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton  *exitButton;
+
+- (IBAction)exitButtonPressed:(id)sender;
+
+- (IBAction)tagRegisterButtonPressed:(id)sender;
 - (IBAction)tagLoginButtonPressed:(id)sender;
 
 - (IBAction)sinaWeiboLoginButtonPressed:(id)sender;
+- (IBAction)qqLoginButtonPressed:(id)sender;
+- (IBAction)facebookLoginButtonPressed:(id)sender;
+
 
 @end

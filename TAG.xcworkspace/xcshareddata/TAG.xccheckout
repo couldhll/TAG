@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9F714191-B7C4-4DD0-A941-4BA002DCA71E</string>
+	<string>1E95709F-53D4-4499-8A49-8763F0AA685D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TAG</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -19,7 +19,7 @@
 	<string>TAG.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>166207D4-33D3-4E7A-8080-1D4D584E3D10</key>
+		<key>0BCF3284-0F40-4985-B363-63084718D380</key>
 		<string>../TAG</string>
 		<key>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</key>
 		<string>../RRBaseInternationalization</string>
@@ -54,7 +54,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>166207D4-33D3-4E7A-8080-1D4D584E3D10</string>
+			<string>0BCF3284-0F40-4985-B363-63084718D380</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TAG</string>
 		</dict>

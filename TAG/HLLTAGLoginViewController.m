@@ -42,6 +42,10 @@
 {
     [super viewDidLoad];
     
+    // textfield set font
+    [userNameTextField setFont:[UIFont fontWithName:@"Helvetica" size:19]];
+    [userNameTextField setTextColor:HexRGB(0x194D9D)];
+    
     // show the keyboard
     [userNameTextField becomeFirstResponder];
 }
@@ -72,6 +76,16 @@
 }
 
 #pragma mark - Actions
+
+- (IBAction)backButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)exitButtonPressed:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (IBAction)loginButtonPressed:(id)sender
 {
@@ -112,6 +126,11 @@
     
     // exit
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)findPasswordButtonPressed:(id)sender
+{
+    
 }
 
 - (IBAction)backgroundPressed:(id)sender

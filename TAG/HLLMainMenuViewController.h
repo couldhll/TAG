@@ -11,4 +11,16 @@
 
 @interface HLLMainMenuViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton  *productListButton;
+@property (strong, nonatomic) IBOutlet UIButton  *loginorloginoutButton;
+
+- (IBAction)productListButtonPressed:(id)sender;
+- (IBAction)favoriteButtonPressed:(id)sender;
+- (IBAction)friendButtonPressed:(id)sender;
+- (IBAction)followButtonPressed:(id)sender;
+- (IBAction)userHomeButtonPressed:(id)sender;
+- (IBAction)newCSButtonPressed:(id)sender;
+- (IBAction)settingButtonPressed:(id)sender;
+- (IBAction)loginorloginoutButtonPressed:(id)sender;
+
 @end

@@ -3,17 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "GLOBAL">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.viewDeckController.leftController">
-            </PersistentString>
-            <PersistentString
-               value = "self.viewDeckController.rightController">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "__58-[HLLUserLoginViewController sinaWeiboLoginButtonPressed:]_block_invoke:HLLUserLoginViewController.m">
          <PersistentStrings>
             <PersistentString

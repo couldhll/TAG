@@ -1,6 +1,6 @@
 //
-//  MacroDefinition.h
-//  MacroDefinition
+//  HLLMacroDefinition.h
+//  HLLMacroDefinition
 //
 //  Created by CouldHll on 13-9-22.
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
@@ -194,6 +194,8 @@ description:__VA_ARGS__];                             \
 
 
 #pragma mark - Other
+
+#define AppDelegate (HLLAppDelegate *)[[UIApplication sharedApplication] delegate]
 
 // GCD
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)

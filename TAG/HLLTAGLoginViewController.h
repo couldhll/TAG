@@ -12,8 +12,13 @@
 
 @property (strong, nonatomic) IBOutlet UITextField  *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField  *userPasswordTextField;
+@property (strong, nonatomic) IBOutlet UIButton  *exitButton;
+
+- (IBAction)backButtonPressed:(id)sender;
+- (IBAction)exitButtonPressed:(id)sender;
 
 - (IBAction)loginButtonPressed:(id)sender;
+- (IBAction)findPasswordButtonPressed:(id)sender;
 
 - (IBAction)backgroundPressed:(id)sender;
 - (IBAction)textFieldDoneEditing:(id)sender;

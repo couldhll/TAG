@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E0B2811-4A4D-4FAF-BE77-47076211296B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TAG</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</key>
+		<string>https://github.com/RolandasRazma/RRBaseInternationalization.git</string>
+		<key>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</key>
+		<string>https://github.com/couldhll/TAG.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TAG.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BCF3284-0F40-4985-B363-63084718D380</key>
+		<string>../../TAG</string>
+		<key>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</key>
+		<string>../../RRBaseInternationalization</string>
+		<key>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/couldhll/TAG.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24C6438F-4CD6-4288-BDD3-ABCAE1A5684D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RRBaseInternationalization</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>75C8E16F-9814-49BC-9537-AE7FE5B3F5BD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TAG</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BCF3284-0F40-4985-B363-63084718D380</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TAG</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "HLLAPI.h"
+
 @interface TAGTests : XCTestCase
 
 @end
@@ -28,7 +30,9 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
 }
 
 @end

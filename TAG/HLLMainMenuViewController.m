@@ -9,7 +9,7 @@
 
 #import "HLLMainMenuViewController.h"
 
-#import "IIViewDeckController.h"
+#import "HLLAppDelegate.h"
 
 @interface HLLMainMenuViewController ()
 
@@ -37,6 +37,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Notification
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(changeSelectButton:)
+                                                 name: NOTIFICATION_OPENVIEWCONTROLLER
+                                               object: nil];
 }
 
 - (void)viewDidUnload
@@ -65,5 +71,53 @@
 }
 
 #pragma mark - Actions
+
+- (IBAction)productListButtonPressed:(id)sender
+{
+    [AppDelegate openViewController:@"HLLProductListViewController" sender:self];
+}
+
+- (IBAction)favoriteButtonPressed:(id)sender
+{
+    
+}
+
+- (IBAction)friendButtonPressed:(id)sender
+{
+    [AppDelegate openViewController:@"HLLUserFriendViewController" sender:self];
+}
+
+- (IBAction)followButtonPressed:(id)sender
+{
+    
+}
+
+- (IBAction)userHomeButtonPressed:(id)sender
+{
+    
+}
+
+- (IBAction)newCSButtonPressed:(id)sender
+{
+    
+}
+
+- (IBAction)settingButtonPressed:(id)sender
+{
+    
+}
+
+- (IBAction)loginorloginoutButtonPressed:(id)sender
+{
+    [AppDelegate openViewController:@"HLLUserLoginViewController" sender:self];
+}
+
+#pragma mark - Notification
+
+- (void)changeSelectButton:(NSNotification *)notification
+{
+	[notification.userInfo objectForKey:@"name"];
+    
+}
 
 @end
