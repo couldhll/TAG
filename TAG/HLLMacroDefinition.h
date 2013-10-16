@@ -33,7 +33,8 @@
 
 // print log with line&function without time
 #if DEBUG
-    #define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//    #define NSLog(FORMAT, ...) fprintf(stderr,"\n content:%s \n function:%s \n line:%d \n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String], __FUNCTION__, __LINE__);
+    #define NSLog(FORMAT, ...) fprintf(stderr,"\n%s\n%s in [line:%d]\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String], __FUNCTION__, __LINE__);
 #else
     #define NSLog(FORMAT, ...) nil
 #endif

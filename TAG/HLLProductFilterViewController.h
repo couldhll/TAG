@@ -28,6 +28,8 @@
 @property (strong, nonatomic) IBOutlet UIButton  *searchButton;
 @property (strong, nonatomic) IBOutlet UIButton  *clearButton;
 
-- (IBAction)buttonPressed:(id)sender;
+- (IBAction)filterButtonPressed:(id)sender;
+- (IBAction)searchButtonPressed:(id)sender;
+- (IBAction)clearButtonPressed:(id)sender;
 
 @end

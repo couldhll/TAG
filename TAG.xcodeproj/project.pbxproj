@@ -74,6 +74,7 @@
 		B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */; };
 		B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243927217F01E6B002FD388 /* HLLProductListViewController.m */; };
 		B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */; };
+		B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B854B180E6C15004D0DC9 /* HLLTracker.m */; };
 		B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B93180D117200F8E105 /* HLLLoginButton.m */; };
 		B2858B97180D166C00F8E105 /* HLLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B96180D166C00F8E105 /* HLLButton.m */; };
 		B292A7381806480E004225B5 /* HLLProductFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B292A7361806480E004225B5 /* HLLProductFilterViewController.m */; };
@@ -224,6 +225,8 @@
 		B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductDetailViewController.m; sourceTree = "<group>"; };
 		B2480ECB17F3DCD0005DE75D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B255814F17F7F6F700E679FE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B27B854A180E6C15004D0DC9 /* HLLTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTracker.h; sourceTree = "<group>"; };
+		B27B854B180E6C15004D0DC9 /* HLLTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTracker.m; sourceTree = "<group>"; };
 		B2858B92180D117200F8E105 /* HLLLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLoginButton.h; sourceTree = "<group>"; };
 		B2858B93180D117200F8E105 /* HLLLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLLoginButton.m; sourceTree = "<group>"; };
 		B2858B95180D166C00F8E105 /* HLLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLButton.h; sourceTree = "<group>"; };
@@ -575,6 +578,15 @@
 			name = Product;
 			sourceTree = "<group>";
 		};
+		B27B8549180E6BDB004D0DC9 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				B27B854A180E6C15004D0DC9 /* HLLTracker.h */,
+				B27B854B180E6C15004D0DC9 /* HLLTracker.m */,
+			);
+			name = Tracker;
+			sourceTree = "<group>";
+		};
 		B2858B91180D113D00F8E105 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +723,7 @@
 				B2BC0FCD17EEECA40071036D /* HLLAppDelegate.h */,
 				B2BC0FCE17EEECA40071036D /* HLLAppDelegate.m */,
 				B22A48FE17FC500700DDE92E /* Resource */,
+				B27B8549180E6BDB004D0DC9 /* Tracker */,
 				B292A73F18067901004225B5 /* Component */,
 				B29AB58617FEF00B007D884E /* Data */,
 				B243927017F00D57002FD388 /* Frame */,
@@ -954,6 +967,7 @@
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
 				B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */,
+				B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */,
 				B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */,
 				B292A7381806480E004225B5 /* HLLProductFilterViewController.m in Sources */,
 				B2BC0FCB17EEECA40071036D /* main.m in Sources */,

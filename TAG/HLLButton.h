@@ -11,6 +11,7 @@
 @interface HLLButton : UIButton
 
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) id information;
 
 - (void)initialize;
 

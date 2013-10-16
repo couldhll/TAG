@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[HLLProductFilterViewController filterButtonPressed:]:HLLProductFilterViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "button.information">
+            </PersistentString>
+            <PersistentString
+               value = "button.selected">
+            </PersistentString>
+            <PersistentString
+               value = "[filterArray count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "__58-[HLLUserLoginViewController sinaWeiboLoginButtonPressed:]_block_invoke:HLLUserLoginViewController.m">
          <PersistentStrings>
             <PersistentString

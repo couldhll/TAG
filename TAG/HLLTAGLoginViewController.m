@@ -16,9 +16,6 @@
 
 @implementation HLLTAGLoginViewController
 
-@synthesize userNameTextField;
-@synthesize userPasswordTextField;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -43,11 +40,11 @@
     [super viewDidLoad];
     
     // textfield set font
-    [userNameTextField setFont:[UIFont fontWithName:@"Helvetica" size:19]];
-    [userNameTextField setTextColor:HexRGB(0x194D9D)];
+    [self.userNameTextField setFont:[UIFont fontWithName:@"Helvetica" size:19]];
+    [self.userNameTextField setTextColor:HexRGB(0x194D9D)];
     
     // show the keyboard
-    [userNameTextField becomeFirstResponder];
+    [self.userNameTextField becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -135,8 +132,8 @@
 
 - (IBAction)backgroundPressed:(id)sender
 {
-    [userNameTextField resignFirstResponder];
-    [userPasswordTextField resignFirstResponder];
+    [self.userNameTextField resignFirstResponder];
+    [self.userPasswordTextField resignFirstResponder];
 }
 
 - (IBAction)textFieldDoneEditing:(id)sender
