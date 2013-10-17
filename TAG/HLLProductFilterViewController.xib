@@ -18,6 +18,8 @@
                 <outlet property="menButton" destination="o21-ca-cTW" id="e6j-an-LQ5"/>
                 <outlet property="saleButton" destination="AMi-pt-sXF" id="y3W-az-jRm"/>
                 <outlet property="searchButton" destination="6cl-Bp-tvZ" id="p1a-hI-8q4"/>
+                <outlet property="searchTextField" destination="HUg-j7-rHB" id="ElB-Oc-6HU"/>
+                <outlet property="toButton" destination="otS-nc-SWi" id="SYj-uQ-Wk2"/>
                 <outlet property="toonButton" destination="dEA-Bh-NG8" id="lnP-zq-IVS"/>
                 <outlet property="view" destination="1" id="3"/>
                 <outlet property="womenButton" destination="067-Gm-GPp" id="XaH-ou-NK2"/>
@@ -35,7 +37,7 @@
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uy3-F6-nBs">
                             <rect key="frame" x="61" y="2" width="82" height="38"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="26"/>
                             <color key="textColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -46,7 +48,7 @@
                     <rect key="frame" x="65" y="378" width="237" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.99607849120000003" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="ADD FILTER">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,7 +61,7 @@
                     <rect key="frame" x="65" y="107" width="237" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="CROWD SOURCE (CS)">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -73,7 +75,7 @@
                     <rect key="frame" x="65" y="137" width="237" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="ITEMS AVAILABLE NOW">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -87,7 +89,7 @@
                     <rect key="frame" x="65" y="180" width="113" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="WOMEN">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -101,7 +103,7 @@
                     <rect key="frame" x="189" y="180" width="113" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="MEN">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -115,7 +117,7 @@
                     <rect key="frame" x="65" y="216" width="113" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="KIDS">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -129,7 +131,7 @@
                     <rect key="frame" x="65" y="251" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="$">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -143,7 +145,7 @@
                     <rect key="frame" x="65" y="301" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="COMICS">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -157,7 +159,7 @@
                     <rect key="frame" x="148" y="301" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="TOONS">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -171,7 +173,7 @@
                     <rect key="frame" x="229" y="301" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="FREE">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -185,7 +187,7 @@
                     <rect key="frame" x="147" y="251" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="$$">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -199,7 +201,7 @@
                     <rect key="frame" x="229" y="251" width="73" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="SALE">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -213,7 +215,7 @@
                     <rect key="frame" x="189" y="216" width="113" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="GEEK">
                         <color key="titleColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
@@ -226,7 +228,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w6y-b5-Tqs" customClass="HLLBorderButton">
                     <rect key="frame" x="65" y="426" width="237" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="CLEAR FILTER"/>
                     <connections>
@@ -243,8 +245,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDoneEditing:" destination="-1" eventType="editingDidEndOnExit" id="qqG-G8-4rQ"/>
+                    </connections>
                 </textField>
             </subviews>
             <color key="backgroundColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>

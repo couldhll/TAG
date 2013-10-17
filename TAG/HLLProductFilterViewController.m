@@ -11,6 +11,7 @@
 @interface HLLProductFilterViewController ()
 {
     NSMutableArray *filterArray;
+    NSMutableArray *filterButtonArray;
 }
 
 @end
@@ -38,9 +39,6 @@
 {
     [super viewDidLoad];
     
-    // init filter data
-    filterArray=[NSMutableArray array];
-    
     // init button information
     self.csButton.information=@"csButton";
     self.toButton.information=@"toButton";
@@ -55,8 +53,28 @@
     self.toonButton.information=@"toonButton";
     self.freeButton.information=@"freeButton";
     
-//    self.searchButton.name=@"searchButton";
-//    self.clearButton.name=@"clearButton";
+    // init button array
+    filterButtonArray=[NSMutableArray array];
+    [filterButtonArray addObject:self.csButton];
+    [filterButtonArray addObject:self.toButton];
+    [filterButtonArray addObject:self.womenButton];
+    [filterButtonArray addObject:self.menButton];
+    [filterButtonArray addObject:self.kidButton];
+    [filterButtonArray addObject:self.geekButton];
+    [filterButtonArray addObject:self.cheapButton];
+    [filterButtonArray addObject:self.expensiveButton];
+    [filterButtonArray addObject:self.saleButton];
+    [filterButtonArray addObject:self.comicButton];
+    [filterButtonArray addObject:self.toonButton];
+    [filterButtonArray addObject:self.freeButton];
+    
+    // init filter data
+    filterArray=[NSMutableArray array];
+    
+    // init
+    self.searchTextField.font=[UIFont fontWithName:@"Helvetica" size:18];
+    [self.searchTextField setValue:[UIColor darkGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    
     
     // add search button icon
     UIImage *searchButtonImage=[UIImage imageNamed:@"Resource/Product/List/Filter/arrow_blue_icon.png"];
@@ -115,7 +133,7 @@
     }
     if (button.selected)// add clicked button information if selected
     {
-        ITTAssert(button.information==nil, @"button.information is nil.");
+//        ITTAssert(button.information==nil, @"button.information is nil.");
 //        NSAssert(button.information==nil, @"button.information is nil.");
         [filterArray addObject:button.information];
     }
@@ -123,12 +141,25 @@
 
 - (IBAction)searchButtonPressed:(id)sender
 {
-
+    // close right controller
+    [self.viewDeckController closeRightViewAnimated:YES];
 }
 
 - (IBAction)clearButtonPressed:(id)sender
 {
+    // clear search text
+    self.searchTextField.text=@"";
+    
+    // clear all filter button
+    for (HLLButton *button in filterButtonArray)
+    {
+        [button setSelected:NO];
+    }
+}
 
+- (IBAction)textFieldDoneEditing:(id)sender
+{
+    [sender resignFirstResponder];
 }
 
 @end

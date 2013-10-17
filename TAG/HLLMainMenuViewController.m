@@ -9,8 +9,6 @@
 
 #import "HLLMainMenuViewController.h"
 
-#import "HLLAppDelegate.h"
-
 @interface HLLMainMenuViewController ()
 {
     NSMutableDictionary *buttonNotificationDictionary;
@@ -61,7 +59,7 @@
     [buttonNotificationDictionary setValue:nil forKey:@"userHomeButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"createCSButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"settingButton"];
-//    [buttonNotificationDictionary setValue:@"HLLUserLoginViewController" forKey:@"loginorloginoutButton"];
+    [buttonNotificationDictionary setValue:@"HLLUserLoginViewController" forKey:@"loginorloginoutButton"];
     
     // map with notification and button
     notificationButtonDictionary=[NSMutableDictionary dictionary];
@@ -125,7 +123,16 @@
 
 - (void)selectButton:(NSString *)buttonName
 {
-    if (buttonName)
+    if (!buttonName)
+    {
+        return;
+    }
+    
+    if ([buttonName isEqual:@"loginorloginoutButton"])
+    {
+        [self.loginorloginoutButton setLogined:!self.loginorloginoutButton.logined];
+    }
+    else
     {
         // unselect all button
         for (NSString *name in buttonNotificationDictionary.keyEnumerator)

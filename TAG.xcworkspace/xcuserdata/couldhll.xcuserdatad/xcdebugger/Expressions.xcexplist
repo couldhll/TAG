@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[HLLProductFilterViewController viewDidLoad]:HLLProductFilterViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HLLMainMenuViewController buttonPressed:]:HLLMainMenuViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "button.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[HLLProductFilterViewController filterButtonPressed:]:HLLProductFilterViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -17,6 +28,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[HLLProductListViewController viewWillAppear:]:HLLProductListViewController.m">
+      </ContextState>
+      <ContextState
          contextName = "__58-[HLLUserLoginViewController sinaWeiboLoginButtonPressed:]_block_invoke:HLLUserLoginViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -25,7 +39,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[HLLProductListViewController viewWillAppear:]:HLLProductListViewController.m">
+         contextName = "-[UIFont(HLLFont) setBold:]:UIFont+HLLFont.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.fontDescriptor">
+            </PersistentString>
+            <PersistentString
+               value = "self.familyName">
+            </PersistentString>
+            <PersistentString
+               value = "self.fontName">
+            </PersistentString>
+            <PersistentString
+               value = "self.familyNames">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

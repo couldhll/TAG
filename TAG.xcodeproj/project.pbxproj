@@ -62,6 +62,14 @@
 		B20801D317FE6F710044EA4F /* ShareSDKiPhoneDefaultShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B208019D17FE6F710044EA4F /* ShareSDKiPhoneDefaultShareViewUI.framework */; };
 		B20801D417FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B208019E17FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle */; };
 		B20801D517FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B208019F17FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.framework */; };
+		B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B211156E180FB2CB00254DBA /* HLLTextField.m */; };
+		B2111577180FBBF300254DBA /* UIFont+HLLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111576180FBBF300254DBA /* UIFont+HLLFont.m */; };
+		B2111580180FC99100254DBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BC0FE017EEECA50071036D /* XCTest.framework */; };
+		B2111581180FC99100254DBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BC0FBE17EEECA40071036D /* Foundation.framework */; };
+		B2111582180FC99100254DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BC0FC217EEECA40071036D /* UIKit.framework */; };
+		B2111588180FC99200254DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2111586180FC99200254DBA /* InfoPlist.strings */; };
+		B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111589180FC99200254DBA /* TAGLogicTests.m */; };
+		B2111591180FCB0F00254DBA /* UIFont+HLLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111579180FC0D800254DBA /* UIFont+HLLFont.m */; };
 		B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */; };
 		B22A490E17FC534100DDE92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22A491017FC534100DDE92E /* Localizable.strings */; };
 		B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */; };
@@ -118,7 +126,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B2BC0FE417EEECA50071036D /* PBXContainerItemProxy */ = {
+		B211158F180FCA9A00254DBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2BC0FB317EEECA40071036D /* Project object */;
 			proxyType = 1;
@@ -196,6 +204,17 @@
 		B208019D17FE6F710044EA4F /* ShareSDKiPhoneDefaultShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKiPhoneDefaultShareViewUI.framework; sourceTree = "<group>"; };
 		B208019E17FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKiPhoneSimpleShareViewUI.bundle; sourceTree = "<group>"; };
 		B208019F17FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKiPhoneSimpleShareViewUI.framework; sourceTree = "<group>"; };
+		B211156D180FB2CB00254DBA /* HLLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTextField.h; sourceTree = "<group>"; };
+		B211156E180FB2CB00254DBA /* HLLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTextField.m; sourceTree = "<group>"; };
+		B2111575180FBBF300254DBA /* UIFont+HLLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HLLFont.h"; path = "UIFont+HLLFont/UIFont+HLLFont.h"; sourceTree = "<group>"; };
+		B2111576180FBBF300254DBA /* UIFont+HLLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFont.m"; path = "UIFont+HLLFont/UIFont+HLLFont.m"; sourceTree = "<group>"; };
+		B2111578180FBC2000254DBA /* HLLMacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HLLMacroDefinition.h; path = HLLMacroDefinition/HLLMacroDefinition.h; sourceTree = "<group>"; };
+		B2111579180FC0D800254DBA /* UIFont+HLLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFont.m"; path = "../TAGTests/UIFont+HLLFont.m"; sourceTree = "<group>"; };
+		B211157F180FC99100254DBA /* TAGLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2111585180FC99200254DBA /* TAGLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAGLogicTests-Info.plist"; sourceTree = "<group>"; };
+		B2111587180FC99200254DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2111589180FC99200254DBA /* TAGLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGLogicTests.m; sourceTree = "<group>"; };
+		B211158B180FC99200254DBA /* TAGLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAGLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 		B21C3E6C17F5240D0034DCEF /* HLLVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLVideoView.h; sourceTree = "<group>"; };
 		B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLVideoView.m; sourceTree = "<group>"; };
 		B22A48F317FC4EF700DDE92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -231,7 +250,6 @@
 		B2858B93180D117200F8E105 /* HLLLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLLoginButton.m; sourceTree = "<group>"; };
 		B2858B95180D166C00F8E105 /* HLLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLButton.h; sourceTree = "<group>"; };
 		B2858B96180D166C00F8E105 /* HLLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLButton.m; sourceTree = "<group>"; };
-		B292A73318050AF5004225B5 /* HLLMacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HLLMacroDefinition.h; path = TAG/HLLMacroDefinition.h; sourceTree = "<group>"; };
 		B292A7351806480E004225B5 /* HLLProductFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductFilterViewController.h; sourceTree = "<group>"; };
 		B292A7361806480E004225B5 /* HLLProductFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductFilterViewController.m; sourceTree = "<group>"; };
 		B292A7371806480E004225B5 /* HLLProductFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductFilterViewController.xib; sourceTree = "<group>"; };
@@ -288,6 +306,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B211157C180FC99100254DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2111580180FC99100254DBA /* XCTest.framework in Frameworks */,
+				B2111582180FC99100254DBA /* UIKit.framework in Frameworks */,
+				B2111581180FC99100254DBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2BC0FB817EEECA40071036D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,6 +545,44 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		B2111570180FB2D000254DBA /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B211156D180FB2CB00254DBA /* HLLTextField.h */,
+				B211156E180FB2CB00254DBA /* HLLTextField.m */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		B2111571180FBAAC00254DBA /* UIFont+HLLFont */ = {
+			isa = PBXGroup;
+			children = (
+				B2111575180FBBF300254DBA /* UIFont+HLLFont.h */,
+				B2111576180FBBF300254DBA /* UIFont+HLLFont.m */,
+			);
+			name = "UIFont+HLLFont";
+			sourceTree = "<group>";
+		};
+		B2111583180FC99200254DBA /* TAGLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2111589180FC99200254DBA /* TAGLogicTests.m */,
+				B2111579180FC0D800254DBA /* UIFont+HLLFont.m */,
+				B2111584180FC99200254DBA /* Supporting Files */,
+			);
+			path = TAGLogicTests;
+			sourceTree = "<group>";
+		};
+		B2111584180FC99200254DBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2111585180FC99200254DBA /* TAGLogicTests-Info.plist */,
+				B2111586180FC99200254DBA /* InfoPlist.strings */,
+				B211158B180FC99200254DBA /* TAGLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B22A48FE17FC500700DDE92E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +668,7 @@
 		B292A73F18067901004225B5 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
 				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
 				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
@@ -658,7 +725,8 @@
 		B2ADC1F717F18A3A0055F275 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				B292A73318050AF5004225B5 /* HLLMacroDefinition.h */,
+				B2111578180FBC2000254DBA /* HLLMacroDefinition.h */,
+				B2111571180FBAAC00254DBA /* UIFont+HLLFont */,
 				B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */,
 				B208015717FE6F710044EA4F /* ShareSDK_v2.5.1 */,
 			);
@@ -672,6 +740,7 @@
 				B2ADC1F717F18A3A0055F275 /* Library */,
 				B2BC0FC417EEECA40071036D /* TAG */,
 				B2BC0FE617EEECA50071036D /* TAGTests */,
+				B2111583180FC99200254DBA /* TAGLogicTests */,
 				B2BC0FBD17EEECA40071036D /* Frameworks */,
 				B2BC0FBC17EEECA40071036D /* Products */,
 				30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */,
@@ -683,6 +752,7 @@
 			children = (
 				B2BC0FBB17EEECA40071036D /* TAG.app */,
 				B2BC0FDF17EEECA50071036D /* TAGTests.xctest */,
+				B211157F180FC99100254DBA /* TAGLogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -753,9 +823,9 @@
 		B2BC0FE617EEECA50071036D /* TAGTests */ = {
 			isa = PBXGroup;
 			children = (
-				B23D00BB180796AD000259B4 /* HLLAPITests.m */,
 				B2BC0FEC17EEECA50071036D /* TAGTests.m */,
 				B2BC0FE717EEECA50071036D /* Supporting Files */,
+				B23D00BB180796AD000259B4 /* HLLAPITests.m */,
 			);
 			path = TAGTests;
 			sourceTree = "<group>";
@@ -785,6 +855,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B211157E180FC99100254DBA /* TAGLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B211158C180FC99200254DBA /* Build configuration list for PBXNativeTarget "TAGLogicTests" */;
+			buildPhases = (
+				B211157B180FC99100254DBA /* Sources */,
+				B211157C180FC99100254DBA /* Frameworks */,
+				B211157D180FC99100254DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAGLogicTests;
+			productName = TAGLogicTests;
+			productReference = B211157F180FC99100254DBA /* TAGLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B2BC0FBA17EEECA40071036D /* TAG */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2BC0FF017EEECA50071036D /* Build configuration list for PBXNativeTarget "TAG" */;
@@ -816,7 +903,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B2BC0FE517EEECA50071036D /* PBXTargetDependency */,
+				B2111590180FCA9A00254DBA /* PBXTargetDependency */,
 			);
 			name = TAGTests;
 			productName = TAGTests;
@@ -833,6 +920,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = CouldHll;
 				TargetAttributes = {
+					B211157E180FC99100254DBA = {
+						TestTargetID = B2BC0FBA17EEECA40071036D;
+					};
 					B2BC0FBA17EEECA40071036D = {
 						DevelopmentTeam = D5VEAA274K;
 						SystemCapabilities = {
@@ -862,11 +952,20 @@
 			targets = (
 				B2BC0FBA17EEECA40071036D /* TAG */,
 				B2BC0FDE17EEECA50071036D /* TAGTests */,
+				B211157E180FC99100254DBA /* TAGLogicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B211157D180FC99100254DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2111588180FC99200254DBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2BC0FB917EEECA40071036D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -959,6 +1058,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B211157B180FC99100254DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2111591180FCB0F00254DBA /* UIFont+HLLFont.m in Sources */,
+				B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2BC0FB717EEECA40071036D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -979,8 +1087,10 @@
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
+				B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */,
 				B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
+				B2111577180FBBF300254DBA /* UIFont+HLLFont.m in Sources */,
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
@@ -999,10 +1109,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B2BC0FE517EEECA50071036D /* PBXTargetDependency */ = {
+		B2111590180FCA9A00254DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2BC0FBA17EEECA40071036D /* TAG */;
-			targetProxy = B2BC0FE417EEECA50071036D /* PBXContainerItemProxy */;
+			targetProxy = B211158F180FCA9A00254DBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1014,6 +1124,14 @@
 				B208017A17FE6F710044EA4F /* zh-Hans */,
 			);
 			name = ShareSDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		B2111586180FC99200254DBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2111587180FC99200254DBA /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		B22A491017FC534100DDE92E /* Localizable.strings */ = {
@@ -1067,6 +1185,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B211158D180FC99200254DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAGLogicTests/TAGLogicTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B211158E180FC99200254DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAGLogicTests/TAGLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		B2BC0FEE17EEECA50071036D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1219,7 +1381,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/TAG/Resource/** $(SRCROOT)/Resource/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1300,7 +1462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/TAG/Resource/** $(SRCROOT)/Resource/**";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1350,6 +1512,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B211158C180FC99200254DBA /* Build configuration list for PBXNativeTarget "TAGLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B211158D180FC99200254DBA /* Debug */,
+				B211158E180FC99200254DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B2BC0FB617EEECA40071036D /* Build configuration list for PBXProject "TAG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

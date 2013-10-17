@@ -47,8 +47,9 @@
     [titleString setFont:[UIFont fontWithName:@"Helvetica" size:18]];
     [titleString setTextColor:HexRGB(0x174C9C)];
     [titleString setTextBold:YES range:NSMakeRange(0,3)];// "TAG" blod
-    OHAttributedLabel *titleLabel=[[OHAttributedLabel alloc] initWithFrame:CGRectMake(0, 0, 0, 40)];
+    OHAttributedLabel *titleLabel=[[OHAttributedLabel alloc] init];
     titleLabel.attributedText=titleString;
+    [titleLabel sizeToFit];
     self.navigationItem.titleView=titleLabel;
     
 //    [self prefersStatusBarHidden];
@@ -81,6 +82,18 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+}
+
+#pragma mark - view deck
+
+// applies a small, red shadow
+- (void)viewDeckController:(IIViewDeckController *)viewDeckController applyShadow:(CALayer *)shadowLayer withBounds:(CGRect)rect {
+    shadowLayer.masksToBounds = NO;
+    shadowLayer.shadowRadius = 5;
+    shadowLayer.shadowOpacity = 0.9;
+    shadowLayer.shadowColor = [[UIColor redColor] CGColor];
+    shadowLayer.shadowOffset = CGSizeZero;
+    shadowLayer.shadowPath = [[UIBezierPath bezierPathWithRect:rect] CGPath];
 }
 
 #pragma mark - Status bar

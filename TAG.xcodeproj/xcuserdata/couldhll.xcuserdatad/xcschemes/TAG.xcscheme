@@ -38,6 +38,16 @@
                ReferencedContainer = "container:TAG.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B211157E180FC99100254DBA"
+               BuildableName = "TAGLogicTests.xctest"
+               BlueprintName = "TAGLogicTests"
+               ReferencedContainer = "container:TAG.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

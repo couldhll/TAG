@@ -10,6 +10,8 @@
 
 @implementation HLLLoginButton
 
+@synthesize logined;
+
 //- (id)initWithCoder:(NSCoder *)aDecoder
 //{
 //    self = [super initWithCoder:aDecoder];
@@ -32,26 +34,22 @@
 {
     [super initialize];
     
-    //  notification
+    // init data
+    self.logined=NO;
+    
+    // notification
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(changeLoginState:)
                                                  name: NOTIFICATION_CHANGELOGINSTATE
                                                object: nil];
 }
 
-#pragma mark - Login State
+#pragma mark - property
 
-- (void)changeLoginState:(NSNotification *)notification
+- (void)setLogined:(BOOL)isLogined
 {
-    // get login state
-	NSNumber *logined=(NSNumber*)[notification.userInfo valueForKey:@"logined"];
+    logined = isLogined;
     
-    // set select button
-    [self setLogined:[logined boolValue]];
-}
-
-- (void)setLogined:(BOOL)logined
-{
     if (logined)
     {
         [self setTitle:@"Sign Out" forState:UIControlStateNormal];
@@ -60,6 +58,17 @@
     {
         [self setTitle:@"Sign In" forState:UIControlStateNormal];
     }
+}
+
+#pragma mark - login state
+
+- (void)changeLoginState:(NSNotification *)notification
+{
+    // get login state
+	NSNumber *loginState=(NSNumber*)[notification.userInfo valueForKey:@"logined"];
+    
+    // set select button
+    [self setLogined:[loginState boolValue]];
 }
 
 /*

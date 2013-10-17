@@ -10,6 +10,6 @@
 
 @interface HLLLoginButton : HLLBorderButton
 
-- (void)setLogined:(BOOL)logined;
+@property (assign,nonatomic) BOOL logined;
 
 @end

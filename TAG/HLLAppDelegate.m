@@ -16,24 +16,24 @@
 #import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
-#import <GAI.h>
+//#import <GAI.h>
 
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // google tracking
-    // Optional: automatically send uncaught exceptions to Google Analytics.
-    [GAI sharedInstance].trackUncaughtExceptions = YES;
-    
-    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-    [GAI sharedInstance].dispatchInterval = 20;
-    
-    // Optional: set Logger to VERBOSE for debug information.
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-    
-    // Initialize tracker.1
-    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
+//    // google tracking
+//    // Optional: automatically send uncaught exceptions to Google Analytics.
+//    [GAI sharedInstance].trackUncaughtExceptions = YES;
+//    
+//    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+//    [GAI sharedInstance].dispatchInterval = 20;
+//    
+//    // Optional: set Logger to VERBOSE for debug information.
+//    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+//    
+//    // Initialize tracker.1
+//    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
 
     
     // init parse
@@ -55,6 +55,9 @@
     else{
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
     }
+    
+    // set system default
+    [[UILabel appearance] setFont:[UIFont fontWithName:@"Helvetica" size:18.0f]];
     
     // create left and right and center controller
     UIViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];

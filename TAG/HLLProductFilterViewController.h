@@ -10,7 +10,7 @@
 
 @interface HLLProductFilterViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITextField  *keywordTextField;
+@property (strong, nonatomic) IBOutlet UITextField  *searchTextField;
 
 @property (strong, nonatomic) IBOutlet HLLButton  *csButton;
 @property (strong, nonatomic) IBOutlet HLLButton  *toButton;
@@ -31,5 +31,7 @@
 - (IBAction)filterButtonPressed:(id)sender;
 - (IBAction)searchButtonPressed:(id)sender;
 - (IBAction)clearButtonPressed:(id)sender;
+
+- (IBAction)textFieldDoneEditing:(id)sender;
 
 @end

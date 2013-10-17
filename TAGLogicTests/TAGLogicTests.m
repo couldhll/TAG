@@ -1,18 +1,18 @@
 //
-//  TAGTests.m
-//  TAGTests
+//  TAGLogicTests.m
+//  TAGLogicTests
 //
-//  Created by CouldHll on 13-9-22.
+//  Created by CouldHll on 13-10-17.
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TAGTests : XCTestCase
+@interface TAGLogicTests : XCTestCase
 
 @end
 
-@implementation TAGTests
+@implementation TAGLogicTests
 
 - (void)setUp
 {
@@ -28,9 +28,7 @@
 
 - (void)testExample
 {
-    
-//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-    
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
