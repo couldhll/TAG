@@ -153,7 +153,7 @@
                                                        authViewStyle:SSAuthViewStyleModal
                                                         viewDelegate:nil
                                              authManagerViewDelegate:nil];
-    [ShareSDK getUserInfoWithType:ShareTypeQQ
+    [ShareSDK getUserInfoWithType:ShareTypeQQSpace
                       authOptions:authOptions
                            result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
                                if (result)

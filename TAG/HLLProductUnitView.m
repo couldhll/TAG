@@ -12,25 +12,42 @@
 
 @implementation HLLProductUnitView
 
+@synthesize productType;
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        self.backgroundColor = [UIColor redColor];
-//        self.layer.masksToBounds = NO;
-//        self.layer.cornerRadius = 8;
-        
-        // image view
-        imageView = [[UIImageView alloc] init];
-        imageView.frame=self.frame;
-        [self addSubview:imageView];
-        
-//    // image view
-//    imageView = [[UIImageView alloc] initWithImage:image];
-//    imageView.frame=self.frame;
-//    [self addSubview:imageView];
+        [self initialize];
     }
     return self;
+}
+
+- (void)initialize
+{
+    // background
+    self.backgroundColor = [UIColor clearColor];
+//        self.layer.masksToBounds = NO;
+//        self.layer.cornerRadius = 8;
+    
+    // product image view
+    self.productImageView = [[UIImageView alloc] init];
+    self.productImageView.frame=self.frame;
+    [self addSubview:self.productImageView];
+    
+    // product image view
+    self.typeImageView = [[UIImageView alloc] init];
+    self.typeImageView.frame=self.frame;
+    [self addSubview:self.typeImageView];
 }
 
 - (void)loadImage:(NSString*)url
@@ -42,7 +59,33 @@
 //    [imageView setImage:image];
     
     // use normal UIImageView+WebCache
-    [imageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/List/loading_picture.png"]];
+    [self.productImageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/List/loading_picture.png"]];
+}
+
+- (void)setProductType:(HLLProductType)nowProductType
+{
+    productType=nowProductType;
+    
+    UIImage *image;
+    
+    switch (nowProductType)
+    {
+        case HLLProductTypeNone:
+            image = [[UIImage alloc] init];
+        case HLLProductTypeCS:
+            image = [UIImage imageNamed:@"Resource/Product/List/type_cs_icon.png"];
+            break;
+        case HLLProductTypeFree:
+            image = [UIImage imageNamed:@"Resource/Product/List/type_free_icon.png"];
+            break;
+        case HLLProductTypeSale:
+            image = [UIImage imageNamed:@"Resource/Product/List/type_sale_icon.png"];
+            break;
+        default:
+            break;
+    }
+    
+    [self.typeImageView setImage:image];
 }
 
 /*

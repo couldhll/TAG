@@ -113,11 +113,6 @@
     [_gmGridView addInfiniteScrollingWithActionHandler:^{// setup infinite scrolling
         [self InfiniteScrolling];
     }];
-    
-    // test
-    UIFont *font=[UIFont systemFontOfSize:[UIFont systemFontSize]];
-    
-//    [font setBold:YES];
 }
 
 - (void)viewDidUnload
@@ -209,7 +204,9 @@
         cell.contentView = unitView;
     }
     
-    [(HLLProductUnitView *)cell.contentView loadImage:@"http://test.tagoriginals.com/images/TAG-Appshouye_05.jpg"];
+    HLLProductUnitView *productUnitView=(HLLProductUnitView *)cell.contentView;
+    [productUnitView loadImage:@"http://test.tagoriginals.com/images/TAG-Appshouye_05.jpg"];
+    [productUnitView setProductType:HLLProductTypeCS];
     
 //    [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     

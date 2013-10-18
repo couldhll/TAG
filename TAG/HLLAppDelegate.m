@@ -56,9 +56,6 @@
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
     }
     
-    // set system default
-    [[UILabel appearance] setFont:[UIFont fontWithName:@"Helvetica" size:18.0f]];
-    
     // create left and right and center controller
     UIViewController* leftController = [[HLLMainMenuViewController alloc] initWithNibName:@"HLLMainMenuViewController" bundle:nil];
 //    UIViewController *centerController = [[HLLProductListViewController alloc] initWithNibName:@"HLLProductListViewController" bundle:nil];

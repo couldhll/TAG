@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HLLProductUnitView : UIView
-{
-    UIImageView *imageView;
-}
+
+@property (strong, nonatomic) UIImageView *productImageView;
+@property (strong, nonatomic) UIImageView *typeImageView;
+
+@property (assign, nonatomic) HLLProductType productType;
 
 - (void)loadImage:(NSString*)url;
 

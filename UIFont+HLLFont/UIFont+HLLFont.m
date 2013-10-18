@@ -8,20 +8,25 @@
 
 #import "UIFont+HLLFont.h"
 
-#define UIFONT_BOLD @"Bold"
-#define UIFONT_ITALIC @"Italic"
-#define UIFONT_LIGHT @"Light"
-#define UIFONT_OBLIQUE @"Oblique"
-
 @implementation UIFont (HLLFont)
 
-+ (UIFont*)boldFont:(UIFont*)font
++ (UIFont*)fontWithFont:(UIFont*)font style:(NSString*)style
 {
     NSString *fontName=font.fontName;
-    NSRange startRange=[fontName rangeOfString:@"."];
-    NSRange endRange=[fontName rangeOfString:@"Interface"];
-    fontName = [fontName substringWithRange:NSMakeRange(startRange.location+1, endRange.location)];
-    fontName=[fontName stringByAppendingString:UIFONT_BOLD];
+    
+    // remove "." and "Interface"
+    fontName=[fontName stringByReplacingOccurrencesOfString:@"." withString:@""];
+    fontName=[fontName stringByReplacingOccurrencesOfString:@"Interface" withString:@""];
+    
+    // remove "-xxx"
+    NSRange styleRang=[fontName rangeOfString:@"-"];
+    if(styleRang.location!=0&&styleRang.length!=0)
+    {
+        fontName = [fontName substringWithRange:NSMakeRange(0, styleRang.location)];
+    }
+    
+    // add style
+    fontName=[fontName stringByAppendingString:[@"-" stringByAppendingString:style]];
     
     return [UIFont fontWithName:fontName size:font.pointSize];
 }

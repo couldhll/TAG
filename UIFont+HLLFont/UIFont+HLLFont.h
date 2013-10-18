@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#define UIFONT_BOLD @"Bold"
+#define UIFONT_ITALIC @"Italic"
+#define UIFONT_LIGHT @"Light"
+#define UIFONT_OBLIQUE @"Oblique"
+
 @interface UIFont (HLLFont)
 
-+ (UIFont*)boldFont:(UIFont*)font;
++ (UIFont*)fontWithFont:(UIFont*)font style:(NSString*)style;
 
 @end

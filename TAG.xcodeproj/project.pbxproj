@@ -920,9 +920,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = CouldHll;
 				TargetAttributes = {
-					B211157E180FC99100254DBA = {
-						TestTargetID = B2BC0FBA17EEECA40071036D;
-					};
 					B2BC0FBA17EEECA40071036D = {
 						DevelopmentTeam = D5VEAA274K;
 						SystemCapabilities = {
@@ -1189,7 +1186,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1204,7 +1200,6 @@
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -1213,7 +1208,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1224,7 +1218,6 @@
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -1317,15 +1310,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Connection,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Core,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/GooglePlusSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/Pinterest.embeddedframework,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/RenRenSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/UI,
-					/Users/couldhll/Desktop/TAG/trunk/TAG,
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Connection",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Core",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/GooglePlusSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/Pinterest.embeddedframework",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/RenRenSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/UI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAG/TAG-Prefix.pch";
@@ -1337,9 +1329,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO,
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1380,7 +1372,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1398,15 +1390,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Connection,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Core,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/GooglePlusSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/Pinterest.embeddedframework,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/RenRenSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/UI,
-					/Users/couldhll/Desktop/TAG/trunk/TAG,
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Connection",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Core",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/GooglePlusSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/Pinterest.embeddedframework",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/RenRenSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/UI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAG/TAG-Prefix.pch";
@@ -1418,9 +1409,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport,
-					/Users/couldhll/Desktop/TAG/trunk/TAG/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO,
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport",
+					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1461,7 +1452,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1519,6 +1510,7 @@
 				B211158E180FC99200254DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2BC0FB617EEECA40071036D /* Build configuration list for PBXProject "TAG" */ = {
 			isa = XCConfigurationList;

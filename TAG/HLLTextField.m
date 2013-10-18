@@ -33,15 +33,18 @@
     
 }
 
-- (void)drawPlaceholderInRect:(CGRect)rect
-{
-    [super drawPlaceholderInRect:rect];
-    
-    UIFont *font=[UIFont systemFontOfSize:18];
-    
-//    UIFont *myFont = ];
-//    [self.placeholder drawInRect:rect withFont:[UIFont fontWithName:@"Helvetica-BoldOblique" size:[UIFont systemFontSize]];
-}
+//- (void)drawPlaceholderInRect:(CGRect)rect
+//{
+//    // color
+////    [self setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
+//    
+//    // font
+//    UIFont *font=self.font;
+//    font=[UIFont fontWithFont:font style:[UIFONT_LIGHT stringByAppendingString:UIFONT_OBLIQUE]];
+//    
+//    // draw
+//    [self.placeholder drawInRect:rect withFont:font];
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

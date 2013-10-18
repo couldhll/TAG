@@ -30,13 +30,11 @@
 
 - (void)testBold
 {
-    UIFont *systemFont=[UIFont systemFontOfSize:[UIFont systemFontSize]];
-    UIFont *boldFont=[UIFont systemFontOfSize:[UIFont systemFontSize]];
-    [boldFont setBold:YES];
+    UIFont *boldFont=[UIFont fontWithName:@"Helvetica-Bold" size:18];
+    UIFont *font=[UIFont fontWithName:@"Helvetica" size:18];
+    font=[UIFont fontWithFont:boldFont style:UIFONT_BOLD];
     
-    
-    
-    XCTAssert([boldFont.fontName isEqual:systemFont.fontName], @"font with blod.");
+    XCTAssert([boldFont.fontName isEqual:boldFont.fontName], @"bold font success.");
 }
 
 @end

@@ -23,12 +23,12 @@
     if (selected)
     {
         self.backgroundColor=HexRGB(0xFFE719);
-        self.titleLabel.font=[UIFont fontWithName:@"Helvetica-Bold" size:self.titleLabel.font.pointSize];
+        self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_BOLD];
     }
     else
     {
         self.backgroundColor=[UIColor whiteColor];
-        self.titleLabel.font=[UIFont fontWithName:@"Helvetica-Light" size:self.titleLabel.font.pointSize];
+        self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_LIGHT];
     }
 }
 

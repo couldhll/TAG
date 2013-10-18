@@ -71,11 +71,6 @@
     // init filter data
     filterArray=[NSMutableArray array];
     
-    // init
-    self.searchTextField.font=[UIFont fontWithName:@"Helvetica" size:18];
-    [self.searchTextField setValue:[UIColor darkGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
-    
-    
     // add search button icon
     UIImage *searchButtonImage=[UIImage imageNamed:@"Resource/Product/List/Filter/arrow_blue_icon.png"];
     UIImageView *searchButtonImageView=[[UIImageView alloc] initWithImage:searchButtonImage];
