@@ -6,6 +6,7 @@ pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'SDWebImage', '~> 3.4'
 pod 'MBProgressHUD', '~> 0.8'
 pod 'OHAttributedLabel', '~> 3.5.2'
+pod 'JSONModel', '~> 0.9.3'
 
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.1'
 

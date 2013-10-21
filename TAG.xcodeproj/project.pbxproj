@@ -72,6 +72,8 @@
 		B2111591180FCB0F00254DBA /* UIFont+HLLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111579180FC0D800254DBA /* UIFont+HLLFont.m */; };
 		B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */; };
 		B22A490E17FC534100DDE92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22A491017FC534100DDE92E /* Localizable.strings */; };
+		B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C0251814FD39007A3F5D /* HLLUserModel.m */; };
+		B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */; };
 		B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */; };
 		B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */; };
 		B23D00BC180796AD000259B4 /* HLLAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00BB180796AD000259B4 /* HLLAPITests.m */; };
@@ -227,6 +229,10 @@
 		B22A490F17FC534100DDE92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B22A491117FC534500DDE92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B22A491217FC534500DDE92E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B230C0241814FD39007A3F5D /* HLLUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserModel.h; sourceTree = "<group>"; };
+		B230C0251814FD39007A3F5D /* HLLUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserModel.m; sourceTree = "<group>"; };
+		B230C028181514C4007A3F5D /* HLLThirdAuthorizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLThirdAuthorizationModel.h; sourceTree = "<group>"; };
+		B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLThirdAuthorizationModel.m; sourceTree = "<group>"; };
 		B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductDetailViewController.xib; sourceTree = "<group>"; };
 		B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTAGLoginViewController.xib; sourceTree = "<group>"; };
 		B23D00BB180796AD000259B4 /* HLLAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLAPITests.m; sourceTree = "<group>"; };
@@ -591,6 +597,25 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		B230C0231814FC89007A3F5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B230C0271814FED9007A3F5D /* User */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B230C0271814FED9007A3F5D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B230C0241814FD39007A3F5D /* HLLUserModel.h */,
+				B230C0251814FD39007A3F5D /* HLLUserModel.m */,
+				B230C028181514C4007A3F5D /* HLLThirdAuthorizationModel.h */,
+				B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		B23D00BE1807BE6C000259B4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +714,7 @@
 		B29AB58617FEF00B007D884E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B230C0231814FC89007A3F5D /* Model */,
 				B29AB58317FEF003007D884E /* HLLAPI.h */,
 				B29AB58417FEF003007D884E /* HLLAPI.m */,
 			);
@@ -1082,9 +1108,11 @@
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
 				B29AB58517FEF003007D884E /* HLLAPI.m in Sources */,
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
+				B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
 				B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */,
+				B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */,
 				B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
 				B2111577180FBBF300254DBA /* UIFont+HLLFont.m in Sources */,

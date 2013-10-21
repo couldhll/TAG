@@ -39,9 +39,13 @@
 {
     [super viewDidLoad];
     
-    // textfield set font
-    [self.userNameTextField setFont:[UIFont fontWithName:@"Helvetica" size:19]];
-    [self.userNameTextField setTextColor:HexRGB(0x194D9D)];
+    // textfield
+    self.userNameTextField.returnKeyType = UIReturnKeyNext;
+    self.userNameTextField.clearsOnBeginEditing = YES;
+    self.userNameTextField.delegate=self;
+    self.userPasswordTextField.returnKeyType = UIReturnKeyGo;
+    self.userPasswordTextField.clearsOnBeginEditing = YES;
+    self.userPasswordTextField.delegate=self;
     
     // show the keyboard
     [self.userNameTextField becomeFirstResponder];
@@ -139,6 +143,28 @@
 - (IBAction)textFieldDoneEditing:(id)sender
 {
     [sender resignFirstResponder];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	switch (textField.returnKeyType)
+    {
+		case UIReturnKeyNext:
+//            UIResponder *nextResponder = [self.userPasswordTextField nextResponder];
+//            if (nextResponder)
+//            {
+                [self.userPasswordTextField becomeFirstResponder];
+//            }
+			break;
+		case UIReturnKeyGo:
+			[textField resignFirstResponder];
+			[self loginButtonPressed:nil];
+			break;
+		default:
+			break;
+	}
+	return YES;
 }
 
 @end
