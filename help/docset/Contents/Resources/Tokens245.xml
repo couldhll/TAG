@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSEverNoteUserAttributes.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteUserAttributes</TokenIdentifier>
+			<Abstract type="html">	@brief  用户属性信息</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>
+			
+			<NodeRef refid="245"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setDefaultLocationName:</TokenIdentifier>
+			<Abstract type="html">	@brief	he location string that should be associated with the user in order to
+determine where notes are taken if not otherwise specified.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *defaultLocationName</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLocationName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/defaultLocationName</TokenIdentifier>
+			<Abstract type="html">	@brief	he location string that should be associated with the user in order to
+determine where notes are taken if not otherwise specified.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *defaultLocationName</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLocationName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setDefaultLatitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the latitude that should be assigned to any notes that have no other latitude information.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double defaultLatitude</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLatitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/defaultLatitude</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the latitude that should be assigned to any notes that have no other latitude information.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double defaultLatitude</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLatitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setDefaultLongitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the longitude that should be assigned to any notes that have no other longitude information.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double defaultLongitude</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLongitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/defaultLongitude</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the longitude that should be assigned to any notes that have no other longitude information.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double defaultLongitude</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLongitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setPreactivation:</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, the user account is not yet confirmed for login. I.e. 
+the account has been created, but we are still waiting for the user to complete the activation step.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL preactivation</Declaration>
+			
+			
+			<Anchor>//api/name/preactivation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/preactivation</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, the user account is not yet confirmed for login. I.e. 
+the account has been created, but we are still waiting for the user to complete the activation step.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL preactivation</Declaration>
+			
+			
+			<Anchor>//api/name/preactivation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setViewedPromotions:</TokenIdentifier>
+			<Abstract type="html">	@brief	a list of promotions the user has seen. 
+This list may occasionally be modified by the system when promotions are no longer available.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *viewedPromotions</Declaration>
+			
+			
+			<Anchor>//api/name/viewedPromotions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/viewedPromotions</TokenIdentifier>
+			<Abstract type="html">	@brief	a list of promotions the user has seen. 
+This list may occasionally be modified by the system when promotions are no longer available.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *viewedPromotions</Declaration>
+			
+			
+			<Anchor>//api/name/viewedPromotions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setIncomingEmailAddress:</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the email address that the user may send email to in order 
+to add an email note directly into the account via the SMTP email gateway.
+This is the part of the email address before the &apos;@&apos; symbol ... our domain is not included.
+If this is not set, the user may not add notes via the gateway.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *incomingEmailAddress</Declaration>
+			
+			
+			<Anchor>//api/name/incomingEmailAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/incomingEmailAddress</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this is the email address that the user may send email to in order 
+to add an email note directly into the account via the SMTP email gateway.
+This is the part of the email address before the &apos;@&apos; symbol ... our domain is not included.
+If this is not set, the user may not add notes via the gateway.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *incomingEmailAddress</Declaration>
+			
+			
+			<Anchor>//api/name/incomingEmailAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setRecentMailedAddresses:</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this will contain a list of email addresses that have recently 
+been used as recipients of outbound emails by the user.
+This can be used to pre-populate a list of possible destinations when a user wishes to send a note via email.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *recentMailedAddresses</Declaration>
+			
+			
+			<Anchor>//api/name/recentMailedAddresses</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/recentMailedAddresses</TokenIdentifier>
+			<Abstract type="html">	@brief	if set, this will contain a list of email addresses that have recently 
+been used as recipients of outbound emails by the user.
+This can be used to pre-populate a list of possible destinations when a user wishes to send a note via email.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *recentMailedAddresses</Declaration>
+			
+			
+			<Anchor>//api/name/recentMailedAddresses</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setComments:</TokenIdentifier>
+			<Abstract type="html">	@brief	Free-form text field that may hold general support information, etc.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *comments</Declaration>
+			
+			
+			<Anchor>//api/name/comments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/comments</TokenIdentifier>
+			<Abstract type="html">	@brief	Free-form text field that may hold general support information, etc.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *comments</Declaration>
+			
+			
+			<Anchor>//api/name/comments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setDateAgreedToTermsOfService:</TokenIdentifier>
+			<Abstract type="html">	@brief	The date/time when the user agreed to the terms of service. 
+This can be used as the effective &quot;start date&quot; for the account.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long dateAgreedToTermsOfService</Declaration>
+			
+			
+			<Anchor>//api/name/dateAgreedToTermsOfService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/dateAgreedToTermsOfService</TokenIdentifier>
+			<Abstract type="html">	@brief	The date/time when the user agreed to the terms of service. 
+This can be used as the effective &quot;start date&quot; for the account.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long dateAgreedToTermsOfService</Declaration>
+			
+			
+			<Anchor>//api/name/dateAgreedToTermsOfService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setMaxReferrals:</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of referrals that the user is permitted to make.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long maxReferrals</Declaration>
+			
+			
+			<Anchor>//api/name/maxReferrals</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/maxReferrals</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of referrals that the user is permitted to make.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long maxReferrals</Declaration>
+			
+			
+			<Anchor>//api/name/maxReferrals</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setReferralCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of referrals sent from this account.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long referralCount</Declaration>
+			
+			
+			<Anchor>//api/name/referralCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/referralCount</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of referrals sent from this account.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long referralCount</Declaration>
+			
+			
+			<Anchor>//api/name/referralCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setRefererCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	A code indicating where the user was sent from. AKA promotion code</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refererCode</Declaration>
+			
+			
+			<Anchor>//api/name/refererCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/refererCode</TokenIdentifier>
+			<Abstract type="html">	@brief	A code indicating where the user was sent from. AKA promotion code</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refererCode</Declaration>
+			
+			
+			<Anchor>//api/name/refererCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setSentEmailDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	The most recent date when the user sent outbound emails from the service. 
+Used with sentEmailCount to limit the number of emails that can be sent per day.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sentEmailDate</Declaration>
+			
+			
+			<Anchor>//api/name/sentEmailDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/sentEmailDate</TokenIdentifier>
+			<Abstract type="html">	@brief	The most recent date when the user sent outbound emails from the service. 
+Used with sentEmailCount to limit the number of emails that can be sent per day.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sentEmailDate</Declaration>
+			
+			
+			<Anchor>//api/name/sentEmailDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setSentEmailCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of emails that were sent from the user via the service on sentEmailDate.
+Used to enforce a limit on the number of emails per user per day to prevent spamming.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long sentEmailCount</Declaration>
+			
+			
+			<Anchor>//api/name/sentEmailCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/sentEmailCount</TokenIdentifier>
+			<Abstract type="html">	@brief	The number of emails that were sent from the user via the service on sentEmailDate.
+Used to enforce a limit on the number of emails per user per day to prevent spamming.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long sentEmailCount</Declaration>
+			
+			
+			<Anchor>//api/name/sentEmailCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setDailyEmailLimit:</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the maximum number of emails that may be sent in a given day from this account. 
+If unset, the server will use the configured default limit.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long dailyEmailLimit</Declaration>
+			
+			
+			<Anchor>//api/name/dailyEmailLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/dailyEmailLimit</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the maximum number of emails that may be sent in a given day from this account. 
+If unset, the server will use the configured default limit.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long dailyEmailLimit</Declaration>
+			
+			
+			<Anchor>//api/name/dailyEmailLimit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setEmailOptOutDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the date when the user asked to be excluded from offers and promotions sent by Evernote. 
+If not set, then the user currently agrees to receive these messages.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long emailOptOutDate</Declaration>
+			
+			
+			<Anchor>//api/name/emailOptOutDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/emailOptOutDate</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the date when the user asked to be excluded from offers and promotions sent by Evernote. 
+If not set, then the user currently agrees to receive these messages.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long emailOptOutDate</Declaration>
+			
+			
+			<Anchor>//api/name/emailOptOutDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setPartnerEmailOptInDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the date when the user asked to be included in offers and promotions sent by Evernote&apos;s partners. 
+If not sent, then the user currently does not agree to receive these emails.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long partnerEmailOptInDate</Declaration>
+			
+			
+			<Anchor>//api/name/partnerEmailOptInDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/partnerEmailOptInDate</TokenIdentifier>
+			<Abstract type="html">	@brief	If set, this is the date when the user asked to be included in offers and promotions sent by Evernote&apos;s partners. 
+If not sent, then the user currently does not agree to receive these emails.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long partnerEmailOptInDate</Declaration>
+			
+			
+			<Anchor>//api/name/partnerEmailOptInDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setPreferredLanguage:</TokenIdentifier>
+			<Abstract type="html">	@brief	a 2 character language codes based on: http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt 
+used for localization purposes to determine what language to use for the web interface and for other
+direct communication (e.g. emails).</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *preferredLanguage</Declaration>
+			
+			
+			<Anchor>//api/name/preferredLanguage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/preferredLanguage</TokenIdentifier>
+			<Abstract type="html">	@brief	a 2 character language codes based on: http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt 
+used for localization purposes to determine what language to use for the web interface and for other
+direct communication (e.g. emails).</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *preferredLanguage</Declaration>
+			
+			
+			<Anchor>//api/name/preferredLanguage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setPreferredCountry:</TokenIdentifier>
+			<Abstract type="html">	@brief	Preferred country code based on ISO 3166-1-alpha-2 indicating the users preferred country</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *preferredCountry</Declaration>
+			
+			
+			<Anchor>//api/name/preferredCountry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/preferredCountry</TokenIdentifier>
+			<Abstract type="html">	@brief	Preferred country code based on ISO 3166-1-alpha-2 indicating the users preferred country</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *preferredCountry</Declaration>
+			
+			
+			<Anchor>//api/name/preferredCountry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setClipFullPage:</TokenIdentifier>
+			<Abstract type="html">	@brief	Boolean flag set to true if the user wants to clip full pages 
+by default when they use the web clipper without a selection.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clipFullPage</Declaration>
+			
+			
+			<Anchor>//api/name/clipFullPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/clipFullPage</TokenIdentifier>
+			<Abstract type="html">	@brief	Boolean flag set to true if the user wants to clip full pages 
+by default when they use the web clipper without a selection.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clipFullPage</Declaration>
+			
+			
+			<Anchor>//api/name/clipFullPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setTwitterUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The username of the account of someone who has chosen to enable Twittering into Evernote.
+This value is subject to change, since users may change their Twitter user name.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *twitterUserName</Declaration>
+			
+			
+			<Anchor>//api/name/twitterUserName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/twitterUserName</TokenIdentifier>
+			<Abstract type="html">	@brief	The username of the account of someone who has chosen to enable Twittering into Evernote.
+This value is subject to change, since users may change their Twitter user name.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *twitterUserName</Declaration>
+			
+			
+			<Anchor>//api/name/twitterUserName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setTwitterId:</TokenIdentifier>
+			<Abstract type="html">	@brief	The unique identifier of the user&apos;s Twitter account if that user has chosen to enable Twittering into Evernote.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *twitterId</Declaration>
+			
+			
+			<Anchor>//api/name/twitterId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/twitterId</TokenIdentifier>
+			<Abstract type="html">	@brief	The unique identifier of the user&apos;s Twitter account if that user has chosen to enable Twittering into Evernote.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *twitterId</Declaration>
+			
+			
+			<Anchor>//api/name/twitterId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setGroupName:</TokenIdentifier>
+			<Abstract type="html">	@brief	A name identifier used to identify a particular set of branding and light customization.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *groupName</Declaration>
+			
+			
+			<Anchor>//api/name/groupName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/groupName</TokenIdentifier>
+			<Abstract type="html">	@brief	A name identifier used to identify a particular set of branding and light customization.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *groupName</Declaration>
+			
+			
+			<Anchor>//api/name/groupName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setRecognitionLanguage:</TokenIdentifier>
+			<Abstract type="html">	@brief	a 2 character language codes based on: http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt 
+If set, this is used to determine the language that should be used when processing images
+and PDF files to find text. If not set, then the &apos;preferredLanguage&apos; will be used.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recognitionLanguage</Declaration>
+			
+			
+			<Anchor>//api/name/recognitionLanguage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/recognitionLanguage</TokenIdentifier>
+			<Abstract type="html">	@brief	a 2 character language codes based on: http://ftp.ics.uci.edu/pub/ietf/http/related/iso639.txt 
+If set, this is used to determine the language that should be used when processing images
+and PDF files to find text. If not set, then the &apos;preferredLanguage&apos; will be used.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recognitionLanguage</Declaration>
+			
+			
+			<Anchor>//api/name/recognitionLanguage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setCustomerProfileId:</TokenIdentifier>
+			<Abstract type="html">	@brief	a numeric identified which provides a linkage between 
+the user record and the direct credit card payment creditcard profile.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long customerProfileId</Declaration>
+			
+			
+			<Anchor>//api/name/customerProfileId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/customerProfileId</TokenIdentifier>
+			<Abstract type="html">	@brief	a numeric identified which provides a linkage between 
+the user record and the direct credit card payment creditcard profile.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long customerProfileId</Declaration>
+			
+			
+			<Anchor>//api/name/customerProfileId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setReferralProof:</TokenIdentifier>
+			<Abstract type="html">	@brief</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *referralProof</Declaration>
+			
+			
+			<Anchor>//api/name/referralProof</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/referralProof</TokenIdentifier>
+			<Abstract type="html">	@brief</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *referralProof</Declaration>
+			
+			
+			<Anchor>//api/name/referralProof</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setEducationalDiscount:</TokenIdentifier>
+			<Abstract type="html">	@brief	</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL educationalDiscount</Declaration>
+			
+			
+			<Anchor>//api/name/educationalDiscount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/educationalDiscount</TokenIdentifier>
+			<Abstract type="html">	@brief	</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL educationalDiscount</Declaration>
+			
+			
+			<Anchor>//api/name/educationalDiscount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setBusinessAddress:</TokenIdentifier>
+			<Abstract type="html">	@brief	A string recording the business address of a Sponsored Account user who has requested invoicing.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *businessAddress</Declaration>
+			
+			
+			<Anchor>//api/name/businessAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/businessAddress</TokenIdentifier>
+			<Abstract type="html">	@brief	A string recording the business address of a Sponsored Account user who has requested invoicing.</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *businessAddress</Declaration>
+			
+			
+			<Anchor>//api/name/businessAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setHideSponsorBilling:</TokenIdentifier>
+			<Abstract type="html">	@brief	A flag indicating whether to hide the billing information on a sponsored account owner&apos;s settings page</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hideSponsorBilling</Declaration>
+			
+			
+			<Anchor>//api/name/hideSponsorBilling</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/hideSponsorBilling</TokenIdentifier>
+			<Abstract type="html">	@brief	A flag indicating whether to hide the billing information on a sponsored account owner&apos;s settings page</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hideSponsorBilling</Declaration>
+			
+			
+			<Anchor>//api/name/hideSponsorBilling</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/setTaxExempt:</TokenIdentifier>
+			<Abstract type="html">	@brief	A flag indicating the user&apos;s sponsored group is exempt from sale tax</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL taxExempt</Declaration>
+			
+			
+			<Anchor>//api/name/taxExempt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUserAttributes/taxExempt</TokenIdentifier>
+			<Abstract type="html">	@brief	A flag indicating the user&apos;s sponsored group is exempt from sale tax</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL taxExempt</Declaration>
+			
+			
+			<Anchor>//api/name/taxExempt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteUserAttributes/userAttributesWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户属性</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteUserAttributes *)userAttributesWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户属性对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userAttributesWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUserAttributes/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据</Abstract>
+			<DeclaredIn>SSEverNoteUserAttributes.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

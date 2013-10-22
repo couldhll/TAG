@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGSinaWeiboRefContentView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGSinaWeiboRefContentView</TokenIdentifier>
+			<Abstract type="html">	@brief	引用内容视图</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboRefContentView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	委托对象</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboRefContentViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboRefContentView/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	委托对象</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboRefContentViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboRefContentView/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	状态信息</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboRefContentView/status</TokenIdentifier>
+			<Abstract type="html">	@brief	状态信息</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboRefContentView/initWithFrame:imageCacheManager:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化引用内容视图</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame imageCacheManager:(CMImageCacheManager *)imageCacheManager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示范围</Abstract>
+				</Parameter><Parameter>
+					<Name>imageCacheManager</Name>
+					<Abstract type="html">图片缓存管理器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">引用内容视图</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:imageCacheManager:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,686 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONAPI Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONAPI Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getWithPath:andParams:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getWithPath:andParams:completion:</option>
+	
+	<option value="//api/name/postWithPath:andParams:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postWithPath:andParams:completion:</option>
+	
+	<option value="//api/name/rpc2WithMethodName:andParams:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ rpc2WithMethodName:andParams:completion:</option>
+	
+	<option value="//api/name/rpcWithMethodName:andArguments:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ rpcWithMethodName:andArguments:completion:</option>
+	
+	<option value="//api/name/setAPIBaseURLWithString:">&nbsp;&nbsp;&nbsp;&nbsp;+ setAPIBaseURLWithString:</option>
+	
+	<option value="//api/name/setContentType:">&nbsp;&nbsp;&nbsp;&nbsp;+ setContentType:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring the API">Configuring the API</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Making GET API requests">Making GET API requests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Making POST API requests">Making POST API requests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_JSON RPC methods">JSON RPC methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_JSON RPC (2.0) request method">JSON RPC (2.0) request method</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getWithPath:andParams:completion:">getWithPath:andParams:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postWithPath:andParams:completion:">postWithPath:andParams:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rpc2WithMethodName:andParams:completion:">rpc2WithMethodName:andParams:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rpcWithMethodName:andArguments:completion:">rpcWithMethodName:andArguments:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAPIBaseURLWithString:">setAPIBaseURLWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setContentType:">setContentType:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONAPI Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONAPI Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONAPI.h<br />JSONAPI.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@discussion Class for working with JSON APIs. It builds upon the <a href="../Classes/JSONHTTPClient.html">JSONHTTPClient</a> class
+and facilitates making requests to the same web host. Also features helper
+method for making calls to a JSON RPC service</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Configuring the API" name="task_Configuring the API"></a>
+						<h3 class="subsubtitle task-title">Configuring the API</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAPIBaseURLWithString:">+&nbsp;setAPIBaseURLWithString:</a></code>
+		<span class="tooltip"><p>Sets the API url</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setContentType:">+&nbsp;setContentType:</a></code>
+		<span class="tooltip"><p>Sets the default content type for the requests/responses</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Making GET API requests" name="task_Making GET API requests"></a>
+						<h3 class="subsubtitle task-title">Making GET API requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getWithPath:andParams:completion:">+&nbsp;getWithPath:andParams:completion:</a></code>
+		<span class="tooltip"><p>Makes an asynchronious GET request to the API</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Making POST API requests" name="task_Making POST API requests"></a>
+						<h3 class="subsubtitle task-title">Making POST API requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postWithPath:andParams:completion:">+&nbsp;postWithPath:andParams:completion:</a></code>
+		<span class="tooltip"><p>Makes a POST request to the API</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="JSON RPC methods" name="task_JSON RPC methods"></a>
+						<h3 class="subsubtitle task-title">JSON RPC methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rpcWithMethodName:andArguments:completion:">+&nbsp;rpcWithMethodName:andArguments:completion:</a></code>
+		<span class="tooltip"><p>Makes an asynchronious JSON RPC request to the API. Read more: <a href="http://www.jsonrpc.org">http://www.jsonrpc.org</a></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="JSON RPC (2.0) request method" name="task_JSON RPC (2.0) request method"></a>
+						<h3 class="subsubtitle task-title">JSON RPC (2.0) request method</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rpc2WithMethodName:andParams:completion:">+&nbsp;rpc2WithMethodName:andParams:completion:</a></code>
+		<span class="tooltip"><p>Makes an asynchronious JSON RPC 2.0 request to the API. Read more: <a href="http://www.jsonrpc.org">http://www.jsonrpc.org</a></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getWithPath:andParams:completion:" title="getWithPath:andParams:completion:"></a>
+	<h3 class="subsubtitle method-title">getWithPath:andParams:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronious GET request to the API</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getWithPath:(NSString *)<em>path</em> andParams:(NSDictionary *)<em>params</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>the URL path to add to the base API URL for this HTTP call</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>the variables to pass to the API</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>a JSONObjectBlock block to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postWithPath:andParams:completion:" title="postWithPath:andParams:completion:"></a>
+	<h3 class="subsubtitle method-title">postWithPath:andParams:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a POST request to the API</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postWithPath:(NSString *)<em>path</em> andParams:(NSDictionary *)<em>params</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>the URL path to add to the base API URL for this HTTP call</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>the variables to pass to the API</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>a JSONObjectBlock block to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rpc2WithMethodName:andParams:completion:" title="rpc2WithMethodName:andParams:completion:"></a>
+	<h3 class="subsubtitle method-title">rpc2WithMethodName:andParams:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronious JSON RPC 2.0 request to the API. Read more: <a href="http://www.jsonrpc.org">http://www.jsonrpc.org</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)rpc2WithMethodName:(NSString *)<em>method</em> andParams:(id)<em>params</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>the HTTP method name; GET or POST only</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>the params to pass to the API &ndash; an NSArray or an NSDictionary,
+depending whether you&rsquo;re using named or unnamed parameters</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rpcWithMethodName:andArguments:completion:" title="rpcWithMethodName:andArguments:completion:"></a>
+	<h3 class="subsubtitle method-title">rpcWithMethodName:andArguments:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronious JSON RPC request to the API. Read more: <a href="http://www.jsonrpc.org">http://www.jsonrpc.org</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)rpcWithMethodName:(NSString *)<em>method</em> andArguments:(NSArray *)<em>args</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>the HTTP method name; GET or POST only</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>args</em></dt>
+			<dd><p>the list of arguments to pass to the API</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAPIBaseURLWithString:" title="setAPIBaseURLWithString:"></a>
+	<h3 class="subsubtitle method-title">setAPIBaseURLWithString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the API url</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setAPIBaseURLWithString:(NSString *)<em>base</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>base</em></dt>
+			<dd><p>the API url as a string</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setContentType:" title="setContentType:"></a>
+	<h3 class="subsubtitle method-title">setContentType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the default content type for the requests/responses</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setContentType:(NSString *)<em>ctype</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ctype</em></dt>
+			<dd><p>The content-type as a string. Some possible types,
+depending on the service: application/json, text/json, x-application/javascript, etc.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

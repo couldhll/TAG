@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	QQ链接器</Abstract>
+			<DeclaredIn>QQConnection.h</DeclaredIn>
+			
+			<NodeRef refid="210"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQConnection/registerApp:appId:qqApiCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册QQ应用</Abstract>
+			<DeclaredIn>QQConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSQQApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account appId:(NSString *)appId qqApiCls:(Class)qqApiCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>appId</Name>
+					<Abstract type="html">应用ID</Abstract>
+				</Parameter><Parameter>
+					<Name>qqApiCls</Name>
+					<Abstract type="html">QQ接口类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:appId:qqApiCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQConnection/registerApp:qzoneAppKey:qqApiInterfaceCls:tencentOAuthCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册QQ应用</Abstract>
+			<DeclaredIn>QQConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSQQApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account qzoneAppKey:(NSString *)qzoneAppKey qqApiInterfaceCls:(Class)qqApiInterfaceCls tencentOAuthCls:(Class)tencentOAuthCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>qzoneAppKey</Name>
+					<Abstract type="html">QQ空间应用ID</Abstract>
+				</Parameter><Parameter>
+					<Name>qqApiInterfaceCls</Name>
+					<Abstract type="html">QQ接口类型</Abstract>
+				</Parameter><Parameter>
+					<Name>tencentOAuthCls</Name>
+					<Abstract type="html">腾讯OAuth类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:qzoneAppKey:qqApiInterfaceCls:tencentOAuthCls:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

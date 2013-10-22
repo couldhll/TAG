@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFFacebookUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFFacebookUtils</TokenIdentifier>
+			<Abstract type="html">Provides utility functions for working with Facebook in a Parse application.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<NodeRef refid="164"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/session</TokenIdentifier>
+			<Abstract type="html">Gets the Facebook session for the current user.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (FBSession *)session</Declaration>
+			
+			
+			<Anchor>//api/name/session</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeWithApplicationId:</TokenIdentifier>
+			<Abstract type="html">Deprecated. Please call [PFFacebookUtils initializeFacebook] instead.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeWithApplicationId:(NSString *)appId</Declaration>
+			
+			
+			<Anchor>//api/name/initializeWithApplicationId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeWithApplicationId:urlSchemeSuffix:</TokenIdentifier>
+			<Abstract type="html">Deprecated. Please call [PFFacebookUtils initializeFacebookWithUrlSchemeSuffix:] instead.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeWithApplicationId:(NSString *)appId urlSchemeSuffix:(NSString *)urlSchemeSuffix</Declaration>
+			
+			
+			<Anchor>//api/name/initializeWithApplicationId:urlSchemeSuffix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeFacebook</TokenIdentifier>
+			<Abstract type="html">Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&apos;s plist file as
+described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeFacebook</Declaration>
+			
+			
+			<Anchor>//api/name/initializeFacebook</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeFacebookWithUrlShemeSuffix:</TokenIdentifier>
+			<Abstract type="html">Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&apos;s plist file as
+described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeFacebookWithUrlShemeSuffix:(NSString *)urlSchemeSuffix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlSchemeSuffix</Name>
+					<Abstract type="html">The URL suffix for this application - used when multiple applications with the same
+Facebook application ID may be on the same device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeFacebookWithUrlShemeSuffix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/isLinkedWithUser:</TokenIdentifier>
+			<Abstract type="html">Whether the user has their account linked to Facebook.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isLinkedWithUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to check for a facebook link. The user must be logged in on this device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">True if the user has their account linked to Facebook.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLinkedWithUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithPermissions:block:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Facebook. This method delegates to the Facebook SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithPermissions:(NSArray *)permissions block:(PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
+the Facebook instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(PFUser user, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithPermissions:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithPermissions:target:selector:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Facebook. This method delegates to the Facebook SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a PFUser. The selector for the callback should look like: (PFUser )user error:(NSError *)error</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithPermissions:(NSArray *)permissions target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
+the Facebook instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithPermissions:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithFacebookId:accessToken:expirationDate:block:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Facebook. Allows you to handle user login to Facebook, then provide authentication
+data to log in (or create, in the case where it is a new user) the PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithFacebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate block:(PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>facebookId</Name>
+					<Abstract type="html">The id of the Facebook user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">The access token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDate</Name>
+					<Abstract type="html">The expiration date for the access token</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(PFUser user, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithFacebookId:accessToken:expirationDate:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithFacebookId:accessToken:expirationDate:target:selector:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Facebook. Allows you to handle user login to Facebook, then provide authentication
+data to log in (or create, in the case where it is a new user) the PFUser.
+The selector for the callback should look like: (PFUser )user error:(NSError )error</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithFacebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>facebookId</Name>
+					<Abstract type="html">The id of the Facebook user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">The access token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDate</Name>
+					<Abstract type="html">The expiration date for the access token</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:</TokenIdentifier>
+			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
+the Facebook instance.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:permissions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:block:</TokenIdentifier>
+			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
+the Facebook instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(BOOL success, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:permissions:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:target:selector:</TokenIdentifier>
+			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the PFUser.
+The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
+the Facebook instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:permissions:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:facebookId:accessToken:expirationDate:block:</TokenIdentifier>
+			<Abstract type="html">Links Facebook to an existing PFUser. Allows you to handle user login to Facebook, then provide authentication
+data to link the account to the PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user facebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>facebookId</Name>
+					<Abstract type="html">The id of the Facebook user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">The access token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDate</Name>
+					<Abstract type="html">The expiration date for the access token</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(BOOL success, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:facebookId:accessToken:expirationDate:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:facebookId:accessToken:expirationDate:target:selector:</TokenIdentifier>
+			<Abstract type="html">Links Facebook to an existing PFUser. Allows you to handle user login to Facebook, then provide authentication
+data to link the account to the PFUser.
+The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user facebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>facebookId</Name>
+					<Abstract type="html">The id of the Facebook user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">The access token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>expirationDate</Name>
+					<Abstract type="html">The expiration date for the access token</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUser:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Facebook account.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUser:error:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Facebook account.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkUser:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/reauthorizeUser:withPublishPermissions:audience:block:</TokenIdentifier>
+			<Abstract type="html">Requests new Facebook publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)reauthorizeUser:(PFUser *)user withPublishPermissions:(NSArray *)permissions audience:(FBSessionDefaultAudience)audience block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to request new permissions for.  The user must be linked to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The new publishing permissions to request.</Abstract>
+				</Parameter><Parameter>
+					<Name>audience</Name>
+					<Abstract type="html">The default audience for publishing permissions to request.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reauthorizeUser:withPublishPermissions:audience:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/reauthorizeUser:withPublishPermissions:audience:target:selector:</TokenIdentifier>
+			<Abstract type="html">Requests new Facebook publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)reauthorizeUser:(PFUser *)user withPublishPermissions:(NSArray *)permissions audience:(FBSessionDefaultAudience)audience target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to request new permissions for.  The user must be linked to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">The new publishing permissions to request.</Abstract>
+				</Parameter><Parameter>
+					<Name>audience</Name>
+					<Abstract type="html">The default audience for publishing permissions to request.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">Handles URLs being opened by your AppDelegate. Invoke and return this from application:handleOpenURL:
+or application:openURL:sourceApplication:annotation in your AppDelegate.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL being opened by your application.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">True if Facebook will handle this URL.</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

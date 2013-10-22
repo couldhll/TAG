@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMHTableViewItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMHTableViewItem</TokenIdentifier>
+			<Abstract type="html">	@brief	水平排版表格列表项视图</Abstract>
+			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableViewItem/setReuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">	@brief	复用标识</Abstract>
+			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableViewItem/reuseIdentifier</TokenIdentifier>
+			<Abstract type="html">	@brief	复用标识</Abstract>
+			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableViewItem/setIndexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	位置索引</Abstract>
+			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSIndexPath *indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/indexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableViewItem/indexPath</TokenIdentifier>
+			<Abstract type="html">	@brief	位置索引</Abstract>
+			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSIndexPath *indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/indexPath</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

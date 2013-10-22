@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGSinaWeiboSubtitleButton.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGSinaWeiboSubtitleButton</TokenIdentifier>
+			<Abstract type="html">	@brief	子标题按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboSubtitleButton.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboSubtitleButton/setSubtitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置子标题</Abstract>
+			<DeclaredIn>AGSinaWeiboSubtitleButton.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSubtitle:(NSString *)label</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>label</Name>
+					<Abstract type="html">标签文本</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSubtitle:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

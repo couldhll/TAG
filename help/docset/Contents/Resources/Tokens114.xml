@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GIKPopoverBackgroundView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GIKPopoverBackgroundView</TokenIdentifier>
+			<Abstract type="html">Image-specific cap insets which specify a 1 point by 1 point area to be stretched. Changing the background images will likely require a different set of insets.</Abstract>
+			<DeclaredIn>GIKPopoverBackgroundView.h</DeclaredIn>
+			
+			<NodeRef refid="114"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

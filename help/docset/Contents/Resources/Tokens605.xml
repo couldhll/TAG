@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GAITracker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GAITracker</TokenIdentifier>
+			<Abstract type="html">Google Analytics tracking interface. Obtain instances of this interface from
+[GAI trackerWithTrackingId:] to track screens, events, transactions, timing,
+and exceptions. The implementation of this interface is thread-safe, and no
+calls are expected to block or take a long time.  All network and disk activity
+will take place in the background.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>
+			
+			<NodeRef refid="605"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAITracker/setName:</TokenIdentifier>
+			<Abstract type="html">Name of this tracker.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GAITracker/name</TokenIdentifier>
+			<Abstract type="html">Name of this tracker.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAITracker/set:value:</TokenIdentifier>
+			<Abstract type="html">Set a tracking parameter.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)set:(NSString *)parameterName value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parameterName</Name>
+					<Abstract type="html">The parameter name.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to set for the parameter. If this is nil, the
+value for the parameter will be cleared.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/set:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAITracker/get:</TokenIdentifier>
+			<Abstract type="html">Get a tracking parameter.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)get:(NSString *)parameterName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parameterName</Name>
+					<Abstract type="html">The parameter name.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The parameter value, or nil if no value for the given parameter is
+set.</Abstract></ReturnValue>
+			<Anchor>//api/name/get:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAITracker/send:</TokenIdentifier>
+			<Abstract type="html">Queue tracking information with the given parameter values.</Abstract>
+			<DeclaredIn>GAITracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)send:(NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">A map from parameter names to parameter values which will be
+set just for this piece of tracking information, or nil for none.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/send:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

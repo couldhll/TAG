@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ICMHTableViewItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ICMHTableViewItem</TokenIdentifier>
+			<Abstract type="html">	@brief	水平排版表格列表项</Abstract>
+			<DeclaredIn>ICMHTableViewItem.h</DeclaredIn>
+			
+			<NodeRef refid="610"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTableViewItem/reuseIdentifier</TokenIdentifier>
+			<Abstract type="html">	@brief	获取复用标识</Abstract>
+			<DeclaredIn>ICMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)reuseIdentifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">复用标识</Abstract></ReturnValue>
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTableViewItem/indexPath</TokenIdentifier>
+			<Abstract type="html">	@brief	获取位置索引</Abstract>
+			<DeclaredIn>ICMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>- (NSIndexPath *)indexPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">位置索引</Abstract></ReturnValue>
+			<Anchor>//api/name/indexPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTableViewItem/setIndexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置位置索引</Abstract>
+			<DeclaredIn>ICMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>- (void)setIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">位置索引</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTableViewItem/initWithReuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据引用标识初始化</Abstract>
+			<DeclaredIn>ICMHTableViewItem.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReuseIdentifier:(NSString *)reuseIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reuseIdentifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithReuseIdentifier:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

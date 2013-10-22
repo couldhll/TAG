@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSKaiXinRecord.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinRecord</TokenIdentifier>
+			<Abstract type="html">	@brief	记录信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>
+			
+			<NodeRef refid="292"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinRecord/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinRecord/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinRecord/setRid:</TokenIdentifier>
+			<Abstract type="html">	@brief	状态ID</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *rid</Declaration>
+			
+			
+			<Anchor>//api/name/rid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinRecord/rid</TokenIdentifier>
+			<Abstract type="html">	@brief	状态ID</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *rid</Declaration>
+			
+			
+			<Anchor>//api/name/rid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinRecord/setCtime:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *ctime</Declaration>
+			
+			
+			<Anchor>//api/name/ctime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinRecord/ctime</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *ctime</Declaration>
+			
+			
+			<Anchor>//api/name/ctime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinRecord/setMain:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSKaiXinMain *main</Declaration>
+			
+			
+			<Anchor>//api/name/main</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinRecord/main</TokenIdentifier>
+			<Abstract type="html">	@brief	内容信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSKaiXinMain *main</Declaration>
+			
+			
+			<Anchor>//api/name/main</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinRecord/setUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSKaiXinUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinRecord/user</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSKaiXinUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSKaiXinRecord/recordWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建记录信息</Abstract>
+			<DeclaredIn>SSKaiXinRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (SSKaiXinRecord *)recordWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">记录信息</Abstract></ReturnValue>
+			<Anchor>//api/name/recordWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

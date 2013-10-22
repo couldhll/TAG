@@ -1,0 +1,1214 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSData(Common) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSData(Common) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dataByUsingHMacSHA1WithKey:">&nbsp;&nbsp;&nbsp;&nbsp;- dataByUsingHMacSHA1WithKey:</option>
+	
+	<option value="//api/name/dataByUsingMD5">&nbsp;&nbsp;&nbsp;&nbsp;- dataByUsingMD5</option>
+	
+	<option value="//api/name/dataUsingAES128DecryptWithKey:iv:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES128DecryptWithKey:iv:encoding:</option>
+	
+	<option value="//api/name/dataUsingAES128DecryptWithKey:iv:options:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES128DecryptWithKey:iv:options:</option>
+	
+	<option value="//api/name/dataUsingAES128EncryptWithKey:iv:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES128EncryptWithKey:iv:encoding:</option>
+	
+	<option value="//api/name/dataUsingAES128EncryptWithKey:iv:options:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES128EncryptWithKey:iv:options:</option>
+	
+	<option value="//api/name/dataUsingAES256DecryptWithKey:iv:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES256DecryptWithKey:iv:encoding:</option>
+	
+	<option value="//api/name/dataUsingAES256DecryptWithKey:iv:options:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES256DecryptWithKey:iv:options:</option>
+	
+	<option value="//api/name/dataUsingAES256EncryptWithKey:iv:encoding:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES256EncryptWithKey:iv:encoding:</option>
+	
+	<option value="//api/name/dataUsingAES256EncryptWithKey:iv:options:">&nbsp;&nbsp;&nbsp;&nbsp;- dataUsingAES256EncryptWithKey:iv:options:</option>
+	
+	<option value="//api/name/gzipData">&nbsp;&nbsp;&nbsp;&nbsp;- gzipData</option>
+	
+	<option value="//api/name/hexString">&nbsp;&nbsp;&nbsp;&nbsp;- hexString</option>
+	
+	<option value="//api/name/stringWithBase64Encode">&nbsp;&nbsp;&nbsp;&nbsp;- stringWithBase64Encode</option>
+	
+	<option value="//api/name/uncompressGZipData">&nbsp;&nbsp;&nbsp;&nbsp;- uncompressGZipData</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataByUsingHMacSHA1WithKey:">dataByUsingHMacSHA1WithKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataByUsingMD5">dataByUsingMD5</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES128DecryptWithKey:iv:encoding:">dataUsingAES128DecryptWithKey:iv:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES128DecryptWithKey:iv:options:">dataUsingAES128DecryptWithKey:iv:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES128EncryptWithKey:iv:encoding:">dataUsingAES128EncryptWithKey:iv:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES128EncryptWithKey:iv:options:">dataUsingAES128EncryptWithKey:iv:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES256DecryptWithKey:iv:encoding:">dataUsingAES256DecryptWithKey:iv:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES256DecryptWithKey:iv:options:">dataUsingAES256DecryptWithKey:iv:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES256EncryptWithKey:iv:encoding:">dataUsingAES256EncryptWithKey:iv:encoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataUsingAES256EncryptWithKey:iv:options:">dataUsingAES256EncryptWithKey:iv:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gzipData">gzipData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hexString">hexString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringWithBase64Encode">stringWithBase64Encode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uncompressGZipData">uncompressGZipData</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSData(Common) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSData(Common) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSData+Common.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataByUsingHMacSHA1WithKey:">&ndash;&nbsp;dataByUsingHMacSHA1WithKey:</a></code>
+		<span class="tooltip"><pre><code>@brief  使用Key进行HMAC-SHA1加密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringWithBase64Encode">&ndash;&nbsp;stringWithBase64Encode</a></code>
+		<span class="tooltip"><pre><code>@brief  使用BASE64编码数据
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hexString">&ndash;&nbsp;hexString</a></code>
+		<span class="tooltip"><pre><code>@brief  获取16进制字符串
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES128EncryptWithKey:iv:encoding:">&ndash;&nbsp;dataUsingAES128EncryptWithKey:iv:encoding:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES128位加密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES128DecryptWithKey:iv:encoding:">&ndash;&nbsp;dataUsingAES128DecryptWithKey:iv:encoding:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES128位解密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES128EncryptWithKey:iv:options:">&ndash;&nbsp;dataUsingAES128EncryptWithKey:iv:options:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES128位加密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES128DecryptWithKey:iv:options:">&ndash;&nbsp;dataUsingAES128DecryptWithKey:iv:options:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES128位解密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES256EncryptWithKey:iv:encoding:">&ndash;&nbsp;dataUsingAES256EncryptWithKey:iv:encoding:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES256位加密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES256DecryptWithKey:iv:encoding:">&ndash;&nbsp;dataUsingAES256DecryptWithKey:iv:encoding:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES256位解密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES256EncryptWithKey:iv:options:">&ndash;&nbsp;dataUsingAES256EncryptWithKey:iv:options:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES256位加密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataUsingAES256DecryptWithKey:iv:options:">&ndash;&nbsp;dataUsingAES256DecryptWithKey:iv:options:</a></code>
+		<span class="tooltip"><pre><code>@brief  AES256位解密
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gzipData">&ndash;&nbsp;gzipData</a></code>
+		<span class="tooltip"><pre><code>@brief  GZip方式压缩数据
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uncompressGZipData">&ndash;&nbsp;uncompressGZipData</a></code>
+		<span class="tooltip"><pre><code>@brief  解压GZip数据
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataByUsingMD5">&ndash;&nbsp;dataByUsingMD5</a></code>
+		<span class="tooltip"><pre><code>@brief  对数据进行MD5散列
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataByUsingHMacSHA1WithKey:" title="dataByUsingHMacSHA1WithKey:"></a>
+	<h3 class="subsubtitle method-title">dataByUsingHMacSHA1WithKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  使用Key进行HMAC-SHA1加密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataByUsingHMacSHA1WithKey:(NSData *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>加密后数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataByUsingMD5" title="dataByUsingMD5"></a>
+	<h3 class="subsubtitle method-title">dataByUsingMD5</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  对数据进行MD5散列
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataByUsingMD5</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>MD5后的数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.10</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES128DecryptWithKey:iv:encoding:" title="dataUsingAES128DecryptWithKey:iv:encoding:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES128DecryptWithKey:iv:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES128位解密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES128DecryptWithKey:(NSString *)<em>key</em> iv:(NSString *)<em>iv</em> encoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>字符编码</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>解密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.6</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES128DecryptWithKey:iv:options:" title="dataUsingAES128DecryptWithKey:iv:options:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES128DecryptWithKey:iv:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES128位解密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES128DecryptWithKey:(NSData *)<em>key</em> iv:(NSData *)<em>iv</em> options:(CCOptions)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>选项</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>解密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.11</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES128EncryptWithKey:iv:encoding:" title="dataUsingAES128EncryptWithKey:iv:encoding:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES128EncryptWithKey:iv:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES128位加密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES128EncryptWithKey:(NSString *)<em>key</em> iv:(NSString *)<em>iv</em> encoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>字符编码</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>加密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.6</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES128EncryptWithKey:iv:options:" title="dataUsingAES128EncryptWithKey:iv:options:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES128EncryptWithKey:iv:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES128位加密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES128EncryptWithKey:(NSData *)<em>key</em> iv:(NSData *)<em>iv</em> options:(CCOptions)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>选项</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>加密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.11</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES256DecryptWithKey:iv:encoding:" title="dataUsingAES256DecryptWithKey:iv:encoding:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES256DecryptWithKey:iv:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES256位解密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES256DecryptWithKey:(NSString *)<em>key</em> iv:(NSString *)<em>iv</em> encoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>字符编码</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>解密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.6</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES256DecryptWithKey:iv:options:" title="dataUsingAES256DecryptWithKey:iv:options:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES256DecryptWithKey:iv:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES256位解密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES256DecryptWithKey:(NSData *)<em>key</em> iv:(NSData *)<em>iv</em> options:(CCOptions)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>选项</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>解密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.11</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES256EncryptWithKey:iv:encoding:" title="dataUsingAES256EncryptWithKey:iv:encoding:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES256EncryptWithKey:iv:encoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES256位加密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES256EncryptWithKey:(NSString *)<em>key</em> iv:(NSString *)<em>iv</em> encoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>字符编码</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>加密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.6</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataUsingAES256EncryptWithKey:iv:options:" title="dataUsingAES256EncryptWithKey:iv:options:"></a>
+	<h3 class="subsubtitle method-title">dataUsingAES256EncryptWithKey:iv:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  AES256位加密
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)dataUsingAES256EncryptWithKey:(NSData *)<em>key</em> iv:(NSData *)<em>iv</em> options:(CCOptions)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>密钥</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iv</em></dt>
+			<dd><p>初始向量,允许为nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>选项</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>加密后数据</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.0.11</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gzipData" title="gzipData"></a>
+	<h3 class="subsubtitle method-title">gzipData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  GZip方式压缩数据
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)gzipData</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>压缩后数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hexString" title="hexString"></a>
+	<h3 class="subsubtitle method-title">hexString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取16进制字符串
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hexString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>16进制字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringWithBase64Encode" title="stringWithBase64Encode"></a>
+	<h3 class="subsubtitle method-title">stringWithBase64Encode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  使用BASE64编码数据
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringWithBase64Encode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>编码后字符串</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uncompressGZipData" title="uncompressGZipData"></a>
+	<h3 class="subsubtitle method-title">uncompressGZipData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  解压GZip数据
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)uncompressGZipData</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>解压后GZip数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+Common.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

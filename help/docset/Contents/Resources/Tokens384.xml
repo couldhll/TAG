@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ShareSDK.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ShareSDK</TokenIdentifier>
+			<Abstract type="html">	@brief	ShareSDK类，为整个SDK的顶层接口类，所有功能都由此类进行提供（包括分享、授权等等）</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>
+			
+			<NodeRef refid="384"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/registerApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册应用,此方法在应用启动时调用一次并且只能在主线程中调用。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerApp:(NSString *)appKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key,在ShareSDK官网中注册的应用Key</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/registerApp:useAppTrusteeship:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册应用。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerApp:(NSString *)appKey useAppTrusteeship:(BOOL)useAppTrusteeship</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key,在ShareSDK官网中注册的应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>useAppTrusteeship</Name>
+					<Abstract type="html">是否使用平台信息托管，如果为YES则获取在服务器中配置的平台信息，NO表示获取本地配置信息。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerApp:useAppTrusteeship:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/ssoEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	SSO登录方式使能</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)ssoEnabled:(BOOL)ssoEnabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ssoEnabled</Name>
+					<Abstract type="html">YES表示使用SSO方式登录，NO表示不使用SSO方式登录，默认为YES</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ssoEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/convertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	转换URL链接，YES：表示转换链接。NO：表示不转换链接，设置不转换链接后分享内容中的链接将不纳入回流统计中。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)convertUrlEnabled:(BOOL)convertUrlEnabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>convertUrlEnabled</Name>
+					<Abstract type="html">YES表示转换短链，NO表示不转换，默认为YES</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/convertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/setStatPolicy:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置统计策略,在3G环境以下可以通过设置该策略来减少网络请求的流量。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setStatPolicy:(SSCStatPolicy)policy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>policy</Name>
+					<Abstract type="html">统计策略</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setStatPolicy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/statEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置统计的使能状态</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)statEnabled:(BOOL)statEnabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>statEnabled</Name>
+					<Abstract type="html">YES表示使用统计功能，NO表示不使用统计功能</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/statEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/allowExchangeDataEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否允许与服务器交换数据。此为一个开关属性，如果设置为NO则包括统计数据、获取在线App配置信息等一切与服务器交互的操作都不允许调用。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)allowExchangeDataEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES表示允许与服务器进行通讯，NO表示不允许进行通讯</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/allowExchangeDataEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/useAppTrusteeship:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置应用托管模式，当设置为YES时，将使用服务器中配置的App信息来初始化SDK中的分享平台。
+注：当allowExchangeDataEnabled设置为NO时，此项无效。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)useAppTrusteeship:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES表示使用托管应用模式，NO表示不使用托管应用模式。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/useAppTrusteeship:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectSinaWeiboWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接新浪微博开放平台应用以使用相关功能，此应用需要引用SinaWeiboConnection.framework
+http://open.weibo.com上注册新浪微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectSinaWeiboWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址,无回调页面或者不需要返回回调时可以填写新浪默认回调页面：https://api.weibo.com/oauth2/default.html
+但新浪开放平台中应用的回调地址必须填写此值</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectSinaWeiboWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectSinaWeiboWithAppKey:appSecret:redirectUri:weiboSDKCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接新浪微博开放平台应用以使用相关功能，此应用需要引用SinaWeiboConnection.framework
+http://open.weibo.com上注册新浪微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectSinaWeiboWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri weiboSDKCls:(Class)weiboSDKCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址,无回调页面或者不需要返回回调时可以填写新浪默认回调页面：https://api.weibo.com/oauth2/default.html
+但新浪开放平台中应用的回调地址必须填写此值</Abstract>
+				</Parameter><Parameter>
+					<Name>weiboSDKCls</Name>
+					<Abstract type="html">新浪微博SDK类型，应先导入libWeiboSDK.a,再传入[WeiboSDK class]到此参数.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectSinaWeiboWithAppKey:appSecret:redirectUri:weiboSDKCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectTencentWeiboWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接腾讯微博开放平台应用以使用相关功能，此应用需要引用TencentWeiboConnection.framework
+http://dev.t.qq.com上注册腾讯微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectTencentWeiboWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址，此地址则为应用地址。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectTencentWeiboWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectTencentWeiboWithAppKey:appSecret:redirectUri:wbApiCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接腾讯微博开放平台应用以使用相关功能，此应用需要引用TencentWeiboConnection.framework
+http://dev.t.qq.com上注册腾讯微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectTencentWeiboWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri wbApiCls:(Class)wbApiCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址，此地址则为应用地址。</Abstract>
+				</Parameter><Parameter>
+					<Name>wbApiCls</Name>
+					<Abstract type="html">腾讯微博Api类型，引入WBApi.h，并将[WBApi class]传入参数，注：不使用SSO时可以传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectTencentWeiboWithAppKey:appSecret:redirectUri:wbApiCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectQZoneWithAppKey:appSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接QQ空间应用以使用相关功能，此应用需要引用QZoneConnection.framework
+http://connect.qq.com/intro/login/上申请加入QQ登录，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectQZoneWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectQZoneWithAppKey:appSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectQZoneWithAppKey:appSecret:qqApiInterfaceCls:tencentOAuthCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接QQ空间应用以使用相关功能，此应用需要引用QZoneConnection.framework
+http://connect.qq.com/intro/login/上申请加入QQ登录，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectQZoneWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret qqApiInterfaceCls:(Class)qqApiInterfaceCls tencentOAuthCls:(Class)tencentOAuthCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>qqApiInterfaceCls</Name>
+					<Abstract type="html">QQApi接口类型,如果不需要SSO登录可设置为nil</Abstract>
+				</Parameter><Parameter>
+					<Name>tencentOAuthCls</Name>
+					<Abstract type="html">腾讯授权接口类型,如果不需要SSO登录可设置为nil</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectQZoneWithAppKey:appSecret:qqApiInterfaceCls:tencentOAuthCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connect163WeiboWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接网易微博应用以使用相关功能，此应用需要引用T163WeiboConnection.framework
+http://open.t.163.com上注册网易微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connect163WeiboWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connect163WeiboWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectSohuWeiboWithConsumerKey:consumerSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接搜狐微博应用以使用相关功能，此应用需要引用SohuWeiboConnection.framework
+http://open.t.sohu.com上注册搜狐微博开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectSohuWeiboWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectSohuWeiboWithConsumerKey:consumerSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectDoubanWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接豆瓣应用以使用相关功能，此应用需要引用DouBanConnection.framework
+http://developers.douban.com上注册豆瓣社区应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectDoubanWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectDoubanWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectRenRenWithAppKey:appSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接人人网应用以使用相关功能，此应用需要引用RenRenConnection.framework
+http://dev.renren.com上注册人人网开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectRenRenWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectRenRenWithAppKey:appSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectRenRenWithAppId:appKey:appSecret:renrenClientClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接人人网应用，此应用需要引用RenRenConnection.framework</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectRenRenWithAppId:(NSString *)appId appKey:(NSString *)appKey appSecret:(NSString *)appSecret renrenClientClass:(Class)renrenClientClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appId</Name>
+					<Abstract type="html">应用ID</Abstract>
+				</Parameter><Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>renrenClientClass</Name>
+					<Abstract type="html">人人客户端类型,SSO时需要传入此参数。应该先引入RennSDK.framework，然后在此参数中传入[RennClient class]</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectRenRenWithAppId:appKey:appSecret:renrenClientClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectKaiXinWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接开心网应用以使用相关功能，此应用需要引用KaiXinConnection.framework
+http://open.kaixin001.com上注册开心网开放平台应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectKaiXinWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectKaiXinWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectInstapaperWithAppKey:appSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接Instapaper应用以使用相关功能，此应用需要引用InstapaperConnection.framework
+http://www.instapaper.com/main/requestoauthconsumer_token上注册Instapaper应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectInstapaperWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectInstapaperWithAppKey:appSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectYouDaoNoteWithConsumerKey:consumerSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接有道云笔记应用以使用相关功能，此应用需要引用YouDaoNoteConnection.framework
+http://note.youdao.com/open/developguide.html#app上注册应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectYouDaoNoteWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectYouDaoNoteWithConsumerKey:consumerSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectFacebookWithAppKey:appSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接Facebook应用以使用相关功能，此应用需要引用FacebookConnection.framework
+https://developers.facebook.com上注册应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectFacebookWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectFacebookWithAppKey:appSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectTwitterWithConsumerKey:consumerSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接Twitter应用以使用相关功能，此应用需要引用TwitterConnection.framework
+https://dev.twitter.com上注册应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectTwitterWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectTwitterWithConsumerKey:consumerSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectQQWithAppId:qqApiCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接QQ应用以使用相关功能，此应用需要引用QQConnection.framework和QQApi.framework库
+http://mobile.qq.com/api/上注册应用，并将相关信息填写到以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectQQWithAppId:(NSString *)appId qqApiCls:(Class)qqApiCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appId</Name>
+					<Abstract type="html">应用ID</Abstract>
+				</Parameter><Parameter>
+					<Name>qqApiCls</Name>
+					<Abstract type="html">QQApi类型,引入QQApi.h后，将[QQApi class]传入此参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectQQWithAppId:qqApiCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectQQWithQZoneAppKey:qqApiInterfaceCls:tencentOAuthCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接QQ应用以使用相关功能，此应用需要引用QQConnection.framework和TencentOAuthAPI.framework库
+http://connect.qq.com上注册应用，并将相关信息填写到以下字段,
+可以调用此接口来使QQ空间中申请的AppKey用于QQ好友分享</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectQQWithQZoneAppKey:(NSString *)qzoneAppKey qqApiInterfaceCls:(Class)qqApiInterfaceCls tencentOAuthCls:(Class)tencentOAuthCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>qzoneAppKey</Name>
+					<Abstract type="html">QQ空间App标识</Abstract>
+				</Parameter><Parameter>
+					<Name>qqApiInterfaceCls</Name>
+					<Abstract type="html">QQAPI接口类型</Abstract>
+				</Parameter><Parameter>
+					<Name>tencentOAuthCls</Name>
+					<Abstract type="html">腾讯OAuth类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectQQWithQZoneAppKey:qqApiInterfaceCls:tencentOAuthCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectWeChatWithAppId:wechatCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接微信应用以使用相关功能，此应用需要引用WeChatConnection.framework和微信官方SDK
+http://open.weixin.qq.com上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectWeChatWithAppId:(NSString *)appId wechatCls:(Class)wechatCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appId</Name>
+					<Abstract type="html">应用ID</Abstract>
+				</Parameter><Parameter>
+					<Name>wechatCls</Name>
+					<Abstract type="html">微信Api类型，引入WXApi.h后，将[WXApi class]传入此参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectWeChatWithAppId:wechatCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectSohuKanWithAppKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接搜狐随身看应用以使用相关功能，此应用需要引用SohuConnection.framework
+http://open.sohu.com/上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectSohuKanWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectSohuKanWithAppKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectPocketWithConsumerKey:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接Pocket以使用相关功能，此应用需要引用PocketConnection.framework
+http://getpocket.com/developer/上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectPocketWithConsumerKey:(NSString *)consumerKey redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectPocketWithConsumerKey:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectEvernoteWithType:consumerKey:consumerSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接印象笔记以使用相关功能，此应用需要引用EverNoteConnection.framework
+http://dev.yinxiang.com上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectEvernoteWithType:(SSEverNoteType)type consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">应用类型，可以指定是沙箱、印象笔记中国还是Evernote International,注：如果设置了沙箱类型，则需要在发布应用之前把类型改为其他的，否则会导致用户无法正常使用。</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectEvernoteWithType:consumerKey:consumerSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectLinkedInWithApiKey:secretKey:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接LinkedIn以使用相关功能，此平台需要引用LinkedInConnection.framework
+https://www.linkedin.com/secure/developer上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectLinkedInWithApiKey:(NSString *)apiKey secretKey:(NSString *)secretKey redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>apiKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>secretKey</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectLinkedInWithApiKey:secretKey:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectGooglePlusWithClientId:clientSecret:redirectUri:signInCls:shareCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接Google+,此平台需要引用GooglePlusConnection.framework、GoogleOpenSource.frramework、GooglePlus.framework框架
+https://code.google.com/apis/console上注册应用，并将相关信息填写以下字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectGooglePlusWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret redirectUri:(NSString *)redirectUri signInCls:(Class)signInCls shareCls:(Class)shareCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>clientSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter><Parameter>
+					<Name>signInCls</Name>
+					<Abstract type="html">登录授权类型，应先导入GooglePlus.framework,然后在此参数中传入[GPPSignIn class]</Abstract>
+				</Parameter><Parameter>
+					<Name>shareCls</Name>
+					<Abstract type="html">分享类型，应先导入GooglePlus.framework,然后在此参数中传入[GPPShare class]</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectGooglePlusWithClientId:clientSecret:redirectUri:signInCls:shareCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectPinterestWithClientId:pinterestCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接Pinterest,此平台需要引用PinterestConnection.framework、Pinterest.framework框架。
+http://developers.pinterest.com/上注册应用，并将相关信息填写以下字段。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectPinterestWithClientId:(NSString *)clientId pinterestCls:(Class)pinterestCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>pinterestCls</Name>
+					<Abstract type="html">Pinterest类型，应先导入Pinterest.framework，然后在此参数中传入</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectPinterestWithClientId:pinterestCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectFlickrWithApiKey:apiSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接Flickr,此平台需要引用FlickrConnection.framework框架。
+http://www.flickr.com/services/apps/create/上注册应用，并将相关信息填写以下字段。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectFlickrWithApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>apiKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>apiSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectFlickrWithApiKey:apiSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectTumblrWithConsumerKey:consumerSecret:callbackUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接Tumblr,此平台需要引用TumblrConnection.framework框架
+http://www.tumblr.com/oauth/apps上注册应用，并将相关信息填写以下字段。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectTumblrWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret callbackUrl:(NSString *)callbackUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>callbackUrl</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectTumblrWithConsumerKey:consumerSecret:callbackUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/connectDropboxWithAppKey:appSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	连接Dropbox，此平台需要引用DropboxConnection.framework框架
+https://www.dropbox.com/developers/apps上注册应用，并将相关信息填写以下字段。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)connectDropboxWithAppKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectDropboxWithAppKey:appSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/handleOpenURL:wxDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接,如果集成新浪微博(SSO)、Facebook、微信、QQ分享功能需要加入此方法</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url wxDelegate:(id)wxDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>wxDelegate</Name>
+					<Abstract type="html">微信委托,如果没有集成微信SDK，可以传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求 NO 表示不接受</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:wxDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/handleOpenURL:sourceApplication:annotation:wxDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接,如果集成新浪微博(SSO)、Facebook、微信、QQ分享功能需要加入此方法</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation wxDelegate:(id)wxDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceApplication</Name>
+					<Abstract type="html">源应用</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">源应用提供的信息</Abstract>
+				</Parameter><Parameter>
+					<Name>wxDelegate</Name>
+					<Abstract type="html">微信委托,如果没有集成微信SDK，可以传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求，NO 表示不接受请求</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:wxDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importTencentWeiboClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入腾讯微博类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法。注：不使用SSO时可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importTencentWeiboClass:(Class)wbApiCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wbApiCls</Name>
+					<Abstract type="html">腾讯微博Api类型，引入WBApi.h，并将[WBApi class]传入参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importTencentWeiboClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importQQClass:tencentOAuthCls:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入QQ好友和QQ空间所需要类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法。注：不使用QQ空间SSO或者不调用QQ好友分享时可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importQQClass:(Class)qqApiInterfaceCls tencentOAuthCls:(Class)tencentOAuthCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>qqApiInterfaceCls</Name>
+					<Abstract type="html">QQApi接口类型</Abstract>
+				</Parameter><Parameter>
+					<Name>tencentOAuthCls</Name>
+					<Abstract type="html">腾讯授权接口类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importQQClass:tencentOAuthCls:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importRenRenClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入人人所需要类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法。注：不使用SSO时可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importRenRenClass:(Class)renrenClientClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>renrenClientClass</Name>
+					<Abstract type="html">人人客户端类型,应该先引入RennSDK.framework，然后在此参数中传入[RennClient class]</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importRenRenClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importWeChatClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入微信所需要类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法。注：如果不使用微信可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importWeChatClass:(Class)wechatCls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wechatCls</Name>
+					<Abstract type="html">微信Api类型，引入WXApi.h后，将[WXApi class]传入此参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importWeChatClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importGooglePlusClass:shareClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入Google+所需要的类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法。注：如果不使用Google＋可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importGooglePlusClass:(Class)signInClass shareClass:(Class)shareClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>signInClass</Name>
+					<Abstract type="html">登录类型，引入GooglePlus.framework后，将[GPPSignIn class]传入此参数</Abstract>
+				</Parameter><Parameter>
+					<Name>shareClass</Name>
+					<Abstract type="html">分享类型，引入GooglePlush.framework后，将[GPPShare class]传入此参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importGooglePlusClass:shareClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/importPinterestClass:</TokenIdentifier>
+			<Abstract type="html">	@brief	导入Pinterest所需要的类型，对于使用应用信息托管方式下（即registerApp中的useAppTrusteeship为YES）需要调用此方法，注：如果不使用Pinterest可以不调用</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)importPinterestClass:(Class)pinterestClass</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pinterestClass</Name>
+					<Abstract type="html">Pinterest接口类型。引入Pinterest.framework后，将[Pinterest class]传入此参数</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/importPinterestClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getClientNameWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取平台客户端名称</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getClientNameWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">名称</Abstract></ReturnValue>
+			<Anchor>//api/name/getClientNameWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getClientIconWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取平台客户端图标</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (UIImage *)getClientIconWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图标</Abstract></ReturnValue>
+			<Anchor>//api/name/getClientIconWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getClientWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取平台客户端</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCOpenApp&gt;)getClientWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">平台客户端</Abstract></ReturnValue>
+			<Anchor>//api/name/getClientWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getShareListWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享列表</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)getShareListWithType:(ShareType)shareType, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">社会化平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享列表</Abstract></ReturnValue>
+			<Anchor>//api/name/getShareListWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/addNotificationWithName:target:action:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加通知监听</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addNotificationWithName:(NSString *)name target:(id)target action:(SEL)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">通知名称</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">目标对象</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">处理方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addNotificationWithName:target:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/removeNotificationWithName:target:</TokenIdentifier>
+			<Abstract type="html">	@brief	移除通知监听</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeNotificationWithName:(NSString *)name target:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">通知名称</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">目标对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeNotificationWithName:target:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/removeAllNotificationWithTarget:</TokenIdentifier>
+			<Abstract type="html">	@brief	移除全部通知监听</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)removeAllNotificationWithTarget:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">目标对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAllNotificationWithTarget:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/pageWithCursor:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分页对象,为提供获取关注用户列表中的page参数提供的构造方法</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSPage&gt;)pageWithCursor:(long long)cursor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cursor</Name>
+					<Abstract type="html">分页游标，目前此方法仅用于Twitter，获取起始页请传入-1</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分页对象</Abstract></ReturnValue>
+			<Anchor>//api/name/pageWithCursor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/pageWithPageNo:pageSize:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分页对象,为提供获取关注用户列表中的page参数提供的构造方法</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSPage&gt;)pageWithPageNo:(NSInteger)pageNo pageSize:(NSInteger)pageSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">页码</Abstract>
+				</Parameter><Parameter>
+					<Name>pageSize</Name>
+					<Abstract type="html">分页尺寸</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分页对象</Abstract></ReturnValue>
+			<Anchor>//api/name/pageWithPageNo:pageSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/content:defaultContent:image:title:url:description:mediaType:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分享内容对象，根据以下每个字段适用平台说明来填充参数值</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSContent&gt;)content:(NSString *)content defaultContent:(NSString *)defaultContent image:(id&lt;ISSCAttachment&gt;)image title:(NSString *)title url:(NSString *)url description:(NSString *)description mediaType:(SSPublishContentMediaType)mediaType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>defaultContent</Name>
+					<Abstract type="html">默认分享内容（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、facebook、twitter、邮件、打印、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题（QQ空间、人人、微信、QQ）</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接（QQ空间、人人、instapaper、微信、QQ）</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">主体内容（人人）</Abstract>
+				</Parameter><Parameter>
+					<Name>mediaType</Name>
+					<Abstract type="html">分享类型（QQ、微信）</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享内容对象</Abstract></ReturnValue>
+			<Anchor>//api/name/content:defaultContent:image:title:url:description:mediaType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/content:defaultContent:image:title:url:description:mediaType:locationCoordinate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分享内容对象，根据一下每个字段适用平台说明来填充参数值</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSContent&gt;)content:(NSString *)content defaultContent:(NSString *)defaultContent image:(id&lt;ISSCAttachment&gt;)image title:(NSString *)title url:(NSString *)url description:(NSString *)description mediaType:(SSPublishContentMediaType)mediaType locationCoordinate:(SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>defaultContent</Name>
+					<Abstract type="html">默认分享内容（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片（新浪、腾讯、网易、搜狐、豆瓣、人人、开心、facebook、twitter、邮件、打印、微信、QQ、拷贝）</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题（QQ空间、人人、微信、QQ）</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接（QQ空间、人人、instapaper、微信、QQ）</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">主体内容（人人）</Abstract>
+				</Parameter><Parameter>
+					<Name>mediaType</Name>
+					<Abstract type="html">分享类型（QQ、微信）</Abstract>
+				</Parameter><Parameter>
+					<Name>locationCoordinate</Name>
+					<Abstract type="html">地理位置 (新浪、腾讯、Twitter)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享内容对象</Abstract></ReturnValue>
+			<Anchor>//api/name/content:defaultContent:image:title:url:description:mediaType:locationCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/imageWithPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)imageWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/imageWithUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)imageWithUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片网址</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/jpegImageWithImage:quality:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建JPEG图片信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)jpegImageWithImage:(UIImage *)image quality:(CGFloat)quality</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片对象</Abstract>
+				</Parameter><Parameter>
+					<Name>quality</Name>
+					<Abstract type="html">图片质量</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/jpegImageWithImage:quality:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/pngImageWithImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建PNG图片信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)pngImageWithImage:(UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/pngImageWithImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/imageWithData:fileName:mimeType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)imageWithData:(NSData *)data fileName:(NSString *)fileName mimeType:(NSString *)mimeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">图片数据</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">文件名称</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">MIME类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithData:fileName:mimeType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/container</TokenIdentifier>
+			<Abstract type="html">	@brief	创建容器对象</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSContainer&gt;)container</Declaration>
+			
+			<ReturnValue><Abstract type="html">容器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/container</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/shareActionSheetItemWithTitle:icon:clickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建自定义分享菜单项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareActionSheetItem&gt;)shareActionSheetItemWithTitle:(NSString *)title icon:(UIImage *)icon clickHandler:(SSShareActionSheetItemClickHandler)clickHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>icon</Name>
+					<Abstract type="html">图标</Abstract>
+				</Parameter><Parameter>
+					<Name>clickHandler</Name>
+					<Abstract type="html">点击事件处理器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享菜单项</Abstract></ReturnValue>
+			<Anchor>//api/name/shareActionSheetItemWithTitle:icon:clickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/attachmentWithData:mimeType:fileName:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建附件信息,用于设置有道云笔记平台的附件信息。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)attachmentWithData:(NSData *)data mimeType:(NSString *)mimeType fileName:(NSString *)fileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">附件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">附件类型</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">附件名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">附件信息</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentWithData:mimeType:fileName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/customShareListWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建自定义分享列表</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)customShareListWithType:(id)item, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>item</Name>
+					<Abstract type="html">分享列表项，可以为包含ShareType的NSNumber类型，也可以为由shareActionSheetItemWithTitle创建的ISSShareActionSheetItem类型对象。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享列表</Abstract></ReturnValue>
+			<Anchor>//api/name/customShareListWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/setInterfaceOrientationMask:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置屏幕方向,默认是所有方向</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setInterfaceOrientationMask:(SSInterfaceOrientationMask)interfaceOrientationMask</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>interfaceOrientationMask</Name>
+					<Abstract type="html">屏幕方向掩码</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setInterfaceOrientationMask:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/dataWithCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	将授权凭证进行序列化</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)dataWithCredential:(id&lt;ISSCredential&gt;)credential</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract type="html">序列化凭证</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">序列化后的数据</Abstract></ReturnValue>
+			<Anchor>//api/name/dataWithCredential:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/credentialWithData:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	反序列化数据为授权凭证</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCredential&gt;)credentialWithData:(NSData *)data type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">授权凭证序列化后的数据</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithData:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/credentialWithSourceData:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	将授权源数据转换为授权凭证，通过其他途径获取到的授权数据通过此接口转换为凭证对象传入SDK</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCredential&gt;)credentialWithSourceData:(NSDictionary *)sourceData type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源数据</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithSourceData:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/credentialWithCredentialData:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	将授权凭证数据转换为授权凭证，此方法可以实现从一个授权凭证中将数据转移到另外一个授权凭证中。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCredential&gt;)credentialWithCredentialData:(NSDictionary *)sourceData type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">凭证数据</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithCredentialData:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/userWithLocalUser:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSUserInfo&gt;)userWithLocalUser:(id)localUser type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localUser</Name>
+					<Abstract type="html">平台相关用户信息</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithLocalUser:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/statusWithLocalStatus:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建状态信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSStatusInfo&gt;)statusWithLocalStatus:(id)localStatus type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>localStatus</Name>
+					<Abstract type="html">平台相关的状态信息</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">状态信息</Abstract></ReturnValue>
+			<Anchor>//api/name/statusWithLocalStatus:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/userFieldWithType:value:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息字段</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSUserField&gt;)userFieldWithType:(SSUserFieldType)type value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">用户字段类型</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">用户字段值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息字段</Abstract></ReturnValue>
+			<Anchor>//api/name/userFieldWithType:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/showStatusbarMessage:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示顶部状态栏显示消息,此消息会一直显示，直到调用hideStatusbarMessage为止</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showStatusbarMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">消息内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showStatusbarMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/hideStatusbarMessage</TokenIdentifier>
+			<Abstract type="html">	@brief	隐藏顶部状态消息。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)hideStatusbarMessage</Declaration>
+			
+			
+			<Anchor>//api/name/hideStatusbarMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/showStatusbarImmediMessage:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示临时消息，此消息再一定时间内容消失，此消息内容不受hideStatusbarMessage控制。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showStatusbarImmediMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">消息内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showStatusbarImmediMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/waitAppSettingComplete:</TokenIdentifier>
+			<Abstract type="html">	@brief	等待应用配置信息完成,此方法专门针对使用应用信息托管时使用，由于从服务器下发信息需要时间，
+因此在调用平台api之前先调用此方法等待完成后做相应操作。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)waitAppSettingComplete:(void ( ^ ) ( ))completeHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completeHandler</Name>
+					<Abstract type="html">完成处理事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/waitAppSettingComplete:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getCredentialWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取授权凭证,凭证中包含accessToken或oauthToken、过期时间等信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCredential&gt;)getCredentialWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/getCredentialWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/setCredential:type:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置授权凭证</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setCredential:(id&lt;ISSCredential&gt;)credential type:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract type="html">授权凭证</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCredential:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/authOptionsWithAutoAuth:allowCallback:authViewStyle:viewDelegate:authManagerViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSAuthOptions&gt;)authOptionsWithAutoAuth:(BOOL)autoAuth allowCallback:(BOOL)allowCallback authViewStyle:(SSAuthViewStyle)authViewStyle viewDelegate:(id&lt;ISSViewDelegate&gt;)viewDelegate authManagerViewDelegate:(id&lt;ISSViewDelegate&gt;)authManagerViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>autoAuth</Name>
+					<Abstract type="html">自动授权标志，当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理</Abstract>
+				</Parameter><Parameter>
+					<Name>allowCallback</Name>
+					<Abstract type="html">是否允许授权后回调到服务器，默认为YES，对于没有服务器或者不需要回调服务器的应用可以设置为NO</Abstract>
+				</Parameter><Parameter>
+					<Name>authViewStyle</Name>
+					<Abstract type="html">授权视图样式，参考SSAuthViewStyle枚举类型</Abstract>
+				</Parameter><Parameter>
+					<Name>viewDelegate</Name>
+					<Abstract type="html">授权视图协议委托，可通过视图委托来实现UI细节调整等。</Abstract>
+				</Parameter><Parameter>
+					<Name>authManagerViewDelegate</Name>
+					<Abstract type="html">授权管理器视图协议委托。可通过委托实现UI细节调整等。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权选项</Abstract></ReturnValue>
+			<Anchor>//api/name/authOptionsWithAutoAuth:allowCallback:authViewStyle:viewDelegate:authManagerViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/authOptionsWithAutoAuth:allowCallback:scopes:powerByHidden:followAccounts:authViewStyle:viewDelegate:authManagerViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSAuthOptions&gt;)authOptionsWithAutoAuth:(BOOL)autoAuth allowCallback:(BOOL)allowCallback scopes:(NSDictionary *)scopes powerByHidden:(BOOL)powerByHidden followAccounts:(NSDictionary *)followAccounts authViewStyle:(SSAuthViewStyle)authViewStyle viewDelegate:(id&lt;ISSViewDelegate&gt;)viewDelegate authManagerViewDelegate:(id&lt;ISSViewDelegate&gt;)authManagerViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>autoAuth</Name>
+					<Abstract type="html">自动授权标志，当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理</Abstract>
+				</Parameter><Parameter>
+					<Name>allowCallback</Name>
+					<Abstract type="html">是否允许授权后回调到服务器，默认为YES，对于没有服务器或者不需要回调服务器的应用可以设置为NO</Abstract>
+				</Parameter><Parameter>
+					<Name>scopes</Name>
+					<Abstract type="html">授权权限列表，如果默认请求权限可以设置为nil，否则需要参考各个平台的权限相关内容进行填写, value是权限列表， key为分享平台ID</Abstract>
+				</Parameter><Parameter>
+					<Name>powerByHidden</Name>
+					<Abstract type="html">版权信息隐藏标识，如果为NO则在导航栏右边显示版权信息字样，YES 表示隐藏。默认为NO。</Abstract>
+				</Parameter><Parameter>
+					<Name>followAccounts</Name>
+					<Abstract type="html">关注的微博账号信息，为字典结构，key为分享类型，value为ISSUserField对象(此属性仅用于Modal视图样式，并且仅在新浪微博和腾讯微博中有效)。</Abstract>
+				</Parameter><Parameter>
+					<Name>authViewStyle</Name>
+					<Abstract type="html">授权视图样式，参考SSAuthViewStyle枚举类型</Abstract>
+				</Parameter><Parameter>
+					<Name>viewDelegate</Name>
+					<Abstract type="html">授权视图协议委托，可通过视图委托来实现UI细节调整等。</Abstract>
+				</Parameter><Parameter>
+					<Name>authManagerViewDelegate</Name>
+					<Abstract type="html">授权管理器视图协议委托。可通过委托实现UI细节调整等。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权选项</Abstract></ReturnValue>
+			<Anchor>//api/name/authOptionsWithAutoAuth:allowCallback:scopes:powerByHidden:followAccounts:authViewStyle:viewDelegate:authManagerViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/authorizeController:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权控制器，此方法用于自定义授权页面时使用,可以自由控制授权UI及过程。(注：微信、QQ、邮件、短信、打印、拷贝类型不支持授权功能。)</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSAuthController&gt;)authorizeController:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权会话</Abstract></ReturnValue>
+			<Anchor>//api/name/authorizeController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/authWithType:options:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示授权界面，(注：微信、QQ、邮件、短信、打印、拷贝类型不支持授权功能。)</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authWithType:(ShareType)type options:(id&lt;ISSAuthOptions&gt;)options result:(SSAuthEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">社会化平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">授权选项，如果为nil则表示使用默认设置</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">授权返回事件处理</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authWithType:options:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/hasAuthorizedWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否授权,微信、QQ、邮件、短信、打印、拷贝类型不支持授权功能。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)hasAuthorizedWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">社会化平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 已授权； NO 未授权</Abstract></ReturnValue>
+			<Anchor>//api/name/hasAuthorizedWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/cancelAuthWithType:</TokenIdentifier>
+			<Abstract type="html">	@brief	取消授权,微信、QQ、邮件、短信、打印、拷贝类型不支持授权功能。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)cancelAuthWithType:(ShareType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">社会化平台类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelAuthWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getUserInfoWithType:authOptions:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取当前授权用户信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)getUserInfoWithType:(ShareType)shareType authOptions:(id&lt;ISSAuthOptions&gt;)authOptions result:(SSGetUserInfoEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,传入nil表示使用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">获取用户信息返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getUserInfoWithType:authOptions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getUserInfoWithType:field:fieldType:authOptions:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取用户信息</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)getUserInfoWithType:(ShareType)type field:(NSString *)field fieldType:(SSUserFieldType)fieldType authOptions:(id&lt;ISSAuthOptions&gt;)authOptions result:(SSGetUserInfoEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>field</Name>
+					<Abstract type="html">用户信息字段值，用于指定对应用户的标识字段。</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldType</Name>
+					<Abstract type="html">字段类型，标识是用户ID、用户名称</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">获取用户信息返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getUserInfoWithType:field:fieldType:authOptions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/followUserWithType:field:fieldType:authOptions:viewDelegate:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注用户</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)followUserWithType:(ShareType)type field:(NSString *)field fieldType:(SSUserFieldType)fieldType authOptions:(id&lt;ISSAuthOptions&gt;)authOptions viewDelegate:(id&lt;ISSViewDelegate&gt;)viewDelegate result:(SSFollowUserEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>field</Name>
+					<Abstract type="html">用户信息字段值，用于指定对应用户的标识字段。</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldType</Name>
+					<Abstract type="html">字段类型，标识是用户ID、用户名称</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>viewDelegate</Name>
+					<Abstract type="html">视图委托对象，对于Facebook的关注用户会弹出视图，该委托则用于派发视图的相关行为通知。非Facebook平台可以传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">关注用户返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followUserWithType:field:fieldType:authOptions:viewDelegate:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/followWeixinUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注微信号</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)followWeixinUser:(NSString *)qrCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">二维码数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followWeixinUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/getFriendsWithType:page:authOptions:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取授权用户的关注用户列表</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)getFriendsWithType:(ShareType)type page:(id&lt;ISSPage&gt;)page authOptions:(id&lt;ISSAuthOptions&gt;)authOptions result:(SSGetFriendsEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">社会化平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>page</Name>
+					<Abstract type="html">分页对象</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">获取好友列表返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFriendsWithType:page:authOptions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/defaultShareOptionsWithTitle:oneKeyShareList:qqButtonHidden:wxSessionButtonHidden:wxTimelineButtonHidden:showKeyboardOnAppear:shareViewDelegate:friendsViewDelegate:picViewerViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建默认分享选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareOptions&gt;)defaultShareOptionsWithTitle:(NSString *)title oneKeyShareList:(NSArray *)oneKeyShareList qqButtonHidden:(BOOL)qqButtonHidden wxSessionButtonHidden:(BOOL)wxSessionButtonHidden wxTimelineButtonHidden:(BOOL)wxTimelineButtonHidden showKeyboardOnAppear:(BOOL)showKeyboardOnAppear shareViewDelegate:(id&lt;ISSShareViewDelegate&gt;)shareViewDelegate friendsViewDelegate:(id&lt;ISSViewDelegate&gt;)friendsViewDelegate picViewerViewDelegate:(id&lt;ISSViewDelegate&gt;)picViewerViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享视图标题</Abstract>
+				</Parameter><Parameter>
+					<Name>oneKeyShareList</Name>
+					<Abstract type="html">一键分享列表，传入[NSArray defaultOneKeyShareList]表示使用默认分享列表，为nil则表示不需要一键分享</Abstract>
+				</Parameter><Parameter>
+					<Name>qqButtonHidden</Name>
+					<Abstract type="html">QQ分享按钮是否隐藏,如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>wxSessionButtonHidden</Name>
+					<Abstract type="html">微信好友分享按钮是否隐藏，如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>wxTimelineButtonHidden</Name>
+					<Abstract type="html">微信朋友圈分享按钮是否隐藏，如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>showKeyboardOnAppear</Name>
+					<Abstract type="html">分享视图显示时是否同时显示键盘，如果不显示键盘则显示一键分享列表，默认不显示</Abstract>
+				</Parameter><Parameter>
+					<Name>shareViewDelegate</Name>
+					<Abstract type="html">分享视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>friendsViewDelegate</Name>
+					<Abstract type="html">好友视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>picViewerViewDelegate</Name>
+					<Abstract type="html">图片查看器视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享选项</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultShareOptionsWithTitle:oneKeyShareList:qqButtonHidden:wxSessionButtonHidden:wxTimelineButtonHidden:showKeyboardOnAppear:shareViewDelegate:friendsViewDelegate:picViewerViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/defaultShareOptionsWithTitle:oneKeyShareList:cameraButtonHidden:mentionButtonHidden:topicButtonHidden:qqButtonHidden:wxSessionButtonHidden:wxTimelineButtonHidden:showKeyboardOnAppear:shareViewDelegate:friendsViewDelegate:picViewerViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建默认分享选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareOptions&gt;)defaultShareOptionsWithTitle:(NSString *)title oneKeyShareList:(NSArray *)oneKeyShareList cameraButtonHidden:(BOOL)cameraButtonHidden mentionButtonHidden:(BOOL)mentionButtonHidden topicButtonHidden:(BOOL)topicButtonHidden qqButtonHidden:(BOOL)qqButtonHidden wxSessionButtonHidden:(BOOL)wxSessionButtonHidden wxTimelineButtonHidden:(BOOL)wxTimelineButtonHidden showKeyboardOnAppear:(BOOL)showKeyboardOnAppear shareViewDelegate:(id&lt;ISSShareViewDelegate&gt;)shareViewDelegate friendsViewDelegate:(id&lt;ISSViewDelegate&gt;)friendsViewDelegate picViewerViewDelegate:(id&lt;ISSViewDelegate&gt;)picViewerViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享视图标题</Abstract>
+				</Parameter><Parameter>
+					<Name>oneKeyShareList</Name>
+					<Abstract type="html">一键分享列表，传入[NSArray defaultOneKeyShareList]表示使用默认分享列表，为nil则表示不需要一键分享</Abstract>
+				</Parameter><Parameter>
+					<Name>cameraButtonHidden</Name>
+					<Abstract type="html">拍照按钮是否隐藏,如果不隐藏则显示再分享视图的工具栏左侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>mentionButtonHidden</Name>
+					<Abstract type="html">@按钮是否隐藏,如果不隐藏则显示再分享视图的工具栏左侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>topicButtonHidden</Name>
+					<Abstract type="html">话题按钮是否隐藏,如果不隐藏则显示再分享视图的工具栏左侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>qqButtonHidden</Name>
+					<Abstract type="html">QQ分享按钮是否隐藏,如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>wxSessionButtonHidden</Name>
+					<Abstract type="html">微信好友分享按钮是否隐藏，如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>wxTimelineButtonHidden</Name>
+					<Abstract type="html">微信朋友圈分享按钮是否隐藏，如果不隐藏则显示在分享视图的工具栏右侧，默认显示</Abstract>
+				</Parameter><Parameter>
+					<Name>showKeyboardOnAppear</Name>
+					<Abstract type="html">分享视图显示时是否同时显示键盘，如果不显示键盘则显示一键分享列表，默认不显示</Abstract>
+				</Parameter><Parameter>
+					<Name>shareViewDelegate</Name>
+					<Abstract type="html">分享视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>friendsViewDelegate</Name>
+					<Abstract type="html">好友视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>picViewerViewDelegate</Name>
+					<Abstract type="html">图片查看器视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享选项</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultShareOptionsWithTitle:oneKeyShareList:cameraButtonHidden:mentionButtonHidden:topicButtonHidden:qqButtonHidden:wxSessionButtonHidden:wxTimelineButtonHidden:showKeyboardOnAppear:shareViewDelegate:friendsViewDelegate:picViewerViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/simpleShareOptionsWithTitle:shareViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建简单分享选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareOptions&gt;)simpleShareOptionsWithTitle:(NSString *)title shareViewDelegate:(id&lt;ISSShareViewDelegate&gt;)shareViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享视图标题</Abstract>
+				</Parameter><Parameter>
+					<Name>shareViewDelegate</Name>
+					<Abstract type="html">分享视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享选项</Abstract></ReturnValue>
+			<Anchor>//api/name/simpleShareOptionsWithTitle:shareViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/appRecommendShareOptionsWithTile:shareViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建应用推荐分享选项</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareOptions&gt;)appRecommendShareOptionsWithTile:(NSString *)title shareViewDelegate:(id&lt;ISSShareViewDelegate&gt;)shareViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享视图标题</Abstract>
+				</Parameter><Parameter>
+					<Name>shareViewDelegate</Name>
+					<Abstract type="html">分享视图委托，如果不需要控制视图则传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享选项</Abstract></ReturnValue>
+			<Anchor>//api/name/appRecommendShareOptionsWithTile:shareViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/shareContent:type:authOptions:statusBarTips:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享内容,此接口不需要弹出分享界面直接进行分享（除微信、QQ、Pinterest平台外，这些平台会调用客户端进行分享）。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)shareContent:(id&lt;ISSContent&gt;)content type:(ShareType)type authOptions:(id&lt;ISSAuthOptions&gt;)authOptions statusBarTips:(BOOL)statusBarTips result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容对象</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareContent:type:authOptions:statusBarTips:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/shareContent:type:authOptions:shareOptions:statusBarTips:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享内容,此接口不需要弹出分享界面直接进行分享（除微信、QQ、Pinterest平台外，这些平台会调用客户端进行分享）。</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)shareContent:(id&lt;ISSContent&gt;)content type:(ShareType)type authOptions:(id&lt;ISSAuthOptions&gt;)authOptions shareOptions:(id&lt;ISSShareOptions&gt;)shareOptions statusBarTips:(BOOL)statusBarTips result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容对象</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>shareOptions</Name>
+					<Abstract type="html">分享选项，用于定义分享视图部分属性（如：标题、一键分享列表、功能按钮等）,默认可传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareContent:type:authOptions:shareOptions:statusBarTips:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/oneKeyShareContent:shareList:authOptions:statusBarTips:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	一键分享内容</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)oneKeyShareContent:(id&lt;ISSContent&gt;)content shareList:(NSArray *)shareList authOptions:(id&lt;ISSAuthOptions&gt;)authOptions statusBarTips:(BOOL)statusBarTips result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容对象</Abstract>
+				</Parameter><Parameter>
+					<Name>shareList</Name>
+					<Abstract type="html">平台类型列表（邮件、短信、微信、QQ、打印、拷贝除外）</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/oneKeyShareContent:shareList:authOptions:statusBarTips:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/oneKeyShareContent:shareList:authOptions:shareOptions:statusBarTips:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	一键分享内容</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)oneKeyShareContent:(id&lt;ISSContent&gt;)content shareList:(NSArray *)shareList authOptions:(id&lt;ISSAuthOptions&gt;)authOptions shareOptions:(id&lt;ISSShareOptions&gt;)shareOptions statusBarTips:(BOOL)statusBarTips result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容对象</Abstract>
+				</Parameter><Parameter>
+					<Name>shareList</Name>
+					<Abstract type="html">平台类型列表（邮件、短信、微信、QQ、打印、拷贝除外）</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等）,设置未nil则表示采用默认选项</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/oneKeyShareContent:shareList:authOptions:shareOptions:statusBarTips:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/showShareViewWithType:container:content:statusBarTips:authOptions:shareOptions:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示分享视图</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)showShareViewWithType:(ShareType)type container:(id&lt;ISSContainer&gt;)container content:(id&lt;ISSContent&gt;)content statusBarTips:(BOOL)statusBarTips authOptions:(id&lt;ISSAuthOptions&gt;)authOptions shareOptions:(id&lt;ISSShareOptions&gt;)shareOptions result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract type="html">用于显示分享界面的容器，如果只显示在iPhone客户端可以传入nil。如果需要在iPad上显示需要指定容器。</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示标识：YES：显示； NO：隐藏</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等），默认可传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>shareOptions</Name>
+					<Abstract type="html">分享选项，用于定义分享视图部分属性（如：标题、一键分享列表、功能按钮等）,默认可传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">分享返回事件处理</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showShareViewWithType:container:content:statusBarTips:authOptions:shareOptions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/showShareActionSheet:shareList:content:statusBarTips:authOptions:shareOptions:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示分享菜单</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSShareActionSheet&gt;)showShareActionSheet:(id&lt;ISSContainer&gt;)container shareList:(NSArray *)shareList content:(id&lt;ISSContent&gt;)content statusBarTips:(BOOL)statusBarTips authOptions:(id&lt;ISSAuthOptions&gt;)authOptions shareOptions:(id&lt;ISSShareOptions&gt;)shareOptions result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">用于显示分享界面的容器，如果只显示在iPhone客户端可以传入nil。如果需要在iPad上显示需要指定容器。</Abstract>
+				</Parameter><Parameter>
+					<Name>shareList</Name>
+					<Abstract type="html">平台类型列表</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示标识：YES：显示； NO：隐藏</Abstract>
+				</Parameter><Parameter>
+					<Name>authOptions</Name>
+					<Abstract type="html">授权选项，用于指定接口在需要授权时的一些属性（如：是否自动授权，授权视图样式等），默认可传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>shareOptions</Name>
+					<Abstract type="html">分享选项，用于定义分享视图部分属性（如：标题、一键分享列表、功能按钮等）,默认可传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">分享返回事件处理</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showShareActionSheet:shareList:content:statusBarTips:authOptions:shareOptions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDK/clientShareContent:type:statusBarTips:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	使用客户端进行内容分享（仅支持新浪微博、微信、QQ、Pinterest、Google+）</Abstract>
+			<DeclaredIn>ShareSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (void)clientShareContent:(id&lt;ISSContent&gt;)content type:(ShareType)type statusBarTips:(BOOL)statusBarTips result:(SSPublishContentEventHandler)result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容对象</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">平台类型</Abstract>
+				</Parameter><Parameter>
+					<Name>statusBarTips</Name>
+					<Abstract type="html">状态栏提示</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clientShareContent:type:statusBarTips:result:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

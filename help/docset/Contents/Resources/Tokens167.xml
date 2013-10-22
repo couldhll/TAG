@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFImageView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
+			<Abstract type="html">An image view that downloads and displays remote image stored on Parse&apos;s server.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<NodeRef refid="167"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/setFile:</TokenIdentifier>
+			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.
+Note that the download does not start until loadInBackground: is called.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFFile *file</Declaration>
+			
+			
+			<Anchor>//api/name/file</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFImageView/file</TokenIdentifier>
+			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.
+Note that the download does not start until loadInBackground: is called.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFFile *file</Declaration>
+			
+			
+			<Anchor>//api/name/file</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground</TokenIdentifier>
+			<Abstract type="html">Initiate downloading of the remote image. Once the download completes, the remote image will be displayed.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/loadInBackground</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground:</TokenIdentifier>
+			<Abstract type="html">Initiate downloading of the remote image. Once the download completes, the remote image will be displayed.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadInBackground:(void ( ^ ) ( UIImage *image , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadInBackground:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -115,21 +115,15 @@
 {
     HLLButton *button=(HLLButton*)sender;
     
+    // remove clicked button information
+    [filterArray removeObjectIdenticalTo:button.information];
+    
     // select button
     [button setSelected:!button.selected];
     
-    // modify filter data
-    for (NSString *information in filterArray)// remove clicked button information
+    // add clicked button information if selected
+    if (button.selected)
     {
-        if ([information isEqual:button.information])
-        {
-            [filterArray removeObject:information];
-        }
-    }
-    if (button.selected)// add clicked button information if selected
-    {
-//        ITTAssert(button.information==nil, @"button.information is nil.");
-//        NSAssert(button.information==nil, @"button.information is nil.");
         [filterArray addObject:button.information];
     }
 }

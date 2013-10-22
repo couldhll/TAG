@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFRole.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFRole</TokenIdentifier>
+			<Abstract type="html">Represents a Role on the Parse server. PFRoles represent groupings
+of PFUsers for the purposes of granting permissions (e.g. specifying a
+PFACL for a PFObject. Roles are specified by their sets of child users
+and child roles, all of which are granted any permissions that the
+parent role has.&lt;br /&gt;
+&lt;br /&gt;
+Roles must have a name (which cannot be changed after creation of the role),
+and must specify an ACL.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<NodeRef refid="179"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/initWithName:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name. If no default ACL has been
+specified, you must provide an ACL for the role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/initWithName:acl:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)name acl:(PFACL *)acl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter><Parameter>
+					<Name>acl</Name>
+					<Abstract type="html">The ACL for this role. Roles must have an ACL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithName:acl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFRole/roleWithName:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name. If no default ACL has been
+specified, you must provide an ACL for the role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)roleWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/roleWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFRole/roleWithName:acl:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)roleWithName:(NSString *)name acl:(PFACL *)acl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter><Parameter>
+					<Name>acl</Name>
+					<Abstract type="html">The ACL for this role. Roles must have an ACL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/roleWithName:acl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setName:</TokenIdentifier>
+			<Abstract type="html">Gets or sets the name for a role. This value must be set before the role
+has been saved to the server, and cannot be set once the role has been
+saved.&lt;br /&gt;
+&lt;br /&gt;
+A role&apos;s name can only contain alphanumeric characters, _, -, and spaces.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/name</TokenIdentifier>
+			<Abstract type="html">Gets or sets the name for a role. This value must be set before the role
+has been saved to the server, and cannot be set once the role has been
+saved.&lt;br /&gt;
+&lt;br /&gt;
+A role&apos;s name can only contain alphanumeric characters, _, -, and spaces.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setUsers:</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFUsers that are direct children of this role.
+These users are granted any privileges that this role has been granted
+(e.g. read or write access through ACLs). You can add or remove users from
+the role through this relation.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFRelation *users</Declaration>
+			
+			
+			<Anchor>//api/name/users</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/users</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFUsers that are direct children of this role.
+These users are granted any privileges that this role has been granted
+(e.g. read or write access through ACLs). You can add or remove users from
+the role through this relation.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFRelation *users</Declaration>
+			
+			
+			<Anchor>//api/name/users</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setRoles:</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFRoles that are direct children of this role.
+These roles&apos; users are granted any privileges that this role has been granted
+(e.g. read or write access through ACLs). You can add or remove child roles
+from this role through this relation.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFRelation *roles</Declaration>
+			
+			
+			<Anchor>//api/name/roles</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/roles</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFRoles that are direct children of this role.
+These roles&apos; users are granted any privileges that this role has been granted
+(e.g. read or write access through ACLs). You can add or remove child roles
+from this role through this relation.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFRelation *roles</Declaration>
+			
+			
+			<Anchor>//api/name/roles</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFRole/query</TokenIdentifier>
+			<Abstract type="html">Returns a query for objects of type parseClassName.
+This method can only be called on subclasses which conform to PFSubclassing.
+A default implementation is provided by PFObject which should always be sufficient.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>			
+			
+			<Declaration>+ (PFQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

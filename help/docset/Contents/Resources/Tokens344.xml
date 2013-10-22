@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSSohuErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSohuErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	搜狐错误信息</Abstract>
+			<DeclaredIn>SSSohuErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="344"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

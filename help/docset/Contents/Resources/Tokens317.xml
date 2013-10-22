@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSQZoneShareInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneShareInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	分享信息</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>
+			
+			<NodeRef refid="317"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneShareInfo/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneShareInfo/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneShareInfo/setShareId:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享ID</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long shareId</Declaration>
+			
+			
+			<Anchor>//api/name/shareId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneShareInfo/shareId</TokenIdentifier>
+			<Abstract type="html">	@brief	分享ID</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long shareId</Declaration>
+			
+			
+			<Anchor>//api/name/shareId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneShareInfo/shareInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分享信息</Abstract>
+			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSQZoneShareInfo *)shareInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/shareInfoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -120,13 +120,16 @@
     hud.labelText = @"Completed";
     int64_t         delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-            // Do something...
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-        });
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
+                   {
+                       // close hud
+                       [MBProgressHUD hideHUDForView:self.view animated:YES];
+                       
+                       // exit
+                       [self dismissModalViewControllerAnimated:YES];
+                   });
     
-    // exit
-    [self dismissModalViewControllerAnimated:YES];
+    
 }
 
 - (IBAction)findPasswordButtonPressed:(id)sender
@@ -147,15 +150,15 @@
 
 #pragma mark - UITextFieldDelegate
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
 	switch (textField.returnKeyType)
     {
 		case UIReturnKeyNext:
-//            UIResponder *nextResponder = [self.userPasswordTextField nextResponder];
-//            if (nextResponder)
-//            {
+            if (textField==self.userNameTextField)
+            {
                 [self.userPasswordTextField becomeFirstResponder];
-//            }
+            }
 			break;
 		case UIReturnKeyGo:
 			[textField resignFirstResponder];

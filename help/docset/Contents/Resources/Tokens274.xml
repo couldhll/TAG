@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>
+			
+			<NodeRef refid="274"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

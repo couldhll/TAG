@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSLinkedInApiStandardProfileRequestHeaders.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInApiStandardProfileRequestHeaders</TokenIdentifier>
+			<Abstract type="html">	@brief	请求头信息</Abstract>
+			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeaders.h</DeclaredIn>
+			
+			<NodeRef refid="295"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInApiStandardProfileRequestHeaders/headersWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建头信息</Abstract>
+			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeaders.h</DeclaredIn>			
+			
+			<Declaration>+ (SSLinkedInApiStandardProfileRequestHeaders *)headersWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">头信息</Abstract></ReturnValue>
+			<Anchor>//api/name/headersWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

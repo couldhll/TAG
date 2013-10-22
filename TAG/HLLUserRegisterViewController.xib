@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLLUserRegisterViewController">
+            <connections>
+                <outlet property="userNameTextField" destination="xby-Z5-6nL" id="tqr-Dm-t4N"/>
+                <outlet property="userPasswordTextField" destination="HVH-20-mVW" id="669-U1-psw"/>
+                <outlet property="userPasswordVerifyTextField" destination="Bh9-OO-5ca" id="ewe-6L-Qjx"/>
+                <outlet property="view" destination="Wub-Xx-Sg0" id="hYY-jW-otl"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="Wub-Xx-Sg0" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User name..." minimumFontSize="17" id="xby-Z5-6nL" customClass="HLLTextField">
+                    <rect key="frame" x="34" y="150" width="251" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDoneEditing:" destination="-1" eventType="editingDidEnd" id="5WU-Ft-kfh"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password..." minimumFontSize="17" id="HVH-20-mVW" customClass="HLLTextField">
+                    <rect key="frame" x="34" y="205" width="251" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="textFieldDoneEditing:" destination="-1" eventType="editingDidEnd" id="soQ-BH-Nl3"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password..." minimumFontSize="17" id="Bh9-OO-5ca" customClass="HLLTextField">
+                    <rect key="frame" x="34" y="253" width="251" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="textFieldDoneEditing:" destination="-1" eventType="editingDidEnd" id="UUR-gy-d0y"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O1H-Ur-T7J">
+                    <rect key="frame" x="0.0" y="0.0" width="72" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="Resource/User/Login/TAG/back_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="XmN-2s-noV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lA8-78-c11">
+                    <rect key="frame" x="34" y="309" width="121" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99607849120000003" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <color key="tintColor" red="0.12549020350000001" green="0.32549020649999999" blue="0.59607845540000004" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="Register">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="0Np-RU-gQY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="emR-Qy-L3f" customClass="HLLBorderButton">
+                    <rect key="frame" x="164" y="309" width="121" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="exitButtonPressed:" destination="-1" eventType="touchUpInside" id="YtR-zT-087"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="backgroundPressed:" destination="-1" eventType="touchUpInside" id="Vpx-LR-zC3"/>
+            </connections>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="Resource/User/Login/TAG/back_button.png" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ICMGridItemView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ICMGridItemView</TokenIdentifier>
+			<Abstract type="html">	表格项接口，所有在ZGGridView中显示的项目都需要实现此接口.</Abstract>
+			<DeclaredIn>ICMGridItemView.h</DeclaredIn>
+			
+			<NodeRef refid="608"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMGridItemView/data</TokenIdentifier>
+			<Abstract type="html">	获取数据</Abstract>
+			<DeclaredIn>ICMGridItemView.h</DeclaredIn>			
+			
+			<Declaration>- (id)data</Declaration>
+			
+			<ReturnValue><Abstract type="html">数据对象</Abstract></ReturnValue>
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMGridItemView/setData:</TokenIdentifier>
+			<Abstract type="html">	设置数据</Abstract>
+			<DeclaredIn>ICMGridItemView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setData:(id)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">数据对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMGridItemView/index</TokenIdentifier>
+			<Abstract type="html">	@brief	获取索引</Abstract>
+			<DeclaredIn>ICMGridItemView.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)index</Declaration>
+			
+			<ReturnValue><Abstract type="html">索引值</Abstract></ReturnValue>
+			<Anchor>//api/name/index</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMGridItemView/setIndex:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置索引</Abstract>
+			<DeclaredIn>ICMGridItemView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">索引值</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

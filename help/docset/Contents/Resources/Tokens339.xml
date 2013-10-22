@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSSinaWeiboTag.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboTag</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>
+			
+			<NodeRef refid="339"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setTag:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/tag</TokenIdentifier>
+			<Abstract type="html">	@brief	标签</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboTag/tagWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建标签信息</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSinaWeiboTag *)tagWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">标签信息</Abstract></ReturnValue>
+			<Anchor>//api/name/tagWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

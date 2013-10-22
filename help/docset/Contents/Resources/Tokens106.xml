@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBWebDialogInternalDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBWebDialogInternalDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>
+			
+			<NodeRef refid="106"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialog:shouldOpenURLInExternalBrowser:</TokenIdentifier>
+			<Abstract type="html">Asks if a link touched by a user should be opened in an external browser.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)dialog:(FBDialog *)dialog shouldOpenURLInExternalBrowser:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/dialog:shouldOpenURLInExternalBrowser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialogCompleteWithUrl:</TokenIdentifier>
+			<Abstract type="html">Called when the dialog succeeds with a returning url.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (void)dialogCompleteWithUrl:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/dialogCompleteWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialogDidNotCompleteWithUrl:</TokenIdentifier>
+			<Abstract type="html">Called when the dialog get canceled by the user.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (void)dialogDidNotCompleteWithUrl:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/dialogDidNotCompleteWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialogDidComplete:</TokenIdentifier>
+			<Abstract type="html">Called when the dialog succeeds and is about to be dismissed.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (void)dialogDidComplete:(FBDialog *)dialog</Declaration>
+			
+			
+			<Anchor>//api/name/dialogDidComplete:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialogDidNotComplete:</TokenIdentifier>
+			<Abstract type="html">Called when the dialog is cancelled and is about to be dismissed.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (void)dialogDidNotComplete:(FBDialog *)dialog</Declaration>
+			
+			
+			<Anchor>//api/name/dialogDidNotComplete:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBWebDialogInternalDelegate/dialog:didFailWithError:</TokenIdentifier>
+			<Abstract type="html">Called when dialog failed to load due to an error.</Abstract>
+			<DeclaredIn>FBWebDialogs.m</DeclaredIn>			
+			
+			<Declaration>- (void)dialog:(FBDialog *)dialog didFailWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/dialog:didFailWithError:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

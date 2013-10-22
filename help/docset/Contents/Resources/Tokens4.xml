@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGCustomAtPlatListViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGCustomAtPlatListViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGCustomAtPlatListViewController.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomAtPlatListViewController/initWithChangeHandler:cancelHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化视图控制器</Abstract>
+			<DeclaredIn>AGCustomAtPlatListViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithChangeHandler:(void ( ^ ) ( NSArray *users , ShareType shareType ))changeHandler cancelHandler:(void ( ^ ) ( ))cancelHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>changeHandler</Name>
+					<Abstract type="html">变更事件</Abstract>
+				</Parameter><Parameter>
+					<Name>cancelHandler</Name>
+					<Abstract type="html">取消事件</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">视图控制器</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithChangeHandler:cancelHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

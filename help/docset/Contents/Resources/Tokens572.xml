@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+Common.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(Common)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>
+			
+			<NodeRef refid="572"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/left</TokenIdentifier>
+			<Abstract type="html">	@brief	获取左上角横坐标</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)left</Declaration>
+			
+			<ReturnValue><Abstract type="html">坐标值</Abstract></ReturnValue>
+			<Anchor>//api/name/left</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/top</TokenIdentifier>
+			<Abstract type="html">	@brief	获取左上角纵坐标</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)top</Declaration>
+			
+			<ReturnValue><Abstract type="html">坐标值</Abstract></ReturnValue>
+			<Anchor>//api/name/top</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/right</TokenIdentifier>
+			<Abstract type="html">	@brief	获取视图右下角横坐标</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)right</Declaration>
+			
+			<ReturnValue><Abstract type="html">坐标值</Abstract></ReturnValue>
+			<Anchor>//api/name/right</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/bottom</TokenIdentifier>
+			<Abstract type="html">	@brief	获取视图右下角纵坐标</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)bottom</Declaration>
+			
+			<ReturnValue><Abstract type="html">坐标值</Abstract></ReturnValue>
+			<Anchor>//api/name/bottom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/width</TokenIdentifier>
+			<Abstract type="html">	@brief	获取视图宽度</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)width</Declaration>
+			
+			<ReturnValue><Abstract type="html">宽度值（像素）</Abstract></ReturnValue>
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/height</TokenIdentifier>
+			<Abstract type="html">	@brief	获取视图高度</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)height</Declaration>
+			
+			<ReturnValue><Abstract type="html">高度值（像素）</Abstract></ReturnValue>
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Common)/removeAllSubviews</TokenIdentifier>
+			<Abstract type="html">	@brief	删除所有子对象</Abstract>
+			<DeclaredIn>UIView+Common.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllSubviews</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllSubviews</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

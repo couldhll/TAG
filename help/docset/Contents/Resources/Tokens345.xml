@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSSohuUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSohuUser</TokenIdentifier>
+			<Abstract type="html">	@brief	搜狐用户</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>
+			
+			<NodeRef refid="345"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSohuCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSohuCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setHomeUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户展示页的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *homeUrl</Declaration>
+			
+			
+			<Anchor>//api/name/homeUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/homeUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	用户展示页的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *homeUrl</Declaration>
+			
+			
+			<Anchor>//api/name/homeUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setIcon:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像小图的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/icon</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像小图的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setNick:</TokenIdentifier>
+			<Abstract type="html">	@brief	昵称</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
+			
+			
+			<Anchor>//api/name/nick</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/nick</TokenIdentifier>
+			<Abstract type="html">	@brief	昵称</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
+			
+			
+			<Anchor>//api/name/nick</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setOpenId:</TokenIdentifier>
+			<Abstract type="html">	@brief	搜狐用户ID</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			
+			
+			<Anchor>//api/name/openId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/openId</TokenIdentifier>
+			<Abstract type="html">	@brief	搜狐用户ID</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			
+			
+			<Anchor>//api/name/openId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名字</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名字</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像大图的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/image</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像大图的URL</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setBirthdayYear:</TokenIdentifier>
+			<Abstract type="html">	@brief	出生年份</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayYear</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayYear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/birthdayYear</TokenIdentifier>
+			<Abstract type="html">	@brief	出生年份</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayYear</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayYear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setBirthdayMonth:</TokenIdentifier>
+			<Abstract type="html">	@brief	出生月份</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayMonth</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayMonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/birthdayMonth</TokenIdentifier>
+			<Abstract type="html">	@brief	出生月份</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayMonth</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayMonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/setBirthdayDay:</TokenIdentifier>
+			<Abstract type="html">	@brief	出生日期</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayDay</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayDay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuUser/birthdayDay</TokenIdentifier>
+			<Abstract type="html">	@brief	出生日期</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger birthdayDay</Declaration>
+			
+			
+			<Anchor>//api/name/birthdayDay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSohuUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSohuUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSSohuUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

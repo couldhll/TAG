@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBDynamicFrameworkLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBDynamicFrameworkLoader</TokenIdentifier>
+			<Abstract type="html">@class FBDynamicFrameworkLoader</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/loadClass:withFramework:</TokenIdentifier>
+			<Abstract type="html">@abstract
+Loads a Class and returns the Class object.  This can then be used to create an instance of the class.</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (Class)loadClass:(NSString *)className withFramework:(NSString *)frameworkName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">An NSString of the name of the class</Abstract>
+				</Parameter><Parameter>
+					<Name>frameworkName</Name>
+					<Abstract type="html">The framework in which the class appears</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The Class object or nil if it fails to load.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadClass:withFramework:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/loadStringConstant:withFramework:</TokenIdentifier>
+			<Abstract type="html">@abstract
+Loads a string constant and return the string.</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)loadStringConstant:(NSString *)constantName withFramework:(NSString *)frameworkName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>constantName</Name>
+					<Abstract type="html">An NSString of the name of the constant</Abstract>
+				</Parameter><Parameter>
+					<Name>frameworkName</Name>
+					<Abstract type="html">The framework in which the constant appears</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The string or nil if it fails to load.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadStringConstant:withFramework:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/loadkSecRandomDefault</TokenIdentifier>
+			<Abstract type="html">@abstract
+Load the kSecRandomDefault value from the Security Framework</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (SecRandomRef)loadkSecRandomDefault</Declaration>
+			
+			<ReturnValue><Abstract type="html">The kSecRandomDefault value or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadkSecRandomDefault</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/frameworkPathTemplate</TokenIdentifier>
+			<Abstract type="html">@abstract
+Returns the path template to the Frameworks.
+We will try and load the template passing in the framework twice
+&quot;/System/Library/Frameworks/%@.framework/%@&quot; is the default value.</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)frameworkPathTemplate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The path template for loading Frameworks</Abstract></ReturnValue>
+			<Anchor>//api/name/frameworkPathTemplate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/setFrameworkPathTemplate:</TokenIdentifier>
+			<Abstract type="html">@abstract
+Sets the path template of where to load Frameworks from
+This will be loaded with [NSString stringWithFormat:pathTemplate, framework, framework]</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setFrameworkPathTemplate:(NSString *)pathTemplate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pathTemplate</Name>
+					<Abstract type="html">An NSString of the pathTemplate</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">void</Abstract></ReturnValue>
+			<Anchor>//api/name/setFrameworkPathTemplate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/sqlitePath</TokenIdentifier>
+			<Abstract type="html">@abstract
+Returns the path to the Sqlite library</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)sqlitePath</Declaration>
+			
+			<ReturnValue><Abstract type="html">The path we will attempt to load the Sqlite library from</Abstract></ReturnValue>
+			<Anchor>//api/name/sqlitePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBDynamicFrameworkLoader/setSqlitePath:</TokenIdentifier>
+			<Abstract type="html">@abstract
+Sets the path of where to load the Sqlite library from</Abstract>
+			<DeclaredIn>FBDynamicFrameworkLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setSqlitePath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">An NSString of the path</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">void</Abstract></ReturnValue>
+			<Anchor>//api/name/setSqlitePath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSPocketCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPocketCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>
+			
+			<NodeRef refid="308"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/userName</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

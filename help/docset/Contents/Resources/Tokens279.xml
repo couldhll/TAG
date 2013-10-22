@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusPlaceLived.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusPlaceLived</TokenIdentifier>
+			<Abstract type="html">	@brief	居住地</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>
+			
+			<NodeRef refid="279"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusPlaceLived/setValue:</TokenIdentifier>
+			<Abstract type="html">	@brief	A place where this person has lived. For example: &quot;Seattle, WA&quot;, &quot;Near Toronto&quot;.</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusPlaceLived/value</TokenIdentifier>
+			<Abstract type="html">	@brief	A place where this person has lived. For example: &quot;Seattle, WA&quot;, &quot;Near Toronto&quot;.</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusPlaceLived/setPrimary:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, this place of residence is this person&apos;s primary residence.</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusPlaceLived/primary</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, this place of residence is this person&apos;s primary residence.</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusPlaceLived/placeLivedWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建居住地信息</Abstract>
+			<DeclaredIn>SSGooglePlusPlaceLived.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusPlaceLived *)placeLivedWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">居住地信息</Abstract></ReturnValue>
+			<Anchor>//api/name/placeLivedWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMQuiltItemView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMQuiltItemView</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流子项视图</Abstract>
+			<DeclaredIn>CMQuiltItemView.h</DeclaredIn>
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltItemView/setReuseIdentifier:</TokenIdentifier>
+			<Abstract type="html">	@brief	复用标识</Abstract>
+			<DeclaredIn>CMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltItemView/reuseIdentifier</TokenIdentifier>
+			<Abstract type="html">	@brief	复用标识</Abstract>
+			<DeclaredIn>CMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltItemView/setConstructorDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	构造器协议对象</Abstract>
+			<DeclaredIn>CMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;ICMQuiltItemViewConstructorDelegate&gt; constructorDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/constructorDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltItemView/constructorDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	构造器协议对象</Abstract>
+			<DeclaredIn>CMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;ICMQuiltItemViewConstructorDelegate&gt; constructorDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/constructorDelegate</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

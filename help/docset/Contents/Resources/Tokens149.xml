@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAOverridingMediator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAOverridingMediator</TokenIdentifier>
+			<Abstract type="html">@brief A mediator to select origin or overrided method. Useful for partial protocol implementation.</Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>
+			
+			<NodeRef refid="149"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOverridingMediator/initWithOrigin:override:suppressive:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize partial overrider.</Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithOrigin:(id)origin override:(id)override suppressive:(BOOL)suppressive</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">Origin implementation.</Abstract>
+				</Parameter><Parameter>
+					<Name>override</Name>
+					<Abstract type="html">Overrided implementation.</Abstract>
+				</Parameter><Parameter>
+					<Name>suppressive</Name>
+					<Abstract type="html">Suppress overrided implementation or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a mediator of origin and overrided objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithOrigin:override:suppressive:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

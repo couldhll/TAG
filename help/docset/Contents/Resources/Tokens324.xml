@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenIndustry.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenIndustry</TokenIdentifier>
+			<Abstract type="html">	@brief	行业</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>
+			
+			<NodeRef refid="324"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenIndustry/setIndustryCategory:</TokenIdentifier>
+			<Abstract type="html">	@brief	行业类别</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industryCategory</Declaration>
+			
+			
+			<Anchor>//api/name/industryCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenIndustry/industryCategory</TokenIdentifier>
+			<Abstract type="html">	@brief	行业类别</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industryCategory</Declaration>
+			
+			
+			<Anchor>//api/name/industryCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenIndustry/setIndustryDetail:</TokenIdentifier>
+			<Abstract type="html">	@brief	行业详情</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industryDetail</Declaration>
+			
+			
+			<Anchor>//api/name/industryDetail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenIndustry/industryDetail</TokenIdentifier>
+			<Abstract type="html">	@brief	行业详情</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industryDetail</Declaration>
+			
+			
+			<Anchor>//api/name/industryDetail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenIndustry/industryWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建行业信息</Abstract>
+			<DeclaredIn>SSRenRenIndustry.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenIndustry *)industryWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">行业信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/industryWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

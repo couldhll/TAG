@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ICMHTTPWorker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ICMHTTPWorker</TokenIdentifier>
+			<Abstract type="html">	@brief	Http处理器</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>
+			
+			<NodeRef refid="609"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTTPWorker/httpResult:</TokenIdentifier>
+			<Abstract type="html">	@brief	http返回</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			
+			<Declaration>- (void)httpResult:(CMHTTPToken *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/httpResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTTPWorker/httpCacheResult:cacheData:</TokenIdentifier>
+			<Abstract type="html">	@brief	http缓存返回</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			
+			<Declaration>- (void)httpCacheResult:(CMHTTPToken *)token cacheData:(NSString *)cacheData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌</Abstract>
+				</Parameter><Parameter>
+					<Name>cacheData</Name>
+					<Abstract type="html">缓存数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/httpCacheResult:cacheData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTTPWorker/httpFault:</TokenIdentifier>
+			<Abstract type="html">	@brief	http错误</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			
+			<Declaration>- (void)httpFault:(CMHTTPToken *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/httpFault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTTPWorker/httpShouldGetCacheData:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否允许获取缓存数据</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)httpShouldGetCacheData:(CMHTTPToken *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示允许获取，NO 表示从指定URL中获取数据</Abstract></ReturnValue>
+			<Anchor>//api/name/httpShouldGetCacheData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMHTTPWorker/httpCacheData:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取缓存数据</Abstract>
+			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)httpCacheData:(CMHTTPToken *)token</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">令牌</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">缓存数据</Abstract></ReturnValue>
+			<Anchor>//api/name/httpCacheData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSSinaWeiboFavorite.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboFavorite</TokenIdentifier>
+			<Abstract type="html">	@brief	新浪微博收藏信息</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>
+			
+			<NodeRef refid="336"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setFavoritedTime:</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏时间</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favoritedTime</Declaration>
+			
+			
+			<Anchor>//api/name/favoritedTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/favoritedTime</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏时间</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favoritedTime</Declaration>
+			
+			
+			<Anchor>//api/name/favoritedTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/status</TokenIdentifier>
+			<Abstract type="html">	@brief	微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setTags:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签列表</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/tags</TokenIdentifier>
+			<Abstract type="html">	@brief	标签列表</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboFavorite/favoriteWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建收藏信息</Abstract>
+			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSinaWeiboFavorite *)favoriteWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">收藏信息</Abstract></ReturnValue>
+			<Anchor>//api/name/favoriteWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

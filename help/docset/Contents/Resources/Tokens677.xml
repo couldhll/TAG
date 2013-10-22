@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	授权视图协议</Abstract>
+			<DeclaredIn>ISSViewDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="677"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSViewDelegate/viewOnWillDisplay:shareType:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权视图将要显示</Abstract>
+			<DeclaredIn>ISSViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewOnWillDisplay:(UIViewController *)viewController shareType:(ShareType)shareType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authView</Name>
+					<Abstract type="html">授权视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewOnWillDisplay:shareType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSViewDelegate/viewOnWillDismiss:shareType:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权视图将要关闭</Abstract>
+			<DeclaredIn>ISSViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)viewOnWillDismiss:(UIViewController *)viewController shareType:(ShareType)shareType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authView</Name>
+					<Abstract type="html">授权视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/viewOnWillDismiss:shareType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSViewDelegate/view:autorotateToInterfaceOrientation:shareType:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权视图旋转到某个方向</Abstract>
+			<DeclaredIn>ISSViewDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)view:(UIViewController *)viewController autorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation shareType:(ShareType)shareType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>toInterfaceOrientation</Name>
+					<Abstract type="html">设备方向</Abstract>
+				</Parameter><Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter><Parameter>
+					<Name>authView</Name>
+					<Abstract type="html">授权视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/view:autorotateToInterfaceOrientation:shareType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

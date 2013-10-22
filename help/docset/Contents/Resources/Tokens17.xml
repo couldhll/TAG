@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGSinaWeiboStatusCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGSinaWeiboStatusCell</TokenIdentifier>
+			<Abstract type="html">	@brief	微博状态单元格</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博状态信息</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboStatusCell/status</TokenIdentifier>
+			<Abstract type="html">	@brief	微博状态信息</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/setCellHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	单元格高度</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat cellHeight</Declaration>
+			
+			
+			<Anchor>//api/name/cellHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboStatusCell/cellHeight</TokenIdentifier>
+			<Abstract type="html">	@brief	单元格高度</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat cellHeight</Declaration>
+			
+			
+			<Anchor>//api/name/cellHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	协议委托</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboStatusCellDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboStatusCell/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	协议委托</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboStatusCellDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/initWithStyle:reuseIdentifier:imageCacheManager:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化单元格</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier imageCacheManager:(CMImageCacheManager *)imageCacheManager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>style</Name>
+					<Abstract type="html">风格</Abstract>
+				</Parameter><Parameter>
+					<Name>reuseIdentifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter><Parameter>
+					<Name>imageCacheManager</Name>
+					<Abstract type="html">图片缓存管理器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">单元格</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:imageCacheManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/layoutThatStaus:isCalCellHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据新浪状态信息排版</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)layoutThatStaus:(SSSinaWeiboStatus *)status isCalCellHeight:(BOOL)isCalCellHeight</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">状态信息</Abstract>
+				</Parameter><Parameter>
+					<Name>isCalCellHeight</Name>
+					<Abstract type="html">是否计算高度标识，YES表示计算高度，将不对图片进行加载</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">单元格高度</Abstract></ReturnValue>
+			<Anchor>//api/name/layoutThatStaus:isCalCellHeight:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboStatusCell/contentView:showPic:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示图片</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.m</DeclaredIn>			
+			
+			<Declaration>- (void)contentView:(AGSinaWeiboRefContentView *)contentView showPic:(NSString *)imageUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>imageUrl</Name>
+					<Abstract type="html">图片URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/contentView:showPic:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

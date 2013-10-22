@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFLogInViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFLogInViewController</TokenIdentifier>
+			<Abstract type="html">The class that presents and manages a standard authentication interface for logging in a PFUser.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<NodeRef refid="170"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFields:</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
+    enum {
+        PFLogInFieldsNone = 0,
+        PFLogInFieldsUsernameAndPassword = 1 &lt;&lt; 0,
+        PFLogInFieldsPasswordForgotten = 1 &lt;&lt; 1,
+        PFLogInFieldsLogInButton = 1 &lt;&lt; 2,
+        PFLogInFieldsFacebook = 1 &lt;&lt; 3,
+        PFLogInFieldsTwitter = 1 &lt;&lt; 4,
+        PFLogInFieldsSignUpButton = 1 &lt;&lt; 5,
+        PFLogInFieldsDismissButton = 1 &lt;&lt; 6,
+        PFLogInFieldsDefault = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton | PFLogInFieldsPasswordForgotten | PFLogInFieldsDismissButton
+    };</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) PFLogInFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
+    enum {
+        PFLogInFieldsNone = 0,
+        PFLogInFieldsUsernameAndPassword = 1 &lt;&lt; 0,
+        PFLogInFieldsPasswordForgotten = 1 &lt;&lt; 1,
+        PFLogInFieldsLogInButton = 1 &lt;&lt; 2,
+        PFLogInFieldsFacebook = 1 &lt;&lt; 3,
+        PFLogInFieldsTwitter = 1 &lt;&lt; 4,
+        PFLogInFieldsSignUpButton = 1 &lt;&lt; 5,
+        PFLogInFieldsDismissButton = 1 &lt;&lt; 6,
+        PFLogInFieldsDefault = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton | PFLogInFieldsPasswordForgotten | PFLogInFieldsDismissButton
+    };</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) PFLogInFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setLogInView:</TokenIdentifier>
+			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFLogInView *logInView</Declaration>
+			
+			
+			<Anchor>//api/name/logInView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/logInView</TokenIdentifier>
+			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFLogInView *logInView</Declaration>
+			
+			
+			<Anchor>//api/name/logInView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFacebookPermissions:</TokenIdentifier>
+			<Abstract type="html">The facebook permissions that Facebook log in requests for.
+If unspecified, the default is basic facebook permissions.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *facebookPermissions</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPermissions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/facebookPermissions</TokenIdentifier>
+			<Abstract type="html">The facebook permissions that Facebook log in requests for.
+If unspecified, the default is basic facebook permissions.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *facebookPermissions</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPermissions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setSignUpController:</TokenIdentifier>
+			<Abstract type="html">The sign up controller if sign up is enabled.
+Use this to configure the sign up view, and the transition animation to the sign up view.
+The default is a sign up view with a username, a password, a dismiss button and a sign up button.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFSignUpViewController *signUpController</Declaration>
+			
+			
+			<Anchor>//api/name/signUpController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/signUpController</TokenIdentifier>
+			<Abstract type="html">The sign up controller if sign up is enabled.
+Use this to configure the sign up view, and the transition animation to the sign up view.
+The default is a sign up view with a username, a password, a dismiss button and a sign up button.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFSignUpViewController *signUpController</Declaration>
+			
+			
+			<Anchor>//api/name/signUpController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

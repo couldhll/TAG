@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusUrl.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	URL对象</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>
+			
+			<NodeRef refid="281"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUrl/setValue:</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL value.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUrl/value</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL value.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUrl/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of URL. Possible values are:
+&quot;home&quot; - URL for home.
+&quot;work&quot; - URL for work.
+&quot;blog&quot; - URL for blog.
+&quot;profile&quot; - URL for profile.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUrl/type</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of URL. Possible values are:
+&quot;home&quot; - URL for home.
+&quot;work&quot; - URL for work.
+&quot;blog&quot; - URL for blog.
+&quot;profile&quot; - URL for profile.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUrl/setPrimary:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, this URL is the person&apos;s primary URL.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUrl/primary</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, this URL is the person&apos;s primary URL.</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusUrl/urlWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建邮箱信息</Abstract>
+			<DeclaredIn>SSGooglePlusUrl.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusUrl *)urlWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">邮箱信息</Abstract></ReturnValue>
+			<Anchor>//api/name/urlWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

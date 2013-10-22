@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFTwitterUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFTwitterUtils</TokenIdentifier>
+			<Abstract type="html">Provides utility functions for working with Twitter in a Parse application.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>
+			
+			<NodeRef refid="183"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/twitter</TokenIdentifier>
+			<Abstract type="html">Gets the instance of the Twitter object that Parse uses.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (PF_Twitter *)twitter</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Twitter instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/twitter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/initializeWithConsumerKey:consumerSecret:</TokenIdentifier>
+			<Abstract type="html">Initializes the Twitter singleton. You must invoke this in order to use the Twitter functionality in Parse.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer key.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer secret.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeWithConsumerKey:consumerSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/isLinkedWithUser:</TokenIdentifier>
+			<Abstract type="html">Whether the user has their account linked to Twitter.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isLinkedWithUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to check for a Twitter link. The user must be logged in on this device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">True if the user has their account linked to Twitter.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLinkedWithUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/logInWithBlock:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a PFUser.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithBlock:(PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(PFUser user, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/logInWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a PFUser. The selector for the callback should look like: (PFUser )user error:(NSError *)error</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/logInWithTwitterId:screenName:authToken:authTokenSecret:block:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the PFUser.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithTwitterId:(NSString *)twitterId screenName:(NSString *)screenName authToken:(NSString *)authToken authTokenSecret:(NSString *)authTokenSecret block:(PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>twitterId</Name>
+					<Abstract type="html">The id of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>authToken</Name>
+					<Abstract type="html">The auth token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>authTokenSecret</Name>
+					<Abstract type="html">The auth token secret for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(PFUser user, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</TokenIdentifier>
+			<Abstract type="html">Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the PFUser.
+The selector for the callback should look like: (PFUser )user error:(NSError )error</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)logInWithTwitterId:(NSString *)twitterId screenName:(NSString *)screenName authToken:(NSString *)authToken authTokenSecret:(NSString *)authTokenSecret target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>twitterId</Name>
+					<Abstract type="html">The id of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>authToken</Name>
+					<Abstract type="html">The auth token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>authTokenSecret</Name>
+					<Abstract type="html">The auth token secret for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/linkUser:</TokenIdentifier>
+			<Abstract type="html">Links Twitter to an existing PFUser. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the PFUser.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Twitter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/linkUser:block:</TokenIdentifier>
+			<Abstract type="html">Links Twitter to an existing PFUser. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the PFUser.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(BOOL success, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/linkUser:target:selector:</TokenIdentifier>
+			<Abstract type="html">Links Twitter to an existing PFUser. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the PFUser.
+The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/linkUser:twitterId:screenName:authToken:authTokenSecret:block:</TokenIdentifier>
+			<Abstract type="html">Links Twitter to an existing PFUser. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the PFUser.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user twitterId:(NSString *)twitterId screenName:(NSString *)screenName authToken:(NSString *)authToken authTokenSecret:(NSString *)authTokenSecret block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>twitterId</Name>
+					<Abstract type="html">The id of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>authToken</Name>
+					<Abstract type="html">The auth token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>authTokenSecret</Name>
+					<Abstract type="html">The auth token secret for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:
+(BOOL success, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</TokenIdentifier>
+			<Abstract type="html">Links Twitter to an existing PFUser. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the PFUser.
+The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)linkUser:(PFUser *)user twitterId:(NSString *)twitterId screenName:(NSString *)screenName authToken:(NSString *)authToken authTokenSecret:(NSString *)authTokenSecret target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>twitterId</Name>
+					<Abstract type="html">The id of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of the Twitter user being linked</Abstract>
+				</Parameter><Parameter>
+					<Name>authToken</Name>
+					<Abstract type="html">The auth token for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>authTokenSecret</Name>
+					<Abstract type="html">The auth token secret for the user&apos;s session</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/unlinkUser:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Twitter account.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Twitter.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/unlinkUser:error:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Twitter account.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkUser:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/unlinkUserInBackground:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Twitter account.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Twitter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/unlinkUserInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Twitter account.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user block:(PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFTwitterUtils/unlinkUserInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to unlink a user from a Twitter account.</Abstract>
+			<DeclaredIn>PFTwitterUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Twitter</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:target:selector:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

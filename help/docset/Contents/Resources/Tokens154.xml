@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAVersion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAVersion</TokenIdentifier>
+			<Abstract type="html">@file
+@brief Tool for system version</Abstract>
+			<DeclaredIn>NSAVersion.h</DeclaredIn>
+			
+			<NodeRef refid="154"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

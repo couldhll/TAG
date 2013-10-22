@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookDevice</TokenIdentifier>
+			<Abstract type="html">	@brief	设备信息</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>
+			
+			<NodeRef refid="251"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setOs:</TokenIdentifier>
+			<Abstract type="html">	@brief	操作系统</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *os</Declaration>
+			
+			
+			<Anchor>//api/name/os</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/os</TokenIdentifier>
+			<Abstract type="html">	@brief	操作系统</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *os</Declaration>
+			
+			
+			<Anchor>//api/name/os</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setHardware:</TokenIdentifier>
+			<Abstract type="html">	@brief	设备型号</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hardware</Declaration>
+			
+			
+			<Anchor>//api/name/hardware</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/hardware</TokenIdentifier>
+			<Abstract type="html">	@brief	设备型号</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hardware</Declaration>
+			
+			
+			<Anchor>//api/name/hardware</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookDevice/deviceWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建设备信息</Abstract>
+			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookDevice *)deviceWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">设备信息</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1498 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFQueryTableViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFQueryTableViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/imageKey">&nbsp;&nbsp;&nbsp;&nbsp;imageKey</option>
+	
+	<option value="//api/name/isLoading">&nbsp;&nbsp;&nbsp;&nbsp;isLoading</option>
+	
+	<option value="//api/name/loadingViewEnabled">&nbsp;&nbsp;&nbsp;&nbsp;loadingViewEnabled</option>
+	
+	<option value="//api/name/objects">&nbsp;&nbsp;&nbsp;&nbsp;objects</option>
+	
+	<option value="//api/name/objectsPerPage">&nbsp;&nbsp;&nbsp;&nbsp;objectsPerPage</option>
+	
+	<option value="//api/name/paginationEnabled">&nbsp;&nbsp;&nbsp;&nbsp;paginationEnabled</option>
+	
+	<option value="//api/name/parseClassName">&nbsp;&nbsp;&nbsp;&nbsp;parseClassName</option>
+	
+	<option value="//api/name/placeholderImage">&nbsp;&nbsp;&nbsp;&nbsp;placeholderImage</option>
+	
+	<option value="//api/name/pullToRefreshEnabled">&nbsp;&nbsp;&nbsp;&nbsp;pullToRefreshEnabled</option>
+	
+	<option value="//api/name/textKey">&nbsp;&nbsp;&nbsp;&nbsp;textKey</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/initWithClassName:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithClassName:</option>
+	
+	<option value="//api/name/initWithStyle:className:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithStyle:className:</option>
+	
+	<option value="//api/name/loadNextPage">&nbsp;&nbsp;&nbsp;&nbsp;- loadNextPage</option>
+	
+	<option value="//api/name/loadObjects">&nbsp;&nbsp;&nbsp;&nbsp;- loadObjects</option>
+	
+	<option value="//api/name/loadObjects:clear:">&nbsp;&nbsp;&nbsp;&nbsp;- loadObjects:clear:</option>
+	
+	<option value="//api/name/objectAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- objectAtIndexPath:</option>
+	
+	<option value="//api/name/objectsDidLoad:">&nbsp;&nbsp;&nbsp;&nbsp;- objectsDidLoad:</option>
+	
+	<option value="//api/name/objectsWillLoad">&nbsp;&nbsp;&nbsp;&nbsp;- objectsWillLoad</option>
+	
+	<option value="//api/name/queryForTable">&nbsp;&nbsp;&nbsp;&nbsp;- queryForTable</option>
+	
+	<option value="//api/name/tableView:cellForNextPageAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableView:cellForNextPageAtIndexPath:</option>
+	
+	<option value="//api/name/tableView:cellForRowAtIndexPath:object:">&nbsp;&nbsp;&nbsp;&nbsp;- tableView:cellForRowAtIndexPath:object:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a PFQueryTableViewController">Creating a PFQueryTableViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Behavior">Configuring Behavior</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to Events">Responding to Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Results">Accessing Results</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Querying">Querying</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Data Source Methods">Data Source Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageKey">imageKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLoading">isLoading</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadingViewEnabled">loadingViewEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objects">objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsPerPage">objectsPerPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paginationEnabled">paginationEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseClassName">parseClassName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/placeholderImage">placeholderImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pullToRefreshEnabled">pullToRefreshEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textKey">textKey</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithClassName:">initWithClassName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithStyle:className:">initWithStyle:className:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadNextPage">loadNextPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadObjects">loadObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadObjects:clear:">loadObjects:clear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectAtIndexPath:">objectAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsDidLoad:">objectsDidLoad:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsWillLoad">objectsWillLoad</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryForTable">queryForTable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView:cellForNextPageAtIndexPath:">tableView:cellForNextPageAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFQueryTableViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFQueryTableViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UITableViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">PF_EGORefreshTableHeaderDelegate<br />UITableViewDataSource<br />UITableViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFQueryTableViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a PFQueryTableViewController" name="task_Creating a PFQueryTableViewController"></a>
+						<h3 class="subsubtitle task-title">Creating a PFQueryTableViewController</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithStyle:className:">&ndash;&nbsp;initWithStyle:className:</a></code>
+		<span class="tooltip"><p>The designated initializer.
+Initializes with a class name of the PFObjects that will be associated with this table.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithClassName:">&ndash;&nbsp;initWithClassName:</a></code>
+		<span class="tooltip"><p>Initializes with a class name of the PFObjects that will be associated with this table.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Behavior" name="task_Configuring Behavior"></a>
+						<h3 class="subsubtitle task-title">Configuring Behavior</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseClassName">&nbsp;&nbsp;parseClassName</a></code>
+		<span class="tooltip"><p>The class of the <a href="../Classes/PFObject.html">PFObject</a> this table will use as a datasource</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textKey">&nbsp;&nbsp;textKey</a></code>
+		<span class="tooltip"><p>The key to use to display for the cell text label. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageKey">&nbsp;&nbsp;imageKey</a></code>
+		<span class="tooltip"><p>The key to use to display for the cell image view. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/placeholderImage">&nbsp;&nbsp;placeholderImage</a></code>
+		<span class="tooltip"><p>The image to use as a placeholder for the cell images. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadingViewEnabled">&nbsp;&nbsp;loadingViewEnabled</a></code>
+		<span class="tooltip"><p>Whether the table should use the default loading view (default:YES)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pullToRefreshEnabled">&nbsp;&nbsp;pullToRefreshEnabled</a></code>
+		<span class="tooltip"><p>Whether the table should use the built-in pull-to-refresh feature (default:YES)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paginationEnabled">&nbsp;&nbsp;paginationEnabled</a></code>
+		<span class="tooltip"><p>Whether the table should use the built-in pagination feature (default:YES)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsPerPage">&nbsp;&nbsp;objectsPerPage</a></code>
+		<span class="tooltip"><p>The number of <a href="#//api/name/objects">objects</a> to show per page (default: 25)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLoading">&nbsp;&nbsp;isLoading</a></code>
+		<span class="tooltip"><p>Whether the table is actively loading new data from the server</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to Events" name="task_Responding to Events"></a>
+						<h3 class="subsubtitle task-title">Responding to Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsDidLoad:">&ndash;&nbsp;objectsDidLoad:</a></code>
+		<span class="tooltip"><p>Called when objects have loaded from Parse. If you override this method, you must
+call [super objectsDidLoad:] in your implementation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsWillLoad">&ndash;&nbsp;objectsWillLoad</a></code>
+		<span class="tooltip"><p>Called when objects will loaded from Parse. If you override this method, you must
+call [super objectsWillLoad] in your implementation.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Results" name="task_Accessing Results"></a>
+						<h3 class="subsubtitle task-title">Accessing Results</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objects">&nbsp;&nbsp;objects</a></code>
+		<span class="tooltip"><p>The array of PFObjects that is the UITableView data source</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectAtIndexPath:">&ndash;&nbsp;objectAtIndexPath:</a></code>
+		<span class="tooltip"><p>Returns an object at a particular indexPath. The default impementation returns
+the object at indexPath.row. If you want to return <a href="#//api/name/objects">objects</a> in a different
+indexPath order, like for sections, override this method.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Querying" name="task_Querying"></a>
+						<h3 class="subsubtitle task-title">Querying</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryForTable">&ndash;&nbsp;queryForTable</a></code>
+		<span class="tooltip"><p>Override to construct your own custom <a href="../Classes/PFQuery.html">PFQuery</a> to get the <a href="#//api/name/objects">objects</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+		<span class="tooltip"><p>Clears the table of all <a href="#//api/name/objects">objects</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadObjects">&ndash;&nbsp;loadObjects</a></code>
+		<span class="tooltip"><p>Clears the table and loads the first page of <a href="#//api/name/objects">objects</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadObjects:clear:">&ndash;&nbsp;loadObjects:clear:</a></code>
+		<span class="tooltip"><p>Loads the <a href="#//api/name/objects">objects</a> of the className at the specified page and appends it to the
+<a href="#//api/name/objects">objects</a> already loaded and refreshes the table.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadNextPage">&ndash;&nbsp;loadNextPage</a></code>
+		<span class="tooltip"><p>Loads the next page of <a href="#//api/name/objects">objects</a>, appends to table, and refreshes.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Data Source Methods" name="task_Data Source Methods"></a>
+						<h3 class="subsubtitle task-title">Data Source Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView:cellForRowAtIndexPath:object:">&ndash;&nbsp;tableView:cellForRowAtIndexPath:object:</a></code>
+		<span class="tooltip"><p>Override this method to customize each cell given a <a href="../Classes/PFObject.html">PFObject</a> that is loaded. If you
+don&rsquo;t override this method, it will use a default style cell and display either
+the first data key from the object, or it will display the key as specified
+with keyToDisplay.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tableView:cellForNextPageAtIndexPath:">&ndash;&nbsp;tableView:cellForNextPageAtIndexPath:</a></code>
+		<span class="tooltip"><p>Override this method to customize the cell that allows the user to load the
+next page when pagination is turned on.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/imageKey" title="imageKey"></a>
+	<h3 class="subsubtitle method-title">imageKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The key to use to display for the cell image view. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *imageKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLoading" title="isLoading"></a>
+	<h3 class="subsubtitle method-title">isLoading</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the table is actively loading new data from the server</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isLoading</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadingViewEnabled" title="loadingViewEnabled"></a>
+	<h3 class="subsubtitle method-title">loadingViewEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the table should use the default loading view (default:YES)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL loadingViewEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objects" title="objects"></a>
+	<h3 class="subsubtitle method-title">objects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The array of PFObjects that is the UITableView data source</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) NSArray *objects</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsPerPage" title="objectsPerPage"></a>
+	<h3 class="subsubtitle method-title">objectsPerPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of <a href="#//api/name/objects">objects</a> to show per page (default: 25)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger objectsPerPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paginationEnabled" title="paginationEnabled"></a>
+	<h3 class="subsubtitle method-title">paginationEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the table should use the built-in pagination feature (default:YES)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL paginationEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseClassName" title="parseClassName"></a>
+	<h3 class="subsubtitle method-title">parseClassName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The class of the <a href="../Classes/PFObject.html">PFObject</a> this table will use as a datasource</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *parseClassName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/placeholderImage" title="placeholderImage"></a>
+	<h3 class="subsubtitle method-title">placeholderImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The image to use as a placeholder for the cell images. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIImage *placeholderImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pullToRefreshEnabled" title="pullToRefreshEnabled"></a>
+	<h3 class="subsubtitle method-title">pullToRefreshEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the table should use the built-in pull-to-refresh feature (default:YES)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL pullToRefreshEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textKey" title="textKey"></a>
+	<h3 class="subsubtitle method-title">textKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The key to use to display for the cell text label. This won&rsquo;t apply if you override <a href="#//api/name/tableView:cellForRowAtIndexPath:object:">tableView:cellForRowAtIndexPath:object:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *textKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears the table of all <a href="#//api/name/objects">objects</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithClassName:" title="initWithClassName:"></a>
+	<h3 class="subsubtitle method-title">initWithClassName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes with a class name of the PFObjects that will be associated with this table.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithClassName:(NSString *)<em>aClassName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aClassName</em></dt>
+			<dd><p>The class name of the PFObjects that this table will display</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The initialized PFQueryTableViewController</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithStyle:className:" title="initWithStyle:className:"></a>
+	<h3 class="subsubtitle method-title">initWithStyle:className:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The designated initializer.
+Initializes with a class name of the PFObjects that will be associated with this table.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithStyle:(UITableViewStyle)<em>style</em> className:(NSString *)<em>aClassName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>The UITableViewStyle for the table</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aClassName</em></dt>
+			<dd><p>The class name of the PFObjects that this table will display</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The initialized PFQueryTableViewController</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadNextPage" title="loadNextPage"></a>
+	<h3 class="subsubtitle method-title">loadNextPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads the next page of <a href="#//api/name/objects">objects</a>, appends to table, and refreshes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadNextPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadObjects" title="loadObjects"></a>
+	<h3 class="subsubtitle method-title">loadObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears the table and loads the first page of <a href="#//api/name/objects">objects</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadObjects</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadObjects:clear:" title="loadObjects:clear:"></a>
+	<h3 class="subsubtitle method-title">loadObjects:clear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads the <a href="#//api/name/objects">objects</a> of the className at the specified page and appends it to the
+<a href="#//api/name/objects">objects</a> already loaded and refreshes the table.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)loadObjects:(NSInteger)<em>page</em> clear:(BOOL)<em>clear</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page of <a href="#//api/name/objects">objects</a> to load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clear</em></dt>
+			<dd><p>Whether to <a href="#//api/name/clear">clear</a> the table after receiving the <a href="#//api/name/objects">objects</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectAtIndexPath:" title="objectAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">objectAtIndexPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an object at a particular indexPath. The default impementation returns
+the object at indexPath.row. If you want to return <a href="#//api/name/objects">objects</a> in a different
+indexPath order, like for sections, override this method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PFObject *)objectAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The indexPath</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object at the specified index</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsDidLoad:" title="objectsDidLoad:"></a>
+	<h3 class="subsubtitle method-title">objectsDidLoad:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when objects have loaded from Parse. If you override this method, you must
+call [super objectsDidLoad:] in your implementation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)objectsDidLoad:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The <a href="../Classes/Parse.html">Parse</a> error from running the <a href="../Classes/PFQuery.html">PFQuery</a>, if there was any.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsWillLoad" title="objectsWillLoad"></a>
+	<h3 class="subsubtitle method-title">objectsWillLoad</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when objects will loaded from Parse. If you override this method, you must
+call [super objectsWillLoad] in your implementation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)objectsWillLoad</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryForTable" title="queryForTable"></a>
+	<h3 class="subsubtitle method-title">queryForTable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override to construct your own custom <a href="../Classes/PFQuery.html">PFQuery</a> to get the <a href="#//api/name/objects">objects</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PFQuery *)queryForTable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="../Classes/PFQuery.html">PFQuery</a> that <a href="#//api/name/loadObjects">loadObjects</a> will use to the <a href="#//api/name/objects">objects</a> for this table.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView:cellForNextPageAtIndexPath:" title="tableView:cellForNextPageAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">tableView:cellForNextPageAtIndexPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override this method to customize the cell that allows the user to load the
+next page when pagination is turned on.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PFTableViewCell *)tableView:(UITableView *)<em>tableView</em> cellForNextPageAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>The table view object associated with this controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The indexPath of the cell.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The cell that allows the user to paginate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tableView:cellForRowAtIndexPath:object:" title="tableView:cellForRowAtIndexPath:object:"></a>
+	<h3 class="subsubtitle method-title">tableView:cellForRowAtIndexPath:object:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override this method to customize each cell given a <a href="../Classes/PFObject.html">PFObject</a> that is loaded. If you
+don&rsquo;t override this method, it will use a default style cell and display either
+the first data key from the object, or it will display the key as specified
+with keyToDisplay.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PFTableViewCell *)tableView:(UITableView *)<em>tableView</em> cellForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em> object:(PFObject *)<em>object</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>The table view object associated with this controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The indexPath of the cell.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The <a href="../Classes/PFObject.html">PFObject</a> that is associated with the cell.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The cell that represents this object.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The cell should inherit from <a href="../Classes/PFTableViewCell.html">PFTableViewCell</a> which is a subclass of UITableViewCell.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFQueryTableViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

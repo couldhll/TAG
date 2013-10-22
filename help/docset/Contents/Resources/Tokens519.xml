@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSNull+Tools.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNull(Tools)</TokenIdentifier>
+			<Abstract type="html">@brief [NSNull][0] tools.
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>
+			
+			<NodeRef refid="519"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

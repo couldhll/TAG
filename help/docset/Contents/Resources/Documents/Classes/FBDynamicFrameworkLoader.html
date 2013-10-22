@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>FBDynamicFrameworkLoader Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FBDynamicFrameworkLoader Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/frameworkPathTemplate">&nbsp;&nbsp;&nbsp;&nbsp;+ frameworkPathTemplate</option>
+	
+	<option value="//api/name/loadClass:withFramework:">&nbsp;&nbsp;&nbsp;&nbsp;+ loadClass:withFramework:</option>
+	
+	<option value="//api/name/loadStringConstant:withFramework:">&nbsp;&nbsp;&nbsp;&nbsp;+ loadStringConstant:withFramework:</option>
+	
+	<option value="//api/name/loadkSecRandomDefault">&nbsp;&nbsp;&nbsp;&nbsp;+ loadkSecRandomDefault</option>
+	
+	<option value="//api/name/setFrameworkPathTemplate:">&nbsp;&nbsp;&nbsp;&nbsp;+ setFrameworkPathTemplate:</option>
+	
+	<option value="//api/name/setSqlitePath:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSqlitePath:</option>
+	
+	<option value="//api/name/sqlitePath">&nbsp;&nbsp;&nbsp;&nbsp;+ sqlitePath</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frameworkPathTemplate">frameworkPathTemplate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadClass:withFramework:">loadClass:withFramework:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadStringConstant:withFramework:">loadStringConstant:withFramework:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadkSecRandomDefault">loadkSecRandomDefault</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFrameworkPathTemplate:">setFrameworkPathTemplate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSqlitePath:">setSqlitePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sqlitePath">sqlitePath</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="FBDynamicFrameworkLoader Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FBDynamicFrameworkLoader Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">FBDynamicFrameworkLoader.h<br />FBDynamicFrameworkLoader.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class FBDynamicFrameworkLoader</p>
+
+<p>@abstract
+This class provides a way to load constants and methods from Apple Frameworks in a dynamic
+fashion.  It allows the SDK to be just dragged into a project without having to specify additional
+frameworks to link against.  It is an internal class and not to be used by 3rd party developers.</p>
+
+<p>This class is a generic class for loading Classes, NSStrings, and SecRandomRef.
+As new types are needed, they should be added and strongly typed.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadClass:withFramework:">+&nbsp;loadClass:withFramework:</a></code>
+		<span class="tooltip"><p>@abstract
+Loads a Class and returns the Class object.  This can then be used to create an instance of the class.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadStringConstant:withFramework:">+&nbsp;loadStringConstant:withFramework:</a></code>
+		<span class="tooltip"><p>@abstract
+Loads a string constant and return the string.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadkSecRandomDefault">+&nbsp;loadkSecRandomDefault</a></code>
+		<span class="tooltip"><p>@abstract
+Load the kSecRandomDefault value from the Security Framework</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frameworkPathTemplate">+&nbsp;frameworkPathTemplate</a></code>
+		<span class="tooltip"><p>@abstract
+Returns the path template to the Frameworks.
+We will try and load the template passing in the framework twice
+&ldquo;/System/Library/Frameworks/%@.framework/%@&rdquo; is the default value.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFrameworkPathTemplate:">+&nbsp;setFrameworkPathTemplate:</a></code>
+		<span class="tooltip"><p>@abstract
+Sets the path template of where to load Frameworks from
+This will be loaded with [NSString stringWithFormat:pathTemplate, framework, framework]</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sqlitePath">+&nbsp;sqlitePath</a></code>
+		<span class="tooltip"><p>@abstract
+Returns the path to the Sqlite library</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSqlitePath:">+&nbsp;setSqlitePath:</a></code>
+		<span class="tooltip"><p>@abstract
+Sets the path of where to load the Sqlite library from</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/frameworkPathTemplate" title="frameworkPathTemplate"></a>
+	<h3 class="subsubtitle method-title">frameworkPathTemplate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Returns the path template to the Frameworks.
+We will try and load the template passing in the framework twice
+&ldquo;/System/Library/Frameworks/%@.framework/%@&rdquo; is the default value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)frameworkPathTemplate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The path template for loading Frameworks</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadClass:withFramework:" title="loadClass:withFramework:"></a>
+	<h3 class="subsubtitle method-title">loadClass:withFramework:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Loads a Class and returns the Class object.  This can then be used to create an instance of the class.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Class)loadClass:(NSString *)<em>className</em> withFramework:(NSString *)<em>frameworkName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>className</em></dt>
+			<dd><p>An NSString of the name of the class</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frameworkName</em></dt>
+			<dd><p>The framework in which the class appears</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The Class object or nil if it fails to load.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadStringConstant:withFramework:" title="loadStringConstant:withFramework:"></a>
+	<h3 class="subsubtitle method-title">loadStringConstant:withFramework:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Loads a string constant and return the string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)loadStringConstant:(NSString *)<em>constantName</em> withFramework:(NSString *)<em>frameworkName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>constantName</em></dt>
+			<dd><p>An NSString of the name of the constant</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frameworkName</em></dt>
+			<dd><p>The framework in which the constant appears</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string or nil if it fails to load.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadkSecRandomDefault" title="loadkSecRandomDefault"></a>
+	<h3 class="subsubtitle method-title">loadkSecRandomDefault</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Load the kSecRandomDefault value from the Security Framework</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SecRandomRef)loadkSecRandomDefault</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The kSecRandomDefault value or nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFrameworkPathTemplate:" title="setFrameworkPathTemplate:"></a>
+	<h3 class="subsubtitle method-title">setFrameworkPathTemplate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Sets the path template of where to load Frameworks from
+This will be loaded with [NSString stringWithFormat:pathTemplate, framework, framework]</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setFrameworkPathTemplate:(NSString *)<em>pathTemplate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pathTemplate</em></dt>
+			<dd><p>An NSString of the pathTemplate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSqlitePath:" title="setSqlitePath:"></a>
+	<h3 class="subsubtitle method-title">setSqlitePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Sets the path of where to load the Sqlite library from</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSqlitePath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An NSString of the path</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sqlitePath" title="sqlitePath"></a>
+	<h3 class="subsubtitle method-title">sqlitePath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Returns the path to the Sqlite library</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)sqlitePath</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The path we will attempt to load the Sqlite library from</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBDynamicFrameworkLoader.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

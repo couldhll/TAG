@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGAuthViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGAuthViewController</TokenIdentifier>
+			<Abstract type="html">	@brief	授权视图控制器</Abstract>
+			<DeclaredIn>AGAuthViewController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGAuthViewController/userInfoUpdateHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息更新</Abstract>
+			<DeclaredIn>AGAuthViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)userInfoUpdateHandler:(NSNotification *)notif</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notif</Name>
+					<Abstract type="html">通知</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/userInfoUpdateHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

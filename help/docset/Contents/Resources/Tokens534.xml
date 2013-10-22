@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+GTMNSStringURLArgumentsAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(GTMNSStringURLArgumentsAdditions)</TokenIdentifier>
+			<Abstract type="html">Utilities for encoding and decoding URL arguments.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>
+			
+			<NodeRef refid="534"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByEscapingForURLArgument</TokenIdentifier>
+			<Abstract type="html">This differs from stringByAddingPercentEscapesUsingEncoding: in that it
+will escape all the reserved characters (per RFC 3986
+http://www.ietf.org/rfc/rfc3986.txt which
+stringByAddingPercentEscapesUsingEncoding would leave.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_stringByEscapingForURLArgument</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByEscapingForURLArgument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByUnescapingFromURLArgument</TokenIdentifier>
+			<Abstract type="html">This has the same behavior as stringByReplacingPercentEscapesUsingEncoding:,
+except that it will also convert &apos;+&apos; to space.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)gtm_stringByUnescapingFromURLArgument</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_stringByUnescapingFromURLArgument</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

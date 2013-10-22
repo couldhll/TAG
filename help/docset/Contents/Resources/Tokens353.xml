@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTencentWeiboErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	腾讯微博错误信息</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="353"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboErrorInfo/setRet:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回值</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
+			
+			
+			<Anchor>//api/name/ret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboErrorInfo/ret</TokenIdentifier>
+			<Abstract type="html">	@brief	返回值</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
+			
+			
+			<Anchor>//api/name/ret</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

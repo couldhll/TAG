@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSSinaWeiboGeo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboGeo</TokenIdentifier>
+			<Abstract type="html">	@brief	新浪地理位置信息</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>
+			
+			<NodeRef refid="337"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboGeo/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	类型：Point</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboGeo/type</TokenIdentifier>
+			<Abstract type="html">	@brief	类型：Point</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboGeo/setLatitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	纬度</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboGeo/latitude</TokenIdentifier>
+			<Abstract type="html">	@brief	纬度</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboGeo/setLongitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	经度</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboGeo/longitude</TokenIdentifier>
+			<Abstract type="html">	@brief	经度</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboGeo/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboGeo/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboGeo/geoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建地理位置信息</Abstract>
+			<DeclaredIn>SSSinaWeiboGeo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSinaWeiboGeo *)geoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">地理位置信息</Abstract></ReturnValue>
+			<Anchor>//api/name/geoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFLogInViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFLogInViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The protocol defines methods a delegate of a PFLogInViewController should implement.
+All methods of the protocol are optional.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<NodeRef refid="688"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:shouldBeginLogInWithUsername:password:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate to determine whether the log in request should be submitted to the server.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">the username the user tries to log in with.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">the password the user tries to log in with.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a boolean indicating whether the log in should proceed.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInViewController:shouldBeginLogInWithUsername:password:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:didLogInUser:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a PFUser is logged in.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user</Declaration>
+			
+			
+			<Anchor>//api/name/logInViewController:didLogInUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:didFailToLogInWithError:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the log in attempt fails.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/logInViewController:didFailToLogInWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewControllerDidCancelLogIn:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the log in screen is dismissed.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController</Declaration>
+			
+			
+			<Anchor>//api/name/logInViewControllerDidCancelLogIn:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

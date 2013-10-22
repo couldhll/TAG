@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTencentWeiboMusic.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboMusic</TokenIdentifier>
+			<Abstract type="html">	@brief	音乐信息</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>
+			
+			<NodeRef refid="354"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setAuthor:</TokenIdentifier>
+			<Abstract type="html">	@brief	演唱者</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/author</TokenIdentifier>
+			<Abstract type="html">	@brief	演唱者</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	音频地址</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/url</TokenIdentifier>
+			<Abstract type="html">	@brief	音频地址</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	音频名字，歌名</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/title</TokenIdentifier>
+			<Abstract type="html">	@brief	音频名字，歌名</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboMusic/musicWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建音乐信息</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTencentWeiboMusic *)musicWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">音乐信息</Abstract></ReturnValue>
+			<Anchor>//api/name/musicWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

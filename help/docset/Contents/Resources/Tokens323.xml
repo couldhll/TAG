@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenImage</TokenIdentifier>
+			<Abstract type="html">	@brief	图片对象</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>
+			
+			<NodeRef refid="323"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenImage/setSize:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片的大小
+MAIN	200pt x 600pt
+TINY	50pt x 50pt
+LARGE	720pt x 720pt
+HEAD	100pt x 300pt</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenImage/size</TokenIdentifier>
+			<Abstract type="html">	@brief	图片的大小
+MAIN	200pt x 600pt
+TINY	50pt x 50pt
+LARGE	720pt x 720pt
+HEAD	100pt x 300pt</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenImage/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片的URL</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenImage/url</TokenIdentifier>
+			<Abstract type="html">	@brief	图片的URL</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenImage/imageWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建图片对象</Abstract>
+			<DeclaredIn>SSRenRenImage.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenImage *)imageWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片实例</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

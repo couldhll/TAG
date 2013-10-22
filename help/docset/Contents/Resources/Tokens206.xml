@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQApiURLObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiURLObject</TokenIdentifier>
+			<Abstract type="html">@brief URL对象类型。</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
+			
+			<NodeRef refid="206"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setTargetContentType:</TokenIdentifier>
+			<Abstract type="html">URL地址所指向的目标类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) QQApiURLTargetType targetContentType</Declaration>
+			
+			
+			<Anchor>//api/name/targetContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/targetContentType</TokenIdentifier>
+			<Abstract type="html">URL地址所指向的目标类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) QQApiURLTargetType targetContentType</Declaration>
+			
+			
+			<Anchor>//api/name/targetContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setPreviewImageData:</TokenIdentifier>
+			<Abstract type="html">&lt;URL地址,必填，最长512个字符</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/previewImageData</TokenIdentifier>
+			<Abstract type="html">&lt;URL地址,必填，最长512个字符</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setPreviewImageURL:</TokenIdentifier>
+			<Abstract type="html">&lt;预览图像数据，最大1M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/previewImageURL</TokenIdentifier>
+			<Abstract type="html">&lt;预览图像数据，最大1M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *previewImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/initWithURL:title:description:previewImageData:targetContentType:</TokenIdentifier>
+			<Abstract type="html">初始化方法</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data targetContentType:(QQApiURLTargetType)targetContentType</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:title:description:previewImageData:targetContentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiURLObject/objectWithURL:title:description:previewImageData:targetContentType:</TokenIdentifier>
+			<Abstract type="html">工厂方法,获取一个QQApiURLObject对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data targetContentType:(QQApiURLTargetType)targetContentType</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithURL:title:description:previewImageData:targetContentType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

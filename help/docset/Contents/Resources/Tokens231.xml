@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSDouBanSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanSource</TokenIdentifier>
+			<Abstract type="html">	@brief	来源信息</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>
+			
+			<NodeRef refid="231"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setHref:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源地址</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *href</Declaration>
+			
+			
+			<Anchor>//api/name/href</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/href</TokenIdentifier>
+			<Abstract type="html">	@brief	来源地址</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *href</Declaration>
+			
+			
+			<Anchor>//api/name/href</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源标题</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/title</TokenIdentifier>
+			<Abstract type="html">	@brief	来源标题</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanSource/sourceWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建来源信息</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
+			
+			<Declaration>+ (SSDouBanSource *)sourceWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">来源信息</Abstract></ReturnValue>
+			<Anchor>//api/name/sourceWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

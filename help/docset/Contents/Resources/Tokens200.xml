@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQApiMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiMessage</TokenIdentifier>
+			<Abstract type="html">@brief API MESSAGE对象.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
+			
+			<NodeRef refid="200"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/setType:</TokenIdentifier>
+			<Abstract type="html">消息类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) QQApiMessageType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiMessage/type</TokenIdentifier>
+			<Abstract type="html">消息类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) QQApiMessageType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/setObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiMessage/object</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/initWithObject:andType:</TokenIdentifier>
+			<Abstract type="html">初始化函数</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithObject:(QQApiObject *)obj andType:(QQApiMessageType)type</Declaration>
+			
+			
+			<Anchor>//api/name/initWithObject:andType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiMessage/messageWithObject:</TokenIdentifier>
+			<Abstract type="html">通过ApiObject获取QQApiMessage对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (QQApiMessage *)messageWithObject:(QQApiObject *)obj</Declaration>
+			
+			
+			<Anchor>//api/name/messageWithObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiMessage/messageWithObject:andType:</TokenIdentifier>
+			<Abstract type="html">通过ApiObject及MessageType获取QQApiMessage对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (QQApiMessage *)messageWithObject:(QQApiObject *)obj andType:(QQApiMessageType)type</Declaration>
+			
+			
+			<Anchor>//api/name/messageWithObject:andType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

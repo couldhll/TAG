@@ -1,0 +1,1398 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ISSUserInfo Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ISSUserInfo Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/age">&nbsp;&nbsp;&nbsp;&nbsp;- age</option>
+	
+	<option value="//api/name/birthday">&nbsp;&nbsp;&nbsp;&nbsp;- birthday</option>
+	
+	<option value="//api/name/career">&nbsp;&nbsp;&nbsp;&nbsp;- career</option>
+	
+	<option value="//api/name/desc">&nbsp;&nbsp;&nbsp;&nbsp;- desc</option>
+	
+	<option value="//api/name/education">&nbsp;&nbsp;&nbsp;&nbsp;- education</option>
+	
+	<option value="//api/name/fansCount">&nbsp;&nbsp;&nbsp;&nbsp;- fansCount</option>
+	
+	<option value="//api/name/gender">&nbsp;&nbsp;&nbsp;&nbsp;- gender</option>
+	
+	<option value="//api/name/icon">&nbsp;&nbsp;&nbsp;&nbsp;- icon</option>
+	
+	<option value="//api/name/idolCount">&nbsp;&nbsp;&nbsp;&nbsp;- idolCount</option>
+	
+	<option value="//api/name/level">&nbsp;&nbsp;&nbsp;&nbsp;- level</option>
+	
+	<option value="//api/name/localUser">&nbsp;&nbsp;&nbsp;&nbsp;- localUser</option>
+	
+	<option value="//api/name/mobile">&nbsp;&nbsp;&nbsp;&nbsp;- mobile</option>
+	
+	<option value="//api/name/nickname">&nbsp;&nbsp;&nbsp;&nbsp;- nickname</option>
+	
+	<option value="//api/name/school">&nbsp;&nbsp;&nbsp;&nbsp;- school</option>
+	
+	<option value="//api/name/sourceData">&nbsp;&nbsp;&nbsp;&nbsp;- sourceData</option>
+	
+	<option value="//api/name/statusCount">&nbsp;&nbsp;&nbsp;&nbsp;- statusCount</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;- type</option>
+	
+	<option value="//api/name/uid">&nbsp;&nbsp;&nbsp;&nbsp;- uid</option>
+	
+	<option value="//api/name/url">&nbsp;&nbsp;&nbsp;&nbsp;- url</option>
+	
+	<option value="//api/name/verify">&nbsp;&nbsp;&nbsp;&nbsp;- verify</option>
+	
+	<option value="//api/name/verifyType">&nbsp;&nbsp;&nbsp;&nbsp;- verifyType</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/age">age</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/birthday">birthday</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/career">career</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desc">desc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/education">education</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fansCount">fansCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gender">gender</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/icon">icon</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idolCount">idolCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/level">level</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/localUser">localUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mobile">mobile</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nickname">nickname</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/school">school</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sourceData">sourceData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusCount">statusCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uid">uid</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/url">url</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verify">verify</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verifyType">verifyType</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ISSUserInfo Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ISSUserInfo Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ISSUserInfo.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>@brief  用户信息协议
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uid">&ndash;&nbsp;uid</a></code>
+		<span class="tooltip"><pre><code>@brief  获取用户ID
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gender">&ndash;&nbsp;gender</a></code>
+		<span class="tooltip"><pre><code>@brief  获取性别；0:男 1:女 2:未知
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nickname">&ndash;&nbsp;nickname</a></code>
+		<span class="tooltip"><pre><code>@brief  获取昵称
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/icon">&ndash;&nbsp;icon</a></code>
+		<span class="tooltip"><pre><code>@brief  获取头像
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/birthday">&ndash;&nbsp;birthday</a></code>
+		<span class="tooltip"><pre><code>@brief  获取生日
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/age">&ndash;&nbsp;age</a></code>
+		<span class="tooltip"><pre><code>@brief  获取年龄
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mobile">&ndash;&nbsp;mobile</a></code>
+		<span class="tooltip"><pre><code>@brief  获取手机号码
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verify">&ndash;&nbsp;verify</a></code>
+		<span class="tooltip"><pre><code>@brief  获取认证信息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verifyType">&ndash;&nbsp;verifyType</a></code>
+		<span class="tooltip"><pre><code>@brief  获取认证类型
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/url">&ndash;&nbsp;url</a></code>
+		<span class="tooltip"><pre><code>@brief  获取社区地址
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fansCount">&ndash;&nbsp;fansCount</a></code>
+		<span class="tooltip"><pre><code>@brief  获取粉丝数量
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idolCount">&ndash;&nbsp;idolCount</a></code>
+		<span class="tooltip"><pre><code>@brief  获取关注数量
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/statusCount">&ndash;&nbsp;statusCount</a></code>
+		<span class="tooltip"><pre><code>@brief  获取微博数量
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/level">&ndash;&nbsp;level</a></code>
+		<span class="tooltip"><pre><code>@brief  获取用户等级
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/education">&ndash;&nbsp;education</a></code>
+		<span class="tooltip"><pre><code>@brief  获取学历信息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/school">&ndash;&nbsp;school</a></code>
+		<span class="tooltip"><pre><code>@brief  获取学校信息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/career">&ndash;&nbsp;career</a></code>
+		<span class="tooltip"><pre><code>@brief  获取职业信息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desc">&ndash;&nbsp;desc</a></code>
+		<span class="tooltip"><pre><code>@brief  获取个人描述
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sourceData">&ndash;&nbsp;sourceData</a></code>
+		<span class="tooltip"><pre><code>@brief  获取源用户信息数据，此属性根据不同平台取得的用户信息结构不相同，详细请参考官方API文档描述。
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
+		<span class="tooltip"><pre><code>@brief  获取分享平台类型
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/localUser">&ndash;&nbsp;localUser</a></code>
+		<span class="tooltip"><pre><code>@brief  获取于平台相关的用户信息，用户结构可以参考各个平台连接器中定义
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/age" title="age"></a>
+	<h3 class="subsubtitle method-title">age</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取年龄
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)age</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>年龄</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/birthday" title="birthday"></a>
+	<h3 class="subsubtitle method-title">birthday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取生日
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)birthday</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>生日</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/career" title="career"></a>
+	<h3 class="subsubtitle method-title">career</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取职业信息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)career</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>职业</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desc" title="desc"></a>
+	<h3 class="subsubtitle method-title">desc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取个人描述
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)desc</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>个人描述</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/education" title="education"></a>
+	<h3 class="subsubtitle method-title">education</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取学历信息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)education</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>学历</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fansCount" title="fansCount"></a>
+	<h3 class="subsubtitle method-title">fansCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取粉丝数量
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)fansCount</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>粉丝数量</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gender" title="gender"></a>
+	<h3 class="subsubtitle method-title">gender</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取性别；0:男 1:女 2:未知
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)gender</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>性别</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/icon" title="icon"></a>
+	<h3 class="subsubtitle method-title">icon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取头像
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)icon</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>头像</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idolCount" title="idolCount"></a>
+	<h3 class="subsubtitle method-title">idolCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取关注数量
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)idolCount</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>关注数量</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/level" title="level"></a>
+	<h3 class="subsubtitle method-title">level</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取用户等级
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)level</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>用户等级</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/localUser" title="localUser"></a>
+	<h3 class="subsubtitle method-title">localUser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取于平台相关的用户信息，用户结构可以参考各个平台连接器中定义
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)localUser</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>用户信息</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mobile" title="mobile"></a>
+	<h3 class="subsubtitle method-title">mobile</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取手机号码
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)mobile</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>手机号码</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nickname" title="nickname"></a>
+	<h3 class="subsubtitle method-title">nickname</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取昵称
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)nickname</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>昵称</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/school" title="school"></a>
+	<h3 class="subsubtitle method-title">school</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取学校信息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)school</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>学校</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sourceData" title="sourceData"></a>
+	<h3 class="subsubtitle method-title">sourceData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取源用户信息数据，此属性根据不同平台取得的用户信息结构不相同，详细请参考官方API文档描述。
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)sourceData</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>源用户信息数据</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statusCount" title="statusCount"></a>
+	<h3 class="subsubtitle method-title">statusCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取微博数量
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)statusCount</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>微博数量</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取分享平台类型
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ShareType)type</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>分享平台类型</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection availability">
+		<h4 class="method-subtitle parameter-title">Availability</h4>
+		<p>ver1.2.4</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uid" title="uid"></a>
+	<h3 class="subsubtitle method-title">uid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取用户ID
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)uid</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>用户ID</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="subsubtitle method-title">url</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取社区地址
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)url</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>社区地址</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verify" title="verify"></a>
+	<h3 class="subsubtitle method-title">verify</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取认证信息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)verify</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>认证信息</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verifyType" title="verifyType"></a>
+	<h3 class="subsubtitle method-title">verifyType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取认证类型
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)verifyType</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>认证类型</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSUserInfo.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

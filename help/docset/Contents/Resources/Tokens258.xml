@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookPicture.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookPicture</TokenIdentifier>
+			<Abstract type="html">	@brief	图片信息</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>
+			
+			<NodeRef refid="258"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片URL</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/url</TokenIdentifier>
+			<Abstract type="html">	@brief	图片URL</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setIsSilhouette:</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片标识，如果为YES，表示用户尚未上传过个人图片</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isSilhouette</Declaration>
+			
+			
+			<Anchor>//api/name/isSilhouette</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/isSilhouette</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片标识，如果为YES，表示用户尚未上传过个人图片</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isSilhouette</Declaration>
+			
+			
+			<Anchor>//api/name/isSilhouette</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookPicture/pictureWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建图片信息</Abstract>
+			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookPicture *)pictureWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/pictureWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

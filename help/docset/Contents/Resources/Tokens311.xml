@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSPocketUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPocketUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>
+			
+			<NodeRef refid="311"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSPocketCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSPocketCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketUser/setUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketUser/userName</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSPocketUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSPocketUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSPocketUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -8,6 +8,8 @@
 
 #import "HLLAPI.h"
 
+#import <JSONModel/JSONHTTPClient.h>
+
 @implementation HLLAPI
 
 #pragma mark - Singleton methods
@@ -36,14 +38,27 @@
 -(void)save:(UIViewController*)sender
 {
     [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
-    
-    
-    
-    // notification
-    NSMutableDictionary *userInfo=[NSMutableDictionary dictionary];
-    [userInfo setValue:[NSNumber numberWithBool:YES] forKey:@"logined"];
-    [userInfo setValue:sender forKey:@"sender"];
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:userInfo];
 }
 
+
+-(void)test
+{
+    [JSONHTTPClient postJSONFromURLWithString:@"http://api.tagoriginals.com/User/Register"
+                                       params:@{@"email":@"value1",
+                                                @"name":@"haha",
+                                                @"password":@"haha2"}
+                                   completion:^(id json, JSONModelError *err)
+                                   {
+                                       
+                                       HLLUserModel* userModel = [[HLLUserModel alloc] initWithString:json error:nil];
+//                                       userModel.name = @"Changed Name";
+                                       
+//                                       //convert to dictionary
+//                                       NSDictionary* dict = [pm toDictionary];
+//                                       
+//                                       //convert to text
+//                                       NSString* string = [pm toJSONString];
+                                       
+                                   }];
+}
 @end

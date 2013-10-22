@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSSMSApp.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSSMSApp</TokenIdentifier>
+			<Abstract type="html">	@brief	短信应用协议</Abstract>
+			<DeclaredIn>ISSSMSApp.h</DeclaredIn>
+			
+			<NodeRef refid="659"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSSMSApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐户</Abstract>
+			<DeclaredIn>ISSSMSApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">帐户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSSMSApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSSMSApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSSMSApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSSMSApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSSMSApp/sendText:container:viewDelegate:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送短信息</Abstract>
+			<DeclaredIn>ISSSMSApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendText:(NSString *)text container:(UIViewController *)container viewDelegate:(id)viewDelegate result:(void ( ^ ) ( SSCShareSessionState state , SSSMSErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">文本信息</Abstract>
+				</Parameter><Parameter>
+					<Name>container</Name>
+					<Abstract type="html">容器</Abstract>
+				</Parameter><Parameter>
+					<Name>viewDelegate</Name>
+					<Abstract type="html">视图委托</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendText:container:viewDelegate:result:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

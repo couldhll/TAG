@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSEverNoteResourceAttributes.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteResourceAttributes</TokenIdentifier>
+			<Abstract type="html">	@brief	资源属性</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>
+			
+			<NodeRef refid="243"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setSourceURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	the original location where the resource was hosted </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/sourceURL</TokenIdentifier>
+			<Abstract type="html">	@brief	the original location where the resource was hosted </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">	@brief	the date and time that is associated with this resource (e.g. the time embedded in an image from a digital camera with a clock)</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/timestamp</TokenIdentifier>
+			<Abstract type="html">	@brief	the date and time that is associated with this resource (e.g. the time embedded in an image from a digital camera with a clock)</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setLatitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the latitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/latitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the latitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setLongitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the longitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/longitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the longitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setAltitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the altitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			
+			
+			<Anchor>//api/name/altitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/altitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the altitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			
+			
+			<Anchor>//api/name/altitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setCameraMake:</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraMake</Declaration>
+			
+			
+			<Anchor>//api/name/cameraMake</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/cameraMake</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraMake</Declaration>
+			
+			
+			<Anchor>//api/name/cameraMake</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setCameraModel:</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraModel</Declaration>
+			
+			
+			<Anchor>//api/name/cameraModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/cameraModel</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraModel</Declaration>
+			
+			
+			<Anchor>//api/name/cameraModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setClientWillIndex:</TokenIdentifier>
+			<Abstract type="html">	@brief	if true, then the original client that submitted the resource plans to submit the recognition index for this resource at a later time.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clientWillIndex</Declaration>
+			
+			
+			<Anchor>//api/name/clientWillIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/clientWillIndex</TokenIdentifier>
+			<Abstract type="html">	@brief	if true, then the original client that submitted the resource plans to submit the recognition index for this resource at a later time.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clientWillIndex</Declaration>
+			
+			
+			<Anchor>//api/name/clientWillIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setRecoType:</TokenIdentifier>
+			<Abstract type="html">	@brief	DEPRECATED - this field is no longer set by the service, so should be ignored.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recoType</Declaration>
+			
+			
+			<Anchor>//api/name/recoType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/recoType</TokenIdentifier>
+			<Abstract type="html">	@brief	DEPRECATED - this field is no longer set by the service, so should be ignored.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recoType</Declaration>
+			
+			
+			<Anchor>//api/name/recoType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setFileName:</TokenIdentifier>
+			<Abstract type="html">	@brief	if the resource came from a source that provided an explicit file name, 
+the original name will be stored here. Many resources come from unnamed sources, so this will not always be set.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/fileName</TokenIdentifier>
+			<Abstract type="html">	@brief	if the resource came from a source that provided an explicit file name, 
+the original name will be stored here. Many resources come from unnamed sources, so this will not always be set.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setAttachment:</TokenIdentifier>
+			<Abstract type="html">	@brief	this will be true if the resource should be displayed as an attachment, 
+or false if the resource should be displayed inline (if possible).</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/attachment</TokenIdentifier>
+			<Abstract type="html">	@brief	this will be true if the resource should be displayed as an attachment, 
+or false if the resource should be displayed inline (if possible).</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setApplicationData:</TokenIdentifier>
+			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) blob of data associated 
+with a Resource that is not visible to the user and that is opaque to the Evernote service.
+A single application may use at most one entry in this map, using its API consumer key as the map key.
+See the documentation for LazyMap for a description of when the actual map values are returned by the service.
+To safely add or modify your application&apos;s entry in the map, use NoteStore.setResourceApplicationDataEntry.
+To safely remove your application&apos;s entry from the map, use NoteStore.unsetResourceApplicationDataEntry.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
+			
+			
+			<Anchor>//api/name/applicationData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/applicationData</TokenIdentifier>
+			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) blob of data associated 
+with a Resource that is not visible to the user and that is opaque to the Evernote service.
+A single application may use at most one entry in this map, using its API consumer key as the map key.
+See the documentation for LazyMap for a description of when the actual map values are returned by the service.
+To safely add or modify your application&apos;s entry in the map, use NoteStore.setResourceApplicationDataEntry.
+To safely remove your application&apos;s entry from the map, use NoteStore.unsetResourceApplicationDataEntry.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
+			
+			
+			<Anchor>//api/name/applicationData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteResourceAttributes/resourceAttributesWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建资源属性对象</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteResourceAttributes *)resourceAttributesWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">资源属性对象</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceAttributesWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/putData:</TokenIdentifier>
+			<Abstract type="html">	@brief	放入数据</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>writer</Name>
+					<Abstract type="html">数据写入器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

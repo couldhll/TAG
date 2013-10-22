@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSContent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSContent</TokenIdentifier>
+			<Abstract type="html">	@brief	分享内容协议</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>
+			
+			<NodeRef refid="629"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/getMetadata:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取元数据</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (id)getMetadata:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">数据值</Abstract></ReturnValue>
+			<Anchor>//api/name/getMetadata:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setMetadata:value:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置元数据</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMetadata:(NSString *)name value:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">数据值</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMetadata:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/removeMetadata:</TokenIdentifier>
+			<Abstract type="html">	@brief	删除元数据</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeMetadata:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeMetadata:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/title</TokenIdentifier>
+			<Abstract type="html">	@brief	获取标题(适用平台：QQ空间、人人、微信、QQ)</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)title</Declaration>
+			
+			<ReturnValue><Abstract type="html">标题</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置标题</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/url</TokenIdentifier>
+			<Abstract type="html">	@brief	获取URL(适用平台：QQ空间、人人、Instapaper、微信、QQ)</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)url</Declaration>
+			
+			<ReturnValue><Abstract type="html">URL</Abstract></ReturnValue>
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置URL</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/desc</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享内容主体(适用平台：人人)</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)desc</Declaration>
+			
+			<ReturnValue><Abstract type="html">分享内容主体</Abstract></ReturnValue>
+			<Anchor>//api/name/desc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setDesc:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享内容主体</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDesc:(NSString *)desc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>desc</Name>
+					<Abstract type="html">分享内容主体</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDesc:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/mediaType</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享类型（适用平台：微信、QQ）</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (SSPublishContentMediaType)mediaType</Declaration>
+			
+			<ReturnValue><Abstract type="html">分享类型</Abstract></ReturnValue>
+			<Anchor>//api/name/mediaType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setMediaType:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享类型</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMediaType:(SSPublishContentMediaType)mediaType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mediaType</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMediaType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/content</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享内容(适用平台：新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝)</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)content</Declaration>
+			
+			<ReturnValue><Abstract type="html">分享内容</Abstract></ReturnValue>
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setContent:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享内容</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setContent:(NSString *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/defaultContent</TokenIdentifier>
+			<Abstract type="html">	@brief	获取默认分享内容，在没有设置content时使用。
+(适用平台：新浪、腾讯、网易、搜狐、豆瓣、人人、开心、有道云笔记、facebook、twitter、邮件、打印、短信、微信、QQ、拷贝)</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)defaultContent</Declaration>
+			
+			<ReturnValue><Abstract type="html">默认分享内容</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setDefaultContent:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置默认分享内容</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaultContent:(NSString *)defaultContent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>defaultContent</Name>
+					<Abstract type="html">默认分享内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/image</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享图片（适用平台：新浪、腾讯、网易、搜狐、豆瓣、人人、开心、facebook、twitter、邮件、打印、微信、QQ）</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCAttachment&gt;)image</Declaration>
+			
+			<ReturnValue><Abstract type="html">分享图片</Abstract></ReturnValue>
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享图片</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImage:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/locationCoordinate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取地理位置</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			
+			<ReturnValue><Abstract type="html">地理位置</Abstract></ReturnValue>
+			<Anchor>//api/name/locationCoordinate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/setLocationCoordinate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置地理位置</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLocationCoordinate:(SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locationCoordinate</Name>
+					<Abstract type="html">地理位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLocationCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addWeixinSessionUnitWithType:content:title:url:image:musicFileUrl:extInfo:fileData:emoticonData:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加微信好友内容单元，制定微信分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addWeixinSessionUnitWithType:(NSNumber *)type content:(NSString *)content title:(NSString *)title url:(NSString *)url image:(id&lt;ISSCAttachment&gt;)image musicFileUrl:(NSString *)musicFileUrl extInfo:(NSString *)extInfo fileData:(NSData *)fileData emoticonData:(NSData *)emoticonData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型,请参考SSPublishContentMediaType</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL地址</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片</Abstract>
+				</Parameter><Parameter>
+					<Name>musicFileUrl</Name>
+					<Abstract type="html">音乐文件路径</Abstract>
+				</Parameter><Parameter>
+					<Name>extInfo</Name>
+					<Abstract type="html">扩展信息</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">文件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>emoticonData</Name>
+					<Abstract type="html">表情数据，用于存放Gif和非Gif图片数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addWeixinSessionUnitWithType:content:title:url:image:musicFileUrl:extInfo:fileData:emoticonData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addWeixinTimelineUnitWithType:content:title:url:image:musicFileUrl:extInfo:fileData:emoticonData:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加微信朋友圈内容单元，制定微信分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addWeixinTimelineUnitWithType:(NSNumber *)type content:(NSString *)content title:(NSString *)title url:(NSString *)url image:(id&lt;ISSCAttachment&gt;)image musicFileUrl:(NSString *)musicFileUrl extInfo:(NSString *)extInfo fileData:(NSData *)fileData emoticonData:(NSData *)emoticonData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型,请参考SSPublishContentMediaType</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL地址</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片</Abstract>
+				</Parameter><Parameter>
+					<Name>musicFileUrl</Name>
+					<Abstract type="html">音乐文件路径</Abstract>
+				</Parameter><Parameter>
+					<Name>extInfo</Name>
+					<Abstract type="html">扩展信息</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">文件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>emoticonData</Name>
+					<Abstract type="html">表情数据，用于存放Gif和非Gif图片数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addWeixinTimelineUnitWithType:content:title:url:image:musicFileUrl:extInfo:fileData:emoticonData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addQQUnitWithType:content:title:url:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加QQ内容单元，制定QQ分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addQQUnitWithType:(NSNumber *)type content:(NSString *)content title:(NSString *)title url:(NSString *)url image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">分享类型,请参考SSPublishContentMediaType</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL地址</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQQUnitWithType:content:title:url:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addSMSUnitWithContent:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加短信内容单元，制定短信分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSMSUnitWithContent:(NSString *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSMSUnitWithContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addQQSpaceUnitWithTitle:url:site:fromUrl:comment:summary:image:type:playUrl:nswb:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加QQ空间内容单元，制定QQ空间分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addQQSpaceUnitWithTitle:(NSString *)title url:(NSString *)url site:(NSString *)site fromUrl:(NSString *)fromUrl comment:(NSString *)comment summary:(NSString *)summary image:(id&lt;ISSCAttachment&gt;)image type:(NSNumber *)type playUrl:(NSString *)playUrl nswb:(NSNumber *)nswb</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接地址</Abstract>
+				</Parameter><Parameter>
+					<Name>site</Name>
+					<Abstract type="html">分享的来源网站名称，请填写网站申请接入时注册的网站名称。</Abstract>
+				</Parameter><Parameter>
+					<Name>fromUrl</Name>
+					<Abstract type="html">分享的来源网站对应的网站地址url</Abstract>
+				</Parameter><Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">评论内容</Abstract>
+				</Parameter><Parameter>
+					<Name>summary</Name>
+					<Abstract type="html">分享分享内容概述</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">内容类型，4表示网页；5表示视频</Abstract>
+				</Parameter><Parameter>
+					<Name>playUrl</Name>
+					<Abstract type="html">视频的swf播放地址，在type为5时必须填写</Abstract>
+				</Parameter><Parameter>
+					<Name>nswb</Name>
+					<Abstract type="html">是否同步到微博，等于1表示不同步，非1表示同步</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addQQSpaceUnitWithTitle:url:site:fromUrl:comment:summary:image:type:playUrl:nswb:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addYouDaoNoteUnitWithContent:title:author:source:attachments:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加有道云笔记内容单元。</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addYouDaoNoteUnitWithContent:(NSString *)content title:(NSString *)title author:(NSString *)author source:(NSString *)source attachments:(NSArray *)attachments</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>author</Name>
+					<Abstract type="html">作者</Abstract>
+				</Parameter><Parameter>
+					<Name>source</Name>
+					<Abstract type="html">来源</Abstract>
+				</Parameter><Parameter>
+					<Name>attachments</Name>
+					<Abstract type="html">附件列表</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addYouDaoNoteUnitWithContent:title:author:source:attachments:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addInstapaperContentWithUrl:title:description:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Instapaper分享内容</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addInstapaperContentWithUrl:(NSString *)url title:(NSString *)title description:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL路径</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题，无标题时传入nil</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述，无描述时传入nil</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addInstapaperContentWithUrl:title:description:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addMailUnitWithSubject:content:isHTML:attachments:to:cc:bcc:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加邮件内容单元，制定邮件分享时的内容使用此参数，如果参数设置为INHERIT_VALUE则默认使用父级类型相关参数</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addMailUnitWithSubject:(NSString *)subject content:(NSString *)content isHTML:(NSNumber *)isHTML attachments:(NSArray *)attachments to:(NSArray *)to cc:(NSArray *)cc bcc:(NSArray *)bcc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>subject</Name>
+					<Abstract type="html">邮件主题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">邮件内容</Abstract>
+				</Parameter><Parameter>
+					<Name>isHTML</Name>
+					<Abstract type="html">邮件内容格式：YES：HTML格式。NO：普通文本格式</Abstract>
+				</Parameter><Parameter>
+					<Name>attachments</Name>
+					<Abstract type="html">附件列表</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">收件人邮箱地址列表</Abstract>
+				</Parameter><Parameter>
+					<Name>cc</Name>
+					<Abstract type="html">抄送邮箱地址列表</Abstract>
+				</Parameter><Parameter>
+					<Name>bcc</Name>
+					<Abstract type="html">密送邮箱地址列表</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addMailUnitWithSubject:content:isHTML:attachments:to:cc:bcc:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addRenRenUnitWithName:description:url:message:image:caption:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加人人网</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRenRenUnitWithName:(NSString *)name description:(NSString *)description url:(NSString *)url message:(NSString *)message image:(id&lt;ISSCAttachment&gt;)image caption:(NSString *)captions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">标题 注意：最多30个字符</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">主体内容 注意：最多200个字符。</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">指向的链接</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">用户输入的自定义内容。注意：最多200个字符。</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">分享图片对象</Abstract>
+				</Parameter><Parameter>
+					<Name>captions</Name>
+					<Abstract type="html">副标题 注意：最多20个字符</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addRenRenUnitWithName:description:url:message:image:caption:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addSohuKanUnitWithUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加搜狐随身看内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSohuKanUnitWithUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">书签的URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSohuKanUnitWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addPocketUnitWithUrl:title:tags:tweetId:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Pocket内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPocketUnitWithUrl:(NSString *)url title:(NSString *)title tags:(NSString *)tags tweetId:(NSString *)tweetId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题，如果链接内容无标题时使用</Abstract>
+				</Parameter><Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">带逗号分隔的标签列表</Abstract>
+				</Parameter><Parameter>
+					<Name>tweetId</Name>
+					<Abstract type="html">推文ID</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPocketUnitWithUrl:title:tags:tweetId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addEvernoteUnitWithContent:title:resources:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加印象笔记内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addEvernoteUnitWithContent:(NSString *)content title:(NSString *)title resources:(NSArray *)resources</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>resources</Name>
+					<Abstract type="html">图片资源列表，元素为ISSAttachment协议对象。如果设置为INHERIT_VALUE则继承父级内容的image。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addEvernoteUnitWithContent:title:resources:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addSinaWeiboUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加新浪微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSinaWeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSinaWeiboUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addSinaWeiboUnitWithContent:image:locationCoordinate:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加新浪微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSinaWeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image locationCoordinate:(SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter><Parameter>
+					<Name>locationCoordinate</Name>
+					<Abstract type="html">地理位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSinaWeiboUnitWithContent:image:locationCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addTencentWeiboUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加腾讯微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTencentWeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTencentWeiboUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addTencentWeiboUnitWithContent:image:locationCoordinate:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加腾讯微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTencentWeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image locationCoordinate:(SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locationCoordinate</Name>
+					<Abstract type="html">地理位置</Abstract>
+				</Parameter><Parameter>
+					<Name>aContent</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>aImage</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTencentWeiboUnitWithContent:image:locationCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addSohuWeiboUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加搜狐微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addSohuWeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addSohuWeiboUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/add163WeiboUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加网易微博内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)add163WeiboUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/add163WeiboUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addCopyUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加拷贝内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCopyUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCopyUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addAirPrintWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加打印内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAirPrintWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAirPrintWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addDouBanWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加豆瓣内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addDouBanWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDouBanWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addFacebookWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Facebook内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addFacebookWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addFacebookWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addTwitterWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Twitter内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTwitterWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTwitterWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addTwitterWithContent:image:locationCoordinate:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Twitter内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTwitterWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image locationCoordinate:(SSCLocationCoordinate2D *)locationCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter><Parameter>
+					<Name>locationCoordinate</Name>
+					<Abstract type="html">地理位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTwitterWithContent:image:locationCoordinate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addKaiXinUnitWithContent:image:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加开心网内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addKaiXinUnitWithContent:(NSString *)content image:(id&lt;ISSCAttachment&gt;)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addKaiXinUnitWithContent:image:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addLinkedInUnitWithComment:title:description:url:image:visibility:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加LinkedIn内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addLinkedInUnitWithComment:(NSString *)comment title:(NSString *)title description:(NSString *)description url:(NSString *)url image:(id&lt;ISSCAttachment&gt;)image visibility:(NSString *)visibility</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">对分享内容的评论</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">内容描述</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">内容链接地址</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">内容相关图片（只允许分享网络图片）</Abstract>
+				</Parameter><Parameter>
+					<Name>visibility</Name>
+					<Abstract type="html">可见，默认为anyone</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addLinkedInUnitWithComment:title:description:url:image:visibility:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addGooglePlusUnitWithText:url:deepLinkId:title:description:thumbnail:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Google+内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addGooglePlusUnitWithText:(NSString *)text url:(NSString *)url deepLinkId:(NSString *)deepLinkId title:(NSString *)title description:(NSString *)description thumbnail:(id&lt;ISSCAttachment&gt;)thumbnail</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">分享内容</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>deepLinkId</Name>
+					<Abstract type="html">深链接ID</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">深链接标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">深链接描述</Abstract>
+				</Parameter><Parameter>
+					<Name>thumbnail</Name>
+					<Abstract type="html">缩略图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addGooglePlusUnitWithText:url:deepLinkId:title:description:thumbnail:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addPinterestUnitWithImage:url:description:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Pinterest内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPinterestUnitWithImage:(id&lt;ISSCAttachment&gt;)image url:(NSString *)url description:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPinterestUnitWithImage:url:description:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addFlickrUnitWithPhoto:title:description:tags:isPublic:isFriend:isFamily:safetyLevel:contentType:hidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Flickr内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addFlickrUnitWithPhoto:(id&lt;ISSCAttachment&gt;)photo title:(NSString *)title description:(NSString *)description tags:(NSString *)tags isPublic:(NSNumber *)isPublic isFriend:(NSNumber *)isFriend isFamily:(NSNumber *)isFamily safetyLevel:(NSNumber *)safetyLevel contentType:(NSNumber *)contentType hidden:(NSNumber *)hidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>photo</Name>
+					<Abstract type="html">图片对象</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">相片描述。可能包含某受限的 HTML。</Abstract>
+				</Parameter><Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">適用於相片的以空格分隔的標籤清單。</Abstract>
+				</Parameter><Parameter>
+					<Name>isPublic</Name>
+					<Abstract type="html">設定為 0 表示否，1 表示是。指定誰可以檢視相片。</Abstract>
+				</Parameter><Parameter>
+					<Name>isFriend</Name>
+					<Abstract type="html">設定為 0 表示否，1 表示是。指定誰可以檢視相片。</Abstract>
+				</Parameter><Parameter>
+					<Name>isFamily</Name>
+					<Abstract type="html">設定為 0 表示否，1 表示是。指定誰可以檢視相片。</Abstract>
+				</Parameter><Parameter>
+					<Name>safetyLevel</Name>
+					<Abstract type="html">設置 1 為「安全級」、2 為「輔導級」、3 為「限制級」。</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract type="html">設置 1 為「相片」、2 為「螢幕截圖」、3 為「其他」。</Abstract>
+				</Parameter><Parameter>
+					<Name>hidden</Name>
+					<Abstract type="html">設置 1 為「相片」、2 為「螢幕截圖」、3 為「其他」。</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addFlickrUnitWithPhoto:title:description:tags:isPublic:isFriend:isFamily:safetyLevel:contentType:hidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addTumblrUnitWithText:title:image:url:blogName:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Tumblr内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTumblrUnitWithText:(NSString *)text title:(NSString *)title image:(id&lt;ISSCAttachment&gt;)image url:(NSString *)url blogName:(NSString *)blogName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">内容，可以带有HTML标签</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">点击后跳转的链接</Abstract>
+				</Parameter><Parameter>
+					<Name>blogName</Name>
+					<Abstract type="html">博客名称，为nil时表示发去主博客</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addTumblrUnitWithText:title:image:url:blogName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSContent/addDropboxUnitWithFile:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加Dropbox内容单元</Abstract>
+			<DeclaredIn>ISSContent.h</DeclaredIn>			
+			
+			<Declaration>- (void)addDropboxUnitWithFile:(id&lt;ISSCAttachment&gt;)file</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">文件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDropboxUnitWithFile:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

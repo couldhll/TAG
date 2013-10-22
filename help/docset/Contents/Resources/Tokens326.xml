@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenLike.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenLike</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>
+			
+			<NodeRef refid="326"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenLike/setCatagory:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的类型
+SPORT       运动
+MOVIE       电影
+CARTOON     动漫
+GAME        游戏
+MUSIC       音乐
+BOOK        书籍
+INTEREST	爱好</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *catagory</Declaration>
+			
+			
+			<Anchor>//api/name/catagory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenLike/catagory</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的类型
+SPORT       运动
+MOVIE       电影
+CARTOON     动漫
+GAME        游戏
+MUSIC       音乐
+BOOK        书籍
+INTEREST	爱好</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *catagory</Declaration>
+			
+			
+			<Anchor>//api/name/catagory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenLike/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的东西</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenLike/name</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的东西</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenLike/likeWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建喜欢信息</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenLike *)likeWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">喜欢信息</Abstract></ReturnValue>
+			<Anchor>//api/name/likeWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

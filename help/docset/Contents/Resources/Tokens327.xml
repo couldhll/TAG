@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenPhoto.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenPhoto</TokenIdentifier>
+			<Abstract type="html">	@brief	照片信息</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>
+			
+			<NodeRef refid="327"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setAlbumId:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片所属相册的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long albumId</Declaration>
+			
+			
+			<Anchor>//api/name/albumId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/albumId</TokenIdentifier>
+			<Abstract type="html">	@brief	照片所属相册的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long albumId</Declaration>
+			
+			
+			<Anchor>//api/name/albumId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setOwnerId:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片所有者的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long ownerId</Declaration>
+			
+			
+			<Anchor>//api/name/ownerId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/ownerId</TokenIdentifier>
+			<Abstract type="html">	@brief	照片所有者的ID</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long ownerId</Declaration>
+			
+			
+			<Anchor>//api/name/ownerId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的描述</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/description</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的描述</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setImages:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片对应的各种类型图片</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/images</TokenIdentifier>
+			<Abstract type="html">	@brief	照片对应的各种类型图片</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setCreateTime:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的创建时间</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createTime</Declaration>
+			
+			
+			<Anchor>//api/name/createTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/createTime</TokenIdentifier>
+			<Abstract type="html">	@brief	照片的创建时间</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createTime</Declaration>
+			
+			
+			<Anchor>//api/name/createTime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setViewCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片被浏览的次数</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger viewCount</Declaration>
+			
+			
+			<Anchor>//api/name/viewCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/viewCount</TokenIdentifier>
+			<Abstract type="html">	@brief	照片被浏览的次数</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger viewCount</Declaration>
+			
+			
+			<Anchor>//api/name/viewCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setCommentCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片被回复的次数</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger commentCount</Declaration>
+			
+			
+			<Anchor>//api/name/commentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/commentCount</TokenIdentifier>
+			<Abstract type="html">	@brief	照片被回复的次数</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger commentCount</Declaration>
+			
+			
+			<Anchor>//api/name/commentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenPhoto/photoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建照片信息</Abstract>
+			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenPhoto *)photoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">照片信息</Abstract></ReturnValue>
+			<Anchor>//api/name/photoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

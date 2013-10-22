@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBWebpageObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBWebpageObject</TokenIdentifier>
+			<Abstract type="html">消息中包含的网页数据对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			
+			<NodeRef refid="444"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBWebpageObject/setWebpageUrl:</TokenIdentifier>
+			<Abstract type="html">网页的url地址</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *webpageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/webpageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBWebpageObject/webpageUrl</TokenIdentifier>
+			<Abstract type="html">网页的url地址</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *webpageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/webpageUrl</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

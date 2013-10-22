@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterTweets.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterTweets</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweets信息</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>
+			
+			<NodeRef refid="369"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setAnnotations:</TokenIdentifier>
+			<Abstract type="html">	@brief	未使用</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id annotations</Declaration>
+			
+			
+			<Anchor>//api/name/annotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/annotations</TokenIdentifier>
+			<Abstract type="html">	@brief	未使用</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id annotations</Declaration>
+			
+			
+			<Anchor>//api/name/annotations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setContributors:</TokenIdentifier>
+			<Abstract type="html">	@brief	一个贡献用户对象的集合</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *contributors</Declaration>
+			
+			
+			<Anchor>//api/name/contributors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/contributors</TokenIdentifier>
+			<Abstract type="html">	@brief	一个贡献用户对象的集合</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *contributors</Declaration>
+			
+			
+			<Anchor>//api/name/contributors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示由用户或客户端应用程序报告该Tweets的地理位置</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterCoordinates *coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/coordinates</TokenIdentifier>
+			<Abstract type="html">	@brief	表示由用户或客户端应用程序报告该Tweets的地理位置</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterCoordinates *coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweets的创建时间</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/createdAt</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweets的创建时间</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setCurrentUserRetweet:</TokenIdentifier>
+			<Abstract type="html">	@brief	当前用户转发Tweet，仅当支持includemyretweet参数的接口中设置该参数为true时显示，</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id currentUserRetweet</Declaration>
+			
+			
+			<Anchor>//api/name/currentUserRetweet</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/currentUserRetweet</TokenIdentifier>
+			<Abstract type="html">	@brief	当前用户转发Tweet，仅当支持includemyretweet参数的接口中设置该参数为true时显示，</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id currentUserRetweet</Declaration>
+			
+			
+			<Anchor>//api/name/currentUserRetweet</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setEntities:</TokenIdentifier>
+			<Abstract type="html">	@brief	实体信息</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterEntities *entities</Declaration>
+			
+			
+			<Anchor>//api/name/entities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/entities</TokenIdentifier>
+			<Abstract type="html">	@brief	实体信息</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterEntities *entities</Declaration>
+			
+			
+			<Anchor>//api/name/entities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setFavorited:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否收藏</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL favorited</Declaration>
+			
+			
+			<Anchor>//api/name/favorited</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/favorited</TokenIdentifier>
+			<Abstract type="html">	@brief	是否收藏</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL favorited</Declaration>
+			
+			
+			<Anchor>//api/name/favorited</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setGeo:</TokenIdentifier>
+			<Abstract type="html">	@brief	已过期，用coordinates代替</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id geo</Declaration>
+			
+			
+			<Anchor>//api/name/geo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/geo</TokenIdentifier>
+			<Abstract type="html">	@brief	已过期，用coordinates代替</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id geo</Declaration>
+			
+			
+			<Anchor>//api/name/geo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setInReplyToScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/inReplyToScreenName</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setInReplyToStatusId:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long inReplyToStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/inReplyToStatusId</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long inReplyToStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setInReplyToStatusIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToStatusIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/inReplyToStatusIdStr</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToStatusIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setInReplyToUserId:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long inReplyToUserId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/inReplyToUserId</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户ID</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long inReplyToUserId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setInReplyToUserIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToUserIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/inReplyToUserIdStr</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的用户ID字符串</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToUserIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setPlace:</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet关联地点</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterPlaces *place</Declaration>
+			
+			
+			<Anchor>//api/name/place</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/place</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet关联地点</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterPlaces *place</Declaration>
+			
+			
+			<Anchor>//api/name/place</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setPossiblySensitive:</TokenIdentifier>
+			<Abstract type="html">	@brief	指示内容是否包含敏感内容</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL possiblySensitive</Declaration>
+			
+			
+			<Anchor>//api/name/possiblySensitive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/possiblySensitive</TokenIdentifier>
+			<Abstract type="html">	@brief	指示内容是否包含敏感内容</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL possiblySensitive</Declaration>
+			
+			
+			<Anchor>//api/name/possiblySensitive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setScopes:</TokenIdentifier>
+			<Abstract type="html">	@brief	A set of key-value pairs indicating the intended contextual delivery of the containing Tweet. Currently used by Twitter&apos;s Promoted Products</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id scopes</Declaration>
+			
+			
+			<Anchor>//api/name/scopes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/scopes</TokenIdentifier>
+			<Abstract type="html">	@brief	A set of key-value pairs indicating the intended contextual delivery of the containing Tweet. Currently used by Twitter&apos;s Promoted Products</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id scopes</Declaration>
+			
+			
+			<Anchor>//api/name/scopes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setRetweetCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	转推数量</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger retweetCount</Declaration>
+			
+			
+			<Anchor>//api/name/retweetCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/retweetCount</TokenIdentifier>
+			<Abstract type="html">	@brief	转推数量</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger retweetCount</Declaration>
+			
+			
+			<Anchor>//api/name/retweetCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setRetweeted:</TokenIdentifier>
+			<Abstract type="html">	@brief	转推标识，表示当前用户是否转推该Tweet</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL retweeted</Declaration>
+			
+			
+			<Anchor>//api/name/retweeted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/retweeted</TokenIdentifier>
+			<Abstract type="html">	@brief	转推标识，表示当前用户是否转推该Tweet</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL retweeted</Declaration>
+			
+			
+			<Anchor>//api/name/retweeted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet来源</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/source</TokenIdentifier>
+			<Abstract type="html">	@brief	Tweet来源</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/text</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setTruncated:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示text参数的值是否被截断</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL truncated</Declaration>
+			
+			
+			<Anchor>//api/name/truncated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/truncated</TokenIdentifier>
+			<Abstract type="html">	@brief	表示text参数的值是否被截断</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL truncated</Declaration>
+			
+			
+			<Anchor>//api/name/truncated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	发布用户</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/user</TokenIdentifier>
+			<Abstract type="html">	@brief	发布用户</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setWithheldCopyright:</TokenIdentifier>
+			<Abstract type="html">	@brief	When present and set to &quot;true&quot;, it indicates that this piece of content has been withheld due to a DMCA complaint</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL withheldCopyright</Declaration>
+			
+			
+			<Anchor>//api/name/withheldCopyright</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/withheldCopyright</TokenIdentifier>
+			<Abstract type="html">	@brief	When present and set to &quot;true&quot;, it indicates that this piece of content has been withheld due to a DMCA complaint</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL withheldCopyright</Declaration>
+			
+			
+			<Anchor>//api/name/withheldCopyright</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setWithheldInCountries:</TokenIdentifier>
+			<Abstract type="html">	@brief When present, indicates a list of uppercase two-letter country codes this content is withheld from.</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *withheldInCountries</Declaration>
+			
+			
+			<Anchor>//api/name/withheldInCountries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/withheldInCountries</TokenIdentifier>
+			<Abstract type="html">	@brief When present, indicates a list of uppercase two-letter country codes this content is withheld from.</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *withheldInCountries</Declaration>
+			
+			
+			<Anchor>//api/name/withheldInCountries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setWithheldScope:</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates whether the content being withheld is the &quot;status&quot; or a &quot;user.&quot;</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldScope</Declaration>
+			
+			
+			<Anchor>//api/name/withheldScope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/withheldScope</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates whether the content being withheld is the &quot;status&quot; or a &quot;user.&quot;</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldScope</Declaration>
+			
+			
+			<Anchor>//api/name/withheldScope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterTweets/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterTweets/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterTweets/tweetsInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建Tweet信息</Abstract>
+			<DeclaredIn>SSTwitterTweets.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterTweets *)tweetsInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Tweet信息</Abstract></ReturnValue>
+			<Anchor>//api/name/tweetsInfoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

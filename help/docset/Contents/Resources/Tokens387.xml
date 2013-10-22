@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ShowMessageFromQQReq.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ShowMessageFromQQReq</TokenIdentifier>
+			<Abstract type="html">ShowMessageFromQQReq请求帮助类</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
+			
+			<NodeRef refid="387"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShowMessageFromQQReq/reqWithContent:</TokenIdentifier>
+			<Abstract type="html">创建一个ShowMessageFromQQReq请求实例</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>+ (ShowMessageFromQQReq *)reqWithContent:(QQApiObject *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">具体待展现消息实例</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">新创建的ShowMessageFromQQReq请求实例</Abstract></ReturnValue>
+			<Anchor>//api/name/reqWithContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ShowMessageFromQQReq/setMessage:</TokenIdentifier>
+			<Abstract type="html">具体待展现消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ShowMessageFromQQReq/message</TokenIdentifier>
+			<Abstract type="html">具体待展现消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

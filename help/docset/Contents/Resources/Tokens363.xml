@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterEntities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterEntities</TokenIdentifier>
+			<Abstract type="html">	@brief	实体对象信息</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>
+			
+			<NodeRef refid="363"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterEntities/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterEntities/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterEntities/setHashtags:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示＃标签被解析出来的Tweets文本。</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *hashtags</Declaration>
+			
+			
+			<Anchor>//api/name/hashtags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterEntities/hashtags</TokenIdentifier>
+			<Abstract type="html">	@brief	表示＃标签被解析出来的Tweets文本。</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *hashtags</Declaration>
+			
+			
+			<Anchor>//api/name/hashtags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterEntities/setMedia:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中上传的媒体元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *media</Declaration>
+			
+			
+			<Anchor>//api/name/media</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterEntities/media</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中上传的媒体元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *media</Declaration>
+			
+			
+			<Anchor>//api/name/media</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterEntities/setUrls:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中的链接元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterEntities/urls</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中的链接元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterEntities/setUserMentions:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中提及的其他用户元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *userMentions</Declaration>
+			
+			
+			<Anchor>//api/name/userMentions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterEntities/userMentions</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Tweets中提及的其他用户元素</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *userMentions</Declaration>
+			
+			
+			<Anchor>//api/name/userMentions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterEntities/entitiesWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建实体对象信息</Abstract>
+			<DeclaredIn>SSTwitterEntities.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterEntities *)entitiesWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">实体对象信息</Abstract></ReturnValue>
+			<Anchor>//api/name/entitiesWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

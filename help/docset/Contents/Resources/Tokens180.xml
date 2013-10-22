@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFSignUpView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFSignUpView</TokenIdentifier>
+			<Abstract type="html">The class provides a standard sign up interface for authenticating a PFUser.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>
+			
+			<NodeRef refid="180"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/initWithFields:</TokenIdentifier>
+			<Abstract type="html">Initializes the view with the specified sign up elements.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFields:(PFSignUpFields)fields</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fields</Name>
+					<Abstract type="html">A bitmask specifying the sign up elements which are enabled in the view</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithFields:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setLogo:</TokenIdentifier>
+			<Abstract type="html">The logo. By default, it is the Parse logo.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/logo</TokenIdentifier>
+			<Abstract type="html">The logo. By default, it is the Parse logo.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setFields:</TokenIdentifier>
+			<Abstract type="html">The bitmask which specifies the enabled sign up elements in the view</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/fields</TokenIdentifier>
+			<Abstract type="html">The bitmask which specifies the enabled sign up elements in the view</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, assign) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setUsernameField:</TokenIdentifier>
+			<Abstract type="html">The username text field.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *usernameField</Declaration>
+			
+			
+			<Anchor>//api/name/usernameField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/usernameField</TokenIdentifier>
+			<Abstract type="html">The username text field.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *usernameField</Declaration>
+			
+			
+			<Anchor>//api/name/usernameField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setPasswordField:</TokenIdentifier>
+			<Abstract type="html">The password text field.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *passwordField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/passwordField</TokenIdentifier>
+			<Abstract type="html">The password text field.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *passwordField</Declaration>
+			
+			
+			<Anchor>//api/name/passwordField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setEmailField:</TokenIdentifier>
+			<Abstract type="html">The email text field. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *emailField</Declaration>
+			
+			
+			<Anchor>//api/name/emailField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/emailField</TokenIdentifier>
+			<Abstract type="html">The email text field. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *emailField</Declaration>
+			
+			
+			<Anchor>//api/name/emailField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setAdditionalField:</TokenIdentifier>
+			<Abstract type="html">The additional text field. It is nil if the element is not enabled.
+This field is intended to be customized.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *additionalField</Declaration>
+			
+			
+			<Anchor>//api/name/additionalField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/additionalField</TokenIdentifier>
+			<Abstract type="html">The additional text field. It is nil if the element is not enabled.
+This field is intended to be customized.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UITextField *additionalField</Declaration>
+			
+			
+			<Anchor>//api/name/additionalField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setSignUpButton:</TokenIdentifier>
+			<Abstract type="html">The sign up button. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UIButton *signUpButton</Declaration>
+			
+			
+			<Anchor>//api/name/signUpButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/signUpButton</TokenIdentifier>
+			<Abstract type="html">The sign up button. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UIButton *signUpButton</Declaration>
+			
+			
+			<Anchor>//api/name/signUpButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpView/setDismissButton:</TokenIdentifier>
+			<Abstract type="html">The dismiss button. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UIButton *dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/dismissButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpView/dismissButton</TokenIdentifier>
+			<Abstract type="html">The dismiss button. It is nil if the element is not enabled.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) UIButton *dismissButton</Declaration>
+			
+			
+			<Anchor>//api/name/dismissButton</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>
+			
+			<NodeRef refid="249"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

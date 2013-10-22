@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterMedia.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterMedia</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体信息</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>
+			
+			<NodeRef refid="366"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setDisplayUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	客户端显示URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayUrl</Declaration>
+			
+			
+			<Anchor>//api/name/displayUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/displayUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	客户端显示URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayUrl</Declaration>
+			
+			
+			<Anchor>//api/name/displayUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setExpandedUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	扩展版显示URL，链接到显示页面。</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *expandedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/expandedUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/expandedUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	扩展版显示URL，链接到显示页面。</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *expandedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/expandedUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体ID</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体ID</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体ID字符串</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体ID字符串</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setIndices:</TokenIdentifier>
+			<Abstract type="html">	@brief	URL在Tweet文本中的起始位置和结束位置索引</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			
+			
+			<Anchor>//api/name/indices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/indices</TokenIdentifier>
+			<Abstract type="html">	@brief	URL在Tweet文本中的起始位置和结束位置索引</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			
+			
+			<Anchor>//api/name/indices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setMediaUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	上传媒体文件的URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mediaUrl</Declaration>
+			
+			
+			<Anchor>//api/name/mediaUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/mediaUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	上传媒体文件的URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mediaUrl</Declaration>
+			
+			
+			<Anchor>//api/name/mediaUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setMediaUrlHttps:</TokenIdentifier>
+			<Abstract type="html">	@brief	基于HTTPS的上传媒体文件URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mediaUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/mediaUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/mediaUrlHttps</TokenIdentifier>
+			<Abstract type="html">	@brief	基于HTTPS的上传媒体文件URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mediaUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/mediaUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSizes:</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体文件大小</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterSizes *sizes</Declaration>
+			
+			
+			<Anchor>//api/name/sizes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sizes</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体文件大小</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterSizes *sizes</Declaration>
+			
+			
+			<Anchor>//api/name/sizes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceStatusId:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sourceStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/sourceStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceStatusId</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sourceStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/sourceStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceStatusIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sourceStatusIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/sourceStatusIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceStatusIdStr</TokenIdentifier>
+			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sourceStatusIdStr</Declaration>
+			
+			
+			<Anchor>//api/name/sourceStatusIdStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/type</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体链接的URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/url</TokenIdentifier>
+			<Abstract type="html">	@brief	媒体链接的URL</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterMedia/mediaWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建媒体信息</Abstract>
+			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterMedia *)mediaWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">媒体信息</Abstract></ReturnValue>
+			<Anchor>//api/name/mediaWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

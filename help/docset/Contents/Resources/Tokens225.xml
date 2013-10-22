@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSDouBanCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>
+			
+			<NodeRef refid="225"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/userName</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setRefreshToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/refreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/refreshToken</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/refreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

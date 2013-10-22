@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSQZoneAlbumImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneAlbumImage</TokenIdentifier>
+			<Abstract type="html">	@brief	相册图片</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>
+			
+			<NodeRef refid="314"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setAlbumid:</TokenIdentifier>
+			<Abstract type="html">	@brief	相册ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
+			
+			
+			<Anchor>//api/name/albumid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/albumid</TokenIdentifier>
+			<Abstract type="html">	@brief	相册ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
+			
+			
+			<Anchor>//api/name/albumid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLloc:</TokenIdentifier>
+			<Abstract type="html">	@brief	大图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
+			
+			
+			<Anchor>//api/name/lloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/lloc</TokenIdentifier>
+			<Abstract type="html">	@brief	大图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
+			
+			
+			<Anchor>//api/name/lloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSloc:</TokenIdentifier>
+			<Abstract type="html">	@brief	小图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
+			
+			
+			<Anchor>//api/name/sloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sloc</TokenIdentifier>
+			<Abstract type="html">	@brief	小图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
+			
+			
+			<Anchor>//api/name/sloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLargeUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	大图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
+			
+			
+			<Anchor>//api/name/largeUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/largeUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	大图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
+			
+			
+			<Anchor>//api/name/largeUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSmallUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	小图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
+			
+			
+			<Anchor>//api/name/smallUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/smallUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	小图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
+			
+			
+			<Anchor>//api/name/smallUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/height</TokenIdentifier>
+			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setWidth:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/width</TokenIdentifier>
+			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneAlbumImage/albumWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建相册图片信息</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>+ (SSQZoneAlbumImage *)albumWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/albumWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

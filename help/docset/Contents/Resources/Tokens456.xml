@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WeiBo_baseRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiBo_baseRequest</TokenIdentifier>
+			<Abstract type="html">微博相关接口基类</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>
+			
+			<NodeRef refid="456"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

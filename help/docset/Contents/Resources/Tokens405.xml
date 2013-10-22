@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TCSetUserHeadpic.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TCSetUserHeadpic</TokenIdentifier>
+			<Abstract type="html">\brief 设置用户头像</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
+			
+			<NodeRef refid="405"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TCSetUserHeadpic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>+ (TCSetUserHeadpic *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/dictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCSetUserHeadpic/setParamImage:</TokenIdentifier>
+			<Abstract type="html">设置用户头像的图片</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredImage paramImage</Declaration>
+			
+			
+			<Anchor>//api/name/paramImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCSetUserHeadpic/paramImage</TokenIdentifier>
+			<Abstract type="html">设置用户头像的图片</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredImage paramImage</Declaration>
+			
+			
+			<Anchor>//api/name/paramImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCSetUserHeadpic/setParamFileName:</TokenIdentifier>
+			<Abstract type="html">图片的文件名</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramFileName</Declaration>
+			
+			
+			<Anchor>//api/name/paramFileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCSetUserHeadpic/paramFileName</TokenIdentifier>
+			<Abstract type="html">图片的文件名</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramFileName</Declaration>
+			
+			
+			<Anchor>//api/name/paramFileName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

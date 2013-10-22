@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBToken.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBToken</TokenIdentifier>
+			<Abstract type="html">授权成功时，sdk返回的授权token结构</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>
+			
+			<NodeRef refid="442"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOpenid:</TokenIdentifier>
+			<Abstract type="html">授权账号id</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *openid</Declaration>
+			
+			
+			<Anchor>//api/name/openid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/openid</TokenIdentifier>
+			<Abstract type="html">授权账号id</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *openid</Declaration>
+			
+			
+			<Anchor>//api/name/openid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">访问Token</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/accessToken</TokenIdentifier>
+			<Abstract type="html">访问Token</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setExpires:</TokenIdentifier>
+			<Abstract type="html">访问Token的过期时间戳</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) unsigned int expires</Declaration>
+			
+			
+			<Anchor>//api/name/expires</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/expires</TokenIdentifier>
+			<Abstract type="html">访问Token的过期时间戳</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) unsigned int expires</Declaration>
+			
+			
+			<Anchor>//api/name/expires</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setRefreshToken:</TokenIdentifier>
+			<Abstract type="html">刷新Token</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *refreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/refreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/refreshToken</TokenIdentifier>
+			<Abstract type="html">刷新Token</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *refreshToken</Declaration>
+			
+			
+			<Anchor>//api/name/refreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOmasToken:</TokenIdentifier>
+			<Abstract type="html">用于加密，开发者不用关心</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *omasToken</Declaration>
+			
+			
+			<Anchor>//api/name/omasToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/omasToken</TokenIdentifier>
+			<Abstract type="html">用于加密，开发者不用关心</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *omasToken</Declaration>
+			
+			
+			<Anchor>//api/name/omasToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOmasKey:</TokenIdentifier>
+			<Abstract type="html">用于加密，开发者不用关心</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *omasKey</Declaration>
+			
+			
+			<Anchor>//api/name/omasKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/omasKey</TokenIdentifier>
+			<Abstract type="html">用于加密，开发者不用关心</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *omasKey</Declaration>
+			
+			
+			<Anchor>//api/name/omasKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setReserver:</TokenIdentifier>
+			<Abstract type="html">预留字段</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *reserver</Declaration>
+			
+			
+			<Anchor>//api/name/reserver</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBToken/reserver</TokenIdentifier>
+			<Abstract type="html">预留字段</Abstract>
+			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *reserver</Declaration>
+			
+			
+			<Anchor>//api/name/reserver</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

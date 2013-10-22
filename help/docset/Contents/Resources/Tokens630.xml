@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>ISSCredential.h</DeclaredIn>
+			
+			<NodeRef refid="630"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCredential/localCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	平台相关的授权凭证，参考相关Connection中的Credential对象</Abstract>
+			<DeclaredIn>ISSCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)localCredential</Declaration>
+			
+			
+			<Anchor>//api/name/localCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>ISSCredential.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>ISSCredential.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

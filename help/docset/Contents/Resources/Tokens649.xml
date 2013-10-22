@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSPage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSPage</TokenIdentifier>
+			<Abstract type="html">	@brief	分页对象协议，用于获取分页数据时标识分页信息</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>
+			
+			<NodeRef refid="649"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/pageNo</TokenIdentifier>
+			<Abstract type="html">	@brief	获取页码</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)pageNo</Declaration>
+			
+			<ReturnValue><Abstract type="html">页码</Abstract></ReturnValue>
+			<Anchor>//api/name/pageNo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/setPageNo:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置页码</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPageNo:(NSInteger)pageNo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNo</Name>
+					<Abstract type="html">页码</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPageNo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/pageSize</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分页大小</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)pageSize</Declaration>
+			
+			<ReturnValue><Abstract type="html">分页大小</Abstract></ReturnValue>
+			<Anchor>//api/name/pageSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/setPageSize:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分页大小</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPageSize:(NSInteger)pageSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageSize</Name>
+					<Abstract type="html">分页大小</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPageSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/cursor</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分页游标</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (long long)cursor</Declaration>
+			
+			<ReturnValue><Abstract type="html">分页游标</Abstract></ReturnValue>
+			<Anchor>//api/name/cursor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPage/setCursor:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分页游标</Abstract>
+			<DeclaredIn>ISSPage.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCursor:(long long)cursor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cursor</Name>
+					<Abstract type="html">分页游标</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCursor:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

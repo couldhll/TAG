@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSPrintErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPrintErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息</Abstract>
+			<DeclaredIn>SSPrintErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="312"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

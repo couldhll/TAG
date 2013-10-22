@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSDouBanFlash.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanFlash</TokenIdentifier>
+			<Abstract type="html">	@brief	Flash信息</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>
+			
+			<NodeRef refid="228"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setSrc:</TokenIdentifier>
+			<Abstract type="html">	@brief	 Flash路径</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			
+			
+			<Anchor>//api/name/src</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/src</TokenIdentifier>
+			<Abstract type="html">	@brief	 Flash路径</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			
+			
+			<Anchor>//api/name/src</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setImgsrc:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片路径</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *imgsrc</Declaration>
+			
+			
+			<Anchor>//api/name/imgsrc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/imgsrc</TokenIdentifier>
+			<Abstract type="html">	@brief	图片路径</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *imgsrc</Declaration>
+			
+			
+			<Anchor>//api/name/imgsrc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/type</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanFlash/flashWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建Flash媒体信息</Abstract>
+			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			
+			<Declaration>+ (SSDouBanFlash *)flashWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Flash媒体信息</Abstract></ReturnValue>
+			<Anchor>//api/name/flashWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APIResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APIResponse</TokenIdentifier>
+			<Abstract type="html">\brief 封装服务器返回的结果</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setDetailRetCode:</TokenIdentifier>
+			<Abstract type="html">新增的详细错误码\n
+detailRetCode主要用于区分不同的错误情况，参见\ref OpenSDKError</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int detailRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/detailRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/detailRetCode</TokenIdentifier>
+			<Abstract type="html">新增的详细错误码\n
+detailRetCode主要用于区分不同的错误情况，参见\ref OpenSDKError</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int detailRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/detailRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setRetCode:</TokenIdentifier>
+			<Abstract type="html">网络请求是否成功送达服务器，以及服务器返回的数据格式是否正确\n
+retCode具体取值可参考\ref REPONSE_RESULT</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int retCode</Declaration>
+			
+			
+			<Anchor>//api/name/retCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/retCode</TokenIdentifier>
+			<Abstract type="html">网络请求是否成功送达服务器，以及服务器返回的数据格式是否正确\n
+retCode具体取值可参考\ref REPONSE_RESULT</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int retCode</Declaration>
+			
+			
+			<Anchor>//api/name/retCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setSeq:</TokenIdentifier>
+			<Abstract type="html">网络请求对应的递增序列号，方便内部管理</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int seq</Declaration>
+			
+			
+			<Anchor>//api/name/seq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/seq</TokenIdentifier>
+			<Abstract type="html">网络请求对应的递增序列号，方便内部管理</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) int seq</Declaration>
+			
+			
+			<Anchor>//api/name/seq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setErrorMsg:</TokenIdentifier>
+			<Abstract type="html">错误提示语</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorMsg</Declaration>
+			
+			
+			<Anchor>//api/name/errorMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/errorMsg</TokenIdentifier>
+			<Abstract type="html">错误提示语</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorMsg</Declaration>
+			
+			
+			<Anchor>//api/name/errorMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setJsonResponse:</TokenIdentifier>
+			<Abstract type="html">服务器返回数据的json格式字典\n
+字典内具体参数的命名和含义请参考\ref api_spec</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *jsonResponse</Declaration>
+			
+			
+			<Anchor>//api/name/jsonResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/jsonResponse</TokenIdentifier>
+			<Abstract type="html">服务器返回数据的json格式字典\n
+字典内具体参数的命名和含义请参考\ref api_spec</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *jsonResponse</Declaration>
+			
+			
+			<Anchor>//api/name/jsonResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setMessage:</TokenIdentifier>
+			<Abstract type="html">服务器返回的原始数据字符串</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/message</TokenIdentifier>
+			<Abstract type="html">服务器返回的原始数据字符串</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APIResponse/setUserData:</TokenIdentifier>
+			<Abstract type="html">用户保留数据</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APIResponse/userData</TokenIdentifier>
+			<Abstract type="html">用户保留数据</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

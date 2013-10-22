@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SS163WeiboErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SS163WeiboErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息</Abstract>
+			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="219"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboErrorInfo/setRequest:</TokenIdentifier>
+			<Abstract type="html">	@brief	请求地址</Abstract>
+			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboErrorInfo/request</TokenIdentifier>
+			<Abstract type="html">	@brief	请求地址</Abstract>
+			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

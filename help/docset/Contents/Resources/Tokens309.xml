@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSPocketErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPocketErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息类，用于记录Pocket中产生的错误信息（报错错误码、错误描述）</Abstract>
+			<DeclaredIn>SSPocketErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="309"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

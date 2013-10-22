@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFSignUpViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFSignUpViewController</TokenIdentifier>
+			<Abstract type="html">The class that presents and manages a standard authentication interface for signing up a PFUser.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<NodeRef refid="181"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setFields:</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
+    enum {
+        PFSignUpFieldsUsernameAndPassword = 0,
+        PFSignUpFieldsEmail = 1 &lt;&lt; 0,
+        PFSignUpFieldsAdditional = 1 &lt;&lt; 1, // this field can be used for something else
+        PFSignUpFieldsSignUpButton = 1 &lt;&lt; 2,
+        PFSignUpFieldsDismissButton = 1 &lt;&lt; 3,
+        PFSignUpFieldsDefault = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton | PFSignUpFieldsDismissButton
+    };</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
+    enum {
+        PFSignUpFieldsUsernameAndPassword = 0,
+        PFSignUpFieldsEmail = 1 &lt;&lt; 0,
+        PFSignUpFieldsAdditional = 1 &lt;&lt; 1, // this field can be used for something else
+        PFSignUpFieldsSignUpButton = 1 &lt;&lt; 2,
+        PFSignUpFieldsDismissButton = 1 &lt;&lt; 3,
+        PFSignUpFieldsDefault = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton | PFSignUpFieldsDismissButton
+    };</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setSignUpView:</TokenIdentifier>
+			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFSignUpView *signUpView</Declaration>
+			
+			
+			<Anchor>//api/name/signUpView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/signUpView</TokenIdentifier>
+			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) PFSignUpView *signUpView</Declaration>
+			
+			
+			<Anchor>//api/name/signUpView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

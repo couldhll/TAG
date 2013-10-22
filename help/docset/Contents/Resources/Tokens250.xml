@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookCurrency.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCurrency</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>
+			
+			<NodeRef refid="250"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息Id</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息Id</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setUserCurrency:</TokenIdentifier>
+			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
+			
+			
+			<Anchor>//api/name/userCurrency</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/userCurrency</TokenIdentifier>
+			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
+			
+			
+			<Anchor>//api/name/userCurrency</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchange:</TokenIdentifier>
+			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExchange</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchange</TokenIdentifier>
+			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExchange</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchangeInverse:</TokenIdentifier>
+			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExchangeInverse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchangeInverse</TokenIdentifier>
+			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
+			
+			
+			<Anchor>//api/name/currencyExchangeInverse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyOffset:</TokenIdentifier>
+			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			
+			
+			<Anchor>//api/name/currencyOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyOffset</TokenIdentifier>
+			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			
+			
+			<Anchor>//api/name/currencyOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCurrency/currencyWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建货币信息</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookCurrency *)currencyWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">货币信息</Abstract></ReturnValue>
+			<Anchor>//api/name/currencyWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

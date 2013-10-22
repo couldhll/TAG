@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBTaskCompletionSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBTaskCompletionSource</TokenIdentifier>
+			<Abstract type="html">A FBTaskCompletionSource represents the producer side of tasks.
+It is a task that also has methods for changing the state of the
+task by settings its completion values.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>
+			
+			<NodeRef refid="102"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FBTaskCompletionSource/taskCompletionSource</TokenIdentifier>
+			<Abstract type="html">Creates a new unfinished task.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>+ (FBTaskCompletionSource *)taskCompletionSource</Declaration>
+			
+			
+			<Anchor>//api/name/taskCompletionSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/setTask:</TokenIdentifier>
+			<Abstract type="html">The task associated with this TaskCompletionSource.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) FBTask *task</Declaration>
+			
+			
+			<Anchor>//api/name/task</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FBTaskCompletionSource/task</TokenIdentifier>
+			<Abstract type="html">The task associated with this TaskCompletionSource.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) FBTask *task</Declaration>
+			
+			
+			<Anchor>//api/name/task</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/setResult:</TokenIdentifier>
+			<Abstract type="html">Completes the task by setting the result.
+Attempting to set this for a completed task will raise an exception.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)setResult:(id)result</Declaration>
+			
+			
+			<Anchor>//api/name/setResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/setError:</TokenIdentifier>
+			<Abstract type="html">Completes the task by setting the error.
+Attempting to set this for a completed task will raise an exception.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)setError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/setError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/setException:</TokenIdentifier>
+			<Abstract type="html">Completes the task by setting an exception.
+Attempting to set this for a completed task will raise an exception.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)setException:(NSException *)exception</Declaration>
+			
+			
+			<Anchor>//api/name/setException:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/cancel</TokenIdentifier>
+			<Abstract type="html">Completes the task by marking it as cancelled.
+Attempting to set this for a completed task will raise an exception.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/trySetResult:</TokenIdentifier>
+			<Abstract type="html">Sets the result of the task if it wasn&apos;t already completed.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)trySetResult:(id)result</Declaration>
+			
+			<ReturnValue><Abstract type="html">whether the new value was set.</Abstract></ReturnValue>
+			<Anchor>//api/name/trySetResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/trySetError:</TokenIdentifier>
+			<Abstract type="html">Sets the error of the task if it wasn&apos;t already completed.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)trySetError:(NSError *)error</Declaration>
+			
+			<ReturnValue><Abstract type="html">whether the new value was set.</Abstract></ReturnValue>
+			<Anchor>//api/name/trySetError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/trySetException:</TokenIdentifier>
+			<Abstract type="html">Sets the exception of the task if it wasn&apos;t already completed.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)trySetException:(NSException *)exception</Declaration>
+			
+			<ReturnValue><Abstract type="html">whether the new value was set.</Abstract></ReturnValue>
+			<Anchor>//api/name/trySetException:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBTaskCompletionSource/trySetCancelled</TokenIdentifier>
+			<Abstract type="html">Sets the cancellation state of the task if it wasn&apos;t already completed.</Abstract>
+			<DeclaredIn>FBTaskCompletionSource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)trySetCancelled</Declaration>
+			
+			<ReturnValue><Abstract type="html">whether the new value was set.</Abstract></ReturnValue>
+			<Anchor>//api/name/trySetCancelled</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

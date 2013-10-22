@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFCloud.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFCloud</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>
+			
+			<NodeRef refid="163"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function with the parameters passed in.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (id)callFunction:(NSString *)function withParameters:(NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The response from the cloud function.</Abstract></ReturnValue>
+			<Anchor>//api/name/callFunction:withParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:error:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function with the parameters passed in and sets the error if there is one.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (id)callFunction:(NSString *)function withParameters:(NSDictionary *)parameters error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The response from the cloud function.  This result could be a NSDictionary, an NSArray, NSInteger or NSString.</Abstract></ReturnValue>
+			<Anchor>//api/name/callFunction:withParameters:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:block:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function with the parameters provided asynchronously and calls the given block when it is done.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters block:(PFIdResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute. The block should have the following argument signature:(id result, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callFunctionInBackground:withParameters:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:target:selector:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function with the parameters provided asynchronously and runs the callback when it is done.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters target:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call the selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call. It should have the following signature: (void)callbackWithResult:(id) result error:(NSError *)error. result will be nil if error is set and vice versa.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callFunctionInBackground:withParameters:target:selector:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

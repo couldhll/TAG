@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBSessionAppEventsState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBSessionAppEventsState</TokenIdentifier>
+			<Abstract type="html">Internal class that holds all the state associated with FBAppEvents for a particular FBSession.  An
+instance of this lives on FBSession.</Abstract>
+			<DeclaredIn>FBSessionAppEventsState.h</DeclaredIn>
+			
+			<NodeRef refid="87"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

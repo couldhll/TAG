@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-CocoaSecurity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -91,92 +96,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>28C7DE2215C048D791D19CFD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B61AB8B9C294E3FB7BD585D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2CF99493A3CD49869D832E8D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>33C68F1B3C4A4EBE9727AE93</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3459877E99CF460BB384E7AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4158CC03911344BFB8F045BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9CDB5AF7ACEA498CBA712F11</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A804B7D28F2D495B9869A707</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B2E28340E71F4DD4920355D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B7E9915AC84448E6994CC4CD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B96E6C3FAC3F45208E4DBAC8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C00810054E43461F88E277CF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5C7DC201F2A4E029B480E63</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E28A7113A14E4D6188628708</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E34444825B57462196C9750B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E7715607609D453F8A1104F6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC2785F8F6DB4033826D45A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

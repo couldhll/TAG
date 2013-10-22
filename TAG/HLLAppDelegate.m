@@ -17,12 +17,13 @@
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
 //#import <GAI.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    // google tracking
+//    // init GoogleSDK
 //    // Optional: automatically send uncaught exceptions to Google Analytics.
 //    [GAI sharedInstance].trackUncaughtExceptions = YES;
 //    
@@ -36,12 +37,15 @@
 //    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
 
     
-    // init parse
+    // init ParseSDK
     [Parse setApplicationId:@"vkPdg2r3Q9hdUNOWYY9CFrPwDXQVsYM47QLDUAIl"
                   clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
     
-    // init share
+    // init ShareSDK
     [ShareSDK registerApp:@"9fae2ee15ce" useAppTrusteeship:YES];
+    
+    // init CrashlyticsSDK
+    [Crashlytics startWithAPIKey:@"d37585287245935f2ae51d8b4f5a1957eabfa72a"];
     
     // add a custom read-only cache path
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];

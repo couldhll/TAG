@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSEverNoteCredential.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>
+			
+			<NodeRef refid="235"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setOauthToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/oauthToken</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setOauthTokenSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/oauthTokenSecret</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setEdamShard:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamShard</Declaration>
+			
+			
+			<Anchor>//api/name/edamShard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/edamShard</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamShard</Declaration>
+			
+			
+			<Anchor>//api/name/edamShard</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setEdamNoteStoreUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	NoteStore URL</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamNoteStoreUrl</Declaration>
+			
+			
+			<Anchor>//api/name/edamNoteStoreUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/edamNoteStoreUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	NoteStore URL</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamNoteStoreUrl</Declaration>
+			
+			
+			<Anchor>//api/name/edamNoteStoreUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setEdamWebApiUrlPrefix:</TokenIdentifier>
+			<Abstract type="html">	@brief	云API前缀</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamWebApiUrlPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/edamWebApiUrlPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/edamWebApiUrlPrefix</TokenIdentifier>
+			<Abstract type="html">	@brief	云API前缀</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamWebApiUrlPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/edamWebApiUrlPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setEdamUserId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamUserId</Declaration>
+			
+			
+			<Anchor>//api/name/edamUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/edamUserId</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *edamUserId</Declaration>
+			
+			
+			<Anchor>//api/name/edamUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setEdamExpires:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *edamExpires</Declaration>
+			
+			
+			<Anchor>//api/name/edamExpires</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/edamExpires</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *edamExpires</Declaration>
+			
+			
+			<Anchor>//api/name/edamExpires</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	凭证有效性</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	凭证有效性</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSEverNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

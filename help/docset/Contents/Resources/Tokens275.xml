@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusEmail.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusEmail</TokenIdentifier>
+			<Abstract type="html">	@brief	邮箱信息</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>
+			
+			<NodeRef refid="275"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setValue:</TokenIdentifier>
+			<Abstract type="html">	@brief	The email address.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/value</TokenIdentifier>
+			<Abstract type="html">	@brief	The email address.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of address. Possible values are:
+&quot;home&quot; - Home email address.
+&quot;work&quot; - Work email address.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/type</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of address. Possible values are:
+&quot;home&quot; - Home email address.
+&quot;work&quot; - Work email address.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setPrimary:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/primary</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusEmail/emailWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建邮箱信息</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusEmail *)emailWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">邮箱信息</Abstract></ReturnValue>
+			<Anchor>//api/name/emailWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

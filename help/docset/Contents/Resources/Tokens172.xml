@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFProduct.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFProduct</TokenIdentifier>
+			<Abstract type="html">Represents an in-app purchase product on the Parse server.
+By default, products can only be created via the data browser; saving a PFProduct
+will result in error. However, the products&apos; metadata information can be queried
+and viewed.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<NodeRef refid="172"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFProduct/parseClassName</TokenIdentifier>
+			<Abstract type="html">The name of the Product class in the REST API. This is a required
+PFSubclassing method</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFProduct/query</TokenIdentifier>
+			<Abstract type="html">A query that fetches all product instances registered on Parse&apos;s server.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>+ (PFQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setProductIdentifier:</TokenIdentifier>
+			<Abstract type="html">The product identifier of the product.
+This should match the product identifier in iTunes Connect exactly.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The product identifier of the product.
+This should match the product identifier in iTunes Connect exactly.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setIcon:</TokenIdentifier>
+			<Abstract type="html">The icon of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFFile *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/icon</TokenIdentifier>
+			<Abstract type="html">The icon of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) PFFile *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setTitle:</TokenIdentifier>
+			<Abstract type="html">The title of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/title</TokenIdentifier>
+			<Abstract type="html">The title of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setSubtitle:</TokenIdentifier>
+			<Abstract type="html">The subtitle of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/subtitle</TokenIdentifier>
+			<Abstract type="html">The subtitle of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setOrder:</TokenIdentifier>
+			<Abstract type="html">The order in which the product information is displayed in PFProductTableViewController.
+The product with a smaller order is displayed earlier in the PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *order</Declaration>
+			
+			
+			<Anchor>//api/name/order</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/order</TokenIdentifier>
+			<Abstract type="html">The order in which the product information is displayed in PFProductTableViewController.
+The product with a smaller order is displayed earlier in the PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSNumber *order</Declaration>
+			
+			
+			<Anchor>//api/name/order</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setDownloadName:</TokenIdentifier>
+			<Abstract type="html">The name of the associated download. If there is no downloadable asset, it should be nil.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *downloadName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/downloadName</TokenIdentifier>
+			<Abstract type="html">The name of the associated download. If there is no downloadable asset, it should be nil.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *downloadName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

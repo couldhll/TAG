@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSInstapaperAuthSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSInstapaperAuthSession</TokenIdentifier>
+			<Abstract type="html">	@brief	授权会话</Abstract>
+			<DeclaredIn>ISSInstapaperAuthSession.h</DeclaredIn>
+			
+			<NodeRef refid="641"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

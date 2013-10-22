@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Pinterest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Pinterest</TokenIdentifier>
+			<Abstract type="html">The Pin It SDK allows for the creation of Pinterest content inside of third party applications.
+Currently the SDK only supports pinning images from a specified URL.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>
+			
+			<NodeRef refid="189"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/initWithClientId:</TokenIdentifier>
+			<Abstract type="html">Initializes a Pinterest instance.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClientId:(NSString *)clientId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">A Pinterest client id.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Pinterest instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClientId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/initWithClientId:urlSchemeSuffix:</TokenIdentifier>
+			<Abstract type="html">Initializes a Pinterest instance with a URL scheme suffix.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClientId:(NSString *)clientId urlSchemeSuffix:(NSString *)suffix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">A Pinterest client id.</Abstract>
+				</Parameter><Parameter>
+					<Name>suffix</Name>
+					<Abstract type="html">URL scheme suffix that is used to futher identify an application in addition to a client id.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Pinterest instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClientId:urlSchemeSuffix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/canPinWithSDK</TokenIdentifier>
+			<Abstract type="html">Checks if a version of the Pinterest app that supports the Pin It SDK is installed.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)canPinWithSDK</Declaration>
+			
+			<ReturnValue><Abstract type="html">If pinning is possible via the Pin It SDK on the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/canPinWithSDK</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/createPinWithImageURL:sourceURL:description:</TokenIdentifier>
+			<Abstract type="html">Creates a pin with specified image URL.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (void)createPinWithImageURL:(NSURL *)imageURL sourceURL:(NSURL *)sourceURL description:(NSString *)descriptionText</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageURL</Name>
+					<Abstract type="html">URL of the image to pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceURL</Name>
+					<Abstract type="html">The source page of the image.</Abstract>
+				</Parameter><Parameter>
+					<Name>descriptionText</Name>
+					<Abstract type="html">The pin&apos;s description.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createPinWithImageURL:sourceURL:description:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Pinterest/pinItButton</TokenIdentifier>
+			<Abstract type="html">Creates a Pin It button.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>+ (UIButton *)pinItButton</Declaration>
+			
+			<ReturnValue><Abstract type="html">Pin It button.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinItButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openUserWithUsername:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a user&apos;s profile.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (void)openUserWithUsername:(NSString *)username</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">Username of user&apos;s profile to open.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openUserWithUsername:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openPinWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a pin.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (void)openPinWithIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">Id of the pin to open.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openPinWithIdentifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openBoardWithSlug:fromUser:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a user&apos;s board.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (void)openBoardWithSlug:(NSString *)slug fromUser:(NSString *)username</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>slug</Name>
+					<Abstract type="html">The board&apos;s slug from a Pinterest URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user who owns the board.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openBoardWithSlug:fromUser:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

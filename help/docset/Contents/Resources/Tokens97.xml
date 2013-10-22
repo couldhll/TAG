@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBSessionTokenCachingStrategyNoOpInstance.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBSessionTokenCachingStrategyNoOpInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBSessionTokenCachingStrategy.m</DeclaredIn>
+			
+			<NodeRef refid="97"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBSessionTokenCachingStrategyNoOpInstance/cacheTokenInformation:</TokenIdentifier>
+			<Abstract type="html">@abstract
+Called by FBSession (and overridden by inheritors), in order to cache token information.</Abstract>
+			<DeclaredIn>FBSessionTokenCachingStrategy.m</DeclaredIn>			
+			
+			<Declaration>- (void)cacheTokenInformation:(NSDictionary *)tokenInformation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tokenInformation</Name>
+					<Abstract type="html">Dictionary containing token information to be cached by the method
+@discussion You should favor overriding this instead of cacheFBAccessTokenData only if you intend
+to cache additional data not captured by the FBAccessTokenData type.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cacheTokenInformation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBSessionTokenCachingStrategyNoOpInstance/fetchTokenInformation</TokenIdentifier>
+			<Abstract type="html">@abstract
+Called by FBSession (and overridden by inheritors), in order to fetch cached token information</Abstract>
+			<DeclaredIn>FBSessionTokenCachingStrategy.m</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)fetchTokenInformation</Declaration>
+			
+			
+			<Anchor>//api/name/fetchTokenInformation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBSessionTokenCachingStrategyNoOpInstance/clearToken</TokenIdentifier>
+			<Abstract type="html">@abstract
+Called by FBSession (and overridden by inheritors), in order delete any cached information for the current token</Abstract>
+			<DeclaredIn>FBSessionTokenCachingStrategy.m</DeclaredIn>			
+			
+			<Declaration>- (void)clearToken</Declaration>
+			
+			
+			<Anchor>//api/name/clearToken</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

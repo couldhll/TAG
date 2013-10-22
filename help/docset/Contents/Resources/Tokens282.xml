@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>
+			
+			<NodeRef refid="282"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSGooglePlusCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSGooglePlusCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setKind:</TokenIdentifier>
+			<Abstract type="html">	@brief	Identifies this resource as a person. </Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *kind</Declaration>
+			
+			
+			<Anchor>//api/name/kind</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/kind</TokenIdentifier>
+			<Abstract type="html">	@brief	Identifies this resource as a person. </Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *kind</Declaration>
+			
+			
+			<Anchor>//api/name/kind</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setEtag:</TokenIdentifier>
+			<Abstract type="html">	@brief	ETag of this response for caching purposes.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id etag</Declaration>
+			
+			
+			<Anchor>//api/name/etag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/etag</TokenIdentifier>
+			<Abstract type="html">	@brief	ETag of this response for caching purposes.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id etag</Declaration>
+			
+			
+			<Anchor>//api/name/etag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setNickname:</TokenIdentifier>
+			<Abstract type="html">	@brief	The nickname of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			
+			
+			<Anchor>//api/name/nickname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/nickname</TokenIdentifier>
+			<Abstract type="html">	@brief	The nickname of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			
+			
+			<Anchor>//api/name/nickname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setBirthday:</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s date of birth, represented as YYYY-MM-DD.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/birthday</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s date of birth, represented as YYYY-MM-DD.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setGender:</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s gender. Possible values are:
+&quot;male&quot; - Male gender.
+&quot;female&quot; - Female gender.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/gender</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s gender. Possible values are:
+&quot;male&quot; - Male gender.
+&quot;female&quot; - Female gender.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setEmails:</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of email addresses that this person has set to public on their Google+ profile. 
+You can also use the userinfo.email scope to retrieve an authenticated user&apos;s email address.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *emails</Declaration>
+			
+			
+			<Anchor>//api/name/emails</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/emails</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of email addresses that this person has set to public on their Google+ profile. 
+You can also use the userinfo.email scope to retrieve an authenticated user&apos;s email address.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *emails</Declaration>
+			
+			
+			<Anchor>//api/name/emails</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setUrls:</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of URLs for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/urls</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of URLs for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setObjectType:</TokenIdentifier>
+			<Abstract type="html">	@brief	Type of person within Google+. Possible values are:
+&quot;person&quot; - represents an actual person.
+&quot;page&quot; - represents a page.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/objectType</TokenIdentifier>
+			<Abstract type="html">	@brief	Type of person within Google+. Possible values are:
+&quot;person&quot; - represents an actual person.
+&quot;page&quot; - represents a page.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *objectType</Declaration>
+			
+			
+			<Anchor>//api/name/objectType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	The ID of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	The ID of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setDisplayName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The name of this person, suitable for display.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/displayName</TokenIdentifier>
+			<Abstract type="html">	@brief	The name of this person, suitable for display.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *displayName</Declaration>
+			
+			
+			<Anchor>//api/name/displayName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	An object representation of the individual components of a person&apos;s name.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusName *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	An object representation of the individual components of a person&apos;s name.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusName *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setTagline:</TokenIdentifier>
+			<Abstract type="html">	@brief	The brief description (tagline) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tagline</Declaration>
+			
+			
+			<Anchor>//api/name/tagline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/tagline</TokenIdentifier>
+			<Abstract type="html">	@brief	The brief description (tagline) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *tagline</Declaration>
+			
+			
+			<Anchor>//api/name/tagline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setBraggingRights:</TokenIdentifier>
+			<Abstract type="html">	@brief	The &quot;bragging rights&quot; line of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *braggingRights</Declaration>
+			
+			
+			<Anchor>//api/name/braggingRights</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/braggingRights</TokenIdentifier>
+			<Abstract type="html">	@brief	The &quot;bragging rights&quot; line of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *braggingRights</Declaration>
+			
+			
+			<Anchor>//api/name/braggingRights</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setAboutMe:</TokenIdentifier>
+			<Abstract type="html">	@brief	A short biography for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *aboutMe</Declaration>
+			
+			
+			<Anchor>//api/name/aboutMe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/aboutMe</TokenIdentifier>
+			<Abstract type="html">	@brief	A short biography for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *aboutMe</Declaration>
+			
+			
+			<Anchor>//api/name/aboutMe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setCurrentLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	The current location for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currentLocation</Declaration>
+			
+			
+			<Anchor>//api/name/currentLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/currentLocation</TokenIdentifier>
+			<Abstract type="html">	@brief	The current location for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currentLocation</Declaration>
+			
+			
+			<Anchor>//api/name/currentLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setRelationshipStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s relationship status. Possible values are:
+&quot;single&quot; - Person is single.
+&quot;inarelationship&quot; - Person is in a relationship.
+&quot;engaged&quot; - Person is engaged.
+&quot;married&quot; - Person is married.
+&quot;its_complicated&quot; - The relationship is complicated.
+&quot;open_relationship&quot; - Person is in an open relationship.
+&quot;widowed&quot; - Person is widowed.
+&quot;indomesticpartnership&quot; - Person is in a domestic partnership.
+&quot;incivilunion&quot; - Person is in a civil union.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *relationshipStatus</Declaration>
+			
+			
+			<Anchor>//api/name/relationshipStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/relationshipStatus</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s relationship status. Possible values are:
+&quot;single&quot; - Person is single.
+&quot;inarelationship&quot; - Person is in a relationship.
+&quot;engaged&quot; - Person is engaged.
+&quot;married&quot; - Person is married.
+&quot;its_complicated&quot; - The relationship is complicated.
+&quot;open_relationship&quot; - Person is in an open relationship.
+&quot;widowed&quot; - Person is widowed.
+&quot;indomesticpartnership&quot; - Person is in a domestic partnership.
+&quot;incivilunion&quot; - Person is in a civil union.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *relationshipStatus</Declaration>
+			
+			
+			<Anchor>//api/name/relationshipStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL of this person&apos;s profile.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/url</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL of this person&apos;s profile.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	The representation of the person&apos;s profile photo.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/image</TokenIdentifier>
+			<Abstract type="html">	@brief	The representation of the person&apos;s profile photo.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setOrganizations:</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of current or past organizations with which this person is associated.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *organizations</Declaration>
+			
+			
+			<Anchor>//api/name/organizations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/organizations</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of current or past organizations with which this person is associated.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *organizations</Declaration>
+			
+			
+			<Anchor>//api/name/organizations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setPlacesLived:</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of places where this person has lived.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *placesLived</Declaration>
+			
+			
+			<Anchor>//api/name/placesLived</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/placesLived</TokenIdentifier>
+			<Abstract type="html">	@brief	A list of places where this person has lived.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *placesLived</Declaration>
+			
+			
+			<Anchor>//api/name/placesLived</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setHasApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates that the person has installed the app that is making the request and 
+has chosen to expose this install state to the caller.
+A value of &quot;false&quot; indicates that the install state cannot be determined
+(it is either not installed or the person has chosen to keep this information private).</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasApp</Declaration>
+			
+			
+			<Anchor>//api/name/hasApp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/hasApp</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates that the person has installed the app that is making the request and 
+has chosen to expose this install state to the caller.
+A value of &quot;false&quot; indicates that the install state cannot be determined
+(it is either not installed or the person has chosen to keep this information private).</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasApp</Declaration>
+			
+			
+			<Anchor>//api/name/hasApp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setIsPlusUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	Whether this user has signed up for Google+.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isPlusUser</Declaration>
+			
+			
+			<Anchor>//api/name/isPlusUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/isPlusUser</TokenIdentifier>
+			<Abstract type="html">	@brief	Whether this user has signed up for Google+.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isPlusUser</Declaration>
+			
+			
+			<Anchor>//api/name/isPlusUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setLanguage:</TokenIdentifier>
+			<Abstract type="html">	@brief	The user&apos;s preferred language for rendering.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *language</Declaration>
+			
+			
+			<Anchor>//api/name/language</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/language</TokenIdentifier>
+			<Abstract type="html">	@brief	The user&apos;s preferred language for rendering.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *language</Declaration>
+			
+			
+			<Anchor>//api/name/language</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setAgeRange:</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range of the person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusAgeRange *ageRange</Declaration>
+			
+			
+			<Anchor>//api/name/ageRange</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/ageRange</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range of the person.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusAgeRange *ageRange</Declaration>
+			
+			
+			<Anchor>//api/name/ageRange</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setPlusOneCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	If a Google+ Page, the number of people who have +1&apos;ed this page.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger plusOneCount</Declaration>
+			
+			
+			<Anchor>//api/name/plusOneCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/plusOneCount</TokenIdentifier>
+			<Abstract type="html">	@brief	If a Google+ Page, the number of people who have +1&apos;ed this page.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger plusOneCount</Declaration>
+			
+			
+			<Anchor>//api/name/plusOneCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setCircledByCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	If a Google+ Page and for followers who are visible, the number of people who have added this page to a circle.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger circledByCount</Declaration>
+			
+			
+			<Anchor>//api/name/circledByCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/circledByCount</TokenIdentifier>
+			<Abstract type="html">	@brief	If a Google+ Page and for followers who are visible, the number of people who have added this page to a circle.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger circledByCount</Declaration>
+			
+			
+			<Anchor>//api/name/circledByCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setVerified:</TokenIdentifier>
+			<Abstract type="html">	@brief	Whether the person or Google+ Page has been verified. 
+This is used only for pages with a higher risk of being impersonated or similar.
+This flag will not be present on most profiles.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/verified</TokenIdentifier>
+			<Abstract type="html">	@brief	Whether the person or Google+ Page has been verified. 
+This is used only for pages with a higher risk of being impersonated or similar.
+This flag will not be present on most profiles.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/setCover:</TokenIdentifier>
+			<Abstract type="html">	@brief	The cover photo content.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCover *cover</Declaration>
+			
+			
+			<Anchor>//api/name/cover</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusUser/cover</TokenIdentifier>
+			<Abstract type="html">	@brief	The cover photo content.</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCover *cover</Declaration>
+			
+			
+			<Anchor>//api/name/cover</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSGooglePlusUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

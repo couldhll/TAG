@@ -205,7 +205,8 @@
     }
     
     HLLProductUnitView *productUnitView=(HLLProductUnitView *)cell.contentView;
-    [productUnitView loadImage:@"http://test.tagoriginals.com/images/TAG-Appshouye_05.jpg"];
+    [productUnitView loadImage:@"http://lorempixel.com/208/208/food"];
+//    [productUnitView loadImage:@"http://test.tagoriginals.com/images/TAG-Appshouye_05.jpg"];
     [productUnitView setProductType:HLLProductTypeCS];
     
 //    [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];

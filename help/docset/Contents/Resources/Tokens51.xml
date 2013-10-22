@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMQuiltView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMQuiltView</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/setDataSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	数据源对象</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;QuiltViewDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltView/dataSource</TokenIdentifier>
+			<Abstract type="html">	@brief	数据源对象</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;QuiltViewDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	协议对象</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;QuiltViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltView/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	协议对象</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;QuiltViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/setHeaderView:</TokenIdentifier>
+			<Abstract type="html">	@brief	表头视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *headerView</Declaration>
+			
+			
+			<Anchor>//api/name/headerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltView/headerView</TokenIdentifier>
+			<Abstract type="html">	@brief	表头视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView *headerView</Declaration>
+			
+			
+			<Anchor>//api/name/headerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/setContentView:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIScrollView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltView/contentView</TokenIdentifier>
+			<Abstract type="html">	@brief	内容视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIScrollView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/setItemWidth:</TokenIdentifier>
+			<Abstract type="html">	@brief	项宽度</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat itemWidth</Declaration>
+			
+			
+			<Anchor>//api/name/itemWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMQuiltView/itemWidth</TokenIdentifier>
+			<Abstract type="html">	@brief	项宽度</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat itemWidth</Declaration>
+			
+			
+			<Anchor>//api/name/itemWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/initWithFrame:itemWidth:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化瀑布流视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame itemWidth:(CGFloat)itemWidth</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示区域</Abstract>
+				</Parameter><Parameter>
+					<Name>itemWidth</Name>
+					<Abstract type="html">子项视图宽度</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">瀑布流视图</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:itemWidth:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/reloadData</TokenIdentifier>
+			<Abstract type="html">	@brief	重新加载数据</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/clean</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化瀑布流，用于重新计算项目</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (void)clean</Declaration>
+			
+			
+			<Anchor>//api/name/clean</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMQuiltView/dequeueReusablePageWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据标识值获取可用的瀑布流子项视图</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (UIView&lt;ICMQuiltItemView&gt; *)dequeueReusablePageWithIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">子项视图对象</Abstract></ReturnValue>
+			<Anchor>//api/name/dequeueReusablePageWithIdentifier:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

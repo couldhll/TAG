@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSLinkedInApp.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInApp</TokenIdentifier>
+			<Abstract type="html">	@brief	LinkedIn应用对象</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>
+			
+			<NodeRef refid="297"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setApiKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	应用Key</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *apiKey</Declaration>
+			
+			
+			<Anchor>//api/name/apiKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/apiKey</TokenIdentifier>
+			<Abstract type="html">	@brief	应用Key</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *apiKey</Declaration>
+			
+			
+			<Anchor>//api/name/apiKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setSecretKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	应用密钥</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *secretKey</Declaration>
+			
+			
+			<Anchor>//api/name/secretKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/secretKey</TokenIdentifier>
+			<Abstract type="html">	@brief	应用密钥</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *secretKey</Declaration>
+			
+			
+			<Anchor>//api/name/secretKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setRedirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	回调地址</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *redirectUri</Declaration>
+			
+			
+			<Anchor>//api/name/redirectUri</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/redirectUri</TokenIdentifier>
+			<Abstract type="html">	@brief	回调地址</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *redirectUri</Declaration>
+			
+			
+			<Anchor>//api/name/redirectUri</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setAccount:</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐号</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;ISSCAccount&gt; account</Declaration>
+			
+			
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐号</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;ISSCAccount&gt; account</Declaration>
+			
+			
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	转换URL标识</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL convertUrlEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	转换URL标识</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL convertUrlEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/setDefaultUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	默认注册用户</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSLinkedInUser *defaultUser</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInApp/defaultUser</TokenIdentifier>
+			<Abstract type="html">	@brief	默认注册用户</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSLinkedInUser *defaultUser</Declaration>
+			
+			
+			<Anchor>//api/name/defaultUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInApp/initWithAccount:apiKey:secretKey:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化应用</Abstract>
+			<DeclaredIn>SSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAccount:(id&lt;ISSCAccount&gt;)account apiKey:(NSString *)apiKey secretKey:(NSString *)secretKey redirectUri:(NSString *)redirectUri</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter><Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAccount:apiKey:secretKey:redirectUri:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

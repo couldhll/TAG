@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PF_Twitter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PF_Twitter</TokenIdentifier>
+			<Abstract type="html">A simple interface for interacting with the Twitter REST API, automating sign-in and OAuth signing of requests against the API.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<NodeRef refid="187"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authorizeWithSuccess:failure:cancel:</TokenIdentifier>
+			<Abstract type="html">Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties if the Twitter user
+grants permission to the application.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>			
+			
+			<Declaration>- (void)authorizeWithSuccess:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure cancel:(void ( ^ ) ( void ))cancel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">Invoked upon successful authorization.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">Invoked upon an error occurring in the authorization process.</Abstract>
+				</Parameter><Parameter>
+					<Name>cancel</Name>
+					<Abstract type="html">Invoked when the user cancels authorization.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authorizeWithSuccess:failure:cancel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/signRequest:</TokenIdentifier>
+			<Abstract type="html">Adds a 3-legged OAuth signature to an NSMutableURLRequest based upon the properties set for the Twitter object.  Use this
+function to sign requests being made to the Twitter API.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>			
+			
+			<Declaration>- (void)signRequest:(NSMutableURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/signRequest:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

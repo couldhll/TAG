@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBFriendPickerCacheDescriptor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBFriendPickerCacheDescriptor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBFriendPickerCacheDescriptor.h</DeclaredIn>
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBFriendPickerCacheDescriptor/prefetchAndCacheForSession:</TokenIdentifier>
+			<Abstract type="html">@method
+@abstract
+Fetches and caches the data described by the cache descriptor instance, for the given session.</Abstract>
+			<DeclaredIn>FBFriendPickerCacheDescriptor.m</DeclaredIn>			
+			
+			<Declaration>- (void)prefetchAndCacheForSession:(FBSession *)session</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">the FBSession to use for fetching data</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/prefetchAndCacheForSession:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

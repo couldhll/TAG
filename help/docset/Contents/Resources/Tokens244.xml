@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSEverNoteUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>
+			
+			<NodeRef refid="244"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSEverNoteCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSEverNoteCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID
+he unique numeric identifier for the account, which will not change for the lifetime of the account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID
+he unique numeric identifier for the account, which will not change for the lifetime of the account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setUsername:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称
+The name that uniquely identifies a single user account.
+This name may be presented by the user, along with their password, to log into their account.
+May only contain a-z, 0-9, or &apos;-&apos;, and may not start or end with the &apos;-&apos;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/username</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称
+The name that uniquely identifies a single user account.
+This name may be presented by the user, along with their password, to log into their account.
+May only contain a-z, 0-9, or &apos;-&apos;, and may not start or end with the &apos;-&apos;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setEmail:</TokenIdentifier>
+			<Abstract type="html">	@brief	电子邮箱
+The email address registered for the user. Must comply with RFC 2821 and RFC 2822.
+For privacy reasons, this field may not be populated when a User is retrieved via a call to UserStore.getUser().</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/email</TokenIdentifier>
+			<Abstract type="html">	@brief	电子邮箱
+The email address registered for the user. Must comply with RFC 2821 and RFC 2822.
+For privacy reasons, this field may not be populated when a User is retrieved via a call to UserStore.getUser().</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	名称
+The printable name of the user, which may be a combination of given and family names.
+This is used instead of separate &quot;first&quot; and &quot;last&quot; names due to variations in international name format/order.
+May not start or end with a whitespace character.
+May contain any character but carriage return or newline (Unicode classes Zl and Zp).</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	名称
+The printable name of the user, which may be a combination of given and family names.
+This is used instead of separate &quot;first&quot; and &quot;last&quot; names due to variations in international name format/order.
+May not start or end with a whitespace character.
+May contain any character but carriage return or newline (Unicode classes Zl and Zp).</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setTimezone:</TokenIdentifier>
+			<Abstract type="html">	@brief	时区
+The zone ID for the user&apos;s default location. If present,
+this may be used to localize the display of any timestamp for which no other timezone is available.
+The format must be encoded as a standard zone ID such as &quot;America/Los_Angeles&quot; or &quot;GMT+08:00&quot;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timezone</Declaration>
+			
+			
+			<Anchor>//api/name/timezone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/timezone</TokenIdentifier>
+			<Abstract type="html">	@brief	时区
+The zone ID for the user&apos;s default location. If present,
+this may be used to localize the display of any timestamp for which no other timezone is available.
+The format must be encoded as a standard zone ID such as &quot;America/Los_Angeles&quot; or &quot;GMT+08:00&quot;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timezone</Declaration>
+			
+			
+			<Anchor>//api/name/timezone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setPrivilege:</TokenIdentifier>
+			<Abstract type="html">	@brief	权限
+The level of access permitted for the user.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePrivilegeLevel privilege</Declaration>
+			
+			
+			<Anchor>//api/name/privilege</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/privilege</TokenIdentifier>
+			<Abstract type="html">	@brief	权限
+The level of access permitted for the user.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePrivilegeLevel privilege</Declaration>
+			
+			
+			<Anchor>//api/name/privilege</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setCreated:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间
+The date and time when this user account was created in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/created</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间
+The date and time when this user account was created in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setUpdated:</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一次修改时间
+The date and time when this user account was last modified in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
+			
+			
+			<Anchor>//api/name/updated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/updated</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一次修改时间
+The date and time when this user account was last modified in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
+			
+			
+			<Anchor>//api/name/updated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setDeleted:</TokenIdentifier>
+			<Abstract type="html">	@brief	删除时间
+If the account has been deleted from the system (e.g. as the result of a legal request by the user),
+the date and time of the deletion will be represented here. If not, this value will not be set.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/deleted</TokenIdentifier>
+			<Abstract type="html">	@brief	删除时间
+If the account has been deleted from the system (e.g. as the result of a legal request by the user),
+the date and time of the deletion will be represented here. If not, this value will not be set.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setActive:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否有效
+If the user account is available for login and synchronization, this flag will be set to true.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/active</TokenIdentifier>
+			<Abstract type="html">	@brief	是否有效
+If the user account is available for login and synchronization, this flag will be set to true.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setShardId:</TokenIdentifier>
+			<Abstract type="html">	@brief	此字段已过时</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shardId</Declaration>
+			
+			
+			<Anchor>//api/name/shardId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/shardId</TokenIdentifier>
+			<Abstract type="html">	@brief	此字段已过时</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shardId</Declaration>
+			
+			
+			<Anchor>//api/name/shardId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setAttributes:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户属性对象
+If present, this will contain a list of the attributes for this user account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteUserAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/attributes</TokenIdentifier>
+			<Abstract type="html">	@brief	用户属性对象
+If present, this will contain a list of the attributes for this user account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteUserAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setAccounting:</TokenIdentifier>
+			<Abstract type="html">	@brief	簿记用户的订阅信息
+Bookkeeping information for the user&apos;s subscription.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteAccounting *accounting</Declaration>
+			
+			
+			<Anchor>//api/name/accounting</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/accounting</TokenIdentifier>
+			<Abstract type="html">	@brief	簿记用户的订阅信息
+Bookkeeping information for the user&apos;s subscription.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteAccounting *accounting</Declaration>
+			
+			
+			<Anchor>//api/name/accounting</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setPremiumInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	地价信息
+If present, this will contain a set of commerce information relating to the user&apos;s premium service level.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumInfo *premiumInfo</Declaration>
+			
+			
+			<Anchor>//api/name/premiumInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/premiumInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	地价信息
+If present, this will contain a set of commerce information relating to the user&apos;s premium service level.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumInfo *premiumInfo</Declaration>
+			
+			
+			<Anchor>//api/name/premiumInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteUser *)userWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据并转化为用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

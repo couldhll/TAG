@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQApiCommonContentObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiCommonContentObject</TokenIdentifier>
+			<Abstract type="html">@brief 通用模板类型对象
+    用于分享一个固定显示模板的图文混排对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
+			
+			<NodeRef refid="196"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiCommonContentObject/setLayoutType:</TokenIdentifier>
+			<Abstract type="html">预定义的界面布局类型</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) unsigned int layoutType</Declaration>
+			
+			
+			<Anchor>//api/name/layoutType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiCommonContentObject/layoutType</TokenIdentifier>
+			<Abstract type="html">预定义的界面布局类型</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) unsigned int layoutType</Declaration>
+			
+			
+			<Anchor>//api/name/layoutType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiCommonContentObject/setTextArray:</TokenIdentifier>
+			<Abstract type="html">&lt;预览图</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *textArray</Declaration>
+			
+			
+			<Anchor>//api/name/textArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiCommonContentObject/textArray</TokenIdentifier>
+			<Abstract type="html">&lt;预览图</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *textArray</Declaration>
+			
+			
+			<Anchor>//api/name/textArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiCommonContentObject/setPictureDataArray:</TokenIdentifier>
+			<Abstract type="html">&lt;文本列表</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *pictureDataArray</Declaration>
+			
+			
+			<Anchor>//api/name/pictureDataArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiCommonContentObject/pictureDataArray</TokenIdentifier>
+			<Abstract type="html">&lt;文本列表</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *pictureDataArray</Declaration>
+			
+			
+			<Anchor>//api/name/pictureDataArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiCommonContentObject/objectWithLayoutType:textArray:pictureArray:previewImageData:</TokenIdentifier>
+			<Abstract type="html">&lt;图片列表</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectWithLayoutType:(int)layoutType textArray:(NSArray *)textArray pictureArray:(NSArray *)pictureArray previewImageData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithLayoutType:textArray:pictureArray:previewImageData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiCommonContentObject/objectWithDictionary:</TokenIdentifier>
+			<Abstract type="html">将一个NSDictionary对象转化为QQApiCommomContentObject，如果无法转换，则返回空</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectWithDictionary:(NSDictionary *)dic</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithDictionary:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

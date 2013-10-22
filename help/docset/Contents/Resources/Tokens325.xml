@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenJob.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenJob</TokenIdentifier>
+			<Abstract type="html">	@brief	职位</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>
+			
+			<NodeRef refid="325"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenJob/setJobCategory:</TokenIdentifier>
+			<Abstract type="html">	@brief	职位类别</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *jobCategory</Declaration>
+			
+			
+			<Anchor>//api/name/jobCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenJob/jobCategory</TokenIdentifier>
+			<Abstract type="html">	@brief	职位类别</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *jobCategory</Declaration>
+			
+			
+			<Anchor>//api/name/jobCategory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenJob/setJobDetail:</TokenIdentifier>
+			<Abstract type="html">	@brief	职位详情</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *jobDetail</Declaration>
+			
+			
+			<Anchor>//api/name/jobDetail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenJob/jobDetail</TokenIdentifier>
+			<Abstract type="html">	@brief	职位详情</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *jobDetail</Declaration>
+			
+			
+			<Anchor>//api/name/jobDetail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenJob/jobWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建职位信息</Abstract>
+			<DeclaredIn>SSRenRenJob.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenJob *)jobWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">职位信息</Abstract></ReturnValue>
+			<Anchor>//api/name/jobWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

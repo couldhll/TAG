@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookCover.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCover</TokenIdentifier>
+			<Abstract type="html">	@brief	封面信息</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>
+			
+			<NodeRef refid="248"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCover/coverWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建封面信息</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookCover *)coverWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
+			<Anchor>//api/name/coverWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSQQApp.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSQQApp</TokenIdentifier>
+			<Abstract type="html">	@brief	QQ应用协议</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>
+			
+			<NodeRef refid="654"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐户</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">帐户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/appId</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用ID</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appId</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用ID</Abstract></ReturnValue>
+			<Anchor>//api/name/appId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求 NO 表示不接受</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/handleOpenURL:sourceApplication:annotation:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceApplication</Name>
+					<Abstract type="html">源应用</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">源应用提供的信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求，NO 表示不接受请求</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/sendText:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享文本信息</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendText:(NSString *)text result:(void ( ^ ) ( SSCShareSessionState state , SSQQErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">文本信息</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendText:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/sendPic:description:pic:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享图片信息</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendPic:(NSString *)title description:(NSString *)description pic:(id&lt;ISSCAttachment&gt;)pic result:(void ( ^ ) ( SSCShareSessionState state , SSQQErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">图片信息</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPic:description:pic:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/sendNews:content:url:pic:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享新闻信息</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendNews:(NSString *)title content:(NSString *)content url:(NSString *)url pic:(id&lt;ISSCAttachment&gt;)pic result:(void ( ^ ) ( SSCShareSessionState state , SSQQErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNews:content:url:pic:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/sendMusic:content:url:pic:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享音乐信息</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMusic:(NSString *)title content:(NSString *)content url:(NSString *)url pic:(id&lt;ISSCAttachment&gt;)pic result:(void ( ^ ) ( SSCShareSessionState state , SSQQErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMusic:content:url:pic:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQQApp/sendVideo:content:url:pic:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享视频信息</Abstract>
+			<DeclaredIn>ISSQQApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendVideo:(NSString *)title content:(NSString *)content url:(NSString *)url pic:(id&lt;ISSCAttachment&gt;)pic result:(void ( ^ ) ( SSCShareSessionState state , SSQQErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendVideo:content:url:pic:result:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

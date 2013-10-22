@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGSinaWeiboUserInfoHeaderView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGSinaWeiboUserInfoHeaderView</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息表头</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/setFriendsButton:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注列表按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *friendsButton</Declaration>
+			
+			
+			<Anchor>//api/name/friendsButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboUserInfoHeaderView/friendsButton</TokenIdentifier>
+			<Abstract type="html">	@brief	关注列表按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *friendsButton</Declaration>
+			
+			
+			<Anchor>//api/name/friendsButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/setFollowerButton:</TokenIdentifier>
+			<Abstract type="html">	@brief	粉丝列表按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *followerButton</Declaration>
+			
+			
+			<Anchor>//api/name/followerButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboUserInfoHeaderView/followerButton</TokenIdentifier>
+			<Abstract type="html">	@brief	粉丝列表按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *followerButton</Declaration>
+			
+			
+			<Anchor>//api/name/followerButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/setInfoButton:</TokenIdentifier>
+			<Abstract type="html">	@brief	详细信息按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *infoButton</Declaration>
+			
+			
+			<Anchor>//api/name/infoButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboUserInfoHeaderView/infoButton</TokenIdentifier>
+			<Abstract type="html">	@brief	详细信息按钮</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UIButton *infoButton</Declaration>
+			
+			
+			<Anchor>//api/name/infoButton</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	协议委托</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboUserInfoHeaderViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboUserInfoHeaderView/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	协议委托</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;AGSinaWeiboUserInfoHeaderViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/initWithFrame:imageCacheManager:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化用户信息表头</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame imageCacheManager:(CMImageCacheManager *)imageCacheManager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示范围</Abstract>
+				</Parameter><Parameter>
+					<Name>imageCacheManager</Name>
+					<Abstract type="html">图片缓存管理器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">表头视图</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:imageCacheManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserInfoHeaderView/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置用户信息</Abstract>
+			<DeclaredIn>AGSinaWeiboUserInfoHeaderView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUserInfo:(SSSinaWeiboUser *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUserInfo:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

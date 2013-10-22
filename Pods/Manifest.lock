@@ -1,5 +1,6 @@
 PODS:
   - cdebug (0.1.1)
+  - CocoaSecurity (1.2.1)
   - Facebook-iOS-SDK (3.9.0)
   - FoundationExtension (0.45):
     - cdebug (~> 0.1)
@@ -13,7 +14,7 @@ PODS:
     - FoundationExtension/FoundationExtension
   - GIKPopoverBackgroundView/Core (0.0.1)
   - GMGridView (1.1.1)
-  - GoogleAnalytics-iOS-SDK (3.0.1)
+  - GoogleAnalytics-iOS-SDK (3.0.2)
   - JSONModel (0.9.3)
   - MBProgressHUD (0.8)
   - OHAttributedLabel (3.5.2)
@@ -160,6 +161,7 @@ PODS:
   - ViewDeck (2.3.1)
 
 DEPENDENCIES:
+  - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
   - GoogleAnalytics-iOS-SDK (~> 3.0.1)
   - JSONModel (~> 0.9.3)
@@ -173,11 +175,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
+  CocoaSecurity: cfca806aa54a020f0bf24b6ce467e8996dd6bb2e
   Facebook-iOS-SDK: 5e1416dbdfc17b2620c2ca31c02e6feec042f2c1
   FoundationExtension: 9ea775b06ff4a3914db341cefdcaa8180c6e0366
   GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
-  GoogleAnalytics-iOS-SDK: ea0118af32b97a92ac98b25ecc2aa2a286c835c7
+  GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
   JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 73cc99cbe32f94d51463853c7ac35a3fba185937

@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>
+			
+			<NodeRef refid="371"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setContributorsEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户启用“贡献者模式”，让用户所发布的tweet同步到另一个帐户。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL contributorsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/contributorsEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/contributorsEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户启用“贡献者模式”，让用户所发布的tweet同步到另一个帐户。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL contributorsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/contributorsEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">	@brief	帐号创建时间</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/createdAt</TokenIdentifier>
+			<Abstract type="html">	@brief	帐号创建时间</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setDefaultProfile:</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示用户没有改变用户配置文件的主题或背景的。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL defaultProfile</Declaration>
+			
+			
+			<Anchor>//api/name/defaultProfile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/defaultProfile</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示用户没有改变用户配置文件的主题或背景的。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL defaultProfile</Declaration>
+			
+			
+			<Anchor>//api/name/defaultProfile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setDefaultProfileImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示该用户还没有上传自己的头像,默认的鸡蛋头像代替。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL defaultProfileImage</Declaration>
+			
+			
+			<Anchor>//api/name/defaultProfileImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/defaultProfileImage</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示该用户还没有上传自己的头像,默认的鸡蛋头像代替。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL defaultProfileImage</Declaration>
+			
+			
+			<Anchor>//api/name/defaultProfileImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户描述</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/description</TokenIdentifier>
+			<Abstract type="html">	@brief	用户描述</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setEntities:</TokenIdentifier>
+			<Abstract type="html">	@brief	已解析的URL或由用户定义的描述字段的实体。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterEntities *entities</Declaration>
+			
+			
+			<Anchor>//api/name/entities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/entities</TokenIdentifier>
+			<Abstract type="html">	@brief	已解析的URL或由用户定义的描述字段的实体。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterEntities *entities</Declaration>
+			
+			
+			<Anchor>//api/name/entities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setFavouritesCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger favouritesCount</Declaration>
+			
+			
+			<Anchor>//api/name/favouritesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/favouritesCount</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger favouritesCount</Declaration>
+			
+			
+			<Anchor>//api/name/favouritesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setFollowRequestSent:</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示关注此用户时需要发送关注请求</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL followRequestSent</Declaration>
+			
+			
+			<Anchor>//api/name/followRequestSent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/followRequestSent</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示关注此用户时需要发送关注请求</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL followRequestSent</Declaration>
+			
+			
+			<Anchor>//api/name/followRequestSent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setFollowing:</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示当前授权用户关注了此用户</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL following</Declaration>
+			
+			
+			<Anchor>//api/name/following</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/following</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示当前授权用户关注了此用户</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL following</Declaration>
+			
+			
+			<Anchor>//api/name/following</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setFollowersCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	粉丝数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger followersCount</Declaration>
+			
+			
+			<Anchor>//api/name/followersCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/followersCount</TokenIdentifier>
+			<Abstract type="html">	@brief	粉丝数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger followersCount</Declaration>
+			
+			
+			<Anchor>//api/name/followersCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setFriendsCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger friendsCount</Declaration>
+			
+			
+			<Anchor>//api/name/friendsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/friendsCount</TokenIdentifier>
+			<Abstract type="html">	@brief	关注数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger friendsCount</Declaration>
+			
+			
+			<Anchor>//api/name/friendsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setGeoEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	启用地理位置标识，发送tweet时如果需要附带地理位置，则此值必须为true</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL geoEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/geoEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/geoEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	启用地理位置标识，发送tweet时如果需要附带地理位置，则此值必须为true</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL geoEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/geoEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID字符串</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID字符串</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setIsTranslator:</TokenIdentifier>
+			<Abstract type="html">	@brief	When true, indicates that the user is a participant in Twitter&apos;s</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isTranslator</Declaration>
+			
+			
+			<Anchor>//api/name/isTranslator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/isTranslator</TokenIdentifier>
+			<Abstract type="html">	@brief	When true, indicates that the user is a participant in Twitter&apos;s</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isTranslator</Declaration>
+			
+			
+			<Anchor>//api/name/isTranslator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setLang:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户自定义的接口语言编码, 有可能会影响Tweet内容的编码</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lang</Declaration>
+			
+			
+			<Anchor>//api/name/lang</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/lang</TokenIdentifier>
+			<Abstract type="html">	@brief	用户自定义的接口语言编码, 有可能会影响Tweet内容的编码</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lang</Declaration>
+			
+			
+			<Anchor>//api/name/lang</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setListedCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	公共列表成员数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger listedCount</Declaration>
+			
+			
+			<Anchor>//api/name/listedCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/listedCount</TokenIdentifier>
+			<Abstract type="html">	@brief	公共列表成员数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger listedCount</Declaration>
+			
+			
+			<Anchor>//api/name/listedCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	在个人帐号中定义的位置信息</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/location</TokenIdentifier>
+			<Abstract type="html">	@brief	在个人帐号中定义的位置信息</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setNotifications:</TokenIdentifier>
+			<Abstract type="html">	@brief	已过时。表示授权用户是否选择了通过短信收到该用户的Tweets</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL notifications</Declaration>
+			
+			
+			<Anchor>//api/name/notifications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/notifications</TokenIdentifier>
+			<Abstract type="html">	@brief	已过时。表示授权用户是否选择了通过短信收到该用户的Tweets</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL notifications</Declaration>
+			
+			
+			<Anchor>//api/name/notifications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileBackgroundColor</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileBackgroundImageUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景图像(基于HTTP)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileBackgroundImageUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景图像(基于HTTP)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileBackgroundImageUrlHttps:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景图像(基于HTTPS)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundImageUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundImageUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileBackgroundImageUrlHttps</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的背景图像(基于HTTPS)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBackgroundImageUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundImageUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileBackgroundTile:</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示该用户设置的profilebackgroundimage_url应该是平铺显示。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL profileBackgroundTile</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundTile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileBackgroundTile</TokenIdentifier>
+			<Abstract type="html">	@brief	如果为true，表示该用户设置的profilebackgroundimage_url应该是平铺显示。</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL profileBackgroundTile</Declaration>
+			
+			
+			<Anchor>//api/name/profileBackgroundTile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileBannerUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料的Banner路径（基于HTTPS）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBannerUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileBannerUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileBannerUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料的Banner路径（基于HTTPS）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileBannerUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileBannerUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileImageUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像(基于HTTP)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileImageUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像(基于HTTP)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileImageUrlHttps:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像(基于HTTPS)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileImageUrlHttps</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像(基于HTTPS)</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrlHttps</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrlHttps</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileLinkColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料链接颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileLinkColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileLinkColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileLinkColor</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料链接颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileLinkColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileLinkColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileSidebarBorderColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页侧栏边框线颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileSidebarBorderColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileSidebarBorderColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileSidebarBorderColor</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页侧栏边框线颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileSidebarBorderColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileSidebarBorderColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileSidebarFillColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页侧栏填充颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileSidebarFillColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileSidebarFillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileSidebarFillColor</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页侧栏填充颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileSidebarFillColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileSidebarFillColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileTextColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的文本颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileTextColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileTextColor</TokenIdentifier>
+			<Abstract type="html">	@brief	个人资料页的文本颜色（16进制颜色值）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/profileTextColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProfileUseBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	为true时表示用户使用自己上传的背景图</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL profileUseBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/profileUseBackgroundImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/profileUseBackgroundImage</TokenIdentifier>
+			<Abstract type="html">	@brief	为true时表示用户使用自己上传的背景图</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL profileUseBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/profileUseBackgroundImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setProtected:</TokenIdentifier>
+			<Abstract type="html">	@brief	为true表示tweets将被保护</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL Protected</Declaration>
+			
+			
+			<Anchor>//api/name/Protected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/Protected</TokenIdentifier>
+			<Abstract type="html">	@brief	为true表示tweets将被保护</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL Protected</Declaration>
+			
+			
+			<Anchor>//api/name/Protected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕显示名称，唯一</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/screenName</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕显示名称，唯一</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setShowAllInlineMedia:</TokenIdentifier>
+			<Abstract type="html">	@brief	Indicates that the user would like to see media inline</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL showAllInlineMedia</Declaration>
+			
+			
+			<Anchor>//api/name/showAllInlineMedia</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/showAllInlineMedia</TokenIdentifier>
+			<Abstract type="html">	@brief	Indicates that the user would like to see media inline</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL showAllInlineMedia</Declaration>
+			
+			
+			<Anchor>//api/name/showAllInlineMedia</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一条Tweet或者Retweet</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterTweets *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/status</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一条Tweet或者Retweet</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterTweets *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setStatusesCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	tweet数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusesCount</Declaration>
+			
+			
+			<Anchor>//api/name/statusesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/statusesCount</TokenIdentifier>
+			<Abstract type="html">	@brief	tweet数量</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusesCount</Declaration>
+			
+			
+			<Anchor>//api/name/statusesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setTimeZone:</TokenIdentifier>
+			<Abstract type="html">	@brief	时区</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/timeZone</TokenIdentifier>
+			<Abstract type="html">	@brief	时区</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人主页</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/url</TokenIdentifier>
+			<Abstract type="html">	@brief	个人主页</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setUtcOffset:</TokenIdentifier>
+			<Abstract type="html">	@brief	时区偏移量（单位：秒）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger utcOffset</Declaration>
+			
+			
+			<Anchor>//api/name/utcOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/utcOffset</TokenIdentifier>
+			<Abstract type="html">	@brief	时区偏移量（单位：秒）</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger utcOffset</Declaration>
+			
+			
+			<Anchor>//api/name/utcOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setVerified:</TokenIdentifier>
+			<Abstract type="html">	@brief	为ture表示认证帐号</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/verified</TokenIdentifier>
+			<Abstract type="html">	@brief	为ture表示认证帐号</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setWithheldInCountries:</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates a textual representation of the two-letter country codes this user is withheld from.</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldInCountries</Declaration>
+			
+			
+			<Anchor>//api/name/withheldInCountries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/withheldInCountries</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates a textual representation of the two-letter country codes this user is withheld from.</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldInCountries</Declaration>
+			
+			
+			<Anchor>//api/name/withheldInCountries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setWithheldScope:</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates whether the content being withheld is the &quot;status&quot; or a &quot;user.&quot;</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldScope</Declaration>
+			
+			
+			<Anchor>//api/name/withheldScope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/withheldScope</TokenIdentifier>
+			<Abstract type="html">	@brief	When present, indicates whether the content being withheld is the &quot;status&quot; or a &quot;user.&quot;</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *withheldScope</Declaration>
+			
+			
+			<Anchor>//api/name/withheldScope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSTwitterCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSTwitterCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSTwitterUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

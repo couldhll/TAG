@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGCustomFriendListViewToolbar.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGCustomFriendListViewToolbar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGCustomFriendListViewToolbar.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomFriendListViewToolbar/initWithFrame:selectedArray:imageCacheManager:shareType:itemClickHandler:completeHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化工具栏</Abstract>
+			<DeclaredIn>AGCustomFriendListViewToolbar.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame selectedArray:(NSMutableArray *)selectedArray imageCacheManager:(CMImageCacheManager *)imageCacheManager shareType:(ShareType)shareType itemClickHandler:(void ( ^ ) ( NSMutableDictionary *userInfo ))itemClickHandler completeHandler:(void ( ^ ) ( ))completeHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示范围</Abstract>
+				</Parameter><Parameter>
+					<Name>selectedArray</Name>
+					<Abstract type="html">选中用户列表</Abstract>
+				</Parameter><Parameter>
+					<Name>imageCacheManager</Name>
+					<Abstract type="html">图片缓存管理器</Abstract>
+				</Parameter><Parameter>
+					<Name>shareType</Name>
+					<Abstract type="html">分享类型</Abstract>
+				</Parameter><Parameter>
+					<Name>itemClickHandler</Name>
+					<Abstract type="html">列表项点击事件处理</Abstract>
+				</Parameter><Parameter>
+					<Name>completeHandler</Name>
+					<Abstract type="html">完成事件处理</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">工具栏视图</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:selectedArray:imageCacheManager:shareType:itemClickHandler:completeHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomFriendListViewToolbar/reloadData</TokenIdentifier>
+			<Abstract type="html">	@brief	重新加载数据</Abstract>
+			<DeclaredIn>AGCustomFriendListViewToolbar.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomFriendListViewToolbar/itemNumberOfTableView:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回表格的列表项数量</Abstract>
+			<DeclaredIn>AGCustomFriendListViewToolbar.m</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)itemNumberOfTableView:(CMHTableView *)tableView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">列表项数量</Abstract></ReturnValue>
+			<Anchor>//api/name/itemNumberOfTableView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomFriendListViewToolbar/tableView:itemForIndexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回列表项视图</Abstract>
+			<DeclaredIn>AGCustomFriendListViewToolbar.m</DeclaredIn>			
+			
+			<Declaration>- (UIView&lt;ICMHTableViewItem&gt; *)tableView:(CMHTableView *)tableView itemForIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">列表项视图</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:itemForIndexPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

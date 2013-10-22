@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CMPageViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CMPageViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>
+			
+			<NodeRef refid="585"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageView:willDiplayPage:indexPath:</TokenIdentifier>
+			<Abstract type="html">	页面将要显示</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageView:(CMPageView *)pageView willDiplayPage:(UIView&lt;ICMPageContentView&gt; *)contentView indexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">页面内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pageView:willDiplayPage:indexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageView:didShowPage:indexPath:</TokenIdentifier>
+			<Abstract type="html">	页面显示</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageView:(CMPageView *)pageView didShowPage:(UIView&lt;ICMPageContentView&gt; *)contentView indexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">页面内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pageView:didShowPage:indexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	视图滚动</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageViewDidScroll:(CMPageView *)pageView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pageViewDidScroll:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	视图停止拖动</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageViewDidEndDragging:(CMPageView *)pageView willDecelerate:(BOOL)decelerate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速标识</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pageViewDidEndDragging:willDecelerate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/sizeForPageContentView:</TokenIdentifier>
+			<Abstract type="html">	@brief	分页内容尺寸</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			
+			<Declaration>- (CGSize)sizeForPageContentView:(CMPageView *)pageView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">分页视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分页尺寸</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeForPageContentView:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

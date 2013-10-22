@@ -13,6 +13,9 @@
 +(HLLAPI*)sharedInstance;
 
 -(BOOL)isAuthorized;
+
+-(void)test;
+
 -(void)save:(UIViewController*)sender;
 
 @end

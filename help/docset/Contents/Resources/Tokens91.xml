@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBSessionFacebookAppWebLoginStategy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBSessionFacebookAppWebLoginStategy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FBSessionFacebookAppWebLoginStategy.h</DeclaredIn>
+			
+			<NodeRef refid="91"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBSessionFacebookAppWebLoginStategy/tryPerformAuthorizeWithParams:session:logger:</TokenIdentifier>
+			<Abstract type="html">@method</Abstract>
+			<DeclaredIn>FBSessionFacebookAppWebLoginStategy.m</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tryPerformAuthorizeWithParams:(FBSessionLoginStrategyParams *)params session:(FBSession *)session logger:(FBSessionAuthLogger *)logger</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>params</Name>
+					<Abstract type="html">A collection of parameters typically used to evalute if a given strategy should be invoked.</Abstract>
+				</Parameter><Parameter>
+					<Name>session</Name>
+					<Abstract type="html">The session instance.</Abstract>
+				</Parameter><Parameter>
+					<Name>logger</Name>
+					<Abstract type="html">The logger instance.
+
+@discussion
+A return value of &apos;NO&apos; indicates
+another login strategy should be tried. A value of &apos;YES&apos; means the strategy has handled the login flow
+and no other strategies should be tried (note this does not necessarily mean the login was successful).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tryPerformAuthorizeWithParams:session:logger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBSessionFacebookAppWebLoginStategy/methodName</TokenIdentifier>
+			<Abstract type="html">@
+abstract Gets the methodName describing this login strategy, typically for external logging.
+@discussion This should only be invoked if a tryPerformAuthorizeWithParams:... call returned YES.</Abstract>
+			<DeclaredIn>FBSessionFacebookAppWebLoginStategy.m</DeclaredIn>			
+			
+			<Declaration>- (NSString *)methodName</Declaration>
+			
+			
+			<Anchor>//api/name/methodName</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

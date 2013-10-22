@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TencentApiInterfaceDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TencentApiInterfaceDelegate</TokenIdentifier>
+			<Abstract type="html">\brief TencentApiInterface的回调</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>
+			
+			<NodeRef refid="699"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentApiInterfaceDelegate/onTencentReq:</TokenIdentifier>
+			<Abstract type="html">请求获得内容 当前版本只支持第三方相应腾讯业务请求</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)onTencentReq:(TencentApiReq *)req</Declaration>
+			
+			
+			<Anchor>//api/name/onTencentReq:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentApiInterfaceDelegate/onTencentResp:</TokenIdentifier>
+			<Abstract type="html">响应请求答复 当前版本只支持腾讯业务相应第三方的请求答复</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)onTencentResp:(TencentApiResp *)resp</Declaration>
+			
+			
+			<Anchor>//api/name/onTencentResp:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBOpenGraphActionShareDialogParams.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBOpenGraphActionShareDialogParams</TokenIdentifier>
+			<Abstract type="html">@class FBOpenGraphActionShareDialogParams</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>
+			
+			<NodeRef refid="80"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBOpenGraphActionShareDialogParams/setAction:</TokenIdentifier>
+			<Abstract type="html">@abstract The Open Graph action to be published.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;FBOpenGraphAction&gt; action</Declaration>
+			
+			
+			<Anchor>//api/name/action</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FBOpenGraphActionShareDialogParams/action</TokenIdentifier>
+			<Abstract type="html">@abstract The Open Graph action to be published.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id&lt;FBOpenGraphAction&gt; action</Declaration>
+			
+			
+			<Anchor>//api/name/action</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBOpenGraphActionShareDialogParams/setPreviewPropertyName:</TokenIdentifier>
+			<Abstract type="html">@abstract The name of the property representing the primary target of the Open
+Graph action, which will be displayed as a preview in the dialog.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *previewPropertyName</Declaration>
+			
+			
+			<Anchor>//api/name/previewPropertyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FBOpenGraphActionShareDialogParams/previewPropertyName</TokenIdentifier>
+			<Abstract type="html">@abstract The name of the property representing the primary target of the Open
+Graph action, which will be displayed as a preview in the dialog.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *previewPropertyName</Declaration>
+			
+			
+			<Anchor>//api/name/previewPropertyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBOpenGraphActionShareDialogParams/setActionType:</TokenIdentifier>
+			<Abstract type="html">@abstract The fully qualified type of the Open Graph action.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *actionType</Declaration>
+			
+			
+			<Anchor>//api/name/actionType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FBOpenGraphActionShareDialogParams/actionType</TokenIdentifier>
+			<Abstract type="html">@abstract The fully qualified type of the Open Graph action.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *actionType</Declaration>
+			
+			
+			<Anchor>//api/name/actionType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBOpenGraphActionShareDialogParams/dictionaryMethodArgs</TokenIdentifier>
+			<Abstract type="html">@abstract
+This method is abstract and must be defined my all classes that derive from FBDialogsParams</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.m</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryMethodArgs</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryMethodArgs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FBOpenGraphActionShareDialogParams/appBridgeVersion</TokenIdentifier>
+			<Abstract type="html">@abstract
+This method is abstract and must be defined by all classes that derive from &apos;FBDialogParams&apos;.
+It validates the parameters and returns the app bridge version they should be used on.</Abstract>
+			<DeclaredIn>FBOpenGraphActionShareDialogParams.m</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appBridgeVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appBridgeVersion</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

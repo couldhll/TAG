@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ConvertOnDemand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ConvertOnDemand</TokenIdentifier>
+			<Abstract type="html">ConvertOnDemand enables lazy model initialization for NSArrays of models</Abstract>
+			<DeclaredIn>JSONModel.h</DeclaredIn>
+			
+			<NodeRef refid="586"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

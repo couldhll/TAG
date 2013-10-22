@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFProductTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFProductTableViewController</TokenIdentifier>
+			<Abstract type="html">PFProductTableViewController displays in-app purchase products stored on Parse.
+In addition to setting up in-app purchases in iTunesConnect, the app developer needs
+to register product information on Parse, in the Product class.</Abstract>
+			<DeclaredIn>PFProductTableViewController.h</DeclaredIn>
+			
+			<NodeRef refid="173"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProductTableViewController/init</TokenIdentifier>
+			<Abstract type="html">Initializes a product table view controller.</Abstract>
+			<DeclaredIn>PFProductTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

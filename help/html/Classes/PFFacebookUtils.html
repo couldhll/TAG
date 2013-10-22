@@ -1,0 +1,1835 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFFacebookUtils Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFFacebookUtils Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/handleOpenURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleOpenURL:</option>
+	
+	<option value="//api/name/initializeFacebook">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeFacebook</option>
+	
+	<option value="//api/name/initializeFacebookWithUrlShemeSuffix:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeFacebookWithUrlShemeSuffix:</option>
+	
+	<option value="//api/name/initializeWithApplicationId:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithApplicationId:</option>
+	
+	<option value="//api/name/initializeWithApplicationId:urlSchemeSuffix:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithApplicationId:urlSchemeSuffix:</option>
+	
+	<option value="//api/name/isLinkedWithUser:">&nbsp;&nbsp;&nbsp;&nbsp;+ isLinkedWithUser:</option>
+	
+	<option value="//api/name/linkUser:facebookId:accessToken:expirationDate:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:facebookId:accessToken:expirationDate:block:</option>
+	
+	<option value="//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:facebookId:accessToken:expirationDate:target:selector:</option>
+	
+	<option value="//api/name/linkUser:permissions:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:permissions:</option>
+	
+	<option value="//api/name/linkUser:permissions:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:permissions:block:</option>
+	
+	<option value="//api/name/linkUser:permissions:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:permissions:target:selector:</option>
+	
+	<option value="//api/name/logInWithFacebookId:accessToken:expirationDate:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithFacebookId:accessToken:expirationDate:block:</option>
+	
+	<option value="//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithFacebookId:accessToken:expirationDate:target:selector:</option>
+	
+	<option value="//api/name/logInWithPermissions:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithPermissions:block:</option>
+	
+	<option value="//api/name/logInWithPermissions:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithPermissions:target:selector:</option>
+	
+	<option value="//api/name/reauthorizeUser:withPublishPermissions:audience:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ reauthorizeUser:withPublishPermissions:audience:block:</option>
+	
+	<option value="//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ reauthorizeUser:withPublishPermissions:audience:target:selector:</option>
+	
+	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;+ session</option>
+	
+	<option value="//api/name/unlinkUser:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUser:</option>
+	
+	<option value="//api/name/unlinkUser:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUser:error:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:block:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:target:selector:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Interacting With Facebook">Interacting With Facebook</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Logging In &amp; Creating Facebook-Linked Users">Logging In &amp; Creating Facebook-Linked Users</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Linking Users with Facebook">Linking Users with Facebook</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Unlinking Users from Facebook">Unlinking Users from Facebook</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Obtaining new permissions">Obtaining new permissions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegating URL Actions">Delegating URL Actions</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleOpenURL:">handleOpenURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeFacebook">initializeFacebook</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeFacebookWithUrlShemeSuffix:">initializeFacebookWithUrlShemeSuffix:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithApplicationId:">initializeWithApplicationId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithApplicationId:urlSchemeSuffix:">initializeWithApplicationId:urlSchemeSuffix:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLinkedWithUser:">isLinkedWithUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:facebookId:accessToken:expirationDate:block:">linkUser:facebookId:accessToken:expirationDate:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:">linkUser:facebookId:accessToken:expirationDate:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:permissions:">linkUser:permissions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:permissions:block:">linkUser:permissions:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:permissions:target:selector:">linkUser:permissions:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithFacebookId:accessToken:expirationDate:block:">logInWithFacebookId:accessToken:expirationDate:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:">logInWithFacebookId:accessToken:expirationDate:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithPermissions:block:">logInWithPermissions:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithPermissions:target:selector:">logInWithPermissions:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reauthorizeUser:withPublishPermissions:audience:block:">reauthorizeUser:withPublishPermissions:audience:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:">reauthorizeUser:withPublishPermissions:audience:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUser:">unlinkUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUser:error:">unlinkUser:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:">unlinkUserInBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:block:">unlinkUserInBackground:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:target:selector:">unlinkUserInBackground:target:selector:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFFacebookUtils Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFFacebookUtils Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFFacebookUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides utility functions for working with <a href="../Classes/Facebook.html">Facebook</a> in a <a href="../Classes/Parse.html">Parse</a> application.</p>
+
+<p>This class is currently for iOS only.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Interacting With Facebook" name="task_Interacting With Facebook"></a>
+						<h3 class="subsubtitle task-title">Interacting With Facebook</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/session">+&nbsp;session</a></code>
+		<span class="tooltip"><p>Gets the <a href="../Classes/Facebook.html">Facebook</a> session for the current user.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithApplicationId:">+&nbsp;initializeWithApplicationId:</a></code>
+		<span class="tooltip"><p>Deprecated. Please call <a href="#//api/name/initializeFacebook">[PFFacebookUtils initializeFacebook]</a> instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithApplicationId:urlSchemeSuffix:">+&nbsp;initializeWithApplicationId:urlSchemeSuffix:</a></code>
+		<span class="tooltip"><p>Deprecated. Please call [PFFacebookUtils initializeFacebookWithUrlSchemeSuffix:] instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeFacebook">+&nbsp;initializeFacebook</a></code>
+		<span class="tooltip"><p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as
+described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeFacebookWithUrlShemeSuffix:">+&nbsp;initializeFacebookWithUrlShemeSuffix:</a></code>
+		<span class="tooltip"><p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as
+described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+		<span class="tooltip"><p>Whether the user has their account linked to <a href="../Classes/Facebook.html">Facebook</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Logging In &amp; Creating Facebook-Linked Users" name="task_Logging In &amp; Creating Facebook-Linked Users"></a>
+						<h3 class="subsubtitle task-title">Logging In &amp; Creating Facebook-Linked Users</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithPermissions:block:">+&nbsp;logInWithPermissions:block:</a></code>
+		<span class="tooltip"><p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithPermissions:target:selector:">+&nbsp;logInWithPermissions:target:selector:</a></code>
+		<span class="tooltip"><p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>. The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> *)user error:(NSError **)error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithFacebookId:accessToken:expirationDate:block:">+&nbsp;logInWithFacebookId:accessToken:expirationDate:block:</a></code>
+		<span class="tooltip"><p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:">+&nbsp;logInWithFacebookId:accessToken:expirationDate:target:selector:</a></code>
+		<span class="tooltip"><p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> <em>)user error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Linking Users with Facebook" name="task_Linking Users with Facebook"></a>
+						<h3 class="subsubtitle task-title">Linking Users with Facebook</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:permissions:">+&nbsp;linkUser:permissions:</a></code>
+		<span class="tooltip"><p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:permissions:block:">+&nbsp;linkUser:permissions:block:</a></code>
+		<span class="tooltip"><p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:permissions:target:selector:">+&nbsp;linkUser:permissions:target:selector:</a></code>
+		<span class="tooltip"><p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:facebookId:accessToken:expirationDate:block:">+&nbsp;linkUser:facebookId:accessToken:expirationDate:block:</a></code>
+		<span class="tooltip"><p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:">+&nbsp;linkUser:facebookId:accessToken:expirationDate:target:selector:</a></code>
+		<span class="tooltip"><p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Unlinking Users from Facebook" name="task_Unlinking Users from Facebook"></a>
+						<h3 class="subsubtitle task-title">Unlinking Users from Facebook</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUser:">+&nbsp;unlinkUser:</a></code>
+		<span class="tooltip"><p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a <a href="../Classes/Facebook.html">Facebook</a> account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUser:error:">+&nbsp;unlinkUser:error:</a></code>
+		<span class="tooltip"><p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a <a href="../Classes/Facebook.html">Facebook</a> account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:">+&nbsp;unlinkUserInBackground:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:target:selector:">+&nbsp;unlinkUserInBackground:target:selector:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Obtaining new permissions" name="task_Obtaining new permissions"></a>
+						<h3 class="subsubtitle task-title">Obtaining new permissions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reauthorizeUser:withPublishPermissions:audience:block:">+&nbsp;reauthorizeUser:withPublishPermissions:audience:block:</a></code>
+		<span class="tooltip"><p>Requests new <a href="../Classes/Facebook.html">Facebook</a> publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:">+&nbsp;reauthorizeUser:withPublishPermissions:audience:target:selector:</a></code>
+		<span class="tooltip"><p>Requests new <a href="../Classes/Facebook.html">Facebook</a> publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Delegating URL Actions" name="task_Delegating URL Actions"></a>
+						<h3 class="subsubtitle task-title">Delegating URL Actions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleOpenURL:">+&nbsp;handleOpenURL:</a></code>
+		<span class="tooltip"><p>Handles URLs being opened by your AppDelegate. Invoke and return this from application:handleOpenURL:
+or application:openURL:sourceApplication:annotation in your AppDelegate.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/handleOpenURL:" title="handleOpenURL:"></a>
+	<h3 class="subsubtitle method-title">handleOpenURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Handles URLs being opened by your AppDelegate. Invoke and return this from application:handleOpenURL:
+or application:openURL:sourceApplication:annotation in your AppDelegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)handleOpenURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>URL being opened by your application.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>True if <a href="../Classes/Facebook.html">Facebook</a> will handle this URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeFacebook" title="initializeFacebook"></a>
+	<h3 class="subsubtitle method-title">initializeFacebook</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as
+described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeFacebook</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeFacebookWithUrlShemeSuffix:" title="initializeFacebookWithUrlShemeSuffix:"></a>
+	<h3 class="subsubtitle method-title">initializeFacebookWithUrlShemeSuffix:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
+You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as
+described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeFacebookWithUrlShemeSuffix:(NSString *)<em>urlSchemeSuffix</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlSchemeSuffix</em></dt>
+			<dd><p>The URL suffix for this application &ndash; used when multiple applications with the same
+<a href="../Classes/Facebook.html">Facebook</a> application ID may be on the same device.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithApplicationId:" title="initializeWithApplicationId:"></a>
+	<h3 class="subsubtitle method-title">initializeWithApplicationId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deprecated. Please call <a href="#//api/name/initializeFacebook">[PFFacebookUtils initializeFacebook]</a> instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeWithApplicationId:(NSString *)<em>appId</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithApplicationId:urlSchemeSuffix:" title="initializeWithApplicationId:urlSchemeSuffix:"></a>
+	<h3 class="subsubtitle method-title">initializeWithApplicationId:urlSchemeSuffix:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deprecated. Please call [PFFacebookUtils initializeFacebookWithUrlSchemeSuffix:] instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeWithApplicationId:(NSString *)<em>appId</em> urlSchemeSuffix:(NSString *)<em>urlSchemeSuffix</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="subsubtitle method-title">isLinkedWithUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the user has their account linked to <a href="../Classes/Facebook.html">Facebook</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to check for a facebook link. The user must be logged in on this device.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>True if the user has their account linked to <a href="../Classes/Facebook.html">Facebook</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:facebookId:accessToken:expirationDate:block:" title="linkUser:facebookId:accessToken:expirationDate:block:"></a>
+	<h3 class="subsubtitle method-title">linkUser:facebookId:accessToken:expirationDate:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> facebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>facebookId</em></dt>
+			<dd><p>The id of the <a href="../Classes/Facebook.html">Facebook</a> user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationDate</em></dt>
+			<dd><p>The expiration date for the access token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(BOOL <em>success, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:" title="linkUser:facebookId:accessToken:expirationDate:target:selector:"></a>
+	<h3 class="subsubtitle method-title">linkUser:facebookId:accessToken:expirationDate:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> facebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>facebookId</em></dt>
+			<dd><p>The id of the <a href="../Classes/Facebook.html">Facebook</a> user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationDate</em></dt>
+			<dd><p>The expiration date for the access token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:permissions:" title="linkUser:permissions:"></a>
+	<h3 class="subsubtitle method-title">linkUser:permissions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> permissions:(NSArray *)<em>permissions</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The permissions required for <a href="../Classes/Facebook.html">Facebook</a> log in. This passed to the authorize method on
+the <a href="../Classes/Facebook.html">Facebook</a> instance.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:permissions:block:" title="linkUser:permissions:block:"></a>
+	<h3 class="subsubtitle method-title">linkUser:permissions:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> permissions:(NSArray *)<em>permissions</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The permissions required for <a href="../Classes/Facebook.html">Facebook</a> log in. This passed to the authorize method on
+the <a href="../Classes/Facebook.html">Facebook</a> instance.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(BOOL <em>success, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:permissions:target:selector:" title="linkUser:permissions:target:selector:"></a>
+	<h3 class="subsubtitle method-title">linkUser:permissions:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links <a href="../Classes/Facebook.html">Facebook</a> to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> permissions:(NSArray *)<em>permissions</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The permissions required for <a href="../Classes/Facebook.html">Facebook</a> log in. This passed to the authorize method on
+the <a href="../Classes/Facebook.html">Facebook</a> instance.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithFacebookId:accessToken:expirationDate:block:" title="logInWithFacebookId:accessToken:expirationDate:block:"></a>
+	<h3 class="subsubtitle method-title">logInWithFacebookId:accessToken:expirationDate:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithFacebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> block:(PFUserResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>facebookId</em></dt>
+			<dd><p>The id of the <a href="../Classes/Facebook.html">Facebook</a> user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationDate</em></dt>
+			<dd><p>The expiration date for the access token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(<a href="../Classes/PFUser.html">PFUser</a> <em>user, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:" title="logInWithFacebookId:accessToken:expirationDate:target:selector:"></a>
+	<h3 class="subsubtitle method-title">logInWithFacebookId:accessToken:expirationDate:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. Allows you to handle user login to <a href="../Classes/Facebook.html">Facebook</a>, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> <em>)user error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithFacebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>facebookId</em></dt>
+			<dd><p>The id of the <a href="../Classes/Facebook.html">Facebook</a> user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationDate</em></dt>
+			<dd><p>The expiration date for the access token</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithPermissions:block:" title="logInWithPermissions:block:"></a>
+	<h3 class="subsubtitle method-title">logInWithPermissions:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithPermissions:(NSArray *)<em>permissions</em> block:(PFUserResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The permissions required for <a href="../Classes/Facebook.html">Facebook</a> log in. This passed to the authorize method on
+the <a href="../Classes/Facebook.html">Facebook</a> instance.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(<a href="../Classes/PFUser.html">PFUser</a> <em>user, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithPermissions:target:selector:" title="logInWithPermissions:target:selector:"></a>
+	<h3 class="subsubtitle method-title">logInWithPermissions:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using <a href="../Classes/Facebook.html">Facebook</a>. This method delegates to the <a href="../Classes/Facebook.html">Facebook</a> SDK to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>. The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> *)user error:(NSError **)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithPermissions:(NSArray *)<em>permissions</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The permissions required for <a href="../Classes/Facebook.html">Facebook</a> log in. This passed to the authorize method on
+the <a href="../Classes/Facebook.html">Facebook</a> instance.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reauthorizeUser:withPublishPermissions:audience:block:" title="reauthorizeUser:withPublishPermissions:audience:block:"></a>
+	<h3 class="subsubtitle method-title">reauthorizeUser:withPublishPermissions:audience:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests new <a href="../Classes/Facebook.html">Facebook</a> publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)reauthorizeUser:(PFUser *)<em>user</em> withPublishPermissions:(NSArray *)<em>permissions</em> audience:(FBSessionDefaultAudience)<em>audience</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to request new permissions for.  The user must be linked to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The new publishing permissions to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audience</em></dt>
+			<dd><p>The default audience for publishing permissions to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:" title="reauthorizeUser:withPublishPermissions:audience:target:selector:"></a>
+	<h3 class="subsubtitle method-title">reauthorizeUser:withPublishPermissions:audience:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests new <a href="../Classes/Facebook.html">Facebook</a> publish permissions for the given user.  This may prompt the user to
+reauthorize the application. The user will be saved as part of this operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)reauthorizeUser:(PFUser *)<em>user</em> withPublishPermissions:(NSArray *)<em>permissions</em> audience:(FBSessionDefaultAudience)<em>audience</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to request new permissions for.  The user must be linked to <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>The new publishing permissions to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audience</em></dt>
+			<dd><p>The default audience for publishing permissions to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="subsubtitle method-title">session</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the <a href="../Classes/Facebook.html">Facebook</a> session for the current user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (FBSession *)session</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUser:" title="unlinkUser:"></a>
+	<h3 class="subsubtitle method-title">unlinkUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a <a href="../Classes/Facebook.html">Facebook</a> account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)unlinkUser:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the unlink was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUser:error:" title="unlinkUser:error:"></a>
+	<h3 class="subsubtitle method-title">unlinkUser:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a <a href="../Classes/Facebook.html">Facebook</a> account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)unlinkUser:(PFUser *)<em>user</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Error object to set on error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the unlink was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:" title="unlinkUserInBackground:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from <a href="../Classes/Facebook.html">Facebook</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:target:selector:" title="unlinkUserInBackground:target:selector:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a <a href="../Classes/Facebook.html">Facebook</a> account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from <a href="../Classes/Facebook.html">Facebook</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFFacebookUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

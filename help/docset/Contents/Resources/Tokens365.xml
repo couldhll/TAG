@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterHashTag.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterHashTag</TokenIdentifier>
+			<Abstract type="html">	@brief	Hashtag信息</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>
+			
+			<NodeRef refid="365"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setIndices:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Hashtag在Tweet文本中的偏移位置,起始和结束位置索引</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			
+			
+			<Anchor>//api/name/indices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/indices</TokenIdentifier>
+			<Abstract type="html">	@brief	表示Hashtag在Tweet文本中的偏移位置,起始和结束位置索引</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			
+			
+			<Anchor>//api/name/indices</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	Hashtag文本</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/text</TokenIdentifier>
+			<Abstract type="html">	@brief	Hashtag文本</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterHashTag/hashtagWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建Hashtag</Abstract>
+			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterHashTag *)hashtagWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Hashtag对象</Abstract></ReturnValue>
+			<Anchor>//api/name/hashtagWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMImageLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMImageLoader</TokenIdentifier>
+			<Abstract type="html">	@brief	图片加载器，带有图片加载状态，由ImageCacheManager管理分发。</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setContent:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片数据</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UIImage *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/content</TokenIdentifier>
+			<Abstract type="html">	@brief	照片数据</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain, readonly) UIImage *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setState:</TokenIdentifier>
+			<Abstract type="html">	@brief	照片状态</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CMImageLoaderState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/state</TokenIdentifier>
+			<Abstract type="html">	@brief	照片状态</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CMImageLoaderState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setSourceType:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源类型</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CMImageLoaderSourceType sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/sourceType</TokenIdentifier>
+			<Abstract type="html">	@brief	来源类型</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CMImageLoaderSourceType sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setTag:</TokenIdentifier>
+			<Abstract type="html">	@brief	标志</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/tag</TokenIdentifier>
+			<Abstract type="html">	@brief	标志</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithClipSize:clipType:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClipSize:(CGSize)clipSize clipType:(CMImageClipType)clipType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clipSize</Name>
+					<Abstract type="html">裁剪尺寸</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">裁剪类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClipSize:clipType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithCornerRadius:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCornerRadius:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithCornerRadius:size:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCornerRadius:(CGFloat)cornerRadius size:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">实际显示尺寸</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCornerRadius:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithClipSize:clipType:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClipSize:(CGSize)clipSize clipType:(CMImageClipType)clipType cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clipSize</Name>
+					<Abstract type="html">裁剪尺寸</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">裁剪类型</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClipSize:clipType:cornerRadius:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载网络图片对象</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadImageByUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadImageByUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByFilePath:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载本地图片对象</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadImageByFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadImageByFilePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByCache:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载缓存图片对象</Abstract>
+			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadImageByCache:(UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadImageByCache:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

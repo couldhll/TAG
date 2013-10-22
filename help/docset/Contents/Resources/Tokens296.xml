@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSLinkedInApiStandardProfileRequestHeadersValue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInApiStandardProfileRequestHeadersValue</TokenIdentifier>
+			<Abstract type="html">	@brief	请求头键值对</Abstract>
+			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeadersValue.h</DeclaredIn>
+			
+			<NodeRef refid="296"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInApiStandardProfileRequestHeadersValue/valueWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建键值对实例</Abstract>
+			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeadersValue.h</DeclaredIn>			
+			
+			<Declaration>+ (SSLinkedInApiStandardProfileRequestHeadersValue *)valueWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象实例</Abstract></ReturnValue>
+			<Anchor>//api/name/valueWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

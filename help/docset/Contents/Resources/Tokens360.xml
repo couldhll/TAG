@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterContributor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterContributor</TokenIdentifier>
+			<Abstract type="html">	@brief	贡献者信息</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>
+			
+			<NodeRef refid="360"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID字符串</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	ID字符串</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/screenName</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterContributor/contributorsWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建贡献者对象</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterContributor *)contributorsWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">贡献者信息</Abstract></ReturnValue>
+			<Anchor>//api/name/contributorsWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

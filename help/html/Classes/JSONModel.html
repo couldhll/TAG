@@ -1,0 +1,1369 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONModel Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONModel Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/arrayOfDictionariesFromModels:">&nbsp;&nbsp;&nbsp;&nbsp;+ arrayOfDictionariesFromModels:</option>
+	
+	<option value="//api/name/arrayOfModelsFromDictionaries:">&nbsp;&nbsp;&nbsp;&nbsp;+ arrayOfModelsFromDictionaries:</option>
+	
+	<option value="//api/name/keyMapper">&nbsp;&nbsp;&nbsp;&nbsp;+ keyMapper</option>
+	
+	<option value="//api/name/propertyIsOptional:">&nbsp;&nbsp;&nbsp;&nbsp;+ propertyIsOptional:</option>
+	
+	<option value="//api/name/setGlobalKeyMapper:">&nbsp;&nbsp;&nbsp;&nbsp;+ setGlobalKeyMapper:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/compare:">&nbsp;&nbsp;&nbsp;&nbsp;- compare:</option>
+	
+	<option value="//api/name/indexPropertyName">&nbsp;&nbsp;&nbsp;&nbsp;- indexPropertyName</option>
+	
+	<option value="//api/name/initFromURLWithString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- initFromURLWithString:completion:</option>
+	
+	<option value="//api/name/initWithDictionary:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:error:</option>
+	
+	<option value="//api/name/initWithString:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:error:</option>
+	
+	<option value="//api/name/initWithString:usingEncoding:error:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:usingEncoding:error:</option>
+	
+	<option value="//api/name/isEqual:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqual:</option>
+	
+	<option value="//api/name/toDictionary">&nbsp;&nbsp;&nbsp;&nbsp;- toDictionary</option>
+	
+	<option value="//api/name/toJSONString">&nbsp;&nbsp;&nbsp;&nbsp;- toJSONString</option>
+	
+	<option value="//api/name/validate:">&nbsp;&nbsp;&nbsp;&nbsp;- validate:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating and initializing models">Creating and initializing models</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Exporting model contents">Exporting model contents</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Batch methods">Batch methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing models">Comparing models</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Validation">Validation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Key mapping">Key mapping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Networking Methods">Networking Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayOfDictionariesFromModels:">arrayOfDictionariesFromModels:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayOfModelsFromDictionaries:">arrayOfModelsFromDictionaries:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyMapper">keyMapper</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyIsOptional:">propertyIsOptional:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGlobalKeyMapper:">setGlobalKeyMapper:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compare:">compare:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexPropertyName">indexPropertyName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initFromURLWithString:completion:">initFromURLWithString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:error:">initWithDictionary:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:error:">initWithString:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:usingEncoding:error:">initWithString:usingEncoding:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqual:">isEqual:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toDictionary">toDictionary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toJSONString">toJSONString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validate:">validate:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONModel Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONModel Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/AbstractJSONModelProtocol.html">AbstractJSONModelProtocol</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONModel.h<br />JSONModel.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The JSONModel is an abstract model class, you should ot instantiate it directly,
+as it does not have any properties, and therefore cannot serve as a data model.
+Instead you should subclass it, and define the properties you want your data model
+to have as properties of your own class.</p>
+
+<p>The JSONModel(networking) class category adds networking to JSONModel.
+It adds initFromURLWithString: initializer, which makes a GET http request
+to the URL given and initializes the model with the returned JSON.
+Use #import &ldquo;JSONModel+networking.h&rdquo; to import networking capabilities.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating and initializing models" name="task_Creating and initializing models"></a>
+						<h3 class="subsubtitle task-title">Creating and initializing models</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:error:">&ndash;&nbsp;initWithString:error:</a></code>
+		<span class="tooltip"><p>Create a new model instance and initialize it with the JSON from a text parameter. The method assumes UTF8 encoded input text.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:usingEncoding:error:">&ndash;&nbsp;initWithString:usingEncoding:error:</a></code>
+		<span class="tooltip"><p>Create a new model instance and initialize it with the JSON from a text parameter using the given encoding.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:error:">&ndash;&nbsp;initWithDictionary:error:</a></code>
+		<span class="tooltip"><p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should implement initWithDictionary:</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Exporting model contents" name="task_Exporting model contents"></a>
+						<h3 class="subsubtitle task-title">Exporting model contents</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toDictionary">&ndash;&nbsp;toDictionary</a></code>
+		<span class="tooltip"><p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictioanry of
+JSON compliant objects.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toJSONString">&ndash;&nbsp;toJSONString</a></code>
+		<span class="tooltip"><p>Export the whole object to a JSON data text string</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Batch methods" name="task_Batch methods"></a>
+						<h3 class="subsubtitle task-title">Batch methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayOfModelsFromDictionaries:">+&nbsp;arrayOfModelsFromDictionaries:</a></code>
+		<span class="tooltip"><p>If you have a list of dictionaries in a JSON feed, you can use this method to create an NSArray
+of model objects. Handy when importing JSON data lists.
+This method will loop over the input list and initialize a data model for every dictionary in the list.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayOfDictionariesFromModels:">+&nbsp;arrayOfDictionariesFromModels:</a></code>
+		<span class="tooltip"><p>If you have an NSArray of data model objects, this method takes it in and outputs a list of the
+matching dictionaries. This method does the opposite of arrayOfObjectsFromDictionaries:</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Comparing models" name="task_Comparing models"></a>
+						<h3 class="subsubtitle task-title">Comparing models</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexPropertyName">&ndash;&nbsp;indexPropertyName</a></code>
+		<span class="tooltip"><p>The name of the model&rsquo;s property, which is considered the model&rsquo;s unique identifier.
+You can define <a href="../Protocols/Index.html">Index</a> property by using the <a href="../Protocols/Index.html">Index</a> protocol:
+@property (strong, nonatomic) NSString&lt;Index&gt;* id;</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqual:">&ndash;&nbsp;isEqual:</a></code>
+		<span class="tooltip"><p>Overriden NSObject method to compare model objects. Compares the &lt;Index&gt; property of the two models,
+if an index property is defined.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compare:">&ndash;&nbsp;compare:</a></code>
+		<span class="tooltip"><p>Comparision method, which uses the defined &lt;Index&gt; property of the two models, to compare them.
+If there isn&rsquo;t an index property throws an exception. If the <a href="../Protocols/Index.html">Index</a> property does not have a compare: method
+also throws an exception. NSString and NSNumber have compare: methods, and in case the <a href="../Protocols/Index.html">Index</a> property is
+a another custom class, the programmer should create a custom compare: method then.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Validation" name="task_Validation"></a>
+						<h3 class="subsubtitle task-title">Validation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validate:">&ndash;&nbsp;validate:</a></code>
+		<span class="tooltip"><p>Overwrite the validate method in your own models if you need to perform some custom validation over the model data.
+This method gets called at the very end of the JSONModel initializer, thus the model is in the state that you would
+get it back when initialzed. Check the values of any property that needs to be validated and if any invalid values
+are encountered return NO and set the error parameter to an NSError object. If the model is valid return YES.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Key mapping" name="task_Key mapping"></a>
+						<h3 class="subsubtitle task-title">Key mapping</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keyMapper">+&nbsp;keyMapper</a></code>
+		<span class="tooltip"><p>Overwrite in your models if your property names don&rsquo;t match your JSON key names.
+Lookup <a href="../Classes/JSONKeyMapper.html">JSONKeyMapper</a> docs for more details.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGlobalKeyMapper:">+&nbsp;setGlobalKeyMapper:</a></code>
+		<span class="tooltip"><p>Sets a key mapper which affects ALL the models in your project. Use this if you need only one mapper to work
+with your API. For example if you are using the <a href="../Classes/JSONKeyMapper.html#//api/name/mapperFromUnderscoreCaseToCamelCase">[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase]</a> it is more
+likely that you will need to use it with ALL of your models.
+NB: Custom key mappers take precendence over the global key mapper.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyIsOptional:">+&nbsp;propertyIsOptional:</a></code>
+		<span class="tooltip"><p>Indicates whether the property with the given name is <a href="../Protocols/Optional.html">Optional</a>.
+To have a model with all of its properties being <a href="../Protocols/Optional.html">Optional</a> just return YES.
+This method returns by default NO, since the default behaviour is to have all propertoes required.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Networking Methods" name="task_Networking Methods"></a>
+						<h3 class="subsubtitle task-title">Networking Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initFromURLWithString:completion:">&ndash;&nbsp;initFromURLWithString:completion:</a></code>
+		<span class="tooltip"><p>Asynchroniously create a model over the network. Create a new model instance and initialize it with the JSON fetched from the given URL</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayOfDictionariesFromModels:" title="arrayOfDictionariesFromModels:"></a>
+	<h3 class="subsubtitle method-title">arrayOfDictionariesFromModels:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you have an NSArray of data model objects, this method takes it in and outputs a list of the
+matching dictionaries. This method does the opposite of arrayOfObjectsFromDictionaries:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSMutableArray *)arrayOfDictionariesFromModels:(NSArray *)<em>array</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>array</em></dt>
+			<dd><p>list of JSONModel objects</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a list of NSDictionary objects</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelTypeNotAllowedException</em></dt>
+			<dd><p>thrown when unsported type is found in the incoming JSON,
+or a property type in your model is not supported by <a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a> and its categories</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/arrayOfModelsFromDictionaries:">+ arrayOfModelsFromDictionaries:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayOfModelsFromDictionaries:" title="arrayOfModelsFromDictionaries:"></a>
+	<h3 class="subsubtitle method-title">arrayOfModelsFromDictionaries:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you have a list of dictionaries in a JSON feed, you can use this method to create an NSArray
+of model objects. Handy when importing JSON data lists.
+This method will loop over the input list and initialize a data model for every dictionary in the list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSMutableArray *)arrayOfModelsFromDictionaries:(NSArray *)<em>array</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>array</em></dt>
+			<dd><p>list of dictionaries to be imported as models</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>list of initialized data model objects</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelTypeNotAllowedException</em></dt>
+			<dd><p>thrown when unsported type is found in the incoming JSON,
+or a property type in your model is not supported by <a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a> and its categories</p></dd>
+		</dl>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelInvalidDataException</em></dt>
+			<dd><p>thrown when the input data does not include all required keys</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/arrayOfDictionariesFromModels:">+ arrayOfDictionariesFromModels:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keyMapper" title="keyMapper"></a>
+	<h3 class="subsubtitle method-title">keyMapper</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overwrite in your models if your property names don&rsquo;t match your JSON key names.
+Lookup <a href="../Classes/JSONKeyMapper.html">JSONKeyMapper</a> docs for more details.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (JSONKeyMapper *)keyMapper</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyIsOptional:" title="propertyIsOptional:"></a>
+	<h3 class="subsubtitle method-title">propertyIsOptional:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the property with the given name is <a href="../Protocols/Optional.html">Optional</a>.
+To have a model with all of its properties being <a href="../Protocols/Optional.html">Optional</a> just return YES.
+This method returns by default NO, since the default behaviour is to have all propertoes required.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)propertyIsOptional:(NSString *)<em>propertyName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>propertyName</em></dt>
+			<dd><p>the name of the property</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a BOOL result indicating whether the property is optional</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGlobalKeyMapper:" title="setGlobalKeyMapper:"></a>
+	<h3 class="subsubtitle method-title">setGlobalKeyMapper:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a key mapper which affects ALL the models in your project. Use this if you need only one mapper to work
+with your API. For example if you are using the <a href="../Classes/JSONKeyMapper.html#//api/name/mapperFromUnderscoreCaseToCamelCase">[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase]</a> it is more
+likely that you will need to use it with ALL of your models.
+NB: Custom key mappers take precendence over the global key mapper.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setGlobalKeyMapper:(JSONKeyMapper *)<em>globalKeyMapper</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>globalKeyMapper</em></dt>
+			<dd><p>a key mapper to apply to all models in your project.</p>
+
+<p>Lookup <a href="../Classes/JSONKeyMapper.html">JSONKeyMapper</a> docs for more details.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/compare:" title="compare:"></a>
+	<h3 class="subsubtitle method-title">compare:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Comparision method, which uses the defined &lt;Index&gt; property of the two models, to compare them.
+If there isn&rsquo;t an index property throws an exception. If the <a href="../Protocols/Index.html">Index</a> property does not have a compare: method
+also throws an exception. NSString and NSNumber have compare: methods, and in case the <a href="../Protocols/Index.html">Index</a> property is
+a another custom class, the programmer should create a custom compare: method then.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)compare:(id)<em>object</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>a JSONModel instance to compare to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexPropertyName" title="indexPropertyName"></a>
+	<h3 class="subsubtitle method-title">indexPropertyName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the model&rsquo;s property, which is considered the model&rsquo;s unique identifier.
+You can define <a href="../Protocols/Index.html">Index</a> property by using the <a href="../Protocols/Index.html">Index</a> protocol:
+@property (strong, nonatomic) NSString&lt;Index&gt;* id;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)indexPropertyName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initFromURLWithString:completion:" title="initFromURLWithString:completion:"></a>
+	<h3 class="subsubtitle method-title">initFromURLWithString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchroniously create a model over the network. Create a new model instance and initialize it with the JSON fetched from the given URL</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initFromURLWithString:(NSString *)<em>urlString</em> completion:(JSONModelBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the absolute URL address of the JSON feed as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONModelBlock executed upon completion. The JSONModelBlock type is defined as: void (^JSONModelBlock)(JSONModel<em> model, <a href="../Classes/JSONModelError.html">JSONModelError</a></em> e); the first parameter is the initialized model or nil,
+and second parameter holds the model initialization error, if any</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel+networking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:error:" title="initWithDictionary:error:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should implement initWithDictionary:</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithDictionary:(NSDictionary *)<em>dict</em> error:(NSError **)<em>err</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dict</em></dt>
+			<dd><p>a dictionary holding JSON objects, to be imported in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>err</em></dt>
+			<dd><p>an error or NULL</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For most classes the default initWithDictionary: inherited from <a href="../Classes/JSONModel.html">JSONModel</a> itself
+should suffice, but developers have the option ot also overwrite it if needed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:error:" title="initWithString:error:"></a>
+	<h3 class="subsubtitle method-title">initWithString:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new model instance and initialize it with the JSON from a text parameter. The method assumes UTF8 encoded input text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithString:(NSString *)<em>string</em> error:(JSONModelError **)<em>err</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>JSON text data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>err</em></dt>
+			<dd><p>an initialization error or nil</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelTypeNotAllowedException</em></dt>
+			<dd><p>thrown when unsported type is found in the incoming JSON,
+or a property type in your model is not supported by <a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a> and its categories</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithString:usingEncoding:error:">&ndash; initWithString:usingEncoding:error:</a> for use of custom text encodings</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:usingEncoding:error:" title="initWithString:usingEncoding:error:"></a>
+	<h3 class="subsubtitle method-title">initWithString:usingEncoding:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new model instance and initialize it with the JSON from a text parameter using the given encoding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithString:(NSString *)<em>string</em> usingEncoding:(NSStringEncoding)<em>encoding</em> error:(JSONModelError **)<em>err</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>JSON text data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>the text encoding to use when parsing the string (see NSStringEncoding)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>err</em></dt>
+			<dd><p>an initialization error or nil</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelTypeNotAllowedException</em></dt>
+			<dd><p>thrown when unsported type is found in the incoming JSON,
+or a property type in your model is not supported by <a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a> and its categories</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqual:" title="isEqual:"></a>
+	<h3 class="subsubtitle method-title">isEqual:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overriden NSObject method to compare model objects. Compares the &lt;Index&gt; property of the two models,
+if an index property is defined.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqual:(id)<em>object</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>a JSONModel instance to compare to for equality</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toDictionary" title="toDictionary"></a>
+	<h3 class="subsubtitle method-title">toDictionary</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictioanry of
+JSON compliant objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)toDictionary</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSDictionary dictionary of JSON compliant objects</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For most classes the inherited from <a href="../Classes/JSONModel.html">JSONModel</a> default toDictionary implementation
+should suffice.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>JSONModelTypeNotAllowedException</em></dt>
+			<dd><p>thrown when one of your model&rsquo;s custom class properties
+does not have matching transformer method in an <a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/JSONValueTransformer.html">JSONValueTransformer</a> JSONObjectFromNSURL: for an example how to export custom class property to a JSON compliant object</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toJSONString" title="toJSONString"></a>
+	<h3 class="subsubtitle method-title">toJSONString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Export the whole object to a JSON data text string</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)toJSONString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>JSON text describing the data model</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validate:" title="validate:"></a>
+	<h3 class="subsubtitle method-title">validate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Overwrite the validate method in your own models if you need to perform some custom validation over the model data.
+This method gets called at the very end of the JSONModel initializer, thus the model is in the state that you would
+get it back when initialzed. Check the values of any property that needs to be validated and if any invalid values
+are encountered return NO and set the error parameter to an NSError object. If the model is valid return YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)validate:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>a pointer to an NSError object, to pass back an error if needed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a BOOL result, showing whether the model data validates or not. You can use the convenience method
+<a href="../Classes/JSONModelError.html#//api/name/errorModelIsInvalid">[JSONModelError errorModelIsInvalid]</a> to set the NSError param if the data fails your custom validation</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>NB: Only setting the error parameter is not enough to fail the validation, you also need to return a NO value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

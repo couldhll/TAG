@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusCover.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCover</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>
+			
+			<NodeRef refid="271"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCover/setLayout:</TokenIdentifier>
+			<Abstract type="html">	@brief	The layout of the cover art. Possible values are:
+&quot;banner&quot; - One large image banner.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *layout</Declaration>
+			
+			
+			<Anchor>//api/name/layout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCover/layout</TokenIdentifier>
+			<Abstract type="html">	@brief	The layout of the cover art. Possible values are:
+&quot;banner&quot; - One large image banner.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *layout</Declaration>
+			
+			
+			<Anchor>//api/name/layout</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCover/setCoverInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	Extra information about the cover photo.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCoverInfo *coverInfo</Declaration>
+			
+			
+			<Anchor>//api/name/coverInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCover/coverInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	Extra information about the cover photo.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCoverInfo *coverInfo</Declaration>
+			
+			
+			<Anchor>//api/name/coverInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCover/setCoverPhoto:</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s primary cover image.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCoverPhoto *coverPhoto</Declaration>
+			
+			
+			<Anchor>//api/name/coverPhoto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCover/coverPhoto</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s primary cover image.</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSGooglePlusCoverPhoto *coverPhoto</Declaration>
+			
+			
+			<Anchor>//api/name/coverPhoto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusCover/coverWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建封面信息</Abstract>
+			<DeclaredIn>SSGooglePlusCover.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusCover *)coverWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
+			<Anchor>//api/name/coverWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

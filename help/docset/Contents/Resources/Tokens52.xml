@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMRandom.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMRandom</TokenIdentifier>
+			<Abstract type="html">	@brief	随机类</Abstract>
+			<DeclaredIn>CMRandom.h</DeclaredIn>
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMRandom/getIntegerValue:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取随机整型值</Abstract>
+			<DeclaredIn>CMRandom.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)getIntegerValue:(NSInteger)maxValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxValue</Name>
+					<Abstract type="html">随机最大值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">随机整数</Abstract></ReturnValue>
+			<Anchor>//api/name/getIntegerValue:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

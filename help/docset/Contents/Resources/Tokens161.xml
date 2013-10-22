@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFAnalytics.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFAnalytics</TokenIdentifier>
+			<Abstract type="html">PFAnalytics provides an interface to Parse&apos;s logging and analytics backend.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<NodeRef refid="161"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithLaunchOptions:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched. If this happened as the result of the
+user opening a push notification, this method sends along information to
+correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>			
+			
+			<Declaration>+ (void)trackAppOpenedWithLaunchOptions:(NSDictionary *)launchOptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>launchOptions</Name>
+					<Abstract type="html">The dictionary indicating the reason the application was
+launched, if any. This value can be found as a parameter to various
+UIApplicationDelegate methods, and can be empty or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackAppOpenedWithLaunchOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithRemoteNotificationPayload:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched. If this happened as the result of the
+user opening a push notification, this method sends along information to
+correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>			
+			
+			<Declaration>+ (void)trackAppOpenedWithRemoteNotificationPayload:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">The Remote Notification payload, if any. This value can be
+found either under UIApplicationLaunchOptionsRemoteNotificationKey on
+launchOptions, or as a parameter to application:didReceiveRemoteNotification:.
+This can be empty or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackAppOpenedWithRemoteNotificationPayload:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEvent:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event. Parse will store a data point at the
+time of invocation with the given event name.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>			
+			
+			<Declaration>+ (void)trackEvent:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackEvent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEvent:dimensions:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event with additional dimensions. Parse will
+store a data point at the time of invocation with the given event name.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>			
+			
+			<Declaration>+ (void)trackEvent:(NSString *)name dimensions:(NSDictionary *)dimensions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>dimensions</Name>
+					<Abstract type="html">The dictionary of information by which to segment this event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackEvent:dimensions:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

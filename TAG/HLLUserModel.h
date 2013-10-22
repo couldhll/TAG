@@ -8,7 +8,7 @@
 
 #import <JSONModel/JSONModel.h>
 
-#import "HLLThirdAuthorizationModel.h"
+@protocol HLLThirdAuthorizationModel @end
 
 @interface HLLUserModel : JSONModel
 
@@ -17,6 +17,6 @@
 @property (strong, nonatomic) NSURL* thumbnail_head_image_url;
 @property (strong, nonatomic) NSURL* middle_head_image_url;
 @property (strong, nonatomic) NSURL* original_head_image_url;
-//@property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel>* thirds;
+@property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel>* thirds;
 
 @end

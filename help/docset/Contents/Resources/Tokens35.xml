@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMGridView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMGridView</TokenIdentifier>
+			<Abstract type="html">	表格视图</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setDataArray:</TokenIdentifier>
+			<Abstract type="html">    列表数据</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *dataArray</Declaration>
+			
+			
+			<Anchor>//api/name/dataArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/dataArray</TokenIdentifier>
+			<Abstract type="html">    列表数据</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *dataArray</Declaration>
+			
+			
+			<Anchor>//api/name/dataArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setItemType:</TokenIdentifier>
+			<Abstract type="html">	列表项类型</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class itemType</Declaration>
+			
+			
+			<Anchor>//api/name/itemType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/itemType</TokenIdentifier>
+			<Abstract type="html">	列表项类型</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class itemType</Declaration>
+			
+			
+			<Anchor>//api/name/itemType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setItemSize:</TokenIdentifier>
+			<Abstract type="html">	列表项大小</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize itemSize</Declaration>
+			
+			
+			<Anchor>//api/name/itemSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/itemSize</TokenIdentifier>
+			<Abstract type="html">	列表项大小</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize itemSize</Declaration>
+			
+			
+			<Anchor>//api/name/itemSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setScrollEnable:</TokenIdentifier>
+			<Abstract type="html">	滚动标识</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL scrollEnable</Declaration>
+			
+			
+			<Anchor>//api/name/scrollEnable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/scrollEnable</TokenIdentifier>
+			<Abstract type="html">	滚动标识</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL scrollEnable</Declaration>
+			
+			
+			<Anchor>//api/name/scrollEnable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFLeftPadding:</TokenIdentifier>
+			<Abstract type="html">	左边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fLeftPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fLeftPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fLeftPadding</TokenIdentifier>
+			<Abstract type="html">	左边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fLeftPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fLeftPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFRightPadding:</TokenIdentifier>
+			<Abstract type="html">	右边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fRightPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fRightPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fRightPadding</TokenIdentifier>
+			<Abstract type="html">	右边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fRightPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fRightPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFTopPadding:</TokenIdentifier>
+			<Abstract type="html">	顶部边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fTopPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fTopPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fTopPadding</TokenIdentifier>
+			<Abstract type="html">	顶部边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fTopPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fTopPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFBottomPadding:</TokenIdentifier>
+			<Abstract type="html">	顶部边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fBottomPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fBottomPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fBottomPadding</TokenIdentifier>
+			<Abstract type="html">	顶部边距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fBottomPadding</Declaration>
+			
+			
+			<Anchor>//api/name/fBottomPadding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFHorizontalGap:</TokenIdentifier>
+			<Abstract type="html">	水平间距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fHorizontalGap</Declaration>
+			
+			
+			<Anchor>//api/name/fHorizontalGap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fHorizontalGap</TokenIdentifier>
+			<Abstract type="html">	水平间距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fHorizontalGap</Declaration>
+			
+			
+			<Anchor>//api/name/fHorizontalGap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFVerticalGap:</TokenIdentifier>
+			<Abstract type="html">	垂直间距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fVerticalGap</Declaration>
+			
+			
+			<Anchor>//api/name/fVerticalGap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/fVerticalGap</TokenIdentifier>
+			<Abstract type="html">	垂直间距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat fVerticalGap</Declaration>
+			
+			
+			<Anchor>//api/name/fVerticalGap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setContentInset:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容偏移量</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) UIEdgeInsets contentInset</Declaration>
+			
+			
+			<Anchor>//api/name/contentInset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/contentInset</TokenIdentifier>
+			<Abstract type="html">	@brief	内容偏移量</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) UIEdgeInsets contentInset</Declaration>
+			
+			
+			<Anchor>//api/name/contentInset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	委托对象</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CMGridViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/delegate</TokenIdentifier>
+			<Abstract type="html">	委托对象</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CMGridViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setContentView:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容视图</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/contentView</TokenIdentifier>
+			<Abstract type="html">	@brief	内容视图</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITableView *contentView</Declaration>
+			
+			
+			<Anchor>//api/name/contentView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setFooterType:</TokenIdentifier>
+			<Abstract type="html">	@brief	页脚类型，如果为nil则不显示页脚</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class footerType</Declaration>
+			
+			
+			<Anchor>//api/name/footerType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMGridView/footerType</TokenIdentifier>
+			<Abstract type="html">	@brief	页脚类型，如果为nil则不显示页脚</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) Class footerType</Declaration>
+			
+			
+			<Anchor>//api/name/footerType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/setGridTopPadding:rightPadding:bottomPadding:leftPadding:hGap:vGap:</TokenIdentifier>
+			<Abstract type="html">	设置表格边距及间距</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setGridTopPadding:(CGFloat)topPadding rightPadding:(CGFloat)rightPadding bottomPadding:(CGFloat)bottomPadding leftPadding:(CGFloat)leftPadding hGap:(CGFloat)hGap vGap:(CGFloat)vGap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>topPadding</Name>
+					<Abstract type="html">顶部边距</Abstract>
+				</Parameter><Parameter>
+					<Name>rightPadding</Name>
+					<Abstract type="html">右边距</Abstract>
+				</Parameter><Parameter>
+					<Name>bottomPadding</Name>
+					<Abstract type="html">底部边距</Abstract>
+				</Parameter><Parameter>
+					<Name>leftPadding</Name>
+					<Abstract type="html">左边距</Abstract>
+				</Parameter><Parameter>
+					<Name>hGap</Name>
+					<Abstract type="html">水平间距</Abstract>
+				</Parameter><Parameter>
+					<Name>vGap</Name>
+					<Abstract type="html">垂直间距</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setGridTopPadding:rightPadding:bottomPadding:leftPadding:hGap:vGap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridView/dequeueReusableCellWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">	出队一个尚未使用的单元格</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">引用标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">单元格对象，如果没有尚未使用的则返回nil</Abstract></ReturnValue>
+			<Anchor>//api/name/dequeueReusableCellWithIdentifier:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

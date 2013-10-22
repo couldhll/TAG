@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
-#import "JSONModel.h"
+#import <JSONModel/JSONModel.h>
 
 @interface HLLThirdAuthorizationModel : JSONModel
 

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusShareInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusShareInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	分享信息</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>
+			
+			<NodeRef refid="280"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/url</TokenIdentifier>
+			<Abstract type="html">	@brief	链接</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/text</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDeepLinkId:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接ID</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
+			
+			
+			<Anchor>//api/name/deepLinkId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/deepLinkId</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接ID</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
+			
+			
+			<Anchor>//api/name/deepLinkId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接标题</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/title</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接标题</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接描述</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/description</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接描述</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setThumbnail:</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/thumbnail</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusShareInfo/shareInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分享信息</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusShareInfo *)shareInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享信息</Abstract></ReturnValue>
+			<Anchor>//api/name/shareInfoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

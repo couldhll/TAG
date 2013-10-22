@@ -1,0 +1,1537 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ISSEverNoteDataInput Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ISSEverNoteDataInput Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/beginWriteField:type:fieldID:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteField:type:fieldID:</option>
+	
+	<option value="//api/name/beginWriteList:size:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteList:size:</option>
+	
+	<option value="//api/name/beginWriteMap:valueType:size:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteMap:valueType:size:</option>
+	
+	<option value="//api/name/beginWriteMessage:type:sequenceID:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteMessage:type:sequenceID:</option>
+	
+	<option value="//api/name/beginWriteSet:size:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteSet:size:</option>
+	
+	<option value="//api/name/beginWriteStruct:">&nbsp;&nbsp;&nbsp;&nbsp;- beginWriteStruct:</option>
+	
+	<option value="//api/name/endWriteField">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteField</option>
+	
+	<option value="//api/name/endWriteList">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteList</option>
+	
+	<option value="//api/name/endWriteMap">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteMap</option>
+	
+	<option value="//api/name/endWriteMessage">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteMessage</option>
+	
+	<option value="//api/name/endWriteSet">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteSet</option>
+	
+	<option value="//api/name/endWriteStruct">&nbsp;&nbsp;&nbsp;&nbsp;- endWriteStruct</option>
+	
+	<option value="//api/name/writeBinary:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBinary:</option>
+	
+	<option value="//api/name/writeBool:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBool:</option>
+	
+	<option value="//api/name/writeByte:">&nbsp;&nbsp;&nbsp;&nbsp;- writeByte:</option>
+	
+	<option value="//api/name/writeBytes:offset:len:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBytes:offset:len:</option>
+	
+	<option value="//api/name/writeDouble:">&nbsp;&nbsp;&nbsp;&nbsp;- writeDouble:</option>
+	
+	<option value="//api/name/writeFieldStop">&nbsp;&nbsp;&nbsp;&nbsp;- writeFieldStop</option>
+	
+	<option value="//api/name/writeInt32:">&nbsp;&nbsp;&nbsp;&nbsp;- writeInt32:</option>
+	
+	<option value="//api/name/writeInt64:">&nbsp;&nbsp;&nbsp;&nbsp;- writeInt64:</option>
+	
+	<option value="//api/name/writeShort:">&nbsp;&nbsp;&nbsp;&nbsp;- writeShort:</option>
+	
+	<option value="//api/name/writeString:">&nbsp;&nbsp;&nbsp;&nbsp;- writeString:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteField:type:fieldID:">beginWriteField:type:fieldID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteList:size:">beginWriteList:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteMap:valueType:size:">beginWriteMap:valueType:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteMessage:type:sequenceID:">beginWriteMessage:type:sequenceID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteSet:size:">beginWriteSet:size:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginWriteStruct:">beginWriteStruct:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteField">endWriteField</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteList">endWriteList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteMap">endWriteMap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteMessage">endWriteMessage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteSet">endWriteSet</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endWriteStruct">endWriteStruct</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBinary:">writeBinary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBool:">writeBool:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeByte:">writeByte:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBytes:offset:len:">writeBytes:offset:len:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeDouble:">writeDouble:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeFieldStop">writeFieldStop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeInt32:">writeInt32:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeInt64:">writeInt64:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeShort:">writeShort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeString:">writeString:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ISSEverNoteDataInput Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ISSEverNoteDataInput Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ISSEverNoteDataInput.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>@brief  数据写入协议
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBytes:offset:len:">&ndash;&nbsp;writeBytes:offset:len:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入字节数组
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteMessage:type:sequenceID:">&ndash;&nbsp;beginWriteMessage:type:sequenceID:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入消息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteMessage">&ndash;&nbsp;endWriteMessage</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入消息
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteStruct:">&ndash;&nbsp;beginWriteStruct:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入结构
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteStruct">&ndash;&nbsp;endWriteStruct</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入结构
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteField:type:fieldID:">&ndash;&nbsp;beginWriteField:type:fieldID:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入字段
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeFieldStop">&ndash;&nbsp;writeFieldStop</a></code>
+		<span class="tooltip"><pre><code>@brief  写入字段结束标识
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteField">&ndash;&nbsp;endWriteField</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入字段
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeInt32:">&ndash;&nbsp;writeInt32:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个整型值
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeInt64:">&ndash;&nbsp;writeInt64:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个长整型值
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeShort:">&ndash;&nbsp;writeShort:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个短整型指
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeByte:">&ndash;&nbsp;writeByte:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个字节
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeString:">&ndash;&nbsp;writeString:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个字符串
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeDouble:">&ndash;&nbsp;writeDouble:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个双精度浮点型
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBool:">&ndash;&nbsp;writeBool:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个布尔值
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBinary:">&ndash;&nbsp;writeBinary:</a></code>
+		<span class="tooltip"><pre><code>@brief  写入一个字节流
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteMap:valueType:size:">&ndash;&nbsp;beginWriteMap:valueType:size:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入图
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteMap">&ndash;&nbsp;endWriteMap</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入图
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteSet:size:">&ndash;&nbsp;beginWriteSet:size:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入集合
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteSet">&ndash;&nbsp;endWriteSet</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入集合
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginWriteList:size:">&ndash;&nbsp;beginWriteList:size:</a></code>
+		<span class="tooltip"><pre><code>@brief  开始写入列表
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endWriteList">&ndash;&nbsp;endWriteList</a></code>
+		<span class="tooltip"><pre><code>@brief  结束写入列表
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteField:type:fieldID:" title="beginWriteField:type:fieldID:"></a>
+	<h3 class="subsubtitle method-title">beginWriteField:type:fieldID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入字段
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteField:(NSString *)<em>name</em> type:(int)<em>type</em> fieldID:(int)<em>fieldID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>字段名称</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>字段类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldID</em></dt>
+			<dd><p>字段ID</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteList:size:" title="beginWriteList:size:"></a>
+	<h3 class="subsubtitle method-title">beginWriteList:size:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入列表
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteList:(int)<em>elementType</em> size:(int)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementType</em></dt>
+			<dd><p>元素类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>长度</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteMap:valueType:size:" title="beginWriteMap:valueType:size:"></a>
+	<h3 class="subsubtitle method-title">beginWriteMap:valueType:size:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入图
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteMap:(int)<em>keyType</em> valueType:(int)<em>valueType</em> size:(int)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keyType</em></dt>
+			<dd><p>Key类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>valueType</em></dt>
+			<dd><p>Value类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>长度</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteMessage:type:sequenceID:" title="beginWriteMessage:type:sequenceID:"></a>
+	<h3 class="subsubtitle method-title">beginWriteMessage:type:sequenceID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入消息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteMessage:(NSString *)<em>name</em> type:(int)<em>messageType</em> sequenceID:(int)<em>sequenceID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>消息名称</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>messageType</em></dt>
+			<dd><p>消息类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sequenceID</em></dt>
+			<dd><p>序列ID</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteSet:size:" title="beginWriteSet:size:"></a>
+	<h3 class="subsubtitle method-title">beginWriteSet:size:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入集合
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteSet:(int)<em>elementType</em> size:(int)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>elementType</em></dt>
+			<dd><p>元素类型</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>长度</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginWriteStruct:" title="beginWriteStruct:"></a>
+	<h3 class="subsubtitle method-title">beginWriteStruct:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  开始写入结构
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)beginWriteStruct:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>结构名称</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteField" title="endWriteField"></a>
+	<h3 class="subsubtitle method-title">endWriteField</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入字段
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteField</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteList" title="endWriteList"></a>
+	<h3 class="subsubtitle method-title">endWriteList</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入列表
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteList</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteMap" title="endWriteMap"></a>
+	<h3 class="subsubtitle method-title">endWriteMap</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入图
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteMap</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteMessage" title="endWriteMessage"></a>
+	<h3 class="subsubtitle method-title">endWriteMessage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入消息
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteMessage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteSet" title="endWriteSet"></a>
+	<h3 class="subsubtitle method-title">endWriteSet</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入集合
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteSet</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endWriteStruct" title="endWriteStruct"></a>
+	<h3 class="subsubtitle method-title">endWriteStruct</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  结束写入结构
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endWriteStruct</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBinary:" title="writeBinary:"></a>
+	<h3 class="subsubtitle method-title">writeBinary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个字节流
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBinary:(NSData *)<em>data</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>二进制流</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBool:" title="writeBool:"></a>
+	<h3 class="subsubtitle method-title">writeBool:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个布尔值
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBool:(BOOL)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>布尔值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeByte:" title="writeByte:"></a>
+	<h3 class="subsubtitle method-title">writeByte:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个字节
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeByte:(uint8_t)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>字节</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBytes:offset:len:" title="writeBytes:offset:len:"></a>
+	<h3 class="subsubtitle method-title">writeBytes:offset:len:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入字节数组
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBytes:(const uint8_t *)<em>buf</em> offset:(NSInteger)<em>offset</em> len:(NSInteger)<em>len</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buf</em></dt>
+			<dd><p>缓存区</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>偏移位置，从缓存区的指定位置开始读取位置</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>len</em></dt>
+			<dd><p>读入长度</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeDouble:" title="writeDouble:"></a>
+	<h3 class="subsubtitle method-title">writeDouble:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个双精度浮点型
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeDouble:(double)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>浮点型数值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeFieldStop" title="writeFieldStop"></a>
+	<h3 class="subsubtitle method-title">writeFieldStop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入字段结束标识
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeFieldStop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeInt32:" title="writeInt32:"></a>
+	<h3 class="subsubtitle method-title">writeInt32:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个整型值
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeInt32:(int32_t)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>整型值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeInt64:" title="writeInt64:"></a>
+	<h3 class="subsubtitle method-title">writeInt64:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个长整型值
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeInt64:(int64_t)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>长整型值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeShort:" title="writeShort:"></a>
+	<h3 class="subsubtitle method-title">writeShort:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个短整型指
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeShort:(short)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>短整型值</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeString:" title="writeString:"></a>
+	<h3 class="subsubtitle method-title">writeString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  写入一个字符串
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeString:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>字符串</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSEverNoteDataInput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

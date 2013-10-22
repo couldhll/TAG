@@ -6,6 +6,12 @@
 // project.
 
 
+// CocoaSecurity
+#define COCOAPODS_POD_AVAILABLE_CocoaSecurity
+#define COCOAPODS_VERSION_MAJOR_CocoaSecurity 1
+#define COCOAPODS_VERSION_MINOR_CocoaSecurity 2
+#define COCOAPODS_VERSION_PATCH_CocoaSecurity 1
+
 // Facebook-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_Facebook_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_Facebook_iOS_SDK 3
@@ -46,7 +52,7 @@
 #define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK 3
 #define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 0
-#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 1
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 2
 
 // JSONModel
 #define COCOAPODS_POD_AVAILABLE_JSONModel

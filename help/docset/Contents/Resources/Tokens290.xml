@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSKaiXinEducation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinEducation</TokenIdentifier>
+			<Abstract type="html">	@brief	教育信息</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>
+			
+			<NodeRef refid="290"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinEducation/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinEducation/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinEducation/setSchooltype:</TokenIdentifier>
+			<Abstract type="html">	@brief	学校类型</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schooltype</Declaration>
+			
+			
+			<Anchor>//api/name/schooltype</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinEducation/schooltype</TokenIdentifier>
+			<Abstract type="html">	@brief	学校类型</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *schooltype</Declaration>
+			
+			
+			<Anchor>//api/name/schooltype</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinEducation/setSchool:</TokenIdentifier>
+			<Abstract type="html">	@brief	学校</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *school</Declaration>
+			
+			
+			<Anchor>//api/name/school</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinEducation/school</TokenIdentifier>
+			<Abstract type="html">	@brief	学校</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *school</Declaration>
+			
+			
+			<Anchor>//api/name/school</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinEducation/setClassName:</TokenIdentifier>
+			<Abstract type="html">	@brief	班级</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *className</Declaration>
+			
+			
+			<Anchor>//api/name/className</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinEducation/className</TokenIdentifier>
+			<Abstract type="html">	@brief	班级</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *className</Declaration>
+			
+			
+			<Anchor>//api/name/className</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinEducation/setYear:</TokenIdentifier>
+			<Abstract type="html">	@brief	入学年份</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *year</Declaration>
+			
+			
+			<Anchor>//api/name/year</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinEducation/year</TokenIdentifier>
+			<Abstract type="html">	@brief	入学年份</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *year</Declaration>
+			
+			
+			<Anchor>//api/name/year</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSKaiXinEducation/educationWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建教育信息</Abstract>
+			<DeclaredIn>SSKaiXinEducation.h</DeclaredIn>			
+			
+			<Declaration>+ (SSKaiXinEducation *)educationWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">教育信息</Abstract></ReturnValue>
+			<Anchor>//api/name/educationWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSKaiXinUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>
+			
+			<NodeRef refid="293"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSKaiXinCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSKaiXinCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setGender:</TokenIdentifier>
+			<Abstract type="html">	@brief	性别 0:男 1:女</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/gender</TokenIdentifier>
+			<Abstract type="html">	@brief	性别 0:男 1:女</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setHometown:</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hometown</Declaration>
+			
+			
+			<Anchor>//api/name/hometown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/hometown</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hometown</Declaration>
+			
+			
+			<Anchor>//api/name/hometown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCity:</TokenIdentifier>
+			<Abstract type="html">	@brief	现居住地</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/city</TokenIdentifier>
+			<Abstract type="html">	@brief	现居住地</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	状态 0:其它 1:学生 2:已工作</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/status</TokenIdentifier>
+			<Abstract type="html">	@brief	状态 0:其它 1:学生 2:已工作</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setLogo120:</TokenIdentifier>
+			<Abstract type="html">	@brief	头像120 x 120</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo120</Declaration>
+			
+			
+			<Anchor>//api/name/logo120</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/logo120</TokenIdentifier>
+			<Abstract type="html">	@brief	头像120 x 120</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo120</Declaration>
+			
+			
+			<Anchor>//api/name/logo120</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setLogo50:</TokenIdentifier>
+			<Abstract type="html">	@brief	头像50 x 50</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo50</Declaration>
+			
+			
+			<Anchor>//api/name/logo50</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/logo50</TokenIdentifier>
+			<Abstract type="html">	@brief	头像50 x 50</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo50</Declaration>
+			
+			
+			<Anchor>//api/name/logo50</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBirthday:</TokenIdentifier>
+			<Abstract type="html">	@brief	生日</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/birthday</TokenIdentifier>
+			<Abstract type="html">	@brief	生日</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBodyform:</TokenIdentifier>
+			<Abstract type="html">	@brief	体型 0:保密 1:苗条 2:匀称 3:健壮 4:高大 5:小巧 6:丰满 7:高挑 8:较胖 9:较瘦 10:运动型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bodyform</Declaration>
+			
+			
+			<Anchor>//api/name/bodyform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/bodyform</TokenIdentifier>
+			<Abstract type="html">	@brief	体型 0:保密 1:苗条 2:匀称 3:健壮 4:高大 5:小巧 6:丰满 7:高挑 8:较胖 9:较瘦 10:运动型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bodyform</Declaration>
+			
+			
+			<Anchor>//api/name/bodyform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBlood:</TokenIdentifier>
+			<Abstract type="html">	@brief	血型 0:没有填写 1:O型血 2:A型血 3:B型血 4:AB型血 5:稀有血型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *blood</Declaration>
+			
+			
+			<Anchor>//api/name/blood</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/blood</TokenIdentifier>
+			<Abstract type="html">	@brief	血型 0:没有填写 1:O型血 2:A型血 3:B型血 4:AB型血 5:稀有血型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *blood</Declaration>
+			
+			
+			<Anchor>//api/name/blood</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setMarriage:</TokenIdentifier>
+			<Abstract type="html">	@brief	婚姻状态 0:没有填写 1:单身 2:恋爱中 3:订婚 4:已婚 5:离异</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *marriage</Declaration>
+			
+			
+			<Anchor>//api/name/marriage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/marriage</TokenIdentifier>
+			<Abstract type="html">	@brief	婚姻状态 0:没有填写 1:单身 2:恋爱中 3:订婚 4:已婚 5:离异</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *marriage</Declaration>
+			
+			
+			<Anchor>//api/name/marriage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setTrainwith:</TokenIdentifier>
+			<Abstract type="html">	@brief	希望结交</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *trainwith</Declaration>
+			
+			
+			<Anchor>//api/name/trainwith</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/trainwith</TokenIdentifier>
+			<Abstract type="html">	@brief	希望结交</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *trainwith</Declaration>
+			
+			
+			<Anchor>//api/name/trainwith</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setInterest:</TokenIdentifier>
+			<Abstract type="html">	@brief	兴趣爱好</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *interest</Declaration>
+			
+			
+			<Anchor>//api/name/interest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/interest</TokenIdentifier>
+			<Abstract type="html">	@brief	兴趣爱好</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *interest</Declaration>
+			
+			
+			<Anchor>//api/name/interest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavbook:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的书籍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favbook</Declaration>
+			
+			
+			<Anchor>//api/name/favbook</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favbook</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的书籍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favbook</Declaration>
+			
+			
+			<Anchor>//api/name/favbook</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavmovie:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电影</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favmovie</Declaration>
+			
+			
+			<Anchor>//api/name/favmovie</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favmovie</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电影</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favmovie</Declaration>
+			
+			
+			<Anchor>//api/name/favmovie</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavtv:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电视剧</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favtv</Declaration>
+			
+			
+			<Anchor>//api/name/favtv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favtv</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电视剧</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favtv</Declaration>
+			
+			
+			<Anchor>//api/name/favtv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIdol:</TokenIdentifier>
+			<Abstract type="html">	@brief	偶像</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idol</Declaration>
+			
+			
+			<Anchor>//api/name/idol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/idol</TokenIdentifier>
+			<Abstract type="html">	@brief	偶像</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idol</Declaration>
+			
+			
+			<Anchor>//api/name/idol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setMotto:</TokenIdentifier>
+			<Abstract type="html">	@brief	座右铭</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *motto</Declaration>
+			
+			
+			<Anchor>//api/name/motto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/motto</TokenIdentifier>
+			<Abstract type="html">	@brief	座右铭</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *motto</Declaration>
+			
+			
+			<Anchor>//api/name/motto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setWishlist:</TokenIdentifier>
+			<Abstract type="html">	@brief	愿望列表</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *wishlist</Declaration>
+			
+			
+			<Anchor>//api/name/wishlist</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/wishlist</TokenIdentifier>
+			<Abstract type="html">	@brief	愿望列表</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *wishlist</Declaration>
+			
+			
+			<Anchor>//api/name/wishlist</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIntro:</TokenIdentifier>
+			<Abstract type="html">	@brief	介绍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/intro</TokenIdentifier>
+			<Abstract type="html">	@brief	介绍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setEducation:</TokenIdentifier>
+			<Abstract type="html">	@brief	教育经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/education</TokenIdentifier>
+			<Abstract type="html">	@brief	教育经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCareer:</TokenIdentifier>
+			<Abstract type="html">	@brief	工作经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *career</Declaration>
+			
+			
+			<Anchor>//api/name/career</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/career</TokenIdentifier>
+			<Abstract type="html">	@brief	工作经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *career</Declaration>
+			
+			
+			<Anchor>//api/name/career</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIsStar:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否公共主页 0:否 1:是</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *isStar</Declaration>
+			
+			
+			<Anchor>//api/name/isStar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/isStar</TokenIdentifier>
+			<Abstract type="html">	@brief	是否公共主页 0:否 1:是</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *isStar</Declaration>
+			
+			
+			<Anchor>//api/name/isStar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setPinyin:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户的姓名拼音</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pinyin</Declaration>
+			
+			
+			<Anchor>//api/name/pinyin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/pinyin</TokenIdentifier>
+			<Abstract type="html">	@brief	用户的姓名拼音</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pinyin</Declaration>
+			
+			
+			<Anchor>//api/name/pinyin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setOnline:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户是否在线 0:不在线 1:在线</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/online</TokenIdentifier>
+			<Abstract type="html">	@brief	用户是否在线 0:不在线 1:在线</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSKaiXinUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSKaiXinUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -11,11 +11,8 @@
 
 #pragma mark - Import
 
-#import "HLLAppDelegate.h"
-#import "HLLViewDeckViewController.h"
-#import "HLLButton.h"
-#import "HLLBorderButton.h"
-#import "HLLSelectButton.h"
+#import "HLLComponent.h"
+#import "HLLModel.h"
 
 #import "HLLTracker.h"
 

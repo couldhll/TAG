@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQApiExtendObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiExtendObject</TokenIdentifier>
+			<Abstract type="html">@brief 扩展数据类型</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
+			
+			<NodeRef refid="197"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiExtendObject/setPreviewImageData:</TokenIdentifier>
+			<Abstract type="html">&lt;具体数据内容，必填，最大5M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiExtendObject/previewImageData</TokenIdentifier>
+			<Abstract type="html">&lt;具体数据内容，必填，最大5M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiExtendObject/initWithData:previewImageData:title:description:</TokenIdentifier>
+			<Abstract type="html">初始化方法</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSData *)data previewImageData:(NSData *)previewImageData title:(NSString *)title description:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">数据内容</Abstract>
+				</Parameter><Parameter>
+					<Name>previewImageData</Name>
+					<Abstract type="html">用于预览的图片</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">此对象，分享的描述</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithData:previewImageData:title:description:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiExtendObject/objectWithData:previewImageData:title:description:</TokenIdentifier>
+			<Abstract type="html">helper方法获取一个autorelease的&lt;code&gt;QQApiExtendObject&lt;/code&gt;对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectWithData:(NSData *)data previewImageData:(NSData *)previewImageData title:(NSString *)title description:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">数据内容</Abstract>
+				</Parameter><Parameter>
+					<Name>previewImageData</Name>
+					<Abstract type="html">用于预览的图片</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">此对象，分享的描述
+@return
+     一个自动释放的&lt;code&gt;QQApiExtendObject&lt;/code&gt;实例</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectWithData:previewImageData:title:description:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

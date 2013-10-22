@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSInstapaperErrorInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSInstapaperErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	Instapaper错误信息类，记录Instapaper中导致的错误信息（包括：错误码、错误描述）</Abstract>
+			<DeclaredIn>SSInstapaperErrorInfo.h</DeclaredIn>
+			
+			<NodeRef refid="286"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

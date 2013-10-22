@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSRenRenBasicInformation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenBasicInformation</TokenIdentifier>
+			<Abstract type="html">	@brief	基本信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>
+			
+			<NodeRef refid="319"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setSex:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户性别
+FEMALE	女性
+MALE	男性</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sex</Declaration>
+			
+			
+			<Anchor>//api/name/sex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/sex</TokenIdentifier>
+			<Abstract type="html">	@brief	用户性别
+FEMALE	女性
+MALE	男性</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sex</Declaration>
+			
+			
+			<Anchor>//api/name/sex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setBirthday:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户生日，格式为&apos;yyyy-mm-dd&apos;或&apos;y0后-mm-dd&apos;</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/birthday</TokenIdentifier>
+			<Abstract type="html">	@brief	用户生日，格式为&apos;yyyy-mm-dd&apos;或&apos;y0后-mm-dd&apos;</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setHomeTown:</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSRenRenHometown *homeTown</Declaration>
+			
+			
+			<Anchor>//api/name/homeTown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/homeTown</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSRenRenHometown *homeTown</Declaration>
+			
+			
+			<Anchor>//api/name/homeTown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenBasicInformation/basicInformationWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建基本信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenBasicInformation *)basicInformationWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">基本信息实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/basicInformationWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

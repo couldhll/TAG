@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPurchase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPurchase</TokenIdentifier>
+			<Abstract type="html">PFPurchase provides a set of APIs for working with in-app purchases.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<NodeRef refid="174"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/addObserverForProduct:block:</TokenIdentifier>
+			<Abstract type="html">Use this method to add application logic block which is run when buying a product.
+This method should be called once for each product, and should be called before
+calling buyProduct:block. All invocations to addObserverForProduct:block: should happen within
+the same method, and on the main thread. It is recommended to place all invocations of this method
+in application:didFinishLaunchingWithOptions:.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addObserverForProduct:(NSString *)productIdentifier block:(void ( ^ ) ( SKPaymentTransaction *transaction ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">the product identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObserverForProduct:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/buyProduct:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously initiates the purchase for the product.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>			
+			
+			<Declaration>+ (void)buyProduct:(NSString *)productIdentifier block:(void ( ^ ) ( NSError *error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">the product identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/buyProduct:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/downloadAssetForTransaction:completion:</TokenIdentifier>
+			<Abstract type="html">Asynchronously download the purchased asset, which is stored on Parse&apos;s server.
+Parse verifies the receipt with Apple and delivers the content only if the receipt is valid.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>			
+			
+			<Declaration>+ (void)downloadAssetForTransaction:(SKPaymentTransaction *)transaction completion:(void ( ^ ) ( NSString *filePath , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transaction</Name>
+					<Abstract type="html">the transaction, which contains the receipt.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAssetForTransaction:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/downloadAssetForTransaction:completion:progress:</TokenIdentifier>
+			<Abstract type="html">Asynchronously download the purchased asset, which is stored on Parse&apos;s server.
+Parse verifies the receipt with Apple and delivers the content only if the receipt is valid.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>			
+			
+			<Declaration>+ (void)downloadAssetForTransaction:(SKPaymentTransaction *)transaction completion:(void ( ^ ) ( NSString *filePath , NSError *error ))completion progress:(PFProgressBlock)progress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transaction</Name>
+					<Abstract type="html">the transaction, which contains the receipt.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">the progress block, which is called multiple times to reveal progress of the download.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAssetForTransaction:completion:progress:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/restore</TokenIdentifier>
+			<Abstract type="html">Asynchronously restore completed transactions for the current user.
+Note: This method is only important to developers who want to preserve purchase states across
+different installations of the same app.
+Only nonconsumable purchases are restored. If observers for the products have been added before
+calling this method, invoking the method reruns the application logic associated with the purchase.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>			
+			
+			<Declaration>+ (void)restore</Declaration>
+			
+			
+			<Anchor>//api/name/restore</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

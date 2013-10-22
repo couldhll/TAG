@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookPaymentPricePoint.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookPaymentPricePoint</TokenIdentifier>
+			<Abstract type="html">	@brief	支付价格点数信息</Abstract>
+			<DeclaredIn>SSFacebookPaymentPricePoint.h</DeclaredIn>
+			
+			<NodeRef refid="257"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPaymentPricePoint/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookPaymentPricePoint.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPaymentPricePoint/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookPaymentPricePoint.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookPaymentPricePoint/paymentPricePointWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建支付价格点数信息</Abstract>
+			<DeclaredIn>SSFacebookPaymentPricePoint.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookPaymentPricePoint *)paymentPricePointWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">支付价格点数信息</Abstract></ReturnValue>
+			<Anchor>//api/name/paymentPricePointWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

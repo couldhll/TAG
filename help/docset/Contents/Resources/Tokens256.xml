@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookLocation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookLocation</TokenIdentifier>
+			<Abstract type="html">	@brief	位置信息</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>
+			
+			<NodeRef refid="256"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookLocation/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookLocation/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookLocation/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	位置信息ID</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookLocation/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	位置信息ID</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookLocation/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	微信信息名称</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookLocation/name</TokenIdentifier>
+			<Abstract type="html">	@brief	微信信息名称</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookLocation/locationWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建定位信息</Abstract>
+			<DeclaredIn>SSFacebookLocation.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookLocation *)locationWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">定位信息</Abstract></ReturnValue>
+			<Anchor>//api/name/locationWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

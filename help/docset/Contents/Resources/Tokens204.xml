@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/QQApiResultObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiResultObject</TokenIdentifier>
+			<Abstract type="html">\brief 用于请求回应的数据类型。
+&lt;h3&gt;可能错误码及描述如下:&lt;/h3&gt;
+&lt;TABLE&gt;
+&lt;TR&gt;&lt;TD&gt;error&lt;/TD&gt;&lt;TD&gt;errorDescription&lt;/TD&gt;&lt;TD&gt;注释&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;0&lt;/TD&gt;&lt;TD&gt;nil&lt;/TD&gt;&lt;TD&gt;成功&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-1&lt;/TD&gt;&lt;TD&gt;param error&lt;/TD&gt;&lt;TD&gt;参数错误&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-2&lt;/TD&gt;&lt;TD&gt;group code is invalid&lt;/TD&gt;&lt;TD&gt;该群不在自己的群列表里面&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-3&lt;/TD&gt;&lt;TD&gt;upload photo failed&lt;/TD&gt;&lt;TD&gt;上传图片失败&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-4&lt;/TD&gt;&lt;TD&gt;user give up the current operation&lt;/TD&gt;&lt;TD&gt;用户放弃当前操作&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-5&lt;/TD&gt;&lt;TD&gt;client internal error&lt;/TD&gt;&lt;TD&gt;客户端内部处理错误&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
+			
+			<NodeRef refid="204"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiResultObject/setErrorDescription:</TokenIdentifier>
+			<Abstract type="html">&lt;错误</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorDescription</Declaration>
+			
+			
+			<Anchor>//api/name/errorDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiResultObject/errorDescription</TokenIdentifier>
+			<Abstract type="html">&lt;错误</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *errorDescription</Declaration>
+			
+			
+			<Anchor>//api/name/errorDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiResultObject/setExtendInfo:</TokenIdentifier>
+			<Abstract type="html">&lt;错误描述</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *extendInfo</Declaration>
+			
+			
+			<Anchor>//api/name/extendInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiResultObject/extendInfo</TokenIdentifier>
+			<Abstract type="html">&lt;错误描述</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *extendInfo</Declaration>
+			
+			
+			<Anchor>//api/name/extendInfo</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

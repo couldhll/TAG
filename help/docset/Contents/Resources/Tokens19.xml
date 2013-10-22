@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGSinaWeiboUserCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGSinaWeiboUserCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGSinaWeiboUserCell.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserCell/setUserInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>AGSinaWeiboUserCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboUser *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AGSinaWeiboUserCell/userInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>AGSinaWeiboUserCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSSinaWeiboUser *userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/userInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGSinaWeiboUserCell/initWithStyle:reuseIdentifier:imageCacheManager:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化表格单元格</Abstract>
+			<DeclaredIn>AGSinaWeiboUserCell.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier imageCacheManager:(CMImageCacheManager *)imageCacheManager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>style</Name>
+					<Abstract type="html">样式</Abstract>
+				</Parameter><Parameter>
+					<Name>reuseIdentifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter><Parameter>
+					<Name>imageCacheManager</Name>
+					<Abstract type="html">图片缓存管理器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">表格单元格</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStyle:reuseIdentifier:imageCacheManager:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

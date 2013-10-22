@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookTeam.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookTeam</TokenIdentifier>
+			<Abstract type="html">	@brief	球队信息</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>
+			
+			<NodeRef refid="265"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookTeam/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookTeam/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookTeam/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief  球队ID</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookTeam/Id</TokenIdentifier>
+			<Abstract type="html">	@brief  球队ID</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookTeam/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookTeam/name</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookTeam/teamWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建球队信息</Abstract>
+			<DeclaredIn>SSFacebookTeam.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookTeam *)teamWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">球队信息</Abstract></ReturnValue>
+			<Anchor>//api/name/teamWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

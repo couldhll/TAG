@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CMImageView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CMImageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageView/setImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片对象</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageView/image</TokenIdentifier>
+			<Abstract type="html">	@brief	图片对象</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageView/setDefaultImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片对象，在没有设置图片时显示</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *defaultImage</Declaration>
+			
+			
+			<Anchor>//api/name/defaultImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageView/defaultImage</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片对象，在没有设置图片时显示</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *defaultImage</Declaration>
+			
+			
+			<Anchor>//api/name/defaultImage</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterSizes.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterSizes</TokenIdentifier>
+			<Abstract type="html">	@brief	规格信息</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>
+			
+			<NodeRef refid="368"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterSizes/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterSizes/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterSizes/setH:</TokenIdentifier>
+			<Abstract type="html">	@brief	高度</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger h</Declaration>
+			
+			
+			<Anchor>//api/name/h</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterSizes/h</TokenIdentifier>
+			<Abstract type="html">	@brief	高度</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger h</Declaration>
+			
+			
+			<Anchor>//api/name/h</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterSizes/setResize:</TokenIdentifier>
+			<Abstract type="html">	@brief	取得尺寸的方法</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resize</Declaration>
+			
+			
+			<Anchor>//api/name/resize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterSizes/resize</TokenIdentifier>
+			<Abstract type="html">	@brief	取得尺寸的方法</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resize</Declaration>
+			
+			
+			<Anchor>//api/name/resize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterSizes/setW:</TokenIdentifier>
+			<Abstract type="html">	@brief	宽度</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger w</Declaration>
+			
+			
+			<Anchor>//api/name/w</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterSizes/w</TokenIdentifier>
+			<Abstract type="html">	@brief	宽度</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger w</Declaration>
+			
+			
+			<Anchor>//api/name/w</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterSizes/sizeWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建尺寸信息</Abstract>
+			<DeclaredIn>SSTwitterSizes.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterSizes *)sizeWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">尺寸信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSFacebookSignficantOther.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookSignficantOther</TokenIdentifier>
+			<Abstract type="html">	@brief	SignficantOther class</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>
+			
+			<NodeRef refid="264"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSignficantOther/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSignficantOther/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSignficantOther/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	Id</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSignficantOther/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	Id</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSignficantOther/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSignficantOther/name</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookSignficantOther/significantOtherWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建对象</Abstract>
+			<DeclaredIn>SSFacebookSignficantOther.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookSignficantOther *)significantOtherWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象</Abstract></ReturnValue>
+			<Anchor>//api/name/significantOtherWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

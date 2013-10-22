@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTencentWeiboVideo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboVideo</TokenIdentifier>
+			<Abstract type="html">	@brief	视频信息</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>
+			
+			<NodeRef refid="358"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setPicurl:</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *picurl</Declaration>
+			
+			
+			<Anchor>//api/name/picurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/picurl</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *picurl</Declaration>
+			
+			
+			<Anchor>//api/name/picurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setPlayer:</TokenIdentifier>
+			<Abstract type="html">	@brief	播放器地址</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/player</TokenIdentifier>
+			<Abstract type="html">	@brief	播放器地址</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *player</Declaration>
+			
+			
+			<Anchor>//api/name/player</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setRealurl:</TokenIdentifier>
+			<Abstract type="html">	@brief	视频原地址</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *realurl</Declaration>
+			
+			
+			<Anchor>//api/name/realurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/realurl</TokenIdentifier>
+			<Abstract type="html">	@brief	视频原地址</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *realurl</Declaration>
+			
+			
+			<Anchor>//api/name/realurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setShorturl:</TokenIdentifier>
+			<Abstract type="html">	@brief	视频的短url</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shorturl</Declaration>
+			
+			
+			<Anchor>//api/name/shorturl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/shorturl</TokenIdentifier>
+			<Abstract type="html">	@brief	视频的短url</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shorturl</Declaration>
+			
+			
+			<Anchor>//api/name/shorturl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboVideo/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	视频标题</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboVideo/title</TokenIdentifier>
+			<Abstract type="html">	@brief	视频标题</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboVideo/videoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建视频信息</Abstract>
+			<DeclaredIn>SSTencentWeiboVideo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTencentWeiboVideo *)videoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">视频信息</Abstract></ReturnValue>
+			<Anchor>//api/name/videoWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFRelation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFRelation</TokenIdentifier>
+			<Abstract type="html">A class that is used to access all of the children of a many-to-many relationship.  Each instance
+of PFRelation is associated with a particular parent object and key.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<NodeRef refid="178"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/query</TokenIdentifier>
+			<Abstract type="html">A ParseQuery that can be used to get objects in this relation.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>			
+			
+			<Declaration>- (PFQuery *)query</Declaration>
+			
+			<ReturnValue><Abstract type="html">A ParseQuery that can be used to get objects in this relation.</Abstract></ReturnValue>
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/addObject:</TokenIdentifier>
+			<Abstract type="html">Adds a relation to the passed in object.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>			
+			
+			<Declaration>- (void)addObject:(PFObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">ParseObject to add relation to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/removeObject:</TokenIdentifier>
+			<Abstract type="html">Removes a relation to the passed in object.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeObject:(PFObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">ParseObject to add relation to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

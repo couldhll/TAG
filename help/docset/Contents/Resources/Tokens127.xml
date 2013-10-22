@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JSONModelArray.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JSONModelArray</TokenIdentifier>
+			<Abstract type="html">Don&apos;t make instances of JSONModelArray yourself, except you know what you are doing.</Abstract>
+			<DeclaredIn>JSONModelArray.h</DeclaredIn>
+			
+			<NodeRef refid="127"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelArray/initWithArray:modelClass:</TokenIdentifier>
+			<Abstract type="html">Don&apos;t make instances of JSONModelArray yourself, except you know what you are doing.</Abstract>
+			<DeclaredIn>JSONModelArray.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithArray:(NSArray *)array modelClass:(Class)cls</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>array</Name>
+					<Abstract type="html">an array of NSDictionary objects</Abstract>
+				</Parameter><Parameter>
+					<Name>cls</Name>
+					<Abstract type="html">the JSONModel sub-class you&apos;d like the NSDictionaries to be converted to on demand</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithArray:modelClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelArray/modelWithIndexValue:</TokenIdentifier>
+			<Abstract type="html">Looks up the array&apos;s contents and tries to find a JSONModel object
+with matching index property value to the indexValue param.</Abstract>
+			<DeclaredIn>JSONModelArray.h</DeclaredIn>			
+			
+			<Declaration>- (id)modelWithIndexValue:(id)indexValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexValue</Name>
+					<Abstract type="html">the id value to search for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the found model or nil</Abstract></ReturnValue>
+			<Anchor>//api/name/modelWithIndexValue:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

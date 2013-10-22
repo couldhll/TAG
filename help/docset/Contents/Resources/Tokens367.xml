@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSTwitterPlaces.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterPlaces</TokenIdentifier>
+			<Abstract type="html">	@brief	地方信息</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>
+			
+			<NodeRef refid="367"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setAttributes:</TokenIdentifier>
+			<Abstract type="html">	@brief	一个哈希表结构地方信息</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/attributes</TokenIdentifier>
+			<Abstract type="html">	@brief	一个哈希表结构地方信息</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setBoundingBox:</TokenIdentifier>
+			<Abstract type="html">	@brief	地方的边界坐标</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterBoundingBox *boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/boundingBox</TokenIdentifier>
+			<Abstract type="html">	@brief	地方的边界坐标</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSTwitterBoundingBox *boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setCountry:</TokenIdentifier>
+			<Abstract type="html">	@brief	所在国家</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *country</Declaration>
+			
+			
+			<Anchor>//api/name/country</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/country</TokenIdentifier>
+			<Abstract type="html">	@brief	所在国家</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *country</Declaration>
+			
+			
+			<Anchor>//api/name/country</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setCountryCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	所在国家编码</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *countryCode</Declaration>
+			
+			
+			<Anchor>//api/name/countryCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/countryCode</TokenIdentifier>
+			<Abstract type="html">	@brief	所在国家编码</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *countryCode</Declaration>
+			
+			
+			<Anchor>//api/name/countryCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setFullName:</TokenIdentifier>
+			<Abstract type="html">	@brief	完整的地方名称</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fullName</Declaration>
+			
+			
+			<Anchor>//api/name/fullName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/fullName</TokenIdentifier>
+			<Abstract type="html">	@brief	完整的地方名称</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fullName</Declaration>
+			
+			
+			<Anchor>//api/name/fullName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	地名</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/name</TokenIdentifier>
+			<Abstract type="html">	@brief	地名</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setPlaceType:</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *placeType</Declaration>
+			
+			
+			<Anchor>//api/name/placeType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/placeType</TokenIdentifier>
+			<Abstract type="html">	@brief	类型</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *placeType</Declaration>
+			
+			
+			<Anchor>//api/name/placeType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterPlaces/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	URL</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterPlaces/url</TokenIdentifier>
+			<Abstract type="html">	@brief	URL</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterPlaces/placesWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建地方信息</Abstract>
+			<DeclaredIn>SSTwitterPlaces.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterPlaces *)placesWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">地方信息</Abstract></ReturnValue>
+			<Anchor>//api/name/placesWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

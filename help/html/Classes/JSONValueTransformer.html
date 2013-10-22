@@ -1,0 +1,1257 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONValueTransformer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONValueTransformer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/classByResolvingClusterClasses:">&nbsp;&nbsp;&nbsp;&nbsp;+ classByResolvingClusterClasses:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/BOOLFromNSNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- BOOLFromNSNumber:</option>
+	
+	<option value="//api/name/BOOLFromNSString:">&nbsp;&nbsp;&nbsp;&nbsp;- BOOLFromNSString:</option>
+	
+	<option value="//api/name/JSONObjectFromBOOL:">&nbsp;&nbsp;&nbsp;&nbsp;- JSONObjectFromBOOL:</option>
+	
+	<option value="//api/name/JSONObjectFromNSMutableSet:">&nbsp;&nbsp;&nbsp;&nbsp;- JSONObjectFromNSMutableSet:</option>
+	
+	<option value="//api/name/JSONObjectFromNSSet:">&nbsp;&nbsp;&nbsp;&nbsp;- JSONObjectFromNSSet:</option>
+	
+	<option value="//api/name/JSONObjectFromNSURL:">&nbsp;&nbsp;&nbsp;&nbsp;- JSONObjectFromNSURL:</option>
+	
+	<option value="//api/name/NSMutableArrayFromNSArray:">&nbsp;&nbsp;&nbsp;&nbsp;- NSMutableArrayFromNSArray:</option>
+	
+	<option value="//api/name/NSMutableDictionaryFromNSDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- NSMutableDictionaryFromNSDictionary:</option>
+	
+	<option value="//api/name/NSMutableSetFromNSArray:">&nbsp;&nbsp;&nbsp;&nbsp;- NSMutableSetFromNSArray:</option>
+	
+	<option value="//api/name/NSMutableStringFromNSString:">&nbsp;&nbsp;&nbsp;&nbsp;- NSMutableStringFromNSString:</option>
+	
+	<option value="//api/name/NSNumberFromNSString:">&nbsp;&nbsp;&nbsp;&nbsp;- NSNumberFromNSString:</option>
+	
+	<option value="//api/name/NSSetFromNSArray:">&nbsp;&nbsp;&nbsp;&nbsp;- NSSetFromNSArray:</option>
+	
+	<option value="//api/name/NSStringFromNSNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- NSStringFromNSNumber:</option>
+	
+	<option value="//api/name/NSURLFromNSString:">&nbsp;&nbsp;&nbsp;&nbsp;- NSURLFromNSString:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Resolving cluster class names">Resolving cluster class names</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transforming to Mutable copies">Transforming to Mutable copies</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transforming Sets">Transforming Sets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transforming JSON types">Transforming JSON types</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Transforming URLs">Transforming URLs</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/classByResolvingClusterClasses:">classByResolvingClusterClasses:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/BOOLFromNSNumber:">BOOLFromNSNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/BOOLFromNSString:">BOOLFromNSString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONObjectFromBOOL:">JSONObjectFromBOOL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONObjectFromNSMutableSet:">JSONObjectFromNSMutableSet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONObjectFromNSSet:">JSONObjectFromNSSet:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONObjectFromNSURL:">JSONObjectFromNSURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSMutableArrayFromNSArray:">NSMutableArrayFromNSArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSMutableDictionaryFromNSDictionary:">NSMutableDictionaryFromNSDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSMutableSetFromNSArray:">NSMutableSetFromNSArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSMutableStringFromNSString:">NSMutableStringFromNSString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSNumberFromNSString:">NSNumberFromNSString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSSetFromNSArray:">NSSetFromNSArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSStringFromNSNumber:">NSStringFromNSNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/NSURLFromNSString:">NSURLFromNSString:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONValueTransformer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONValueTransformer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONValueTransformer.h<br />JSONValueTransformer.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><strong>You don&rsquo;t need to call methods of this class manually.</strong></p>
+
+<p>Class providing methods to transform values from one class to another.
+You are given a number of built-in transformers, but you are encouraged to
+extend this class with your own categories to add further value transformers.
+Just few examples of what can you add to JSONValueTransformer: hex colors in JSON to UIColor,
+hex numbers in JSON to NSNumber model properties, base64 encoded strings in JSON to UIImage properties, and more.</p>
+
+<p>The class is invoked by <a href="../Classes/JSONModel.html">JSONModel</a> while transforming incoming
+JSON types into your target class property classes, and vice versa.
+One static copy is create and store in the <a href="../Classes/JSONModel.html">JSONModel</a> class scope.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Resolving cluster class names" name="task_Resolving cluster class names"></a>
+						<h3 class="subsubtitle task-title">Resolving cluster class names</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/classByResolvingClusterClasses:">+&nbsp;classByResolvingClusterClasses:</a></code>
+		<span class="tooltip"><p>This method returns the ubmrella class for any standard class cluster members.
+For example returns NSString when given as input NSString, NSMutableString, <strong>CFString and </strong>CFConstantString
+The method currently looksup a pre-defined list.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Transforming to Mutable copies" name="task_Transforming to Mutable copies"></a>
+						<h3 class="subsubtitle task-title">Transforming to Mutable copies</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSMutableStringFromNSString:">&ndash;&nbsp;NSMutableStringFromNSString:</a></code>
+		<span class="tooltip"><p>Trasnforms a string value to a mutable string value</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSMutableArrayFromNSArray:">&ndash;&nbsp;NSMutableArrayFromNSArray:</a></code>
+		<span class="tooltip"><p>Trasnforms an array to a mutable array</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSMutableDictionaryFromNSDictionary:">&ndash;&nbsp;NSMutableDictionaryFromNSDictionary:</a></code>
+		<span class="tooltip"><p>Trasnforms a dictionary to a mutable dictionary</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Transforming Sets" name="task_Transforming Sets"></a>
+						<h3 class="subsubtitle task-title">Transforming Sets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSSetFromNSArray:">&ndash;&nbsp;NSSetFromNSArray:</a></code>
+		<span class="tooltip"><p>Transforms an array to a set</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSMutableSetFromNSArray:">&ndash;&nbsp;NSMutableSetFromNSArray:</a></code>
+		<span class="tooltip"><p>Transforms an array to a mutable set</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONObjectFromNSSet:">&ndash;&nbsp;JSONObjectFromNSSet:</a></code>
+		<span class="tooltip"><p>Transforms a set to an array</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONObjectFromNSMutableSet:">&ndash;&nbsp;JSONObjectFromNSMutableSet:</a></code>
+		<span class="tooltip"><p>Transforms a mutable set to an array</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Transforming JSON types" name="task_Transforming JSON types"></a>
+						<h3 class="subsubtitle task-title">Transforming JSON types</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/BOOLFromNSNumber:">&ndash;&nbsp;BOOLFromNSNumber:</a></code>
+		<span class="tooltip"><p>Transforms a number object to a bool number object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/BOOLFromNSString:">&ndash;&nbsp;BOOLFromNSString:</a></code>
+		<span class="tooltip"><p>Transforms a number object to a bool number object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONObjectFromBOOL:">&ndash;&nbsp;JSONObjectFromBOOL:</a></code>
+		<span class="tooltip"><p>Transforms a BOOL value to a bool number object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSNumberFromNSString:">&ndash;&nbsp;NSNumberFromNSString:</a></code>
+		<span class="tooltip"><p>Transforms a string object to a number object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSStringFromNSNumber:">&ndash;&nbsp;NSStringFromNSNumber:</a></code>
+		<span class="tooltip"><p>Transforms a number object to a string object</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Transforming URLs" name="task_Transforming URLs"></a>
+						<h3 class="subsubtitle task-title">Transforming URLs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/NSURLFromNSString:">&ndash;&nbsp;NSURLFromNSString:</a></code>
+		<span class="tooltip"><p>Transforms a string object to an NSURL object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONObjectFromNSURL:">&ndash;&nbsp;JSONObjectFromNSURL:</a></code>
+		<span class="tooltip"><p>Transforms an NSURL object to a string</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/classByResolvingClusterClasses:" title="classByResolvingClusterClasses:"></a>
+	<h3 class="subsubtitle method-title">classByResolvingClusterClasses:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns the ubmrella class for any standard class cluster members.
+For example returns NSString when given as input NSString, NSMutableString, <strong>CFString and </strong>CFConstantString
+The method currently looksup a pre-defined list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Class)classByResolvingClusterClasses:(Class)<em>sourceClass</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sourceClass</em></dt>
+			<dd><p>the class to get the umrella class for</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Class</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/BOOLFromNSNumber:" title="BOOLFromNSNumber:"></a>
+	<h3 class="subsubtitle method-title">BOOLFromNSNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a number object to a bool number object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSNumber *)BOOLFromNSNumber:(NSNumber *)<em>number</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>the number to convert</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting number</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/BOOLFromNSString:" title="BOOLFromNSString:"></a>
+	<h3 class="subsubtitle method-title">BOOLFromNSString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a number object to a bool number object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSNumber *)BOOLFromNSString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>the string value to convert, &ldquo;0&rdquo; converts to NO, everything else to YES</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting number</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONObjectFromBOOL:" title="JSONObjectFromBOOL:"></a>
+	<h3 class="subsubtitle method-title">JSONObjectFromBOOL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a BOOL value to a bool number object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSNumber *)JSONObjectFromBOOL:(NSNumber *)<em>number</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>an NSNumber value coming from the model</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the result number</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONObjectFromNSMutableSet:" title="JSONObjectFromNSMutableSet:"></a>
+	<h3 class="subsubtitle method-title">JSONObjectFromNSMutableSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a mutable set to an array</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)JSONObjectFromNSMutableSet:(NSMutableSet *)<em>set</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>set</em></dt>
+			<dd><p>incoming mutable set</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array with the set&rsquo;s elements</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONObjectFromNSSet:" title="JSONObjectFromNSSet:"></a>
+	<h3 class="subsubtitle method-title">JSONObjectFromNSSet:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a set to an array</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)JSONObjectFromNSSet:(NSSet *)<em>set</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>set</em></dt>
+			<dd><p>incoming set</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array with the set&rsquo;s elements</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONObjectFromNSURL:" title="JSONObjectFromNSURL:"></a>
+	<h3 class="subsubtitle method-title">JSONObjectFromNSURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms an NSURL object to a string</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)JSONObjectFromNSURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>the url object to convert</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSMutableArrayFromNSArray:" title="NSMutableArrayFromNSArray:"></a>
+	<h3 class="subsubtitle method-title">NSMutableArrayFromNSArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Trasnforms an array to a mutable array</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableArray *)NSMutableArrayFromNSArray:(NSArray *)<em>array</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>array</em></dt>
+			<dd><p>incoming array</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>mutable array</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSMutableDictionaryFromNSDictionary:" title="NSMutableDictionaryFromNSDictionary:"></a>
+	<h3 class="subsubtitle method-title">NSMutableDictionaryFromNSDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Trasnforms a dictionary to a mutable dictionary</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)NSMutableDictionaryFromNSDictionary:(NSDictionary *)<em>dict</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dict</em></dt>
+			<dd><p>incoming dictionary</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>mutable dictionary</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSMutableSetFromNSArray:" title="NSMutableSetFromNSArray:"></a>
+	<h3 class="subsubtitle method-title">NSMutableSetFromNSArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms an array to a mutable set</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableSet *)NSMutableSetFromNSArray:(NSArray *)<em>array</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>array</em></dt>
+			<dd><p>incoming array</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>mutable set with the array&rsquo;s elements</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSMutableStringFromNSString:" title="NSMutableStringFromNSString:"></a>
+	<h3 class="subsubtitle method-title">NSMutableStringFromNSString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Trasnforms a string value to a mutable string value</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableString *)NSMutableStringFromNSString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>incoming string</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>mutable string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSNumberFromNSString:" title="NSNumberFromNSString:"></a>
+	<h3 class="subsubtitle method-title">NSNumberFromNSString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a string object to a number object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSNumber *)NSNumberFromNSString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>the string to convert</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting number</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSSetFromNSArray:" title="NSSetFromNSArray:"></a>
+	<h3 class="subsubtitle method-title">NSSetFromNSArray:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms an array to a set</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)NSSetFromNSArray:(NSArray *)<em>array</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>array</em></dt>
+			<dd><p>incoming array</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>set with the array&rsquo;s elements</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSStringFromNSNumber:" title="NSStringFromNSNumber:"></a>
+	<h3 class="subsubtitle method-title">NSStringFromNSNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a number object to a string object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)NSStringFromNSNumber:(NSNumber *)<em>number</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>number</em></dt>
+			<dd><p>the number to convert</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/NSURLFromNSString:" title="NSURLFromNSString:"></a>
+	<h3 class="subsubtitle method-title">NSURLFromNSString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transforms a string object to an NSURL object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)NSURLFromNSString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>the string to convert</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the resulting url object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONValueTransformer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

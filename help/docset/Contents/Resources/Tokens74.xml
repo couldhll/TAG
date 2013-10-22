@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBInsights.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBInsights</TokenIdentifier>
+			<Abstract type="html">@class FBInsights</Abstract>
+			<DeclaredIn>FBInsights.h</DeclaredIn>
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

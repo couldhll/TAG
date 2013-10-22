@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGApiViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGApiViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGApiViewController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareAllButtonClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享全部</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareAllButtonClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareAllButtonClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/simpleShareAllButtonClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	简单分享全部</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)simpleShareAllButtonClickHandler:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/simpleShareAllButtonClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToSinaWeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到新浪微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToSinaWeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToSinaWeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToTencentWeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到腾讯微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToTencentWeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToTencentWeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToQQFriendClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享给QQ好友</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToQQFriendClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToQQFriendClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToQQSpaceClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到QQ空间</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToQQSpaceClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToQQSpaceClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToWeixinSessionClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享给微信好友</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToWeixinSessionClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToWeixinSessionClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToWeixinTimelineClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享给微信朋友圈</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToWeixinTimelineClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToWeixinTimelineClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareTo163WeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到网易微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareTo163WeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareTo163WeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToSohuWeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到搜狐微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToSohuWeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToSohuWeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToRenRenClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到人人网</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToRenRenClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToRenRenClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToKaiXinClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到开心网</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToKaiXinClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToKaiXinClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToDouBanClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到豆瓣我说</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToDouBanClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToDouBanClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToInstapaperClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到Instapaper</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToInstapaperClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToInstapaperClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToFacebookClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到Facebook</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToFacebookClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToFacebookClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToTwitterClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到Twitter</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToTwitterClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">Twitter</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToTwitterClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareBySMSClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	短信分享</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareBySMSClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareBySMSClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareByMailClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	邮件分享</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareByMailClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareByMailClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareByPrintOrCopyClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	打印、拷贝</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareByPrintOrCopyClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareByPrintOrCopyClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToYouDaoClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到有道云笔记</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToYouDaoClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToYouDaoClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToSohuKanClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到搜狐随身看</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToSohuKanClickHandler:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToSohuKanClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/airPrintShareContent</TokenIdentifier>
+			<Abstract type="html">	@brief	打印分享内容</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)airPrintShareContent</Declaration>
+			
+			
+			<Anchor>//api/name/airPrintShareContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/copyShareContent</TokenIdentifier>
+			<Abstract type="html">	@brief	拷贝分享内容</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)copyShareContent</Declaration>
+			
+			
+			<Anchor>//api/name/copyShareContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/followSinaWeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注新浪微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)followSinaWeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followSinaWeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/followTencentWeiboClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注腾讯微博</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)followTencentWeiboClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followTencentWeiboClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/ssoEnabledClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	SSO登录开关按钮点击</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)ssoEnabledClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/ssoEnabledClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/customShareMenuClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	自定义分享菜单项按钮点击</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)customShareMenuClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/customShareMenuClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/customShareMenuItemClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	自定义分享菜单项按钮点击</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)customShareMenuItemClickHandler:(UIButton *)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/customShareMenuItemClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/shareToEvernoteClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享到印象笔记</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)shareToEvernoteClickHandler:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareToEvernoteClickHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGApiViewController/clientShareClickHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	客户端分享点击</Abstract>
+			<DeclaredIn>AGApiViewController.m</DeclaredIn>			
+			
+			<Declaration>- (void)clientShareClickHandler:(id)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">事件对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clientShareClickHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

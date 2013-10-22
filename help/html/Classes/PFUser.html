@@ -1,0 +1,1921 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFUser Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFUser Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/email">&nbsp;&nbsp;&nbsp;&nbsp;email</option>
+	
+	<option value="//api/name/isNew">&nbsp;&nbsp;&nbsp;&nbsp;isNew</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/sessionToken">&nbsp;&nbsp;&nbsp;&nbsp;sessionToken</option>
+	
+	<option value="//api/name/username">&nbsp;&nbsp;&nbsp;&nbsp;username</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/currentUser">&nbsp;&nbsp;&nbsp;&nbsp;+ currentUser</option>
+	
+	<option value="//api/name/enableAutomaticUser">&nbsp;&nbsp;&nbsp;&nbsp;+ enableAutomaticUser</option>
+	
+	<option value="//api/name/logInWithUsername:password:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithUsername:password:</option>
+	
+	<option value="//api/name/logInWithUsername:password:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithUsername:password:error:</option>
+	
+	<option value="//api/name/logInWithUsernameInBackground:password:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithUsernameInBackground:password:</option>
+	
+	<option value="//api/name/logInWithUsernameInBackground:password:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithUsernameInBackground:password:block:</option>
+	
+	<option value="//api/name/logInWithUsernameInBackground:password:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithUsernameInBackground:password:target:selector:</option>
+	
+	<option value="//api/name/logOut">&nbsp;&nbsp;&nbsp;&nbsp;+ logOut</option>
+	
+	<option value="//api/name/parseClassName">&nbsp;&nbsp;&nbsp;&nbsp;+ parseClassName</option>
+	
+	<option value="//api/name/query">&nbsp;&nbsp;&nbsp;&nbsp;+ query</option>
+	
+	<option value="//api/name/requestPasswordResetForEmail:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPasswordResetForEmail:</option>
+	
+	<option value="//api/name/requestPasswordResetForEmail:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPasswordResetForEmail:error:</option>
+	
+	<option value="//api/name/requestPasswordResetForEmailInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPasswordResetForEmailInBackground:</option>
+	
+	<option value="//api/name/requestPasswordResetForEmailInBackground:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPasswordResetForEmailInBackground:block:</option>
+	
+	<option value="//api/name/requestPasswordResetForEmailInBackground:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestPasswordResetForEmailInBackground:target:selector:</option>
+	
+	<option value="//api/name/user">&nbsp;&nbsp;&nbsp;&nbsp;+ user</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/isAuthenticated">&nbsp;&nbsp;&nbsp;&nbsp;- isAuthenticated</option>
+	
+	<option value="//api/name/signUp">&nbsp;&nbsp;&nbsp;&nbsp;- signUp</option>
+	
+	<option value="//api/name/signUp:">&nbsp;&nbsp;&nbsp;&nbsp;- signUp:</option>
+	
+	<option value="//api/name/signUpInBackground">&nbsp;&nbsp;&nbsp;&nbsp;- signUpInBackground</option>
+	
+	<option value="//api/name/signUpInBackgroundWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- signUpInBackgroundWithBlock:</option>
+	
+	<option value="//api/name/signUpInBackgroundWithTarget:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- signUpInBackgroundWithTarget:selector:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the Current User">Accessing the Current User</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a New User">Creating a New User</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Logging in">Logging in</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Logging Out">Logging Out</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Requesting a Password Reset">Requesting a Password Reset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Querying for Users">Querying for Users</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/email">email</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isNew">isNew</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionToken">sessionToken</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/username">username</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentUser">currentUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableAutomaticUser">enableAutomaticUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithUsername:password:">logInWithUsername:password:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithUsername:password:error:">logInWithUsername:password:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithUsernameInBackground:password:">logInWithUsernameInBackground:password:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithUsernameInBackground:password:block:">logInWithUsernameInBackground:password:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithUsernameInBackground:password:target:selector:">logInWithUsernameInBackground:password:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logOut">logOut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseClassName">parseClassName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query">query</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPasswordResetForEmail:">requestPasswordResetForEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPasswordResetForEmail:error:">requestPasswordResetForEmail:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPasswordResetForEmailInBackground:">requestPasswordResetForEmailInBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPasswordResetForEmailInBackground:block:">requestPasswordResetForEmailInBackground:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPasswordResetForEmailInBackground:target:selector:">requestPasswordResetForEmailInBackground:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/user">user</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAuthenticated">isAuthenticated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signUp">signUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signUp:">signUp:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signUpInBackground">signUpInBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signUpInBackgroundWithBlock:">signUpInBackgroundWithBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signUpInBackgroundWithTarget:selector:">signUpInBackgroundWithTarget:selector:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFUser Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFUser Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/PFObject.html">PFObject</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/PFSubclassing.html">PFSubclassing</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFUser.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <a href="../Classes/Parse.html">Parse</a> Framework User Object that is a local representation of a <a href="#//api/name/user">user</a> persisted to the <a href="../Classes/Parse.html">Parse</a> cloud. This class
+is a subclass of a <a href="../Classes/PFObject.html">PFObject</a>, and retains the same functionality of a <a href="../Classes/PFObject.html">PFObject</a>, but also extends it with various
+<a href="#//api/name/user">user</a> specific methods, like authentication, signing up, and validation uniqueness.</p>
+
+<p>Many APIs responsible for linking a PFUser with <a href="../Classes/Facebook.html">Facebook</a> or Twitter have been deprecated in favor of dedicated
+utilities for each social network. See <a href="../Classes/PFFacebookUtils.html">PFFacebookUtils</a> and <a href="../Classes/PFTwitterUtils.html">PFTwitterUtils</a> for more information.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseClassName">+&nbsp;parseClassName</a></code>
+		<span class="tooltip"><p>The name of the PFUser class in the REST API. This is a required
+<a href="../Protocols/PFSubclassing.html">PFSubclassing</a> method</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing the Current User" name="task_Accessing the Current User"></a>
+						<h3 class="subsubtitle task-title">Accessing the Current User</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentUser">+&nbsp;currentUser</a></code>
+		<span class="tooltip"><p>Gets the currently logged in <a href="#//api/name/user">user</a> from disk and returns an instance of it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionToken">&nbsp;&nbsp;sessionToken</a></code>
+		<span class="tooltip"><p>The session token for the PFUser. This is set by the server upon successful authentication.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isNew">&nbsp;&nbsp;isNew</a></code>
+		<span class="tooltip"><p>Whether the PFUser was just created from a request. This is only set after a <a href="../Classes/Facebook.html">Facebook</a> or Twitter login.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAuthenticated">&ndash;&nbsp;isAuthenticated</a></code>
+		<span class="tooltip"><p>Whether the <a href="#//api/name/user">user</a> is an authenticated object for the device. An authenticated PFUser is one that is obtained via
+a <a href="#//api/name/signUp">signUp</a> or logIn method. An authenticated object is required in order to save (with altered values) or delete it.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a New User" name="task_Creating a New User"></a>
+						<h3 class="subsubtitle task-title">Creating a New User</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/user">+&nbsp;user</a></code>
+		<span class="tooltip"><p>Creates a new PFUser object.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableAutomaticUser">+&nbsp;enableAutomaticUser</a></code>
+		<span class="tooltip"><p>Enables automatic creation of anonymous users.  After calling this method, <a href="#//api/name/currentUser">[PFUser currentUser]</a> will always have a value.
+The <a href="#//api/name/user">user</a> will only be created on the server once the <a href="#//api/name/user">user</a> has been saved, or once an object with a relation to that <a href="#//api/name/user">user</a> or
+an ACL that refers to the <a href="#//api/name/user">user</a> has been saved.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+		<span class="tooltip"><p>The username for the PFUser.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+		<span class="tooltip"><p>The password for the PFUser. This will not be filled in from the server with
+the password. It is only meant to be set.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/email">&nbsp;&nbsp;email</a></code>
+		<span class="tooltip"><p>The email for the PFUser.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signUp">&ndash;&nbsp;signUp</a></code>
+		<span class="tooltip"><p>Signs up the <a href="#//api/name/user">user</a>. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signUp:">&ndash;&nbsp;signUp:</a></code>
+		<span class="tooltip"><p>Signs up the <a href="#//api/name/user">user</a>. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signUpInBackground">&ndash;&nbsp;signUpInBackground</a></code>
+		<span class="tooltip"><p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signUpInBackgroundWithBlock:">&ndash;&nbsp;signUpInBackgroundWithBlock:</a></code>
+		<span class="tooltip"><p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signUpInBackgroundWithTarget:selector:">&ndash;&nbsp;signUpInBackgroundWithTarget:selector:</a></code>
+		<span class="tooltip"><p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Logging in" name="task_Logging in"></a>
+						<h3 class="subsubtitle task-title">Logging in</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithUsername:password:">+&nbsp;logInWithUsername:password:</a></code>
+		<span class="tooltip"><p>Makes a request to login a <a href="#//api/name/user">user</a> with specified credentials. Returns an instance
+of the successfully logged in PFUser. This will also cache the <a href="#//api/name/user">user</a> locally so
+that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithUsername:password:error:">+&nbsp;logInWithUsername:password:error:</a></code>
+		<span class="tooltip"><p>Makes a request to login a <a href="#//api/name/user">user</a> with specified credentials. Returns an
+instance of the successfully logged in PFUser. This will also cache the <a href="#//api/name/user">user</a>
+locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithUsernameInBackground:password:">+&nbsp;logInWithUsernameInBackground:password:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to login a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithUsernameInBackground:password:target:selector:">+&nbsp;logInWithUsernameInBackground:password:target:selector:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to login a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.
+The selector for the callback should look like: myCallback:(PFUser *)<a href="#//api/name/user">user</a> error:(NSError **)error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithUsernameInBackground:password:block:">+&nbsp;logInWithUsernameInBackground:password:block:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to log in a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Logging Out" name="task_Logging Out"></a>
+						<h3 class="subsubtitle task-title">Logging Out</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logOut">+&nbsp;logOut</a></code>
+		<span class="tooltip"><p>Logs out the currently logged in <a href="#//api/name/user">user</a> on disk.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Requesting a Password Reset" name="task_Requesting a Password Reset"></a>
+						<h3 class="subsubtitle task-title">Requesting a Password Reset</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPasswordResetForEmail:">+&nbsp;requestPasswordResetForEmail:</a></code>
+		<span class="tooltip"><p>Send a <a href="#//api/name/password">password</a> reset request for a specified <a href="#//api/name/email">email</a>. If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>,
+an <a href="#//api/name/email">email</a> will be sent to that address with instructions on how to reset their <a href="#//api/name/password">password</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPasswordResetForEmail:error:">+&nbsp;requestPasswordResetForEmail:error:</a></code>
+		<span class="tooltip"><p>Send a <a href="#//api/name/password">password</a> reset request for a specified <a href="#//api/name/email">email</a> and sets an error object. If a <a href="#//api/name/user">user</a>
+account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPasswordResetForEmailInBackground:">+&nbsp;requestPasswordResetForEmailInBackground:</a></code>
+		<span class="tooltip"><p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a> and sets an
+error object. If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to
+that address with instructions on how to reset their <a href="#//api/name/password">password</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPasswordResetForEmailInBackground:target:selector:">+&nbsp;requestPasswordResetForEmailInBackground:target:selector:</a></code>
+		<span class="tooltip"><p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a> and sets an error object.
+If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPasswordResetForEmailInBackground:block:">+&nbsp;requestPasswordResetForEmailInBackground:block:</a></code>
+		<span class="tooltip"><p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a>.
+If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Querying for Users" name="task_Querying for Users"></a>
+						<h3 class="subsubtitle task-title">Querying for Users</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/query">+&nbsp;query</a></code>
+		<span class="tooltip"><p>Creates a query for PFUser objects.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/email" title="email"></a>
+	<h3 class="subsubtitle method-title">email</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The email for the PFUser.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *email</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isNew" title="isNew"></a>
+	<h3 class="subsubtitle method-title">isNew</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the PFUser was just created from a request. This is only set after a <a href="../Classes/Facebook.html">Facebook</a> or Twitter login.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, assign) BOOL isNew</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The password for the PFUser. This will not be filled in from the server with
+the password. It is only meant to be set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *password</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionToken" title="sessionToken"></a>
+	<h3 class="subsubtitle method-title">sessionToken</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The session token for the PFUser. This is set by the server upon successful authentication.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *sessionToken</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="subsubtitle method-title">username</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The username for the PFUser.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *username</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/currentUser" title="currentUser"></a>
+	<h3 class="subsubtitle method-title">currentUser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the currently logged in <a href="#//api/name/user">user</a> from disk and returns an instance of it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)currentUser</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a PFUser that is the currently logged in <a href="#//api/name/user">user</a>. If there is none, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableAutomaticUser" title="enableAutomaticUser"></a>
+	<h3 class="subsubtitle method-title">enableAutomaticUser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables automatic creation of anonymous users.  After calling this method, <a href="#//api/name/currentUser">[PFUser currentUser]</a> will always have a value.
+The <a href="#//api/name/user">user</a> will only be created on the server once the <a href="#//api/name/user">user</a> has been saved, or once an object with a relation to that <a href="#//api/name/user">user</a> or
+an ACL that refers to the <a href="#//api/name/user">user</a> has been saved.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)enableAutomaticUser</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note: saveEventually will not work if an item being saved has a relation to an automatic <a href="#//api/name/user">user</a> that has never been saved.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithUsername:password:" title="logInWithUsername:password:"></a>
+	<h3 class="subsubtitle method-title">logInWithUsername:password:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a request to login a <a href="#//api/name/user">user</a> with specified credentials. Returns an instance
+of the successfully logged in PFUser. This will also cache the <a href="#//api/name/user">user</a> locally so
+that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)logInWithUsername:(NSString *)<em>username</em> password:(NSString *)<em>password</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The <a href="#//api/name/username">username</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an instance of the PFUser on success. If login failed for either wrong <a href="#//api/name/password">password</a> or wrong <a href="#//api/name/username">username</a>, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithUsername:password:error:" title="logInWithUsername:password:error:"></a>
+	<h3 class="subsubtitle method-title">logInWithUsername:password:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a request to login a <a href="#//api/name/user">user</a> with specified credentials. Returns an
+instance of the successfully logged in PFUser. This will also cache the <a href="#//api/name/user">user</a>
+locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)logInWithUsername:(NSString *)<em>username</em> password:(NSString *)<em>password</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The <a href="#//api/name/username">username</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error object to set on error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an instance of the PFUser on success. If login failed for either wrong <a href="#//api/name/password">password</a> or wrong <a href="#//api/name/username">username</a>, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithUsernameInBackground:password:" title="logInWithUsernameInBackground:password:"></a>
+	<h3 class="subsubtitle method-title">logInWithUsernameInBackground:password:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to login a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithUsernameInBackground:(NSString *)<em>username</em> password:(NSString *)<em>password</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The <a href="#//api/name/username">username</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithUsernameInBackground:password:block:" title="logInWithUsernameInBackground:password:block:"></a>
+	<h3 class="subsubtitle method-title">logInWithUsernameInBackground:password:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to log in a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithUsernameInBackground:(NSString *)<em>username</em> password:(NSString *)<em>password</em> block:(PFUserResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The <a href="#//api/name/username">username</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (PFUser <em><a href="#//api/name/user">user</a>, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithUsernameInBackground:password:target:selector:" title="logInWithUsernameInBackground:password:target:selector:"></a>
+	<h3 class="subsubtitle method-title">logInWithUsernameInBackground:password:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to login a <a href="#//api/name/user">user</a> with specified credentials.
+Returns an instance of the successfully logged in PFUser. This will also cache
+the <a href="#//api/name/user">user</a> locally so that calls to userFromCurrentUser will use the latest logged in <a href="#//api/name/user">user</a>.
+The selector for the callback should look like: myCallback:(PFUser *)<a href="#//api/name/user">user</a> error:(NSError **)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithUsernameInBackground:(NSString *)<em>username</em> password:(NSString *)<em>password</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The <a href="#//api/name/username">username</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/user">user</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchrounous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logOut" title="logOut"></a>
+	<h3 class="subsubtitle method-title">logOut</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs out the currently logged in <a href="#//api/name/user">user</a> on disk.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logOut</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseClassName" title="parseClassName"></a>
+	<h3 class="subsubtitle method-title">parseClassName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the PFUser class in the REST API. This is a required
+<a href="../Protocols/PFSubclassing.html">PFSubclassing</a> method</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)parseClassName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/query" title="query"></a>
+	<h3 class="subsubtitle method-title">query</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a query for PFUser objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PFQuery *)query</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmail:" title="requestPasswordResetForEmail:"></a>
+	<h3 class="subsubtitle method-title">requestPasswordResetForEmail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send a <a href="#//api/name/password">password</a> reset request for a specified <a href="#//api/name/email">email</a>. If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>,
+an <a href="#//api/name/email">email</a> will be sent to that address with instructions on how to reset their <a href="#//api/name/password">password</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)requestPasswordResetForEmail:(NSString *)<em>email</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email of the account to send a reset <a href="#//api/name/password">password</a> request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the reset <a href="#//api/name/email">email</a> request is successful. False if no account was found for the <a href="#//api/name/email">email</a> address.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmail:error:" title="requestPasswordResetForEmail:error:"></a>
+	<h3 class="subsubtitle method-title">requestPasswordResetForEmail:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send a <a href="#//api/name/password">password</a> reset request for a specified <a href="#//api/name/email">email</a> and sets an error object. If a <a href="#//api/name/user">user</a>
+account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)requestPasswordResetForEmail:(NSString *)<em>email</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email of the account to send a reset <a href="#//api/name/password">password</a> request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Error object to set on error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the reset <a href="#//api/name/email">email</a> request is successful. False if no account was found for the <a href="#//api/name/email">email</a> address.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmailInBackground:" title="requestPasswordResetForEmailInBackground:"></a>
+	<h3 class="subsubtitle method-title">requestPasswordResetForEmailInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a> and sets an
+error object. If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to
+that address with instructions on how to reset their <a href="#//api/name/password">password</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)requestPasswordResetForEmailInBackground:(NSString *)<em>email</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email of the account to send a reset <a href="#//api/name/password">password</a> request.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmailInBackground:block:" title="requestPasswordResetForEmailInBackground:block:"></a>
+	<h3 class="subsubtitle method-title">requestPasswordResetForEmailInBackground:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a>.
+If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)requestPasswordResetForEmailInBackground:(NSString *)<em>email</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email of the account to send a reset <a href="#//api/name/password">password</a> request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmailInBackground:target:selector:" title="requestPasswordResetForEmailInBackground:target:selector:"></a>
+	<h3 class="subsubtitle method-title">requestPasswordResetForEmailInBackground:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Send a <a href="#//api/name/password">password</a> reset request asynchronously for a specified <a href="#//api/name/email">email</a> and sets an error object.
+If a <a href="#//api/name/user">user</a> account exists with that <a href="#//api/name/email">email</a>, an <a href="#//api/name/email">email</a> will be sent to that address with instructions
+on how to reset their <a href="#//api/name/password">password</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)requestPasswordResetForEmailInBackground:(NSString *)<em>email</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email of the account to send a reset <a href="#//api/name/password">password</a> request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete. It should have the following signature: (void)callbackWithResult:(NSNumber *)result error:(NSError **)error. error will be nil on success and set if there was an error. [result boolValue] will tell you whether the call succeeded or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/user" title="user"></a>
+	<h3 class="subsubtitle method-title">user</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new PFUser object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PFUser *)user</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a new PFUser object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isAuthenticated" title="isAuthenticated"></a>
+	<h3 class="subsubtitle method-title">isAuthenticated</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the <a href="#//api/name/user">user</a> is an authenticated object for the device. An authenticated PFUser is one that is obtained via
+a <a href="#//api/name/signUp">signUp</a> or logIn method. An authenticated object is required in order to save (with altered values) or delete it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAuthenticated</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns whether the <a href="#//api/name/user">user</a> is authenticated.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signUp" title="signUp"></a>
+	<h3 class="subsubtitle method-title">signUp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs up the <a href="#//api/name/user">user</a>. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)signUp</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the sign up was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signUp:" title="signUp:"></a>
+	<h3 class="subsubtitle method-title">signUp:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs up the <a href="#//api/name/user">user</a>. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)signUp:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Error object to set on error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns whether the sign up was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signUpInBackground" title="signUpInBackground"></a>
+	<h3 class="subsubtitle method-title">signUpInBackground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)signUpInBackground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signUpInBackgroundWithBlock:" title="signUpInBackgroundWithBlock:"></a>
+	<h3 class="subsubtitle method-title">signUpInBackgroundWithBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)signUpInBackgroundWithBlock:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signUpInBackgroundWithTarget:selector:" title="signUpInBackgroundWithTarget:selector:"></a>
+	<h3 class="subsubtitle method-title">signUpInBackgroundWithTarget:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs up the <a href="#//api/name/user">user</a> asynchronously. Make sure that <a href="#//api/name/password">password</a> and <a href="#//api/name/username">username</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> isn&rsquo;t already taken.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)signUpInBackgroundWithTarget:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchrounous request is complete. It should have the following signature: (void)callbackWithResult:(NSNumber *)result error:(NSError **)error. error will be nil on success and set if there was an error. [result boolValue] will tell you whether the call succeeded or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFUser.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

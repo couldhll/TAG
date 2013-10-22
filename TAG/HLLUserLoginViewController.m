@@ -9,6 +9,7 @@
 #import "HLLUserLoginViewController.h"
 
 #import "HLLTAGLoginViewController.h"
+#import "HLLUserRegisterViewController.h"
 
 #import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
@@ -78,7 +79,8 @@
 
 - (IBAction)tagRegisterButtonPressed:(id)sender
 {
-    
+    HLLUserRegisterViewController *userRegisterViewController = [[HLLUserRegisterViewController alloc] initWithNibName:@"HLLUserRegisterViewController" bundle:nil];
+    [self.navigationController pushViewController:userRegisterViewController animated:YES];
 }
 
 - (IBAction)tagLoginButtonPressed:(id)sender

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+Common.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(Common)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>
+			
+			<NodeRef refid="529"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/guidString</TokenIdentifier>
+			<Abstract type="html">	@brief	获取GUID字符串</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)guidString</Declaration>
+			
+			<ReturnValue><Abstract type="html">GUID字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/guidString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/versionStringCompare:</TokenIdentifier>
+			<Abstract type="html">	@brief	比较版本字符串</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSComparisonResult)versionStringCompare:(NSString *)other</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>other</Name>
+					<Abstract type="html">需要对比的版本号</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSOrderedAscending 表示大于指定版本 NSOrderedSame 表示两个版本相同  NSOrderedDescending 表示小于指定版本</Abstract></ReturnValue>
+			<Anchor>//api/name/versionStringCompare:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/sha1String</TokenIdentifier>
+			<Abstract type="html">	@brief	使用SHA1算法进行签名</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)sha1String</Declaration>
+			
+			<ReturnValue><Abstract type="html">签名后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/sha1String</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/md5HexDigestString</TokenIdentifier>
+			<Abstract type="html">	@brief	使用MD5算法进行签名（16位）</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)md5HexDigestString</Declaration>
+			
+			<ReturnValue><Abstract type="html">签名后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/md5HexDigestString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/md5DHexDigestString</TokenIdentifier>
+			<Abstract type="html">	@brief	使用MD5算法进行签名（32位）</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)md5DHexDigestString</Declaration>
+			
+			<ReturnValue><Abstract type="html">签名后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/md5DHexDigestString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/hmacSha1StringWithKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	使用HMac-SHA1进行签名</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)hmacSha1StringWithKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">签名后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/hmacSha1StringWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/dataUsinghmacSha1StringWithKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	使用HMac-SHA1进行签名</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataUsinghmacSha1StringWithKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">签名后的数据</Abstract></ReturnValue>
+			<Anchor>//api/name/dataUsinghmacSha1StringWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/isURLString</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否为URL字符串</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isURLString</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES：是 NO：否</Abstract></ReturnValue>
+			<Anchor>//api/name/isURLString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/containURL</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否包含URL字符串</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 是 NO 否</Abstract></ReturnValue>
+			<Anchor>//api/name/containURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/urlEncode:</TokenIdentifier>
+			<Abstract type="html">	@brief	URL编码</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)urlEncode:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码标准｀</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">编码后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/urlEncode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/urlDecode:</TokenIdentifier>
+			<Abstract type="html">	@brief	URL解码</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)urlDecode:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码标准</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">解码后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/urlDecode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/base64Encode:</TokenIdentifier>
+			<Abstract type="html">	@brief	BASE64编码</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)base64Encode:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码标准</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">编码后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/base64Encode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/base64Decode:</TokenIdentifier>
+			<Abstract type="html">	@brief	BASE64解码</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)base64Decode:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码标准</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">解码后字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/base64Decode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/pinyinString</TokenIdentifier>
+			<Abstract type="html">	@brief	取得汉字拼音字符串</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pinyinString</Declaration>
+			
+			<ReturnValue><Abstract type="html">拼音字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/pinyinString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/pinyinFirstLetter</TokenIdentifier>
+			<Abstract type="html">	@brief	取得第一个汉字的拼音首字母</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pinyinFirstLetter</Declaration>
+			
+			<ReturnValue><Abstract type="html">拼音首字母</Abstract></ReturnValue>
+			<Anchor>//api/name/pinyinFirstLetter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/hexValue</TokenIdentifier>
+			<Abstract type="html">	@brief	转换为16进制数</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (long long)hexValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">16进制数</Abstract></ReturnValue>
+			<Anchor>//api/name/hexValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/dataForHexString</TokenIdentifier>
+			<Abstract type="html">	@brief	转换16进制字符串为NSData</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataForHexString</Declaration>
+			
+			<ReturnValue><Abstract type="html">二进制数据对象</Abstract></ReturnValue>
+			<Anchor>//api/name/dataForHexString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Common)/dataUsingBase64Decode</TokenIdentifier>
+			<Abstract type="html">	@brief	使用Base64进行解码得到二进制数据对象</Abstract>
+			<DeclaredIn>NSString+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataUsingBase64Decode</Declaration>
+			
+			<ReturnValue><Abstract type="html">二进制数据对象</Abstract></ReturnValue>
+			<Anchor>//api/name/dataUsingBase64Decode</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSInstapaperBookmark.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSInstapaperBookmark</TokenIdentifier>
+			<Abstract type="html">	@brief	书签信息</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>
+			
+			<NodeRef refid="284"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setBookmarkId:</TokenIdentifier>
+			<Abstract type="html">	@brief	书签ID</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long bookmarkId</Declaration>
+			
+			
+			<Anchor>//api/name/bookmarkId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/bookmarkId</TokenIdentifier>
+			<Abstract type="html">	@brief	书签ID</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long bookmarkId</Declaration>
+			
+			
+			<Anchor>//api/name/bookmarkId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	地址</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/url</TokenIdentifier>
+			<Abstract type="html">	@brief	地址</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	标题</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/title</TokenIdentifier>
+			<Abstract type="html">	@brief	标题</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	描述</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/description</TokenIdentifier>
+			<Abstract type="html">	@brief	描述</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setTime:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/time</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setStarred:</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL starred</Declaration>
+			
+			
+			<Anchor>//api/name/starred</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/starred</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL starred</Declaration>
+			
+			
+			<Anchor>//api/name/starred</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setPrivateSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	私有源路径</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *privateSource</Declaration>
+			
+			
+			<Anchor>//api/name/privateSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/privateSource</TokenIdentifier>
+			<Abstract type="html">	@brief	私有源路径</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *privateSource</Declaration>
+			
+			
+			<Anchor>//api/name/privateSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setHash:</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hash</Declaration>
+			
+			
+			<Anchor>//api/name/hash</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/hash</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hash</Declaration>
+			
+			
+			<Anchor>//api/name/hash</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setProgress:</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/progress</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setProgressTimestamp:</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long progressTimestamp</Declaration>
+			
+			
+			<Anchor>//api/name/progressTimestamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/progressTimestamp</TokenIdentifier>
+			<Abstract type="html">	@brief	未知</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long progressTimestamp</Declaration>
+			
+			
+			<Anchor>//api/name/progressTimestamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperBookmark/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperBookmark/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSInstapaperBookmark/bookmarkWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建书签信息</Abstract>
+			<DeclaredIn>SSInstapaperBookmark.h</DeclaredIn>			
+			
+			<Declaration>+ (SSInstapaperBookmark *)bookmarkWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">书签信息</Abstract></ReturnValue>
+			<Anchor>//api/name/bookmarkWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

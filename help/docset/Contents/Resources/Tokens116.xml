@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GetMessageFromQQReq.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GetMessageFromQQReq</TokenIdentifier>
+			<Abstract type="html">GetMessageFromQQReq请求帮助类</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
+			
+			<NodeRef refid="116"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GetMessageFromQQReq/req</TokenIdentifier>
+			<Abstract type="html">创建一个GetMessageFromQQReq请求实例</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>+ (GetMessageFromQQReq *)req</Declaration>
+			
+			
+			<Anchor>//api/name/req</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Documentation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>TAG.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B211157E180FC99100254DBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B22640E61816454600F2A4A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

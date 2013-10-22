@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AGCustomShareViewToolbar.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AGCustomShareViewToolbar</TokenIdentifier>
+			<Abstract type="html">	@brief	自定义分享视图工具栏</Abstract>
+			<DeclaredIn>AGCustomShareViewToolbar.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomShareViewToolbar/selectedClients</TokenIdentifier>
+			<Abstract type="html">	@brief	获取选中分享平台列表</Abstract>
+			<DeclaredIn>AGCustomShareViewToolbar.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)selectedClients</Declaration>
+			
+			<ReturnValue><Abstract type="html">选中分享平台列表</Abstract></ReturnValue>
+			<Anchor>//api/name/selectedClients</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomShareViewToolbar/itemNumberOfTableView:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回表格的列表项数量</Abstract>
+			<DeclaredIn>AGCustomShareViewToolbar.m</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)itemNumberOfTableView:(CMHTableView *)tableView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">列表项数量</Abstract></ReturnValue>
+			<Anchor>//api/name/itemNumberOfTableView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AGCustomShareViewToolbar/tableView:itemForIndexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回列表项视图</Abstract>
+			<DeclaredIn>AGCustomShareViewToolbar.m</DeclaredIn>			
+			
+			<Declaration>- (UIView&lt;ICMHTableViewItem&gt; *)tableView:(CMHTableView *)tableView itemForIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">列表项视图</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:itemForIndexPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

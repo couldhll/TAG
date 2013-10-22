@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SSGooglePlusName.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusName</TokenIdentifier>
+			<Abstract type="html">	@brief	名字</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>
+			
+			<NodeRef refid="277"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setFormatted:</TokenIdentifier>
+			<Abstract type="html">	@brief	The full name of this person, including middle names, suffixes, etc.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *formatted</Declaration>
+			
+			
+			<Anchor>//api/name/formatted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/formatted</TokenIdentifier>
+			<Abstract type="html">	@brief	The full name of this person, including middle names, suffixes, etc.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *formatted</Declaration>
+			
+			
+			<Anchor>//api/name/formatted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setFamilyName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The family name (last name) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *familyName</Declaration>
+			
+			
+			<Anchor>//api/name/familyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/familyName</TokenIdentifier>
+			<Abstract type="html">	@brief	The family name (last name) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *familyName</Declaration>
+			
+			
+			<Anchor>//api/name/familyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setGivenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The given name (first name) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *givenName</Declaration>
+			
+			
+			<Anchor>//api/name/givenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/givenName</TokenIdentifier>
+			<Abstract type="html">	@brief	The given name (first name) of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *givenName</Declaration>
+			
+			
+			<Anchor>//api/name/givenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setMiddleName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The middle name of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *middleName</Declaration>
+			
+			
+			<Anchor>//api/name/middleName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/middleName</TokenIdentifier>
+			<Abstract type="html">	@brief	The middle name of this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *middleName</Declaration>
+			
+			
+			<Anchor>//api/name/middleName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setHonorificPrefix:</TokenIdentifier>
+			<Abstract type="html">	@brief	The honorific prefixes (such as &quot;Dr.&quot; or &quot;Mrs.&quot;) for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *honorificPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/honorificPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/honorificPrefix</TokenIdentifier>
+			<Abstract type="html">	@brief	The honorific prefixes (such as &quot;Dr.&quot; or &quot;Mrs.&quot;) for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *honorificPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/honorificPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusName/setHonorificSuffix:</TokenIdentifier>
+			<Abstract type="html">	@brief	The honorific suffixes (such as &quot;Jr.&quot;) for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *honorificSuffix</Declaration>
+			
+			
+			<Anchor>//api/name/honorificSuffix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusName/honorificSuffix</TokenIdentifier>
+			<Abstract type="html">	@brief	The honorific suffixes (such as &quot;Jr.&quot;) for this person.</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *honorificSuffix</Declaration>
+			
+			
+			<Anchor>//api/name/honorificSuffix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusName/nameWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建名字信息</Abstract>
+			<DeclaredIn>SSGooglePlusName.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusName *)nameWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">名字信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/nameWithResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

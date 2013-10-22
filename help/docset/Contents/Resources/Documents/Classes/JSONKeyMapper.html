@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONKeyMapper Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONKeyMapper Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/JSONToModelKeyBlock">&nbsp;&nbsp;&nbsp;&nbsp;JSONToModelKeyBlock</option>
+	
+	<option value="//api/name/modelToJSONKeyBlock">&nbsp;&nbsp;&nbsp;&nbsp;modelToJSONKeyBlock</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/mapperFromUnderscoreCaseToCamelCase">&nbsp;&nbsp;&nbsp;&nbsp;+ mapperFromUnderscoreCaseToCamelCase</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:</option>
+	
+	<option value="//api/name/initWithJSONToModelBlock:modelToJSONBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithJSONToModelBlock:modelToJSONBlock:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Name convertors">Name convertors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a key mapper">Creating a key mapper</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONToModelKeyBlock">JSONToModelKeyBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modelToJSONKeyBlock">modelToJSONKeyBlock</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapperFromUnderscoreCaseToCamelCase">mapperFromUnderscoreCaseToCamelCase</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:">initWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithJSONToModelBlock:modelToJSONBlock:">initWithJSONToModelBlock:modelToJSONBlock:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONKeyMapper Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONKeyMapper Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONKeyMapper.h<br />JSONKeyMapper.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><strong>You won&rsquo;t need to create or store instances of this class yourself.</strong> If you want your model
+to have different property names than the JSON feed keys, look below on how to
+make your model use a key mapper.</p>
+
+<p>For example if you consume JSON from twitter
+you get back underscore_case style key names. For example:</p>
+
+<pre>"profile_sidebar_border_color": "0094C2",
+"profile_background_tile": false,</pre>
+
+
+<p>To comply with Obj-C accepted camelCase property naming for your classes,
+you need to provide mapping between JSON keys and ObjC property names.</p>
+
+<p>In your model overwrite the +(JSONKeyMapper*)keyMapper method and provide a JSONKeyMapper
+instance to convert the key names for your model.</p>
+
+<p>If you need custom mapping it&rsquo;s as easy as:</p>
+
+<pre>
++(JSONKeyMapper*)keyMapper {
+&nbsp; return [[JSONKeyMapper&nbsp;alloc]&nbsp;initWithDictionary:@{@"crazy_JSON_name":@"myCamelCaseName"}];
+}
+</pre>
+
+
+<p>In case you want to handle underscore_case, <strong>use the predefined key mapper</strong>, like so:</p>
+
+<pre>
++(JSONKeyMapper*)keyMapper {
+&nbsp; return [JSONKeyMapper&nbsp;mapperFromUnderscoreCaseToCamelCase];
+}
+</pre>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Name convertors" name="task_Name convertors"></a>
+						<h3 class="subsubtitle task-title">Name convertors</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONToModelKeyBlock">&nbsp;&nbsp;JSONToModelKeyBlock</a></code>
+		<span class="tooltip"><p>Block, which takes in a JSON key and converts it to the corresponding property name</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modelToJSONKeyBlock">&nbsp;&nbsp;modelToJSONKeyBlock</a></code>
+		<span class="tooltip"><p>Block, which takes in a property name and converts it to the corresponding JSON key name</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a key mapper" name="task_Creating a key mapper"></a>
+						<h3 class="subsubtitle task-title">Creating a key mapper</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithJSONToModelBlock:modelToJSONBlock:">&ndash;&nbsp;initWithJSONToModelBlock:modelToJSONBlock:</a></code>
+		<span class="tooltip"><p>Creates a JSONKeyMapper instance, based on the two blocks you provide this initializer.
+The two parameters take in a JSONModelKeyMapBlock block:</p>
+
+<pre>NSString* (^JSONModelKeyMapBlock)(NSString* keyName)</pre>
+
+
+<p>The block takes in a string and returns the transformed (if at all) string.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:">&ndash;&nbsp;initWithDictionary:</a></code>
+		<span class="tooltip"><p>Creates a JSONKeyMapper instance, based on the mapping you provide
+in the map parameter. Use the JSON key names as keys, your <a href="../Classes/JSONModel.html">JSONModel</a>
+property names as values.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapperFromUnderscoreCaseToCamelCase">+&nbsp;mapperFromUnderscoreCaseToCamelCase</a></code>
+		<span class="tooltip"><p>Creates a JSONKeyMapper, which converts underscore_case to camelCase and vice versa.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONToModelKeyBlock" title="JSONToModelKeyBlock"></a>
+	<h3 class="subsubtitle method-title">JSONToModelKeyBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Block, which takes in a JSON key and converts it to the corresponding property name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONKeyMapper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/modelToJSONKeyBlock" title="modelToJSONKeyBlock"></a>
+	<h3 class="subsubtitle method-title">modelToJSONKeyBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Block, which takes in a property name and converts it to the corresponding JSON key name</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONKeyMapper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mapperFromUnderscoreCaseToCamelCase" title="mapperFromUnderscoreCaseToCamelCase"></a>
+	<h3 class="subsubtitle method-title">mapperFromUnderscoreCaseToCamelCase</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONKeyMapper, which converts underscore_case to camelCase and vice versa.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)mapperFromUnderscoreCaseToCamelCase</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONKeyMapper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:" title="initWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONKeyMapper instance, based on the mapping you provide
+in the map parameter. Use the JSON key names as keys, your <a href="../Classes/JSONModel.html">JSONModel</a>
+property names as values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithDictionary:(NSDictionary *)<em>map</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>map</em></dt>
+			<dd><p>map dictionary, in the format: <pre>@{@&ldquo;crazy_JSON_name&rdquo;:@&ldquo;myCamelCaseName&rdquo;}</pre></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>JSONKeyMapper instance</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONKeyMapper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithJSONToModelBlock:modelToJSONBlock:" title="initWithJSONToModelBlock:modelToJSONBlock:"></a>
+	<h3 class="subsubtitle method-title">initWithJSONToModelBlock:modelToJSONBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONKeyMapper instance, based on the two blocks you provide this initializer.
+The two parameters take in a JSONModelKeyMapBlock block:</p>
+
+<pre>NSString* (^JSONModelKeyMapBlock)(NSString* keyName)</pre>
+
+
+<p>The block takes in a string and returns the transformed (if at all) string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithJSONToModelBlock:(JSONModelKeyMapBlock)<em>toModel</em> modelToJSONBlock:(JSONModelKeyMapBlock)<em>toJSON</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>toModel</em></dt>
+			<dd><p>transforms JSON key name to your model property name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>toJSON</em></dt>
+			<dd><p>transforms your model property name to a JSON key</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONKeyMapper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FBLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FBLogger</TokenIdentifier>
+			<Abstract type="html">@class FBLogger</Abstract>
+			<DeclaredIn>FBLogger.h</DeclaredIn>
+			
+			<NodeRef refid="75"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
