@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBBaseRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBBaseRequest</TokenIdentifier>
+			<Abstract type="html">微博SDK所有请求类的基类</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			
+			<NodeRef refid="436"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WBBaseRequest/request</TokenIdentifier>
+			<Abstract type="html">返回一个 WBBaseRequest 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id)request</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBBaseRequest对象</Abstract></ReturnValue>
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1448 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PFTwitterUtils Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PFTwitterUtils Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/initializeWithConsumerKey:consumerSecret:">&nbsp;&nbsp;&nbsp;&nbsp;+ initializeWithConsumerKey:consumerSecret:</option>
+	
+	<option value="//api/name/isLinkedWithUser:">&nbsp;&nbsp;&nbsp;&nbsp;+ isLinkedWithUser:</option>
+	
+	<option value="//api/name/linkUser:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:</option>
+	
+	<option value="//api/name/linkUser:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:block:</option>
+	
+	<option value="//api/name/linkUser:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:target:selector:</option>
+	
+	<option value="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:twitterId:screenName:authToken:authTokenSecret:block:</option>
+	
+	<option value="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</option>
+	
+	<option value="//api/name/logInWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithBlock:</option>
+	
+	<option value="//api/name/logInWithTarget:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithTarget:selector:</option>
+	
+	<option value="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithTwitterId:screenName:authToken:authTokenSecret:block:</option>
+	
+	<option value="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</option>
+	
+	<option value="//api/name/twitter">&nbsp;&nbsp;&nbsp;&nbsp;+ twitter</option>
+	
+	<option value="//api/name/unlinkUser:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUser:</option>
+	
+	<option value="//api/name/unlinkUser:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUser:error:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:block:</option>
+	
+	<option value="//api/name/unlinkUserInBackground:target:selector:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlinkUserInBackground:target:selector:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Interacting With Twitter">Interacting With Twitter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Logging In &amp; Creating Twitter-Linked Users">Logging In &amp; Creating Twitter-Linked Users</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Linking Users with Twitter">Linking Users with Twitter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Unlinking Users from Twitter">Unlinking Users from Twitter</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initializeWithConsumerKey:consumerSecret:">initializeWithConsumerKey:consumerSecret:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLinkedWithUser:">isLinkedWithUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:">linkUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:block:">linkUser:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:target:selector:">linkUser:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:">linkUser:twitterId:screenName:authToken:authTokenSecret:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:">linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithBlock:">logInWithBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithTarget:selector:">logInWithTarget:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:">logInWithTwitterId:screenName:authToken:authTokenSecret:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:">logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/twitter">twitter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUser:">unlinkUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUser:error:">unlinkUser:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:">unlinkUserInBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:block:">unlinkUserInBackground:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlinkUserInBackground:target:selector:">unlinkUserInBackground:target:selector:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PFTwitterUtils Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PFTwitterUtils Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PFTwitterUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides utility functions for working with Twitter in a <a href="../Classes/Parse.html">Parse</a> application.</p>
+
+<p>This class is currently for iOS only.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Interacting With Twitter" name="task_Interacting With Twitter"></a>
+						<h3 class="subsubtitle task-title">Interacting With Twitter</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/twitter">+&nbsp;twitter</a></code>
+		<span class="tooltip"><p>Gets the instance of the Twitter object that <a href="../Classes/Parse.html">Parse</a> uses.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initializeWithConsumerKey:consumerSecret:">+&nbsp;initializeWithConsumerKey:consumerSecret:</a></code>
+		<span class="tooltip"><p>Initializes the Twitter singleton. You must invoke this in order to use the Twitter functionality in <a href="../Classes/Parse.html">Parse</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+		<span class="tooltip"><p>Whether the user has their account linked to Twitter.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Logging In &amp; Creating Twitter-Linked Users" name="task_Logging In &amp; Creating Twitter-Linked Users"></a>
+						<h3 class="subsubtitle task-title">Logging In &amp; Creating Twitter-Linked Users</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithBlock:">+&nbsp;logInWithBlock:</a></code>
+		<span class="tooltip"><p>Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithTarget:selector:">+&nbsp;logInWithTarget:selector:</a></code>
+		<span class="tooltip"><p>Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>. The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> *)user error:(NSError **)error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:">+&nbsp;logInWithTwitterId:screenName:authToken:authTokenSecret:block:</a></code>
+		<span class="tooltip"><p>Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:">+&nbsp;logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</a></code>
+		<span class="tooltip"><p>Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> <em>)user error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Linking Users with Twitter" name="task_Linking Users with Twitter"></a>
+						<h3 class="subsubtitle task-title">Linking Users with Twitter</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:">+&nbsp;linkUser:</a></code>
+		<span class="tooltip"><p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:block:">+&nbsp;linkUser:block:</a></code>
+		<span class="tooltip"><p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:target:selector:">+&nbsp;linkUser:target:selector:</a></code>
+		<span class="tooltip"><p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:">+&nbsp;linkUser:twitterId:screenName:authToken:authTokenSecret:block:</a></code>
+		<span class="tooltip"><p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:">+&nbsp;linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</a></code>
+		<span class="tooltip"><p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Unlinking Users from Twitter" name="task_Unlinking Users from Twitter"></a>
+						<h3 class="subsubtitle task-title">Unlinking Users from Twitter</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUser:">+&nbsp;unlinkUser:</a></code>
+		<span class="tooltip"><p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a Twitter account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUser:error:">+&nbsp;unlinkUser:error:</a></code>
+		<span class="tooltip"><p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a Twitter account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:">+&nbsp;unlinkUserInBackground:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a Twitter account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a Twitter account.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlinkUserInBackground:target:selector:">+&nbsp;unlinkUserInBackground:target:selector:</a></code>
+		<span class="tooltip"><p>Makes an asynchronous request to unlink a user from a Twitter account.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initializeWithConsumerKey:consumerSecret:" title="initializeWithConsumerKey:consumerSecret:"></a>
+	<h3 class="subsubtitle method-title">initializeWithConsumerKey:consumerSecret:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the Twitter singleton. You must invoke this in order to use the Twitter functionality in <a href="../Classes/Parse.html">Parse</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)initializeWithConsumerKey:(NSString *)<em>consumerKey</em> consumerSecret:(NSString *)<em>consumerSecret</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>consumerKey</em></dt>
+			<dd><p>Your Twitter application&rsquo;s consumer key.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>consumerSecret</em></dt>
+			<dd><p>Your Twitter application&rsquo;s consumer secret.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="subsubtitle method-title">isLinkedWithUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether the user has their account linked to Twitter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to check for a Twitter link. The user must be logged in on this device.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>True if the user has their account linked to Twitter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:" title="linkUser:"></a>
+	<h3 class="subsubtitle method-title">linkUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to Twitter.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:block:" title="linkUser:block:"></a>
+	<h3 class="subsubtitle method-title">linkUser:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(BOOL <em>success, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:target:selector:" title="linkUser:target:selector:"></a>
+	<h3 class="subsubtitle method-title">linkUser:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. This method delegates to Twitter to authenticate
+the user, and then automatically links the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchrounous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:" title="linkUser:twitterId:screenName:authToken:authTokenSecret:block:"></a>
+	<h3 class="subsubtitle method-title">linkUser:twitterId:screenName:authToken:authTokenSecret:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> twitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>twitterId</em></dt>
+			<dd><p>The id of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>screenName</em></dt>
+			<dd><p>The screen name of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authToken</em></dt>
+			<dd><p>The auth token for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authTokenSecret</em></dt>
+			<dd><p>The auth token secret for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(BOOL <em>success, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:" title="linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:"></a>
+	<h3 class="subsubtitle method-title">linkUser:twitterId:screenName:authToken:authTokenSecret:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Links Twitter to an existing <a href="../Classes/PFUser.html">PFUser</a>. Allows you to handle user login to Twitter, then provide authentication
+data to link the account to the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (NSNumber <em>)result error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)linkUser:(PFUser *)<em>user</em> twitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to link to Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>twitterId</em></dt>
+			<dd><p>The id of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>screenName</em></dt>
+			<dd><p>The screen name of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authToken</em></dt>
+			<dd><p>The auth token for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authTokenSecret</em></dt>
+			<dd><p>The auth token secret for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithBlock:" title="logInWithBlock:"></a>
+	<h3 class="subsubtitle method-title">logInWithBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithBlock:(PFUserResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(<a href="../Classes/PFUser.html">PFUser</a> <em>user, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithTarget:selector:" title="logInWithTarget:selector:"></a>
+	<h3 class="subsubtitle method-title">logInWithTarget:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using Twitter. This method delegates to Twitter to authenticate
+the user, and then automatically logs in (or creates, in the case where it is a new user)
+a <a href="../Classes/PFUser.html">PFUser</a>. The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> *)user error:(NSError **)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithTarget:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchrounous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:" title="logInWithTwitterId:screenName:authToken:authTokenSecret:block:"></a>
+	<h3 class="subsubtitle method-title">logInWithTwitterId:screenName:authToken:authTokenSecret:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithTwitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> block:(PFUserResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>twitterId</em></dt>
+			<dd><p>The id of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>screenName</em></dt>
+			<dd><p>The screen name of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authToken</em></dt>
+			<dd><p>The auth token for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authTokenSecret</em></dt>
+			<dd><p>The auth token secret for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature:
+(<a href="../Classes/PFUser.html">PFUser</a> <em>user, NSError </em>error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:" title="logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:"></a>
+	<h3 class="subsubtitle method-title">logInWithTwitterId:screenName:authToken:authTokenSecret:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication
+data to log in (or create, in the case where it is a new user) the <a href="../Classes/PFUser.html">PFUser</a>.
+The selector for the callback should look like: (<a href="../Classes/PFUser.html">PFUser</a> <em>)user error:(NSError </em>)error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInWithTwitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>twitterId</em></dt>
+			<dd><p>The id of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>screenName</em></dt>
+			<dd><p>The screen name of the Twitter user being linked</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authToken</em></dt>
+			<dd><p>The auth token for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authTokenSecret</em></dt>
+			<dd><p>The auth token secret for the user&rsquo;s session</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchronous request is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/twitter" title="twitter"></a>
+	<h3 class="subsubtitle method-title">twitter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the instance of the Twitter object that <a href="../Classes/Parse.html">Parse</a> uses.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PF_Twitter *)twitter</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The Twitter instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUser:" title="unlinkUser:"></a>
+	<h3 class="subsubtitle method-title">unlinkUser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a Twitter account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)unlinkUser:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from Twitter.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the unlink was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUser:error:" title="unlinkUser:error:"></a>
+	<h3 class="subsubtitle method-title">unlinkUser:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unlinks the <a href="../Classes/PFUser.html">PFUser</a> from a Twitter account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)unlinkUser:(PFUser *)<em>user</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>Error object to set on error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns true if the unlink was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:" title="unlinkUserInBackground:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a Twitter account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from Twitter.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a Twitter account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em> block:(PFBooleanResultBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from Twitter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:target:selector:" title="unlinkUserInBackground:target:selector:"></a>
+	<h3 class="subsubtitle method-title">unlinkUserInBackground:target:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes an asynchronous request to unlink a user from a Twitter account.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(PFUser *)<em>user</em> target:(id)<em>target</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>User to unlink from Twitter</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>target</em></dt>
+			<dd><p>Target object for the selector</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>The selector that will be called when the asynchrounous request is complete.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PFTwitterUtils.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

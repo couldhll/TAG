@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSCRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSCRequest</TokenIdentifier>
+			<Abstract type="html">	@brief	请求协议</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>
+			
+			<NodeRef refid="629"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/account</TokenIdentifier>
+			<Abstract type="html">	@brief	获取登录帐号</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">登录帐号</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/addHeader:value:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加请求头参数</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)addHeader:(NSString *)header value:(NSString *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">参数头名称</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">参数值</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addHeader:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/get:parameters:userData:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	以GET方式进行数据提交</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)get:(NSString *)path parameters:(id&lt;ISSCParameters&gt;)parameters userData:(id)userData result:(void ( ^ ) ( NSHTTPURLResponse *response , NSData *responseData ))result fault:(void ( ^ ) ( NSError *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">提交路径</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">参数</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">附加数据</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调方法</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">错误回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/get:parameters:userData:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/post:parameters:userData:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	以POST方式进行数据提交</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)post:(NSString *)path parameters:(id&lt;ISSCParameters&gt;)parameters userData:(id)userData result:(void ( ^ ) ( NSHTTPURLResponse *response , NSData *responseData ))result fault:(void ( ^ ) ( NSError *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">提交路径</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">参数</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">附加数据</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调方法</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">错误回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/post:parameters:userData:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/multipartPost:parameters:userData:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	以POST方式并以multipart形式进行数据提交</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)multipartPost:(NSString *)path parameters:(id&lt;ISSCParameters&gt;)parameters userData:(id)userData result:(void ( ^ ) ( NSHTTPURLResponse *response , NSData *responseData ))result fault:(void ( ^ ) ( NSError *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">提交路径</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">参数</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">附加数据</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调方法</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">错误回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/multipartPost:parameters:userData:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/del:parameters:userData:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	以DELETE方式进行数据体检</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)del:(NSString *)path parameters:(id&lt;ISSCParameters&gt;)parameters userData:(id)userData result:(void ( ^ ) ( NSHTTPURLResponse *response , NSData *responseData ))result fault:(void ( ^ ) ( NSError *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">提交路径</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">参数</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">附加数据</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调方式</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">错误回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/del:parameters:userData:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/sendRequest:userData:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送请求</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendRequest:(NSMutableURLRequest *)request userData:(id)userData result:(void ( ^ ) ( NSHTTPURLResponse *response , NSData *responseData ))result fault:(void ( ^ ) ( NSError *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">请求对象</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">附加数据</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调方式</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">错误回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendRequest:userData:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCRequest/cancel</TokenIdentifier>
+			<Abstract type="html">	@brief	取消请求</Abstract>
+			<DeclaredIn>ISSCRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

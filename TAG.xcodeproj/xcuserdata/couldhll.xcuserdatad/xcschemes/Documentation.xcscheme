@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B22640E61816454600F2A4A5"
-               BuildableName = "Documentation"
-               BlueprintName = "Documentation"
+               BuildableName = "Document"
+               BlueprintName = "Document"
                ReferencedContainer = "container:TAG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -13,6 +13,7 @@
 
 #import "HLLComponent.h"
 #import "HLLModel.h"
+#import "HLLDataAPI.h"
 
 #import "HLLTracker.h"
 
@@ -22,6 +23,11 @@
 #define NOTIFICATION_OPENVIEWCONTROLLER @"OpenViewController"
 #define NOTIFICATION_CHANGELOGINSTATE @"ChangeLoginState"
 
+
+#pragma mark - Color
+
+#define APPLICATION_COLOR_BLUE HexRGB(0x174C9C)
+#define APPLICATION_COLOR_YELLOW HexRGB(0xFFE719)
 
 #pragma mark - Font
 

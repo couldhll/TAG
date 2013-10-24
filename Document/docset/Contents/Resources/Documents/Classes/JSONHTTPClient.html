@@ -1,0 +1,949 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONHTTPClient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONHTTPClient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getJSONFromURLWithString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getJSONFromURLWithString:completion:</option>
+	
+	<option value="//api/name/getJSONFromURLWithString:params:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getJSONFromURLWithString:params:completion:</option>
+	
+	<option value="//api/name/postJSONFromURLWithString:bodyData:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postJSONFromURLWithString:bodyData:completion:</option>
+	
+	<option value="//api/name/postJSONFromURLWithString:bodyString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postJSONFromURLWithString:bodyString:completion:</option>
+	
+	<option value="//api/name/postJSONFromURLWithString:params:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postJSONFromURLWithString:params:completion:</option>
+	
+	<option value="//api/name/requestHeaders">&nbsp;&nbsp;&nbsp;&nbsp;+ requestHeaders</option>
+	
+	<option value="//api/name/setCachingPolicy:">&nbsp;&nbsp;&nbsp;&nbsp;+ setCachingPolicy:</option>
+	
+	<option value="//api/name/setControlsNetworkIndicator:">&nbsp;&nbsp;&nbsp;&nbsp;+ setControlsNetworkIndicator:</option>
+	
+	<option value="//api/name/setDefaultTextEncoding:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultTextEncoding:</option>
+	
+	<option value="//api/name/setRequestContentType:">&nbsp;&nbsp;&nbsp;&nbsp;+ setRequestContentType:</option>
+	
+	<option value="//api/name/setTimeoutInSeconds:">&nbsp;&nbsp;&nbsp;&nbsp;+ setTimeoutInSeconds:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_HTTP Client configuration">HTTP Client configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Making asynchronious HTTP requests">Making asynchronious HTTP requests</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getJSONFromURLWithString:completion:">getJSONFromURLWithString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getJSONFromURLWithString:params:completion:">getJSONFromURLWithString:params:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postJSONFromURLWithString:bodyData:completion:">postJSONFromURLWithString:bodyData:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postJSONFromURLWithString:bodyString:completion:">postJSONFromURLWithString:bodyString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postJSONFromURLWithString:params:completion:">postJSONFromURLWithString:params:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestHeaders">requestHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCachingPolicy:">setCachingPolicy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setControlsNetworkIndicator:">setControlsNetworkIndicator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultTextEncoding:">setDefaultTextEncoding:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRequestContentType:">setRequestContentType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTimeoutInSeconds:">setTimeoutInSeconds:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONHTTPClient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONHTTPClient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONHTTPClient.h<br />JSONHTTPClient.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@discussion A very thin HTTP client that can do GET and POST HTTP requests.
+It fetches only JSON data and also deserializes it using NSJSONSerialization.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="HTTP Client configuration" name="task_HTTP Client configuration"></a>
+						<h3 class="subsubtitle task-title">HTTP Client configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestHeaders">+&nbsp;requestHeaders</a></code>
+		<span class="tooltip"><p>Returns a modifyable dictionary of the client&rsquo;s default HTTP headers.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultTextEncoding:">+&nbsp;setDefaultTextEncoding:</a></code>
+		<span class="tooltip"><p>Sets the default encoding of the request body.
+See NSStringEncoding for a list of supported encodings</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCachingPolicy:">+&nbsp;setCachingPolicy:</a></code>
+		<span class="tooltip"><p>Sets the policies for caching HTTP data
+See NSURLRequestCachePolicy for a list of the pre-defined policies</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTimeoutInSeconds:">+&nbsp;setTimeoutInSeconds:</a></code>
+		<span class="tooltip"><p>Sets the timeout for network calls</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setControlsNetworkIndicator:">+&nbsp;setControlsNetworkIndicator:</a></code>
+		<span class="tooltip"><p>A method to enable/disable automatic network indicator showing.
+Set to YES by default.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRequestContentType:">+&nbsp;setRequestContentType:</a></code>
+		<span class="tooltip"><p>A method to set the default conent type of the request body
+By default the content type is set to kContentTypeAutomatic
+which checks the body request and decides between &ldquo;application/json&rdquo;
+and &ldquo;application/x-www-form-urlencoded&rdquo;</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Making asynchronious HTTP requests" name="task_Making asynchronious HTTP requests"></a>
+						<h3 class="subsubtitle task-title">Making asynchronious HTTP requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getJSONFromURLWithString:completion:">+&nbsp;getJSONFromURLWithString:completion:</a></code>
+		<span class="tooltip"><p>Makes GET request to the given URL address and fetches a JSON response.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getJSONFromURLWithString:params:completion:">+&nbsp;getJSONFromURLWithString:params:completion:</a></code>
+		<span class="tooltip"><p>Makes GET request to the given URL address and fetches a JSON response. Sends the params as a query string variables.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postJSONFromURLWithString:params:completion:">+&nbsp;postJSONFromURLWithString:params:completion:</a></code>
+		<span class="tooltip"><p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postJSONFromURLWithString:bodyString:completion:">+&nbsp;postJSONFromURLWithString:bodyString:completion:</a></code>
+		<span class="tooltip"><p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postJSONFromURLWithString:bodyData:completion:">+&nbsp;postJSONFromURLWithString:bodyData:completion:</a></code>
+		<span class="tooltip"><p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getJSONFromURLWithString:completion:" title="getJSONFromURLWithString:completion:"></a>
+	<h3 class="subsubtitle method-title">getJSONFromURLWithString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes GET request to the given URL address and fetches a JSON response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getJSONFromURLWithString:(NSString *)<em>urlString</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getJSONFromURLWithString:params:completion:" title="getJSONFromURLWithString:params:completion:"></a>
+	<h3 class="subsubtitle method-title">getJSONFromURLWithString:params:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes GET request to the given URL address and fetches a JSON response. Sends the params as a query string variables.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getJSONFromURLWithString:(NSString *)<em>urlString</em> params:(NSDictionary *)<em>params</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>a dictionary of key / value pairs to be send as variables to the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postJSONFromURLWithString:bodyData:completion:" title="postJSONFromURLWithString:bodyData:completion:"></a>
+	<h3 class="subsubtitle method-title">postJSONFromURLWithString:bodyData:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postJSONFromURLWithString:(NSString *)<em>urlString</em> bodyData:(NSData *)<em>bodyData</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyData</em></dt>
+			<dd><p>the body of the POST request as an NSData object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postJSONFromURLWithString:bodyString:completion:" title="postJSONFromURLWithString:bodyString:completion:"></a>
+	<h3 class="subsubtitle method-title">postJSONFromURLWithString:bodyString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postJSONFromURLWithString:(NSString *)<em>urlString</em> bodyString:(NSString *)<em>bodyString</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyString</em></dt>
+			<dd><p>the body of the POST request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postJSONFromURLWithString:params:completion:" title="postJSONFromURLWithString:params:completion:"></a>
+	<h3 class="subsubtitle method-title">postJSONFromURLWithString:params:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postJSONFromURLWithString:(NSString *)<em>urlString</em> params:(NSDictionary *)<em>params</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>a dictionary of key / value pairs to be send as variables to the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestHeaders" title="requestHeaders"></a>
+	<h3 class="subsubtitle method-title">requestHeaders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a modifyable dictionary of the client&rsquo;s default HTTP headers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSMutableDictionary *)requestHeaders</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A mutable dictionary of pairs &ndash; HTTP header names and values.
+@discussion You can use the result to modify the http client headers like so:</p>
+
+<pre>
+NSMutableDictionary* headers = [[JSONHTTPClient requestHeaders]](#//api/name/requestHeaders);
+headers[@"APIToken"] = @"MySecretTokenValue";
+</pre>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCachingPolicy:" title="setCachingPolicy:"></a>
+	<h3 class="subsubtitle method-title">setCachingPolicy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the policies for caching HTTP data
+See NSURLRequestCachePolicy for a list of the pre-defined policies</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setCachingPolicy:(NSURLRequestCachePolicy)<em>policy</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>policy</em></dt>
+			<dd><p>the caching policy</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setControlsNetworkIndicator:" title="setControlsNetworkIndicator:"></a>
+	<h3 class="subsubtitle method-title">setControlsNetworkIndicator:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A method to enable/disable automatic network indicator showing.
+Set to YES by default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setControlsNetworkIndicator:(BOOL)<em>doesControlIndicator</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>doesControlIndicator</em></dt>
+			<dd><p>if YES, the library shows and hides the
+system network indicator automatically on begin and end of
+network operations</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultTextEncoding:" title="setDefaultTextEncoding:"></a>
+	<h3 class="subsubtitle method-title">setDefaultTextEncoding:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the default encoding of the request body.
+See NSStringEncoding for a list of supported encodings</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultTextEncoding:(NSStringEncoding)<em>encoding</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encoding</em></dt>
+			<dd><p>text encoding constant</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRequestContentType:" title="setRequestContentType:"></a>
+	<h3 class="subsubtitle method-title">setRequestContentType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A method to set the default conent type of the request body
+By default the content type is set to kContentTypeAutomatic
+which checks the body request and decides between &ldquo;application/json&rdquo;
+and &ldquo;application/x-www-form-urlencoded&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setRequestContentType:(NSString *)<em>contentTypeString</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTimeoutInSeconds:" title="setTimeoutInSeconds:"></a>
+	<h3 class="subsubtitle method-title">setTimeoutInSeconds:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the timeout for network calls</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setTimeoutInSeconds:(int)<em>seconds</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seconds</em></dt>
+			<dd><p>the amount of seconds to wait before considering the call failed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

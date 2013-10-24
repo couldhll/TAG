@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TAGContainerOpenerNotifier.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TAGContainerOpenerNotifier</TokenIdentifier>
+			<Abstract type="html">A class that implements this protocol will receive a notification when a
+container is available for use. Developers can pass an instance of a class that implements
+this protocol to
+TAGContainerOpener::openContainerWithId:tagManager:openType:timeout:notifier:</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>
+			
+			<NodeRef refid="703"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TAGContainerOpenerNotifier/containerAvailable:</TokenIdentifier>
+			<Abstract type="html">Called when the container is available.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>			
+			
+			<Declaration>- (void)containerAvailable:(TAGContainer *)container</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">The requested container.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/containerAvailable:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

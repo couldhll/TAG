@@ -20,6 +20,34 @@
                ReferencedContainer = "container:TAG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B2BC0FDE17EEECA50071036D"
+               BuildableName = "TAGTests.xctest"
+               BlueprintName = "TAGTests"
+               ReferencedContainer = "container:TAG.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B211157E180FC99100254DBA"
+               BuildableName = "TAGLogicTests.xctest"
+               BlueprintName = "TAGLogicTests"
+               ReferencedContainer = "container:TAG.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

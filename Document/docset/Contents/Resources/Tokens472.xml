@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WeiYun_get_photo_list_GET.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_get_photo_list_GET</TokenIdentifier>
+			<Abstract type="html">\brief 获取照片列表</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			
+			<NodeRef refid="472"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_get_photo_list_GET/setParam_offset:</TokenIdentifier>
+			<Abstract type="html">所有文件数目的偏移，从0开始计数</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_offset</Declaration>
+			
+			
+			<Anchor>//api/name/param_offset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_get_photo_list_GET/param_offset</TokenIdentifier>
+			<Abstract type="html">所有文件数目的偏移，从0开始计数</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_offset</Declaration>
+			
+			
+			<Anchor>//api/name/param_offset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_get_photo_list_GET/setParam_number:</TokenIdentifier>
+			<Abstract type="html">请求文件的数量，取值1-200</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_number</Declaration>
+			
+			
+			<Anchor>//api/name/param_number</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_get_photo_list_GET/param_number</TokenIdentifier>
+			<Abstract type="html">请求文件的数量，取值1-200</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_number</Declaration>
+			
+			
+			<Anchor>//api/name/param_number</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

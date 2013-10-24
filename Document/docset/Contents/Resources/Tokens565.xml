@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIDevice+MACAddress.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(MACAddress)</TokenIdentifier>
+			<Abstract type="html">@brief [UIDevice][0] MAC address extension, useful to make unique identifier.
+[0]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIDevice_Class/Reference/UIDevice.html</Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>
+			
+			<NodeRef refid="565"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

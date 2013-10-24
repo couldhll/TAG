@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		B22640E61816454600F2A4A5 /* Documentation */ = {
+		B22640E61816454600F2A4A5 /* Document */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = B22640E91816454700F2A4A5 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildConfigurationList = B22640E91816454700F2A4A5 /* Build configuration list for PBXAggregateTarget "Document" */;
 			buildPhases = (
 				B22640EA181645AB00F2A4A5 /* Documentation */,
 			);
 			dependencies = (
 			);
-			name = Documentation;
+			name = Document;
 			productName = Documentation;
 		};
 /* End PBXAggregateTarget section */
@@ -83,16 +83,16 @@
 		B2111582180FC99100254DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BC0FC217EEECA40071036D /* UIKit.framework */; };
 		B2111588180FC99200254DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2111586180FC99200254DBA /* InfoPlist.strings */; };
 		B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111589180FC99200254DBA /* TAGLogicTests.m */; };
-		B2111591180FCB0F00254DBA /* UIFont+HLLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111579180FC0D800254DBA /* UIFont+HLLFont.m */; };
+		B2111591180FCB0F00254DBA /* UIFont+HLLFontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */; };
 		B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */; };
 		B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22640ED1816635E00F2A4A5 /* HLLUserRegisterViewController.m */; };
 		B22640F01816635E00F2A4A5 /* HLLUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22640EE1816635E00F2A4A5 /* HLLUserRegisterViewController.xib */; };
 		B22A490E17FC534100DDE92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22A491017FC534100DDE92E /* Localizable.strings */; };
 		B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C0251814FD39007A3F5D /* HLLUserModel.m */; };
 		B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */; };
+		B23C01701817BCA300A088E2 /* HLLDataAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00BB180796AD000259B4 /* HLLDataAPITests.m */; };
 		B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */; };
 		B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */; };
-		B23D00BC180796AD000259B4 /* HLLAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00BB180796AD000259B4 /* HLLAPITests.m */; };
 		B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00C11807BEC5000259B4 /* HLLUserFriendViewController.m */; };
 		B23D00C41807BEC5000259B4 /* HLLUserFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00C21807BEC5000259B4 /* HLLUserFriendViewController.xib */; };
 		B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */ = {isa = PBXBuildFile; fileRef = B243925B17EFEC34002FD388 /* RRLocalizableString.m */; };
@@ -111,7 +111,7 @@
 		B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */; };
 		B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */; };
 		B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */; };
-		B29AB58517FEF003007D884E /* HLLAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLAPI.m */; };
+		B29AB58517FEF003007D884E /* HLLDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLDataAPI.m */; };
 		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
 		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
@@ -141,18 +141,9 @@
 		B2C105B61808F49C00238046 /* HLLNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C105B41808F49C00238046 /* HLLNavigationController.xib */; };
 		B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C105B9180BE37D00238046 /* HLLBorderButton.m */; };
 		B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C105BC180BEF6300238046 /* HLLSelectButton.m */; };
+		B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D647581818C15E005E353E /* HLLErrorModel.m */; };
 		B2EBB0F71816225F00805621 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EBB0F61816225F00805621 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B211158F180FCA9A00254DBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B2BC0FB317EEECA40071036D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B2BC0FBA17EEECA40071036D;
-			remoteInfo = TAG;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F6C490C85894EA988EA9736 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,7 +219,7 @@
 		B2111575180FBBF300254DBA /* UIFont+HLLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HLLFont.h"; path = "UIFont+HLLFont/UIFont+HLLFont.h"; sourceTree = "<group>"; };
 		B2111576180FBBF300254DBA /* UIFont+HLLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFont.m"; path = "UIFont+HLLFont/UIFont+HLLFont.m"; sourceTree = "<group>"; };
 		B2111578180FBC2000254DBA /* HLLMacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HLLMacroDefinition.h; path = HLLMacroDefinition/HLLMacroDefinition.h; sourceTree = "<group>"; };
-		B2111579180FC0D800254DBA /* UIFont+HLLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFont.m"; path = "../TAGTests/UIFont+HLLFont.m"; sourceTree = "<group>"; };
+		B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFontTests.m"; path = "../TAGTests/UIFont+HLLFontTests.m"; sourceTree = "<group>"; };
 		B211157F180FC99100254DBA /* TAGLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2111585180FC99200254DBA /* TAGLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAGLogicTests-Info.plist"; sourceTree = "<group>"; };
 		B2111587180FC99200254DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -255,9 +246,10 @@
 		B230C0251814FD39007A3F5D /* HLLUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserModel.m; sourceTree = "<group>"; };
 		B230C028181514C4007A3F5D /* HLLThirdAuthorizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLThirdAuthorizationModel.h; sourceTree = "<group>"; };
 		B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLThirdAuthorizationModel.m; sourceTree = "<group>"; };
+		B23C01731817BF9D00A088E2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductDetailViewController.xib; sourceTree = "<group>"; };
 		B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTAGLoginViewController.xib; sourceTree = "<group>"; };
-		B23D00BB180796AD000259B4 /* HLLAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLAPITests.m; sourceTree = "<group>"; };
+		B23D00BB180796AD000259B4 /* HLLDataAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLLDataAPITests.m; path = ../TAGTests/HLLDataAPITests.m; sourceTree = "<group>"; };
 		B23D00C01807BEC5000259B4 /* HLLUserFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserFriendViewController.h; sourceTree = "<group>"; };
 		B23D00C11807BEC5000259B4 /* HLLUserFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserFriendViewController.m; sourceTree = "<group>"; };
 		B23D00C21807BEC5000259B4 /* HLLUserFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserFriendViewController.xib; sourceTree = "<group>"; };
@@ -287,8 +279,8 @@
 		B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductListViewController.xib; sourceTree = "<group>"; };
 		B29AB57D17FE924B007D884E /* HLLTAGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTAGLoginViewController.h; sourceTree = "<group>"; };
 		B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTAGLoginViewController.m; sourceTree = "<group>"; };
-		B29AB58317FEF003007D884E /* HLLAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLAPI.h; sourceTree = "<group>"; };
-		B29AB58417FEF003007D884E /* HLLAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLAPI.m; sourceTree = "<group>"; };
+		B29AB58317FEF003007D884E /* HLLDataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataAPI.h; sourceTree = "<group>"; };
+		B29AB58417FEF003007D884E /* HLLDataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPI.m; sourceTree = "<group>"; };
 		B29AB59617FFFD25007D884E /* HLLUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserLoginViewController.h; sourceTree = "<group>"; };
 		B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserLoginViewController.m; sourceTree = "<group>"; };
 		B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserLoginViewController.xib; sourceTree = "<group>"; };
@@ -323,6 +315,8 @@
 		B2C105BB180BEF6300238046 /* HLLSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSelectButton.h; sourceTree = "<group>"; };
 		B2C105BC180BEF6300238046 /* HLLSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSelectButton.m; sourceTree = "<group>"; };
 		B2C105BF180BF13E00238046 /* HLLAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLAppConfig.h; sourceTree = "<group>"; };
+		B2D647571818C15E005E353E /* HLLErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLErrorModel.h; sourceTree = "<group>"; };
+		B2D647581818C15E005E353E /* HLLErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLErrorModel.m; sourceTree = "<group>"; };
 		B2EBB0F61816225F00805621 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Crashlytics/Crashlytics.framework; sourceTree = "<group>"; };
 		B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2F8C7FB17FE5099001C7DCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -597,7 +591,8 @@
 			isa = PBXGroup;
 			children = (
 				B2111589180FC99200254DBA /* TAGLogicTests.m */,
-				B2111579180FC0D800254DBA /* UIFont+HLLFont.m */,
+				B23D00BB180796AD000259B4 /* HLLDataAPITests.m */,
+				B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */,
 				B2111584180FC99200254DBA /* Supporting Files */,
 			);
 			path = TAGLogicTests;
@@ -635,6 +630,7 @@
 			isa = PBXGroup;
 			children = (
 				B22640F1181681DB00F2A4A5 /* HLLModel.h */,
+				B2D647561818C124005E353E /* Error */,
 				B230C0271814FED9007A3F5D /* User */,
 			);
 			name = Model;
@@ -752,8 +748,8 @@
 			isa = PBXGroup;
 			children = (
 				B230C0231814FC89007A3F5D /* Model */,
-				B29AB58317FEF003007D884E /* HLLAPI.h */,
-				B29AB58417FEF003007D884E /* HLLAPI.m */,
+				B29AB58317FEF003007D884E /* HLLDataAPI.h */,
+				B29AB58417FEF003007D884E /* HLLDataAPI.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -824,6 +820,7 @@
 		B2BC0FBD17EEECA40071036D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B23C01731817BF9D00A088E2 /* libPods.a */,
 				B2B4E5E617FE71A800636E16 /* libz.dylib */,
 				B208015517FE6C9F0044EA4F /* StoreKit.framework */,
 				B208015117FE557E0044EA4F /* MobileCoreServices.framework */,
@@ -889,7 +886,6 @@
 			children = (
 				B2BC0FEC17EEECA50071036D /* TAGTests.m */,
 				B2BC0FE717EEECA50071036D /* Supporting Files */,
-				B23D00BB180796AD000259B4 /* HLLAPITests.m */,
 			);
 			path = TAGTests;
 			sourceTree = "<group>";
@@ -914,6 +910,15 @@
 				B2C105BC180BEF6300238046 /* HLLSelectButton.m */,
 			);
 			name = Button;
+			sourceTree = "<group>";
+		};
+		B2D647561818C124005E353E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				B2D647571818C15E005E353E /* HLLErrorModel.h */,
+				B2D647581818C15E005E353E /* HLLErrorModel.m */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 		B2EBB0F81816227D00805621 /* Crashlytics */ = {
@@ -976,7 +981,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B2111590180FCA9A00254DBA /* PBXTargetDependency */,
 			);
 			name = TAGTests;
 			productName = TAGTests;
@@ -1026,7 +1030,7 @@
 				B2BC0FBA17EEECA40071036D /* TAG */,
 				B2BC0FDE17EEECA50071036D /* TAGTests */,
 				B211157E180FC99100254DBA /* TAGLogicTests */,
-				B22640E61816454600F2A4A5 /* Documentation */,
+				B22640E61816454600F2A4A5 /* Document */,
 			);
 		};
 /* End PBXProject section */
@@ -1128,7 +1132,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"CouldHll\";\ncompanyID=\"com.couldhll\";\ncompanyURL=\"http://www.couldhll.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"./help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"CouldHll\";\ncompanyID=\"com.couldhll\";\ncompanyURL=\"http://www.couldhll.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"./Document\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
 		};
 		B2C105B7180BC32C00238046 /* Auto Update Resource */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1165,7 +1169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2111591180FCB0F00254DBA /* UIFont+HLLFont.m in Sources */,
+				B23C01701817BCA300A088E2 /* HLLDataAPITests.m in Sources */,
+				B2111591180FCB0F00254DBA /* UIFont+HLLFontTests.m in Sources */,
 				B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1187,7 +1192,7 @@
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
-				B29AB58517FEF003007D884E /* HLLAPI.m in Sources */,
+				B29AB58517FEF003007D884E /* HLLDataAPI.m in Sources */,
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
 				B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
@@ -1200,6 +1205,7 @@
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
+				B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,19 +1214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BC0FED17EEECA50071036D /* TAGTests.m in Sources */,
-				B23D00BC180796AD000259B4 /* HLLAPITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B2111590180FCA9A00254DBA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B2BC0FBA17EEECA40071036D /* TAG */;
-			targetProxy = B211158F180FCA9A00254DBA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B208017617FE6F710044EA4F /* ShareSDKLocalizable.strings */ = {
@@ -1293,6 +1290,7 @@
 /* Begin XCBuildConfiguration section */
 		B211158D180FC99200254DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
@@ -1309,6 +1307,7 @@
 				);
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1317,6 +1316,7 @@
 		};
 		B211158E180FC99200254DBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
@@ -1329,6 +1329,7 @@
 				GCC_PREFIX_HEADER = "TAGLogicTests/TAGLogicTests-Prefix.pch";
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1591,6 +1592,7 @@
 		};
 		B2BC0FF417EEECA50071036D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
@@ -1605,6 +1607,30 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/CocoaSecurity\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
+					"\"${PODS_ROOT}/Headers/FoundationExtension\"",
+					"\"${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension\"",
+					"\"${PODS_ROOT}/Headers/GIKPopoverBackgroundView\"",
+					"\"${PODS_ROOT}/Headers/GMGridView\"",
+					"\"${PODS_ROOT}/Headers/GoogleAnalytics-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/OHAttributedLabel\"",
+					"\"${PODS_ROOT}/Headers/Parse\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/SevenSwitch\"",
+					"\"${PODS_ROOT}/Headers/UI7Kit\"",
+					"\"${PODS_ROOT}/Headers/UI7Kit/UI7Kit\"",
+					"\"${PODS_ROOT}/Headers/UIKitResources\"",
+					"\"${PODS_ROOT}/Headers/ViewDeck\"",
+					"\"${PODS_ROOT}/Headers/cdebug\"",
+					"$(SDKROOT)/usr/include/libz",
+				);
 				INFOPLIST_FILE = "TAGTests/TAGTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1614,6 +1640,7 @@
 		};
 		B2BC0FF517EEECA50071036D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
@@ -1624,6 +1651,30 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAG/TAG-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/CocoaSecurity\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
+					"\"${PODS_ROOT}/Headers/FoundationExtension\"",
+					"\"${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension\"",
+					"\"${PODS_ROOT}/Headers/GIKPopoverBackgroundView\"",
+					"\"${PODS_ROOT}/Headers/GMGridView\"",
+					"\"${PODS_ROOT}/Headers/GoogleAnalytics-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/OHAttributedLabel\"",
+					"\"${PODS_ROOT}/Headers/Parse\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
+					"\"${PODS_ROOT}/Headers/SevenSwitch\"",
+					"\"${PODS_ROOT}/Headers/UI7Kit\"",
+					"\"${PODS_ROOT}/Headers/UI7Kit/UI7Kit\"",
+					"\"${PODS_ROOT}/Headers/UIKitResources\"",
+					"\"${PODS_ROOT}/Headers/ViewDeck\"",
+					"\"${PODS_ROOT}/Headers/cdebug\"",
+					"$(SDKROOT)/usr/include/libz",
+				);
 				INFOPLIST_FILE = "TAGTests/TAGTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1643,13 +1694,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B22640E91816454700F2A4A5 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+		B22640E91816454700F2A4A5 /* Build configuration list for PBXAggregateTarget "Document" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B22640E71816454700F2A4A5 /* Debug */,
 				B22640E81816454700F2A4A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2BC0FB617EEECA40071036D /* Build configuration list for PBXProject "TAG" */ = {
 			isa = XCConfigurationList;

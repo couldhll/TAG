@@ -10,6 +10,7 @@
 
 @interface HLLUserRegisterViewController : UIViewController <UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField  *userEmailTextField;
 @property (strong, nonatomic) IBOutlet UITextField  *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField  *userPasswordTextField;
 @property (strong, nonatomic) IBOutlet UITextField  *userPasswordVerifyTextField;

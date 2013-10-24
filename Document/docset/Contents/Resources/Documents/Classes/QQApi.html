@@ -1,0 +1,717 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>QQApi Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">QQApi Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getAdItemArray">&nbsp;&nbsp;&nbsp;&nbsp;+ getAdItemArray</option>
+	
+	<option value="//api/name/getQQInstallURL">&nbsp;&nbsp;&nbsp;&nbsp;+ getQQInstallURL</option>
+	
+	<option value="//api/name/handleOpenURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleOpenURL:</option>
+	
+	<option value="//api/name/handleOpenURL:sourceApplication:annotation:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleOpenURL:sourceApplication:annotation:</option>
+	
+	<option value="//api/name/isQQInstalled">&nbsp;&nbsp;&nbsp;&nbsp;+ isQQInstalled</option>
+	
+	<option value="//api/name/isQQSupportApi">&nbsp;&nbsp;&nbsp;&nbsp;+ isQQSupportApi</option>
+	
+	<option value="//api/name/openQQApp">&nbsp;&nbsp;&nbsp;&nbsp;+ openQQApp</option>
+	
+	<option value="//api/name/sendMessage:">&nbsp;&nbsp;&nbsp;&nbsp;+ sendMessage:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAdItemArray">getAdItemArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getQQInstallURL">getQQInstallURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleOpenURL:">handleOpenURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleOpenURL:sourceApplication:annotation:">handleOpenURL:sourceApplication:annotation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isQQInstalled">isQQInstalled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isQQSupportApi">isQQSupportApi</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openQQApp">openQQApp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessage:">sendMessage:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="QQApi Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">QQApi Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">QQApi.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>\brief QQApi主要接口类。.</p>
+
+<p>可以通过其中的接口注册插件，发送、接收消息，打开QQ，测试QQ是否支持插件等</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessage:">+&nbsp;sendMessage:</a></code>
+		<span class="tooltip"><p>向QQ App发送消息</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleOpenURL:sourceApplication:annotation:">+&nbsp;handleOpenURL:sourceApplication:annotation:</a></code>
+		<span class="tooltip"><p>把URL反序列化成<code>QQApiMessage</code>对象，在AppDelegate的handleOpenURL中调用
+@return</p>
+
+<pre><code> 如果这是来自QQ的调用，一个QQApiMessage实例将被返回，否则返回nil。
+</code></pre>
+
+<p>@note</p>
+
+<pre><code> App应通过&lt;code&gt;QQApiMessage.type&lt;/code&gt;来判断具体消息类型以作出进一步的处理。
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleOpenURL:">+&nbsp;handleOpenURL:</a></code>
+		<span class="tooltip"><p>QQApi#<a href="#//api/name/handleOpenURL:sourceApplication:annotation:">handleOpenURL:sourceApplication:annotation:</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAdItemArray">+&nbsp;getAdItemArray</a></code>
+		<span class="tooltip"><p>获取广告数据列表
+@return</p>
+
+<pre><code> &lt;code&gt;QQApiAdItem&lt;/code&gt;数组
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isQQInstalled">+&nbsp;isQQInstalled</a></code>
+		<span class="tooltip"><p>检测是否已安装QQ
+@return</p>
+
+<pre><code> 如果QQ已安装则返回TRUE，否则返回FALSE
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isQQSupportApi">+&nbsp;isQQSupportApi</a></code>
+		<span class="tooltip"><p>检测QQ是否支持API调用
+@return</p>
+
+<pre><code> 如果当前安装QQ版本支持API调用则返回TRUE，否则返回FALSE
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getQQInstallURL">+&nbsp;getQQInstallURL</a></code>
+		<span class="tooltip"><p>获取QQ下载地址</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openQQApp">+&nbsp;openQQApp</a></code>
+		<span class="tooltip"><p>启动QQ
+@return</p>
+
+<pre><code> 成功返回TRUE，否则返回FALSE
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getAdItemArray" title="getAdItemArray"></a>
+	<h3 class="subsubtitle method-title">getAdItemArray</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取广告数据列表
+@return</p>
+
+<pre><code> &lt;code&gt;QQApiAdItem&lt;/code&gt;数组
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)getAdItemArray</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getQQInstallURL" title="getQQInstallURL"></a>
+	<h3 class="subsubtitle method-title">getQQInstallURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>获取QQ下载地址</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getQQInstallURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>如果App通过<code>QQApi#isQQInstalled</code>和<code>QQApi#isQQSupportApi</code>检测发现QQ没安装或当前版本QQ不支持API调用，可引导用户通过打开此链接下载最新版QQ。
+@return</p>
+
+<pre><code> iPhoneQQ下载地址
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleOpenURL:" title="handleOpenURL:"></a>
+	<h3 class="subsubtitle method-title">handleOpenURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>QQApi#<a href="#//api/name/handleOpenURL:sourceApplication:annotation:">handleOpenURL:sourceApplication:annotation:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (QQApiMessage *)handleOpenURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p>QQApi#<a href="#//api/name/handleOpenURL:sourceApplication:annotation:">+ handleOpenURL:sourceApplication:annotation:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleOpenURL:sourceApplication:annotation:" title="handleOpenURL:sourceApplication:annotation:"></a>
+	<h3 class="subsubtitle method-title">handleOpenURL:sourceApplication:annotation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>把URL反序列化成<code>QQApiMessage</code>对象，在AppDelegate的handleOpenURL中调用
+@return</p>
+
+<pre><code> 如果这是来自QQ的调用，一个QQApiMessage实例将被返回，否则返回nil。
+</code></pre>
+
+<p>@note</p>
+
+<pre><code> App应通过&lt;code&gt;QQApiMessage.type&lt;/code&gt;来判断具体消息类型以作出进一步的处理。
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (QQApiMessage *)handleOpenURL:(NSURL *)<em>url</em> sourceApplication:(NSString *)<em>source</em> annotation:(id)<em>annotation</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isQQInstalled" title="isQQInstalled"></a>
+	<h3 class="subsubtitle method-title">isQQInstalled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>检测是否已安装QQ
+@return</p>
+
+<pre><code> 如果QQ已安装则返回TRUE，否则返回FALSE
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isQQInstalled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isQQSupportApi" title="isQQSupportApi"></a>
+	<h3 class="subsubtitle method-title">isQQSupportApi</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>检测QQ是否支持API调用
+@return</p>
+
+<pre><code> 如果当前安装QQ版本支持API调用则返回TRUE，否则返回FALSE
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isQQSupportApi</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openQQApp" title="openQQApp"></a>
+	<h3 class="subsubtitle method-title">openQQApp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>启动QQ
+@return</p>
+
+<pre><code> 成功返回TRUE，否则返回FALSE
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)openQQApp</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessage:" title="sendMessage:"></a>
+	<h3 class="subsubtitle method-title">sendMessage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>向QQ App发送消息</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)sendMessage:(QQApiMessage *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>待发送的消息对象</p>
+
+<p>@return
+成功将消息发送给QQ是返回TRUE,否则返回FALSE</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">QQApi.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

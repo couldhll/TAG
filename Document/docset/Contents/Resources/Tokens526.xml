@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+JSONModelPropertyCompatibility.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(JSONModelPropertyCompatibility)</TokenIdentifier>
+			<Abstract type="html">Make all objects Optional compatible to avoid compiler warnings</Abstract>
+			<DeclaredIn>JSONModel.h</DeclaredIn>
+			
+			<NodeRef refid="526"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

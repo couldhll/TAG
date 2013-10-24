@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CMGridViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CMGridViewDelegate</TokenIdentifier>
+			<Abstract type="html">	表格视图委托</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>
+			
+			<NodeRef refid="585"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:itemRenderer:itemData:index:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格项渲染</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)gridView:(CMGridView *)gridView itemRenderer:(UIView&lt;ICMGridItemView&gt; *)itemRenderer itemData:(id)itemData index:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>itemRenderer</Name>
+					<Abstract type="html">表格项渲染器</Abstract>
+				</Parameter><Parameter>
+					<Name>itemData</Name>
+					<Abstract type="html">表格项数据</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">位置索引</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridView:itemRenderer:itemData:index:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图滚动</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)gridViewDidScroll:(CMGridView *)gridView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridViewDidScroll:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图停止拖动</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)gridViewDidEndDragging:(CMGridView *)gridView willDecelerate:(BOOL)decelerate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速运动标识，YES表示进行减速运动，否则不进行减速运动</Abstract>
+				</Parameter><Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridViewDidEndDragging:willDecelerate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:footerWillDisplay:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图页脚将要显示</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)gridView:(CMGridView *)gridView footerWillDisplay:(UITableViewCell *)cell</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>cell</Name>
+					<Abstract type="html">页脚项</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridView:footerWillDisplay:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:footerDidSelected:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图页脚被选中</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
+			
+			<Declaration>- (void)gridView:(CMGridView *)gridView footerDidSelected:(UITableViewCell *)cell</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>cell</Name>
+					<Abstract type="html">页脚项</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridView:footerDidSelected:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -8,13 +8,13 @@
 
 #import "HLLProductListViewController.h"
 
-#import "IIViewDeckController.h"
-#import "GMGridView.h"
-#import "SVPullToRefresh.h"
-
 #import "HLLProductDetailViewController.h"
 #import "HLLProductUnitView.h"
 #import "HLLProductFilterViewController.h"
+
+#import <ViewDeck/IIViewDeckController.h>
+#import <GMGridView/GMGridView.h>
+#import <SVPullToRefresh/SVPullToRefresh.h>
 
 #define GMGRIDVIEW_SPACING 5
 #define GMGRIDVIEW_SIZE CGSizeMake(100, 100)

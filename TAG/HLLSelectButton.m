@@ -13,7 +13,6 @@
 - (void)initialize
 {
     [super initialize];
-    
 }
 
 - (void)setSelected:(BOOL)selected
@@ -22,7 +21,7 @@
     
     if (selected)
     {
-        self.backgroundColor=HexRGB(0xFFE719);
+        self.backgroundColor=APPLICATION_COLOR_YELLOW;
         self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_BOLD];
     }
     else

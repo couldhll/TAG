@@ -9,6 +9,8 @@
 #ifndef TAG_HLLModel_h
 #define TAG_HLLModel_h
 
+#import "HLLErrorModel.h"
+
 #import "HLLUserModel.h"
 #import "HLLThirdAuthorizationModel.h"
 

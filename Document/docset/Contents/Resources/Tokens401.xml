@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TCAddOneBlogDic.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TCAddOneBlogDic</TokenIdentifier>
+			<Abstract type="html">\brief 发表日志的参数字典定义</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
+			
+			<NodeRef refid="401"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TCAddOneBlogDic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>+ (TCAddOneBlogDic *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/dictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddOneBlogDic/setParamTitle:</TokenIdentifier>
+			<Abstract type="html">日志标题（纯文本，最大长度128个字节，utf-8编码）。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
+			
+			
+			<Anchor>//api/name/paramTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddOneBlogDic/paramTitle</TokenIdentifier>
+			<Abstract type="html">日志标题（纯文本，最大长度128个字节，utf-8编码）。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
+			
+			
+			<Anchor>//api/name/paramTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddOneBlogDic/setParamContent:</TokenIdentifier>
+			<Abstract type="html">content 文章内容（html数据，最大长度100*1024个字节，utf-8编码）</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramContent</Declaration>
+			
+			
+			<Anchor>//api/name/paramContent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddOneBlogDic/paramContent</TokenIdentifier>
+			<Abstract type="html">content 文章内容（html数据，最大长度100*1024个字节，utf-8编码）</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramContent</Declaration>
+			
+			
+			<Anchor>//api/name/paramContent</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TAGFunctionCallTagHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TAGFunctionCallTagHandler</TokenIdentifier>
+			<Abstract type="html">A protocol implemented by the application to execute a custom tag.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>
+			
+			<NodeRef refid="705"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TAGFunctionCallTagHandler/execute:parameters:</TokenIdentifier>
+			<Abstract type="html">Handler is given the tag name and a dictionary of named parameters.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)execute:(NSString *)tagName parameters:(NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagName</Name>
+					<Abstract type="html">The same name by which the handler was registered. It
+is provided as a convenience to allow a single handler to be registered
+for multiple function call tags.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The named parameters for the function call. The
+dictionary may contain &lt;code&gt;NSString&lt;/code&gt;, &lt;code&gt;NSNumber&lt;/code&gt;
+(double, int, or boolean), &lt;code&gt;NSDictionary&lt;/code&gt;, or
+&lt;code&gt;NSArray&lt;/code&gt;.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The evaluated result, which can be an &lt;code&gt;NSString&lt;/code&gt; or
+&lt;code&gt;NSNumber&lt;/code&gt;.
+   </Abstract></ReturnValue>
+			<Anchor>//api/name/execute:parameters:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

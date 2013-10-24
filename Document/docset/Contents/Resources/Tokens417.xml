@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TencentImageMessageObjV1.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentImageMessageObjV1</TokenIdentifier>
+			<Abstract type="html">\brief 图片的消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			
+			<NodeRef refid="417"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setDataImage:</TokenIdentifier>
+			<Abstract type="html">图片数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataImage</Declaration>
+			
+			
+			<Anchor>//api/name/dataImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/dataImage</TokenIdentifier>
+			<Abstract type="html">图片数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataImage</Declaration>
+			
+			
+			<Anchor>//api/name/dataImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setDataThumbImage:</TokenIdentifier>
+			<Abstract type="html">缩略图的数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataThumbImage</Declaration>
+			
+			
+			<Anchor>//api/name/dataThumbImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/dataThumbImage</TokenIdentifier>
+			<Abstract type="html">缩略图的数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataThumbImage</Declaration>
+			
+			
+			<Anchor>//api/name/dataThumbImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSUrl:</TokenIdentifier>
+			<Abstract type="html">图片URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/sUrl</TokenIdentifier>
+			<Abstract type="html">图片URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSDescription:</TokenIdentifier>
+			<Abstract type="html">图片的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/sDescription</TokenIdentifier>
+			<Abstract type="html">图片的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSzImage:</TokenIdentifier>
+			<Abstract type="html">图片的size</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize szImage</Declaration>
+			
+			
+			<Anchor>//api/name/szImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/szImage</TokenIdentifier>
+			<Abstract type="html">图片的size</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize szImage</Declaration>
+			
+			
+			<Anchor>//api/name/szImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setNType:</TokenIdentifier>
+			<Abstract type="html">图片来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
+			
+			
+			<Anchor>//api/name/nType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/nType</TokenIdentifier>
+			<Abstract type="html">图片来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
+			
+			
+			<Anchor>//api/name/nType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithImageData:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithImageData:(NSData *)dataImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataImage</Name>
+					<Abstract type="html">图片类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImageData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithImageUrl:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithImageUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片url</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImageUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithType:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithType:(TencentApiImageSourceType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">图片类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

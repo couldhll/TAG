@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSCAccount.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSCAccount</TokenIdentifier>
+			<Abstract type="html">	@brief	ShareSDK帐号协议接口</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>
+			
+			<NodeRef refid="622"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/appKey</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用标识</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用标识</Abstract></ReturnValue>
+			<Anchor>//api/name/appKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/roles</TokenIdentifier>
+			<Abstract type="html">	@brief	获取所有权限角色</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)roles</Declaration>
+			
+			<ReturnValue><Abstract type="html">角色列表</Abstract></ReturnValue>
+			<Anchor>//api/name/roles</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/checkRole:</TokenIdentifier>
+			<Abstract type="html">	@brief	检测角色权限</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)checkRole:(Class)role</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>role</Name>
+					<Abstract type="html">角色类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示拥有此角色， NO 表示没有此角色权限</Abstract></ReturnValue>
+			<Anchor>//api/name/checkRole:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/cachePath</TokenIdentifier>
+			<Abstract type="html">	@brief	获取缓存路径</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)cachePath</Declaration>
+			
+			<ReturnValue><Abstract type="html">缓存路径</Abstract></ReturnValue>
+			<Anchor>//api/name/cachePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/setStatPolicy:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置统计策略</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)setStatPolicy:(SSCStatPolicy)policy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>policy</Name>
+					<Abstract type="html">策略</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setStatPolicy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/statPolicy</TokenIdentifier>
+			<Abstract type="html">	@brief	统计策略</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (SSCStatPolicy)statPolicy</Declaration>
+			
+			<ReturnValue><Abstract type="html">策略</Abstract></ReturnValue>
+			<Anchor>//api/name/statPolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/setUseAppTrusteeship:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置应用信息托管标识</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUseAppTrusteeship:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示使用服务器上的托管信息，否则使用本地代码配置信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUseAppTrusteeship:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/useAppTrusteeship</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用信息托管标识</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)useAppTrusteeship</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示使用服务器上的托管信息，否则使用本地代码配置信息</Abstract></ReturnValue>
+			<Anchor>//api/name/useAppTrusteeship</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/setSsoEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置SSO使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSsoEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">使能状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSsoEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/ssoEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取SSO使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)ssoEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示开启， NO 表示关闭</Abstract></ReturnValue>
+			<Anchor>//api/name/ssoEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换短链</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">使能状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换短链状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换，NO 表示不转换</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/setStatEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置统计数据使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)setStatEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">使能状态</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setStatEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/statEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取统计数据使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)statEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">统计数据使能状态</Abstract></ReturnValue>
+			<Anchor>//api/name/statEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/statDevEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取统计设备信息使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)statDevEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">统计设备信息使能状态</Abstract></ReturnValue>
+			<Anchor>//api/name/statDevEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/statShareEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取统计分享信息使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)statShareEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">统计分享信息使能状态</Abstract></ReturnValue>
+			<Anchor>//api/name/statShareEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/statUserEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取统计用户信息使能状态</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)statUserEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">统计用户信息使能状态</Abstract></ReturnValue>
+			<Anchor>//api/name/statUserEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/currentTimeInterval</TokenIdentifier>
+			<Abstract type="html">	@brief	获取当前时间（经过服务器校正）</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (NSTimeInterval)currentTimeInterval</Declaration>
+			
+			<ReturnValue><Abstract type="html">当前时间（单位：秒）</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTimeInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAccount/updatePlatSetting:</TokenIdentifier>
+			<Abstract type="html">	@brief	更新平台配置信息</Abstract>
+			<DeclaredIn>ISSCAccount.h</DeclaredIn>			
+			
+			<Declaration>- (void)updatePlatSetting:(void ( ^ ) ( NSArray *settings ))completeHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completeHandler</Name>
+					<Abstract type="html">完成事件</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updatePlatSetting:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

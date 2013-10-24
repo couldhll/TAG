@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TencentApiReq.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentApiReq</TokenIdentifier>
+			<Abstract type="html">\brief 请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			
+			<NodeRef refid="412"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiReq/reqFromSeq:type:</TokenIdentifier>
+			<Abstract type="html">根据序列号生成一个请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>+ (TencentApiReq *)reqFromSeq:(NSInteger)apiSeq type:(TencentReqMessageType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>apiSeq</Name>
+					<Abstract type="html">请求序列号</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">请求类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">tencentApiReq实例</Abstract></ReturnValue>
+			<Anchor>//api/name/reqFromSeq:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setNMessageType:</TokenIdentifier>
+			<Abstract type="html">请求类型</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) TCRequiredInt nMessageType</Declaration>
+			
+			
+			<Anchor>//api/name/nMessageType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/nMessageType</TokenIdentifier>
+			<Abstract type="html">请求类型</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) TCRequiredInt nMessageType</Declaration>
+			
+			
+			<Anchor>//api/name/nMessageType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setNPlatform:</TokenIdentifier>
+			<Abstract type="html">请求平台</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nPlatform</Declaration>
+			
+			
+			<Anchor>//api/name/nPlatform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/nPlatform</TokenIdentifier>
+			<Abstract type="html">请求平台</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nPlatform</Declaration>
+			
+			
+			<Anchor>//api/name/nPlatform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setNSdkVersion:</TokenIdentifier>
+			<Abstract type="html">请求的SDK版本号</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nSdkVersion</Declaration>
+			
+			
+			<Anchor>//api/name/nSdkVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/nSdkVersion</TokenIdentifier>
+			<Abstract type="html">请求的SDK版本号</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSInteger nSdkVersion</Declaration>
+			
+			
+			<Anchor>//api/name/nSdkVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setNSeq:</TokenIdentifier>
+			<Abstract type="html">请求序列号</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) TCRequiredInt nSeq</Declaration>
+			
+			
+			<Anchor>//api/name/nSeq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/nSeq</TokenIdentifier>
+			<Abstract type="html">请求序列号</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) TCRequiredInt nSeq</Declaration>
+			
+			
+			<Anchor>//api/name/nSeq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setSAppID:</TokenIdentifier>
+			<Abstract type="html">第三方的APPID</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr sAppID</Declaration>
+			
+			
+			<Anchor>//api/name/sAppID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/sAppID</TokenIdentifier>
+			<Abstract type="html">第三方的APPID</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr sAppID</Declaration>
+			
+			
+			<Anchor>//api/name/sAppID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setArrMessage:</TokenIdentifier>
+			<Abstract type="html">请求内容 TencentBaseMessageObj对象数组</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalArray arrMessage</Declaration>
+			
+			
+			<Anchor>//api/name/arrMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/arrMessage</TokenIdentifier>
+			<Abstract type="html">请求内容 TencentBaseMessageObj对象数组</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalArray arrMessage</Declaration>
+			
+			
+			<Anchor>//api/name/arrMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiReq/setSDescription:</TokenIdentifier>
+			<Abstract type="html">请求的描述 可以用于告诉对方这个请求的特定场景</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiReq/sDescription</TokenIdentifier>
+			<Abstract type="html">请求的描述 可以用于告诉对方这个请求的特定场景</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

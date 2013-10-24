@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>FBSessionAuthLogger Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FBSessionAuthLogger Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addExtrasForNextEvent:">&nbsp;&nbsp;&nbsp;&nbsp;- addExtrasForNextEvent:</option>
+	
+	<option value="//api/name/initWithSession:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSession:</option>
+	
+	<option value="//api/name/initWithSession:ID:authMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSession:ID:authMethod:</option>
+	
+	<option value="//api/name/logEndAuthMethodWithResult:error:">&nbsp;&nbsp;&nbsp;&nbsp;- logEndAuthMethodWithResult:error:</option>
+	
+	<option value="//api/name/logEndAuthWithResult:error:">&nbsp;&nbsp;&nbsp;&nbsp;- logEndAuthWithResult:error:</option>
+	
+	<option value="//api/name/logStartAuth">&nbsp;&nbsp;&nbsp;&nbsp;- logStartAuth</option>
+	
+	<option value="//api/name/logStartAuthMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- logStartAuthMethod:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addExtrasForNextEvent:">addExtrasForNextEvent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSession:">initWithSession:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSession:ID:authMethod:">initWithSession:ID:authMethod:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEndAuthMethodWithResult:error:">logEndAuthMethodWithResult:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logEndAuthWithResult:error:">logEndAuthWithResult:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logStartAuth">logStartAuth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logStartAuthMethod:">logStartAuthMethod:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="FBSessionAuthLogger Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FBSessionAuthLogger Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">FBSessionAuthLogger.h<br />FBSessionAuthLogger.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSession:">&ndash;&nbsp;initWithSession:</a></code>
+		<span class="tooltip"><p>@abstract
+Returns an initialized FBSessionAuthLogger instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSession:ID:authMethod:">&ndash;&nbsp;initWithSession:ID:authMethod:</a></code>
+		<span class="tooltip"><p>@abstract
+Returns an initialized FBSessionAuthLogger instance with the passed in parameters. This method
+is designed to be used when deserializing a logger from a URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addExtrasForNextEvent:">&ndash;&nbsp;addExtrasForNextEvent:</a></code>
+		<span class="tooltip"><p>@abstract
+Add JSON-serializable data to the &lsquo;extras&rsquo; JSON blob that is attached to these auth events. The
+keys and values passed in here will be attached to the next event that is logged via this
+logger, and cleared after that. They are lost if no events are logged after a call to this method.
+Multiple calls to this method between log events, will append all the <a href="#//api/name/extras">extras</a> together.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logStartAuth">&ndash;&nbsp;logStartAuth</a></code>
+		<span class="tooltip"><p>@abstract
+Logs the start of an auth request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logStartAuthMethod:">&ndash;&nbsp;logStartAuthMethod:</a></code>
+		<span class="tooltip"><p>@abstract
+Logs the start of a specific auth method, as part of an auth request (e.g. Native GDP)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEndAuthMethodWithResult:error:">&ndash;&nbsp;logEndAuthMethodWithResult:error:</a></code>
+		<span class="tooltip"><p>@abstract
+Logs the end of the last-known auth method with the passed in result and error</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logEndAuthWithResult:error:">&ndash;&nbsp;logEndAuthWithResult:error:</a></code>
+		<span class="tooltip"><p>@abstract
+Logs the end of the overall auth request with the passed in result and error</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addExtrasForNextEvent:" title="addExtrasForNextEvent:"></a>
+	<h3 class="subsubtitle method-title">addExtrasForNextEvent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Add JSON-serializable data to the &lsquo;extras&rsquo; JSON blob that is attached to these auth events. The
+keys and values passed in here will be attached to the next event that is logged via this
+logger, and cleared after that. They are lost if no events are logged after a call to this method.
+Multiple calls to this method between log events, will append all the <a href="#//api/name/extras">extras</a> together.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addExtrasForNextEvent:(NSDictionary *)<em>metadata</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSession:" title="initWithSession:"></a>
+	<h3 class="subsubtitle method-title">initWithSession:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Returns an initialized FBSessionAuthLogger instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithSession:(FBSession *)<em>session</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@discussion The passed in <a href="../Classes/FBSession.html">FBSession</a> is not retained to avoid circular references</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSession:ID:authMethod:" title="initWithSession:ID:authMethod:"></a>
+	<h3 class="subsubtitle method-title">initWithSession:ID:authMethod:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Returns an initialized FBSessionAuthLogger instance with the passed in parameters. This method
+is designed to be used when deserializing a logger from a URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithSession:(FBSession *)<em>session</em> ID:(NSString *)<em>ID</em> authMethod:(NSString *)<em>authMethod</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@discussion The passed in <a href="../Classes/FBSession.html">FBSession</a> is not retained to avoid circular references</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEndAuthMethodWithResult:error:" title="logEndAuthMethodWithResult:error:"></a>
+	<h3 class="subsubtitle method-title">logEndAuthMethodWithResult:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Logs the end of the last-known auth method with the passed in result and error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logEndAuthMethodWithResult:(NSString *)<em>result</em> error:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logEndAuthWithResult:error:" title="logEndAuthWithResult:error:"></a>
+	<h3 class="subsubtitle method-title">logEndAuthWithResult:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Logs the end of the overall auth request with the passed in result and error</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logEndAuthWithResult:(NSString *)<em>result</em> error:(NSError *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logStartAuth" title="logStartAuth"></a>
+	<h3 class="subsubtitle method-title">logStartAuth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Logs the start of an auth request</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logStartAuth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logStartAuthMethod:" title="logStartAuthMethod:"></a>
+	<h3 class="subsubtitle method-title">logStartAuthMethod:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@abstract
+Logs the start of a specific auth method, as part of an auth request (e.g. Native GDP)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logStartAuthMethod:(NSString *)<em>authMethodName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FBSessionAuthLogger.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

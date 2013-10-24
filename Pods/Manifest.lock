@@ -17,7 +17,7 @@ PODS:
   - GoogleAnalytics-iOS-SDK (3.0.2)
   - JSONModel (0.9.3)
   - MBProgressHUD (0.8)
-  - OHAttributedLabel (3.5.2)
+  - OHAttributedLabel (3.5.3)
   - Parse (1.2.15):
     - Facebook-iOS-SDK (~> 3.7)
   - SDWebImage (3.5):
@@ -158,7 +158,7 @@ PODS:
   - UIKitResources/UIAccessoryButton (7.0)
   - UIKitResources/UIButtonBar (7.0)
   - UIKitResources/UITabBar (7.0)
-  - ViewDeck (2.3.1)
+  - ViewDeck (2.2.11)
 
 DEPENDENCIES:
   - CocoaSecurity (~> 1.2.1)
@@ -171,7 +171,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.4)
   - SVPullToRefresh (~> 0.4.1)
   - UI7Kit (~> 0.9.9)
-  - ViewDeck (~> 2.3.1)
+  - ViewDeck (= 2.2.11)
 
 SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
@@ -183,13 +183,13 @@ SPEC CHECKSUMS:
   GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
   JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
-  OHAttributedLabel: 73cc99cbe32f94d51463853c7ac35a3fba185937
+  OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
   Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
   UI7Kit: cc047d4196ab61952d5e0784fae34e785af7f780
   UIKitResources: 3f3b1787af49bb881fc5b6dba2d34d2d4682f0e7
-  ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
+  ViewDeck: b5eddc8559b0e47259ab7addbf2de6768061f139
 
 COCOAPODS: 0.26.2

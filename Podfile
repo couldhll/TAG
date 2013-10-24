@@ -1,6 +1,6 @@
 platform :ios, '5.0'
 
-pod 'ViewDeck', '~> 2.3.1'
+pod 'ViewDeck', '= 2.2.11'
 pod 'GMGridView', '~> 1.1.1'
 pod 'SVPullToRefresh', '~> 0.4.1'
 pod 'SDWebImage', '~> 3.4'

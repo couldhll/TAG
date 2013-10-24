@@ -8,10 +8,9 @@
 
 #import "HLLProductDetailViewController.h"
 
-#import "IIViewDeckController.h"
 #import "HLLVideoView.h"
-#import "HLLAPI.h"
 
+#import <ViewDeck/IIViewDeckController.h>
 #import <ShareSDK/ShareSDK.h>
 
 #define VIDEOVIEW_SIZE CGSizeMake(200, 200)
@@ -142,7 +141,7 @@
 
 - (void)save
 {
-    [[HLLAPI sharedInstance] save:self];
+    [[HLLDataAPI sharedInstance] save:self];
 }
 
 #pragma mark - test

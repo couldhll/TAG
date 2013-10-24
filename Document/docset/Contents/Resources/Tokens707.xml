@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TCAPIRequestDownloadDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TCAPIRequestDownloadDelegate</TokenIdentifier>
+			<Abstract type="html">CGI请求下载数据回调协议</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			
+			<NodeRef refid="707"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TCAPIRequestDownloadDelegate/cgiDownloadRequest:shouldBeginDownloadingStorageRequest:</TokenIdentifier>
+			<Abstract type="html">询问是否要开始下载数据</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)cgiDownloadRequest:(TCAPIRequest *)downloadRequest shouldBeginDownloadingStorageRequest:(NSURLRequest *)storageRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>downloadRequest</Name>
+					<Abstract type="html">对应的下载请求上下文</Abstract>
+				</Parameter><Parameter>
+					<Name>storageRequest</Name>
+					<Abstract type="html">用于下载数据的NSURLRequest对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否要开始下载数据，YES表示自动开始下载，NO表示不下载</Abstract></ReturnValue>
+			<Anchor>//api/name/cgiDownloadRequest:shouldBeginDownloadingStorageRequest:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

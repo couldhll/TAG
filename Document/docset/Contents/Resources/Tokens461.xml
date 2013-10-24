@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WeiYun_BaseRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_BaseRequest</TokenIdentifier>
+			<Abstract type="html">微云相关接口基类</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			
+			<NodeRef refid="461"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

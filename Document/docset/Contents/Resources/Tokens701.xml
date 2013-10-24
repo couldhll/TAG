@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TAGContainerCallback.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TAGContainerCallback</TokenIdentifier>
+			<Abstract type="html">A protocol that a client may implement to receive
+information when the contents of the container has been successfully
+loaded or failed to load.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>
+			
+			<NodeRef refid="701"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TAGContainerCallback/containerRefreshBegin:refreshType:</TokenIdentifier>
+			<Abstract type="html">Called before the refresh is about to begin.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)containerRefreshBegin:(TAGContainer *)container refreshType:(TAGContainerCallbackRefreshType)refreshType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">The container being refreshed.</Abstract>
+				</Parameter><Parameter>
+					<Name>refreshType</Name>
+					<Abstract type="html">The type of refresh which is starting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/containerRefreshBegin:refreshType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TAGContainerCallback/containerRefreshSuccess:refreshType:</TokenIdentifier>
+			<Abstract type="html">Called when a refresh has successfully completed for the given refresh type.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)containerRefreshSuccess:(TAGContainer *)container refreshType:(TAGContainerCallbackRefreshType)refreshType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">The container being refreshed.</Abstract>
+				</Parameter><Parameter>
+					<Name>refreshType</Name>
+					<Abstract type="html">The type of refresh which completed successfully.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/containerRefreshSuccess:refreshType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TAGContainerCallback/containerRefreshFailure:failure:refreshType:</TokenIdentifier>
+			<Abstract type="html">Called when a refresh has failed to complete for the given refresh type.</Abstract>
+			<DeclaredIn>TAGContainer.h</DeclaredIn>			
+			
+			<Declaration>- (void)containerRefreshFailure:(TAGContainer *)container failure:(TAGContainerCallbackRefreshFailure)failure refreshType:(TAGContainerCallbackRefreshType)refreshType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>container</Name>
+					<Abstract type="html">The container being refreshed.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">The reason for the refresh failure.</Abstract>
+				</Parameter><Parameter>
+					<Name>refreshType</Name>
+					<Abstract type="html">The type of refresh which failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/containerRefreshFailure:failure:refreshType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

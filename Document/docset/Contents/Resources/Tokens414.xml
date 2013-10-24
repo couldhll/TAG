@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TencentAudioMessageObjV1.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentAudioMessageObjV1</TokenIdentifier>
+			<Abstract type="html">\brief 音频的消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			
+			<NodeRef refid="414"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSUrl:</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sUrl</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setDataImagePreview:</TokenIdentifier>
+			<Abstract type="html">音频的预览图
+\note图片不能大于1M</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
+			
+			
+			<Anchor>//api/name/dataImagePreview</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/dataImagePreview</TokenIdentifier>
+			<Abstract type="html">音频的预览图
+\note图片不能大于1M</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
+			
+			
+			<Anchor>//api/name/dataImagePreview</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSImagePreviewUrl:</TokenIdentifier>
+			<Abstract type="html">音频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sImagePreviewUrl</TokenIdentifier>
+			<Abstract type="html">音频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
+			
+			
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSDescription:</TokenIdentifier>
+			<Abstract type="html">音频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sDescription</TokenIdentifier>
+			<Abstract type="html">音频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/initWithAudioUrl:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAudioUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">音频URL</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的音频消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAudioUrl:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

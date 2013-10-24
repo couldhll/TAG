@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TencentApiResp.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentApiResp</TokenIdentifier>
+			<Abstract type="html">\brief 答复包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			
+			<NodeRef refid="413"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiResp/respFromReq:</TokenIdentifier>
+			<Abstract type="html">根据序列号生成一个答复包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>+ (TencentApiResp *)respFromReq:(TencentApiReq *)req</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>req</Name>
+					<Abstract type="html">答复对应的请求包（如果req不是TencentApiReq或者他的子类，会抛出异常）</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">答复包体</Abstract></ReturnValue>
+			<Anchor>//api/name/respFromReq:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setNRetCode:</TokenIdentifier>
+			<Abstract type="html">返回码</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/nRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/nRetCode</TokenIdentifier>
+			<Abstract type="html">返回码</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/nRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setSRetMsg:</TokenIdentifier>
+			<Abstract type="html">返回消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			
+			
+			<Anchor>//api/name/sRetMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/sRetMsg</TokenIdentifier>
+			<Abstract type="html">返回消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			
+			
+			<Anchor>//api/name/sRetMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setObjReq:</TokenIdentifier>
+			<Abstract type="html">答复对应的请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			
+			
+			<Anchor>//api/name/objReq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/objReq</TokenIdentifier>
+			<Abstract type="html">答复对应的请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			
+			
+			<Anchor>//api/name/objReq</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

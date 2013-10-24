@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSLinkedInApp.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSLinkedInApp</TokenIdentifier>
+			<Abstract type="html">&lt; Multipart POST方式，用于上传文件的api接口</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>
+			
+			<NodeRef refid="648"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	获取授权帐号</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">授权帐号</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/apiKey</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用Key</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)apiKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用Key</Abstract></ReturnValue>
+			<Anchor>//api/name/apiKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/secretKey</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用密钥</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)secretKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用密钥</Abstract></ReturnValue>
+			<Anchor>//api/name/secretKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/redirectUri</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用回调地址</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)redirectUri</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用回调地址</Abstract></ReturnValue>
+			<Anchor>//api/name/redirectUri</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/authorize</TokenIdentifier>
+			<Abstract type="html">	@brief	授权应用</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSLinkedInAuthSession&gt;)authorize</Declaration>
+			
+			<ReturnValue><Abstract type="html">授权会话</Abstract></ReturnValue>
+			<Anchor>//api/name/authorize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/registerUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)registerUser:(SSLinkedInUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注册成功， NO 表示注册失败</Abstract></ReturnValue>
+			<Anchor>//api/name/registerUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/unregisterUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注销用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)unregisterUser:(SSLinkedInUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注销成功， NO 表示注销失败</Abstract></ReturnValue>
+			<Anchor>//api/name/unregisterUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/getUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取注册用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSLinkedInUser *)getUser:(NSString *)uid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户ID</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回用户信息，nil表示尚未注册</Abstract></ReturnValue>
+			<Anchor>//api/name/getUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/defaultUser</TokenIdentifier>
+			<Abstract type="html">	@brief	获取默认注册用户</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSLinkedInUser *)defaultUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">默认注册用户</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/setDefaultUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置默认注册用户</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaultUser:(SSLinkedInUser *)defaultUser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>defaultUser</Name>
+					<Abstract type="html">默认注册用户</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/checkUnauthWithError:</TokenIdentifier>
+			<Abstract type="html">	@brief	检测用户是否已授权</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)checkUnauthWithError:(SSLinkedInErrorInfo *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示没有授权，NO 表示已授权</Abstract></ReturnValue>
+			<Anchor>//api/name/checkUnauthWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置凭证</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCredential:(SSLinkedInCredential *)credential</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract type="html">授权凭证信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCredential:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/api:method:params:user:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	调用开放平台API</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)api:(NSString *)path method:(SSLinkedInRequestMethod)method params:(id)params user:(SSLinkedInUser *)user result:(void ( ^ ) ( id responder ))result fault:(void ( ^ ) ( SSLinkedInErrorInfo *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">路径</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">请求参数,可以为一个ISSCParameters协议对象，也可以为一个NSDictionary对象,为NSDicationary对象时仅在以POST方式提交时有效。</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">授权用户,如果传入nil则表示默认的授权用户</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/api:method:params:user:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/showMe:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示默认授权用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)showMe:(void ( ^ ) ( BOOL result , SSLinkedInUser *userInfo , SSLinkedInErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>result</Name>
+					<Abstract type="html">回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showMe:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/showUserWithUid:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)showUserWithUid:(NSString *)uid result:(void ( ^ ) ( BOOL , SSLinkedInUser *, SSLinkedInErrorInfo *))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户标识</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showUserWithUid:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/showUserWithUrl:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取用户信息</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)showUserWithUrl:(NSString *)publicProfileUrl result:(void ( ^ ) ( BOOL , SSLinkedInUser *, SSLinkedInErrorInfo *))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>publicProfileUrl</Name>
+					<Abstract type="html">个人主页地址</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showUserWithUrl:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSLinkedInApp/shareWithComment:title:description:url:image:visibility:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享内容</Abstract>
+			<DeclaredIn>ISSLinkedInApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)shareWithComment:(NSString *)comment title:(NSString *)title description:(NSString *)description url:(NSString *)url image:(NSString *)image visibility:(NSString *)visibility result:(void ( ^ ) ( SSCShareSessionState result , SSLinkedInShare *status , SSLinkedInErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">对内容的评论</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">内容描述</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">内容链接</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">内容图片</Abstract>
+				</Parameter><Parameter>
+					<Name>visibility</Name>
+					<Abstract type="html">可见</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareWithComment:title:description:url:image:visibility:result:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

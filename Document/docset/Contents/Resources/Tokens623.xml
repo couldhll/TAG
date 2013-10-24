@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ISSCAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSCAttachment</TokenIdentifier>
+			<Abstract type="html">	@brief	附件协议</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>
+			
+			<NodeRef refid="623"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/path</TokenIdentifier>
+			<Abstract type="html">	@brief	获取文件路径</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)path</Declaration>
+			
+			<ReturnValue><Abstract type="html">文件路径</Abstract></ReturnValue>
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/url</TokenIdentifier>
+			<Abstract type="html">	@brief	获取远程文件路径</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)url</Declaration>
+			
+			<ReturnValue><Abstract type="html">URL地址</Abstract></ReturnValue>
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/data</TokenIdentifier>
+			<Abstract type="html">	@brief	获取附件数据</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)data</Declaration>
+			
+			<ReturnValue><Abstract type="html">附件数据</Abstract></ReturnValue>
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/fileName</TokenIdentifier>
+			<Abstract type="html">	@brief	获取附件名称</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)fileName</Declaration>
+			
+			<ReturnValue><Abstract type="html">附件名称</Abstract></ReturnValue>
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/mimeType</TokenIdentifier>
+			<Abstract type="html">	@brief	获取附件类型</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)mimeType</Declaration>
+			
+			<ReturnValue><Abstract type="html">附件类型</Abstract></ReturnValue>
+			<Anchor>//api/name/mimeType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/isRemoteFile</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否为远程文件</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isRemoteFile</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示为远程文件，NO 表示为本地文件</Abstract></ReturnValue>
+			<Anchor>//api/name/isRemoteFile</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSCAttachment/load:faultHandler:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载附件信息</Abstract>
+			<DeclaredIn>ISSCAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (void)load:(void ( ^ ) ( ))completeHandler faultHandler:(void ( ^ ) ( NSError *error ))faultHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completeHandler</Name>
+					<Abstract type="html">加载完成事件处理</Abstract>
+				</Parameter><Parameter>
+					<Name>faultHandler</Name>
+					<Abstract type="html">加载失败事件处理</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/load:faultHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

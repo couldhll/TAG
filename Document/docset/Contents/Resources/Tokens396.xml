@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TAGContainerOpener.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TAGContainerOpener</TokenIdentifier>
+			<Abstract type="html">* A helper class for opening containers.
+*
+* This is a wrapper around TAGManager::openContainerById:callback: method for
+* callers that provides support for timeouts.
+*
+* The following is a sample showing waiting up to 0.1 seconds for the container
+* to be loaded before reverting to the default container:
+*
+&lt;pre&gt;
+*     NSTimeInterval timeout = 0.1;
+     TagManager tagManager = [TagManager instance];
+     TAGContainerFuture future =
+*         [TAGContainerOpener openContainerWithId:@&quot;GTM-XXXX&quot;
+*                                      tagManager:tagManager
+*                                        openType:kTAGOpenTypePreferNonDefault
+*                                         timeout:&amp;amp;timeout];
+     TAGContainer container = [future get];
+&lt;/pre&gt;
+*
+* If the caller wants to be asynchronously notified when the container is
+* available but wants to manually specify the timeout to 0.5 seconds, then the
+* caller should subclass TAGContainerOpenerNotifier, make the call to
+* TAGContainerOpener::openContainerWithId:tagManager:openType:timeout:notifier:
+* with timeout set to 0.5, and add the implementation to
+* TAGContainerOpenerNotifier::containerAvailable: for handling the container
+* available notification.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>
+			
+			<NodeRef refid="396"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGContainerOpener/init</TokenIdentifier>
+			<Abstract type="html">TAGContainerOpener should not be instantiated directly. Use
+openContainerWithId:tagManager:timeout:openType:
+or openContainerWithId:tagManager::timeout:openType:notifier:.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TAGContainerOpener/openContainerWithId:tagManager:openType:timeout:</TokenIdentifier>
+			<Abstract type="html">Waits up to &lt;code&gt;timeout&lt;/code&gt; seconds for a container to be loaded
+(non default or fresh depending on the specified &lt;code&gt;openType&lt;/code&gt;)
+and returns a &lt;code&gt;TAGContainerFuture&lt;/code&gt;.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;TAGContainerFuture&gt;)openContainerWithId:(NSString *)containerId tagManager:(TAGManager *)tagManager openType:(TAGOpenType)openType timeout:(NSTimeInterval *)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerId</Name>
+					<Abstract type="html">The ID of the container to load.</Abstract>
+				</Parameter><Parameter>
+					<Name>tagManager</Name>
+					<Abstract type="html">The TAGManager for getting the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>openType</Name>
+					<Abstract type="html">The choice of how to open the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The maximum number of seconds to wait to load the container
+from the saved store. If nil, TAGContainerOpener::defaultTimeout will be
+used.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A TAGContainerFuture that will wait for up to &lt;code&gt;timeout&lt;/code&gt;
+and return the container when it is available.</Abstract></ReturnValue>
+			<Anchor>//api/name/openContainerWithId:tagManager:openType:timeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TAGContainerOpener/openContainerWithId:tagManager:openType:timeout:notifier:</TokenIdentifier>
+			<Abstract type="html">Waits up to &lt;code&gt;timeout&lt;/code&gt; seconds for a container to be loaded
+(non default or fresh depending on the specified &lt;code&gt;openType&lt;/code&gt;)
+and calls a notifier when the container is available.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>			
+			
+			<Declaration>+ (void)openContainerWithId:(NSString *)containerId tagManager:(TAGManager *)tagManager openType:(TAGOpenType)openType timeout:(NSTimeInterval *)timeout notifier:(id&lt;TAGContainerOpenerNotifier&gt;)notifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerId</Name>
+					<Abstract type="html">The ID of the container to load.</Abstract>
+				</Parameter><Parameter>
+					<Name>tagManager</Name>
+					<Abstract type="html">The TAGManager used for getting the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>openType</Name>
+					<Abstract type="html">The choice of how to open the container.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The maximum number of seconds to wait to load the container
+from the saved store. If nil, TAGContainerOpener::defaultTimeout will be
+used.</Abstract>
+				</Parameter><Parameter>
+					<Name>notifier</Name>
+					<Abstract type="html">An optional notifier which will be called when the
+container is available. It will be called with the fresh container, if
+available and loaded before the timeout; otherwise it&apos;ll be called with
+a non-fresh container. Note that the notifier may be called from a
+different thread.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/openContainerWithId:tagManager:openType:timeout:notifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TAGContainerOpener/defaultTimeout</TokenIdentifier>
+			<Abstract type="html">Returns the default timeout for requesting the container.</Abstract>
+			<DeclaredIn>TAGContainerOpener.h</DeclaredIn>			
+			
+			<Declaration>+ (NSTimeInterval)defaultTimeout</Declaration>
+			
+			<ReturnValue><Abstract type="html">The default timeout in seconds.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultTimeout</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

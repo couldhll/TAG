@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBAuthorizeRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBAuthorizeRequest</TokenIdentifier>
+			<Abstract type="html">第三方应用向微博客户端请求认证的消息结构</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			
+			<NodeRef refid="433"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBAuthorizeRequest/setRedirectURI:</TokenIdentifier>
+			<Abstract type="html">微博开放平台第三方应用授权回调页地址，默认为http://</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *redirectURI</Declaration>
+			
+			
+			<Anchor>//api/name/redirectURI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBAuthorizeRequest/redirectURI</TokenIdentifier>
+			<Abstract type="html">微博开放平台第三方应用授权回调页地址，默认为http://</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *redirectURI</Declaration>
+			
+			
+			<Anchor>//api/name/redirectURI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBAuthorizeRequest/setScope:</TokenIdentifier>
+			<Abstract type="html">微博开放平台第三方应用scope，多个scrope用逗号分隔</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *scope</Declaration>
+			
+			
+			<Anchor>//api/name/scope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBAuthorizeRequest/scope</TokenIdentifier>
+			<Abstract type="html">微博开放平台第三方应用scope，多个scrope用逗号分隔</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *scope</Declaration>
+			
+			
+			<Anchor>//api/name/scope</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

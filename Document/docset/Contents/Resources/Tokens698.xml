@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/QuiltViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/QuiltViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图协议</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>
+			
+			<NodeRef refid="698"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltView:willDisplayItemView:indexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	子项视图将要显示</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (void)quiltView:(CMQuiltView *)quiltView willDisplayItemView:(UIView&lt;ICMQuiltItemView&gt; *)itemView indexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter><Parameter>
+					<Name>itemView</Name>
+					<Abstract type="html">子项视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/quiltView:willDisplayItemView:indexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图滚动</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (void)quiltViewDidScroll:(CMQuiltView *)quiltView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/quiltViewDidScroll:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图停止拖动</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
+			
+			<Declaration>- (void)quiltViewDidEndDragging:(CMQuiltView *)quiltView willDecelerate:(BOOL)decelerate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter><Parameter>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速运动标识，YES表示进行减速运动，否则不进行减速运动</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/quiltViewDidEndDragging:willDecelerate:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBVideoObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBVideoObject</TokenIdentifier>
+			<Abstract type="html">消息中包含的视频数据对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			
+			<NodeRef refid="447"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBVideoObject/setVideoUrl:</TokenIdentifier>
+			<Abstract type="html">视频网页的url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBVideoObject/videoUrl</TokenIdentifier>
+			<Abstract type="html">视频网页的url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBVideoObject/setVideoLowBandUrl:</TokenIdentifier>
+			<Abstract type="html">视频lowband网页的url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoLowBandUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoLowBandUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBVideoObject/videoLowBandUrl</TokenIdentifier>
+			<Abstract type="html">视频lowband网页的url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoLowBandUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoLowBandUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBVideoObject/setVideoStreamUrl:</TokenIdentifier>
+			<Abstract type="html">视频数据流url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoStreamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoStreamUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBVideoObject/videoStreamUrl</TokenIdentifier>
+			<Abstract type="html">视频数据流url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoStreamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoStreamUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBVideoObject/setVideoLowBandStreamUrl:</TokenIdentifier>
+			<Abstract type="html">视频lowband数据流url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoLowBandStreamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoLowBandStreamUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBVideoObject/videoLowBandStreamUrl</TokenIdentifier>
+			<Abstract type="html">视频lowband数据流url</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *videoLowBandStreamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/videoLowBandStreamUrl</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,608 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JSONModelError Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JSONModelError Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/errorBadJSON">&nbsp;&nbsp;&nbsp;&nbsp;+ errorBadJSON</option>
+	
+	<option value="//api/name/errorBadResponse">&nbsp;&nbsp;&nbsp;&nbsp;+ errorBadResponse</option>
+	
+	<option value="//api/name/errorInputIsNil">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInputIsNil</option>
+	
+	<option value="//api/name/errorInvalidData">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidData</option>
+	
+	<option value="//api/name/errorInvalidDataWithMissingKeys:">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidDataWithMissingKeys:</option>
+	
+	<option value="//api/name/errorInvalidDataWithTypeMismatch:">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidDataWithTypeMismatch:</option>
+	
+	<option value="//api/name/errorModelIsInvalid">&nbsp;&nbsp;&nbsp;&nbsp;+ errorModelIsInvalid</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorBadJSON">errorBadJSON</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorBadResponse">errorBadResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInputIsNil">errorInputIsNil</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidData">errorInvalidData</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidDataWithMissingKeys:">errorInvalidDataWithMissingKeys:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidDataWithTypeMismatch:">errorInvalidDataWithTypeMismatch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorModelIsInvalid">errorModelIsInvalid</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JSONModelError Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JSONModelError Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSError</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JSONModelError.h<br />JSONModelError.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Custom NSError subclass with shortcut methods for creating
+the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorInvalidData">+&nbsp;errorInvalidData</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorInvalidDataWithMissingKeys:">+&nbsp;errorInvalidDataWithMissingKeys:</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorInvalidDataWithTypeMismatch:">+&nbsp;errorInvalidDataWithTypeMismatch:</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorBadResponse">+&nbsp;errorBadResponse</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorBadResponse = 2</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorBadJSON">+&nbsp;errorBadJSON</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorBadJSON = 3</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorModelIsInvalid">+&nbsp;errorModelIsInvalid</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorModelIsInvalid = 4</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorInputIsNil">+&nbsp;errorInputIsNil</a></code>
+		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorNilInput = 5</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/errorBadJSON" title="errorBadJSON"></a>
+	<h3 class="subsubtitle method-title">errorBadJSON</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorBadJSON = 3</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorBadJSON</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorBadResponse" title="errorBadResponse"></a>
+	<h3 class="subsubtitle method-title">errorBadResponse</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorBadResponse = 2</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorBadResponse</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorInputIsNil" title="errorInputIsNil"></a>
+	<h3 class="subsubtitle method-title">errorInputIsNil</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorNilInput = 5</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorInputIsNil</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorInvalidData" title="errorInvalidData"></a>
+	<h3 class="subsubtitle method-title">errorInvalidData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorInvalidData</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorInvalidDataWithMissingKeys:" title="errorInvalidDataWithMissingKeys:"></a>
+	<h3 class="subsubtitle method-title">errorInvalidDataWithMissingKeys:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorInvalidDataWithMissingKeys:(NSSet *)<em>keys</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keys</em></dt>
+			<dd><p>a set of field names that were required, but not found in the input</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorInvalidDataWithTypeMismatch:" title="errorInvalidDataWithTypeMismatch:"></a>
+	<h3 class="subsubtitle method-title">errorInvalidDataWithTypeMismatch:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorInvalidDataWithTypeMismatch:(NSString *)<em>mismatchDescription</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>A</em></dt>
+			<dd><p>description of the type mismatch that was encountered.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorModelIsInvalid" title="errorModelIsInvalid"></a>
+	<h3 class="subsubtitle method-title">errorModelIsInvalid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a JSONModelError instance with code kJSONModelErrorModelIsInvalid = 4</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorModelIsInvalid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -8,7 +8,7 @@
 
 #import "HLLViewController.h"
 
-#import "IIViewDeckController.h"
+#import <ViewDeck/IIViewDeckController.h>
 
 @interface HLLViewController ()
 

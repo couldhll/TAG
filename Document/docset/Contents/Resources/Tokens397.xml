@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TAGDataLayer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TAGDataLayer</TokenIdentifier>
+			<Abstract type="html">* The data layer is a dictionary holding generic information about the
+* application. It uses a standard set of keys so it can be read by any party
+* that understands the specification. The data layer state is updated
+* through its API. For example, an app might start with the following
+* dataLayer:
+&lt;pre&gt;
+*   {
+*     title: &quot;Original screen title&quot;
+*   }
+&lt;/pre&gt;
+*
+* As the state/data of an app can change, the app can update the dataLayer with a call such as:
+&lt;pre&gt;
+*   [dataLayer push:@{@&quot;title&quot;: @&quot;New screen title&quot;}];
+&lt;/pre&gt;
+*  Now the data layer contains:
+&lt;pre&gt;
+*   {
+*     title: &quot;New screen title&quot;
+*   }
+&lt;/pre&gt;
+* After another push happens:
+&lt;pre&gt;
+*   [dataLayer push:@{@&quot;xyz&quot;: @3}];
+&lt;/pre&gt;
+* The dataLayer contains:
+&lt;pre&gt;
+*   {
+*     &quot;title&quot;: &quot;New screen title&quot;,
+*     &quot;xyz&quot;: 3
+*   }
+&lt;/pre&gt;
+* The following example demonstrates how array and map merging works. If the
+* original dataLayer contains:
+&lt;pre&gt;
+*   {
+*     &quot;items&quot;: @[@&quot;item1&quot;, [NSNull null], @&quot;item2&quot;, @{@&quot;a&quot;: @&quot;aValue&quot;, @&quot;b&quot;: @&quot;bValue&quot;}]
+*   }
+&lt;/pre&gt;
+* After this push happens:
+&lt;pre&gt;
+*   [dataLayer push:@{@&quot;items&quot;:
+*       @[[NSNull null], @&quot;item6&quot;, kTAGDataLayerObjectNotPresent, @{@&quot;a&quot;: [NSNull null]}]}
+&lt;/pre&gt;
+* The dataLayer contains:
+&lt;pre&gt;
+*   {
+*     &quot;items&quot;: @[[NSNull null], @&quot;item6&quot;, @&quot;item2&quot;, @{@&quot;a&quot;: [NSNull null], @&quot;b&quot;: @&quot;bValue&quot;}]}
+*   }
+&lt;/pre&gt;
+* &lt;p&gt;Pushes happen synchronously; after the push, changes have been reflected
+* in the model.
+* &lt;p&gt;When an &lt;code&gt;event&lt;/code&gt; key is pushed to the data layer, rules for tags
+* are evaluated and any tags matching this event will fire.
+* For example, given a container with a tag whose firing rules is that &quot;event&quot;
+* is equal to &quot;openScreen&quot;, after this push:
+&lt;pre&gt;
+*   [dataLayer push:@{@&quot;event&quot;, @&quot;openScreen&quot;}];
+&lt;/pre&gt;
+* that tag will fire.</Abstract>
+			<DeclaredIn>TAGDataLayer.h</DeclaredIn>
+			
+			<NodeRef refid="397"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGDataLayer/pushValue:forKey:</TokenIdentifier>
+			<Abstract type="html">Pushes a key/value pair to the data layer. This is just a convenience
+method that calls &lt;code&gt;push:@{key: value}&lt;/code&gt;.</Abstract>
+			<DeclaredIn>TAGDataLayer.h</DeclaredIn>			
+			
+			<Declaration>- (void)pushValue:(NSObject *)value forKey:(NSObject *)key</Declaration>
+			
+			
+			<Anchor>//api/name/pushValue:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGDataLayer/push:</TokenIdentifier>
+			<Abstract type="html">Merges the given &lt;code&gt;update&lt;/code&gt; object into the existing data model,
+calling any listeners with the update (after the merge occurs).</Abstract>
+			<DeclaredIn>TAGDataLayer.h</DeclaredIn>			
+			
+			<Declaration>- (void)push:(NSDictionary *)update</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>update</Name>
+					<Abstract type="html">The update object to process</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/push:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGDataLayer/get:</TokenIdentifier>
+			<Abstract type="html">Returns the object in the model associated with the given key.
+If key isn&apos;t present, returns &lt;code&gt;nil&lt;/code&gt;. If
+&lt;code&gt;key&lt;/code&gt; is present, but &lt;code&gt;NSNull&lt;/code&gt;, returns
+&lt;code&gt;NSNull&lt;/code&gt;.</Abstract>
+			<DeclaredIn>TAGDataLayer.h</DeclaredIn>			
+			
+			<Declaration>- (NSObject *)get:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/get:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

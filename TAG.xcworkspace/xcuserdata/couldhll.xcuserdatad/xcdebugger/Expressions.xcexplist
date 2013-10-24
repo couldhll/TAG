@@ -19,6 +19,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__61-[HLLDataAPI userRegisterWithEmail:name:password:completion:]_block_invoke:HLLDataAPI.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "errorModel.error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
          <PersistentStrings>
             <PersistentString
@@ -47,6 +55,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[HLLAppDelegate openViewController:sender:]:HLLAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSStringFromClass(self.deckController.centerController.class)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "+[UIFont(HLLFont) fontWithFont:style:]:UIFont+HLLFont.m">
          <PersistentStrings>
             <PersistentString
@@ -65,6 +81,14 @@
             </PersistentString>
             <PersistentString
                value = "[filterArray count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JSONModel initWithString:usingEncoding:error:]:JSONModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[string dataUsingEncoding:encoding]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

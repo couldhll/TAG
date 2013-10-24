@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WBBaseResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WBBaseResponse</TokenIdentifier>
+			<Abstract type="html">微博SDK所有响应类的基类</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			
+			<NodeRef refid="437"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseResponse/setRequestUserInfo:</TokenIdentifier>
+			<Abstract type="html">对应的 request 中的自定义信息字典</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBBaseRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) NSDictionary *requestUserInfo</Declaration>
+			
+			
+			<Anchor>//api/name/requestUserInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseResponse/requestUserInfo</TokenIdentifier>
+			<Abstract type="html">对应的 request 中的自定义信息字典</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBBaseRequest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, readonly) NSDictionary *requestUserInfo</Declaration>
+			
+			
+			<Anchor>//api/name/requestUserInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseResponse/setStatusCode:</TokenIdentifier>
+			<Abstract type="html">响应状态码</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) WeiboSDKResponseStatusCode statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseResponse/statusCode</TokenIdentifier>
+			<Abstract type="html">响应状态码</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) WeiboSDKResponseStatusCode statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WBBaseResponse/response</TokenIdentifier>
+			<Abstract type="html">返回一个 WBBaseResponse 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			
+			<Declaration>+ (id)response</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBBaseResponse对象</Abstract></ReturnValue>
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

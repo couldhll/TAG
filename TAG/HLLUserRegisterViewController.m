@@ -38,6 +38,9 @@
     [super viewDidLoad];
     
     // textfield
+    self.userEmailTextField.returnKeyType = UIReturnKeyNext;
+    self.userEmailTextField.clearsOnBeginEditing = YES;
+    self.userEmailTextField.delegate=self;
     self.userNameTextField.returnKeyType = UIReturnKeyNext;
     self.userNameTextField.clearsOnBeginEditing = YES;
     self.userNameTextField.delegate=self;
@@ -91,6 +94,21 @@
 
 - (IBAction)registerButtonPressed:(id)sender
 {
+//    [[HLLDataAPI sharedInstance] userRegisterWithEmail:self.userEmailTextField.text
+//                            r                  name:self.userNameTextField.text
+//                                          password:self.userPasswordTextField.text
+//                                        completion:^(id json, JSONModelError *err) {
+//                                            NSLog(json);
+////                                            HLLUserModel* userModel = [[HLLUserModel alloc] initWithString:json error:nil];
+//                                        }];
+    
+    [[HLLDataAPI sharedInstance] userRegisterWithEmail:@"could_hll@hotmail.com"
+                                                  name:@"CouldHll"
+                                              password:@"888888"
+                                            completion:^(id json, JSONModelError *err) {
+                                                HLLUserModel* userModel = [[HLLUserModel alloc] initWithString:json error:nil];
+                                            }];
+    
     //    NSString *msg=nil;
     //    if(userNameTextField.text.length>0 && userPasswordTextField.text.length>0)
     //    {
@@ -133,6 +151,7 @@
 
 - (IBAction)backgroundPressed:(id)sender
 {
+    [self.userEmailTextField resignFirstResponder];
     [self.userNameTextField resignFirstResponder];
     [self.userPasswordTextField resignFirstResponder];
     [self.userPasswordVerifyTextField resignFirstResponder];
@@ -150,7 +169,11 @@
 	switch (textField.returnKeyType)
     {
 		case UIReturnKeyNext:
-            if (textField==self.userNameTextField)
+            if (textField==self.userEmailTextField)
+            {
+                [self.userNameTextField becomeFirstResponder];
+            }
+            else if (textField==self.userNameTextField)
             {
                 [self.userPasswordTextField becomeFirstResponder];
             }

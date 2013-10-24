@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableArray+Random.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(Random)</TokenIdentifier>
+			<Abstract type="html">@brief Random selection in NSMutableArray objects.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
+			
+			<NodeRef refid="515"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Random)/popRandomObject</TokenIdentifier>
+			<Abstract type="html">@brief Pop random object from NSArray.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (id)popRandomObject</Declaration>
+			
+			
+			<Anchor>//api/name/popRandomObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Random)/shuffle</TokenIdentifier>
+			<Abstract type="html">@brief Shuffle</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (void)shuffle</Declaration>
+			
+			
+			<Anchor>//api/name/shuffle</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

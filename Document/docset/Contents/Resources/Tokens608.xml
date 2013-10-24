@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GAILogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GAILogger</TokenIdentifier>
+			<Abstract type="html">Protocol to be used for logging debug and informational messages from the SDK.
+Implementations of this protocol can be provided to the |GAI| class,
+to be used as the logger by the SDK.  See the |logger| property in GAI.h.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>
+			
+			<NodeRef refid="608"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAILogger/setLogLevel:</TokenIdentifier>
+			<Abstract type="html">Only messages of |logLevel| and below are logged.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) GAILogLevel logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/GAILogger/logLevel</TokenIdentifier>
+			<Abstract type="html">Only messages of |logLevel| and below are logged.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) GAILogLevel logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAILogger/verbose:</TokenIdentifier>
+			<Abstract type="html">Logs message with log level |kGAILogLevelVerbose|.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>- (void)verbose:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/verbose:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAILogger/info:</TokenIdentifier>
+			<Abstract type="html">Logs message with log level |kGAILogLevelInfo|.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>- (void)info:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/info:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAILogger/warning:</TokenIdentifier>
+			<Abstract type="html">Logs message with log level |kGAILogLevelWarning|.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>- (void)warning:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/warning:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GAILogger/error:</TokenIdentifier>
+			<Abstract type="html">Logs message with log level |kGAILogLevelError|.</Abstract>
+			<DeclaredIn>GAILogger.h</DeclaredIn>			
+			
+			<Declaration>- (void)error:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TAGManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TAGManager</TokenIdentifier>
+			<Abstract type="html">* A class that is the mobile implementation of Google Tag Manager (GTM).
+*
+* Sample usage:
+&lt;pre&gt;
+      TAGContainer container =
+*          [[TAGManager instance] openContainerById:myContainerId];
+      NSString value = [container stringForKey:@&quot;myKey&quot;];
+*
+      TAGDataLayer dataLayer =
+*          [[TAGManager instance] dataLayer];
+*      [dataLayer push:@{@&quot;event&quot;: @&quot;openScreen&quot;,
+*                        @&quot;screenName&quot;: @&quot;Main Page&quot;}];
+&lt;/pre&gt;
+*
+* A container is a collection of macros, rules, and tags. It is created within
+* the GTM application (http://www.google.com/tagmanager), and is assigned
+* a container ID. This container ID is the one used within this API.
+*
+* The TAGContainer class provides methods for retrieving
+* macro values given the macro name. The routines
+* TAGContainer::booleanForKey:, TAGContainer::doubleForKey:,
+* TAGContainer::int64ForKey:, TAGContainer::stringForKey: return the current
+* value for the value collection macro name, depending on the rules associated with that macro
+* in the container.
+*
+* As an example, if your container has a value collection macro with a key &quot;speed&quot; whose
+* value is 32, and the enabling rule is Language is &quot;en&quot;; and another value collection macro
+* with a key &quot;speed&quot; whose value is 45, and the enabling rule is Language is not &quot;en&quot;,
+* then making the following call:
+*
+&lt;pre&gt;
+*     [container longForKey:\@&quot;speed&quot;]
+&lt;/pre&gt;
+*
+* will return either 32 if the current language of the device is English, or
+* 45 otherwise.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>
+			
+			<NodeRef refid="398"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/setLogger:</TokenIdentifier>
+			<Abstract type="html">The logger to use for Google Tag Manager SDK. By default, Google Tag Manager
+logs error/warning messages and ignores info/debug/verbose messages.
+You can use your own customized logger by setting this property.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;TAGLogger&gt; logger</Declaration>
+			
+			
+			<Anchor>//api/name/logger</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TAGManager/logger</TokenIdentifier>
+			<Abstract type="html">The logger to use for Google Tag Manager SDK. By default, Google Tag Manager
+logs error/warning messages and ignores info/debug/verbose messages.
+You can use your own customized logger by setting this property.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) id&lt;TAGLogger&gt; logger</Declaration>
+			
+			
+			<Anchor>//api/name/logger</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/setRefreshMode:</TokenIdentifier>
+			<Abstract type="html">The refresh mode used for Google Tag Manager SDK. Setting this to
+@ref kTAGRefreshModeDefaultContainer allows the refresh
+method to use only the default container for development purposes. Default is
+@ref kTAGRefreshModeStandard.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TAGRefreshMode refreshMode</Declaration>
+			
+			
+			<Anchor>//api/name/refreshMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TAGManager/refreshMode</TokenIdentifier>
+			<Abstract type="html">The refresh mode used for Google Tag Manager SDK. Setting this to
+@ref kTAGRefreshModeDefaultContainer allows the refresh
+method to use only the default container for development purposes. Default is
+@ref kTAGRefreshModeStandard.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TAGRefreshMode refreshMode</Declaration>
+			
+			
+			<Anchor>//api/name/refreshMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/setDataLayer:</TokenIdentifier>
+			<Abstract type="html">Call TAGDataLayer::push: method to push events and other data.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) TAGDataLayer *dataLayer</Declaration>
+			
+			
+			<Anchor>//api/name/dataLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TAGManager/dataLayer</TokenIdentifier>
+			<Abstract type="html">Call TAGDataLayer::push: method to push events and other data.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, strong) TAGDataLayer *dataLayer</Declaration>
+			
+			
+			<Anchor>//api/name/dataLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/openContainerById:callback:</TokenIdentifier>
+			<Abstract type="html">Returns a container.
+Usually the returned container will be empty, but the loading will happen
+asynchronously, so the returned container may be refreshed before it
+is returned, after it is returned, or may never be refreshed if, for example,
+there is no network connection during the lifetime of the container.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>- (TAGContainer *)openContainerById:(NSString *)containerId callback:(id&lt;TAGContainerCallback&gt;)callback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>containerId</Name>
+					<Abstract type="html">The ID of the container to open.</Abstract>
+				</Parameter><Parameter>
+					<Name>callback</Name>
+					<Abstract type="html">An object whose various methods will be called during the
+loading process. Note that the methods may be called from different
+threads. In addition, they may be called before
+TAGManager::openContainerById:callback: returns.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The opened container.</Abstract></ReturnValue>
+			<Anchor>//api/name/openContainerById:callback:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/getContainerById:</TokenIdentifier>
+			<Abstract type="html">Returns the container associated with the given &lt;code&gt;containerId&lt;/code&gt;;
+returns &lt;code&gt;nil&lt;/code&gt; if the container is not already open.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>- (TAGContainer *)getContainerById:(NSString *)containerId</Declaration>
+			
+			
+			<Anchor>//api/name/getContainerById:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TAGManager/previewWithUrl:</TokenIdentifier>
+			<Abstract type="html">* Previews the app with the input url.
+*
+* The valid url must start with the following:
+&lt;pre&gt;
+* tagmanager.c.\&lt;app_name\&gt;://preview/p?id=
+&lt;/pre&gt;
+* where &amp;amp;lt;app_name&amp;amp;gt; is the application name.
+*
+* @param url The preview url.
+* @return YES if the url is a valid tagmanager preview url.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)previewWithUrl:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/previewWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TAGManager/instance</TokenIdentifier>
+			<Abstract type="html">Gets the singleton instance of the TAGManager class, creating it if
+necessary.</Abstract>
+			<DeclaredIn>TAGManager.h</DeclaredIn>			
+			
+			<Declaration>+ (TAGManager *)instance</Declaration>
+			
+			<ReturnValue><Abstract type="html">The singleton instance of TAGManager.</Abstract></ReturnValue>
+			<Anchor>//api/name/instance</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

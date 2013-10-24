@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/couldhll/Library/Developer/Shared/Documentation/DocSets/com.couldhll.TAG.docset
-Time: 2013-10-22 06:55:42 +0000

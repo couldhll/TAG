@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TencentApiInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentApiInterface</TokenIdentifier>
+			<Abstract type="html">\brief TencentApiInterface的回调</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>
+			
+			<NodeRef refid="411"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/sendRespMessageToTencentApp:</TokenIdentifier>
+			<Abstract type="html">发送答复返回腾讯业务</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (TencentApiRetCode)sendRespMessageToTencentApp:(TencentApiResp *)resp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resp</Name>
+					<Abstract type="html">答复内容</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回码</Abstract></ReturnValue>
+			<Anchor>//api/name/sendRespMessageToTencentApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/canOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">是否可以处理拉起协议
+\param url</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)canOpenURL:(NSURL *)url delegate:(id&lt;TencentApiInterfaceDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">指定的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否是腾讯API认识的消息类型</Abstract></ReturnValue>
+			<Anchor>//api/name/canOpenURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/handleOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">处理应用拉起协议
+\param url</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url delegate:(id&lt;TencentApiInterfaceDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">指定的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否是腾讯API认识的消息类型</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/isTencentAppInstall:</TokenIdentifier>
+			<Abstract type="html">用户设备是否安装腾讯APP</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTencentAppInstall:(TecnentPlatformType)platform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>platform</Name>
+					<Abstract type="html">指定的腾讯业务</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES:安装 NO:未安装</Abstract></ReturnValue>
+			<Anchor>//api/name/isTencentAppInstall:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/isTencentAppSupportTencentApi:</TokenIdentifier>
+			<Abstract type="html">用户设备是否支持调用SDK</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTencentAppSupportTencentApi:(TecnentPlatformType)platform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>platform</Name>
+					<Abstract type="html">指定的腾讯业务</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES:支持 NO:不支持</Abstract></ReturnValue>
+			<Anchor>//api/name/isTencentAppSupportTencentApi:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

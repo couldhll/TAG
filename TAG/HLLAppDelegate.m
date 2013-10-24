@@ -134,7 +134,19 @@
 {
     NSLog(@"Change center controller:%@",name);
     
+    // name null to return
     if (!name)
+    {
+        return;
+    }
+    
+    // name same to return
+    UIViewController *centerController=self.deckController.centerController;
+    if ([centerController isKindOfClass:HLLNavigationController.class])// centerController is the topViewController of HLLNavigationController
+    {
+        centerController=((HLLNavigationController*)centerController).topViewController;
+    }
+    if ([name isEqual:NSStringFromClass(centerController.class)])
     {
         return;
     }

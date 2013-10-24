@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ICMQuiltItemView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ICMQuiltItemView</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流子项视图接口</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>
+			
+			<NodeRef refid="616"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMQuiltItemView/initWithReuseIdentifier:frame:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据引用标识初始化</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReuseIdentifier:(NSString *)reuseIdentifier frame:(CGRect)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reuseIdentifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter><Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">显示区域</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithReuseIdentifier:frame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMQuiltItemView/reuseIdentifier</TokenIdentifier>
+			<Abstract type="html">	@brief	获取复用标识</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)reuseIdentifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">复用标识</Abstract></ReturnValue>
+			<Anchor>//api/name/reuseIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMQuiltItemView/layout:</TokenIdentifier>
+			<Abstract type="html">	@brief	排版视图，调用此方法后表示瀑布流子项需要进行排版并计算显示区域，以异步方式向构造器协议对象派发：
+- (void)quiltItemView:(UIView&lt;IQuiltItemView&gt; *)quiltItemView frame:(CGRect)frame;</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>- (void)layout:(CGFloat)itemWidth</Declaration>
+			
+			
+			<Anchor>//api/name/layout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMQuiltItemView/constructorDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取构造器协议对象</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ICMQuiltItemViewConstructorDelegate&gt;)constructorDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">构造器协议对象</Abstract></ReturnValue>
+			<Anchor>//api/name/constructorDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ICMQuiltItemView/setConstructorDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置构造器协议对象</Abstract>
+			<DeclaredIn>ICMQuiltItemView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConstructorDelegate:(id&lt;ICMQuiltItemViewConstructorDelegate&gt;)constructorDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>constructorDelegate</Name>
+					<Abstract type="html">构造器协议对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConstructorDelegate:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

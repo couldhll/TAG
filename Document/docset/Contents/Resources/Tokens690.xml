@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSTimerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSTimerDelegate</TokenIdentifier>
+			<Abstract type="html">@brief NSTimer delegate interface protocol</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>
+			
+			<NodeRef refid="690"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimerDelegate/timerDidFire:</TokenIdentifier>
+			<Abstract type="html">@brief Fired event.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>- (void)timerDidFire:(NSTimer *)timer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timer</Name>
+					<Abstract type="html">Fired timer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/timerDidFire:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimerDelegate/timerShouldRepeat:</TokenIdentifier>
+			<Abstract type="html">@brief Timer should repeat or not.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)timerShouldRepeat:(NSTimer *)timer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timer</Name>
+					<Abstract type="html">Fired timer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES, timer will be repeated. NO, timer is invalidated.</Abstract></ReturnValue>
+			<Anchor>//api/name/timerShouldRepeat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimerDelegate/timerFired:</TokenIdentifier>
+			<Abstract type="html">@brief Use timerDidFire:. Deprecated by name collision with private method.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>- (void)timerFired:(NSTimer *)timer</Declaration>
+			
+			
+			<Anchor>//api/name/timerFired:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

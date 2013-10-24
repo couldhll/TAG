@@ -1,0 +1,1212 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ISSAuthOptions Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TAG </a></h1>
+				<a id="developerHome" href="../index.html">CouldHll</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ISSAuthOptions Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/allowCallback">&nbsp;&nbsp;&nbsp;&nbsp;- allowCallback</option>
+	
+	<option value="//api/name/authManagerViewDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- authManagerViewDelegate</option>
+	
+	<option value="//api/name/autoAuth">&nbsp;&nbsp;&nbsp;&nbsp;- autoAuth</option>
+	
+	<option value="//api/name/clone">&nbsp;&nbsp;&nbsp;&nbsp;- clone</option>
+	
+	<option value="//api/name/followAccounts">&nbsp;&nbsp;&nbsp;&nbsp;- followAccounts</option>
+	
+	<option value="//api/name/powerByHidden">&nbsp;&nbsp;&nbsp;&nbsp;- powerByHidden</option>
+	
+	<option value="//api/name/scopes">&nbsp;&nbsp;&nbsp;&nbsp;- scopes</option>
+	
+	<option value="//api/name/setAllowCallback:">&nbsp;&nbsp;&nbsp;&nbsp;- setAllowCallback:</option>
+	
+	<option value="//api/name/setAuthManagerViewDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setAuthManagerViewDelegate:</option>
+	
+	<option value="//api/name/setAutoAuth:">&nbsp;&nbsp;&nbsp;&nbsp;- setAutoAuth:</option>
+	
+	<option value="//api/name/setFollowAccounts:">&nbsp;&nbsp;&nbsp;&nbsp;- setFollowAccounts:</option>
+	
+	<option value="//api/name/setPowerByHidden:">&nbsp;&nbsp;&nbsp;&nbsp;- setPowerByHidden:</option>
+	
+	<option value="//api/name/setScopes:">&nbsp;&nbsp;&nbsp;&nbsp;- setScopes:</option>
+	
+	<option value="//api/name/setViewDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- setViewDelegate:</option>
+	
+	<option value="//api/name/setViewStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- setViewStyle:</option>
+	
+	<option value="//api/name/viewDelegate">&nbsp;&nbsp;&nbsp;&nbsp;- viewDelegate</option>
+	
+	<option value="//api/name/viewStyle">&nbsp;&nbsp;&nbsp;&nbsp;- viewStyle</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowCallback">allowCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authManagerViewDelegate">authManagerViewDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoAuth">autoAuth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clone">clone</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followAccounts">followAccounts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/powerByHidden">powerByHidden</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scopes">scopes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAllowCallback:">setAllowCallback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAuthManagerViewDelegate:">setAuthManagerViewDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAutoAuth:">setAutoAuth:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFollowAccounts:">setFollowAccounts:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPowerByHidden:">setPowerByHidden:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setScopes:">setScopes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setViewDelegate:">setViewDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setViewStyle:">setViewStyle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDelegate">viewDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewStyle">viewStyle</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ISSAuthOptions Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ISSAuthOptions Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying<br />NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ISSAuthOptions.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>@brief  授权选项
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewStyle">&ndash;&nbsp;viewStyle</a></code>
+		<span class="tooltip"><pre><code>@brief  获取视图样式
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setViewStyle:">&ndash;&nbsp;setViewStyle:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置视图样式
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoAuth">&ndash;&nbsp;autoAuth</a></code>
+		<span class="tooltip"><pre><code>@brief  自动授权标志，当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAutoAuth:">&ndash;&nbsp;setAutoAuth:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置自动授权标识,当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowCallback">&ndash;&nbsp;allowCallback</a></code>
+		<span class="tooltip"><pre><code>@brief  是否允许授权后回调到服务器，默认为YES，对于没有服务器或者不需要回调服务器的应用可以设置为NO
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAllowCallback:">&ndash;&nbsp;setAllowCallback:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置是否允许授权后回调服务器
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDelegate">&ndash;&nbsp;viewDelegate</a></code>
+		<span class="tooltip"><pre><code>@brief  获取授权视图协议委托
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setViewDelegate:">&ndash;&nbsp;setViewDelegate:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置授权视图协议委托
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authManagerViewDelegate">&ndash;&nbsp;authManagerViewDelegate</a></code>
+		<span class="tooltip"><pre><code>@brief  授权管理视图协议委托
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAuthManagerViewDelegate:">&ndash;&nbsp;setAuthManagerViewDelegate:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置授权管理视图协议委托
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scopes">&ndash;&nbsp;scopes</a></code>
+		<span class="tooltip"><pre><code>@brief  获取授权权限
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setScopes:">&ndash;&nbsp;setScopes:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置授权权限
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/powerByHidden">&ndash;&nbsp;powerByHidden</a></code>
+		<span class="tooltip"><pre><code>@brief  获取版权隐藏标识
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPowerByHidden:">&ndash;&nbsp;setPowerByHidden:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置版本信息隐藏标识
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followAccounts">&ndash;&nbsp;followAccounts</a></code>
+		<span class="tooltip"><pre><code>@brief  获取关注帐号
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFollowAccounts:">&ndash;&nbsp;setFollowAccounts:</a></code>
+		<span class="tooltip"><pre><code>@brief  设置关注帐号
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clone">&ndash;&nbsp;clone</a></code>
+		<span class="tooltip"><pre><code>@brief  拷贝授权选项对象
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allowCallback" title="allowCallback"></a>
+	<h3 class="subsubtitle method-title">allowCallback</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  是否允许授权后回调到服务器，默认为YES，对于没有服务器或者不需要回调服务器的应用可以设置为NO
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)allowCallback</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES表示回调服务器，NO表示不回调服务器</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authManagerViewDelegate" title="authManagerViewDelegate"></a>
+	<h3 class="subsubtitle method-title">authManagerViewDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  授权管理视图协议委托
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;ISSViewDelegate&gt;)authManagerViewDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autoAuth" title="autoAuth"></a>
+	<h3 class="subsubtitle method-title">autoAuth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  自动授权标志，当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)autoAuth</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>自动授权标识</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clone" title="clone"></a>
+	<h3 class="subsubtitle method-title">clone</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  拷贝授权选项对象
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;ISSAuthOptions&gt;)clone</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>授权选项对象</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/followAccounts" title="followAccounts"></a>
+	<h3 class="subsubtitle method-title">followAccounts</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取关注帐号
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)followAccounts</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>关注帐号的字典结构</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/powerByHidden" title="powerByHidden"></a>
+	<h3 class="subsubtitle method-title">powerByHidden</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取版权隐藏标识
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)powerByHidden</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES 表示隐藏， NO 表示不隐藏</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scopes" title="scopes"></a>
+	<h3 class="subsubtitle method-title">scopes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取授权权限
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)scopes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>授权权限</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAllowCallback:" title="setAllowCallback:"></a>
+	<h3 class="subsubtitle method-title">setAllowCallback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置是否允许授权后回调服务器
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAllowCallback:(BOOL)<em>allowCallback</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>allowCallback</em></dt>
+			<dd><p>YES表示回调服务器，NO表示不回调服务器</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAuthManagerViewDelegate:" title="setAuthManagerViewDelegate:"></a>
+	<h3 class="subsubtitle method-title">setAuthManagerViewDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置授权管理视图协议委托
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAuthManagerViewDelegate:(id&lt;ISSViewDelegate&gt;)<em>authManagerViewDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>authManagerViewDelegate</em></dt>
+			<dd><p>协议委托</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAutoAuth:" title="setAutoAuth:"></a>
+	<h3 class="subsubtitle method-title">setAutoAuth:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置自动授权标识,当分享内容时发现授权过期是否委托SDK处理授权问题，YES：表示委托授权， NO：表示不委托授权，需要自己根据返回值进行判断和处理
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAutoAuth:(BOOL)<em>autoAuth</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autoAuth</em></dt>
+			<dd><p>自动授权标识</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFollowAccounts:" title="setFollowAccounts:"></a>
+	<h3 class="subsubtitle method-title">setFollowAccounts:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置关注帐号
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setFollowAccounts:(NSDictionary *)<em>followAccounts</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>followAccounts</em></dt>
+			<dd><p>关注帐号的字典结构</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPowerByHidden:" title="setPowerByHidden:"></a>
+	<h3 class="subsubtitle method-title">setPowerByHidden:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置版本信息隐藏标识
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setPowerByHidden:(BOOL)<em>powerByHidden</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>powerByHidden</em></dt>
+			<dd><p>YES 表示隐藏， NO 表示不隐藏</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setScopes:" title="setScopes:"></a>
+	<h3 class="subsubtitle method-title">setScopes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置授权权限
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setScopes:(NSDictionary *)<em>scopes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scopes</em></dt>
+			<dd><p>授权权限</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setViewDelegate:" title="setViewDelegate:"></a>
+	<h3 class="subsubtitle method-title">setViewDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置授权视图协议委托
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setViewDelegate:(id&lt;ISSViewDelegate&gt;)<em>viewDelegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewDelegate</em></dt>
+			<dd><p>协议委托</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setViewStyle:" title="setViewStyle:"></a>
+	<h3 class="subsubtitle method-title">setViewStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  设置视图样式
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setViewStyle:(SSAuthViewStyle)<em>viewStyle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewStyle</em></dt>
+			<dd><p>视图样式</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDelegate" title="viewDelegate"></a>
+	<h3 class="subsubtitle method-title">viewDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取授权视图协议委托
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;ISSViewDelegate&gt;)viewDelegate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>协议委托</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewStyle" title="viewStyle"></a>
+	<h3 class="subsubtitle method-title">viewStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@brief  获取视图样式
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SSAuthViewStyle)viewStyle</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>视图样式</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ISSAuthOptions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

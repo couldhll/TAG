@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WeiYun_upload_photo_GET.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_upload_photo_GET</TokenIdentifier>
+			<Abstract type="html">\brief 申请上传照片</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			
+			<NodeRef refid="479"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParam_sha:</TokenIdentifier>
+			<Abstract type="html">待上传文件SHA</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_sha</Declaration>
+			
+			
+			<Anchor>//api/name/param_sha</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/param_sha</TokenIdentifier>
+			<Abstract type="html">待上传文件SHA</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_sha</Declaration>
+			
+			
+			<Anchor>//api/name/param_sha</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParam_md5:</TokenIdentifier>
+			<Abstract type="html">待上传文件MD5</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_md5</Declaration>
+			
+			
+			<Anchor>//api/name/param_md5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/param_md5</TokenIdentifier>
+			<Abstract type="html">待上传文件MD5</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_md5</Declaration>
+			
+			
+			<Anchor>//api/name/param_md5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParam_size:</TokenIdentifier>
+			<Abstract type="html">待上传文件size字节</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_size</Declaration>
+			
+			
+			<Anchor>//api/name/param_size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/param_size</TokenIdentifier>
+			<Abstract type="html">待上传文件size字节</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_size</Declaration>
+			
+			
+			<Anchor>//api/name/param_size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParam_name:</TokenIdentifier>
+			<Abstract type="html">待上传文件名</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_name</Declaration>
+			
+			
+			<Anchor>//api/name/param_name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/param_name</TokenIdentifier>
+			<Abstract type="html">待上传文件名</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_name</Declaration>
+			
+			
+			<Anchor>//api/name/param_name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParam_upload_type:</TokenIdentifier>
+			<Abstract type="html">control|normal，默认control</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_upload_type</Declaration>
+			
+			
+			<Anchor>//api/name/param_upload_type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/param_upload_type</TokenIdentifier>
+			<Abstract type="html">control|normal，默认control</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_upload_type</Declaration>
+			
+			
+			<Anchor>//api/name/param_upload_type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_upload_photo_GET/setParamUploadData:</TokenIdentifier>
+			<Abstract type="html">需要上传的数据</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredData paramUploadData</Declaration>
+			
+			
+			<Anchor>//api/name/paramUploadData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_upload_photo_GET/paramUploadData</TokenIdentifier>
+			<Abstract type="html">需要上传的数据</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredData paramUploadData</Declaration>
+			
+			
+			<Anchor>//api/name/paramUploadData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

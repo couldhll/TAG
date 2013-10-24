@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "IIViewDeckController.h"
+#import <ViewDeck/IIViewDeckController.h>
 
 @interface HLLAppDelegate : UIResponder <UIApplicationDelegate>
 
