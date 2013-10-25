@@ -11,8 +11,8 @@
 #import "HLLTAGLoginViewController.h"
 #import "HLLUserRegisterViewController.h"
 
-#import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
+#import <SSKeychain/SSKeychain.h>
 
 @interface HLLUserLoginViewController ()
 
@@ -91,176 +91,88 @@
 
 - (IBAction)sinaWeiboLoginButtonPressed:(id)sender
 {
-    id<ISSAuthOptions> authOptions=[ShareSDK authOptionsWithAutoAuth:YES
-                                              allowCallback:NO
-                                              authViewStyle:SSAuthViewStyleModal
-                                               viewDelegate:nil
-                                    authManagerViewDelegate:nil];
-    [ShareSDK getUserInfoWithType:ShareTypeSinaWeibo
-                      authOptions:authOptions
-                           result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
-                               if (result)
-                               {
-                                   //登录成功
-                                   //显示注销按钮
-//                                   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销"
-//                                                                                                              style:UIBarButtonItemStyleBordered
-//                                                                                                             target:self
-//                                                                                                             action:@selector(logoutButtonClickHandler:)];
-                                   NSLog(@"%@",userInfo.uid);
-                                   
-                                   //判断是否注册
-                                   PFQuery *query = [PFQuery queryWithClassName:@"UserInfo"];
-                                   [query whereKey:@"userId" equalTo:[userInfo uid]];
-                                   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-                                       //写入用户数据
-                                       if ([objects count] == 0)
-                                       {
-                                           PFObject *newUser = [PFObject objectWithClassName:@"UserInfo"];
-                                           [newUser setObject:[userInfo uid] forKey:@"userId"];
-                                           [newUser setObject:[userInfo nickname]
-                                                       forKey:@"nickname"];
-                                           [newUser setObject:[userInfo icon] forKey:@"icon"];
-                                           [newUser saveInBackground];
-                                       }
-                                   }];
-                                   
-                                   // exit
-                                   [self dismissModalViewControllerAnimated:YES];
-
-//                                   UserViewController *userVC = [[UserViewController alloc] initWithUser:_userInfo];
-//                                   [self.navigationController pushViewController:userVC animated:YES];
-                               }
-                               else
-                               {
-                                   if ([error errorCode] != -103)
-                                   {
-                                       //非取消授权则显示提示
-                                       //登录失败
-                                       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                                                           message:[NSString stringWithFormat:@"登录失败!%@", [error errorDescription]]
-                                                                                          delegate:nil
-                                                                                 cancelButtonTitle:@"知道了"
-                                                                                 otherButtonTitles:nil];
-                                       [alertView show];
-                                   }
-                               }
-                           }];
+    [self loginWithType:ShareTypeSinaWeibo];
 }
 
-- (IBAction)qqLoginButtonPressed:(id)sender
+- (IBAction)qqSpaceLoginButtonPressed:(id)sender
 {
-    id<ISSAuthOptions> authOptions=[ShareSDK authOptionsWithAutoAuth:YES
-                                                       allowCallback:NO
-                                                       authViewStyle:SSAuthViewStyleModal
-                                                        viewDelegate:nil
-                                             authManagerViewDelegate:nil];
-    [ShareSDK getUserInfoWithType:ShareTypeQQSpace
-                      authOptions:authOptions
-                           result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
-                               if (result)
-                               {
-                                   //登录成功
-                                   //显示注销按钮
-                                   //                                   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销"
-                                   //                                                                                                              style:UIBarButtonItemStyleBordered
-                                   //                                                                                                             target:self
-                                   //                                                                                                             action:@selector(logoutButtonClickHandler:)];
-                                   NSLog(@"%@",userInfo.uid);
-                                   
-                                   //判断是否注册
-                                   PFQuery *query = [PFQuery queryWithClassName:@"UserInfo"];
-                                   [query whereKey:@"userId" equalTo:[userInfo uid]];
-                                   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-                                       //写入用户数据
-                                       if ([objects count] == 0)
-                                       {
-                                           PFObject *newUser = [PFObject objectWithClassName:@"UserInfo"];
-                                           [newUser setObject:[userInfo uid] forKey:@"userId"];
-                                           [newUser setObject:[userInfo nickname]
-                                                       forKey:@"nickname"];
-                                           [newUser setObject:[userInfo icon] forKey:@"icon"];
-                                           [newUser saveInBackground];
-                                       }
-                                   }];
-                                   
-                                   // exit
-                                   [self dismissModalViewControllerAnimated:YES];
-                                   
-                                   //                                   UserViewController *userVC = [[UserViewController alloc] initWithUser:_userInfo];
-                                   //                                   [self.navigationController pushViewController:userVC animated:YES];
-                               }
-                               else
-                               {
-                                   if ([error errorCode] != -103)
-                                   {
-                                       //非取消授权则显示提示
-                                       //登录失败
-                                       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                                                           message:[NSString stringWithFormat:@"登录失败!%@", [error errorDescription]]
-                                                                                          delegate:nil
-                                                                                 cancelButtonTitle:@"知道了"
-                                                                                 otherButtonTitles:nil];
-                                       [alertView show];
-                                   }
-                               }
-                           }];
+    [self loginWithType:ShareTypeQQSpace];
 }
 
 - (IBAction)facebookLoginButtonPressed:(id)sender
 {
+    [self loginWithType:ShareTypeFacebook];
+}
+
+- (IBAction)twitterLoginButtonPressed:(id)sender
+{
+    [self loginWithType:ShareTypeTwitter];
+}
+
+#pragma mark - Private methods
+
+- (void)loginWithType:(ShareType)shareType
+{
     id<ISSAuthOptions> authOptions=[ShareSDK authOptionsWithAutoAuth:YES
                                                        allowCallback:NO
                                                        authViewStyle:SSAuthViewStyleModal
                                                         viewDelegate:nil
                                              authManagerViewDelegate:nil];
-    [ShareSDK getUserInfoWithType:ShareTypeFacebook
+    [ShareSDK getUserInfoWithType:shareType
                       authOptions:authOptions
                            result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
                                if (result)
                                {
-                                   //登录成功
-                                   //显示注销按钮
-                                   //                                   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销"
-                                   //                                                                                                              style:UIBarButtonItemStyleBordered
-                                   //                                                                                                             target:self
-                                   //                                                                                                             action:@selector(logoutButtonClickHandler:)];
-                                   NSLog(@"%@",userInfo.uid);
+                                   // login button notification
+                                   NSMutableDictionary *notificationuUserInfo=[NSMutableDictionary dictionary];
+                                   [notificationuUserInfo setValue:@YES forKey:@"logined"];
+                                   [notificationuUserInfo setValue:self forKey:@"sender"];
+                                   [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
                                    
-                                   //判断是否注册
-                                   PFQuery *query = [PFQuery queryWithClassName:@"UserInfo"];
-                                   [query whereKey:@"userId" equalTo:[userInfo uid]];
-                                   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-                                       //写入用户数据
-                                       if ([objects count] == 0)
-                                       {
-                                           PFObject *newUser = [PFObject objectWithClassName:@"UserInfo"];
-                                           [newUser setObject:[userInfo uid] forKey:@"userId"];
-                                           [newUser setObject:[userInfo nickname]
-                                                       forKey:@"nickname"];
-                                           [newUser setObject:[userInfo icon] forKey:@"icon"];
-                                           [newUser saveInBackground];
-                                       }
-                                   }];
+                                   // change share type to third id
+                                   NSString *thirdId;
+                                   switch(shareType)
+                                   {
+                                       case ShareTypeSinaWeibo:
+                                           thirdId = DATA_API_THIRD_SINAWEIBO;
+                                           break;
+                                       case ShareTypeQQSpace:
+                                           thirdId = DATA_API_THIRD_QQSPACE;
+                                           break;
+                                       case ShareTypeFacebook:
+                                           thirdId = DATA_API_THIRD_FACEBOOK;
+                                           break;
+                                       case ShareTypeTwitter:
+                                           thirdId = DATA_API_THIRD_TWITTER;
+                                           break;
+                                       default:
+                                           thirdId = DATA_API_THIRD_SINAWEIBO;
+                                   }
+                                   
+                                   // third login
+                                   [HLLDataAPI userThirdLogin:self.view
+                                                      thirdId:thirdId
+                                                  thirdUserId:userInfo.uid
+                                                 completion:^(id json, JSONModelError *err) {
+                                                     HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                                                     if (userModel)
+                                                     {
+//                                                         // save account to keycain
+//                                                         [SSKeychain setPassword:self.userPasswordTextField.text forService:@"" account:self.userEmailTextField.text];
+                                                         
+                                                         // exit
+                                                         [self dismissModalViewControllerAnimated:YES];
+                                                     }
+                                                 }];
                                    
                                    // exit
                                    [self dismissModalViewControllerAnimated:YES];
-                                   
-                                   //                                   UserViewController *userVC = [[UserViewController alloc] initWithUser:_userInfo];
-                                   //                                   [self.navigationController pushViewController:userVC animated:YES];
                                }
                                else
                                {
                                    if ([error errorCode] != -103)
                                    {
-                                       //非取消授权则显示提示
-                                       //登录失败
-                                       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                                                           message:[NSString stringWithFormat:@"登录失败!%@", [error errorDescription]]
-                                                                                          delegate:nil
-                                                                                 cancelButtonTitle:@"知道了"
-                                                                                 otherButtonTitles:nil];
-                                       [alertView show];
+                                       [HLLHud error:@"登录失败" detail:@"授权失败"];
                                    }
                                }
                            }];

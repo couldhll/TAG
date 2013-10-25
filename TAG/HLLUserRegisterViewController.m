@@ -8,7 +8,8 @@
 
 #import "HLLUserRegisterViewController.h"
 
-#import "MBProgressHUD.h"
+#import <CocoaSecurity/CocoaSecurity.h>
+#import <SSKeychain/SSKeychain.h>
 
 @interface HLLUserRegisterViewController ()
 
@@ -52,7 +53,7 @@
     self.userPasswordVerifyTextField.delegate=self;
     
     // show the keyboard
-    [self.userNameTextField becomeFirstResponder];
+    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -94,59 +95,21 @@
 
 - (IBAction)registerButtonPressed:(id)sender
 {
-//    [[HLLDataAPI sharedInstance] userRegisterWithEmail:self.userEmailTextField.text
-//                            r                  name:self.userNameTextField.text
-//                                          password:self.userPasswordTextField.text
-//                                        completion:^(id json, JSONModelError *err) {
-//                                            NSLog(json);
-////                                            HLLUserModel* userModel = [[HLLUserModel alloc] initWithString:json error:nil];
-//                                        }];
-    
-    [[HLLDataAPI sharedInstance] userRegisterWithEmail:@"could_hll@hotmail.com"
-                                                  name:@"CouldHll"
-                                              password:@"888888"
-                                            completion:^(id json, JSONModelError *err) {
-                                                HLLUserModel* userModel = [[HLLUserModel alloc] initWithString:json error:nil];
-                                            }];
-    
-    //    NSString *msg=nil;
-    //    if(userNameTextField.text.length>0 && userPasswordTextField.text.length>0)
-    //    {
-    //        msg=[[NSString alloc]initWithFormat:@”Name:%@ login!”,nameField.text];
-    //    }
-    //    else
-    //    {
-    //        msg=[[NSString alloc]initWithFormat:@”Please input name or password!”];
-    //    }
-    //
-    //
-    //
-    //    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@”Something was done” message:msg delegate:self cancelButtonTitle:@”Cancel!” otherButtonTitles:nil];
-    //    [alert show];
-    
-    //    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    //    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-    //        // Do something...
-    //        dispatch_async(dispatch_get_main_queue(), ^{
-    //            [MBProgressHUD hideHUDForView:self.view animated:YES];
-    //        });
-    //    });
-    
-    // hud login success
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_mark_check.png"]];
-    hud.labelText = @"Completed";
-    int64_t         delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
-                   {
-                       // close hud
-                       [MBProgressHUD hideHUDForView:self.view animated:YES];
-                       
-                       // exit
-                       [self dismissModalViewControllerAnimated:YES];
-                   });
+    [HLLDataAPI userRegister:self.view
+                       email:self.userEmailTextField.text
+                        name:self.userNameTextField.text
+                    password:self.userPasswordTextField.text
+                  completion:^(id json, JSONModelError *err) {
+                      HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                      if (userModel)
+                      {
+                          // save account to keycain
+                          [SSKeychain setPassword:self.userPasswordTextField.text forService:@"" account:self.userEmailTextField.text];
+                          
+                          // exit
+                          [self dismissModalViewControllerAnimated:YES];
+                      }
+                  }];
 }
 
 - (IBAction)backgroundPressed:(id)sender

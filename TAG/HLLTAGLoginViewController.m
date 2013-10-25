@@ -8,8 +8,6 @@
 
 #import "HLLTAGLoginViewController.h"
 
-#import "MBProgressHUD.h"
-
 @interface HLLTAGLoginViewController ()
 
 @end
@@ -113,23 +111,21 @@
     //        });
     //    });
     
-    // hud login success
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_mark_check.png"]];
-    hud.labelText = @"Completed";
-    int64_t         delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
-                   {
-                       // close hud
-                       [MBProgressHUD hideHUDForView:self.view animated:YES];
-                       
-                       // exit
-                       [self dismissModalViewControllerAnimated:YES];
-                   });
-    
-    
+//    // hud login success
+//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    hud.mode = MBProgressHUDModeCustomView;
+//    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_mark_check.png"]];
+//    hud.labelText = @"Completed";
+//    int64_t         delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
+//                   {
+//                       // close hud
+//                       [MBProgressHUD hideHUDForView:self.view animated:YES];
+//                       
+//                       // exit
+//                       [self dismissModalViewControllerAnimated:YES];
+//                   });
 }
 
 - (IBAction)findPasswordButtonPressed:(id)sender

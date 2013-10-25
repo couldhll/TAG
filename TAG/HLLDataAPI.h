@@ -11,8 +11,28 @@
 #import <JSONModel/JSONHTTPClient.h>
 
 
-#define DATA_API_BASE_URL @"http://api-tagoriginals-com-3u8vy4kocu16.runscope.net/"
-//#define DATA_API_BASE_URL @"http://api.tagoriginals.com/"
+#pragma mark - Normal
+
+#define DATA_API_SECURE_KEY @"tag1566850577@playpeli"
+#define DATA_API_ORIGRINA_APP @"1"
+#define DATA_API_ORIGRINA_WEB @"2"
+
+
+#pragma mark - Normal
+
+#define DATA_API_THIRD_SINAWEIBO @"1"
+#define DATA_API_THIRD_QQSPACE @"2"
+#define DATA_API_THIRD_FACEBOOK @"3"
+#define DATA_API_THIRD_TWITTER @"4"
+
+#pragma mark - Url
+
+#ifdef DEBUG
+#   define DATA_API_BASE_URL @"http://api-tagoriginals-com-3u8vy4kocu16.runscope.net/"
+#else
+#   define DATA_API_BASE_URL @"http://api.tagoriginals.com/"
+#endif
+
 #define DATA_API_USER_BASE_URL [DATA_API_BASE_URL stringByAppendingString:@"User/"]
 #define DATA_API_USER_LOGIN_URL [DATA_API_USER_BASE_URL stringByAppendingString:@"Login"]
 #define DATA_API_USER_REGISTER_URL [DATA_API_USER_BASE_URL stringByAppendingString:@"Register"]
@@ -40,8 +60,8 @@
 
 - (BOOL)isAuthorized;
 
-- (void)userRegisterWithEmail:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock;
-
++ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock;
++ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock;
 
 
 - (void)save:(UIViewController*)sender;

@@ -29,6 +29,7 @@
 #define APPLICATION_COLOR_BLUE HexRGB(0x174C9C)
 #define APPLICATION_COLOR_YELLOW HexRGB(0xFFE719)
 
+
 #pragma mark - Font
 
 #define APPLICATION_FONT_NAME @"Helvetica"
@@ -37,6 +38,10 @@
 #define APPLICATION_FONT [UIFont fontWithName:APPLICATION_FONT_NAME size:APPLICATION_FONT_SIZE]
 #define APPLICATION_BOLD_FONT [UIFont fontWithName:[APPLICATION_FONT_NAME stringByAppendingString:@"-Bold"] size:APPLICATION_FONT_SIZE]
 #define APPLICATION_BOLD_OBLIQUE_FONT [UIFont fontWithName:[APPLICATION_FONT_NAME stringByAppendingString:@"-Oblique"] size:APPLICATION_FONT_SIZE]
+
+#pragma mark - App Delegate
+
+#define AppDelegate (HLLAppDelegate *)[[UIApplication sharedApplication] delegate]
 
 
 #pragma mark - Enum

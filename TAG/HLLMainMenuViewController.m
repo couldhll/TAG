@@ -130,7 +130,7 @@
     
     if ([buttonName isEqual:@"loginorloginoutButton"])
     {
-        [self.loginorloginoutButton setLogined:!self.loginorloginoutButton.logined];
+        
     }
     else
     {

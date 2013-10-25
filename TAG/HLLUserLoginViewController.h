@@ -20,6 +20,7 @@
 - (IBAction)sinaWeiboLoginButtonPressed:(id)sender;
 - (IBAction)qqLoginButtonPressed:(id)sender;
 - (IBAction)facebookLoginButtonPressed:(id)sender;
+- (IBAction)twitterLoginButtonPressed:(id)sender;
 
 
 @end

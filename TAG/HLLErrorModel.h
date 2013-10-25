@@ -10,8 +10,8 @@
 
 @interface HLLErrorModel : JSONModel
 
-//@property (strong, nonatomic) NSString* request;
-//@property (strong, nonatomic) NSString* error_code;
+@property (strong, nonatomic) NSString* request;
+@property (strong, nonatomic) NSString* error_code;
 @property (strong, nonatomic) NSString* error_description;
 
 @end

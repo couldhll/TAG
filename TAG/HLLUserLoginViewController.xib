@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLLUserLoginViewController">
@@ -15,34 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lec-0K-0yI">
-                    <rect key="frame" x="40" y="257" width="236" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.1098039299249649" green="0.30980393290519714" blue="0.60784316062927246" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Connect with Facebook">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="facebookLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="ZdC-Yt-eNc"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Aqj-WQ-L5v">
-                    <rect key="frame" x="40" y="316" width="236" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.1098039299" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
-                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Connect with QQ">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="qqLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="hhd-LV-hRf"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uwz-45-U0S">
-                    <rect key="frame" x="40" y="375" width="115" height="50"/>
+                    <rect key="frame" x="40" y="350" width="119" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.9960784912109375" green="0.89803928136825562" blue="0.22745099663734436" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
@@ -69,16 +43,56 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U3c-hp-vzj">
-                    <rect key="frame" x="161" y="375" width="115" height="50"/>
+                    <rect key="frame" x="160" y="350" width="119" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99607849120000003" green="0.8980392814" blue="0.22745099660000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="backgroundColor" red="0.11372549830000001" green="0.30980393290000002" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
                     <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
-                    <color key="tintColor" red="0.13333334028720856" green="0.33725491166114807" blue="0.58431375026702881" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Join">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="tagRegisterButtonPressed:" destination="-1" eventType="touchUpInside" id="OnN-dO-8dp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k73-XP-vh0">
+                    <rect key="frame" x="40" y="283" width="59" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Resource/User/Login/Main/sinaweibo_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sinaWeiboLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="gW5-Ze-dkD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ojj-73-ODN">
+                    <rect key="frame" x="100" y="283" width="59" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Resource/User/Login/Main/qqSpace_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="qqSpaceLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="KWi-Kd-fQ2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O45-Rb-AaU">
+                    <rect key="frame" x="160" y="283" width="59" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Resource/User/Login/Main/facebook_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="facebookLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="Pwg-5P-qY9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zVw-0E-VZI">
+                    <rect key="frame" x="220" y="283" width="59" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Resource/User/Login/Main/twitter_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="twitterLoginButtonPressed:" destination="-1" eventType="touchUpInside" id="vwy-a5-9lj"/>
                     </connections>
                 </button>
             </subviews>
@@ -88,6 +102,10 @@
     </objects>
     <resources>
         <image name="Resource/User/Login/Main/back_button.png" width="16" height="16"/>
+        <image name="Resource/User/Login/Main/facebook_button.png" width="16" height="16"/>
         <image name="Resource/User/Login/Main/logo_icon.png" width="16" height="16"/>
+        <image name="Resource/User/Login/Main/qqSpace_button.png" width="16" height="16"/>
+        <image name="Resource/User/Login/Main/sinaweibo_button.png" width="16" height="16"/>
+        <image name="Resource/User/Login/Main/twitter_button.png" width="16" height="16"/>
     </resources>
 </document>

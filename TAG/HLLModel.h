@@ -9,6 +9,7 @@
 #ifndef TAG_HLLModel_h
 #define TAG_HLLModel_h
 
+#import "HLLSuccessModel.h"
 #import "HLLErrorModel.h"
 
 #import "HLLUserModel.h"

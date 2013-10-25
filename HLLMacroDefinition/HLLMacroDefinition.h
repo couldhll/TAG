@@ -196,8 +196,6 @@ description:__VA_ARGS__];                             \
 
 #pragma mark - Other
 
-#define AppDelegate (HLLAppDelegate *)[[UIApplication sharedApplication] delegate]
-
 // GCD
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)

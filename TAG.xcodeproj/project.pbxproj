@@ -83,7 +83,6 @@
 		B2111582180FC99100254DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BC0FC217EEECA40071036D /* UIKit.framework */; };
 		B2111588180FC99200254DBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2111586180FC99200254DBA /* InfoPlist.strings */; };
 		B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111589180FC99200254DBA /* TAGLogicTests.m */; };
-		B2111591180FCB0F00254DBA /* UIFont+HLLFontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */; };
 		B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */; };
 		B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22640ED1816635E00F2A4A5 /* HLLUserRegisterViewController.m */; };
 		B22640F01816635E00F2A4A5 /* HLLUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22640EE1816635E00F2A4A5 /* HLLUserRegisterViewController.xib */; };
@@ -141,7 +140,9 @@
 		B2C105B61808F49C00238046 /* HLLNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C105B41808F49C00238046 /* HLLNavigationController.xib */; };
 		B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C105B9180BE37D00238046 /* HLLBorderButton.m */; };
 		B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C105BC180BEF6300238046 /* HLLSelectButton.m */; };
+		B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D0DC1C181A6FF500F171A7 /* HLLSuccessModel.m */; };
 		B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D647581818C15E005E353E /* HLLErrorModel.m */; };
+		B2D6475E18190258005E353E /* HLLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6475D18190258005E353E /* HLLHud.m */; };
 		B2EBB0F71816225F00805621 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EBB0F61816225F00805621 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
@@ -219,7 +220,6 @@
 		B2111575180FBBF300254DBA /* UIFont+HLLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HLLFont.h"; path = "UIFont+HLLFont/UIFont+HLLFont.h"; sourceTree = "<group>"; };
 		B2111576180FBBF300254DBA /* UIFont+HLLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFont.m"; path = "UIFont+HLLFont/UIFont+HLLFont.m"; sourceTree = "<group>"; };
 		B2111578180FBC2000254DBA /* HLLMacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HLLMacroDefinition.h; path = HLLMacroDefinition/HLLMacroDefinition.h; sourceTree = "<group>"; };
-		B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HLLFontTests.m"; path = "../TAGTests/UIFont+HLLFontTests.m"; sourceTree = "<group>"; };
 		B211157F180FC99100254DBA /* TAGLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2111585180FC99200254DBA /* TAGLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAGLogicTests-Info.plist"; sourceTree = "<group>"; };
 		B2111587180FC99200254DBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -315,8 +315,12 @@
 		B2C105BB180BEF6300238046 /* HLLSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSelectButton.h; sourceTree = "<group>"; };
 		B2C105BC180BEF6300238046 /* HLLSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSelectButton.m; sourceTree = "<group>"; };
 		B2C105BF180BF13E00238046 /* HLLAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLAppConfig.h; sourceTree = "<group>"; };
+		B2D0DC1B181A6FF500F171A7 /* HLLSuccessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSuccessModel.h; sourceTree = "<group>"; };
+		B2D0DC1C181A6FF500F171A7 /* HLLSuccessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSuccessModel.m; sourceTree = "<group>"; };
 		B2D647571818C15E005E353E /* HLLErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLErrorModel.h; sourceTree = "<group>"; };
 		B2D647581818C15E005E353E /* HLLErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLErrorModel.m; sourceTree = "<group>"; };
+		B2D6475C18190258005E353E /* HLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLHud.h; sourceTree = "<group>"; };
+		B2D6475D18190258005E353E /* HLLHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLHud.m; sourceTree = "<group>"; };
 		B2EBB0F61816225F00805621 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Crashlytics/Crashlytics.framework; sourceTree = "<group>"; };
 		B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2F8C7FB17FE5099001C7DCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -592,7 +596,6 @@
 			children = (
 				B2111589180FC99200254DBA /* TAGLogicTests.m */,
 				B23D00BB180796AD000259B4 /* HLLDataAPITests.m */,
-				B2111579180FC0D800254DBA /* UIFont+HLLFontTests.m */,
 				B2111584180FC99200254DBA /* Supporting Files */,
 			);
 			path = TAGLogicTests;
@@ -630,7 +633,7 @@
 			isa = PBXGroup;
 			children = (
 				B22640F1181681DB00F2A4A5 /* HLLModel.h */,
-				B2D647561818C124005E353E /* Error */,
+				B2D0DC1F181A708100F171A7 /* Feedback */,
 				B230C0271814FED9007A3F5D /* User */,
 			);
 			name = Model;
@@ -727,6 +730,7 @@
 				B22640F2181682D600F2A4A5 /* HLLComponent.h */,
 				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
+				B2D6475A18190228005E353E /* Hud */,
 				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
 				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
 				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
@@ -912,6 +916,24 @@
 			name = Button;
 			sourceTree = "<group>";
 		};
+		B2D0DC1E181A707000F171A7 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				B2D0DC1B181A6FF500F171A7 /* HLLSuccessModel.h */,
+				B2D0DC1C181A6FF500F171A7 /* HLLSuccessModel.m */,
+			);
+			name = Success;
+			sourceTree = "<group>";
+		};
+		B2D0DC1F181A708100F171A7 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				B2D0DC1E181A707000F171A7 /* Success */,
+				B2D647561818C124005E353E /* Error */,
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
 		B2D647561818C124005E353E /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +941,15 @@
 				B2D647581818C15E005E353E /* HLLErrorModel.m */,
 			);
 			name = Error;
+			sourceTree = "<group>";
+		};
+		B2D6475A18190228005E353E /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				B2D6475C18190258005E353E /* HLLHud.h */,
+				B2D6475D18190258005E353E /* HLLHud.m */,
+			);
+			name = Hud;
 			sourceTree = "<group>";
 		};
 		B2EBB0F81816227D00805621 /* Crashlytics */ = {
@@ -1170,7 +1201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23C01701817BCA300A088E2 /* HLLDataAPITests.m in Sources */,
-				B2111591180FCB0F00254DBA /* UIFont+HLLFontTests.m in Sources */,
 				B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1191,6 +1221,7 @@
 				B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
+				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
 				B29AB58517FEF003007D884E /* HLLDataAPI.m in Sources */,
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
@@ -1204,6 +1235,7 @@
 				B2111577180FBBF300254DBA /* UIFont+HLLFont.m in Sources */,
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
+				B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
 				B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */,
 			);

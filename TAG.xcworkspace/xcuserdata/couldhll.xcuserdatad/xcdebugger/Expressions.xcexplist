@@ -3,14 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[HLLMainMenuViewController buttonPressed:]:HLLMainMenuViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "button.name">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "__58-[HLLUserLoginViewController sinaWeiboLoginButtonPressed:]_block_invoke:HLLUserLoginViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -19,23 +11,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[HLLMainMenuViewController buttonPressed:]:HLLMainMenuViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "button.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "__61-[HLLDataAPI userRegisterWithEmail:name:password:completion:]_block_invoke:HLLDataAPI.m">
          <PersistentStrings>
             <PersistentString
-               value = "errorModel.error">
+               value = "errorModel.error_description">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "font.fontName">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[HLLProductListViewController viewWillAppear:]:HLLProductListViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[UIFont(HLLFont) setBold:]:UIFont+HLLFont.m">
@@ -71,6 +60,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[HLLProductFilterViewController viewDidLoad]:HLLProductFilterViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HLLProductListViewController viewWillAppear:]:HLLProductListViewController.m">
+      </ContextState>
+      <ContextState
          contextName = "-[HLLProductFilterViewController filterButtonPressed:]:HLLProductFilterViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -93,7 +88,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[HLLProductFilterViewController viewDidLoad]:HLLProductFilterViewController.m">
+         contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "font.fontName">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -13,10 +13,10 @@
 @interface HLLUserModel : JSONModel
 
 @property (assign, nonatomic) int id;
-@property (strong, nonatomic) NSString* name;
-@property (strong, nonatomic) NSURL* thumbnail_head_image_url;
-@property (strong, nonatomic) NSURL* middle_head_image_url;
-@property (strong, nonatomic) NSURL* original_head_image_url;
-@property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel>* thirds;
+@property (strong, nonatomic) NSString<Optional>* name;
+@property (strong, nonatomic) NSURL<Optional>* thumbnail_head_image_url;
+@property (strong, nonatomic) NSURL<Optional>* middle_head_image_url;
+@property (strong, nonatomic) NSURL<Optional>* original_head_image_url;
+@property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>* thirds;
 
 @end
