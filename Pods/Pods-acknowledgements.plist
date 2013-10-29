@@ -518,6 +518,19 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>All text and design is copyright © 2010-2013 TestFlight App, Inc.
+
+All rights reserved.
+
+https://testflightapp.com/tos/
+</string>
+			<key>Title</key>
+			<string>TestFlightSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (c) 2013, Jeong YunWon &lt;jeong+ui7kit@youknowone.org&gt;
 All rights reserved.
 

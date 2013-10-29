@@ -22,11 +22,12 @@
 #define UI_TAB_BAR_HEIGHT               49
 #define UI_STATUS_BAR_HEIGHT            20
 
+
 #pragma mark - Log
 
 //// print log with line&function
 //#ifdef DEBUG
-//    #define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+//    #define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 //#else
 //    #define NSLog(...)
 //#endif
@@ -34,7 +35,7 @@
 // print log with line&function without time
 #if DEBUG
 //    #define NSLog(FORMAT, ...) fprintf(stderr,"\n content:%s \n function:%s \n line:%d \n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String], __FUNCTION__, __LINE__);
-    #define NSLog(FORMAT, ...) fprintf(stderr,"\n%s\n%s in [line:%d]\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String], __FUNCTION__, __LINE__);
+    #define NSLog(FORMAT, ...) fprintf(stderr,"\n%s\n%s in [line:%d]\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String], __FUNCTION__, __LINE__)
 #else
     #define NSLog(FORMAT, ...) nil
 #endif

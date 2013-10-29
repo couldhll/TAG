@@ -9,7 +9,6 @@
 #import "HLLUserRegisterViewController.h"
 
 #import <CocoaSecurity/CocoaSecurity.h>
-#import <SSKeychain/SSKeychain.h>
 
 @interface HLLUserRegisterViewController ()
 
@@ -99,17 +98,30 @@
                        email:self.userEmailTextField.text
                         name:self.userNameTextField.text
                     password:self.userPasswordTextField.text
-                  completion:^(id json, JSONModelError *err) {
-                      HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                      if (userModel)
-                      {
-                          // save account to keycain
-                          [SSKeychain setPassword:self.userPasswordTextField.text forService:@"" account:self.userEmailTextField.text];
-                          
-                          // exit
-                          [self dismissModalViewControllerAnimated:YES];
-                      }
-                  }];
+                  completion:nil
+                     success:^(id json, JSONModelError *err) {
+                         HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                         if (userModel)
+                         {
+                             // get login user info
+                             userModel.email=self.userEmailTextField.text;
+                             userModel.name=self.userNameTextField.text;
+                             userModel.password=self.userPasswordTextField.text;
+                             
+                             // set authorization user
+                             [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                             
+                             // hud
+                             [HLLHud success:@"Register Completed" detail:nil];
+                             
+                             // checkpoint
+                             [TestFlight passCheckpoint:@"User Register OK."];
+                             
+                             // exit
+                             [self dismissModalViewControllerAnimated:YES];
+                         }
+                     }
+                       error:nil];
 }
 
 - (IBAction)backgroundPressed:(id)sender

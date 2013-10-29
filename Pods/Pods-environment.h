@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_CocoaSecurity
 #define COCOAPODS_VERSION_MAJOR_CocoaSecurity 1
 #define COCOAPODS_VERSION_MINOR_CocoaSecurity 2
-#define COCOAPODS_VERSION_PATCH_CocoaSecurity 1
+#define COCOAPODS_VERSION_PATCH_CocoaSecurity 2
 
 // Facebook-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_Facebook_iOS_SDK
@@ -107,6 +107,12 @@
 #define COCOAPODS_VERSION_MAJOR_SevenSwitch 1
 #define COCOAPODS_VERSION_MINOR_SevenSwitch 3
 #define COCOAPODS_VERSION_PATCH_SevenSwitch 0
+
+// TestFlightSDK
+#define COCOAPODS_POD_AVAILABLE_TestFlightSDK
+#define COCOAPODS_VERSION_MAJOR_TestFlightSDK 2
+#define COCOAPODS_VERSION_MINOR_TestFlightSDK 1
+#define COCOAPODS_VERSION_PATCH_TestFlightSDK 1
 
 // UI7Kit
 #define COCOAPODS_POD_AVAILABLE_UI7Kit

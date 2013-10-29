@@ -9,8 +9,11 @@
 #import "HLLDataAPI.h"
 
 #import <CocoaSecurity/CocoaSecurity.h>
+#import <SSKeychain/SSKeychain.h>
 
 @implementation HLLDataAPI
+
+@synthesize authorizationUser;
 
 #pragma mark - Singleton methods
 
@@ -28,9 +31,17 @@
 
 #pragma mark - Public methods
 
+- (void)setAuthorizationUser:(HLLUserModel*)userModel
+{
+    // save account to keycain
+    [SSKeychain setPassword:userModel.password forService:@"" account:userModel.email];
+    
+    authorizationUser=userModel;
+}
+
 - (BOOL)isAuthorized
 {
-    return YES;
+    return self.authorizationUser==nil;
 }
 
 - (void)save:(UIViewController*)sender
@@ -38,20 +49,23 @@
     [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
 }
 
-+ (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock
++ (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
+    // md5 password
+    CocoaSecurityResult *passwordMd5 = [CocoaSecurity md5:password];
+    
     // params
     NSArray *paramsKeys=@[@"email",
                           @"password"];
     NSArray *paramsValues=@[email,
-                            password];
+                            passwordMd5.hexLower];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
-    [self postJSONWithUrl:DATA_API_USER_LOGIN_URL params:params completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_LOGIN_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock
++ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // md5 password
     CocoaSecurityResult *passwordMd5 = [CocoaSecurity md5:password];
@@ -66,16 +80,16 @@
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
-    [self postJSONWithUrl:DATA_API_USER_REGISTER_URL params:params completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_REGISTER_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userGetInfo:(UIView*)view completion:(JSONObjectBlock)completeBlock
++ (void)userGetInfo:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // send
-    [self postJSONWithUrl:DATA_API_USER_GETINFO_URL params:nil completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_GETINFO_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userUpdatePassword:(UIView*)view oldPassword:(NSString*)oldPassword newPassword:(NSString*)newPassword completion:(JSONObjectBlock)completeBlock
++ (void)userUpdatePassword:(UIView*)view oldPassword:(NSString*)oldPassword newPassword:(NSString*)newPassword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"old_password",
@@ -85,10 +99,10 @@
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
-    [self postJSONWithUrl:DATA_API_USER_UPDATEPASSWORD_URL params:params completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_UPDATEPASSWORD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock
++ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"third_id",
@@ -98,30 +112,36 @@
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
-    [self postJSONWithUrl:DATA_API_USER_THIRDLOGIN_URL params:params completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_THIRDLOGIN_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userLogout:(UIView*)view completion:(JSONObjectBlock)completeBlock
++ (void)userLogout:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // send
-    [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:nil completion:completeBlock];
+    [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
 }
 
 
 #pragma mark - Support methods
 
-+ (void)postJSONWithUrl:(NSString*)url params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock
++ (void)postJSONWithUrl:(NSString*)url params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     [JSONHTTPClient postJSONFromURLWithString:url
                                        params:params
                                    completion:^(id json, JSONModelError* e) {
+                                       // complete block
+                                       if (completeBlock) completeBlock(json, e);
+                                       
                                        // handle error
                                        HLLErrorModel* errorModel = [[HLLErrorModel alloc] initWithDictionary:json error:nil];
                                        if(errorModel)
                                        {
                                            // hud
-                                           NSLog(@"error_description:%@",errorModel.error_description);
+                                           NSLog(@"ERROR:[%@]%@",errorModel.error_code,errorModel.error_description);
                                            [HLLHud error:errorModel.error_code detail:errorModel.error_description];
+                                           
+                                           // error block
+                                           if (errorBlock) errorBlock(errorModel);
                                            
                                            return;
                                        }
@@ -132,11 +152,11 @@
                                        {
                                            // hud
                                            NSLog(@"result:%@",successModel.result?@"YES":@"NO");
-                                           [HLLHud success];
+                                           [HLLHud success:@"Completed" detail:nil];
                                        }
                                        
-                                       // complete block
-                                       if (completeBlock) completeBlock(json, e);
+                                       // success block
+                                       if (successBlock) successBlock(json, e);
                                    }];
 }
 

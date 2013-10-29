@@ -27,19 +27,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[UIFont(HLLFont) setBold:]:UIFont+HLLFont.m">
+         contextName = "__48+[HLLDataAPI postJSONWithUrl:params:completion:]_block_invoke:HLLDataAPI.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.fontDescriptor">
-            </PersistentString>
-            <PersistentString
-               value = "self.fontName">
-            </PersistentString>
-            <PersistentString
-               value = "self.familyName">
-            </PersistentString>
-            <PersistentString
-               value = "self.familyNames">
+               value = "successModel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -48,6 +39,23 @@
          <PersistentStrings>
             <PersistentString
                value = "NSStringFromClass(self.deckController.centerController.class)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UIFont(HLLFont) setBold:]:UIFont+HLLFont.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.fontDescriptor">
+            </PersistentString>
+            <PersistentString
+               value = "self.familyName">
+            </PersistentString>
+            <PersistentString
+               value = "self.fontName">
+            </PersistentString>
+            <PersistentString
+               value = "self.familyNames">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

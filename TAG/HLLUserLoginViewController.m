@@ -12,7 +12,6 @@
 #import "HLLUserRegisterViewController.h"
 
 #import <ShareSDK/ShareSDK.h>
-#import <SSKeychain/SSKeychain.h>
 
 @interface HLLUserLoginViewController ()
 
@@ -153,20 +152,31 @@
                                    [HLLDataAPI userThirdLogin:self.view
                                                       thirdId:thirdId
                                                   thirdUserId:userInfo.uid
-                                                 completion:^(id json, JSONModelError *err) {
-                                                     HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                                                     if (userModel)
-                                                     {
-//                                                         // save account to keycain
-//                                                         [SSKeychain setPassword:self.userPasswordTextField.text forService:@"" account:self.userEmailTextField.text];
-                                                         
-                                                         // exit
-                                                         [self dismissModalViewControllerAnimated:YES];
-                                                     }
-                                                 }];
-                                   
-                                   // exit
-                                   [self dismissModalViewControllerAnimated:YES];
+                                                   completion:nil
+                                                      success:^(id json, JSONModelError *err) {
+                                                          HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                                                          if (userModel)
+                                                          {
+                                                              // get login user info
+                                                              HLLThirdAuthorizationModel* thirdModel = [[HLLThirdAuthorizationModel alloc] init];
+                                                              thirdModel.id=[thirdId intValue];
+                                                              thirdModel.user_id=[userInfo.uid intValue];
+                                                              userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
+                                                              
+                                                              // set authorization user
+                                                              [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                                                              
+                                                              // hud
+                                                              [HLLHud success:@"Login Completed" detail:nil];
+                                                              
+                                                              // checkpoint
+                                                              [TestFlight passCheckpoint:@"Third Login OK."];
+                                                              
+                                                              // exit
+                                                              [self dismissModalViewControllerAnimated:YES];
+                                                          }
+                                                      }
+                                                        error:nil];
                                }
                                else
                                {

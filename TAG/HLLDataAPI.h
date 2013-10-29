@@ -46,6 +46,15 @@
 
 
 /**
+ *	@brief Json error block.
+ *
+ *  @param err HLLErrorModel.
+ */
+typedef void (^JSONErrorBlock)(HLLErrorModel* err);
+
+
+
+/**
  *	@brief	Data provider API.
  */
 @interface HLLDataAPI : NSObject
@@ -57,11 +66,13 @@
  */
 + (HLLDataAPI*)sharedInstance;
 
+@property (strong, nonatomic) HLLUserModel *authorizationUser;
 
 - (BOOL)isAuthorized;
 
-+ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock;
-+ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock;
++ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
 
 - (void)save:(UIViewController*)sender;

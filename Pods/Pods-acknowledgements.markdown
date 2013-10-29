@@ -449,6 +449,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## TestFlightSDK
+
+All text and design is copyright © 2010-2013 TestFlight App, Inc.
+
+All rights reserved.
+
+https://testflightapp.com/tos/
+
+
 ## UI7Kit
 
 Copyright (c) 2013, Jeong YunWon <jeong+ui7kit@youknowone.org>

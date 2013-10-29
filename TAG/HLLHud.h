@@ -10,9 +10,9 @@
 
 @interface HLLHud : NSObject
 
-+ (void)success;
++ (void)success:(NSString*)title detail:(NSString*)detail;
 + (void)error:(NSString*)title detail:(NSString*)detail;
-+ (void)success:(UIView*)view;
++ (void)success:(UIView*)view title:(NSString*)title detail:(NSString*)detail;
 + (void)error:(UIView*)view title:(NSString*)title detail:(NSString*)detail;
 
 @end

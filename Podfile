@@ -11,6 +11,8 @@ pod 'CocoaSecurity', '~> 1.2.1'
 pod 'SSKeychain', '~> 1.2.1'
 
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.1'
+#pod 'TestFlightSDK', '~> 2.0.2'
+pod 'TestFlightSDK', '~> 2.1.1-beta'
 
 pod 'UI7Kit', '~> 0.9.9'
 pod 'Parse', '~> 1.2.15'

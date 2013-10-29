@@ -12,9 +12,9 @@
 
 @implementation HLLHud
 
-+ (void)success
++ (void)success:(NSString*)title detail:(NSString*)detail
 {
-    [HLLHud success:[AppDelegate window]];
+    [HLLHud success:[AppDelegate window] title:title detail:detail];
 }
 
 + (void)error:(NSString*)title detail:(NSString*)detail
@@ -22,13 +22,14 @@
     [HLLHud error:[AppDelegate window] title:title detail:detail];
 }
 
-+ (void)success:(UIView*)view
++ (void)success:(UIView*)view title:(NSString*)title detail:(NSString*)detail
 {
     // hud login success
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_success.png"]];
-    hud.labelText = @"Completed";
+    hud.labelText = title;
+    hud.detailsLabelText = detail;
     int64_t         delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void)

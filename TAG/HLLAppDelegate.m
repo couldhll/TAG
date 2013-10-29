@@ -16,25 +16,25 @@
 #import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
-//#import <GAI.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 #import <Crashlytics/Crashlytics.h>
 
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    // init GoogleSDK
-//    // Optional: automatically send uncaught exceptions to Google Analytics.
-//    [GAI sharedInstance].trackUncaughtExceptions = YES;
-//    
-//    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-//    [GAI sharedInstance].dispatchInterval = 20;
-//    
-//    // Optional: set Logger to VERBOSE for debug information.
-//    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-//    
-//    // Initialize tracker.1
-//    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
+    // init GoogleSDK
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker.1
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
 
     
     // init ParseSDK
@@ -46,6 +46,9 @@
     
     // init CrashlyticsSDK
     [Crashlytics startWithAPIKey:@"d37585287245935f2ae51d8b4f5a1957eabfa72a"];
+    
+    // init TestFlightSDK
+    [TestFlight takeOff:@"ad6de598-32c2-427f-bfad-490befc98e71"];
     
     // add a custom read-only cache path
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];

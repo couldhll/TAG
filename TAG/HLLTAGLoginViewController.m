@@ -38,15 +38,15 @@
     [super viewDidLoad];
     
     // textfield
-    self.userNameTextField.returnKeyType = UIReturnKeyNext;
-    self.userNameTextField.clearsOnBeginEditing = YES;
-    self.userNameTextField.delegate=self;
+    self.userEmailTextField.returnKeyType = UIReturnKeyNext;
+    self.userEmailTextField.clearsOnBeginEditing = YES;
+    self.userEmailTextField.delegate=self;
     self.userPasswordTextField.returnKeyType = UIReturnKeyGo;
     self.userPasswordTextField.clearsOnBeginEditing = YES;
     self.userPasswordTextField.delegate=self;
     
     // show the keyboard
-    [self.userNameTextField becomeFirstResponder];
+    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -88,44 +88,32 @@
 
 - (IBAction)loginButtonPressed:(id)sender
 {
-    //    NSString *msg=nil;
-    //    if(userNameTextField.text.length>0 && userPasswordTextField.text.length>0)
-    //    {
-    //        msg=[[NSString alloc]initWithFormat:@”Name:%@ login!”,nameField.text];
-    //    }
-    //    else
-    //    {
-    //        msg=[[NSString alloc]initWithFormat:@”Please input name or password!”];
-    //    }
-    //
-    //
-    //
-    //    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@”Something was done” message:msg delegate:self cancelButtonTitle:@”Cancel!” otherButtonTitles:nil];
-    //    [alert show];
-
-    //    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    //    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-    //        // Do something...
-    //        dispatch_async(dispatch_get_main_queue(), ^{
-    //            [MBProgressHUD hideHUDForView:self.view animated:YES];
-    //        });
-    //    });
-    
-//    // hud login success
-//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    hud.mode = MBProgressHUDModeCustomView;
-//    hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_mark_check.png"]];
-//    hud.labelText = @"Completed";
-//    int64_t         delayInSeconds = 2.0;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
-//                   {
-//                       // close hud
-//                       [MBProgressHUD hideHUDForView:self.view animated:YES];
-//                       
-//                       // exit
-//                       [self dismissModalViewControllerAnimated:YES];
-//                   });
+    [HLLDataAPI userLogin:self.view
+                    email:self.userEmailTextField.text
+                 password:self.userPasswordTextField.text
+               completion:nil
+                  success:^(id json, JSONModelError *err) {
+                      HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                      if (userModel)
+                      {
+                          // get login user info
+                          userModel.email=self.userEmailTextField.text;
+                          userModel.password=self.userPasswordTextField.text;
+                          
+                          // set authorization user
+                          [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                          
+                          // hud
+                          [HLLHud success:@"Login Completed" detail:nil];
+                          
+                          // checkpoint
+                          [TestFlight passCheckpoint:@"TAG Login OK."];
+                          
+                          // exit
+                          [self dismissModalViewControllerAnimated:YES];
+                      }
+                  }
+                    error:nil];
 }
 
 - (IBAction)findPasswordButtonPressed:(id)sender
@@ -135,7 +123,7 @@
 
 - (IBAction)backgroundPressed:(id)sender
 {
-    [self.userNameTextField resignFirstResponder];
+    [self.userEmailTextField resignFirstResponder];
     [self.userPasswordTextField resignFirstResponder];
 }
 
@@ -151,7 +139,7 @@
 	switch (textField.returnKeyType)
     {
 		case UIReturnKeyNext:
-            if (textField==self.userNameTextField)
+            if (textField==self.userEmailTextField)
             {
                 [self.userPasswordTextField becomeFirstResponder];
             }

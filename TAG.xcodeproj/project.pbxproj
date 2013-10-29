@@ -1417,7 +1417,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1451,7 +1450,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1494,43 +1492,6 @@
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lsqlite3",
-					"-lz",
-					"-framework",
-					AudioToolbox,
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreGraphics,
-					"-framework",
-					CoreLocation,
-					"-framework",
-					ImageIO,
-					"-framework",
-					MobileCoreServices,
-					"-framework",
-					Parse,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					StoreKit,
-					"-framework",
-					SystemConfiguration,
-					"-framework",
-					UIKit,
-					"-weak_framework",
-					Accounts,
-					"-weak_framework",
-					AdSupport,
-					"-weak_framework",
-					Security,
-					"-weak_framework",
-					Social,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1576,43 +1537,6 @@
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/SDKExport",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/TencentWeiboSSO",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lsqlite3",
-					"-lz",
-					"-framework",
-					AudioToolbox,
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreGraphics,
-					"-framework",
-					CoreLocation,
-					"-framework",
-					ImageIO,
-					"-framework",
-					MobileCoreServices,
-					"-framework",
-					Parse,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					StoreKit,
-					"-framework",
-					SystemConfiguration,
-					"-framework",
-					UIKit,
-					"-weak_framework",
-					Accounts,
-					"-weak_framework",
-					AdSupport,
-					"-weak_framework",
-					Security,
-					"-weak_framework",
-					Social,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

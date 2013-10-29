@@ -10,6 +10,6 @@
 
 @interface HLLSuccessModel : JSONModel
 
-@property (assign, nonatomic) bool result;
+@property (assign, nonatomic) BOOL result;
 
 @end

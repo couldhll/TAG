@@ -13,7 +13,9 @@
 @interface HLLUserModel : JSONModel
 
 @property (assign, nonatomic) int id;
+@property (strong, nonatomic) NSString<Optional>* email;
 @property (strong, nonatomic) NSString<Optional>* name;
+@property (strong, nonatomic) NSString<Optional>* password;
 @property (strong, nonatomic) NSURL<Optional>* thumbnail_head_image_url;
 @property (strong, nonatomic) NSURL<Optional>* middle_head_image_url;
 @property (strong, nonatomic) NSURL<Optional>* original_head_image_url;
