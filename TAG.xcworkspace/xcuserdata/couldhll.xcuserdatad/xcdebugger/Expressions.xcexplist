@@ -96,6 +96,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__44-[HLLUserLoginViewController loginWithType:]_block_invoke:HLLUserLoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(ISSUserInfo*)userInfo.uid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
          <PersistentStrings>
             <PersistentString

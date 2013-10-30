@@ -195,6 +195,11 @@ description:__VA_ARGS__];                             \
 #define GA_TRACK_METHOD GA_TRACKEVENT(NSStringFromClass([self class]),NSStringFromSelector(_cmd), @&rdquo;&rdquo;, -1); }
 
 
+#pragma mark - Regular Expression
+
+#define REGEX_EMAIL @"\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"
+//#define REGEX_PHONE @"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+
 #pragma mark - Other
 
 // GCD

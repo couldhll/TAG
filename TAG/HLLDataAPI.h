@@ -44,6 +44,11 @@
 #define DATA_API_USER_UNBIND_URL [DATA_API_USER_BASE_URL stringByAppendingString:@"Unbind"]
 #define DATA_API_USER_LOGOUT_URL [DATA_API_USER_BASE_URL stringByAppendingString:@"Logout"]
 
+#define DATA_API_PRODUCT_BASE_URL [DATA_API_BASE_URL stringByAppendingString:@"Product/"]
+#define DATA_API_PRODUCT_GETLIST_URL [DATA_API_PRODUCT_BASE_URL stringByAppendingString:@"GetList"]
+#define DATA_API_PRODUCT_GETINFO_URL [DATA_API_PRODUCT_BASE_URL stringByAppendingString:@"GetInfo"]
+
+
 
 /**
  *	@brief Json error block.
@@ -69,12 +74,12 @@ typedef void (^JSONErrorBlock)(HLLErrorModel* err);
 @property (strong, nonatomic) HLLUserModel *authorizationUser;
 
 - (BOOL)isAuthorized;
+- (BOOL)isThirdAuthorized;
 
 + (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
-
-- (void)save:(UIViewController*)sender;
-
++ (void)productGetInfo:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)productGetList:(UIView*)view count:(NSString*)count page:(NSString*)page searchOption:(NSString*)searchOption searchKeyword:(NSString*)searchKeyword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 @end

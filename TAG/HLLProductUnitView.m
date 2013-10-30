@@ -64,6 +64,8 @@
 
 - (void)setProductType:(HLLProductType)nowProductType
 {
+    productType=nowProductType;
+    
     UIImage *image;
     
     switch (nowProductType)
@@ -84,8 +86,6 @@
     }
     
     [self.typeImageView setImage:image];
-    
-    productType=nowProductType;
 }
 
 /*

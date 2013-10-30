@@ -152,6 +152,8 @@
                                    [HLLDataAPI userThirdLogin:self.view
                                                       thirdId:thirdId
                                                   thirdUserId:userInfo.uid
+                                           thirdUserHeadImage:userInfo.icon
+                                         thirdUserDescription:userInfo.desc
                                                    completion:nil
                                                       success:^(id json, JSONModelError *err) {
                                                           HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];

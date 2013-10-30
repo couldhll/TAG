@@ -44,9 +44,6 @@
     self.userPasswordTextField.returnKeyType = UIReturnKeyGo;
     self.userPasswordTextField.clearsOnBeginEditing = YES;
     self.userPasswordTextField.delegate=self;
-    
-    // show the keyboard
-    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -62,6 +59,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    // show the keyboard
+    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

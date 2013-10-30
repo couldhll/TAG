@@ -15,4 +15,9 @@
 #import "HLLUserModel.h"
 #import "HLLThirdAuthorizationModel.h"
 
+#import "HLLBrandModel.h"
+#import "HLLProductModel.h"
+#import "HLLProductListModel.h"
+
+
 #endif

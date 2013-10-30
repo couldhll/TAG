@@ -20,6 +20,7 @@ PODS:
   - OHAttributedLabel (3.5.3)
   - Parse (1.2.15):
     - Facebook-iOS-SDK (~> 3.7)
+  - RegexKitLite (4.0)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
@@ -170,6 +171,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.8)
   - OHAttributedLabel (~> 3.5.2)
   - Parse (~> 1.2.15)
+  - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.4)
   - SSKeychain (~> 1.2.1)
   - SVPullToRefresh (~> 0.4.1)
@@ -189,6 +191,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
   Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
+  RegexKitLite: f7af7b4d2b675cd2ec9a4abab6aad6ae1f6499c0
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
   SSKeychain: d18926838c2e7cd342e2a49e9f869858e49f035a

@@ -28,6 +28,8 @@
     [super tearDown];
 }
 
+#pragma mark - User
+
 - (void)testUserRegister
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
@@ -90,7 +92,9 @@
     
     [HLLDataAPI userThirdLogin:nil
                        thirdId:DATA_API_THIRD_SINAWEIBO
-                   thirdUserId:@"0000001"
+                   thirdUserId:@"1775754523"
+            thirdUserHeadImage:@"http://tp4.sinaimg.cn/1775754523/180/5599809696/1"
+          thirdUserDescription:@"终身与科技作战"
                     completion:nil
                        success:^(id json, JSONModelError *err) {
                            HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
@@ -109,8 +113,60 @@
     }
 }
 
+#pragma mark - Product
 
+- (void)testProductGetList
+{
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    [HLLDataAPI productGetList:nil
+                         count:@"5"
+                          page:@"5"
+                  searchOption:nil
+                 searchKeyword:nil
+                    completion:nil
+                       success:^(id json, JSONModelError *err) {
+                           HLLProductListModel* productListModel = [[HLLProductListModel alloc] initWithDictionary:json error:nil];
+                           
+                           XCTAssertNotNil(productListModel, @"model is nil.");
+                           dispatch_semaphore_signal(semaphore);
+                       }
+                         error:^(HLLErrorModel *err) {
+                             XCTFail(@"ERROR:[%@]%@",err.error_code,err.error_description);
+                             dispatch_semaphore_signal(semaphore);
+                         }];
+    
+    while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW))
+    {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+    }
+}
 
+- (void)testProductGetInfo
+{
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    [HLLDataAPI productGetInfo:nil
+                     productId:@"001"
+                    completion:nil
+                       success:^(id json, JSONModelError *err) {
+                           HLLProductModel* productModel = [[HLLProductModel alloc] initWithDictionary:json error:nil];
+                           
+                           XCTAssertNotNil(productModel, @"model is nil.");
+                           dispatch_semaphore_signal(semaphore);
+                       }
+                         error:^(HLLErrorModel *err) {
+                             XCTFail(@"ERROR:[%@]%@",err.error_code,err.error_description);
+                             dispatch_semaphore_signal(semaphore);
+                         }];
+    
+    while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW))
+    {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+    }
+}
+
+#pragma mark - Commont
 
 
 @end

@@ -86,6 +86,9 @@
 		B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */; };
 		B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22640ED1816635E00F2A4A5 /* HLLUserRegisterViewController.m */; };
 		B22640F01816635E00F2A4A5 /* HLLUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22640EE1816635E00F2A4A5 /* HLLUserRegisterViewController.xib */; };
+		B226A79B181FB7E9004E7FB5 /* HLLProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B226A79A181FB7E9004E7FB5 /* HLLProductModel.m */; };
+		B226A79F181FB882004E7FB5 /* HLLBrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B226A79E181FB882004E7FB5 /* HLLBrandModel.m */; };
+		B226A7A2181FBE09004E7FB5 /* HLLProductListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B226A7A1181FBE09004E7FB5 /* HLLProductListModel.m */; };
 		B22A490E17FC534100DDE92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22A491017FC534100DDE92E /* Localizable.strings */; };
 		B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C0251814FD39007A3F5D /* HLLUserModel.m */; };
 		B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */; };
@@ -232,6 +235,12 @@
 		B22640EE1816635E00F2A4A5 /* HLLUserRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserRegisterViewController.xib; sourceTree = "<group>"; };
 		B22640F1181681DB00F2A4A5 /* HLLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLModel.h; sourceTree = "<group>"; };
 		B22640F2181682D600F2A4A5 /* HLLComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLComponent.h; sourceTree = "<group>"; };
+		B226A799181FB7E9004E7FB5 /* HLLProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductModel.h; sourceTree = "<group>"; };
+		B226A79A181FB7E9004E7FB5 /* HLLProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductModel.m; sourceTree = "<group>"; };
+		B226A79D181FB882004E7FB5 /* HLLBrandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLBrandModel.h; sourceTree = "<group>"; };
+		B226A79E181FB882004E7FB5 /* HLLBrandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLBrandModel.m; sourceTree = "<group>"; };
+		B226A7A0181FBE09004E7FB5 /* HLLProductListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductListModel.h; sourceTree = "<group>"; };
+		B226A7A1181FBE09004E7FB5 /* HLLProductListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductListModel.m; sourceTree = "<group>"; };
 		B22A48F317FC4EF700DDE92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B22A48F817FC4F0D00DDE92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B22A48F917FC4F1300DDE92E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPhone.storyboard"; sourceTree = "<group>"; };
@@ -621,6 +630,26 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
+		B226A798181FB7B1004E7FB5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				B226A799181FB7E9004E7FB5 /* HLLProductModel.h */,
+				B226A79A181FB7E9004E7FB5 /* HLLProductModel.m */,
+				B226A7A0181FBE09004E7FB5 /* HLLProductListModel.h */,
+				B226A7A1181FBE09004E7FB5 /* HLLProductListModel.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		B226A79C181FB868004E7FB5 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				B226A79D181FB882004E7FB5 /* HLLBrandModel.h */,
+				B226A79E181FB882004E7FB5 /* HLLBrandModel.m */,
+			);
+			name = Brand;
+			sourceTree = "<group>";
+		};
 		B22A48FE17FC500700DDE92E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +664,8 @@
 				B22640F1181681DB00F2A4A5 /* HLLModel.h */,
 				B2D0DC1F181A708100F171A7 /* Feedback */,
 				B230C0271814FED9007A3F5D /* User */,
+				B226A79C181FB868004E7FB5 /* Brand */,
+				B226A798181FB7B1004E7FB5 /* Product */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1212,6 +1243,7 @@
 				B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */,
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
+				B226A79F181FB882004E7FB5 /* HLLBrandModel.m in Sources */,
 				B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */,
 				B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */,
 				B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */,
@@ -1237,6 +1269,8 @@
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
 				B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
+				B226A79B181FB7E9004E7FB5 /* HLLProductModel.m in Sources */,
+				B226A7A2181FBE09004E7FB5 /* HLLProductListModel.m in Sources */,
 				B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

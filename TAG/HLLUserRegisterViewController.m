@@ -9,6 +9,7 @@
 #import "HLLUserRegisterViewController.h"
 
 #import <CocoaSecurity/CocoaSecurity.h>
+#import <RegexKitLite/RegexKitLite.h>
 
 @interface HLLUserRegisterViewController ()
 
@@ -50,9 +51,6 @@
     self.userPasswordVerifyTextField.returnKeyType = UIReturnKeyGo;
     self.userPasswordVerifyTextField.clearsOnBeginEditing = YES;
     self.userPasswordVerifyTextField.delegate=self;
-    
-    // show the keyboard
-    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -68,6 +66,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    // show the keyboard
+    [self.userEmailTextField becomeFirstResponder];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -94,6 +95,11 @@
 
 - (IBAction)registerButtonPressed:(id)sender
 {
+    if (![self isVerify])
+    {
+        return;
+    }
+    
     [HLLDataAPI userRegister:self.view
                        email:self.userEmailTextField.text
                         name:self.userNameTextField.text
@@ -135,6 +141,34 @@
 - (IBAction)textFieldDoneEditing:(id)sender
 {
     [sender resignFirstResponder];
+}
+
+#pragma mark - Private Method
+
+- (BOOL)isVerify
+{
+//    BOOL result=YES;
+    
+    // check email
+    if ([self.userEmailTextField.text isMatchedByRegex:REGEX_EMAIL])
+    {
+        [HLLHud error:self.view title:@"邮箱不正确" detail:@""];
+        
+//        result=NO;
+        return NO;
+    }
+    
+    // check password
+    if ([self.userPasswordTextField.text isEqual:self.userPasswordVerifyTextField.text])
+    {
+        [HLLHud error:self.view title:@"密码不相同" detail:@""];
+        
+//        result=NO;
+        return NO;
+    }
+    
+//    return result;
+    return YES;
 }
 
 #pragma mark - UITextFieldDelegate

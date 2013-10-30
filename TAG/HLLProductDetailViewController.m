@@ -141,7 +141,7 @@
 
 - (void)save
 {
-    [[HLLDataAPI sharedInstance] save:self];
+    
 }
 
 #pragma mark - test

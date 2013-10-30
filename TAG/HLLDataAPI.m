@@ -33,21 +33,39 @@
 
 - (void)setAuthorizationUser:(HLLUserModel*)userModel
 {
-    // save account to keycain
-    [SSKeychain setPassword:userModel.password forService:@"" account:userModel.email];
-    
     authorizationUser=userModel;
+    
+    if ([self isThirdAuthorized])
+    {
+        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
+        // save account to keycain
+        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
+    }
+    else
+    {
+        // save account to keycain
+        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
+    }
 }
 
 - (BOOL)isAuthorized
 {
-    return self.authorizationUser==nil;
+    return self.authorizationUser!=nil;
 }
 
-- (void)save:(UIViewController*)sender
+- (BOOL)isThirdAuthorized
 {
-    [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
+    BOOL result=NO;
+    
+    if ([self isAuthorized])
+    {
+        result=(self.authorizationUser.thirds!=nil);
+    }
+    
+    return result;
 }
+
+#pragma mark - User
 
 + (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
@@ -102,13 +120,17 @@
     [self postJSONWithUrl:DATA_API_USER_UPDATEPASSWORD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"third_id",
-                          @"user_id"];
+                          @"user_id",
+                          @"user_head_image",
+                          @"user_description"];
     NSArray *paramsValues=@[thirdId,
-                            thirdUserId];
+                            thirdUserId,
+                            thirdUserHeadImage,
+                            thirdUserDescription];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -121,6 +143,35 @@
     [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
 }
 
+#pragma mark - Product
+
++ (void)productGetInfo:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[productId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_PRODUCT_GETINFO_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)productGetList:(UIView*)view count:(NSString*)count page:(NSString*)page searchOption:(NSString*)searchOption searchKeyword:(NSString*)searchKeyword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"count",
+                          @"page",
+                          @"search_option",
+                          @"search_keyword"];
+    NSArray *paramsValues=@[count,
+                            page,
+                            searchOption,
+                            searchKeyword];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_PRODUCT_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
 
 #pragma mark - Support methods
 
