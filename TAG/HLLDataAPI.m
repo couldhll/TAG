@@ -9,60 +9,20 @@
 #import "HLLDataAPI.h"
 
 #import <CocoaSecurity/CocoaSecurity.h>
-#import <SSKeychain/SSKeychain.h>
+
+
+static NSMutableDictionary* needAuthorizationDictionary;
 
 @implementation HLLDataAPI
 
-@synthesize authorizationUser;
+#pragma mark - Init
 
-#pragma mark - Singleton methods
-
-+ (HLLDataAPI *)sharedInstance
++ (void)initialize
 {
-    static HLLDataAPI *sharedInstance = nil;
-    static dispatch_once_t  oncePredicate;
-
-    dispatch_once(&oncePredicate, ^{
-        sharedInstance = [[self alloc] init];
-    });
-
-    return sharedInstance;
-}
-
-#pragma mark - Public methods
-
-- (void)setAuthorizationUser:(HLLUserModel*)userModel
-{
-    authorizationUser=userModel;
-    
-    if ([self isThirdAuthorized])
-    {
-        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
-        // save account to keycain
-        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
-    }
-    else
-    {
-        // save account to keycain
-        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
-    }
-}
-
-- (BOOL)isAuthorized
-{
-    return self.authorizationUser!=nil;
-}
-
-- (BOOL)isThirdAuthorized
-{
-    BOOL result=NO;
-    
-    if ([self isAuthorized])
-    {
-        result=(self.authorizationUser.thirds!=nil);
-    }
-    
-    return result;
+    // map with button and notification
+    needAuthorizationDictionary=[NSMutableDictionary dictionary];
+    [needAuthorizationDictionary setValue:@YES forKey:DATA_API_USER_GETINFO_URL];
+    [needAuthorizationDictionary setValue:@YES forKey:DATA_API_USER_UPDATEINFO_URL];
 }
 
 #pragma mark - User
@@ -177,6 +137,20 @@
 
 + (void)postJSONWithUrl:(NSString*)url params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
+//    BOOL needAuthorization=NO;
+//    NSNumber *needAuthorizationValue=[needAuthorizationDictionary valueForKey:url];
+//    if (needAuthorizationValue!=nil)
+//    {
+//        needAuthorization=needAuthorizationValue.boolValue;
+//    }
+//    if (needAuthorization)
+//    {
+//        [HLLUserData is]
+//        
+//        return;
+//    }
+    
+    // send json
     [JSONHTTPClient postJSONFromURLWithString:url
                                        params:params
                                    completion:^(id json, JSONModelError* e) {
@@ -203,7 +177,7 @@
                                        {
                                            // hud
                                            NSLog(@"result:%@",successModel.result?@"YES":@"NO");
-                                           [HLLHud success:@"Completed" detail:nil];
+                                           [HLLHud success:NSLocalizedString(@"Hud_Success_Completed",@"") detail:nil];
                                        }
                                        
                                        // success block
@@ -221,7 +195,7 @@
     NSString *timeStamp = [NSString stringWithFormat:@"%ld", (long)timeInterval];
     
     // add to array
-    [paramsKeys addObject:@"origrinal"];[paramsValues addObject:DATA_API_ORIGRINA_APP];
+    [paramsKeys addObject:@"origrinal"];[paramsValues addObject:DATA_API_ORIGRINAL_APP];
     [paramsKeys addObject:@"rnd"];[paramsValues addObject:timeStamp];
     
     // secure string

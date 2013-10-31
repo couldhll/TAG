@@ -9,8 +9,6 @@
     #import <Foundation/Foundation.h>
 
     #import "HLLMacroDefinition.h"
-    #import "UIFont+HLLFont.h"
-
     #import "HLLAppConfig.h"
 
 #endif

@@ -12,8 +12,11 @@
 #pragma mark - Import
 
 #import "HLLComponent.h"
+
 #import "HLLModel.h"
 #import "HLLDataAPI.h"
+#import "HLLDataVerify.h"
+#import "HLLUserData.h"
 
 #import "HLLTracker.h"
 
@@ -49,10 +52,23 @@
 #define APPLICATION_BOLD_FONT [UIFont fontWithName:[APPLICATION_FONT_NAME stringByAppendingString:@"-Bold"] size:APPLICATION_FONT_SIZE]
 #define APPLICATION_BOLD_OBLIQUE_FONT [UIFont fontWithName:[APPLICATION_FONT_NAME stringByAppendingString:@"-Oblique"] size:APPLICATION_FONT_SIZE]
 
+
 #pragma mark - App Delegate
 
 #define AppDelegate (HLLAppDelegate *)[[UIApplication sharedApplication] delegate]
 
+
+#pragma mark - Regular Expression
+
+#define REGEX_ACCOUNT @"^[a-zA-Z][a-zA-Z0-9_]{4,15}$" // alphabet begin, 5~16 length, allow alphabet+number+"_"
+#define REGEX_PASSWORD @"[a-zA-Z0-9]{6,16}$" // 6~16 length, allow alphabet+number
+
+
+#pragma mark - Checkpoint
+
+#define CHECKPOINT_USER_THIRDLOGIN @"Third Login OK."
+#define CHECKPOINT_USER_TAGLOGIN @"TAG Login OK."
+#define CHECKPOINT_USER_REGISTER @"User Register OK."
 
 #pragma mark - Enum
 

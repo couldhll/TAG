@@ -197,8 +197,18 @@ description:__VA_ARGS__];                             \
 
 #pragma mark - Regular Expression
 
+//#define REGEX_ACCOUNT @"^[a-zA-Z][a-zA-Z0-9_]{4,15}$" // alphabet begin, 5~16 length, allow alphabet+number+"_"
+//#define REGEX_PASSWORD @"[a-zA-Z0-9]{6,16}$" // 6~16 length, allow alphabet+number
 #define REGEX_EMAIL @"\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"
-//#define REGEX_PHONE @"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+#define REGEX_MOBILEPHONE @"^((\(\d{2,3}\))|(\d{3}\-))?13\d{9}$"
+#define REGEX_LANDLINEPHONE @"^((\(\d{2,3}\))|(\d{3}\-))?(\(0\d{2,3}\)|0\d{2,3}-)?[1-9]\d{6,7}(\-\d{1,4})?$"
+#define REGEX_POSTCODE @"^[1-9]\\d{5}$)" // 6 length number
+#define REGEX_IDCARD @"\\d{15}|\\d{18}" // 15 or 18 length number
+#define REGEX_IP @"\\d+\\.\\d+\\.\\d+\\.\\d+" // xxx.xxx.xxx.xxx
+#define REGEX_QQ @"[1-9][0-9]{4,}" // from 10000, allow number
+#define REGEX_CHINESE @"^[\\u0391-\\uFFE5]+$"
+#define REGEX_URL @"(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|]" // http/https/ftp/file begin
+
 
 #pragma mark - Other
 

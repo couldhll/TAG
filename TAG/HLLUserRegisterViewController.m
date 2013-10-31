@@ -8,9 +8,6 @@
 
 #import "HLLUserRegisterViewController.h"
 
-#import <CocoaSecurity/CocoaSecurity.h>
-#import <RegexKitLite/RegexKitLite.h>
-
 @interface HLLUserRegisterViewController ()
 
 @end
@@ -40,6 +37,7 @@
     
     // textfield
     self.userEmailTextField.returnKeyType = UIReturnKeyNext;
+    self.userEmailTextField.keyboardType = UIKeyboardTypeEmailAddress;
     self.userEmailTextField.clearsOnBeginEditing = YES;
     self.userEmailTextField.delegate=self;
     self.userNameTextField.returnKeyType = UIReturnKeyNext;
@@ -48,7 +46,7 @@
     self.userPasswordTextField.returnKeyType = UIReturnKeyNext;
     self.userPasswordTextField.clearsOnBeginEditing = YES;
     self.userPasswordTextField.delegate=self;
-    self.userPasswordVerifyTextField.returnKeyType = UIReturnKeyGo;
+    self.userPasswordVerifyTextField.returnKeyType = UIReturnKeyJoin;
     self.userPasswordVerifyTextField.clearsOnBeginEditing = YES;
     self.userPasswordVerifyTextField.delegate=self;
 }
@@ -74,6 +72,9 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    // hide the keyboard
+    [self backgroundPressed:self];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -95,11 +96,12 @@
 
 - (IBAction)registerButtonPressed:(id)sender
 {
-    if (![self isVerify])
+    if (![self verifyData])
     {
         return;
     }
     
+    // register
     [HLLDataAPI userRegister:self.view
                        email:self.userEmailTextField.text
                         name:self.userNameTextField.text
@@ -115,13 +117,13 @@
                              userModel.password=self.userPasswordTextField.text;
                              
                              // set authorization user
-                             [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                             [HLLUserData sharedInstance].authorizationUser=userModel;
                              
                              // hud
-                             [HLLHud success:@"Register Completed" detail:nil];
+                             [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_RegisterCompleted",@"") detail:nil];
                              
                              // checkpoint
-                             [TestFlight passCheckpoint:@"User Register OK."];
+                             [TestFlight passCheckpoint:CHECKPOINT_USER_REGISTER];
                              
                              // exit
                              [self dismissModalViewControllerAnimated:YES];
@@ -143,31 +145,30 @@
     [sender resignFirstResponder];
 }
 
-#pragma mark - Private Method
+#pragma mark - Verify Data
 
-- (BOOL)isVerify
+- (BOOL)verifyData
 {
-//    BOOL result=YES;
-    
-    // check email
-    if ([self.userEmailTextField.text isMatchedByRegex:REGEX_EMAIL])
+    if (![HLLDataVerify verifyUserEmailWithTextField:self.userEmailTextField])
     {
-        [HLLHud error:self.view title:@"邮箱不正确" detail:@""];
-        
-//        result=NO;
         return NO;
     }
     
-    // check password
-    if ([self.userPasswordTextField.text isEqual:self.userPasswordVerifyTextField.text])
+    if (![HLLDataVerify verifyUserNameWithTextField:self.userNameTextField])
     {
-        [HLLHud error:self.view title:@"密码不相同" detail:@""];
-        
-//        result=NO;
         return NO;
     }
     
-//    return result;
+    if (![HLLDataVerify verifyUserPasswordWithTextField:self.userPasswordTextField])
+    {
+        return NO;
+    }
+    
+    if (![HLLDataVerify verifyUserPasswordSameWithTextField:self.userPasswordTextField anotherTextField:self.userPasswordVerifyTextField])
+    {
+        return NO;
+    }
+    
     return YES;
 }
 
@@ -191,7 +192,7 @@
                 [self.userPasswordVerifyTextField becomeFirstResponder];
             }
 			break;
-		case UIReturnKeyGo:
+		case UIReturnKeyJoin:
 			[textField resignFirstResponder];
 			[self registerButtonPressed:nil];
 			break;

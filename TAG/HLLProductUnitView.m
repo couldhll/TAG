@@ -62,6 +62,8 @@
     [self.productImageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/List/loading_picture.png"]];
 }
 
+#pragma mark - Property
+
 - (void)setProductType:(HLLProductType)nowProductType
 {
     productType=nowProductType;

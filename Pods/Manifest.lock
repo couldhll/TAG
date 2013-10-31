@@ -15,6 +15,7 @@ PODS:
   - GIKPopoverBackgroundView/Core (0.0.1)
   - GMGridView (1.1.1)
   - GoogleAnalytics-iOS-SDK (3.0.2)
+  - HLLFont (0.1)
   - JSONModel (0.9.3)
   - MBProgressHUD (0.8)
   - OHAttributedLabel (3.5.3)
@@ -167,6 +168,7 @@ DEPENDENCIES:
   - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
   - GoogleAnalytics-iOS-SDK (~> 3.0.1)
+  - HLLFont (~> 0.1)
   - JSONModel (~> 0.9.3)
   - MBProgressHUD (~> 0.8)
   - OHAttributedLabel (~> 3.5.2)
@@ -187,6 +189,7 @@ SPEC CHECKSUMS:
   GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
   GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
+  HLLFont: b74c37c01c7957df048a0b875dfc292265f5a973
   JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7

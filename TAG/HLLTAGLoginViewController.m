@@ -39,6 +39,7 @@
     
     // textfield
     self.userEmailTextField.returnKeyType = UIReturnKeyNext;
+    self.userEmailTextField.keyboardType = UIKeyboardTypeEmailAddress;
     self.userEmailTextField.clearsOnBeginEditing = YES;
     self.userEmailTextField.delegate=self;
     self.userPasswordTextField.returnKeyType = UIReturnKeyGo;
@@ -67,6 +68,9 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
+    // hide the keyboard
+    [self backgroundPressed:self];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -88,6 +92,12 @@
 
 - (IBAction)loginButtonPressed:(id)sender
 {
+    if (![self verifyData])
+    {
+        return;
+    }
+    
+    // TAG login
     [HLLDataAPI userLogin:self.view
                     email:self.userEmailTextField.text
                  password:self.userPasswordTextField.text
@@ -101,13 +111,13 @@
                           userModel.password=self.userPasswordTextField.text;
                           
                           // set authorization user
-                          [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                          [HLLUserData sharedInstance].authorizationUser=userModel;
                           
                           // hud
-                          [HLLHud success:@"Login Completed" detail:nil];
+                          [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
                           
                           // checkpoint
-                          [TestFlight passCheckpoint:@"TAG Login OK."];
+                          [TestFlight passCheckpoint:CHECKPOINT_USER_TAGLOGIN];
                           
                           // exit
                           [self dismissModalViewControllerAnimated:YES];
@@ -130,6 +140,23 @@
 - (IBAction)textFieldDoneEditing:(id)sender
 {
     [sender resignFirstResponder];
+}
+
+#pragma mark - Verify Data
+
+- (BOOL)verifyData
+{
+    if (![HLLDataVerify verifyUserEmailWithTextField:self.userEmailTextField])
+    {
+        return NO;
+    }
+    
+    if (![HLLDataVerify verifyUserPasswordWithTextField:self.userPasswordTextField])
+    {
+        return NO;
+    }
+    
+    return YES;
 }
 
 #pragma mark - UITextFieldDelegate

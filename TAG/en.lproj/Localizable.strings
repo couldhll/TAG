@@ -7,3 +7,13 @@
 */
 
 "MenuTitle"="Menu";
+
+"Hud_Error_UserAuthorize_EmailNoMatch"="EmailNoMatch";
+"Hud_Error_UserAuthorize_NameNoMatch"="NameNoMatch";
+"Hud_Error_UserAuthorize_PasswordNoMatch"="PasswordNoMatch";
+"Hud_Error_UserAuthorize_PasswordNoSame"="PasswordNoSame";
+"Hud_Error_UserAuthorize_ThirdLoginFailed"="ThirdLoginFailed";
+
+"Hud_Success_Completed"="Completed";
+"Hud_Success_UserAuthorize_RegisterCompleted"="RegisterCompleted";
+"Hud_Success_UserAuthorize_LoginCompleted"="LoginCompleted";

@@ -86,7 +86,8 @@
         [self.deckController previewBounceView:IIViewDeckLeftSide withCompletion:^(IIViewDeckController *controller, BOOL success) {[self.deckController previewBounceView:IIViewDeckRightSide];}];
     }
     
-
+    // stay online
+    [[HLLUserData sharedInstance] stayOnline];
     
     return YES;
 }

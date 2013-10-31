@@ -14,11 +14,15 @@
 #pragma mark - Normal
 
 #define DATA_API_SECURE_KEY @"tag1566850577@playpeli"
-#define DATA_API_ORIGRINA_APP @"1"
-#define DATA_API_ORIGRINA_WEB @"2"
 
 
-#pragma mark - Normal
+#pragma mark - Send Original
+
+#define DATA_API_ORIGRINAL_APP @"1"
+#define DATA_API_ORIGRINAL_WEB @"2"
+
+
+#pragma mark - Third Authorization
 
 #define DATA_API_THIRD_SINAWEIBO @"1"
 #define DATA_API_THIRD_QQSPACE @"2"
@@ -64,22 +68,11 @@ typedef void (^JSONErrorBlock)(HLLErrorModel* err);
  */
 @interface HLLDataAPI : NSObject
 
-/**
- *	@brief	Singleton methods.
- *
- *	@return	Singleton.
- */
-+ (HLLDataAPI*)sharedInstance;
-
-@property (strong, nonatomic) HLLUserModel *authorizationUser;
-
-- (BOOL)isAuthorized;
-- (BOOL)isThirdAuthorized;
-
 + (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
 + (void)productGetInfo:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)productGetList:(UIView*)view count:(NSString*)count page:(NSString*)page searchOption:(NSString*)searchOption searchKeyword:(NSString*)searchKeyword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
+
 @end

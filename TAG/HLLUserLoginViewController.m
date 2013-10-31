@@ -166,13 +166,13 @@
                                                               userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
                                                               
                                                               // set authorization user
-                                                              [HLLDataAPI sharedInstance].authorizationUser=userModel;
+                                                              [HLLUserData sharedInstance].authorizationUser=userModel;
                                                               
                                                               // hud
-                                                              [HLLHud success:@"Login Completed" detail:nil];
+                                                              [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
                                                               
                                                               // checkpoint
-                                                              [TestFlight passCheckpoint:@"Third Login OK."];
+                                                              [TestFlight passCheckpoint:CHECKPOINT_USER_THIRDLOGIN];
                                                               
                                                               // exit
                                                               [self dismissModalViewControllerAnimated:YES];
@@ -184,7 +184,8 @@
                                {
                                    if ([error errorCode] != -103)
                                    {
-                                       [HLLHud error:@"登录失败" detail:@"授权失败"];
+                                       
+                                       [HLLHud error:NSLocalizedString(@"Hud_Error_UserAuthorize_ThirdLoginFailed",@"") detail:nil];
                                    }
                                }
                            }];
