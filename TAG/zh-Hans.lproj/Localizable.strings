@@ -8,6 +8,8 @@
 
 "MenuTitle"="菜单";
 
+"Hud_Loading"="加载";
+
 "Hud_Error_UserAuthorize_EmailNoMatch"="邮箱不匹配";
 "Hud_Error_UserAuthorize_NameNoMatch"="名字不匹配";
 "Hud_Error_UserAuthorize_PasswordNoMatch"="密码不匹配";
@@ -17,3 +19,4 @@
 "Hud_Success_Completed"="完成";
 "Hud_Success_UserAuthorize_RegisterCompleted"="注册完成";
 "Hud_Success_UserAuthorize_LoginCompleted"="登录完成";
+"Hud_Success_UserAuthorize_LogoutCompleted"="注销完成";

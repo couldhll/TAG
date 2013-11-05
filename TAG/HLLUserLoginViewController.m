@@ -73,6 +73,12 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
+    // login notification
+    NSMutableDictionary *notificationuUserInfo=[NSMutableDictionary dictionary];
+    [notificationuUserInfo setValue:@NO forKey:@"logined"];
+    [notificationuUserInfo setValue:self forKey:@"sender"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -122,12 +128,6 @@
                            result:^(BOOL result, id<ISSUserInfo> userInfo, id<ICMErrorInfo> error) {
                                if (result)
                                {
-                                   // login button notification
-                                   NSMutableDictionary *notificationuUserInfo=[NSMutableDictionary dictionary];
-                                   [notificationuUserInfo setValue:@YES forKey:@"logined"];
-                                   [notificationuUserInfo setValue:self forKey:@"sender"];
-                                   [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
-                                   
                                    // change share type to third id
                                    NSString *thirdId;
                                    switch(shareType)
@@ -148,43 +148,31 @@
                                            thirdId = DATA_API_THIRD_SINAWEIBO;
                                    }
                                    
+                                   NSString *userId=userInfo.uid;
+                                   NSString *headImage=userInfo.icon;
+                                   NSString *description=userInfo.desc;
+                                   
                                    // third login
-                                   [HLLDataAPI userThirdLogin:self.view
-                                                      thirdId:thirdId
-                                                  thirdUserId:userInfo.uid
-                                           thirdUserHeadImage:userInfo.icon
-                                         thirdUserDescription:userInfo.desc
-                                                   completion:nil
-                                                      success:^(id json, JSONModelError *err) {
-                                                          HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                                                          if (userModel)
-                                                          {
-                                                              // get login user info
-                                                              HLLThirdAuthorizationModel* thirdModel = [[HLLThirdAuthorizationModel alloc] init];
-                                                              thirdModel.id=[thirdId intValue];
-                                                              thirdModel.user_id=[userInfo.uid intValue];
-                                                              userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
-                                                              
-                                                              // set authorization user
-                                                              [HLLUserData sharedInstance].authorizationUser=userModel;
-                                                              
-                                                              // hud
-                                                              [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
-                                                              
-                                                              // checkpoint
-                                                              [TestFlight passCheckpoint:CHECKPOINT_USER_THIRDLOGIN];
-                                                              
-                                                              // exit
-                                                              [self dismissModalViewControllerAnimated:YES];
-                                                          }
-                                                      }
-                                                        error:nil];
+                                   HLLThirdAuthorizationModel* thirdModel = [[HLLThirdAuthorizationModel alloc] init];
+                                   thirdModel.id=[thirdId intValue];
+                                   thirdModel.user_id=userId;
+                                   thirdModel.user_head_image=headImage;
+                                   thirdModel.user_description=description;
+                                   HLLUserModel* userModel = [[HLLUserModel alloc] init];
+                                   userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
+                                   [HLLDataAuthorizeProvider userLoginWithModel:userModel
+                                                            completion:nil
+                                                               success:^(id json, JSONModelError *e) {
+                                                                   // exit
+                                                                   [self dismissModalViewControllerAnimated:YES];
+                                                               }
+                                                                 error:nil];
                                }
                                else
                                {
                                    if ([error errorCode] != -103)
                                    {
-                                       
+                                       // hud
                                        [HLLHud error:NSLocalizedString(@"Hud_Error_UserAuthorize_ThirdLoginFailed",@"") detail:nil];
                                    }
                                }

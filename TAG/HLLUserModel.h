@@ -21,4 +21,7 @@
 @property (strong, nonatomic) NSURL<Optional>* original_head_image_url;
 @property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>* thirds;
 
+- (BOOL)canTAGAuthorize;
+- (BOOL)canThirdAuthorize;
+
 @end

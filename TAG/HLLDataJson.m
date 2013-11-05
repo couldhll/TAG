@@ -6,24 +6,12 @@
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
-#import "HLLDataAPI.h"
+#import "HLLDataJson.h"
 
 #import <CocoaSecurity/CocoaSecurity.h>
 
 
-static NSMutableDictionary* needAuthorizationDictionary;
-
-@implementation HLLDataAPI
-
-#pragma mark - Init
-
-+ (void)initialize
-{
-    // map with button and notification
-    needAuthorizationDictionary=[NSMutableDictionary dictionary];
-    [needAuthorizationDictionary setValue:@YES forKey:DATA_API_USER_GETINFO_URL];
-    [needAuthorizationDictionary setValue:@YES forKey:DATA_API_USER_UPDATEINFO_URL];
-}
+@implementation HLLDataJson
 
 #pragma mark - User
 
@@ -82,15 +70,15 @@ static NSMutableDictionary* needAuthorizationDictionary;
 
 + (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
-    // params
+    
     NSArray *paramsKeys=@[@"third_id",
                           @"user_id",
                           @"user_head_image",
                           @"user_description"];
     NSArray *paramsValues=@[thirdId,
                             thirdUserId,
-                            thirdUserHeadImage,
-                            thirdUserDescription];
+                            thirdUserHeadImage==nil?@"":thirdUserHeadImage,
+                            thirdUserDescription==nil?@"":thirdUserDescription];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -99,8 +87,11 @@ static NSMutableDictionary* needAuthorizationDictionary;
 
 + (void)userLogout:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
+    // params
+    NSDictionary *params=[self createParams:nil values:nil];
+    
     // send
-    [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
+    [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
 #pragma mark - Product
@@ -137,20 +128,7 @@ static NSMutableDictionary* needAuthorizationDictionary;
 
 + (void)postJSONWithUrl:(NSString*)url params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
-//    BOOL needAuthorization=NO;
-//    NSNumber *needAuthorizationValue=[needAuthorizationDictionary valueForKey:url];
-//    if (needAuthorizationValue!=nil)
-//    {
-//        needAuthorization=needAuthorizationValue.boolValue;
-//    }
-//    if (needAuthorization)
-//    {
-//        [HLLUserData is]
-//        
-//        return;
-//    }
-    
-    // send json
+    // post json
     [JSONHTTPClient postJSONFromURLWithString:url
                                        params:params
                                    completion:^(id json, JSONModelError* e) {
@@ -161,23 +139,11 @@ static NSMutableDictionary* needAuthorizationDictionary;
                                        HLLErrorModel* errorModel = [[HLLErrorModel alloc] initWithDictionary:json error:nil];
                                        if(errorModel)
                                        {
-                                           // hud
-                                           NSLog(@"ERROR:[%@]%@",errorModel.error_code,errorModel.error_description);
-                                           [HLLHud error:errorModel.error_code detail:errorModel.error_description];
-                                           
                                            // error block
+                                           NSLog(@"ERROR:[%@]%@",errorModel.error_code,errorModel.error_description);
                                            if (errorBlock) errorBlock(errorModel);
                                            
                                            return;
-                                       }
-                                       
-                                       // handle success
-                                       HLLSuccessModel* successModel = [[HLLSuccessModel alloc] initWithDictionary:json error:nil];
-                                       if(errorModel)
-                                       {
-                                           // hud
-                                           NSLog(@"result:%@",successModel.result?@"YES":@"NO");
-                                           [HLLHud success:NSLocalizedString(@"Hud_Success_Completed",@"") detail:nil];
                                        }
                                        
                                        // success block

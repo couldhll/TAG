@@ -91,6 +91,12 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
+    // login notification
+    NSMutableDictionary *notificationuUserInfo=[NSMutableDictionary dictionary];
+    [notificationuUserInfo setValue:@NO forKey:@"logined"];
+    [notificationuUserInfo setValue:self forKey:@"sender"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -102,7 +108,7 @@
     }
     
     // register
-    [HLLDataAPI userRegister:self.view
+    [HLLDataAuthorizeProvider userRegister:self.view
                        email:self.userEmailTextField.text
                         name:self.userNameTextField.text
                     password:self.userPasswordTextField.text

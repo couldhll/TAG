@@ -35,13 +35,15 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>40247e5782727bd55d9021f97ba6abeee630c107</string>
+	<string>afe5f5d4b2cc2c9769f361b37ee078942ad44290</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>Main_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main_iPad</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

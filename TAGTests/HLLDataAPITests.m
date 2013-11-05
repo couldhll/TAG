@@ -39,7 +39,7 @@
     NSString *email=[NSString stringWithFormat:@"%@%000d%@",@"could_hll",i,@"@hotmail.com"];
     NSString *name=[NSString stringWithFormat:@"%@%000d",@"CouldHll",i];
     
-    [HLLDataAPI userRegister:nil
+    [HLLDataJson userRegister:nil
                        email:email
                         name:name
                     password:@"888888"
@@ -65,7 +65,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataAPI userLogin:nil
+    [HLLDataJson userLogin:nil
                     email:@"could_hll@hotmail.com"
                  password:@"888888"
                completion:nil
@@ -90,7 +90,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataAPI userThirdLogin:nil
+    [HLLDataJson userThirdLogin:nil
                        thirdId:DATA_API_THIRD_SINAWEIBO
                    thirdUserId:@"1775754523"
             thirdUserHeadImage:@"http://tp4.sinaimg.cn/1775754523/180/5599809696/1"
@@ -119,7 +119,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataAPI productGetList:nil
+    [HLLDataJson productGetList:nil
                          count:@"5"
                           page:@"5"
                   searchOption:nil
@@ -146,7 +146,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataAPI productGetInfo:nil
+    [HLLDataJson productGetInfo:nil
                      productId:@"001"
                     completion:nil
                        success:^(id json, JSONModelError *err) {

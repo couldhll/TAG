@@ -12,19 +12,27 @@
 
 @implementation HLLHud
 
++ (void)loading:(NSString*)title detail:(NSString*)detail
+{
+    [HLLHud loading:[AppDelegate window] title:title detail:detail];
+}
+
++ (void)loading:(UIView*)view title:(NSString*)title detail:(NSString*)detail
+{
+    // hud loading
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.labelText = title;
+    hud.detailsLabelText = detail;
+}
+
 + (void)success:(NSString*)title detail:(NSString*)detail
 {
     [HLLHud success:[AppDelegate window] title:title detail:detail];
 }
 
-+ (void)error:(NSString*)title detail:(NSString*)detail
-{
-    [HLLHud error:[AppDelegate window] title:title detail:detail];
-}
-
 + (void)success:(UIView*)view title:(NSString*)title detail:(NSString*)detail
 {
-    // hud login success
+    // hud success
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_success.png"]];
@@ -34,14 +42,19 @@
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
                   {
-                      // close hud
-                      [MBProgressHUD hideHUDForView:view animated:YES];
+                      // hide hud
+                      [HLLHud hideHud:view];
                   });
+}
+
++ (void)error:(NSString*)title detail:(NSString*)detail
+{
+    [HLLHud error:[AppDelegate window] title:title detail:detail];
 }
 
 + (void)error:(UIView*)view title:(NSString*)title detail:(NSString*)detail
 {
-    // hud login success
+    // hud error
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Resource/Frame/HUD/hud_error.png"]];
@@ -51,10 +64,20 @@
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
                    {
-                       // close hud
-                       [MBProgressHUD hideHUDForView:view animated:YES];
+                       // hide hud
+                       [HLLHud hideHud:view];
                    });
 }
 
++ (void)hideHud
+{
+    [HLLHud hideHud:[AppDelegate window]];
+}
+
++ (void)hideHud:(UIView*)view
+{
+    // hide hud
+    [MBProgressHUD hideHUDForView:view animated:YES];
+}
 
 @end

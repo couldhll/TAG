@@ -9,7 +9,7 @@ pod 'MBProgressHUD', '~> 0.8'
 pod 'OHAttributedLabel', '~> 3.5.2'
 pod 'JSONModel', '~> 0.9.3'
 pod 'CocoaSecurity', '~> 1.2.1'
-pod 'SSKeychain', '~> 1.2.1'
+pod 'KeychainItemWrapper', '~> 1.2'
 pod 'RegexKitLite', '~> 4.0'
 
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.1'

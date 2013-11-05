@@ -10,4 +10,28 @@
 
 @implementation HLLUserModel
 
+- (BOOL)canTAGAuthorize
+{
+    BOOL result=NO;
+    
+    if (self.email!=nil&&self.password!=nil)
+    {
+        result=YES;
+    }
+    
+    return result;
+}
+
+- (BOOL)canThirdAuthorize
+{
+    BOOL result=NO;
+    
+    if (self.thirds!=nil)
+    {
+        result=YES;
+    }
+    
+    return result;
+}
+
 @end

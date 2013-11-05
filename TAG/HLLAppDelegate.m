@@ -23,23 +23,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // init GoogleSDK
-    // Optional: automatically send uncaught exceptions to Google Analytics.
-    [GAI sharedInstance].trackUncaughtExceptions = YES;
-    
-    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-    [GAI sharedInstance].dispatchInterval = 20;
-    
-    // Optional: set Logger to VERBOSE for debug information.
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-    
-    // Initialize tracker.1
-    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
+//    // init GoogleSDK
+//    // Optional: automatically send uncaught exceptions to Google Analytics.
+//    [GAI sharedInstance].trackUncaughtExceptions = YES;
+//    
+//    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+//    [GAI sharedInstance].dispatchInterval = 20;
+//    
+//    // Optional: set Logger to VERBOSE for debug information.
+//    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+//    
+//    // Initialize tracker.1
+//    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44893963-1"];
 
     
-    // init ParseSDK
-    [Parse setApplicationId:@"vkPdg2r3Q9hdUNOWYY9CFrPwDXQVsYM47QLDUAIl"
-                  clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
+//    // init ParseSDK
+//    [Parse setApplicationId:@"vkPdg2r3Q9hdUNOWYY9CFrPwDXQVsYM47QLDUAIl"
+//                  clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
     
     // init ShareSDK
     [ShareSDK registerApp:@"9fae2ee15ce" useAppTrusteeship:YES];
@@ -86,8 +86,8 @@
         [self.deckController previewBounceView:IIViewDeckLeftSide withCompletion:^(IIViewDeckController *controller, BOOL success) {[self.deckController previewBounceView:IIViewDeckRightSide];}];
     }
     
-    // stay online
-    [[HLLUserData sharedInstance] stayOnline];
+    // check Authorize
+//    [[HLLUserData sharedInstance] checkAuthorize:self.deckController];
     
     return YES;
 }
@@ -153,6 +153,12 @@
     if ([name isEqual:NSStringFromClass(centerController.class)])
     {
         return;
+    }
+    
+    // default sender
+    if (sender==nil)
+    {
+        sender=self.window.rootViewController;
     }
     
     if ([name isEqual:@"HLLUserLoginViewController"])

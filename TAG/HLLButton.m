@@ -30,7 +30,7 @@
 
 - (void)initialize
 {
-    [self setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+//    [self setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
 }
 
 /*

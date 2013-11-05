@@ -114,7 +114,7 @@
 		B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */; };
 		B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */; };
 		B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */; };
-		B29AB58517FEF003007D884E /* HLLDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLDataAPI.m */; };
+		B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLDataJson.m */; };
 		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
 		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
@@ -147,6 +147,9 @@
 		B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D0DC1C181A6FF500F171A7 /* HLLSuccessModel.m */; };
 		B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D647581818C15E005E353E /* HLLErrorModel.m */; };
 		B2D6475E18190258005E353E /* HLLHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6475D18190258005E353E /* HLLHud.m */; };
+		B2E4FA2F18276A4A0055E2AB /* HLLDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA2E18276A4A0055E2AB /* HLLDataProvider.m */; };
+		B2E4FA36182882C60055E2AB /* HLLDataJson+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA35182882C60055E2AB /* HLLDataJson+Data.m */; };
+		B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */; };
 		B2EBB0F71816225F00805621 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EBB0F61816225F00805621 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
@@ -291,8 +294,8 @@
 		B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductListViewController.xib; sourceTree = "<group>"; };
 		B29AB57D17FE924B007D884E /* HLLTAGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTAGLoginViewController.h; sourceTree = "<group>"; };
 		B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTAGLoginViewController.m; sourceTree = "<group>"; };
-		B29AB58317FEF003007D884E /* HLLDataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataAPI.h; sourceTree = "<group>"; };
-		B29AB58417FEF003007D884E /* HLLDataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPI.m; sourceTree = "<group>"; };
+		B29AB58317FEF003007D884E /* HLLDataJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataJson.h; sourceTree = "<group>"; };
+		B29AB58417FEF003007D884E /* HLLDataJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataJson.m; sourceTree = "<group>"; };
 		B29AB59617FFFD25007D884E /* HLLUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserLoginViewController.h; sourceTree = "<group>"; };
 		B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserLoginViewController.m; sourceTree = "<group>"; };
 		B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserLoginViewController.xib; sourceTree = "<group>"; };
@@ -333,6 +336,13 @@
 		B2D647581818C15E005E353E /* HLLErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLErrorModel.m; sourceTree = "<group>"; };
 		B2D6475C18190258005E353E /* HLLHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLHud.h; sourceTree = "<group>"; };
 		B2D6475D18190258005E353E /* HLLHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLHud.m; sourceTree = "<group>"; };
+		B2E4FA2D18276A4A0055E2AB /* HLLDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataProvider.h; sourceTree = "<group>"; };
+		B2E4FA2E18276A4A0055E2AB /* HLLDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataProvider.m; sourceTree = "<group>"; };
+		B2E4FA34182882C60055E2AB /* HLLDataJson+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HLLDataJson+Data.h"; sourceTree = "<group>"; };
+		B2E4FA35182882C60055E2AB /* HLLDataJson+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HLLDataJson+Data.m"; sourceTree = "<group>"; };
+		B2E4FA371828877D0055E2AB /* HLLDataAuthorizeProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataAuthorizeProvider.h; sourceTree = "<group>"; };
+		B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAuthorizeProvider.m; sourceTree = "<group>"; };
+		B2E4FA3A1828C5260055E2AB /* TAG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TAG.entitlements; sourceTree = "<group>"; };
 		B2EBB0F61816225F00805621 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Crashlytics/Crashlytics.framework; sourceTree = "<group>"; };
 		B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2F8C7FB17FE5099001C7DCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -648,6 +658,7 @@
 			isa = PBXGroup;
 			children = (
 				B22A491017FC534100DDE92E /* Localizable.strings */,
+				B2E4FA3A1828C5260055E2AB /* TAG.entitlements */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -785,10 +796,9 @@
 		B29AB58617FEF00B007D884E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B2E4FA3018276AA80055E2AB /* Provider */,
 				B23C2BD318222C020047920D /* Verify */,
 				B230C0231814FC89007A3F5D /* Model */,
-				B29AB58317FEF003007D884E /* HLLDataAPI.h */,
-				B29AB58417FEF003007D884E /* HLLDataAPI.m */,
 				B23C2BD418222CF20047920D /* HLLUserData.h */,
 				B23C2BD518222CF20047920D /* HLLUserData.m */,
 			);
@@ -988,6 +998,21 @@
 			name = Hud;
 			sourceTree = "<group>";
 		};
+		B2E4FA3018276AA80055E2AB /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B2E4FA371828877D0055E2AB /* HLLDataAuthorizeProvider.h */,
+				B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */,
+				B2E4FA2D18276A4A0055E2AB /* HLLDataProvider.h */,
+				B2E4FA2E18276A4A0055E2AB /* HLLDataProvider.m */,
+				B29AB58317FEF003007D884E /* HLLDataJson.h */,
+				B29AB58417FEF003007D884E /* HLLDataJson.m */,
+				B2E4FA34182882C60055E2AB /* HLLDataJson+Data.h */,
+				B2E4FA35182882C60055E2AB /* HLLDataJson+Data.m */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
 		B2EBB0F81816227D00805621 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1097,9 @@
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
 							};
 						};
 					};
@@ -1261,15 +1289,18 @@
 				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
 				B23C2BD618222CF20047920D /* HLLUserData.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
-				B29AB58517FEF003007D884E /* HLLDataAPI.m in Sources */,
+				B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */,
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
 				B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
+				B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */,
 				B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */,
 				B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */,
 				B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
+				B2E4FA2F18276A4A0055E2AB /* HLLDataProvider.m in Sources */,
+				B2E4FA36182882C60055E2AB /* HLLDataJson+Data.m in Sources */,
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
@@ -1503,6 +1534,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TAG/TAG.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1548,6 +1580,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TAG/TAG.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

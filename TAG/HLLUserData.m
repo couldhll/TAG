@@ -8,7 +8,15 @@
 
 #import "HLLUserData.h"
 
-#import <SSKeychain/SSKeychain.h>
+#import <KeychainItemWrapper/KeychainItemWrapper.h>
+//#import <SSKeychain/SSKeychain.h>
+
+@interface HLLUserData ()
+{
+    KeychainItemWrapper *wrapper;
+}
+
+@end
 
 @implementation HLLUserData
 
@@ -28,41 +36,83 @@
     return sharedInstance;
 }
 
+#pragma mark - Init
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+//        wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
+        wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
+    }
+    return self;
+}
+
 #pragma mark - Property
 
 - (HLLUserModel*)authorizationUser
 {
-    if (authorizationUser==nil)// load account to keycain
+    if (authorizationUser==nil)// load from keychain
     {
-        NSArray *keychains=[SSKeychain accountsForService:[[NSBundle mainBundle] bundleIdentifier]];
+//        NSString *aaa=[wrapper objectForKey:(__bridge id)kSecAttrAccount];
+//        HLLUserModel *userModel=[wrapper objectForKey:(__bridge id)kSecValueData];
+//        authorizationUser=userModel;
         
-        if (keychains)
+        //testing
+        NSString *account = [wrapper objectForKey:(__bridge id)kSecAttrAccount];
+        NSString *password = [wrapper objectForKey:(__bridge id)kSecValueData];
+        
+        if (![account isEqual:@""])
         {
-            NSDictionary *keychain=keychains[0];
+            HLLUserModel *userModel=[[HLLUserModel alloc] init];
             
-            if (keychain!=nil)
+            if (![HLLDataVerify verifyData:account regex:REGEX_EMAIL])
             {
-                NSString *account = [keychain objectForKey:@"acct"];
-                NSString *password = [SSKeychain passwordForService:[[NSBundle mainBundle] bundleIdentifier] account:account];
-                
-                HLLUserModel *userModel=[[HLLUserModel alloc] init];
-                
-                if (![HLLDataVerify verifyData:account regex:REGEX_EMAIL])
-                {
-                    HLLThirdAuthorizationModel *thirdModel=[[HLLThirdAuthorizationModel alloc] init];
-                    thirdModel.id=[account intValue];
-                    thirdModel.user_id=[password intValue];
-                    userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
-                }
-                else
-                {
-                    userModel.email=account;
-                    userModel.password=password;
-                }
-                
-                authorizationUser=userModel;
+                HLLThirdAuthorizationModel *thirdModel=[[HLLThirdAuthorizationModel alloc] init];
+                thirdModel.id=[account intValue];
+                thirdModel.user_id=password;
+                userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
             }
+            else
+            {
+                userModel.email=account;
+                userModel.password=password;
+            }
+            
+            authorizationUser=userModel;
         }
+        
+//        NSArray *keychains=[SSKeychain accountsForService:[[NSBundle mainBundle] bundleIdentifier]];
+//        
+//        if (keychains)
+//        {
+//            NSDictionary *keychain=keychains[0];
+//            
+//            if (keychain!=nil)
+//            {
+//                NSString *account = [keychain objectForKey:@"acct"];
+//                NSString *password = [SSKeychain passwordForService:[[NSBundle mainBundle] bundleIdentifier] account:account];
+//                
+//                HLLUserModel *userModel=[[HLLUserModel alloc] init];
+//                
+//                if (![HLLDataVerify verifyData:account regex:REGEX_EMAIL])
+//                {
+//                    HLLThirdAuthorizationModel *thirdModel=[[HLLThirdAuthorizationModel alloc] init];
+//                    thirdModel.id=[account intValue];
+//                    thirdModel.user_id=[password intValue];
+//                    userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
+//                }
+//                else
+//                {
+//                    userModel.email=account;
+//                    userModel.password=password;
+//                }
+//                
+//                authorizationUser=userModel;
+//            }
+//        }
+        
+        
 //        // load account to keycain
 //        SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
 //        query.service = [[NSBundle mainBundle] bundleIdentifier];
@@ -86,18 +136,59 @@
 {
     authorizationUser=userModel;
     
-    if ([self isThirdAuthorized])
+//    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
+//    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
+//    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:nil];
+    
+    // delete all keychain
+    [wrapper resetKeychainItem];
+    
+    if (authorizationUser.canTAGAuthorize)
     {
-        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
+        [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
+        [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
+    }
+    else if(authorizationUser.canThirdAuthorize)
+    {
+        HLLThirdAuthorizationModel *thirdAuthorizationModel=[authorizationUser.thirds objectAtIndex:0];
         
-        // save account to keycain
-        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
+        
+//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrService];
+//        [wrapper setObject:userModel forKey:(__bridge id)kSecAttrService];
+        
+//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
+        
+        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+        [wrapper setObject:thirdAuthorizationModel.user_id forKey:(__bridge id)kSecValueData];
     }
-    else
-    {
-        // save account to keycain
-        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
-    }
+    
+    
+//    // delete all keychain
+//    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
+//    query.service = [[NSBundle mainBundle] bundleIdentifier];
+//    NSError *error = nil;
+//    [query deleteItem:&error];
+    
+//    // save to keychain
+////    [wrapper setObject:[NSString stringWithFormat:@"%d",userModel.id] forKey:(__bridge id)kSecAttrAccount];
+////    [wrapper setObject:userModel forKey:(__bridge id)kSecValueData];
+//    if (self.authorizationUser.canThirdAuthorize)
+//    {
+//        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
+//        
+//        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+//        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
+//        
+////        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
+//    }
+//    else
+//    {
+//        [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
+//        [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
+//        
+////        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
+//    }
     
 //    // save account to keycain
 //    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
@@ -118,94 +209,30 @@
     return self.authorizationUser!=nil;
 }
 
-- (BOOL)isThirdAuthorized
+- (BOOL)checkAuthorize:(UIViewController*)sender
 {
-    BOOL result=NO;
+    BOOL result=YES;
     
-    if ([self isAuthorized])
+    if (![self isAuthorized])
     {
-        result=(self.authorizationUser.thirds!=nil);// not null thirds=third authorize
-//        result=(self.authorizationUser.password==nil);// null password=third authorize
+        if (self.authorizationUser!=nil)
+        {
+            // use authorizationUser to login
+            [HLLDataAuthorizeProvider userLoginWithModel:authorizationUser
+                                              completion:nil
+                                                 success:nil
+                                                   error:nil];
+        }
+        else
+        {
+            // popup UserLoginViewcontroller to login
+            [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
+        }
+        
+        result=NO;
     }
     
     return result;
-}
-
-#pragma mark - Login
-
-- (void)stayOnline
-{
-    HLLUserModel *authorizationUserModel=self.authorizationUser;
-    
-    // no user data no login
-    if (!authorizationUserModel)
-    {
-        return;
-    }
-    
-    if ([self isThirdAuthorized])
-    {
-        HLLThirdAuthorizationModel *thirdModel=authorizationUserModel.thirds[0];
-        
-        NSString *thirdModelId=[NSString stringWithFormat:@"%d",thirdModel.id];
-        NSString *thirdModelUserId=[NSString stringWithFormat:@"%d",thirdModel.user_id];
-        
-        // third login
-        [HLLDataAPI userThirdLogin:nil
-                           thirdId:thirdModelId
-                       thirdUserId:thirdModelUserId
-                thirdUserHeadImage:nil
-              thirdUserDescription:nil
-                        completion:nil
-                           success:^(id json, JSONModelError *err) {
-                               HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                               if (userModel)
-                               {
-                                   // get login user info
-                                   HLLThirdAuthorizationModel* thirdModel = [[HLLThirdAuthorizationModel alloc] init];
-                                   thirdModel.id=[thirdModelId intValue];
-                                   thirdModel.user_id=[thirdModelUserId intValue];
-                                   userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
-                                   
-                                   // set authorization user
-                                   [HLLUserData sharedInstance].authorizationUser=userModel;
-                                   
-                                   // hud
-                                   [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
-                                   
-                                   // checkpoint
-                                   [TestFlight passCheckpoint:CHECKPOINT_USER_THIRDLOGIN];
-                               }
-                           }
-                             error:nil];
-    }
-    else
-    {
-        // TAG login
-        [HLLDataAPI userLogin:nil
-                        email:authorizationUserModel.email
-                     password:authorizationUserModel.password
-                   completion:nil
-                      success:^(id json, JSONModelError *err) {
-                          HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                          if (userModel)
-                          {
-                              // get login user info
-                              userModel.email=authorizationUserModel.email;
-                              userModel.password=authorizationUserModel.password;
-                              
-                              // set authorization user
-                              [HLLUserData sharedInstance].authorizationUser=userModel;
-                              
-                              // hud
-                              [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
-                              
-                              // checkpoint
-                              [TestFlight passCheckpoint:CHECKPOINT_USER_TAGLOGIN];
-                          }
-                      }
-                        error:nil];
-    }
 }
 
 @end

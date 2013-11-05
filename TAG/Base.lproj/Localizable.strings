@@ -8,6 +8,8 @@
 
 "MenuTitle"="Menu";
 
+"Hud_Loading"="Loading";
+
 "Hud_Error_UserAuthorize_EmailNoMatch"="EmailNoMatch";
 "Hud_Error_UserAuthorize_NameNoMatch"="NameNoMatch";
 "Hud_Error_UserAuthorize_PasswordNoMatch"="PasswordNoMatch";
@@ -17,3 +19,5 @@
 "Hud_Success_Completed"="Completed";
 "Hud_Success_UserAuthorize_RegisterCompleted"="RegisterCompleted";
 "Hud_Success_UserAuthorize_LoginCompleted"="LoginCompleted";
+"Hud_Success_UserAuthorize_LogoutCompleted"="LogoutCompleted";
+

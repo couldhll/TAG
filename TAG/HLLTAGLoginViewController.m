@@ -87,6 +87,12 @@
 
 - (IBAction)exitButtonPressed:(id)sender
 {
+    // login notification
+    NSMutableDictionary *notificationuUserInfo=[NSMutableDictionary dictionary];
+    [notificationuUserInfo setValue:@NO forKey:@"logined"];
+    [notificationuUserInfo setValue:self forKey:@"sender"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -97,33 +103,17 @@
         return;
     }
     
-    // TAG login
-    [HLLDataAPI userLogin:self.view
-                    email:self.userEmailTextField.text
-                 password:self.userPasswordTextField.text
-               completion:nil
-                  success:^(id json, JSONModelError *err) {
-                      HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
-                      if (userModel)
-                      {
-                          // get login user info
-                          userModel.email=self.userEmailTextField.text;
-                          userModel.password=self.userPasswordTextField.text;
-                          
-                          // set authorization user
-                          [HLLUserData sharedInstance].authorizationUser=userModel;
-                          
-                          // hud
-                          [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LoginCompleted",@"") detail:nil];
-                          
-                          // checkpoint
-                          [TestFlight passCheckpoint:CHECKPOINT_USER_TAGLOGIN];
-                          
-                          // exit
-                          [self dismissModalViewControllerAnimated:YES];
-                      }
-                  }
-                    error:nil];
+    // tag login
+    HLLUserModel* userModel = [[HLLUserModel alloc] init];
+    userModel.email=self.userEmailTextField.text;
+    userModel.password=self.userPasswordTextField.text;
+    [HLLDataAuthorizeProvider userLoginWithModel:userModel
+                             completion:nil
+                                success:^(id json, JSONModelError *e) {
+                                    // exit
+                                    [self dismissModalViewControllerAnimated:YES];
+                                }
+                                  error:nil];
 }
 
 - (IBAction)findPasswordButtonPressed:(id)sender

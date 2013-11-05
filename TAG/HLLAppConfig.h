@@ -14,7 +14,7 @@
 #import "HLLComponent.h"
 
 #import "HLLModel.h"
-#import "HLLDataAPI.h"
+#import "HLLDataAuthorizeProvider.h"
 #import "HLLDataVerify.h"
 #import "HLLUserData.h"
 
@@ -68,7 +68,9 @@
 
 #define CHECKPOINT_USER_THIRDLOGIN @"Third Login OK."
 #define CHECKPOINT_USER_TAGLOGIN @"TAG Login OK."
+#define CHECKPOINT_USER_LOGOUT @"User Logout OK."
 #define CHECKPOINT_USER_REGISTER @"User Register OK."
+
 
 #pragma mark - Enum
 

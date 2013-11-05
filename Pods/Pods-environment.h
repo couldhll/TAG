@@ -66,6 +66,12 @@
 #define COCOAPODS_VERSION_MINOR_JSONModel 9
 #define COCOAPODS_VERSION_PATCH_JSONModel 3
 
+// KeychainItemWrapper
+#define COCOAPODS_POD_AVAILABLE_KeychainItemWrapper
+#define COCOAPODS_VERSION_MAJOR_KeychainItemWrapper 1
+#define COCOAPODS_VERSION_MINOR_KeychainItemWrapper 2
+#define COCOAPODS_VERSION_PATCH_KeychainItemWrapper 0
+
 // MBProgressHUD
 #define COCOAPODS_POD_AVAILABLE_MBProgressHUD
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
@@ -101,12 +107,6 @@
 #define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
 #define COCOAPODS_VERSION_MINOR_SDWebImage_Core 5
 #define COCOAPODS_VERSION_PATCH_SDWebImage_Core 0
-
-// SSKeychain
-#define COCOAPODS_POD_AVAILABLE_SSKeychain
-#define COCOAPODS_VERSION_MAJOR_SSKeychain 1
-#define COCOAPODS_VERSION_MINOR_SSKeychain 2
-#define COCOAPODS_VERSION_PATCH_SSKeychain 1
 
 // SVPullToRefresh
 #define COCOAPODS_POD_AVAILABLE_SVPullToRefresh

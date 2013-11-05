@@ -17,6 +17,7 @@ PODS:
   - GoogleAnalytics-iOS-SDK (3.0.2)
   - HLLFont (0.1)
   - JSONModel (0.9.3)
+  - KeychainItemWrapper (1.2)
   - MBProgressHUD (0.8)
   - OHAttributedLabel (3.5.3)
   - Parse (1.2.15):
@@ -26,7 +27,6 @@ PODS:
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
   - SevenSwitch (1.3.0)
-  - SSKeychain (1.2.1)
   - SVPullToRefresh (0.4.1)
   - TestFlightSDK (2.1.1-beta)
   - UI7Kit (0.9.9):
@@ -170,12 +170,12 @@ DEPENDENCIES:
   - GoogleAnalytics-iOS-SDK (~> 3.0.1)
   - HLLFont (~> 0.1)
   - JSONModel (~> 0.9.3)
+  - KeychainItemWrapper (~> 1.2)
   - MBProgressHUD (~> 0.8)
   - OHAttributedLabel (~> 3.5.2)
   - Parse (~> 1.2.15)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.4)
-  - SSKeychain (~> 1.2.1)
   - SVPullToRefresh (~> 0.4.1)
   - TestFlightSDK (~> 2.1.1-beta)
   - UI7Kit (~> 0.9.9)
@@ -191,13 +191,13 @@ SPEC CHECKSUMS:
   GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
   HLLFont: b74c37c01c7957df048a0b875dfc292265f5a973
   JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
+  KeychainItemWrapper: b532e85de8792ea70dad237e7ead90993af763cf
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
   Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
   RegexKitLite: f7af7b4d2b675cd2ec9a4abab6aad6ae1f6499c0
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
-  SSKeychain: d18926838c2e7cd342e2a49e9f869858e49f035a
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
   UI7Kit: cc047d4196ab61952d5e0784fae34e785af7f780

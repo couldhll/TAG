@@ -20,8 +20,7 @@
 @property (strong, nonatomic) HLLUserModel *authorizationUser;
 
 - (BOOL)isAuthorized;
-- (BOOL)isThirdAuthorized;
 
-- (void)stayOnline;
+- (BOOL)checkAuthorize:(UIViewController*)sender;
 
 @end

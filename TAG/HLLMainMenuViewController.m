@@ -105,6 +105,23 @@
 - (IBAction)buttonPressed:(id)sender
 {
     HLLButton *button=(HLLButton*)sender;
+    
+    // logout
+    if ([button.name isEqual:@"loginorloginoutButton"])
+    {
+        HLLLoginButton *loginButton=(HLLLoginButton*)button;
+        if (loginButton.logined)
+        {
+            // logout
+            [HLLDataAuthorizeProvider userLogout:self.view
+                        completion:nil
+                           success:nil
+                             error:nil];
+            
+            return;
+        }
+    }
+    
     NSString *controllerName=[buttonNotificationDictionary valueForKey:button.name];
     [AppDelegate openViewController:controllerName sender:self];
 }

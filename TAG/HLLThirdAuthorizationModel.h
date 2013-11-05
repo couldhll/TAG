@@ -12,6 +12,8 @@
 
 @property (assign, nonatomic) int id;
 @property (strong, nonatomic) NSString* name;
-@property (assign, nonatomic) int user_id;
+@property (strong, nonatomic) NSString* user_id;
+@property (strong, nonatomic) NSString<Ignore>* user_head_image;
+@property (strong, nonatomic) NSString<Ignore>* user_description;
 
 @end
