@@ -10,13 +10,15 @@
 
 @interface HLLProductFilterViewController ()
 {
-    NSMutableArray *filterArray;
     NSMutableArray *filterButtonArray;
 }
 
 @end
 
 @implementation HLLProductFilterViewController
+
+@synthesize searchText;
+@synthesize filterArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,18 +42,18 @@
     [super viewDidLoad];
     
     // init button information
-    self.csButton.information=@"csButton";
-    self.toButton.information=@"toButton";
-    self.womenButton.information=@"womenButton";
-    self.menButton.information=@"menButton";
-    self.kidButton.information=@"kidButton";
-    self.geekButton.information=@"geekButton";
-    self.cheapButton.information=@"cheapButton";
-    self.expensiveButton.information=@"expensiveButton";
-    self.saleButton.information=@"saleButton";
-    self.comicButton.information=@"comicButton";
-    self.toonButton.information=@"toonButton";
-    self.freeButton.information=@"freeButton";
+    self.csButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_CS];
+    self.toButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_TO];
+    self.womenButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_WOMEN];
+    self.menButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_MEN];
+    self.kidButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_KIDS];
+    self.geekButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_GEEK];
+    self.cheapButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_$];
+    self.expensiveButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_$$];
+    self.saleButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_SALE];
+    self.comicButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_COMICS];
+    self.toonButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_TOONS];
+    self.freeButton.information=[NSString stringWithFormat:@"%d",DATA_API_PRODUCT_TYPE_FREE];
     
     // init button array
     filterButtonArray=[NSMutableArray array];
@@ -107,6 +109,18 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+}
+
+#pragma mark - Property
+
+- (NSString*)searchText
+{
+    return self.searchTextField.text;
+}
+
+- (void)setSearchText:(NSString*)text
+{
+    self.searchTextField.text=text;
 }
 
 #pragma mark - Actions

@@ -10,6 +10,9 @@
 
 @interface HLLProductFilterViewController : UIViewController
 
+@property (strong, nonatomic) NSString *searchText;
+@property (strong, nonatomic) NSMutableArray *filterArray;
+
 @property (strong, nonatomic) IBOutlet UITextField  *searchTextField;
 
 @property (strong, nonatomic) IBOutlet HLLButton  *csButton;

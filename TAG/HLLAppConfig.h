@@ -75,10 +75,10 @@
 #pragma mark - Enum
 
 typedef enum {
-    HLLProductTypeNone,
-    HLLProductTypeCS,
-    HLLProductTypeSale,
-    HLLProductTypeFree
+    HLLProductTypeNone=DATA_API_PRODUCT_TYPE_TO,
+    HLLProductTypeCS=DATA_API_PRODUCT_TYPE_CS,
+    HLLProductTypeSale=DATA_API_PRODUCT_TYPE_SALE,
+    HLLProductTypeFree=DATA_API_PRODUCT_TYPE_FREE
 } HLLProductType;
 
 #endif

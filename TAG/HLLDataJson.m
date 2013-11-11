@@ -15,6 +15,8 @@
 
 #pragma mark - User
 
+#pragma mark User Authorization
+
 + (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // md5 password
@@ -49,25 +51,6 @@
     [self postJSONWithUrl:DATA_API_USER_REGISTER_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)userGetInfo:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
-{
-    // send
-    [self postJSONWithUrl:DATA_API_USER_GETINFO_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
-}
-
-+ (void)userUpdatePassword:(UIView*)view oldPassword:(NSString*)oldPassword newPassword:(NSString*)newPassword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
-{
-    // params
-    NSArray *paramsKeys=@[@"old_password",
-                          @"new_password"];
-    NSArray *paramsValues=@[oldPassword,
-                            newPassword];
-    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
-    
-    // send
-    [self postJSONWithUrl:DATA_API_USER_UPDATEPASSWORD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
-}
-
 + (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     
@@ -77,8 +60,8 @@
                           @"user_description"];
     NSArray *paramsValues=@[thirdId,
                             thirdUserId,
-                            thirdUserHeadImage==nil?@"":thirdUserHeadImage,
-                            thirdUserDescription==nil?@"":thirdUserDescription];
+                            thirdUserHeadImage,
+                            thirdUserDescription];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -92,6 +75,32 @@
     
     // send
     [self postJSONWithUrl:DATA_API_USER_LOGOUT_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark User Info
+
++ (void)userGetInfo:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[userId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_USER_GETINFO_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)userUpdatePassword:(UIView*)view oldPassword:(NSString*)oldPassword newPassword:(NSString*)newPassword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"old_password",
+                          @"new_password"];
+    NSArray *paramsValues=@[oldPassword,
+                            newPassword];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_USER_UPDATEPASSWORD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
 #pragma mark - Product
@@ -122,6 +131,223 @@
     
     // send
     [self postJSONWithUrl:DATA_API_PRODUCT_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark - Comment
+
++ (void)commentGetList:(UIView*)view productId:(NSString*)productId count:(NSString*)count page:(NSString*)page completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id",
+                          @"count",
+                          @"page"];
+    NSArray *paramsValues=@[productId,
+                            count,
+                            page];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COMMENT_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)commentAdd:(UIView*)view productId:(NSString*)productId comment:(NSString*)comment completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id",
+                          @"comment"];
+    NSArray *paramsValues=@[productId,
+                            comment];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COMMENT_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)commentRemove:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[productId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COMMENT_REMOTE_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark - Collect
+
+#pragma mark Collect Group
+
++ (void)collectGetGroupInfo:(UIView*)view groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[groupId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_GETGROUPINFO_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)collectGetGroupList:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_GETGROUPLIST_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)collectAddGroup:(UIView*)view name:(NSString*)name completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"name"];
+    NSArray *paramsValues=@[name];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_ADDGROUP_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)collectRemoveGroup:(UIView*)view groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[groupId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_REMOVEGROUP_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark Collect Prodduct
+
++ (void)collectAddProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id",
+                          @"group_id"];
+    NSArray *paramsValues=@[productId,
+                            groupId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)collectRemoveProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id",
+                          @"group_id"];
+    NSArray *paramsValues=@[productId,
+                            groupId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_COLLECT_REMOVE_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark - Fowllowing
+
+#pragma mark Fowllowing Brand
+
++ (void)fowllowingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"count",
+                          @"page",
+                          @"need_detail"];
+    NSArray *paramsValues=@[count,
+                            page,
+                            needDetail];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_BRAND_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)fowllowingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[brandId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_BRAND_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)fowllowingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[brandId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_BRAND_REMOVE_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark Fowllowing User
+
++ (void)fowllowingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"count",
+                          @"page",
+                          @"need_detail"];
+    NSArray *paramsValues=@[count,
+                            page,
+                            needDetail];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_USER_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)fowllowingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[userId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_USER_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
++ (void)fowllowingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"id"];
+    NSArray *paramsValues=@[userId];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_USER_REMOVE_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+}
+
+#pragma mark - Tracking
+
++ (void)tracking:(UIView*)view ip:(NSString*)ip userId:(NSString*)userId category:(NSString*)category object:(NSString*)object action:(NSString*)action value:(NSString*)value time:(NSString*)time completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
+{
+    // params
+    NSArray *paramsKeys=@[@"ip",
+                          @"user_id",
+                          @"category",
+                          @"object",
+                          @"action",
+                          @"value",
+                          @"time"];
+    NSArray *paramsValues=@[ip,
+                            userId,
+                            category,
+                            object,
+                            action,
+                            value,
+                            time];
+    NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
+    
+    // send
+    [self postJSONWithUrl:DATA_API_FOLLOWING_USER_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
 #pragma mark - Support methods
@@ -170,7 +396,7 @@
     {
         NSUInteger valueIndex=[paramsKeys indexOfObject:key];
         NSString *value=[paramsValues objectAtIndex:valueIndex];
-        secureString=[secureString stringByAppendingString:value];
+        secureString=[secureString stringByAppendingString:value==nil?@"":value];
 //        NSLog(@"key:%@ \n value:%@ \n secureString:%@",key,value,secureString);
     }
     secureString=[secureString stringByAppendingString:DATA_API_SECURE_KEY];

@@ -86,7 +86,7 @@
     }
 }
 
-- (void)testThirdLogin
+- (void)testThirdLogin1
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     

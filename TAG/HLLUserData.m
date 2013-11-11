@@ -58,7 +58,6 @@
 //        HLLUserModel *userModel=[wrapper objectForKey:(__bridge id)kSecValueData];
 //        authorizationUser=userModel;
         
-        //testing
         NSString *account = [wrapper objectForKey:(__bridge id)kSecAttrAccount];
         NSString *password = [wrapper objectForKey:(__bridge id)kSecValueData];
         
@@ -66,17 +65,17 @@
         {
             HLLUserModel *userModel=[[HLLUserModel alloc] init];
             
-            if (![HLLDataVerify verifyData:account regex:REGEX_EMAIL])
+            if ([HLLDataVerify verifyData:account regex:REGEX_EMAIL])
+            {
+                userModel.email=account;
+                userModel.password=password;
+            }
+            else
             {
                 HLLThirdAuthorizationModel *thirdModel=[[HLLThirdAuthorizationModel alloc] init];
                 thirdModel.id=[account intValue];
                 thirdModel.user_id=password;
                 userModel.thirds=(NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>*)@[thirdModel];
-            }
-            else
-            {
-                userModel.email=account;
-                userModel.password=password;
             }
             
             authorizationUser=userModel;

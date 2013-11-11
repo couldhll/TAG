@@ -87,7 +87,7 @@
     }
     
     // check Authorize
-//    [[HLLUserData sharedInstance] checkAuthorize:self.deckController];
+//    [[HLLUserData sharedInstance] checkAuthorize:self.window.rootViewController];
     
     return YES;
 }

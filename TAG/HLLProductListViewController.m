@@ -16,14 +16,19 @@
 #import <GMGridView/GMGridView.h>
 #import <SVPullToRefresh/SVPullToRefresh.h>
 
+#define GMGRIDVIEW_PAGE_COL_COUNT 3
+#define GMGRIDVIEW_PAGE_ROW_COUNT 5
+#define GMGRIDVIEW_PAGE_UNIT_COUNT (GMGRIDVIEW_PAGE_COL_COUNT*GMGRIDVIEW_PAGE_ROW_COUNT)
+
 #define GMGRIDVIEW_SPACING 5
 #define GMGRIDVIEW_SIZE CGSizeMake(100, 100)
 
 @interface HLLProductListViewController () <UINavigationControllerDelegate, GMGridViewDataSource, GMGridViewActionDelegate>
 {
     __gm_weak GMGridView *_gmGridView;
-//    __gm_weak NSMutableArray *_currentData;
-    NSMutableArray *_currentData;
+    __weak HLLProductFilterViewController *_filterViewController;
+    
+    NSMutableArray<HLLProductModel> *products;
 }
 
 @end
@@ -83,12 +88,13 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     
     // data
-    NSMutableArray *_data = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 15; i ++)
-    {
-        [_data addObject:[NSString stringWithFormat:@"A %d", i]];
-    }
-    _currentData=_data;
+    products=(NSMutableArray<HLLProductModel>*)[[NSMutableArray alloc] init];
+//    NSMutableArray *_data = [[NSMutableArray alloc] init];
+//    for (int i = 0; i < 15; i ++)
+//    {
+//        [_data addObject:[NSString stringWithFormat:@"A %d", i]];
+//    }
+//    _currentData=_data;
     
     // grid view
     GMGridView *gmGridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
@@ -119,7 +125,8 @@
 {
     [super viewDidUnload];
     _gmGridView=nil;
-    _currentData=nil;
+    _filterViewController=nil;
+    products=nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -127,8 +134,9 @@
     [super viewWillAppear:animated];
     
     // create right controller
-    UIViewController* rightController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
-    self.viewDeckController.rightController = rightController;
+    HLLProductFilterViewController* filterViewController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
+    self.viewDeckController.rightController = filterViewController;
+    _filterViewController=filterViewController;
     
     // auto refresh
     [_gmGridView triggerPullToRefresh];
@@ -144,7 +152,11 @@
     [super viewWillDisappear:animated];
     
     // close right controller
-    [self.viewDeckController closeRightViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {self.viewDeckController.rightController = nil;}];
+    [self.viewDeckController closeRightViewAnimated:YES
+                                        completion:^(IIViewDeckController *controller, BOOL success) {
+                                            self.viewDeckController.rightController = nil;
+                                            _filterViewController=nil;
+                                        }];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -156,7 +168,7 @@
 
 - (NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView
 {
-    return [_currentData count];
+    return [products count];
 }
 
 - (CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
@@ -191,8 +203,10 @@
     
     CGSize size = [self GMGridView:gridView sizeForItemsInInterfaceOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
     
+    // get exist cell
     GMGridViewCell *cell = [gridView dequeueReusableCell];
     
+    // if no cell create one
     if (!cell)
     {
         cell = [[GMGridViewCell alloc] init];
@@ -204,10 +218,20 @@
         cell.contentView = unitView;
     }
     
+    // load data
+    HLLProductModel *productModel=[products objectAtIndex:index];
+    
+    // load data to cell
     HLLProductUnitView *productUnitView=(HLLProductUnitView *)cell.contentView;
-    [productUnitView loadImage:@"http://lorempixel.com/208/208/food"];
-//    [productUnitView loadImage:@"http://test.tagoriginals.com/images/TAG-Appshouye_05.jpg"];
-    [productUnitView setProductType:HLLProductTypeCS];
+//    if (productModel.thumbnail_image_url!=nil)
+//    {
+        [productUnitView loadImage:productModel.thumbnail_image_url.absoluteString];
+//    }
+    [productUnitView setProductType:productModel.show_type];
+    
+//    // nodata
+//    [productUnitView loadImage:@"http://lorempixel.com/208/208/food"];
+//    [productUnitView setProductType:HLLProductTypeCS];
     
 //    [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
@@ -248,71 +272,135 @@
 
 #pragma mark - SVPullToRefresh + SVInfiniteScrolling
 
-- (void)PullToRefresh {
+- (void)PullToRefresh
+{
     NSLog(@"PullToRefresh");
     
-    int64_t delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        // adding object at the first position
-        NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
-        [_currentData addObject:newItem];
-        [_gmGridView insertObjectAtIndex:0 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-        
-        [_gmGridView.pullToRefreshView stopAnimating];
-    });
+    // clear data
+    [products removeAllObjects];
+    
+    // reload data
+    [self loadDataWithPage:1
+                completion:^(void){
+                    [_gmGridView reloadData];
+                    [_gmGridView.pullToRefreshView stopAnimating];
+                }];
+    
+//    int64_t delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        // adding object at the first position
+//        NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
+//        [products addObject:newItem];
+//        [_gmGridView insertObjectAtIndex:0 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
+//        
+//        [_gmGridView.pullToRefreshView stopAnimating];
+//    });
 }
 
-- (void)InfiniteScrolling {
+- (void)InfiniteScrolling
+{
     NSLog(@"InfiniteScrolling");
     
-    int64_t delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        // adding object at the last position
-        NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
-        [_currentData addObject:newItem];
-        [_gmGridView insertObjectAtIndex:[_currentData count] - 1 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-        
-        [_gmGridView.infiniteScrollingView stopAnimating];
-    });
+    // add data
+    [self loadDataWithPage:[self pageWithData:products]+1
+                completion:^(void){
+                    [_gmGridView reloadData];
+                    [_gmGridView.infiniteScrollingView stopAnimating];
+                }];
+    
+//    int64_t delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        // adding object at the last position
+//        NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
+//        [products addObject:newItem];
+//        [_gmGridView insertObjectAtIndex:[products count] - 1 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
+//        
+//        [_gmGridView.infiniteScrollingView stopAnimating];
+//    });
+}
+
+#pragma mark - Data
+
+- (void)loadDataWithPage:(int)page completion:(Block)completeBlock
+{
+    NSLog(@"load data at page %d", page);
+    
+    int startIndex=(page-1)*GMGRIDVIEW_PAGE_UNIT_COUNT;
+    
+    [HLLDataJson productGetList:self.view
+                              count:[NSString stringWithFormat:@"%d",GMGRIDVIEW_PAGE_UNIT_COUNT]
+                               page:[NSString stringWithFormat:@"%d",page]
+                       searchOption:[_filterViewController.filterArray componentsJoinedByString:@","]
+                      searchKeyword:_filterViewController.searchText
+                         completion:nil
+                            success:^(id json, JSONModelError *err) {
+                                HLLProductListModel* productListModel = [[HLLProductListModel alloc] initWithDictionary:json error:nil];
+                                if (productListModel)
+                                {
+                                    NSMutableArray<HLLProductModel>* productModelArray=(NSMutableArray<HLLProductModel>*)[NSMutableArray arrayWithArray:productListModel.products];
+                                    [self replaceData:productModelArray index:startIndex];
+                                }
+                                
+                                completeBlock();
+                            }
+                              error:nil];
+}
+
+- (void)replaceData:(NSArray*)data index:(int)index
+{
+    // add data length
+    for (int i=products.count; i<index+data.count; i++)
+    {
+        [products addObject:[NSNull null]];
+    }
+    
+    // update data
+    [products replaceObjectsInRange:NSMakeRange(index,data.count) withObjectsFromArray:data];
+}
+
+- (int)pageWithData:(NSArray*)data
+{
+    int page=data.count/GMGRIDVIEW_PAGE_UNIT_COUNT;
+    return page;
 }
 
 #pragma mark - test
 
-- (void)addMoreItem
-{
-    // Example: adding object at the last position
-    NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
-    
-    [_currentData addObject:newItem];
-    [_gmGridView insertObjectAtIndex:[_currentData count] - 1 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-}
-
-- (void)removeItem
-{
-    // Example: removing last item
-    if ([_currentData count] > 0)
-    {
-        NSInteger index = [_currentData count] - 1;
-        
-        [_gmGridView removeObjectAtIndex:index withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-        [_currentData removeObjectAtIndex:index];
-    }
-}
-
-- (void)refreshItem
-{
-    // Example: reloading last item
-    if ([_currentData count] > 0)
-    {
-        int index = [_currentData count] - 1;
-        
-        NSString *newMessage = [NSString stringWithFormat:@"%d", (arc4random() % 1000)];
-        
-        [_currentData replaceObjectAtIndex:index withObject:newMessage];
-        [_gmGridView reloadObjectAtIndex:index withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
-    }
-}
+//- (void)addMoreItem
+//{
+//    // Example: adding object at the last position
+//    NSString *newItem = [NSString stringWithFormat:@"%d", (int)(arc4random() % 1000)];
+//    
+//    [_currentData addObject:newItem];
+//    [_gmGridView insertObjectAtIndex:[_currentData count] - 1 withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
+//}
+//
+//- (void)removeItem
+//{
+//    // Example: removing last item
+//    if ([_currentData count] > 0)
+//    {
+//        NSInteger index = [_currentData count] - 1;
+//        
+//        [_gmGridView removeObjectAtIndex:index withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
+//        [_currentData removeObjectAtIndex:index];
+//    }
+//}
+//
+//- (void)refreshItem
+//{
+//    // Example: reloading last item
+//    if ([_currentData count] > 0)
+//    {
+//        int index = [_currentData count] - 1;
+//        
+//        NSString *newMessage = [NSString stringWithFormat:@"%d", (arc4random() % 1000)];
+//        
+//        [_currentData replaceObjectAtIndex:index withObject:newMessage];
+//        [_gmGridView reloadObjectAtIndex:index withAnimation:GMGridViewItemAnimationFade | GMGridViewItemAnimationScroll];
+//    }
+//}
 
 @end

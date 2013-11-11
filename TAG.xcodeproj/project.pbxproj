@@ -111,8 +111,6 @@
 		B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */; };
 		B292A73E180677F5004225B5 /* HLLViewDeckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */; };
 		B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B295DE6D17EFDF6F00DFCD1E /* HLLProductListViewController.xib */; };
-		B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */; };
-		B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */; };
 		B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB57E17FE924B007D884E /* HLLTAGLoginViewController.m */; };
 		B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLDataJson.m */; };
 		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
@@ -151,6 +149,7 @@
 		B2E4FA36182882C60055E2AB /* HLLDataJson+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA35182882C60055E2AB /* HLLDataJson+Data.m */; };
 		B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */; };
 		B2EBB0F71816225F00805621 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EBB0F61816225F00805621 /* Crashlytics.framework */; };
+		B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F7998C182A21440010EA65 /* HLLLinkModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -244,10 +243,6 @@
 		B226A7A0181FBE09004E7FB5 /* HLLProductListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductListModel.h; sourceTree = "<group>"; };
 		B226A7A1181FBE09004E7FB5 /* HLLProductListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductListModel.m; sourceTree = "<group>"; };
 		B22A48F317FC4EF700DDE92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B22A48F817FC4F0D00DDE92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B22A48F917FC4F1300DDE92E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPhone.storyboard"; sourceTree = "<group>"; };
-		B22A48FA17FC4F2000DDE92E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B22A48FB17FC4F2300DDE92E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.storyboard"; sourceTree = "<group>"; };
 		B22A490A17FC522200DDE92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B22A490B17FC522B00DDE92E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B22A490F17FC534100DDE92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -312,8 +307,6 @@
 		B2BC0FCC17EEECA40071036D /* TAG-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAG-Prefix.pch"; sourceTree = "<group>"; };
 		B2BC0FCD17EEECA40071036D /* HLLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLAppDelegate.h; sourceTree = "<group>"; };
 		B2BC0FCE17EEECA40071036D /* HLLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLAppDelegate.m; sourceTree = "<group>"; };
-		B2BC0FD117EEECA40071036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B2BC0FD417EEECA40071036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B2BC0FD617EEECA40071036D /* HLLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLViewController.h; sourceTree = "<group>"; };
 		B2BC0FD717EEECA40071036D /* HLLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLViewController.m; sourceTree = "<group>"; };
 		B2BC0FD917EEECA40071036D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -344,6 +337,8 @@
 		B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAuthorizeProvider.m; sourceTree = "<group>"; };
 		B2E4FA3A1828C5260055E2AB /* TAG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TAG.entitlements; sourceTree = "<group>"; };
 		B2EBB0F61816225F00805621 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Crashlytics/Crashlytics.framework; sourceTree = "<group>"; };
+		B2F7998B182A21440010EA65 /* HLLLinkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLinkModel.h; sourceTree = "<group>"; };
+		B2F7998C182A21440010EA65 /* HLLLinkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLLinkModel.m; sourceTree = "<group>"; };
 		B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B2F8C7FB17FE5099001C7DCA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B2F8C7FD17FE50A1001C7DCA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -668,6 +663,7 @@
 			children = (
 				B22640F1181681DB00F2A4A5 /* HLLModel.h */,
 				B2D0DC1F181A708100F171A7 /* Feedback */,
+				B2F7998E182A214D0010EA65 /* Common */,
 				B230C0271814FED9007A3F5D /* User */,
 				B226A79C181FB868004E7FB5 /* Brand */,
 				B226A798181FB7B1004E7FB5 /* Product */,
@@ -910,8 +906,6 @@
 				B243927017F00D57002FD388 /* Frame */,
 				B29AB58217FE9252007D884E /* User */,
 				B243927617F02D3F002FD388 /* Product */,
-				B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */,
-				B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */,
 				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
 				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
 				B2BC0FD917EEECA40071036D /* Images.xcassets */,
@@ -1019,6 +1013,15 @@
 				B2EBB0F61816225F00805621 /* Crashlytics.framework */,
 			);
 			name = Crashlytics;
+			sourceTree = "<group>";
+		};
+		B2F7998E182A214D0010EA65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7998B182A21440010EA65 /* HLLLinkModel.h */,
+				B2F7998C182A21440010EA65 /* HLLLinkModel.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1147,10 +1150,8 @@
 				B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */,
 				B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */,
 				B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */,
-				B295DE6F17EFE5C100DFCD1E /* Main_iPhone.storyboard in Resources */,
 				B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */,
 				B23D00C41807BEC5000259B4 /* HLLUserFriendViewController.xib in Resources */,
-				B295DE7017EFE5C400DFCD1E /* Main_iPad.storyboard in Resources */,
 				B292A73E180677F5004225B5 /* HLLViewDeckViewController.xib in Resources */,
 				B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */,
 				B2BC0FDA17EEECA40071036D /* Images.xcassets in Resources */,
@@ -1274,6 +1275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */,
+				B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */,
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
 				B226A79F181FB882004E7FB5 /* HLLBrandModel.m in Sources */,
@@ -1358,26 +1360,6 @@
 				B22A490B17FC522B00DDE92E /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B2BC0FD017EEECA40071036D /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2BC0FD117EEECA40071036D /* Base */,
-				B22A48F817FC4F0D00DDE92E /* en */,
-				B22A48F917FC4F1300DDE92E /* zh-Hans */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		B2BC0FD317EEECA40071036D /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2BC0FD417EEECA40071036D /* Base */,
-				B22A48FA17FC4F2000DDE92E /* en */,
-				B22A48FB17FC4F2300DDE92E /* zh-Hans */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		B2BC0FE917EEECA50071036D /* InfoPlist.strings */ = {

@@ -10,6 +10,6 @@
 
 @interface HLLProductListModel : JSONModel
 
-@property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel>* thirds;
+@property (strong, nonatomic) NSArray<HLLProductModel>* products;
 
 @end
