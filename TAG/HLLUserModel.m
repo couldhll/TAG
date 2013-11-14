@@ -28,7 +28,10 @@
     
     if (self.thirds!=nil)
     {
-        result=YES;
+        if (self.thirds.count!=0)
+        {
+            result=YES;
+        }
     }
     
     return result;

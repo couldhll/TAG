@@ -23,7 +23,7 @@
 #define GMGRIDVIEW_SPACING 5
 #define GMGRIDVIEW_SIZE CGSizeMake(100, 100)
 
-@interface HLLProductListViewController () <UINavigationControllerDelegate, GMGridViewDataSource, GMGridViewActionDelegate>
+@interface HLLProductListViewController () <UINavigationControllerDelegate, GMGridViewDataSource, GMGridViewActionDelegate, HLLProductFilterViewControllerDelegate>
 {
     __gm_weak GMGridView *_gmGridView;
     __weak HLLProductFilterViewController *_filterViewController;
@@ -106,7 +106,7 @@
     _gmGridView.style = GMGridViewStylePush;
     _gmGridView.itemSpacing = GMGRIDVIEW_SPACING;
     _gmGridView.minEdgeInsets = UIEdgeInsetsMake(GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING);
-    _gmGridView.centerGrid = YES;
+    _gmGridView.centerGrid = NO;
     _gmGridView.actionDelegate = self;
     _gmGridView.dataSource = self;
     
@@ -135,6 +135,7 @@
     
     // create right controller
     HLLProductFilterViewController* filterViewController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
+    filterViewController.delegate=self;
     self.viewDeckController.rightController = filterViewController;
     _filterViewController=filterViewController;
     
@@ -218,16 +219,19 @@
         cell.contentView = unitView;
     }
     
+    // cell
+    HLLProductUnitView *productUnitView=(HLLProductUnitView *)cell.contentView;
+    
     // load data
     HLLProductModel *productModel=[products objectAtIndex:index];
-    
-    // load data to cell
-    HLLProductUnitView *productUnitView=(HLLProductUnitView *)cell.contentView;
-//    if (productModel.thumbnail_image_url!=nil)
-//    {
-        [productUnitView loadImage:productModel.thumbnail_image_url.absoluteString];
-//    }
-    [productUnitView setProductType:productModel.show_type];
+    if (productModel)
+    {
+        if (productModel.thumbnail_image_url!=nil)
+        {
+            [productUnitView loadImage:productModel.thumbnail_image_url.absoluteString];
+        }
+        [productUnitView setProductType:productModel.show_type];
+    }
     
 //    // nodata
 //    [productUnitView loadImage:@"http://lorempixel.com/208/208/food"];
@@ -321,9 +325,16 @@
 //    });
 }
 
+#pragma mark - HLLProductFilterViewControllerDelegate
+
+- (void)productFilterViewController:(HLLProductFilterViewController*)productFilterViewController filter:(NSMutableArray*)filter keyword:(NSString*)keyword
+{
+    [_gmGridView triggerPullToRefresh];
+}
+
 #pragma mark - Data
 
-- (void)loadDataWithPage:(int)page completion:(Block)completeBlock
+- (void)loadDataWithPage:(int)page completion:(void (^)(void))completeBlock
 {
     NSLog(@"load data at page %d", page);
     

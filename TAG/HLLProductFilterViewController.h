@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HLLProductFilterViewControllerDelegate;
+
+
 @interface HLLProductFilterViewController : UIViewController
+
+@property (assign,nonatomic) id<HLLProductFilterViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) NSString *searchText;
 @property (strong, nonatomic) NSMutableArray *filterArray;
@@ -36,5 +41,13 @@
 - (IBAction)clearButtonPressed:(id)sender;
 
 - (IBAction)textFieldDoneEditing:(id)sender;
+
+@end
+
+
+@protocol HLLProductFilterViewControllerDelegate <NSObject>
+@required
+
+- (void)productFilterViewController:(HLLProductFilterViewController*)productFilterViewController filter:(NSMutableArray*)filter keyword:(NSString*)keyword;
 
 @end

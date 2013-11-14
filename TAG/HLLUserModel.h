@@ -23,8 +23,8 @@
 @property (strong, nonatomic) NSArray<HLLThirdAuthorizationModel,Optional,ConvertOnDemand>* thirds;
 
 // for product
-@property (assign, nonatomic) float product_success_rate;
-@property (assign, nonatomic) long product_favorited_count;
+@property (strong, nonatomic) NSNumber<Optional>* product_success_rate;
+@property (strong, nonatomic) NSNumber<Optional>* product_favorited_count;
 
 - (BOOL)canTAGAuthorize;
 - (BOOL)canThirdAuthorize;

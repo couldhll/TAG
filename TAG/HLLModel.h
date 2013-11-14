@@ -22,5 +22,13 @@
 #import "HLLProductModel.h"
 #import "HLLProductListModel.h"
 
+#import "HLLCommentModel.h"
+#import "HLLCommentListModel.h"
+
+#import "HLLCollectGroupModel.h"
+#import "HLLCollectGroupListModel.h"
+
+#import "HLLFowllowingBrandListModel.h"
+#import "HLLFowllowingUserListModel.h"
 
 #endif

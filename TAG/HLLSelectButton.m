@@ -19,23 +19,19 @@
 {
     [super setSelected:selected];
     
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView    setAnimationCurve: UIViewAnimationCurveLinear];
-//    [UIView    setAnimationDelegate:self];
-//    [UIView    setAnimationDuration:0.8f];
-    
-    if (selected)
-    {
-        self.backgroundColor=APPLICATION_COLOR_YELLOW;
-        self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_BOLD];
-    }
-    else
-    {
-        self.backgroundColor=[UIColor whiteColor];
-        self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_LIGHT];
-    }
-    
-//    [UIView commitAnimations];
+//    [UIView animateWithDuration:0.8f
+//                     animations:^(void){
+                         if (selected)
+                         {
+                             self.backgroundColor=APPLICATION_COLOR_YELLOW;
+                             self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_BOLD];
+                         }
+                         else
+                         {
+                             self.backgroundColor=[UIColor whiteColor];
+                             self.titleLabel.font=[UIFont fontWithFont:self.titleLabel.font style:UIFONT_LIGHT];
+                         }
+//                     }];
 }
 
 /*

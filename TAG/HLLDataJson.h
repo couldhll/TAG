@@ -72,7 +72,7 @@
 #define DATA_API_COMMENT_BASE_URL [DATA_API_BASE_URL stringByAppendingString:@"Comment/"]
 #define DATA_API_COMMENT_GETLIST_URL [DATA_API_COMMENT_BASE_URL stringByAppendingString:@"GetList"]
 #define DATA_API_COMMENT_ADD_URL [DATA_API_COMMENT_BASE_URL stringByAppendingString:@"Add"]
-#define DATA_API_COMMENT_REMOTE_URL [DATA_API_COMMENT_BASE_URL stringByAppendingString:@"Remote"]
+#define DATA_API_COMMENT_REMOTE_URL [DATA_API_COMMENT_BASE_URL stringByAppendingString:@"Remove"]
 
 #define DATA_API_COLLECT_BASE_URL [DATA_API_BASE_URL stringByAppendingString:@"Collect/"]
 #define DATA_API_COLLECT_GETGROUPINFO_URL [DATA_API_COLLECT_BASE_URL stringByAppendingString:@"GetGroupInfo"]
@@ -92,6 +92,8 @@
 #define DATA_API_FOLLOWING_USER_ADD_URL [DATA_API_FOLLOWING_USER_BASE_URL stringByAppendingString:@"Add"]
 #define DATA_API_FOLLOWING_USER_REMOVE_URL [DATA_API_FOLLOWING_USER_BASE_URL stringByAppendingString:@"Remove"]
 
+#define DATA_API_TRACK_BASE_URL [DATA_API_BASE_URL stringByAppendingString:@"Track/"]
+#define DATA_API_TRACK_TRACKING_URL [DATA_API_TRACK_BASE_URL stringByAppendingString:@"Tracking"]
 
 /**
  *	@brief Json error block.
@@ -106,16 +108,35 @@ typedef void (^JSONErrorBlock)(HLLErrorModel* err);
  */
 @interface HLLDataJson : NSObject
 
-+ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userLogin:(UIView*)view email:(NSString*)email password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)userRegister:(UIView*)view email:(NSString*)email name:(NSString*)name password:(NSString*)password completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userThirdLogin:(UIView*)view thirdId:(NSString*)thirdId thirdUserId:(NSString*)thirdUserId thirdUserHeadImage:(NSString*)thirdUserHeadImage thirdUserDescription:(NSString*)thirdUserDescription completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userLogout:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-
 + (void)userGetInfo:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)userUpdatePassword:(UIView*)view oldPassword:(NSString*)oldPassword newPassword:(NSString*)newPassword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
 + (void)productGetInfo:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)productGetList:(UIView*)view count:(NSString*)count page:(NSString*)page searchOption:(NSString*)searchOption searchKeyword:(NSString*)searchKeyword completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
+
++ (void)commentGetList:(UIView*)view productId:(NSString*)productId count:(NSString*)count page:(NSString*)page completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)commentAdd:(UIView*)view productId:(NSString*)productId comment:(NSString*)comment completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)commentRemove:(UIView*)view commentId:(NSString*)commentId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
+
++ (void)collectGetGroupInfo:(UIView*)view groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)collectGetGroupList:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)collectAddGroup:(UIView*)view name:(NSString*)name completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)collectRemoveGroup:(UIView*)view groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)collectAddProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)collectRemoveProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
+
++ (void)fowllowingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)fowllowingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)fowllowingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)fowllowingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)fowllowingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)fowllowingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
+
++ (void)tracking:(UIView*)view ip:(NSString*)ip userId:(NSString*)userId category:(NSString*)category object:(NSString*)object action:(NSString*)action value:(NSString*)value time:(NSString*)time completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
 + (void)postJSONWithUrl:(NSString*)url params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (NSDictionary*)createParams:(NSArray*)keys values:(NSArray*)values;

@@ -91,7 +91,18 @@
 		B22A490E17FC534100DDE92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22A491017FC534100DDE92E /* Localizable.strings */; };
 		B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C0251814FD39007A3F5D /* HLLUserModel.m */; };
 		B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */; };
-		B23C01701817BCA300A088E2 /* HLLDataAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00BB180796AD000259B4 /* HLLDataAPITests.m */; };
+		B2353AA818335FBE00E8AED0 /* HLLDataAPIProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AA718335FBE00E8AED0 /* HLLDataAPIProductTests.m */; };
+		B2353AAA18335FE400E8AED0 /* HLLDataAPIUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AA918335FE400E8AED0 /* HLLDataAPIUserTests.m */; };
+		B2353AAC1833647200E8AED0 /* HLLDataAPICommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AAB1833647200E8AED0 /* HLLDataAPICommentTests.m */; };
+		B2353AB01833660B00E8AED0 /* HLLCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AAF1833660B00E8AED0 /* HLLCommentModel.m */; };
+		B2353AB31833692400E8AED0 /* HLLCommentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AB21833692400E8AED0 /* HLLCommentListModel.m */; };
+		B2353AB51833743300E8AED0 /* HLLDataAPICollectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AB41833743300E8AED0 /* HLLDataAPICollectTests.m */; };
+		B2353AB9183375D000E8AED0 /* HLLCollectGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AB8183375D000E8AED0 /* HLLCollectGroupModel.m */; };
+		B2353ABC1833762100E8AED0 /* HLLCollectGroupListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353ABB1833762100E8AED0 /* HLLCollectGroupListModel.m */; };
+		B2353ABE18347B1C00E8AED0 /* HLLDataAPIFollowingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353ABD18347B1C00E8AED0 /* HLLDataAPIFollowingTests.m */; };
+		B2353AC218347C1700E8AED0 /* HLLFowllowingBrandListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC118347C1700E8AED0 /* HLLFowllowingBrandListModel.m */; };
+		B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC418347C3300E8AED0 /* HLLFowllowingUserListModel.m */; };
+		B2353AC718347F1400E8AED0 /* HLLDataAPITrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC618347F1400E8AED0 /* HLLDataAPITrackingTests.m */; };
 		B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BD1182220930047920D /* HLLDataVerify.m */; };
 		B23C2BD618222CF20047920D /* HLLUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BD518222CF20047920D /* HLLUserData.m */; };
 		B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */; };
@@ -252,6 +263,24 @@
 		B230C0251814FD39007A3F5D /* HLLUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserModel.m; sourceTree = "<group>"; };
 		B230C028181514C4007A3F5D /* HLLThirdAuthorizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLThirdAuthorizationModel.h; sourceTree = "<group>"; };
 		B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLThirdAuthorizationModel.m; sourceTree = "<group>"; };
+		B2353AA718335FBE00E8AED0 /* HLLDataAPIProductTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPIProductTests.m; sourceTree = "<group>"; };
+		B2353AA918335FE400E8AED0 /* HLLDataAPIUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPIUserTests.m; sourceTree = "<group>"; };
+		B2353AAB1833647200E8AED0 /* HLLDataAPICommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPICommentTests.m; sourceTree = "<group>"; };
+		B2353AAE1833660B00E8AED0 /* HLLCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCommentModel.h; sourceTree = "<group>"; };
+		B2353AAF1833660B00E8AED0 /* HLLCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCommentModel.m; sourceTree = "<group>"; };
+		B2353AB11833692400E8AED0 /* HLLCommentListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCommentListModel.h; sourceTree = "<group>"; };
+		B2353AB21833692400E8AED0 /* HLLCommentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCommentListModel.m; sourceTree = "<group>"; };
+		B2353AB41833743300E8AED0 /* HLLDataAPICollectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPICollectTests.m; sourceTree = "<group>"; };
+		B2353AB7183375D000E8AED0 /* HLLCollectGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCollectGroupModel.h; sourceTree = "<group>"; };
+		B2353AB8183375D000E8AED0 /* HLLCollectGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCollectGroupModel.m; sourceTree = "<group>"; };
+		B2353ABA1833762100E8AED0 /* HLLCollectGroupListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCollectGroupListModel.h; sourceTree = "<group>"; };
+		B2353ABB1833762100E8AED0 /* HLLCollectGroupListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCollectGroupListModel.m; sourceTree = "<group>"; };
+		B2353ABD18347B1C00E8AED0 /* HLLDataAPIFollowingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPIFollowingTests.m; sourceTree = "<group>"; };
+		B2353AC018347C1700E8AED0 /* HLLFowllowingBrandListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFowllowingBrandListModel.h; sourceTree = "<group>"; };
+		B2353AC118347C1700E8AED0 /* HLLFowllowingBrandListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFowllowingBrandListModel.m; sourceTree = "<group>"; };
+		B2353AC318347C3300E8AED0 /* HLLFowllowingUserListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFowllowingUserListModel.h; sourceTree = "<group>"; };
+		B2353AC418347C3300E8AED0 /* HLLFowllowingUserListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFowllowingUserListModel.m; sourceTree = "<group>"; };
+		B2353AC618347F1400E8AED0 /* HLLDataAPITrackingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPITrackingTests.m; sourceTree = "<group>"; };
 		B23C01731817BF9D00A088E2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B23C2BD0182220930047920D /* HLLDataVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataVerify.h; sourceTree = "<group>"; };
 		B23C2BD1182220930047920D /* HLLDataVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataVerify.m; sourceTree = "<group>"; };
@@ -259,7 +288,6 @@
 		B23C2BD518222CF20047920D /* HLLUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserData.m; sourceTree = "<group>"; };
 		B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductDetailViewController.xib; sourceTree = "<group>"; };
 		B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTAGLoginViewController.xib; sourceTree = "<group>"; };
-		B23D00BB180796AD000259B4 /* HLLDataAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLLDataAPITests.m; path = ../TAGTests/HLLDataAPITests.m; sourceTree = "<group>"; };
 		B23D00C01807BEC5000259B4 /* HLLUserFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserFriendViewController.h; sourceTree = "<group>"; };
 		B23D00C11807BEC5000259B4 /* HLLUserFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserFriendViewController.m; sourceTree = "<group>"; };
 		B23D00C21807BEC5000259B4 /* HLLUserFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserFriendViewController.xib; sourceTree = "<group>"; };
@@ -603,7 +631,12 @@
 			isa = PBXGroup;
 			children = (
 				B2111589180FC99200254DBA /* TAGLogicTests.m */,
-				B23D00BB180796AD000259B4 /* HLLDataAPITests.m */,
+				B2353AA918335FE400E8AED0 /* HLLDataAPIUserTests.m */,
+				B2353AA718335FBE00E8AED0 /* HLLDataAPIProductTests.m */,
+				B2353AAB1833647200E8AED0 /* HLLDataAPICommentTests.m */,
+				B2353AB41833743300E8AED0 /* HLLDataAPICollectTests.m */,
+				B2353ABD18347B1C00E8AED0 /* HLLDataAPIFollowingTests.m */,
+				B2353AC618347F1400E8AED0 /* HLLDataAPITrackingTests.m */,
 				B2111584180FC99200254DBA /* Supporting Files */,
 			);
 			path = TAGLogicTests;
@@ -654,6 +687,7 @@
 			children = (
 				B22A491017FC534100DDE92E /* Localizable.strings */,
 				B2E4FA3A1828C5260055E2AB /* TAG.entitlements */,
+				B2BC0FD917EEECA40071036D /* Images.xcassets */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -667,6 +701,9 @@
 				B230C0271814FED9007A3F5D /* User */,
 				B226A79C181FB868004E7FB5 /* Brand */,
 				B226A798181FB7B1004E7FB5 /* Product */,
+				B2353AAD183365E000E8AED0 /* Comment */,
+				B2353AB6183374CF00E8AED0 /* Collect */,
+				B2353ABF18347BC700E8AED0 /* Fowllowing */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -680,6 +717,39 @@
 				B230C029181514C4007A3F5D /* HLLThirdAuthorizationModel.m */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		B2353AAD183365E000E8AED0 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				B2353AAE1833660B00E8AED0 /* HLLCommentModel.h */,
+				B2353AAF1833660B00E8AED0 /* HLLCommentModel.m */,
+				B2353AB11833692400E8AED0 /* HLLCommentListModel.h */,
+				B2353AB21833692400E8AED0 /* HLLCommentListModel.m */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		B2353AB6183374CF00E8AED0 /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				B2353AB7183375D000E8AED0 /* HLLCollectGroupModel.h */,
+				B2353AB8183375D000E8AED0 /* HLLCollectGroupModel.m */,
+				B2353ABA1833762100E8AED0 /* HLLCollectGroupListModel.h */,
+				B2353ABB1833762100E8AED0 /* HLLCollectGroupListModel.m */,
+			);
+			name = Collect;
+			sourceTree = "<group>";
+		};
+		B2353ABF18347BC700E8AED0 /* Fowllowing */ = {
+			isa = PBXGroup;
+			children = (
+				B2353AC018347C1700E8AED0 /* HLLFowllowingBrandListModel.h */,
+				B2353AC118347C1700E8AED0 /* HLLFowllowingBrandListModel.m */,
+				B2353AC318347C3300E8AED0 /* HLLFowllowingUserListModel.h */,
+				B2353AC418347C3300E8AED0 /* HLLFowllowingUserListModel.m */,
+			);
+			name = Fowllowing;
 			sourceTree = "<group>";
 		};
 		B23C2BD318222C020047920D /* Verify */ = {
@@ -908,7 +978,6 @@
 				B243927617F02D3F002FD388 /* Product */,
 				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
 				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
-				B2BC0FD917EEECA40071036D /* Images.xcassets */,
 				B2BC0FC517EEECA40071036D /* Supporting Files */,
 			);
 			path = TAG;
@@ -1265,8 +1334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23C01701817BCA300A088E2 /* HLLDataAPITests.m in Sources */,
 				B211158A180FC99200254DBA /* TAGLogicTests.m in Sources */,
+				B2353AC718347F1400E8AED0 /* HLLDataAPITrackingTests.m in Sources */,
+				B2353ABE18347B1C00E8AED0 /* HLLDataAPIFollowingTests.m in Sources */,
+				B2353AB51833743300E8AED0 /* HLLDataAPICollectTests.m in Sources */,
+				B2353AAC1833647200E8AED0 /* HLLDataAPICommentTests.m in Sources */,
+				B2353AA818335FBE00E8AED0 /* HLLDataAPIProductTests.m in Sources */,
+				B2353AAA18335FE400E8AED0 /* HLLDataAPIUserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,26 +1357,32 @@
 				B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */,
 				B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */,
 				B292A7381806480E004225B5 /* HLLProductFilterViewController.m in Sources */,
+				B2353ABC1833762100E8AED0 /* HLLCollectGroupListModel.m in Sources */,
 				B2BC0FCB17EEECA40071036D /* main.m in Sources */,
 				B2BC0FCF17EEECA40071036D /* HLLAppDelegate.m in Sources */,
 				B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
+				B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */,
 				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
 				B23C2BD618222CF20047920D /* HLLUserData.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
 				B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */,
+				B2353AB31833692400E8AED0 /* HLLCommentListModel.m in Sources */,
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
 				B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */,
+				B2353AC218347C1700E8AED0 /* HLLFowllowingBrandListModel.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
 				B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */,
 				B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */,
 				B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */,
 				B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */,
+				B2353AB01833660B00E8AED0 /* HLLCommentModel.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
 				B2E4FA2F18276A4A0055E2AB /* HLLDataProvider.m in Sources */,
 				B2E4FA36182882C60055E2AB /* HLLDataJson+Data.m in Sources */,
+				B2353AB9183375D000E8AED0 /* HLLCollectGroupModel.m in Sources */,
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
 				B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
@@ -1377,7 +1457,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1391,7 +1470,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1403,7 +1482,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1413,7 +1491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAGLogicTests/TAGLogicTests-Prefix.pch";
 				INFOPLIST_FILE = "TAGLogicTests/TAGLogicTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1605,7 +1683,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1618,30 +1695,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/CocoaSecurity\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
-					"\"${PODS_ROOT}/Headers/FoundationExtension\"",
-					"\"${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension\"",
-					"\"${PODS_ROOT}/Headers/GIKPopoverBackgroundView\"",
-					"\"${PODS_ROOT}/Headers/GMGridView\"",
-					"\"${PODS_ROOT}/Headers/GoogleAnalytics-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/JSONModel\"",
-					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/OHAttributedLabel\"",
-					"\"${PODS_ROOT}/Headers/Parse\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
-					"\"${PODS_ROOT}/Headers/SevenSwitch\"",
-					"\"${PODS_ROOT}/Headers/UI7Kit\"",
-					"\"${PODS_ROOT}/Headers/UI7Kit/UI7Kit\"",
-					"\"${PODS_ROOT}/Headers/UIKitResources\"",
-					"\"${PODS_ROOT}/Headers/ViewDeck\"",
-					"\"${PODS_ROOT}/Headers/cdebug\"",
-					"$(SDKROOT)/usr/include/libz",
-				);
 				INFOPLIST_FILE = "TAGTests/TAGTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1653,7 +1706,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30F2F91BE06A4C5C8209FB3F /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAG.app/TAG";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1662,30 +1714,6 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAG/TAG-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/CocoaSecurity\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
-					"\"${PODS_ROOT}/Headers/FoundationExtension\"",
-					"\"${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension\"",
-					"\"${PODS_ROOT}/Headers/GIKPopoverBackgroundView\"",
-					"\"${PODS_ROOT}/Headers/GMGridView\"",
-					"\"${PODS_ROOT}/Headers/GoogleAnalytics-iOS-SDK\"",
-					"\"${PODS_ROOT}/Headers/JSONModel\"",
-					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/OHAttributedLabel\"",
-					"\"${PODS_ROOT}/Headers/Parse\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
-					"\"${PODS_ROOT}/Headers/SevenSwitch\"",
-					"\"${PODS_ROOT}/Headers/UI7Kit\"",
-					"\"${PODS_ROOT}/Headers/UI7Kit/UI7Kit\"",
-					"\"${PODS_ROOT}/Headers/UIKitResources\"",
-					"\"${PODS_ROOT}/Headers/ViewDeck\"",
-					"\"${PODS_ROOT}/Headers/cdebug\"",
-					"$(SDKROOT)/usr/include/libz",
-				);
 				INFOPLIST_FILE = "TAGTests/TAGTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

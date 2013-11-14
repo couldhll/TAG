@@ -15,7 +15,7 @@
 
 @property (assign, nonatomic) int id;
 @property (strong, nonatomic) NSString<Optional>* name;
-@property (assign, nonatomic) bool followed;
+@property (assign, nonatomic) BOOL followed;
 @property (strong, nonatomic) NSString<Optional>* description;
 @property (strong, nonatomic) NSURL<Optional>* thumbnail_image_url;
 @property (strong, nonatomic) NSURL<Optional>* middle_image_url;

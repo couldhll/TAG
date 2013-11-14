@@ -144,6 +144,12 @@
 
 - (IBAction)searchButtonPressed:(id)sender
 {
+    // delegate
+    if([self.delegate respondsToSelector:@selector(productFilterViewController:filter:keyword:)])
+    {
+        [self.delegate productFilterViewController:self filter:self.filterArray keyword:searchText];
+    }
+    
     // close right controller
     [self.viewDeckController closeRightViewAnimated:YES];
 }

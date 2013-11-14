@@ -215,7 +215,6 @@ description:__VA_ARGS__];                             \
 // GCD
 #define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 #define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
-typedef void (^Block)(void);
 
 // degree radian charge
 #define degreesToRadian(x) (M_PI * (x) / 180.0)

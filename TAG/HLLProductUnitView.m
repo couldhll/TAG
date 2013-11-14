@@ -74,6 +74,7 @@
     {
         case HLLProductTypeNone:
             image = [[UIImage alloc] init];
+            break;
         case HLLProductTypeCS:
             image = [UIImage imageNamed:@"Resource/Product/List/type_cs_icon.png"];
             break;

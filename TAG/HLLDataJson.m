@@ -60,8 +60,8 @@
                           @"user_description"];
     NSArray *paramsValues=@[thirdId,
                             thirdUserId,
-                            thirdUserHeadImage,
-                            thirdUserDescription];
+                            thirdUserHeadImage==nil?@"":thirdUserHeadImage,
+                            thirdUserDescription==nil?@"":thirdUserDescription];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -123,10 +123,10 @@
                           @"page",
                           @"search_option",
                           @"search_keyword"];
-    NSArray *paramsValues=@[count,
-                            page,
-                            searchOption,
-                            searchKeyword];
+    NSArray *paramsValues=@[count==nil?@"":count,
+                            page==nil?@"":page,
+                            searchOption==nil?@"":searchOption,
+                            searchKeyword==nil?@"":searchKeyword];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -142,8 +142,8 @@
                           @"count",
                           @"page"];
     NSArray *paramsValues=@[productId,
-                            count,
-                            page];
+                            count==nil?@"":count,
+                            page==nil?@"":page];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -153,21 +153,21 @@
 + (void)commentAdd:(UIView*)view productId:(NSString*)productId comment:(NSString*)comment completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
-    NSArray *paramsKeys=@[@"id",
-                          @"comment"];
-    NSArray *paramsValues=@[productId,
-                            comment];
+    NSArray *paramsKeys=@[@"comment",
+                          @"id"];
+    NSArray *paramsValues=@[comment,
+                            productId];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
     [self postJSONWithUrl:DATA_API_COMMENT_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)commentRemove:(UIView*)view productId:(NSString*)productId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)commentRemove:(UIView*)view commentId:(NSString*)commentId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"id"];
-    NSArray *paramsValues=@[productId];
+    NSArray *paramsValues=@[commentId];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -182,7 +182,7 @@
 {
     // params
     NSArray *paramsKeys=@[@"id"];
-    NSArray *paramsValues=@[groupId];
+    NSArray *paramsValues=@[groupId==nil?@"":groupId];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -191,8 +191,11 @@
 
 + (void)collectGetGroupList:(UIView*)view completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
+    // params
+    NSDictionary *params=[self createParams:nil values:nil];
+    
     // send
-    [self postJSONWithUrl:DATA_API_COLLECT_GETGROUPLIST_URL params:nil completion:completeBlock success:successBlock error:errorBlock];
+    [self postJSONWithUrl:DATA_API_COLLECT_GETGROUPLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
 + (void)collectAddGroup:(UIView*)view name:(NSString*)name completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
@@ -255,9 +258,9 @@
     NSArray *paramsKeys=@[@"count",
                           @"page",
                           @"need_detail"];
-    NSArray *paramsValues=@[count,
-                            page,
-                            needDetail];
+    NSArray *paramsValues=@[count==nil?@"":count,
+                            page==nil?@"":page,
+                            needDetail==nil?@"":needDetail];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -294,9 +297,9 @@
     NSArray *paramsKeys=@[@"count",
                           @"page",
                           @"need_detail"];
-    NSArray *paramsValues=@[count,
-                            page,
-                            needDetail];
+    NSArray *paramsValues=@[count==nil?@"":count,
+                            page==nil?@"":page,
+                            needDetail==nil?@"":needDetail];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
@@ -338,16 +341,16 @@
                           @"value",
                           @"time"];
     NSArray *paramsValues=@[ip,
-                            userId,
-                            category,
+                            userId==nil?@"":userId,
+                            category==nil?@"":category,
                             object,
                             action,
-                            value,
+                            value==nil?@"":value,
                             time];
     NSDictionary *params=[self createParams:paramsKeys values:paramsValues];
     
     // send
-    [self postJSONWithUrl:DATA_API_FOLLOWING_USER_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
+    [self postJSONWithUrl:DATA_API_TRACK_TRACKING_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
 #pragma mark - Support methods
@@ -396,7 +399,7 @@
     {
         NSUInteger valueIndex=[paramsKeys indexOfObject:key];
         NSString *value=[paramsValues objectAtIndex:valueIndex];
-        secureString=[secureString stringByAppendingString:value==nil?@"":value];
+        secureString=[secureString stringByAppendingString:value];
 //        NSLog(@"key:%@ \n value:%@ \n secureString:%@",key,value,secureString);
     }
     secureString=[secureString stringByAppendingString:DATA_API_SECURE_KEY];
