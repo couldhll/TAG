@@ -53,11 +53,11 @@
     // map with button and notification
     buttonNotificationDictionary=[NSMutableDictionary dictionary];
     [buttonNotificationDictionary setValue:@"HLLProductListViewController" forKey:@"productListButton"];
-    [buttonNotificationDictionary setValue:nil forKey:@"favoriteButton"];
+    [buttonNotificationDictionary setValue:@"CSUserFavoritesViewController" forKey:@"favoriteButton"];
     [buttonNotificationDictionary setValue:@"HLLUserFriendViewController" forKey:@"friendButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"followButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"userHomeButton"];
-    [buttonNotificationDictionary setValue:nil forKey:@"createCSButton"];
+    [buttonNotificationDictionary setValue:@"CSCreateNewCSViewController" forKey:@"createCSButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"settingButton"];
     [buttonNotificationDictionary setValue:@"HLLUserLoginViewController" forKey:@"loginorloginoutButton"];
     

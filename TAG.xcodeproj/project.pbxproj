@@ -103,12 +103,18 @@
 		B2353AC218347C1700E8AED0 /* HLLFowllowingBrandListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC118347C1700E8AED0 /* HLLFowllowingBrandListModel.m */; };
 		B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC418347C3300E8AED0 /* HLLFowllowingUserListModel.m */; };
 		B2353AC718347F1400E8AED0 /* HLLDataAPITrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2353AC618347F1400E8AED0 /* HLLDataAPITrackingTests.m */; };
+		B2353ACC1835BBCF00E8AED0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2353AC81835BBCE00E8AED0 /* Main_iPad.storyboard */; };
+		B2353ACD1835BBCF00E8AED0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2353ACA1835BBCE00E8AED0 /* Main_iPhone.storyboard */; };
 		B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BD1182220930047920D /* HLLDataVerify.m */; };
 		B23C2BD618222CF20047920D /* HLLUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2BD518222CF20047920D /* HLLUserData.m */; };
 		B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */; };
 		B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00B91806AFF3000259B4 /* HLLTAGLoginViewController.xib */; };
 		B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D00C11807BEC5000259B4 /* HLLUserFriendViewController.m */; };
 		B23D00C41807BEC5000259B4 /* HLLUserFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23D00C21807BEC5000259B4 /* HLLUserFriendViewController.xib */; };
+		B23E04891835C03700358447 /* CSCreateNewCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E04841835C03700358447 /* CSCreateNewCSViewController.m */; };
+		B23E048A1835C03700358447 /* CSCreateNewCSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23E04851835C03700358447 /* CSCreateNewCSViewController.xib */; };
+		B23E048B1835C03700358447 /* CSUserFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E04871835C03700358447 /* CSUserFavoritesViewController.m */; };
+		B23E048C1835C03700358447 /* CSUserFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23E04881835C03700358447 /* CSUserFavoritesViewController.xib */; };
 		B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */ = {isa = PBXBuildFile; fileRef = B243925B17EFEC34002FD388 /* RRLocalizableString.m */; };
 		B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243926517EFFF8E002FD388 /* HLLMainMenuViewController.m */; };
 		B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */; };
@@ -281,6 +287,8 @@
 		B2353AC318347C3300E8AED0 /* HLLFowllowingUserListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFowllowingUserListModel.h; sourceTree = "<group>"; };
 		B2353AC418347C3300E8AED0 /* HLLFowllowingUserListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFowllowingUserListModel.m; sourceTree = "<group>"; };
 		B2353AC618347F1400E8AED0 /* HLLDataAPITrackingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataAPITrackingTests.m; sourceTree = "<group>"; };
+		B2353AC91835BBCE00E8AED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TAG/Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B2353ACB1835BBCF00E8AED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TAG/Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B23C01731817BF9D00A088E2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		B23C2BD0182220930047920D /* HLLDataVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDataVerify.h; sourceTree = "<group>"; };
 		B23C2BD1182220930047920D /* HLLDataVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDataVerify.m; sourceTree = "<group>"; };
@@ -291,6 +299,12 @@
 		B23D00C01807BEC5000259B4 /* HLLUserFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserFriendViewController.h; sourceTree = "<group>"; };
 		B23D00C11807BEC5000259B4 /* HLLUserFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserFriendViewController.m; sourceTree = "<group>"; };
 		B23D00C21807BEC5000259B4 /* HLLUserFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserFriendViewController.xib; sourceTree = "<group>"; };
+		B23E04831835C03700358447 /* CSCreateNewCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCreateNewCSViewController.h; sourceTree = "<group>"; };
+		B23E04841835C03700358447 /* CSCreateNewCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCreateNewCSViewController.m; sourceTree = "<group>"; };
+		B23E04851835C03700358447 /* CSCreateNewCSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCreateNewCSViewController.xib; sourceTree = "<group>"; };
+		B23E04861835C03700358447 /* CSUserFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUserFavoritesViewController.h; sourceTree = "<group>"; };
+		B23E04871835C03700358447 /* CSUserFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUserFavoritesViewController.m; sourceTree = "<group>"; };
+		B23E04881835C03700358447 /* CSUserFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSUserFavoritesViewController.xib; sourceTree = "<group>"; };
 		B243925A17EFEC34002FD388 /* RRLocalizableString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRLocalizableString.h; sourceTree = "<group>"; };
 		B243925B17EFEC34002FD388 /* RRLocalizableString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRLocalizableString.m; sourceTree = "<group>"; };
 		B243926417EFFF8E002FD388 /* HLLMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLMainMenuViewController.h; sourceTree = "<group>"; };
@@ -688,6 +702,8 @@
 				B22A491017FC534100DDE92E /* Localizable.strings */,
 				B2E4FA3A1828C5260055E2AB /* TAG.entitlements */,
 				B2BC0FD917EEECA40071036D /* Images.xcassets */,
+				B2353AC81835BBCE00E8AED0 /* Main_iPad.storyboard */,
+				B2353ACA1835BBCE00E8AED0 /* Main_iPhone.storyboard */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -784,6 +800,34 @@
 			name = Friend;
 			sourceTree = "<group>";
 		};
+		B23E048D1835C04E00358447 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				B23E04861835C03700358447 /* CSUserFavoritesViewController.h */,
+				B23E04871835C03700358447 /* CSUserFavoritesViewController.m */,
+				B23E04881835C03700358447 /* CSUserFavoritesViewController.xib */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		B23E048E1835C0E300358447 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B23E048F1835C0F400358447 /* CreateNewCS */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		B23E048F1835C0F400358447 /* CreateNewCS */ = {
+			isa = PBXGroup;
+			children = (
+				B23E04831835C03700358447 /* CSCreateNewCSViewController.h */,
+				B23E04841835C03700358447 /* CSCreateNewCSViewController.m */,
+				B23E04851835C03700358447 /* CSCreateNewCSViewController.xib */,
+			);
+			name = CreateNewCS;
+			sourceTree = "<group>";
+		};
 		B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,6 +896,7 @@
 		B29AB58217FE9252007D884E /* User */ = {
 			isa = PBXGroup;
 			children = (
+				B23E048D1835C04E00358447 /* Favorites */,
 				B23D00BE1807BE6C000259B4 /* Login */,
 				B22640EB1816631B00F2A4A5 /* Register */,
 				B23D00BF1807BE77000259B4 /* Friend */,
@@ -976,6 +1021,7 @@
 				B243927017F00D57002FD388 /* Frame */,
 				B29AB58217FE9252007D884E /* User */,
 				B243927617F02D3F002FD388 /* Product */,
+				B23E048E1835C0E300358447 /* Other */,
 				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
 				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
 				B2BC0FC517EEECA40071036D /* Supporting Files */,
@@ -1227,6 +1273,8 @@
 				B2BC0FC917EEECA40071036D /* InfoPlist.strings in Resources */,
 				B22A490E17FC534100DDE92E /* Localizable.strings in Resources */,
 				B20801D217FE6F710044EA4F /* ShareSDKiPhoneDefaultShareViewUI.bundle in Resources */,
+				B2353ACD1835BBCF00E8AED0 /* Main_iPhone.storyboard in Resources */,
+				B2353ACC1835BBCF00E8AED0 /* Main_iPad.storyboard in Resources */,
 				B20801D417FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */,
 				B20801CD17FE6F710044EA4F /* ShareSDKiPadDefaultShareViewUI.bundle in Resources */,
 				B20801CF17FE6F710044EA4F /* ShareSDKiPadSimpleShareViewUI.bundle in Resources */,
@@ -1237,10 +1285,12 @@
 				B20801C017FE6F710044EA4F /* GooglePlus.bundle in Resources */,
 				B20801C617FE6F710044EA4F /* RennSDK.bundle in Resources */,
 				B22640F01816635E00F2A4A5 /* HLLUserRegisterViewController.xib in Resources */,
+				B23E048A1835C03700358447 /* CSCreateNewCSViewController.xib in Resources */,
 				B292A7391806480E004225B5 /* HLLProductFilterViewController.xib in Resources */,
 				B2C105B61808F49C00238046 /* HLLNavigationController.xib in Resources */,
 				B20801C517FE6F710044EA4F /* PinterestSDKResources.bundle in Resources */,
 				B20801C317FE6F710044EA4F /* WeiboSDK.bundle in Resources */,
+				B23E048C1835C03700358447 /* CSUserFavoritesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,6 +1399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */,
+				B23E04891835C03700358447 /* CSCreateNewCSViewController.m in Sources */,
 				B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */,
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
@@ -1365,6 +1416,7 @@
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
 				B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */,
 				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
+				B23E048B1835C03700358447 /* CSUserFavoritesViewController.m in Sources */,
 				B23C2BD618222CF20047920D /* HLLUserData.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
 				B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */,
@@ -1430,6 +1482,24 @@
 				B22A491217FC534500DDE92E /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B2353AC81835BBCE00E8AED0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2353AC91835BBCE00E8AED0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B2353ACA1835BBCE00E8AED0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2353ACB1835BBCF00E8AED0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B2BC0FC717EEECA40071036D /* InfoPlist.strings */ = {
