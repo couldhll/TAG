@@ -11,7 +11,7 @@
 @protocol HLLProductFilterViewControllerDelegate;
 
 
-@interface HLLProductFilterViewController : UIViewController
+@interface HLLProductFilterViewController : HLLViewDeckViewController
 
 @property (assign,nonatomic) id<HLLProductFilterViewControllerDelegate> delegate;
 

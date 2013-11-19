@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLLUserRegisterViewController : UIViewController <UITextFieldDelegate>
+@interface HLLUserRegisterViewController : HLLViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField  *userEmailTextField;
 @property (strong, nonatomic) IBOutlet UITextField  *userNameTextField;

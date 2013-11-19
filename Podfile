@@ -12,9 +12,10 @@ pod 'CocoaSecurity', '~> 1.2.1'
 pod 'KeychainItemWrapper', '~> 1.2'
 pod 'RegexKitLite', '~> 4.0'
 
-pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.1'
+pod 'Analytics', '~> 0.7.5'
+#pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.1'
 pod 'TestFlightSDK', '~> 2.1.1-beta'
 
-pod 'UI7Kit', '~> 0.9.9'
-pod 'Parse', '~> 1.2.15'
+#pod 'UI7Kit', '~> 0.9.9'
+#pod 'Parse', '~> 1.2.15'
 

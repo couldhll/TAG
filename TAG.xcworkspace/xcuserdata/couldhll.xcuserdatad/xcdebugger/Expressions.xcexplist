@@ -3,13 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[HLLProductListViewController pageWithData:]:HLLProductListViewController.m">
+         contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
          <PersistentStrings>
             <PersistentString
-               value = "GMGRIDVIEW_PAGE_UNIT_COUNT">
+               value = "font.fontName">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[HLLProductListViewController PullToRefresh]_block_invoke:HLLProductListViewController.m">
+         <PersistentStrings>
             <PersistentString
-               value = "data.count">
+               value = "self.view.bounds.size.width">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -46,10 +51,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[HLLAppDelegate openViewController:sender:]:HLLAppDelegate.m">
+         contextName = "-[HLLProductListViewController pageWithData:]:HLLProductListViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "NSStringFromClass(self.deckController.centerController.class)">
+               value = "GMGRIDVIEW_PAGE_UNIT_COUNT">
+            </PersistentString>
+            <PersistentString
+               value = "data.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -62,16 +70,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[HLLAppDelegate openViewController:sender:]:HLLAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSStringFromClass(self.deckController.centerController.class)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[UIFont(HLLFont) setBold:]:UIFont+HLLFont.m">
          <PersistentStrings>
             <PersistentString
                value = "self.fontDescriptor">
             </PersistentString>
             <PersistentString
-               value = "self.fontName">
+               value = "self.familyName">
             </PersistentString>
             <PersistentString
-               value = "self.familyName">
+               value = "self.fontName">
             </PersistentString>
             <PersistentString
                value = "self.familyNames">
@@ -113,14 +129,6 @@
       </ContextState>
       <ContextState
          contextName = "-[HLLProductFilterViewController viewDidLoad]:HLLProductFilterViewController.m">
-      </ContextState>
-      <ContextState
-         contextName = "-[HLLAppDelegate application:didFinishLaunchingWithOptions:]:HLLAppDelegate.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "font.fontName">
-            </PersistentString>
-         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

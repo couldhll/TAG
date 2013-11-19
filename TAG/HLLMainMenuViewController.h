@@ -11,7 +11,7 @@
 
 #import "HLLLoginButton.h"
 
-@interface HLLMainMenuViewController : UIViewController
+@interface HLLMainMenuViewController : HLLViewController
 
 @property (strong, nonatomic) IBOutlet HLLButton  *productListButton;
 @property (strong, nonatomic) IBOutlet HLLButton  *favoriteButton;

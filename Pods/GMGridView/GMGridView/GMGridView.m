@@ -142,6 +142,7 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 @synthesize minimumPressDuration;
 @synthesize centerGrid = _centerGrid;
 @synthesize minEdgeInsets = _minEdgeInsets;
+@synthesize minContentSize = _minContentSize;
 @synthesize showFullSizeViewWithAlphaWhenTransforming;
 @synthesize editing = _editing;
 
@@ -244,6 +245,7 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
     self.minimumPressDuration = 0.2;
     self.showFullSizeViewWithAlphaWhenTransforming = YES;
     self.minEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    self.minContentSize = CGSizeZero;
     self.clipsToBounds = NO;
     
     _sortFuturePosition = GMGV_INVALID_POSITION;
@@ -1240,22 +1242,24 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
     
     if (shouldUpdateScrollviewContentSize)
     {
-        if (animated)
+        if ((contentSize.width>=_minContentSize.width)||(contentSize.height>=_minContentSize.height))
         {
-            [UIView animateWithDuration:kDefaultAnimationDuration
-                                  delay:0 
-                                options:kDefaultAnimationOptions 
-                             animations:^{
-                                 self.contentSize = contentSize;
-                             }
-                             completion:nil];
-        }
-        else
-        {
-            self.contentSize = contentSize;
+            if (animated)
+            {
+                [UIView animateWithDuration:kDefaultAnimationDuration
+                                      delay:0
+                                    options:kDefaultAnimationOptions
+                                 animations:^{
+                                     self.contentSize = contentSize;
+                                 }
+                                 completion:nil];
+            }
+            else
+            {
+                self.contentSize = contentSize;
+            }
         }
     }
-    
 }
 
 - (void)relayoutItemsAnimated:(BOOL)animated

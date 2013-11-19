@@ -24,7 +24,7 @@
 
 #pragma mark - Singleton methods
 
-+ (HLLUserData *)sharedInstance
++ (instancetype)sharedInstance
 {
     static HLLUserData *sharedInstance = nil;
     static dispatch_once_t  oncePredicate;
@@ -199,6 +199,9 @@
 //    {
 //        NSLog(@"Unable to save item: %@", error);
 //    }
+    
+    // change user for Analytics
+    [[Analytics sharedAnalytics] identify:[NSString stringWithFormat:@"%d",userModel.id] traits:(NSDictionary*)userModel];
 }
 
 #pragma mark - Public methods

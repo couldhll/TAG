@@ -13,10 +13,11 @@
 #import "HLLNavigationController.h"
 #import "HLLUserLoginViewController.h"
 
-#import <Parse/Parse.h>
+#import <Analytics/Analytics.h>
+//#import <Parse/Parse.h>
 #import <ShareSDK/ShareSDK.h>
 #import <SDWebImage/SDImageCache.h>
-#import <GoogleAnalytics-iOS-SDK/GAI.h>
+//#import <GoogleAnalytics-iOS-SDK/GAI.h>
 #import <Crashlytics/Crashlytics.h>
 
 @implementation HLLAppDelegate
@@ -40,6 +41,10 @@
 //    // init ParseSDK
 //    [Parse setApplicationId:@"vkPdg2r3Q9hdUNOWYY9CFrPwDXQVsYM47QLDUAIl"
 //                  clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
+    
+    // init Segment.io
+    [Analytics debug:YES];
+    [Analytics initializeWithSecret:@"ssk779cj9nb8ziq5750x"];
     
     // init ShareSDK
     [ShareSDK registerApp:@"9fae2ee15ce" useAppTrusteeship:YES];
@@ -83,7 +88,10 @@
     // first launch to show the side
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
     {
-        [self.deckController previewBounceView:IIViewDeckLeftSide withCompletion:^(IIViewDeckController *controller, BOOL success) {[self.deckController previewBounceView:IIViewDeckRightSide];}];
+        [self.deckController previewBounceView:IIViewDeckLeftSide
+                                withCompletion:^(IIViewDeckController *controller, BOOL success) {
+                                    [self.deckController previewBounceView:IIViewDeckRightSide];
+                                }];
     }
     
     // check Authorize

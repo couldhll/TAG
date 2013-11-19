@@ -10,4 +10,7 @@
 
 @interface HLLViewController : UIViewController
 
+@property (strong, nonatomic, readonly) NSString *className;
+@property (strong, nonatomic) NSString *trackingName;
+
 @end

@@ -828,6 +828,30 @@
 			name = CreateNewCS;
 			sourceTree = "<group>";
 		};
+		B242504A1839AA79005187F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
+				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
+				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
+				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
+				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B242504E1839DA96005187F8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B292A73F18067901004225B5 /* Component */,
+				B243927017F00D57002FD388 /* Frame */,
+				B29AB58217FE9252007D884E /* User */,
+				B243927617F02D3F002FD388 /* Product */,
+				B23E048E1835C0E300358447 /* Other */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */ = {
 			isa = PBXGroup;
 			children = (
@@ -886,9 +910,7 @@
 				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
 				B2D6475A18190228005E353E /* Hud */,
-				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
-				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
-				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
+				B242504A1839AA79005187F8 /* ViewController */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -1015,15 +1037,9 @@
 				B2BC0FCD17EEECA40071036D /* HLLAppDelegate.h */,
 				B2BC0FCE17EEECA40071036D /* HLLAppDelegate.m */,
 				B22A48FE17FC500700DDE92E /* Resource */,
-				B27B8549180E6BDB004D0DC9 /* Tracker */,
-				B292A73F18067901004225B5 /* Component */,
 				B29AB58617FEF00B007D884E /* Data */,
-				B243927017F00D57002FD388 /* Frame */,
-				B29AB58217FE9252007D884E /* User */,
-				B243927617F02D3F002FD388 /* Product */,
-				B23E048E1835C0E300358447 /* Other */,
-				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
-				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
+				B242504E1839DA96005187F8 /* UI */,
+				B27B8549180E6BDB004D0DC9 /* Tracker */,
 				B2BC0FC517EEECA40071036D /* Supporting Files */,
 			);
 			path = TAG;

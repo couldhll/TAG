@@ -1,207 +1,48 @@
 PODS:
-  - cdebug (0.1.1)
+  - Analytics (0.7.5)
   - CocoaSecurity (1.2.2)
-  - Facebook-iOS-SDK (3.9.0)
-  - FoundationExtension (0.45):
-    - cdebug (~> 0.1)
-    - FoundationExtension/CocoaExtension
-    - FoundationExtension/FoundationExtension
-    - FoundationExtension/UIKitExtension
-  - FoundationExtension/FoundationExtension (0.45):
-    - cdebug (~> 0.1)
-  - FoundationExtension/UIKitExtension (0.45):
-    - cdebug (~> 0.1)
-    - FoundationExtension/FoundationExtension
-  - GIKPopoverBackgroundView/Core (0.0.1)
   - GMGridView (1.1.1)
-  - GoogleAnalytics-iOS-SDK (3.0.2)
   - HLLFont (0.1)
   - JSONModel (0.9.3)
   - KeychainItemWrapper (1.2)
   - MBProgressHUD (0.8)
   - OHAttributedLabel (3.5.3)
-  - Parse (1.2.15):
-    - Facebook-iOS-SDK (~> 3.7)
   - RegexKitLite (4.0)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
-  - SevenSwitch (1.3.0)
   - SVPullToRefresh (0.4.1)
   - TestFlightSDK (2.1.1-beta)
-  - UI7Kit (0.9.9):
-    - UI7Kit/All
-  - UI7Kit/All (0.9.9):
-    - UI7Kit/UI7ActionSheet
-    - UI7Kit/UI7ActivityViewController
-    - UI7Kit/UI7AlertView
-    - UI7Kit/UI7BarButtonItem
-    - UI7Kit/UI7Button
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7NavigationBar
-    - UI7Kit/UI7NavigationController
-    - UI7Kit/UI7PickerView
-    - UI7Kit/UI7PopoverController
-    - UI7Kit/UI7ProgressView
-    - UI7Kit/UI7SearchBar
-    - UI7Kit/UI7SegmentedControl
-    - UI7Kit/UI7Slider
-    - UI7Kit/UI7Stepper
-    - UI7Kit/UI7Switch/SevenSwitch
-    - UI7Kit/UI7TabBar
-    - UI7Kit/UI7TabBarController
-    - UI7Kit/UI7TabBarItem
-    - UI7Kit/UI7TableView
-    - UI7Kit/UI7TableViewCell
-    - UI7Kit/UI7TextField
-    - UI7Kit/UI7Toolbar
-    - UI7Kit/UI7View
-    - UI7Kit/UI7ViewController
-    - UI7Kit/UI7Window
-  - UI7Kit/Core (0.9.9):
-    - cdebug
-    - FoundationExtension (~> 0.44)
-    - UI7Kit/UI7Color
-  - UI7Kit/UI7ActionSheet (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-  - UI7Kit/UI7ActivityViewController (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Font
-  - UI7Kit/UI7AlertView (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Button
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-  - UI7Kit/UI7BarButtonItem (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Font
-  - UI7Kit/UI7Button (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7BarButtonItem
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7View
-    - UIKitResources/UIButtonBar
-  - UI7Kit/UI7Color (0.9.9):
-    - UIKitResources/UIAccessoryButton
-  - UI7Kit/UI7Font (0.9.9):
-    - UI7Kit/Core
-  - UI7Kit/UI7NavigationBar (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7BarButtonItem
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-  - UI7Kit/UI7NavigationController (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7NavigationBar
-    - UI7Kit/UI7Toolbar
-  - UI7Kit/UI7PickerView (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7TableView
-    - UI7Kit/UI7View
-  - UI7Kit/UI7PopoverController (0.9.9):
-    - GIKPopoverBackgroundView/Core
-  - UI7Kit/UI7ProgressView (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7View
-  - UI7Kit/UI7SearchBar (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-  - UI7Kit/UI7SegmentedControl (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7View
-  - UI7Kit/UI7Slider (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7View
-  - UI7Kit/UI7Stepper (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7View
-  - UI7Kit/UI7Switch/SevenSwitch (0.9.9):
-    - SevenSwitch (~> 1.3.0)
-    - UI7Kit/Core
-  - UI7Kit/UI7TabBar (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7View
-  - UI7Kit/UI7TabBarController (0.9.9):
-    - UI7Kit/Core
-  - UI7Kit/UI7TabBarItem (0.9.9):
-    - UI7Kit/Core
-    - UIKitResources/UITabBar
-  - UI7Kit/UI7TableView (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7View
-  - UI7Kit/UI7TableViewCell (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-    - UI7Kit/UI7Font
-    - UI7Kit/UI7View
-  - UI7Kit/UI7TextField (0.9.9):
-    - UI7Kit/Core
-  - UI7Kit/UI7Toolbar (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7Color
-  - UI7Kit/UI7View (0.9.9):
-    - UI7Kit/Core
-  - UI7Kit/UI7ViewController (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7BarButtonItem
-    - UI7Kit/UI7NavigationBar
-  - UI7Kit/UI7Window (0.9.9):
-    - UI7Kit/Core
-    - UI7Kit/UI7View
-  - UIKitResources/UIAccessoryButton (7.0)
-  - UIKitResources/UIButtonBar (7.0)
-  - UIKitResources/UITabBar (7.0)
   - ViewDeck (2.2.11)
 
 DEPENDENCIES:
+  - Analytics (~> 0.7.5)
   - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
-  - GoogleAnalytics-iOS-SDK (~> 3.0.1)
   - HLLFont (~> 0.1)
   - JSONModel (~> 0.9.3)
   - KeychainItemWrapper (~> 1.2)
   - MBProgressHUD (~> 0.8)
   - OHAttributedLabel (~> 3.5.2)
-  - Parse (~> 1.2.15)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.4)
   - SVPullToRefresh (~> 0.4.1)
   - TestFlightSDK (~> 2.1.1-beta)
-  - UI7Kit (~> 0.9.9)
   - ViewDeck (= 2.2.11)
 
 SPEC CHECKSUMS:
-  cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
+  Analytics: fd8e51bc2d9b9ad02066a9acd0f823309ee92912
   CocoaSecurity: f53058286161eca4483a8e7370d7c99e85e4a592
-  Facebook-iOS-SDK: 5e1416dbdfc17b2620c2ca31c02e6feec042f2c1
-  FoundationExtension: 9ea775b06ff4a3914db341cefdcaa8180c6e0366
-  GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
-  GoogleAnalytics-iOS-SDK: 51661781af363bdaac260df244db2539c707311d
   HLLFont: b74c37c01c7957df048a0b875dfc292265f5a973
   JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
   KeychainItemWrapper: b532e85de8792ea70dad237e7ead90993af763cf
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
-  Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
   RegexKitLite: f7af7b4d2b675cd2ec9a4abab6aad6ae1f6499c0
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
-  SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
-  UI7Kit: cc047d4196ab61952d5e0784fae34e785af7f780
-  UIKitResources: 3f3b1787af49bb881fc5b6dba2d34d2d4682f0e7
   ViewDeck: b5eddc8559b0e47259ab7addbf2de6768061f139
 
 COCOAPODS: 0.26.2

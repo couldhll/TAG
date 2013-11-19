@@ -11,7 +11,7 @@
 #import <ViewDeck/IIViewDeckController.h>
 #import <OHAttributedLabel/OHAttributedLabel.h>
 
-@interface HLLViewDeckViewController ()
+@interface HLLViewDeckViewController () <IIViewDeckControllerDelegate>
 
 @end
 
@@ -41,6 +41,7 @@
     // view deck
     self.viewDeckController.leftSize=58;
     self.viewDeckController.rightSize=48;
+    self.viewDeckController.delegate=self;
     
     // navigation center title
     NSMutableAttributedString* titleString = [NSMutableAttributedString attributedStringWithString:@"TAG ORIGINALS"];
@@ -87,15 +88,15 @@
 
 #pragma mark - view deck
 
-// applies a small, red shadow
-- (void)viewDeckController:(IIViewDeckController *)viewDeckController applyShadow:(CALayer *)shadowLayer withBounds:(CGRect)rect {
-    shadowLayer.masksToBounds = NO;
-    shadowLayer.shadowRadius = 5;
-    shadowLayer.shadowOpacity = 0.9;
-    shadowLayer.shadowColor = [[UIColor redColor] CGColor];
-    shadowLayer.shadowOffset = CGSizeZero;
-    shadowLayer.shadowPath = [[UIBezierPath bezierPathWithRect:rect] CGPath];
-}
+//- (void)viewDeckController:(IIViewDeckController *)viewDeckController applyShadow:(CALayer *)shadowLayer withBounds:(CGRect)rect
+//{
+//    shadowLayer.masksToBounds = NO;
+//    shadowLayer.shadowRadius = 5;
+//    shadowLayer.shadowOpacity = 0.9;
+//    shadowLayer.shadowColor = [[UIColor redColor] CGColor];
+//    shadowLayer.shadowOffset = CGSizeZero;
+//    shadowLayer.shadowPath = [[UIBezierPath bezierPathWithRect:rect] CGPath];
+//}
 
 #pragma mark - Status bar
 

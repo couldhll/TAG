@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HLLUserLoginViewController : UIViewController
+@interface HLLUserLoginViewController : HLLViewController
 
 @property (strong, nonatomic) IBOutlet UIButton  *exitButton;
 

@@ -10,6 +10,8 @@
 #define TAG_HLLComponent_h
 
 #import "HLLAppDelegate.h"
+
+#import "HLLViewController.h"
 #import "HLLViewDeckViewController.h"
 
 #import "HLLButton.h"

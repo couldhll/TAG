@@ -26,7 +26,7 @@
 @interface HLLProductListViewController () <UINavigationControllerDelegate, GMGridViewDataSource, GMGridViewActionDelegate, HLLProductFilterViewControllerDelegate>
 {
     __gm_weak GMGridView *_gmGridView;
-    __weak HLLProductFilterViewController *_filterViewController;
+    HLLProductFilterViewController *filterViewController;
     
     NSMutableArray<HLLProductModel> *products;
 }
@@ -43,7 +43,7 @@
         // for iOS7 SVPullToRefresh
         if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
         {
-            self.edgesForExtendedLayout = UIRectEdgeNone;
+//            self.edgesForExtendedLayout = UIRectEdgeNone;
         }
     }
     return self;
@@ -87,6 +87,10 @@
     [rightButton sizeToFit];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     
+    // right controller
+    filterViewController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
+    filterViewController.delegate=self;
+    
     // data
     products=(NSMutableArray<HLLProductModel>*)[[NSMutableArray alloc] init];
 //    NSMutableArray *_data = [[NSMutableArray alloc] init];
@@ -99,16 +103,16 @@
     // grid view
     GMGridView *gmGridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
     gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    gmGridView.style = GMGridViewStylePush;
+    gmGridView.itemSpacing = GMGRIDVIEW_SPACING;
+    gmGridView.minEdgeInsets = UIEdgeInsetsMake(GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING);
+    gmGridView.minContentSize = self.view.bounds.size;
+    gmGridView.centerGrid = NO;
+    gmGridView.actionDelegate = self;
+    gmGridView.dataSource = self;
     gmGridView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:gmGridView];
     _gmGridView = gmGridView;
-    
-    _gmGridView.style = GMGridViewStylePush;
-    _gmGridView.itemSpacing = GMGRIDVIEW_SPACING;
-    _gmGridView.minEdgeInsets = UIEdgeInsetsMake(GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING, GMGRIDVIEW_SPACING);
-    _gmGridView.centerGrid = NO;
-    _gmGridView.actionDelegate = self;
-    _gmGridView.dataSource = self;
     
     // PullToRefresh + InfiniteScrolling
 //    _gmGridView.showsPullToRefresh = NO;
@@ -125,19 +129,13 @@
 {
     [super viewDidUnload];
     _gmGridView=nil;
-    _filterViewController=nil;
+    filterViewController=nil;
     products=nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    // create right controller
-    HLLProductFilterViewController* filterViewController = [[HLLProductFilterViewController alloc] initWithNibName:@"HLLProductFilterViewController" bundle:nil];
-    filterViewController.delegate=self;
-    self.viewDeckController.rightController = filterViewController;
-    _filterViewController=filterViewController;
     
     // auto refresh
     [_gmGridView triggerPullToRefresh];
@@ -146,23 +144,25 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    // add right controller
+    self.viewDeckController.rightController = filterViewController;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
-    // close right controller
-    [self.viewDeckController closeRightViewAnimated:YES
-                                        completion:^(IIViewDeckController *controller, BOOL success) {
-                                            self.viewDeckController.rightController = nil;
-                                            _filterViewController=nil;
-                                        }];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+    
+    // remove right controller
+    [self.viewDeckController closeRightViewAnimated:YES
+                                         completion:^(IIViewDeckController *controller, BOOL success) {
+                                             self.viewDeckController.rightController = nil;
+                                         }];
 }
 
 #pragma mark - GMGridViewDataSource
@@ -272,6 +272,8 @@
 - (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
 {
     NSLog(@"Tap on empty space");
+    
+    NSLog(@"%f,%f",_gmGridView.contentSize.width,_gmGridView.contentSize.height);
 }
 
 #pragma mark - SVPullToRefresh + SVInfiniteScrolling
@@ -343,8 +345,8 @@
     [HLLDataJson productGetList:self.view
                               count:[NSString stringWithFormat:@"%d",GMGRIDVIEW_PAGE_UNIT_COUNT]
                                page:[NSString stringWithFormat:@"%d",page]
-                       searchOption:[_filterViewController.filterArray componentsJoinedByString:@","]
-                      searchKeyword:_filterViewController.searchText
+                       searchOption:[filterViewController.filterArray componentsJoinedByString:@","]
+                      searchKeyword:filterViewController.searchText
                          completion:nil
                             success:^(id json, JSONModelError *err) {
                                 HLLProductListModel* productListModel = [[HLLProductListModel alloc] initWithDictionary:json error:nil];

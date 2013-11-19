@@ -124,6 +124,9 @@
     
     NSString *controllerName=[buttonNotificationDictionary valueForKey:button.name];
     [AppDelegate openViewController:controllerName sender:self];
+    
+    // tracking button press
+    [HLLTracker eventWithCategory:HLLTrackCategoryTypeButton action:HLLTrackActionTypeButtonPress object:[NSString stringWithFormat:@"%@/%@",self.trackingName,button.name] value:HLLTrackValueTypeNone];
 }
 
 #pragma mark - Select button

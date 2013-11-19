@@ -17,8 +17,23 @@
 
 @implementation HLLTracker
 
-+ (void)send:(NSString*)object action:(NSString*)action value:(NSString*)value category:(NSString*)category
++ (void)eventWithCategory:(NSString*)category action:(NSString*)action object:(NSString*)object value:(NSString*)value
 {
+    // Segment.io
+    if ([category isEqual:HLLTrackCategoryTypeView])
+    {
+        [[Analytics sharedAnalytics] screen:object properties:@{@"category":category,
+                                                                @"label":action,
+                                                                @"revenue":value}];
+    }
+    else
+    {
+        [[Analytics sharedAnalytics] track:object properties:@{@"category":category,
+                                                               @"label":action,
+                                                               @"revenue":value}];
+    }
+
+    
 //    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
 //    
 //    NSMutableDictionary *event = [[GAIDictionaryBuilder createEventWithCategory:category
@@ -43,8 +58,23 @@
 //    [[GAI sharedInstance] dispatch];
     
     
-    // back end
-    // userid,time,ip
+    // backend
+    NSString *ip=@"";// ip
+    HLLUserModel *userModel=[HLLUserData sharedInstance].authorizationUser;// user id
+    NSString *userId=[NSString stringWithFormat:@"%d",userModel.id];
+    NSTimeInterval timeInterval=[[NSDate date] timeIntervalSince1970];// time stamp
+    NSString *timeStamp = [NSString stringWithFormat:@"%ld", (long)timeInterval];
+    [HLLDataJson tracking:nil
+                       ip:ip
+                   userId:userId
+                 category:category
+                   object:object
+                   action:action
+                    value:value
+                     time:timeStamp
+               completion:nil
+                  success:nil
+                    error:nil];
 }
 
 @end
