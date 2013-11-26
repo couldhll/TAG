@@ -8,14 +8,39 @@
 
 #import "HLLProductDetailViewController.h"
 
-#import "HLLVideoView.h"
+#import "HLLTOTitleViewController.h"
+#import "HLLCSTitleViewController.h"
+#import "HLLProductImageViewController.h"
+#import "HLLProductBuyViewController.h"
+#import "HLLTOPriceViewController.h"
+#import "HLLCSPriceViewController.h"
+#import "HLLCSBrandViewController.h"
+#import "HLLCSUserViewController.h"
+#import "HLLCSInformationViewController.h"
+#import "HLLTOBrandProductViewController.h"
+#import "HLLProductCommentViewController.h"
 
-#import <ViewDeck/IIViewDeckController.h>
 #import <ShareSDK/ShareSDK.h>
 
 #define VIDEOVIEW_SIZE CGSizeMake(200, 200)
 
-@interface HLLProductDetailViewController () <UINavigationControllerDelegate>
+@interface HLLProductDetailViewController () <UINavigationControllerDelegate,HLLProductBuyViewControllerDelegate,HLLProductBrandProductViewControllerDelegate>
+{
+    HLLProductModel *model;
+    
+    UIScrollView *containView;
+    NSMutableArray *subControllers;
+    
+    UIViewController *titleViewController;
+    HLLProductImageViewController *imageViewController;
+    HLLProductBuyViewController *buyViewController;
+    UIViewController *priceViewController;
+    UIViewController *brandViewController;
+    UIViewController *userViewController;
+    UIViewController *informationViewController;
+    UIViewController *brandProductViewController;
+    HLLProductCommentViewController *commentViewController;
+}
 
 @end
 
@@ -42,34 +67,50 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Product Detail";
+    // load data
+    [HLLDataJson productGetInfo:nil
+                      productId:[NSString stringWithFormat:@"%d",self.productId]
+                     completion:nil
+                        success:^(id json, JSONModelError *err) {
+                            HLLProductModel* productModel = [[HLLProductModel alloc] initWithDictionary:json error:nil];
+                            if (productModel)
+                            {
+                                model=productModel;
+                                
+                                // load sub view
+                                [self subViewsLoadData:model];
+                            }
+                        }
+                          error:nil];
     
-    // navigation bar
-    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:
-                                              [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)],
-                                              [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(gotoBackPage:)],
-                                              nil];
+    // navigation left button
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Common/arrow_blue_icon.png"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Common/arrow_blue_icon.png"] forState:UIControlStateHighlighted];
+    [leftButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchDown];
+    [leftButton sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
     
-    
-    // navigation right button background image
-    UIImage *rightButtonBackgroundImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
-    UIImage *rightbuttonBackground9patchImage = [rightButtonBackgroundImage stretchableImageWithLeftCapWidth:10 topCapHeight:10];
     // navigation right button
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setFrame: CGRectMake(0, 0, 50, 40)];
-    [rightButton setBackgroundImage:rightbuttonBackground9patchImage forState:UIControlStateNormal];
-    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateNormal];
-    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/navigation_friends_icon.png"] forState:UIControlStateHighlighted];
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/share_icon.png"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/share_icon.png"] forState:UIControlStateHighlighted];
     [rightButton addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchDown];
+    [rightButton sizeToFit];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     
+    // init contain view
+    containView=[[UIScrollView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:containView];
     
+    // init sub view
+    [self addSubControllers:containView];
     
-    // add video view
-    CGSize videoViewSize=VIDEOVIEW_SIZE;
-    HLLVideoView *videoView=[[HLLVideoView alloc] initWithFrame:CGRectMake(100, 100, videoViewSize.width, videoViewSize.height)];
-    [videoView loadVideo:@"http://player.youku.com/embed/XNjA4NjU4MzYw"];
-    [self.view addSubview:videoView];
+//    // add video view
+//    CGSize videoViewSize=VIDEOVIEW_SIZE;
+//    HLLVideoView *videoView=[[HLLVideoView alloc] initWithFrame:CGRectMake(0, 0, videoViewSize.width, videoViewSize.height)];
+//    [videoView loadVideo:@"http://player.youku.com/embed/XNjA4NjU4MzYw"];
+//    [self.view addSubview:videoView];
 }
 
 - (void)viewDidUnload
@@ -99,9 +140,213 @@
 
 #pragma mark - Actions
 
-- (IBAction)saveButtonPressed:(id)sender
+
+#pragma mark - Sub View
+
+- (void)addSubControllers:(UIView*)parentView
 {
-    [self save];
+    // init sub view
+    subControllers=[[NSMutableArray alloc] init];
+    
+    // title view
+    if (self.productType==HLLProductTypeCS)
+    {
+        titleViewController = [[HLLCSTitleViewController alloc] initWithNibName:@"HLLCSTitleViewController" bundle:nil];
+    }
+    else
+    {
+        titleViewController = [[HLLTOTitleViewController alloc] initWithNibName:@"HLLTOTitleViewController" bundle:nil];
+    }
+    [subControllers addObject:titleViewController];
+    
+    // image view
+    imageViewController = [[HLLProductImageViewController alloc] initWithNibName:@"HLLProductImageViewController" bundle:nil];
+    [subControllers addObject:imageViewController];
+    
+    // buy view
+    buyViewController = [[HLLProductBuyViewController alloc] initWithNibName:@"HLLProductBuyViewController" bundle:nil];
+    buyViewController.productType=self.productType;
+    buyViewController.delegate=self;
+    [subControllers addObject:buyViewController];
+    
+    // price view
+    if (self.productType==HLLProductTypeCS)
+    {
+        priceViewController = [[HLLCSPriceViewController alloc] initWithNibName:@"HLLCSPriceViewController" bundle:nil];
+    }
+    else
+    {
+        priceViewController = [[HLLTOPriceViewController alloc] initWithNibName:@"HLLTOPriceViewController" bundle:nil];
+    }
+    [subControllers addObject:priceViewController];
+    
+    // brand view
+    if (self.productType==HLLProductTypeCS)
+    {
+        brandViewController = [[HLLCSBrandViewController alloc] initWithNibName:@"HLLCSBrandViewController" bundle:nil];
+        [subControllers addObject:brandViewController];
+    }
+    else
+    {
+        
+    }
+    
+    // user view
+    if (self.productType==HLLProductTypeCS)
+    {
+        userViewController = [[HLLCSUserViewController alloc] initWithNibName:@"HLLCSUserViewController" bundle:nil];
+        [subControllers addObject:userViewController];
+    }
+    else
+    {
+        
+    }
+    
+    // information view
+    if (self.productType==HLLProductTypeCS)
+    {
+        informationViewController = [[HLLCSInformationViewController alloc] initWithNibName:@"HLLCSInformationViewController" bundle:nil];
+        [subControllers addObject:informationViewController];
+    }
+    else
+    {
+        
+    }
+    
+    // brand product view
+    if (self.productType==HLLProductTypeCS)
+    {
+        
+    }
+    else
+    {
+        HLLTOBrandProductViewController *toBrandProductViewController = [[HLLTOBrandProductViewController alloc] initWithNibName:@"HLLTOBrandProductViewController" bundle:nil];
+        toBrandProductViewController.delegate=self;
+        
+        brandProductViewController=toBrandProductViewController;
+        [subControllers addObject:brandProductViewController];
+    }
+    
+    // comment view
+    commentViewController = [[HLLProductCommentViewController alloc] initWithNibName:@"HLLProductCommentViewController" bundle:nil];
+    [subControllers addObject:commentViewController];
+    
+    // add sub view
+    float nowheight=0;
+    for (UIViewController *viewController in subControllers)
+    {
+        UIView *nowView=viewController.view;
+        [nowView setFrame:CGRectMake(nowView.frame.origin.x, nowheight, nowView.frame.size.width, nowView.frame.size.height)];
+        [parentView addSubview:nowView];
+        
+        nowheight+=nowView.frame.size.height;
+    }
+    
+    // front view
+    for (UIViewController *viewController in subControllers)
+    {
+        if ([viewController isMemberOfClass:HLLCSPriceViewController.class]||[viewController isMemberOfClass:HLLTOPriceViewController.class])
+        {
+            [parentView bringSubviewToFront:viewController.view];
+        }
+    }
+    
+    
+}
+
+- (void)subViewsLoadData:(HLLProductModel*)productModel
+{
+    // title view
+    if (self.productType==HLLProductTypeCS)
+    {
+        HLLCSTitleViewController *csTitleViewController=(HLLCSTitleViewController*)titleViewController;
+        csTitleViewController.productName=model.name;
+        csTitleViewController.brandName=model.brand.name;
+        csTitleViewController.userName=model.user.name;
+    }
+    else
+    {
+        HLLTOTitleViewController *toTitleViewController=(HLLTOTitleViewController*)titleViewController;
+        toTitleViewController.brandImageUrl=model.brand.thumbnail_image_url;
+        toTitleViewController.brandName=model.brand.name;
+        toTitleViewController.productTime=model.created_at;
+    }
+    
+    // image view
+    imageViewController.productImageUrl=model.middle_image_url;
+    
+    // buy view
+    if (self.productType==HLLProductTypeCS)
+    {
+//        buyViewController = [[HLLCSBuyViewController alloc] initWithNibName:@"HLLCSBuyViewController" bundle:nil];
+    }
+    else
+    {
+//        buyViewController = [[HLLTOBuyViewController alloc] initWithNibName:@"HLLTOBuyViewController" bundle:nil];
+    }
+    
+    // price view
+    if (self.productType==HLLProductTypeCS)
+    {
+        HLLCSPriceViewController *csPriceViewController=(HLLCSPriceViewController*)priceViewController;
+        csPriceViewController.currencyModel=[HLLCurrencyModel getUsdCurrency];
+        csPriceViewController.priceUsd=model.price_usd.floatValue;
+        csPriceViewController.endTime=model.end_time;
+        csPriceViewController.favoriteCount=[model.favorited_count intValue];
+        csPriceViewController.subscribeCount=[model.subscribe_count intValue];
+        csPriceViewController.subscribeLevel=[model.subscribe_level intValue];
+    }
+    else
+    {
+        HLLTOPriceViewController *toPriceViewController=(HLLTOPriceViewController*)priceViewController;
+        toPriceViewController.currencyModel=[HLLCurrencyModel getUsdCurrency];
+        toPriceViewController.priceUsd=model.price_usd.floatValue;
+    }
+    
+    // brand view
+    if (self.productType==HLLProductTypeCS)
+    {
+//        brandViewController = [[HLLCSBrandViewController alloc] initWithNibName:@"HLLCSBrandViewController" bundle:nil];
+    }
+    else
+    {
+        
+    }
+    
+    // user view
+    if (self.productType==HLLProductTypeCS)
+    {
+//        userViewController = [[HLLCSUserViewController alloc] initWithNibName:@"HLLCSUserViewController" bundle:nil];
+    }
+    else
+    {
+        
+    }
+    
+    // information view
+    if (self.productType==HLLProductTypeCS)
+    {
+//        informationViewController = [[HLLCSInformationViewController alloc] initWithNibName:@"HLLCSInformationViewController" bundle:nil];
+    }
+    else
+    {
+        
+    }
+    
+    // brand product view
+    if (self.productType==HLLProductTypeCS)
+    {
+        
+    }
+    else
+    {
+        HLLTOBrandProductViewController *toBrandProductViewController=(HLLTOBrandProductViewController*)brandProductViewController;
+        toBrandProductViewController.brandName=model.brand.name;
+        toBrandProductViewController.brandProducts=model.brand.products;
+    }
+    
+    // comment view
+//    commentViewController = [[HLLProductCommentViewController alloc] initWithNibName:@"HLLProductCommentViewController" bundle:nil];
 }
 
 #pragma mark - Share
@@ -137,11 +382,30 @@
                             }];
 }
 
-#pragma mark - Save
+#pragma mark - HLLProductBuyViewControllerDelegate
 
-- (void)save
+- (void)viewController:(UIViewController *)viewController save:(UIButton *)button
 {
-    
+
+}
+
+- (void)viewController:(UIViewController *)viewController buy:(UIButton *)button
+{
+    [[UIApplication sharedApplication] openURL:model.buy_url];
+}
+
+#pragma mark - HLLProductBuyViewControllerDelegate
+
+- (void)viewController:(UIViewController *)viewController select:(HLLProductModel *)productModel
+{
+    if (productModel!=nil)
+    {
+        // goto select product detail view
+        HLLProductDetailViewController *productDetailController = [[HLLProductDetailViewController alloc] initWithNibName:@"HLLProductDetailViewController" bundle:nil];
+        productDetailController.productId=productModel.id;
+        productDetailController.productType=productModel.show_type.intValue;
+        [self.navigationController pushViewController:productDetailController animated:YES];
+    }
 }
 
 #pragma mark - test

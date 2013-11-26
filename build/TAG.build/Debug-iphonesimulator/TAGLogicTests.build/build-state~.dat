@@ -1,177 +1,0 @@
-TTAGLogicTests
-v6
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist
-cProcessPCH /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch TAGLogicTests/TAGLogicTests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o /Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests normal x86_64
-
-N/Applications/Xcode.app/Contents/Developer/Library/Frameworks/XCTest.framework/XCTest
-c00000000523CFBFF00000000000256F0
-t1379728383
-s153328
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
-c00000000521BCCE50000000000000176
-t1377553637
-s374
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
-c00000000523CFC0A00000000000003B5
-t1379728394
-s949
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000523CFC0E000000000000019E
-t1379728398
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000523CFC10000000000088B570
-t1379728400
-s8959344
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000523CFC120000000001DB1C90
-t1379728402
-s31136912
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
-c00000000523CFC200000000000000AC9
-t1379728416
-s2761
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist
-c00000000525F921200000000000002B4
-t1381995026
-s692
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Prefix.pch
-c00000000525F921200000000000000D2
-t1381995026
-s210
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m
-c000000005260A87B0000000000000280
-t1382066299
-s640
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m
-c000000005260C93A000000000000032A
-t1382074682
-s810
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/UIFont+HLLFont/UIFont+HLLFont.h
-c000000005260A206000000000000017C
-t1382064646
-s380
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist
-t2
-s0
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests
-t2
-s0
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.LinkFileList
-c0000000052677D3D000000000000010D
-t1382513981
-s269
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o
-t1382513982
-s6812
-
-N/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o
-t1382513982
-s13640
-
-N/var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch
-t1382513981
-s115596
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies13d2debdb417b841^c975e3bdb417b841^---0#1#1#--18"Check dependencies36"92B5FAA3-EADC-4DF8-B41A-E95C993415EF-
-
-CCompileC build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s404206781.977709
-e404206782.093710
-r1
-xCompileC
-xbuild/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o
-x/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m220"[1mCompileC[0m build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o [1mTAGLogicTests/TAGLogicTests.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler096cfabdb417b841^6dfe17beb417b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m0000000000000000^3979"[1mCompileC[0m build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o [1mTAGLogicTests/TAGLogicTests.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/couldhll/Desktop/TAG/trunk/TAG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-generated-files.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-own-target-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-all-target-headers.hmap -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-project-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources/x86_64 -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources -F/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch -MMD -MT dependencies -MF /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.d --serialize-diagnostics /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.dia -c /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests.m -o /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.o36"B8225F94-6A91-46C2-955C-5F2C369886E5-
-bABC648B2-1455-46F4-A2D0-FE923D58FCED
-
-CCompileC build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o /Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s404206781.976926
-e404206782.090005
-r1
-xCompileC
-xbuild/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o
-x/Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m
-d/Users/couldhll/Desktop/TAG/trunk/TAG/UIFont+HLLFont/UIFont+HLLFont.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m217"[1mCompileC[0m build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o [1mTAGTests/UIFont+HLLFont.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerb439fabdb417b841^312817beb417b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m0000000000000000^3975"[1mCompileC[0m build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o [1mTAGTests/UIFont+HLLFont.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/couldhll/Desktop/TAG/trunk/TAG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-generated-files.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-own-target-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-all-target-headers.hmap -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-project-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources/x86_64 -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources -F/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch -MMD -MT dependencies -MF /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.d --serialize-diagnostics /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.dia -c /Users/couldhll/Desktop/TAG/trunk/TAG/TAGTests/UIFont+HLLFont.m -o /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/UIFont+HLLFont.o36"C9E99156-2A22-475A-A13B-2C89D45F04AE-
-bABC648B2-1455-46F4-A2D0-FE923D58FCED
-
-CCopyStringsFile /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/en.lproj/InfoPlist.strings TAGLogicTests/en.lproj/InfoPlist.strings
-r0
-
-CGenerateDSYMFile /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest.dSYM /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests
-r0
-
-CLd /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests normal x86_64
-s404206782.102391
-e404206782.120549
-r0
-xLd
-x/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests
-xnormal
-xx86_64
-old: file not found: /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAG.app/TAG
-oclang: error: linker command failed with exit code 1 (use -v to see invocation)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Link /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests87"[1mLd[0m build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests normal x86_64e3511abeb417b841^51151fbeb417b841^-178"ld: file not found: /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAG.app/TAGclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@93"File not found: /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAG.app/TAG-404206782#0#98#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-404206782#98#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1766"[1mLd[0m build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests normal x86_64    cd /Users/couldhll/Desktop/TAG/trunk/TAG    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator -F/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -filelist /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests.LinkFileList -bundle_loader /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAG.app/TAG -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework XCTest -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/Objects-normal/x86_64/TAGLogicTests_dependency_info.dat -o /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/TAGLogicTests36"1A428585-1E6C-44AE-821B-0317290ADD0E-
-bABC648B2-1455-46F4-A2D0-FE923D58FCED
-
-CProcessInfoPlistFile /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist
-s404206781.890419
-e404206781.895654
-r1
-xProcessInfoPlistFile
-x/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist
-x/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Process /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist135"[1mProcessInfoPlistFile[0m build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist [1mTAGLogicTests/TAGLogicTests-Info.plist[0m5018e4bdb417b841^6f4ae5bdb417b841^---0#0#1#-19%DVTDocumentLocation2@92"file://localhost/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist0000000000000000^660"[1mProcessInfoPlistFile[0m build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist [1mTAGLogicTests/TAGLogicTests-Info.plist[0m    cd /Users/couldhll/Desktop/TAG/trunk/TAG    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-infoPlistUtility /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest/Info.plist36"DD50352D-8F39-4060-AA8F-12A0B2F7263F-
-bABC648B2-1455-46F4-A2D0-FE923D58FCED
-
-CProcessPCH /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch TAGLogicTests/TAGLogicTests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s404206781.909594
-e404206781.967925
-r1
-xProcessPCH
-x/var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch
-xTAGLogicTests/TAGLogicTests-Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Precompile TAGLogicTests/TAGLogicTests-Prefix.pch322"[1mProcessPCH[0m /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch TAGLogicTests/TAGLogicTests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerfe0ae9bdb417b841^f3ccf7bdb417b841^---0#0#1#-19%DVTDocumentLocation2@92"file://localhost/Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Prefix.pch0000000000000000^4076"[1mProcessPCH[0m /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch TAGLogicTests/TAGLogicTests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/couldhll/Desktop/TAG/trunk/TAG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-generated-files.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-own-target-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-all-target-headers.hmap -iquote /Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/TAGLogicTests-project-headers.hmap -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources/x86_64 -I/Users/couldhll/Desktop/TAG/trunk/TAG/build/TAG.build/Debug-iphonesimulator/TAGLogicTests.build/DerivedSources -F/Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks --serialize-diagnostics /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.d -c /Users/couldhll/Desktop/TAG/trunk/TAG/TAGLogicTests/TAGLogicTests-Prefix.pch -o /var/folders/8y/9wb42bzn4tz9c62mppyzl6jr0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/TAGLogicTests-Prefix-eyjuxmlsdehmmfbwzrjkzwxdixif/TAGLogicTests-Prefix.pch.pch36"E9906035-B69F-4480-8E4E-E1BC1441F58E-
-bABC648B2-1455-46F4-A2D0-FE923D58FCED
-
-CTouch /Users/couldhll/Desktop/TAG/trunk/TAG/build/Debug-iphonesimulator/TAGLogicTests.xctest
-r0
-

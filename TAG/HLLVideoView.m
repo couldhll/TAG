@@ -10,14 +10,28 @@
 
 @implementation HLLVideoView
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.scrollView.scrollEnabled = NO;
-        self.scrollView.bounces = NO;
+        [self initialize];
     }
     return self;
+}
+
+- (void)initialize
+{
+    self.scrollView.scrollEnabled = NO;
+    self.scrollView.bounces = NO;
 }
 
 - (void)loadVideo:(NSString*)url

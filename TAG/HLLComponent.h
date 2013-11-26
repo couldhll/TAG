@@ -11,6 +11,9 @@
 
 #import "HLLAppDelegate.h"
 
+#import "HLLCurrencyView.h"
+#import "HLLVideoView.h"
+
 #import "HLLViewController.h"
 #import "HLLViewDeckViewController.h"
 

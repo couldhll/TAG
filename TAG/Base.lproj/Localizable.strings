@@ -21,3 +21,12 @@
 "Hud_Success_UserAuthorize_LoginCompleted"="LoginCompleted";
 "Hud_Success_UserAuthorize_LogoutCompleted"="LogoutCompleted";
 
+"Time_Format_Now"="now";
+"Time_Format_Minute"="%d minute(s) ago";
+"Time_Format_Hour"="%d hour(s) ago";
+"Time_Format_Day"="%d day(s) ago";
+"Time_Format_Month"="%d month(s) ago";
+"Time_Format_Year"="%d year(s) ago";
+
+"Product_Overdue"="Overdue";
+

@@ -14,7 +14,7 @@
 {
     [super initialize];
     
-    // exit button add border with color
+    // add border with color
     [self.layer setBorderWidth:1.0f];
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGColorRef color = CGColorCreate(colorSpace,(CGFloat[]){ 1, 1, 1, 1 });

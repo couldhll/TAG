@@ -20,6 +20,8 @@
 //#import <GoogleAnalytics-iOS-SDK/GAI.h>
 #import <Crashlytics/Crashlytics.h>
 
+#import "HLLCurrencyView.h"
+
 @implementation HLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -43,7 +45,7 @@
 //                  clientKey:@"kkgJLtIAiNUBGhyLvtjpFpnYdvRFR4pBeRh7mTlp"];
     
     // init Segment.io
-    [Analytics debug:YES];
+    [Analytics debug:NO];
     [Analytics initializeWithSecret:@"ssk779cj9nb8ziq5750x"];
     
     // init ShareSDK
@@ -77,6 +79,10 @@
 //                                                                   leftViewController:leftController];
     self.deckController =  [[IIViewDeckController alloc] initWithCenterViewController:nil
                                                                                     leftViewController:leftController];
+    
+    // disable class
+    [self.deckController disablePanOverViewsOfClass:NSClassFromString(@"HLLCurrencyView")];
+    [self.deckController disablePanOverViewsOfClass:NSClassFromString(@"GMGridViewCell")];
     
     // add controller
     self.window.rootViewController = self.deckController;

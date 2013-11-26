@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSDate<Optional>* created_at;
 @property (assign, nonatomic) int id;
 @property (strong, nonatomic) NSString<Optional>* name;
-@property (assign, nonatomic) int show_type;
+@property (strong, nonatomic) NSNumber<Optional>* show_type;
 @property (strong, nonatomic) NSURL<Optional>* thumbnail_image_url;
 @property (strong, nonatomic) NSURL<Optional>* middle_image_url;
 @property (strong, nonatomic) NSURL<Optional>* original_image_url;
@@ -23,13 +23,15 @@
 @property (strong, nonatomic) NSNumber<Optional>* favorited_count;
 @property (strong, nonatomic) NSString<Optional>* information;
 @property (strong, nonatomic) NSArray<NSURL,Optional,ConvertOnDemand>* video_urls;
-@property (assign, nonatomic) float price_usd;
-//@property (assign, nonatomic) float price_rmb;
+@property (strong, nonatomic) NSNumber<Optional>* price_usd;
 @property (strong, nonatomic) NSURL<Optional>* buy_url;
+
+// only for cs product
 @property (strong, nonatomic) NSDate<Optional>* start_time;
 @property (strong, nonatomic) NSDate<Optional>* end_time;
-@property (strong, nonatomic) NSNumber<Optional>* subscribe_level;
 @property (strong, nonatomic) NSNumber<Optional>* subscribe_count;
+@property (strong, nonatomic) NSNumber<Optional>* subscribe_level;
+
 @property (strong, nonatomic) HLLBrandModel<Optional,ConvertOnDemand>* brand;
 @property (strong, nonatomic) HLLUserModel<Optional,ConvertOnDemand>* user;
 

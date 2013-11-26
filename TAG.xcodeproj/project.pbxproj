@@ -120,6 +120,31 @@
 		B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */; };
 		B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243927217F01E6B002FD388 /* HLLProductListViewController.m */; };
 		B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */; };
+		B2466310183CA81F00B070E6 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = B246630F183CA81F00B070E6 /* NSString+Time.m */; };
+		B2466319183DDCAA00B070E6 /* HLLProductBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466317183DDCAA00B070E6 /* HLLProductBuyViewController.m */; };
+		B246631A183DDCAA00B070E6 /* HLLProductBuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466318183DDCAA00B070E6 /* HLLProductBuyViewController.xib */; };
+		B2466323183DE1DB00B070E6 /* HLLTOPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466321183DE1DB00B070E6 /* HLLTOPriceViewController.m */; };
+		B2466324183DE1DB00B070E6 /* HLLTOPriceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466322183DE1DB00B070E6 /* HLLTOPriceViewController.xib */; };
+		B2466328183DE1E900B070E6 /* HLLCSPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466326183DE1E900B070E6 /* HLLCSPriceViewController.m */; };
+		B2466329183DE1E900B070E6 /* HLLCSPriceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466327183DE1E900B070E6 /* HLLCSPriceViewController.xib */; };
+		B246632C183DEAA300B070E6 /* JSONValueTransformer+NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B246632B183DEAA300B070E6 /* JSONValueTransformer+NSDate.m */; };
+		B2466330183DFFFF00B070E6 /* HLLTOBrandProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B246632E183DFFFF00B070E6 /* HLLTOBrandProductViewController.m */; };
+		B2466331183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B246632F183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib */; };
+		B2466335183E001D00B070E6 /* HLLProductCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466333183E001D00B070E6 /* HLLProductCommentViewController.m */; };
+		B2466336183E001D00B070E6 /* HLLProductCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466334183E001D00B070E6 /* HLLProductCommentViewController.xib */; };
+		B246633A183E0F3200B070E6 /* HLLCSBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466338183E0F3200B070E6 /* HLLCSBrandViewController.m */; };
+		B246633B183E0F3200B070E6 /* HLLCSBrandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466339183E0F3200B070E6 /* HLLCSBrandViewController.xib */; };
+		B246633F183E0F5800B070E6 /* HLLCSUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B246633D183E0F5800B070E6 /* HLLCSUserViewController.m */; };
+		B2466340183E0F5800B070E6 /* HLLCSUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B246633E183E0F5800B070E6 /* HLLCSUserViewController.xib */; };
+		B2466344183E0F7E00B070E6 /* HLLCSInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2466342183E0F7E00B070E6 /* HLLCSInformationViewController.m */; };
+		B2466345183E0F7E00B070E6 /* HLLCSInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2466343183E0F7E00B070E6 /* HLLCSInformationViewController.xib */; };
+		B26AD484183C645600BAD8F6 /* HLLTOTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD482183C645600BAD8F6 /* HLLTOTitleViewController.m */; };
+		B26AD485183C645600BAD8F6 /* HLLTOTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26AD483183C645600BAD8F6 /* HLLTOTitleViewController.xib */; };
+		B26AD48D183C69F600BAD8F6 /* HLLCSTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD48B183C69F600BAD8F6 /* HLLCSTitleViewController.m */; };
+		B26AD48E183C69F600BAD8F6 /* HLLCSTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26AD48C183C69F600BAD8F6 /* HLLCSTitleViewController.xib */; };
+		B26AD491183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD490183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m */; };
+		B26AD497183C8A0600BAD8F6 /* HLLProductImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD495183C8A0600BAD8F6 /* HLLProductImageViewController.m */; };
+		B26AD498183C8A0600BAD8F6 /* HLLProductImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26AD496183C8A0600BAD8F6 /* HLLProductImageViewController.xib */; };
 		B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B854B180E6C15004D0DC9 /* HLLTracker.m */; };
 		B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B93180D117200F8E105 /* HLLLoginButton.m */; };
 		B2858B97180D166C00F8E105 /* HLLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B96180D166C00F8E105 /* HLLButton.m */; };
@@ -132,6 +157,13 @@
 		B29AB58517FEF003007D884E /* HLLDataJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB58417FEF003007D884E /* HLLDataJson.m */; };
 		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
 		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
+		B2A50DBE18431CAE00F292E6 /* HLLCurrencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */; };
+		B2A50DC218433F2400F292E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DC018433F2400F292E6 /* ViewController.m */; };
+		B2A50DC318433F2400F292E6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A50DC118433F2400F292E6 /* ViewController.xib */; };
+		B2A50DCF1843418300F292E6 /* HLLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DCD1843418300F292E6 /* HLLTestViewController.m */; };
+		B2A50DD01843418300F292E6 /* HLLTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */; };
+		B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */; };
+		B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
 		B2ADC1F917F18B950055F275 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = B2ADC1F817F18B950055F275 /* Resource */; };
 		B2B4E5DD17FE712A00636E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */; };
@@ -311,11 +343,50 @@
 		B243926517EFFF8E002FD388 /* HLLMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLMainMenuViewController.m; sourceTree = "<group>"; };
 		B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLMainMenuViewController.xib; sourceTree = "<group>"; };
 		B243927117F01E6B002FD388 /* HLLProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductListViewController.h; sourceTree = "<group>"; };
-		B243927217F01E6B002FD388 /* HLLProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductListViewController.m; sourceTree = "<group>"; };
+		B243927217F01E6B002FD388 /* HLLProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HLLProductListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B243927717F02FE2002FD388 /* HLLProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductDetailViewController.h; sourceTree = "<group>"; };
 		B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductDetailViewController.m; sourceTree = "<group>"; };
+		B246630E183CA81F00B070E6 /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
+		B246630F183CA81F00B070E6 /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
+		B2466316183DDCAA00B070E6 /* HLLProductBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductBuyViewController.h; sourceTree = "<group>"; };
+		B2466317183DDCAA00B070E6 /* HLLProductBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductBuyViewController.m; sourceTree = "<group>"; };
+		B2466318183DDCAA00B070E6 /* HLLProductBuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductBuyViewController.xib; sourceTree = "<group>"; };
+		B2466320183DE1DB00B070E6 /* HLLTOPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTOPriceViewController.h; sourceTree = "<group>"; };
+		B2466321183DE1DB00B070E6 /* HLLTOPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTOPriceViewController.m; sourceTree = "<group>"; };
+		B2466322183DE1DB00B070E6 /* HLLTOPriceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTOPriceViewController.xib; sourceTree = "<group>"; };
+		B2466325183DE1E900B070E6 /* HLLCSPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSPriceViewController.h; sourceTree = "<group>"; };
+		B2466326183DE1E900B070E6 /* HLLCSPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSPriceViewController.m; sourceTree = "<group>"; };
+		B2466327183DE1E900B070E6 /* HLLCSPriceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSPriceViewController.xib; sourceTree = "<group>"; };
+		B246632A183DEAA300B070E6 /* JSONValueTransformer+NSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+NSDate.h"; sourceTree = "<group>"; };
+		B246632B183DEAA300B070E6 /* JSONValueTransformer+NSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+NSDate.m"; sourceTree = "<group>"; };
+		B246632D183DFFFF00B070E6 /* HLLTOBrandProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTOBrandProductViewController.h; sourceTree = "<group>"; };
+		B246632E183DFFFF00B070E6 /* HLLTOBrandProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HLLTOBrandProductViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B246632F183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTOBrandProductViewController.xib; sourceTree = "<group>"; };
+		B2466332183E001D00B070E6 /* HLLProductCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductCommentViewController.h; sourceTree = "<group>"; };
+		B2466333183E001D00B070E6 /* HLLProductCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductCommentViewController.m; sourceTree = "<group>"; };
+		B2466334183E001D00B070E6 /* HLLProductCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductCommentViewController.xib; sourceTree = "<group>"; };
+		B2466337183E0F3200B070E6 /* HLLCSBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSBrandViewController.h; sourceTree = "<group>"; };
+		B2466338183E0F3200B070E6 /* HLLCSBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSBrandViewController.m; sourceTree = "<group>"; };
+		B2466339183E0F3200B070E6 /* HLLCSBrandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSBrandViewController.xib; sourceTree = "<group>"; };
+		B246633C183E0F5800B070E6 /* HLLCSUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSUserViewController.h; sourceTree = "<group>"; };
+		B246633D183E0F5800B070E6 /* HLLCSUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSUserViewController.m; sourceTree = "<group>"; };
+		B246633E183E0F5800B070E6 /* HLLCSUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSUserViewController.xib; sourceTree = "<group>"; };
+		B2466341183E0F7E00B070E6 /* HLLCSInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSInformationViewController.h; sourceTree = "<group>"; };
+		B2466342183E0F7E00B070E6 /* HLLCSInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSInformationViewController.m; sourceTree = "<group>"; };
+		B2466343183E0F7E00B070E6 /* HLLCSInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSInformationViewController.xib; sourceTree = "<group>"; };
 		B2480ECB17F3DCD0005DE75D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B255814F17F7F6F700E679FE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B26AD481183C645600BAD8F6 /* HLLTOTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTOTitleViewController.h; sourceTree = "<group>"; };
+		B26AD482183C645600BAD8F6 /* HLLTOTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTOTitleViewController.m; sourceTree = "<group>"; };
+		B26AD483183C645600BAD8F6 /* HLLTOTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTOTitleViewController.xib; sourceTree = "<group>"; };
+		B26AD48A183C69F600BAD8F6 /* HLLCSTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSTitleViewController.h; sourceTree = "<group>"; };
+		B26AD48B183C69F600BAD8F6 /* HLLCSTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSTitleViewController.m; sourceTree = "<group>"; };
+		B26AD48C183C69F600BAD8F6 /* HLLCSTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSTitleViewController.xib; sourceTree = "<group>"; };
+		B26AD48F183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+HLLProductType.h"; sourceTree = "<group>"; };
+		B26AD490183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+HLLProductType.m"; sourceTree = "<group>"; };
+		B26AD494183C8A0600BAD8F6 /* HLLProductImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductImageViewController.h; sourceTree = "<group>"; };
+		B26AD495183C8A0600BAD8F6 /* HLLProductImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductImageViewController.m; sourceTree = "<group>"; };
+		B26AD496183C8A0600BAD8F6 /* HLLProductImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductImageViewController.xib; sourceTree = "<group>"; };
 		B27B854A180E6C15004D0DC9 /* HLLTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTracker.h; sourceTree = "<group>"; };
 		B27B854B180E6C15004D0DC9 /* HLLTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTracker.m; sourceTree = "<group>"; };
 		B2858B92180D117200F8E105 /* HLLLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLoginButton.h; sourceTree = "<group>"; };
@@ -336,6 +407,18 @@
 		B29AB59617FFFD25007D884E /* HLLUserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserLoginViewController.h; sourceTree = "<group>"; };
 		B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserLoginViewController.m; sourceTree = "<group>"; };
 		B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserLoginViewController.xib; sourceTree = "<group>"; };
+		B2A50DBC18431CAE00F292E6 /* HLLCurrencyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCurrencyView.h; sourceTree = "<group>"; };
+		B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyView.m; sourceTree = "<group>"; };
+		B2A50DBF18433F2400F292E6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TAG/ViewController.h; sourceTree = "<group>"; };
+		B2A50DC018433F2400F292E6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = TAG/ViewController.m; sourceTree = "<group>"; };
+		B2A50DC118433F2400F292E6 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = TAG/ViewController.xib; sourceTree = "<group>"; };
+		B2A50DCC1843418300F292E6 /* HLLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTestViewController.h; sourceTree = "<group>"; };
+		B2A50DCD1843418300F292E6 /* HLLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTestViewController.m; sourceTree = "<group>"; };
+		B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTestViewController.xib; sourceTree = "<group>"; };
+		B2A50DD1184429A700F292E6 /* HLLCurrencyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCurrencyModel.h; sourceTree = "<group>"; };
+		B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyModel.m; sourceTree = "<group>"; };
+		B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDropDownQuickView.h; sourceTree = "<group>"; };
+		B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDropDownQuickView.m; sourceTree = "<group>"; };
 		B2ADC1F117F188880055F275 /* HLLProductUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductUnitView.h; sourceTree = "<group>"; };
 		B2ADC1F217F188880055F275 /* HLLProductUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductUnitView.m; sourceTree = "<group>"; };
 		B2ADC1F817F18B950055F275 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = TAG/Resource; sourceTree = "<group>"; };
@@ -711,6 +794,7 @@
 		B230C0231814FC89007A3F5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B26AD492183C7E1F00BAD8F6 /* JSONValueTransformer */,
 				B22640F1181681DB00F2A4A5 /* HLLModel.h */,
 				B2D0DC1F181A708100F171A7 /* Feedback */,
 				B2F7998E182A214D0010EA65 /* Common */,
@@ -882,6 +966,100 @@
 			name = Product;
 			sourceTree = "<group>";
 		};
+		B246630C183CA7B300B070E6 /* NSString+Time */ = {
+			isa = PBXGroup;
+			children = (
+				B246630E183CA81F00B070E6 /* NSString+Time.h */,
+				B246630F183CA81F00B070E6 /* NSString+Time.m */,
+			);
+			name = "NSString+Time";
+			path = TAG;
+			sourceTree = "<group>";
+		};
+		B26AD486183C654F00BAD8F6 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				B26AD493183C816B00BAD8F6 /* All */,
+				B26AD488183C691600BAD8F6 /* TO */,
+				B26AD489183C692100BAD8F6 /* CS */,
+			);
+			name = SubView;
+			sourceTree = "<group>";
+		};
+		B26AD487183C657E00BAD8F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2A50DBB18431C5D00F292E6 /* CurrencyView */,
+				B2A50DBA18431C5100F292E6 /* VideoView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B26AD488183C691600BAD8F6 /* TO */ = {
+			isa = PBXGroup;
+			children = (
+				B26AD481183C645600BAD8F6 /* HLLTOTitleViewController.h */,
+				B26AD482183C645600BAD8F6 /* HLLTOTitleViewController.m */,
+				B26AD483183C645600BAD8F6 /* HLLTOTitleViewController.xib */,
+				B2466320183DE1DB00B070E6 /* HLLTOPriceViewController.h */,
+				B2466321183DE1DB00B070E6 /* HLLTOPriceViewController.m */,
+				B2466322183DE1DB00B070E6 /* HLLTOPriceViewController.xib */,
+				B246632D183DFFFF00B070E6 /* HLLTOBrandProductViewController.h */,
+				B246632E183DFFFF00B070E6 /* HLLTOBrandProductViewController.m */,
+				B246632F183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib */,
+			);
+			name = TO;
+			sourceTree = "<group>";
+		};
+		B26AD489183C692100BAD8F6 /* CS */ = {
+			isa = PBXGroup;
+			children = (
+				B26AD48A183C69F600BAD8F6 /* HLLCSTitleViewController.h */,
+				B26AD48B183C69F600BAD8F6 /* HLLCSTitleViewController.m */,
+				B26AD48C183C69F600BAD8F6 /* HLLCSTitleViewController.xib */,
+				B2466325183DE1E900B070E6 /* HLLCSPriceViewController.h */,
+				B2466326183DE1E900B070E6 /* HLLCSPriceViewController.m */,
+				B2466327183DE1E900B070E6 /* HLLCSPriceViewController.xib */,
+				B2466337183E0F3200B070E6 /* HLLCSBrandViewController.h */,
+				B2466338183E0F3200B070E6 /* HLLCSBrandViewController.m */,
+				B2466339183E0F3200B070E6 /* HLLCSBrandViewController.xib */,
+				B246633C183E0F5800B070E6 /* HLLCSUserViewController.h */,
+				B246633D183E0F5800B070E6 /* HLLCSUserViewController.m */,
+				B246633E183E0F5800B070E6 /* HLLCSUserViewController.xib */,
+				B2466341183E0F7E00B070E6 /* HLLCSInformationViewController.h */,
+				B2466342183E0F7E00B070E6 /* HLLCSInformationViewController.m */,
+				B2466343183E0F7E00B070E6 /* HLLCSInformationViewController.xib */,
+			);
+			name = CS;
+			sourceTree = "<group>";
+		};
+		B26AD492183C7E1F00BAD8F6 /* JSONValueTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				B26AD48F183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.h */,
+				B26AD490183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m */,
+				B246632A183DEAA300B070E6 /* JSONValueTransformer+NSDate.h */,
+				B246632B183DEAA300B070E6 /* JSONValueTransformer+NSDate.m */,
+			);
+			name = JSONValueTransformer;
+			sourceTree = "<group>";
+		};
+		B26AD493183C816B00BAD8F6 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				B26AD494183C8A0600BAD8F6 /* HLLProductImageViewController.h */,
+				B26AD495183C8A0600BAD8F6 /* HLLProductImageViewController.m */,
+				B26AD496183C8A0600BAD8F6 /* HLLProductImageViewController.xib */,
+				B2466316183DDCAA00B070E6 /* HLLProductBuyViewController.h */,
+				B2466317183DDCAA00B070E6 /* HLLProductBuyViewController.m */,
+				B2466318183DDCAA00B070E6 /* HLLProductBuyViewController.xib */,
+				B2466332183E001D00B070E6 /* HLLProductCommentViewController.h */,
+				B2466333183E001D00B070E6 /* HLLProductCommentViewController.m */,
+				B2466334183E001D00B070E6 /* HLLProductCommentViewController.xib */,
+			);
+			name = All;
+			sourceTree = "<group>";
+		};
 		B27B8549180E6BDB004D0DC9 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -910,6 +1088,7 @@
 				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
 				B2D6475A18190228005E353E /* Hud */,
+				B26AD487183C657E00BAD8F6 /* View */,
 				B242504A1839AA79005187F8 /* ViewController */,
 			);
 			name = Component;
@@ -938,6 +1117,33 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		B2A50DBA18431C5100F292E6 /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				B21C3E6C17F5240D0034DCEF /* HLLVideoView.h */,
+				B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */,
+			);
+			name = VideoView;
+			sourceTree = "<group>";
+		};
+		B2A50DBB18431C5D00F292E6 /* CurrencyView */ = {
+			isa = PBXGroup;
+			children = (
+				B2A50DBC18431CAE00F292E6 /* HLLCurrencyView.h */,
+				B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */,
+			);
+			name = CurrencyView;
+			sourceTree = "<group>";
+		};
+		B2A50EEE18444F4000F292E6 /* HLLDropDownQuickView */ = {
+			isa = PBXGroup;
+			children = (
+				B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */,
+				B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */,
+			);
+			path = HLLDropDownQuickView;
+			sourceTree = "<group>";
+		};
 		B2ADC1EF17F187D10055F275 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,8 +1165,7 @@
 				B243927717F02FE2002FD388 /* HLLProductDetailViewController.h */,
 				B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */,
 				B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */,
-				B21C3E6C17F5240D0034DCEF /* HLLVideoView.h */,
-				B21C3E6D17F5240D0034DCEF /* HLLVideoView.m */,
+				B26AD486183C654F00BAD8F6 /* SubView */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -972,6 +1177,8 @@
 				B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */,
 				B208015717FE6F710044EA4F /* ShareSDK_v2.5.1 */,
 				B2EBB0F81816227D00805621 /* Crashlytics */,
+				B246630C183CA7B300B070E6 /* NSString+Time */,
+				B2A50EEE18444F4000F292E6 /* HLLDropDownQuickView */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -979,6 +1186,12 @@
 		B2BC0FB217EEECA40071036D = {
 			isa = PBXGroup;
 			children = (
+				B2A50DCC1843418300F292E6 /* HLLTestViewController.h */,
+				B2A50DCD1843418300F292E6 /* HLLTestViewController.m */,
+				B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */,
+				B2A50DBF18433F2400F292E6 /* ViewController.h */,
+				B2A50DC018433F2400F292E6 /* ViewController.m */,
+				B2A50DC118433F2400F292E6 /* ViewController.xib */,
 				B2ADC1F817F18B950055F275 /* Resource */,
 				B2ADC1F717F18A3A0055F275 /* Library */,
 				B2BC0FC417EEECA40071036D /* TAG */,
@@ -1149,6 +1362,8 @@
 		B2F7998E182A214D0010EA65 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B2A50DD1184429A700F292E6 /* HLLCurrencyModel.h */,
+				B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */,
 				B2F7998B182A21440010EA65 /* HLLLinkModel.h */,
 				B2F7998C182A21440010EA65 /* HLLLinkModel.m */,
 			);
@@ -1278,11 +1493,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2ADC1F917F18B950055F275 /* Resource in Resources */,
+				B2A50DD01843418300F292E6 /* HLLTestViewController.xib in Resources */,
 				B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */,
+				B2466331183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib in Resources */,
 				B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */,
 				B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */,
+				B26AD48E183C69F600BAD8F6 /* HLLCSTitleViewController.xib in Resources */,
 				B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */,
 				B23D00C41807BEC5000259B4 /* HLLUserFriendViewController.xib in Resources */,
+				B26AD498183C8A0600BAD8F6 /* HLLProductImageViewController.xib in Resources */,
 				B292A73E180677F5004225B5 /* HLLViewDeckViewController.xib in Resources */,
 				B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */,
 				B2BC0FDA17EEECA40071036D /* Images.xcassets in Resources */,
@@ -1294,18 +1513,27 @@
 				B20801D417FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */,
 				B20801CD17FE6F710044EA4F /* ShareSDKiPadDefaultShareViewUI.bundle in Resources */,
 				B20801CF17FE6F710044EA4F /* ShareSDKiPadSimpleShareViewUI.bundle in Resources */,
+				B2A50DC318433F2400F292E6 /* ViewController.xib in Resources */,
 				B20801A717FE6F710044EA4F /* InstapaperResource.bundle in Resources */,
 				B20801BD17FE6F710044EA4F /* Resource.bundle in Resources */,
+				B246631A183DDCAA00B070E6 /* HLLProductBuyViewController.xib in Resources */,
 				B20801BC17FE6F710044EA4F /* ShareSDKLocalizable.strings in Resources */,
+				B246633B183E0F3200B070E6 /* HLLCSBrandViewController.xib in Resources */,
 				B20801CA17FE6F710044EA4F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				B20801C017FE6F710044EA4F /* GooglePlus.bundle in Resources */,
 				B20801C617FE6F710044EA4F /* RennSDK.bundle in Resources */,
 				B22640F01816635E00F2A4A5 /* HLLUserRegisterViewController.xib in Resources */,
+				B2466336183E001D00B070E6 /* HLLProductCommentViewController.xib in Resources */,
 				B23E048A1835C03700358447 /* CSCreateNewCSViewController.xib in Resources */,
 				B292A7391806480E004225B5 /* HLLProductFilterViewController.xib in Resources */,
+				B2466329183DE1E900B070E6 /* HLLCSPriceViewController.xib in Resources */,
 				B2C105B61808F49C00238046 /* HLLNavigationController.xib in Resources */,
+				B2466340183E0F5800B070E6 /* HLLCSUserViewController.xib in Resources */,
+				B2466345183E0F7E00B070E6 /* HLLCSInformationViewController.xib in Resources */,
+				B26AD485183C645600BAD8F6 /* HLLTOTitleViewController.xib in Resources */,
 				B20801C517FE6F710044EA4F /* PinterestSDKResources.bundle in Resources */,
 				B20801C317FE6F710044EA4F /* WeiboSDK.bundle in Resources */,
+				B2466324183DE1DB00B070E6 /* HLLTOPriceViewController.xib in Resources */,
 				B23E048C1835C03700358447 /* CSUserFavoritesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1414,21 +1642,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B246633F183E0F5800B070E6 /* HLLCSUserViewController.m in Sources */,
 				B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */,
 				B23E04891835C03700358447 /* CSCreateNewCSViewController.m in Sources */,
 				B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */,
+				B246633A183E0F3200B070E6 /* HLLCSBrandViewController.m in Sources */,
+				B2466328183DE1E900B070E6 /* HLLCSPriceViewController.m in Sources */,
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
+				B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */,
+				B246632C183DEAA300B070E6 /* JSONValueTransformer+NSDate.m in Sources */,
 				B226A79F181FB882004E7FB5 /* HLLBrandModel.m in Sources */,
 				B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */,
 				B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */,
 				B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */,
+				B26AD497183C8A0600BAD8F6 /* HLLProductImageViewController.m in Sources */,
 				B292A7381806480E004225B5 /* HLLProductFilterViewController.m in Sources */,
 				B2353ABC1833762100E8AED0 /* HLLCollectGroupListModel.m in Sources */,
+				B2A50DCF1843418300F292E6 /* HLLTestViewController.m in Sources */,
+				B26AD48D183C69F600BAD8F6 /* HLLCSTitleViewController.m in Sources */,
+				B2466319183DDCAA00B070E6 /* HLLProductBuyViewController.m in Sources */,
+				B2466323183DE1DB00B070E6 /* HLLTOPriceViewController.m in Sources */,
 				B2BC0FCB17EEECA40071036D /* main.m in Sources */,
+				B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */,
 				B2BC0FCF17EEECA40071036D /* HLLAppDelegate.m in Sources */,
 				B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
+				B2A50DC218433F2400F292E6 /* ViewController.m in Sources */,
+				B2A50DBE18431CAE00F292E6 /* HLLCurrencyView.m in Sources */,
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
 				B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */,
 				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
@@ -1440,6 +1681,8 @@
 				B292A73D180677F5004225B5 /* HLLViewDeckViewController.m in Sources */,
 				B230C02A181514C4007A3F5D /* HLLThirdAuthorizationModel.m in Sources */,
 				B2353AC218347C1700E8AED0 /* HLLFowllowingBrandListModel.m in Sources */,
+				B26AD484183C645600BAD8F6 /* HLLTOTitleViewController.m in Sources */,
+				B2466330183DFFFF00B070E6 /* HLLTOBrandProductViewController.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
 				B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */,
@@ -1448,14 +1691,18 @@
 				B23D00C31807BEC5000259B4 /* HLLUserFriendViewController.m in Sources */,
 				B2353AB01833660B00E8AED0 /* HLLCommentModel.m in Sources */,
 				B243927A17F02FE2002FD388 /* HLLProductDetailViewController.m in Sources */,
+				B2466335183E001D00B070E6 /* HLLProductCommentViewController.m in Sources */,
 				B2E4FA2F18276A4A0055E2AB /* HLLDataProvider.m in Sources */,
 				B2E4FA36182882C60055E2AB /* HLLDataJson+Data.m in Sources */,
+				B2466344183E0F7E00B070E6 /* HLLCSInformationViewController.m in Sources */,
 				B2353AB9183375D000E8AED0 /* HLLCollectGroupModel.m in Sources */,
 				B29AB58017FE924B007D884E /* HLLTAGLoginViewController.m in Sources */,
+				B26AD491183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m in Sources */,
 				B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
 				B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */,
 				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
+				B2466310183CA81F00B070E6 /* NSString+Time.m in Sources */,
 				B226A79B181FB7E9004E7FB5 /* HLLProductModel.m in Sources */,
 				B226A7A2181FBE09004E7FB5 /* HLLProductListModel.m in Sources */,
 				B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */,

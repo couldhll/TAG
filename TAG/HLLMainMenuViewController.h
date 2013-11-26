@@ -14,6 +14,7 @@
 @interface HLLMainMenuViewController : HLLViewController
 
 @property (strong, nonatomic) IBOutlet HLLButton  *productListButton;
+@property (strong, nonatomic) IBOutlet HLLButton  *brandButton;
 @property (strong, nonatomic) IBOutlet HLLButton  *favoriteButton;
 @property (strong, nonatomic) IBOutlet HLLButton  *friendButton;
 @property (strong, nonatomic) IBOutlet HLLButton  *followButton;

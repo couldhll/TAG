@@ -12,6 +12,7 @@
 #import "HLLSuccessModel.h"
 #import "HLLErrorModel.h"
 
+#import "HLLCurrencyModel.h"
 #import "HLLLinkModel.h"
 
 #import "HLLUserModel.h"

@@ -13,4 +13,6 @@
 @property (strong, nonatomic, readonly) NSString *className;
 @property (strong, nonatomic) NSString *trackingName;
 
+- (void)back;
+
 @end

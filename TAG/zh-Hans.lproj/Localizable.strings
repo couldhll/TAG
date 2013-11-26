@@ -20,3 +20,12 @@
 "Hud_Success_UserAuthorize_RegisterCompleted"="注册完成";
 "Hud_Success_UserAuthorize_LoginCompleted"="登录完成";
 "Hud_Success_UserAuthorize_LogoutCompleted"="注销完成";
+
+"Time_Format_Now"="刚刚";
+"Time_Format_Minute"="%d分钟前";
+"Time_Format_Hour"="%d小时前";
+"Time_Format_Day"="%d天前";
+"Time_Format_Month"="%d月前";
+"Time_Format_Year"="%d年前";
+
+"Product_Overdue"="已过期";

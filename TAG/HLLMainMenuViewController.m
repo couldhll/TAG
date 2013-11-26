@@ -42,6 +42,7 @@
     
     // init button name
     self.productListButton.name=@"productListButton";
+    self.brandButton.name=@"brandButton";
     self.favoriteButton.name=@"favoriteButton";
     self.friendButton.name=@"friendButton";
     self.followButton.name=@"followButton";
@@ -53,6 +54,7 @@
     // map with button and notification
     buttonNotificationDictionary=[NSMutableDictionary dictionary];
     [buttonNotificationDictionary setValue:@"HLLProductListViewController" forKey:@"productListButton"];
+    [buttonNotificationDictionary setValue:nil forKey:@"brandButton"];
     [buttonNotificationDictionary setValue:@"CSUserFavoritesViewController" forKey:@"favoriteButton"];
     [buttonNotificationDictionary setValue:@"HLLUserFriendViewController" forKey:@"friendButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"followButton"];

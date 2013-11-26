@@ -10,7 +10,7 @@
 
 @interface HLLUserLoginViewController : HLLViewController
 
-@property (strong, nonatomic) IBOutlet UIButton  *exitButton;
+@property (strong, nonatomic) IBOutlet UIButton *exitButton;
 
 - (IBAction)exitButtonPressed:(id)sender;
 

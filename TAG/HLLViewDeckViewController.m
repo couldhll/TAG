@@ -8,9 +8,6 @@
 
 #import "HLLViewDeckViewController.h"
 
-#import <ViewDeck/IIViewDeckController.h>
-#import <OHAttributedLabel/OHAttributedLabel.h>
-
 @interface HLLViewDeckViewController () <IIViewDeckControllerDelegate>
 
 @end
@@ -45,7 +42,7 @@
     
     // navigation center title
     NSMutableAttributedString* titleString = [NSMutableAttributedString attributedStringWithString:@"TAG ORIGINALS"];
-    [titleString setFont:[UIFont fontWithName:@"Helvetica" size:18]];
+    [titleString setFont:APPLICATION_FONT];
     [titleString setTextColor:APPLICATION_COLOR_BLUE];
     [titleString setTextBold:YES range:NSMakeRange(0,3)];// "TAG" blod
     OHAttributedLabel *titleLabel=[[OHAttributedLabel alloc] init];

@@ -8,8 +8,6 @@
 
 #import "HLLProductUnitView.h"
 
-#import <SDWebImage/UIImageView+WebCache.h>
-
 @implementation HLLProductUnitView
 
 @synthesize productType;
@@ -44,7 +42,7 @@
     self.productImageView.frame=self.frame;
     [self addSubview:self.productImageView];
     
-    // product image view
+    // type image view
     self.typeImageView = [[UIImageView alloc] init];
     self.typeImageView.frame=self.frame;
     [self addSubview:self.typeImageView];
@@ -59,7 +57,7 @@
 //    [imageView setImage:image];
     
     // use normal UIImageView+WebCache
-    [self.productImageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"Resource/Product/List/loading_picture.png"]];
+    [self.productImageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:APPLICATION_IMAGE_LOADING_PRODUCT_UIIMAGE];
 }
 
 #pragma mark - Property

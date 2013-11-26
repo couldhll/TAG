@@ -3,7 +3,7 @@ PODS:
   - CocoaSecurity (1.2.2)
   - GMGridView (1.1.1)
   - HLLFont (0.1)
-  - JSONModel (0.9.3)
+  - JSONModel (0.10.0)
   - KeychainItemWrapper (1.2)
   - MBProgressHUD (0.8)
   - OHAttributedLabel (3.5.3)
@@ -13,29 +13,29 @@ PODS:
   - SDWebImage/Core (3.5)
   - SVPullToRefresh (0.4.1)
   - TestFlightSDK (2.1.1-beta)
-  - ViewDeck (2.2.11)
+  - ViewDeck (2.3.1)
 
 DEPENDENCIES:
   - Analytics (~> 0.7.5)
   - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
   - HLLFont (~> 0.1)
-  - JSONModel (~> 0.9.3)
+  - JSONModel (~> 0.10.0)
   - KeychainItemWrapper (~> 1.2)
   - MBProgressHUD (~> 0.8)
-  - OHAttributedLabel (~> 3.5.2)
+  - OHAttributedLabel (~> 3.5.3)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.4)
   - SVPullToRefresh (~> 0.4.1)
   - TestFlightSDK (~> 2.1.1-beta)
-  - ViewDeck (= 2.2.11)
+  - ViewDeck (~> 2.3.1)
 
 SPEC CHECKSUMS:
   Analytics: fd8e51bc2d9b9ad02066a9acd0f823309ee92912
   CocoaSecurity: f53058286161eca4483a8e7370d7c99e85e4a592
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
   HLLFont: b74c37c01c7957df048a0b875dfc292265f5a973
-  JSONModel: e7c302d0262ecf14342e633135d98d528bf444a8
+  JSONModel: cecca3c3a9ee1a248b56f7139e2d64b85ce536ec
   KeychainItemWrapper: b532e85de8792ea70dad237e7ead90993af763cf
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
@@ -43,6 +43,6 @@ SPEC CHECKSUMS:
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
-  ViewDeck: b5eddc8559b0e47259ab7addbf2de6768061f139
+  ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
 
 COCOAPODS: 0.26.2

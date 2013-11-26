@@ -44,7 +44,7 @@
                                                object: nil];
 }
 
-#pragma mark - property
+#pragma mark - Property
 
 - (void)setLogined:(BOOL)isLogined
 {
@@ -60,7 +60,7 @@
     }
 }
 
-#pragma mark - login state
+#pragma mark - Login state
 
 - (void)changeLoginState:(NSNotification *)notification
 {

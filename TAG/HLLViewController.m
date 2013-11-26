@@ -93,4 +93,11 @@
     [HLLTracker eventWithCategory:HLLTrackCategoryTypeView action:HLLTrackActionTypeViewDisappear object:self.trackingName value:HLLTrackValueTypeNone];
 }
 
+#pragma mark - Public Methods
+
+- (void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

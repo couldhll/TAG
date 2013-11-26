@@ -10,12 +10,12 @@
 
 @interface HLLUserRegisterViewController : HLLViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) IBOutlet UITextField  *userEmailTextField;
-@property (strong, nonatomic) IBOutlet UITextField  *userNameTextField;
-@property (strong, nonatomic) IBOutlet UITextField  *userPasswordTextField;
-@property (strong, nonatomic) IBOutlet UITextField  *userPasswordVerifyTextField;
+@property (strong, nonatomic) IBOutlet UITextField *userEmailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *userPasswordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *userPasswordVerifyTextField;
 
-@property (strong, nonatomic) IBOutlet UIButton  *exitButton;
+@property (strong, nonatomic) IBOutlet UIButton *exitButton;
 
 - (IBAction)backButtonPressed:(id)sender;
 - (IBAction)exitButtonPressed:(id)sender;

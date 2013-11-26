@@ -10,6 +10,7 @@
 
 @interface HLLProductDetailViewController : HLLViewDeckViewController
 
-- (IBAction)saveButtonPressed:(id)sender;
+@property (assign, nonatomic) int productId;
+@property (assign, nonatomic) HLLProductType productType;
 
 @end

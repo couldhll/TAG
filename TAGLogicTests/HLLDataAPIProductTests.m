@@ -58,7 +58,7 @@
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
     [HLLDataJson productGetInfo:nil
-                      productId:@"1"
+                      productId:@"87"
                      completion:nil
                         success:^(id json, JSONModelError *err) {
                             HLLProductModel *productModel = [[HLLProductModel alloc] initWithDictionary:json error:nil];

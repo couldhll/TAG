@@ -431,18 +431,43 @@ Examples
 </tr>
 </table>
 
+#### Using the built-in thin HTTP client
 
+```ruby
 
-* JSON HTTP client - a thin HTTP client for simple async JSON requests
+//add extra headers
+[[JSONHTTPClient requestHeaders] setValue:@"MySecret" forKey:@"AuthorizationToken"];
+
+//make post, get requests
+[JSONHTTPClient postJSONFromURLWithString:@"http://mydomain.com/api"
+                                   params:@{@"postParam1":@"value1"}
+                               completion:^(id json, JSONModelError *err) {
+                                   
+                                   //check err, process json ...
+                                   
+                               }];
+```
+
+#### Export model to NSDictionary or to JSON text
+
+```ruby
+
+ProductModel* pm = [[ProductModel alloc] initWithString:jsonString error:nil];
+pm.name = @"Changed Name";
+
+//convert to dictionary
+NSDictionary* dict = [pm toDictionary];
+
+//convert to text
+NSString* string = [pm toJSONString];
+
+```
+
 * json validation
 * data transformations
 * error handling
 * custom data validation
-* synchronious and asynchronious networking
-* JSON API client
-* JSON RPC 1.0 client
 * automatic compare and equality features
-* export models back to NSDictionary or JSON text
 * and more.
 
 -------
@@ -465,3 +490,6 @@ This code is distributed under the terms and conditions of the MIT license.
 #### Contribution guidelines
 
 **NB!** If you are fixing a bug you discovered, please add also a unit test so I know how exactly to reproduce the bug before merging.
+
+-------
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/icanzilb/jsonmodel/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
