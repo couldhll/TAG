@@ -164,6 +164,7 @@
 		B2A50DD01843418300F292E6 /* HLLTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */; };
 		B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */; };
 		B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */; };
+		B2A50EF4184582CF00F292E6 /* HLLFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
 		B2ADC1F917F18B950055F275 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = B2ADC1F817F18B950055F275 /* Resource */; };
 		B2B4E5DD17FE712A00636E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */; };
@@ -419,6 +420,8 @@
 		B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyModel.m; sourceTree = "<group>"; };
 		B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDropDownQuickView.h; sourceTree = "<group>"; };
 		B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDropDownQuickView.m; sourceTree = "<group>"; };
+		B2A50EF2184582CF00F292E6 /* HLLFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFollowButton.h; sourceTree = "<group>"; };
+		B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFollowButton.m; sourceTree = "<group>"; };
 		B2ADC1F117F188880055F275 /* HLLProductUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductUnitView.h; sourceTree = "<group>"; };
 		B2ADC1F217F188880055F275 /* HLLProductUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductUnitView.m; sourceTree = "<group>"; };
 		B2ADC1F817F18B950055F275 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = TAG/Resource; sourceTree = "<group>"; };
@@ -917,9 +920,6 @@
 			children = (
 				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
 				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
-				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
-				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
-				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -927,6 +927,7 @@
 		B242504E1839DA96005187F8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B2A50EF51845857900F292E6 /* Common */,
 				B292A73F18067901004225B5 /* Component */,
 				B243927017F00D57002FD388 /* Frame */,
 				B29AB58217FE9252007D884E /* User */,
@@ -1075,8 +1076,6 @@
 				B243926417EFFF8E002FD388 /* HLLMainMenuViewController.h */,
 				B243926517EFFF8E002FD388 /* HLLMainMenuViewController.m */,
 				B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */,
-				B2858B92180D117200F8E105 /* HLLLoginButton.h */,
-				B2858B93180D117200F8E105 /* HLLLoginButton.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -1088,7 +1087,6 @@
 				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
 				B2D6475A18190228005E353E /* Hud */,
-				B26AD487183C657E00BAD8F6 /* View */,
 				B242504A1839AA79005187F8 /* ViewController */,
 			);
 			name = Component;
@@ -1142,6 +1140,37 @@
 				B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */,
 			);
 			path = HLLDropDownQuickView;
+			sourceTree = "<group>";
+		};
+		B2A50EF51845857900F292E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B2A50EF61845858100F292E6 /* Button */,
+				B26AD487183C657E00BAD8F6 /* View */,
+				B2A50EF7184585DE00F292E6 /* ViewController */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B2A50EF61845858100F292E6 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B2858B92180D117200F8E105 /* HLLLoginButton.h */,
+				B2858B93180D117200F8E105 /* HLLLoginButton.m */,
+				B2A50EF2184582CF00F292E6 /* HLLFollowButton.h */,
+				B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		B2A50EF7184585DE00F292E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
+				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
+				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		B2ADC1EF17F187D10055F275 /* List */ = {
@@ -1651,6 +1680,7 @@
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
 				B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */,
+				B2A50EF4184582CF00F292E6 /* HLLFollowButton.m in Sources */,
 				B246632C183DEAA300B070E6 /* JSONValueTransformer+NSDate.m in Sources */,
 				B226A79F181FB882004E7FB5 /* HLLBrandModel.m in Sources */,
 				B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */,

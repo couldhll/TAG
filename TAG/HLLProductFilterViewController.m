@@ -150,8 +150,22 @@
     // clear all filter button
     for (HLLButton *button in filterButtonArray)
     {
-        [button setSelected:NO];
+        if (button.selected)
+        {
+            [self filterButtonPressed:button];
+        }
+        
+//        [button setSelected:NO];
     }
+    
+    // delegate
+    if([self.delegate respondsToSelector:@selector(productFilterViewController:filter:keyword:)])
+    {
+        [self.delegate productFilterViewController:self filter:self.filterArray keyword:searchText];
+    }
+    
+    // close right controller
+    [self.viewDeckController closeRightViewAnimated:YES];
 }
 
 - (IBAction)textFieldDoneEditing:(id)sender

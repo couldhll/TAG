@@ -143,7 +143,7 @@
     int day=timeInterval/3600/24;
     
     NSString *dayString=day>0?[NSString stringWithFormat:@"%d",day]:NSLocalizedString(@"Product_Overdue",@"");
-    self.timeLabel.text=[NSString stringWithFormat:@"%d",dayString];
+    self.timeLabel.text=[NSString stringWithFormat:@"%@",dayString];
 }
 
 - (void)updateFavoriteLabel

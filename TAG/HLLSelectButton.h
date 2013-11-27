@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 CouldHll. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 #import "HLLButton.h"
 
 @interface HLLSelectButton : HLLButton

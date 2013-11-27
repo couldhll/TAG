@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="268"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resource/User/Login/Main/logo_icon.png" id="psi-N4-y20">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resource/Product/loading_picture.png" id="psi-N4-y20">
                     <rect key="frame" x="26" y="0.0" width="268" height="268"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -25,6 +25,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Resource/User/Login/Main/logo_icon.png" width="16" height="16"/>
+        <image name="Resource/Product/loading_picture.png" width="16" height="16"/>
     </resources>
 </document>
