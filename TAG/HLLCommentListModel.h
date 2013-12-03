@@ -8,8 +8,6 @@
 
 #import <JSONModel/JSONModel.h>
 
-@protocol HLLCommentModel @end
-
 @interface HLLCommentListModel : JSONModel
 
 @property (strong, nonatomic) NSArray<HLLCommentModel>* comments;

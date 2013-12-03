@@ -11,16 +11,12 @@
 
 #import "HLLAppDelegate.h"
 
-#import "HLLCurrencyView.h"
-#import "HLLVideoView.h"
-
-#import "HLLViewController.h"
-#import "HLLViewDeckViewController.h"
-
 #import "HLLButton.h"
 #import "HLLBorderButton.h"
 #import "HLLSelectButton.h"
 
 #import "HLLHud.h"
+
+#import "HLLSelectTableView.h"
 
 #endif

@@ -15,11 +15,13 @@
 "Hud_Error_UserAuthorize_PasswordNoMatch"="PasswordNoMatch";
 "Hud_Error_UserAuthorize_PasswordNoSame"="PasswordNoSame";
 "Hud_Error_UserAuthorize_ThirdLoginFailed"="ThirdLoginFailed";
+"Hud_Error_UserAuthorize_NeedLogin"="Please login first";
 
 "Hud_Success_Completed"="Completed";
 "Hud_Success_UserAuthorize_RegisterCompleted"="RegisterCompleted";
 "Hud_Success_UserAuthorize_LoginCompleted"="LoginCompleted";
 "Hud_Success_UserAuthorize_LogoutCompleted"="LogoutCompleted";
+"Hud_Success_Product_Comment_AddCompleted"="CommentAddCompleted";
 
 "Time_Format_Now"="now";
 "Time_Format_Minute"="%d minute(s) ago";
@@ -29,4 +31,10 @@
 "Time_Format_Year"="%d year(s) ago";
 
 "Product_Overdue"="Overdue";
+
+"Button_Login_State_Login_Text"="Sign Out";
+"Button_Login_State_Unlogin_Text"="Sign In";
+"Button_Follow_State_Follow_Text"="unFollow";
+"Button_Follow_State_Unfollow_Text"="Follow";
+
 

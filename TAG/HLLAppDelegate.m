@@ -57,6 +57,13 @@
     // init TestFlightSDK
     [TestFlight takeOff:@"ad6de598-32c2-427f-bfad-490befc98e71"];
     
+    // init MZFormSheetController
+    [[MZFormSheetBackgroundWindow appearance] setBackgroundBlurEffect:YES];
+    [[MZFormSheetBackgroundWindow appearance] setBlurRadius:5.0];
+    [[MZFormSheetBackgroundWindow appearance] setBackgroundColor:[UIColor clearColor]];
+    [[MZFormSheetController appearance] setShouldDismissOnBackgroundViewTap:YES];
+    
+    
     // add a custom read-only cache path
     NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
@@ -186,7 +193,7 @@
         //        [self.popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
         //    }
         //    else {
-        [sender presentModalViewController:viewController animated:YES];
+        [sender presentViewController:viewController animated:YES completion:nil];
         //    }
     }
     else

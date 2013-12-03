@@ -34,11 +34,11 @@
     
     if (logined)
     {
-        [self setTitle:@"Sign Out" forState:UIControlStateNormal];
+        [self setTitle:NSLocalizedString(@"Button_Login_State_Login_Text",@"") forState:UIControlStateNormal];
     }
     else
     {
-        [self setTitle:@"Sign In" forState:UIControlStateNormal];
+        [self setTitle:NSLocalizedString(@"Button_Login_State_Unlogin_Text",@"") forState:UIControlStateNormal];
     }
 }
 

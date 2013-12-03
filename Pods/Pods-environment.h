@@ -9,8 +9,8 @@
 // Analytics
 #define COCOAPODS_POD_AVAILABLE_Analytics
 #define COCOAPODS_VERSION_MAJOR_Analytics 0
-#define COCOAPODS_VERSION_MINOR_Analytics 7
-#define COCOAPODS_VERSION_PATCH_Analytics 5
+#define COCOAPODS_VERSION_MINOR_Analytics 8
+#define COCOAPODS_VERSION_PATCH_Analytics 0
 
 // CocoaSecurity
 #define COCOAPODS_POD_AVAILABLE_CocoaSecurity
@@ -72,6 +72,18 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
+// MZAppearance
+#define COCOAPODS_POD_AVAILABLE_MZAppearance
+#define COCOAPODS_VERSION_MAJOR_MZAppearance 1
+#define COCOAPODS_VERSION_MINOR_MZAppearance 1
+#define COCOAPODS_VERSION_PATCH_MZAppearance 1
+
+// MZFormSheetController
+#define COCOAPODS_POD_AVAILABLE_MZFormSheetController
+#define COCOAPODS_VERSION_MAJOR_MZFormSheetController 1
+#define COCOAPODS_VERSION_MINOR_MZFormSheetController 4
+#define COCOAPODS_VERSION_PATCH_MZFormSheetController 0
+
 // OHAttributedLabel
 #define COCOAPODS_POD_AVAILABLE_OHAttributedLabel
 #define COCOAPODS_VERSION_MAJOR_OHAttributedLabel 3
@@ -101,6 +113,12 @@
 #define COCOAPODS_VERSION_MAJOR_SVPullToRefresh 0
 #define COCOAPODS_VERSION_MINOR_SVPullToRefresh 4
 #define COCOAPODS_VERSION_PATCH_SVPullToRefresh 1
+
+// SVWebViewController
+#define COCOAPODS_POD_AVAILABLE_SVWebViewController
+#define COCOAPODS_VERSION_MAJOR_SVWebViewController 1
+#define COCOAPODS_VERSION_MINOR_SVWebViewController 0
+#define COCOAPODS_VERSION_PATCH_SVWebViewController 0
 
 // SevenSwitch
 #define COCOAPODS_POD_AVAILABLE_SevenSwitch

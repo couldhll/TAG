@@ -10,7 +10,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#define kOptionHeight 20
+#define kOptionHeight 37
 #define kOptionSpacing 1
 #define kAnimationDuration 0.2
 

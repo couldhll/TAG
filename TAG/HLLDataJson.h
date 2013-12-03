@@ -129,12 +129,12 @@ typedef void (^JSONErrorBlock)(HLLErrorModel* err);
 + (void)collectAddProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 + (void)collectRemoveProduct:(UIView*)view productId:(NSString*)productId groupId:(NSString*)groupId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
-+ (void)fowllowingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)fowllowingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)fowllowingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)fowllowingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)fowllowingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
-+ (void)fowllowingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
++ (void)followingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 
 + (void)tracking:(UIView*)view ip:(NSString*)ip userId:(NSString*)userId category:(NSString*)category object:(NSString*)object action:(NSString*)action value:(NSString*)value time:(NSString*)time completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock;
 

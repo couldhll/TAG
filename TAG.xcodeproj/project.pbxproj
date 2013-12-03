@@ -115,7 +115,6 @@
 		B23E048A1835C03700358447 /* CSCreateNewCSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23E04851835C03700358447 /* CSCreateNewCSViewController.xib */; };
 		B23E048B1835C03700358447 /* CSUserFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23E04871835C03700358447 /* CSUserFavoritesViewController.m */; };
 		B23E048C1835C03700358447 /* CSUserFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23E04881835C03700358447 /* CSUserFavoritesViewController.xib */; };
-		B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */ = {isa = PBXBuildFile; fileRef = B243925B17EFEC34002FD388 /* RRLocalizableString.m */; };
 		B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243926517EFFF8E002FD388 /* HLLMainMenuViewController.m */; };
 		B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */; };
 		B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B243927217F01E6B002FD388 /* HLLProductListViewController.m */; };
@@ -145,6 +144,17 @@
 		B26AD491183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD490183C7C1400BAD8F6 /* JSONValueTransformer+HLLProductType.m */; };
 		B26AD497183C8A0600BAD8F6 /* HLLProductImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26AD495183C8A0600BAD8F6 /* HLLProductImageViewController.m */; };
 		B26AD498183C8A0600BAD8F6 /* HLLProductImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26AD496183C8A0600BAD8F6 /* HLLProductImageViewController.xib */; };
+		B26F54E8184C57EF00513FCA /* HLLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F54E7184C57EF00513FCA /* HLLCommentCell.m */; };
+		B26F54EA184C586B00513FCA /* HLLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26F54E9184C586B00513FCA /* HLLCommentCell.xib */; };
+		B26F54ED184C5F3D00513FCA /* HLLCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F54EC184C5F3D00513FCA /* HLLCommentView.m */; };
+		B26F54F4184C871F00513FCA /* HLLUserFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F54F2184C871F00513FCA /* HLLUserFollowViewController.m */; };
+		B26F54F5184C871F00513FCA /* HLLUserFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26F54F3184C871F00513FCA /* HLLUserFollowViewController.xib */; };
+		B26F54FE184DA6AC00513FCA /* HLLFavoriteGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F54FC184DA6AC00513FCA /* HLLFavoriteGroupViewController.m */; };
+		B26F54FF184DA6AC00513FCA /* HLLFavoriteGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26F54FD184DA6AC00513FCA /* HLLFavoriteGroupViewController.xib */; };
+		B26F5504184DB8B600513FCA /* HLLProductFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F5502184DB8B600513FCA /* HLLProductFavoriteViewController.m */; };
+		B26F5505184DB8B600513FCA /* HLLProductFavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26F5503184DB8B600513FCA /* HLLProductFavoriteViewController.xib */; };
+		B26F550C184DDA0000513FCA /* HLLSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F550B184DDA0000513FCA /* HLLSelectTableView.m */; };
+		B26F5510184DDAC300513FCA /* HLLSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B26F550F184DDAC300513FCA /* HLLSelectCell.m */; };
 		B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B27B854B180E6C15004D0DC9 /* HLLTracker.m */; };
 		B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B93180D117200F8E105 /* HLLLoginButton.m */; };
 		B2858B97180D166C00F8E105 /* HLLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2858B96180D166C00F8E105 /* HLLButton.m */; };
@@ -158,13 +168,11 @@
 		B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AB59717FFFD25007D884E /* HLLUserLoginViewController.m */; };
 		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
 		B2A50DBE18431CAE00F292E6 /* HLLCurrencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */; };
-		B2A50DC218433F2400F292E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DC018433F2400F292E6 /* ViewController.m */; };
-		B2A50DC318433F2400F292E6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A50DC118433F2400F292E6 /* ViewController.xib */; };
-		B2A50DCF1843418300F292E6 /* HLLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DCD1843418300F292E6 /* HLLTestViewController.m */; };
-		B2A50DD01843418300F292E6 /* HLLTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */; };
 		B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */; };
 		B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */; };
 		B2A50EF4184582CF00F292E6 /* HLLFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */; };
+		B2A50EFD1848567500F292E6 /* HLLLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EFC1848567500F292E6 /* HLLLinkView.m */; };
+		B2A50F001848568B00F292E6 /* HLLLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EFF1848568B00F292E6 /* HLLLinkButton.m */; };
 		B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADC1F217F188880055F275 /* HLLProductUnitView.m */; };
 		B2ADC1F917F18B950055F275 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = B2ADC1F817F18B950055F275 /* Resource */; };
 		B2B4E5DD17FE712A00636E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8C7F817FE507E001C7DCA /* SystemConfiguration.framework */; };
@@ -338,8 +346,6 @@
 		B23E04861835C03700358447 /* CSUserFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUserFavoritesViewController.h; sourceTree = "<group>"; };
 		B23E04871835C03700358447 /* CSUserFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUserFavoritesViewController.m; sourceTree = "<group>"; };
 		B23E04881835C03700358447 /* CSUserFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSUserFavoritesViewController.xib; sourceTree = "<group>"; };
-		B243925A17EFEC34002FD388 /* RRLocalizableString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRLocalizableString.h; sourceTree = "<group>"; };
-		B243925B17EFEC34002FD388 /* RRLocalizableString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRLocalizableString.m; sourceTree = "<group>"; };
 		B243926417EFFF8E002FD388 /* HLLMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLMainMenuViewController.h; sourceTree = "<group>"; };
 		B243926517EFFF8E002FD388 /* HLLMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLMainMenuViewController.m; sourceTree = "<group>"; };
 		B243926617EFFF8E002FD388 /* HLLMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLMainMenuViewController.xib; sourceTree = "<group>"; };
@@ -388,6 +394,24 @@
 		B26AD494183C8A0600BAD8F6 /* HLLProductImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductImageViewController.h; sourceTree = "<group>"; };
 		B26AD495183C8A0600BAD8F6 /* HLLProductImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductImageViewController.m; sourceTree = "<group>"; };
 		B26AD496183C8A0600BAD8F6 /* HLLProductImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductImageViewController.xib; sourceTree = "<group>"; };
+		B26F54E6184C57EF00513FCA /* HLLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCommentCell.h; sourceTree = "<group>"; };
+		B26F54E7184C57EF00513FCA /* HLLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCommentCell.m; sourceTree = "<group>"; };
+		B26F54E9184C586B00513FCA /* HLLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCommentCell.xib; sourceTree = "<group>"; };
+		B26F54EB184C5F3D00513FCA /* HLLCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCommentView.h; sourceTree = "<group>"; };
+		B26F54EC184C5F3D00513FCA /* HLLCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCommentView.m; sourceTree = "<group>"; };
+		B26F54F1184C871F00513FCA /* HLLUserFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLUserFollowViewController.h; sourceTree = "<group>"; };
+		B26F54F2184C871F00513FCA /* HLLUserFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLUserFollowViewController.m; sourceTree = "<group>"; };
+		B26F54F3184C871F00513FCA /* HLLUserFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserFollowViewController.xib; sourceTree = "<group>"; };
+		B26F54FB184DA6AC00513FCA /* HLLFavoriteGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFavoriteGroupViewController.h; sourceTree = "<group>"; };
+		B26F54FC184DA6AC00513FCA /* HLLFavoriteGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFavoriteGroupViewController.m; sourceTree = "<group>"; };
+		B26F54FD184DA6AC00513FCA /* HLLFavoriteGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLFavoriteGroupViewController.xib; sourceTree = "<group>"; };
+		B26F5501184DB8B600513FCA /* HLLProductFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductFavoriteViewController.h; sourceTree = "<group>"; };
+		B26F5502184DB8B600513FCA /* HLLProductFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductFavoriteViewController.m; sourceTree = "<group>"; };
+		B26F5503184DB8B600513FCA /* HLLProductFavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLProductFavoriteViewController.xib; sourceTree = "<group>"; };
+		B26F550A184DDA0000513FCA /* HLLSelectTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSelectTableView.h; sourceTree = "<group>"; };
+		B26F550B184DDA0000513FCA /* HLLSelectTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSelectTableView.m; sourceTree = "<group>"; };
+		B26F550E184DDAC300513FCA /* HLLSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSelectCell.h; sourceTree = "<group>"; };
+		B26F550F184DDAC300513FCA /* HLLSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSelectCell.m; sourceTree = "<group>"; };
 		B27B854A180E6C15004D0DC9 /* HLLTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTracker.h; sourceTree = "<group>"; };
 		B27B854B180E6C15004D0DC9 /* HLLTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTracker.m; sourceTree = "<group>"; };
 		B2858B92180D117200F8E105 /* HLLLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLoginButton.h; sourceTree = "<group>"; };
@@ -410,18 +434,17 @@
 		B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLUserLoginViewController.xib; sourceTree = "<group>"; };
 		B2A50DBC18431CAE00F292E6 /* HLLCurrencyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCurrencyView.h; sourceTree = "<group>"; };
 		B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyView.m; sourceTree = "<group>"; };
-		B2A50DBF18433F2400F292E6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = TAG/ViewController.h; sourceTree = "<group>"; };
-		B2A50DC018433F2400F292E6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = TAG/ViewController.m; sourceTree = "<group>"; };
-		B2A50DC118433F2400F292E6 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = TAG/ViewController.xib; sourceTree = "<group>"; };
-		B2A50DCC1843418300F292E6 /* HLLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTestViewController.h; sourceTree = "<group>"; };
-		B2A50DCD1843418300F292E6 /* HLLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTestViewController.m; sourceTree = "<group>"; };
-		B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTestViewController.xib; sourceTree = "<group>"; };
 		B2A50DD1184429A700F292E6 /* HLLCurrencyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCurrencyModel.h; sourceTree = "<group>"; };
 		B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyModel.m; sourceTree = "<group>"; };
 		B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDropDownQuickView.h; sourceTree = "<group>"; };
 		B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDropDownQuickView.m; sourceTree = "<group>"; };
 		B2A50EF2184582CF00F292E6 /* HLLFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFollowButton.h; sourceTree = "<group>"; };
 		B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFollowButton.m; sourceTree = "<group>"; };
+		B2A50EF81846E6C800F292E6 /* HLLTAGComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLTAGComponent.h; sourceTree = "<group>"; };
+		B2A50EFB1848567500F292E6 /* HLLLinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLinkView.h; sourceTree = "<group>"; };
+		B2A50EFC1848567500F292E6 /* HLLLinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLLinkView.m; sourceTree = "<group>"; };
+		B2A50EFE1848568B00F292E6 /* HLLLinkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLLinkButton.h; sourceTree = "<group>"; };
+		B2A50EFF1848568B00F292E6 /* HLLLinkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLLinkButton.m; sourceTree = "<group>"; };
 		B2ADC1F117F188880055F275 /* HLLProductUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLProductUnitView.h; sourceTree = "<group>"; };
 		B2ADC1F217F188880055F275 /* HLLProductUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLProductUnitView.m; sourceTree = "<group>"; };
 		B2ADC1F817F18B950055F275 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = TAG/Resource; sourceTree = "<group>"; };
@@ -915,20 +938,23 @@
 			name = CreateNewCS;
 			sourceTree = "<group>";
 		};
-		B242504A1839AA79005187F8 /* ViewController */ = {
+		B242504A1839AA79005187F8 /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
 				B2BC0FD617EEECA40071036D /* HLLViewController.h */,
 				B2BC0FD717EEECA40071036D /* HLLViewController.m */,
+				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
+				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
+				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
 			);
-			name = ViewController;
+			name = PageViewController;
 			sourceTree = "<group>";
 		};
 		B242504E1839DA96005187F8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B2A50EF51845857900F292E6 /* Common */,
 				B292A73F18067901004225B5 /* Component */,
+				B2A50EF51845857900F292E6 /* TAGComponent */,
 				B243927017F00D57002FD388 /* Frame */,
 				B29AB58217FE9252007D884E /* User */,
 				B243927617F02D3F002FD388 /* Product */,
@@ -937,23 +963,11 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */ = {
-			isa = PBXGroup;
-			children = (
-				B243925A17EFEC34002FD388 /* RRLocalizableString.h */,
-				B243925B17EFEC34002FD388 /* RRLocalizableString.m */,
-			);
-			name = "RRBaseInternationalization(for support iOS5)";
-			path = RRBaseInternationalization;
-			sourceTree = SOURCE_ROOT;
-		};
 		B243927017F00D57002FD388 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
 				B2858B91180D113D00F8E105 /* Menu */,
-				B2C105B21808F49C00238046 /* HLLNavigationController.h */,
-				B2C105B31808F49C00238046 /* HLLNavigationController.m */,
-				B2C105B41808F49C00238046 /* HLLNavigationController.xib */,
+				B26F54F6184DA56200513FCA /* Navigation */,
 			);
 			name = Frame;
 			sourceTree = "<group>";
@@ -990,6 +1004,8 @@
 		B26AD487183C657E00BAD8F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B26F54EE184C5F5400513FCA /* Comment */,
+				B2A50EFA1848564400F292E6 /* LinkView */,
 				B2A50DBB18431C5D00F292E6 /* CurrencyView */,
 				B2A50DBA18431C5100F292E6 /* VideoView */,
 			);
@@ -1061,6 +1077,70 @@
 			name = All;
 			sourceTree = "<group>";
 		};
+		B26F54EE184C5F5400513FCA /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				B26F54EB184C5F3D00513FCA /* HLLCommentView.h */,
+				B26F54EC184C5F3D00513FCA /* HLLCommentView.m */,
+				B26F54E6184C57EF00513FCA /* HLLCommentCell.h */,
+				B26F54E7184C57EF00513FCA /* HLLCommentCell.m */,
+				B26F54E9184C586B00513FCA /* HLLCommentCell.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		B26F54F0184C86C400513FCA /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				B26F54F1184C871F00513FCA /* HLLUserFollowViewController.h */,
+				B26F54F2184C871F00513FCA /* HLLUserFollowViewController.m */,
+				B26F54F3184C871F00513FCA /* HLLUserFollowViewController.xib */,
+			);
+			name = Follow;
+			sourceTree = "<group>";
+		};
+		B26F54F6184DA56200513FCA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B2C105B21808F49C00238046 /* HLLNavigationController.h */,
+				B2C105B31808F49C00238046 /* HLLNavigationController.m */,
+				B2C105B41808F49C00238046 /* HLLNavigationController.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		B26F54F7184DA60A00513FCA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B242504A1839AA79005187F8 /* PageViewController */,
+				B26F54FB184DA6AC00513FCA /* HLLFavoriteGroupViewController.h */,
+				B26F54FC184DA6AC00513FCA /* HLLFavoriteGroupViewController.m */,
+				B26F54FD184DA6AC00513FCA /* HLLFavoriteGroupViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B26F5500184DB86000513FCA /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				B26F5501184DB8B600513FCA /* HLLProductFavoriteViewController.h */,
+				B26F5502184DB8B600513FCA /* HLLProductFavoriteViewController.m */,
+				B26F5503184DB8B600513FCA /* HLLProductFavoriteViewController.xib */,
+			);
+			name = PopupView;
+			sourceTree = "<group>";
+		};
+		B26F550D184DDA1300513FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B26F550A184DDA0000513FCA /* HLLSelectTableView.h */,
+				B26F550B184DDA0000513FCA /* HLLSelectTableView.m */,
+				B26F550E184DDAC300513FCA /* HLLSelectCell.h */,
+				B26F550F184DDAC300513FCA /* HLLSelectCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		B27B8549180E6BDB004D0DC9 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -1087,7 +1167,7 @@
 				B2111570180FB2D000254DBA /* TextField */,
 				B2C105BE180BEF7600238046 /* Button */,
 				B2D6475A18190228005E353E /* Hud */,
-				B242504A1839AA79005187F8 /* ViewController */,
+				B26F550D184DDA1300513FCA /* View */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -1098,6 +1178,7 @@
 				B23E048D1835C04E00358447 /* Favorites */,
 				B23D00BE1807BE6C000259B4 /* Login */,
 				B22640EB1816631B00F2A4A5 /* Register */,
+				B26F54F0184C86C400513FCA /* Follow */,
 				B23D00BF1807BE77000259B4 /* Friend */,
 			);
 			name = User;
@@ -1142,14 +1223,15 @@
 			path = HLLDropDownQuickView;
 			sourceTree = "<group>";
 		};
-		B2A50EF51845857900F292E6 /* Common */ = {
+		B2A50EF51845857900F292E6 /* TAGComponent */ = {
 			isa = PBXGroup;
 			children = (
+				B2A50EF81846E6C800F292E6 /* HLLTAGComponent.h */,
 				B2A50EF61845858100F292E6 /* Button */,
 				B26AD487183C657E00BAD8F6 /* View */,
-				B2A50EF7184585DE00F292E6 /* ViewController */,
+				B26F54F7184DA60A00513FCA /* ViewController */,
 			);
-			name = Common;
+			name = TAGComponent;
 			sourceTree = "<group>";
 		};
 		B2A50EF61845858100F292E6 /* Button */ = {
@@ -1159,18 +1241,19 @@
 				B2858B93180D117200F8E105 /* HLLLoginButton.m */,
 				B2A50EF2184582CF00F292E6 /* HLLFollowButton.h */,
 				B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */,
+				B2A50EFE1848568B00F292E6 /* HLLLinkButton.h */,
+				B2A50EFF1848568B00F292E6 /* HLLLinkButton.m */,
 			);
 			name = Button;
 			sourceTree = "<group>";
 		};
-		B2A50EF7184585DE00F292E6 /* ViewController */ = {
+		B2A50EFA1848564400F292E6 /* LinkView */ = {
 			isa = PBXGroup;
 			children = (
-				B292A73A180677F5004225B5 /* HLLViewDeckViewController.h */,
-				B292A73B180677F5004225B5 /* HLLViewDeckViewController.m */,
-				B292A73C180677F5004225B5 /* HLLViewDeckViewController.xib */,
+				B2A50EFB1848567500F292E6 /* HLLLinkView.h */,
+				B2A50EFC1848567500F292E6 /* HLLLinkView.m */,
 			);
-			name = ViewController;
+			name = LinkView;
 			sourceTree = "<group>";
 		};
 		B2ADC1EF17F187D10055F275 /* List */ = {
@@ -1194,6 +1277,7 @@
 				B243927717F02FE2002FD388 /* HLLProductDetailViewController.h */,
 				B243927817F02FE2002FD388 /* HLLProductDetailViewController.m */,
 				B23D00B61806AF86000259B4 /* HLLProductDetailViewController.xib */,
+				B26F5500184DB86000513FCA /* PopupView */,
 				B26AD486183C654F00BAD8F6 /* SubView */,
 			);
 			name = Detail;
@@ -1203,7 +1287,6 @@
 			isa = PBXGroup;
 			children = (
 				B2111578180FBC2000254DBA /* HLLMacroDefinition.h */,
-				B243925917EFEC34002FD388 /* RRBaseInternationalization(for support iOS5) */,
 				B208015717FE6F710044EA4F /* ShareSDK_v2.5.1 */,
 				B2EBB0F81816227D00805621 /* Crashlytics */,
 				B246630C183CA7B300B070E6 /* NSString+Time */,
@@ -1215,12 +1298,6 @@
 		B2BC0FB217EEECA40071036D = {
 			isa = PBXGroup;
 			children = (
-				B2A50DCC1843418300F292E6 /* HLLTestViewController.h */,
-				B2A50DCD1843418300F292E6 /* HLLTestViewController.m */,
-				B2A50DCE1843418300F292E6 /* HLLTestViewController.xib */,
-				B2A50DBF18433F2400F292E6 /* ViewController.h */,
-				B2A50DC018433F2400F292E6 /* ViewController.m */,
-				B2A50DC118433F2400F292E6 /* ViewController.xib */,
 				B2ADC1F817F18B950055F275 /* Resource */,
 				B2ADC1F717F18A3A0055F275 /* Library */,
 				B2BC0FC417EEECA40071036D /* TAG */,
@@ -1522,11 +1599,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2ADC1F917F18B950055F275 /* Resource in Resources */,
-				B2A50DD01843418300F292E6 /* HLLTestViewController.xib in Resources */,
 				B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */,
 				B2466331183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib in Resources */,
 				B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */,
 				B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */,
+				B26F54F5184C871F00513FCA /* HLLUserFollowViewController.xib in Resources */,
 				B26AD48E183C69F600BAD8F6 /* HLLCSTitleViewController.xib in Resources */,
 				B23D00BA1806AFF3000259B4 /* HLLTAGLoginViewController.xib in Resources */,
 				B23D00C41807BEC5000259B4 /* HLLUserFriendViewController.xib in Resources */,
@@ -1535,6 +1612,7 @@
 				B23D00B71806AF86000259B4 /* HLLProductDetailViewController.xib in Resources */,
 				B2BC0FDA17EEECA40071036D /* Images.xcassets in Resources */,
 				B2BC0FC917EEECA40071036D /* InfoPlist.strings in Resources */,
+				B26F5505184DB8B600513FCA /* HLLProductFavoriteViewController.xib in Resources */,
 				B22A490E17FC534100DDE92E /* Localizable.strings in Resources */,
 				B20801D217FE6F710044EA4F /* ShareSDKiPhoneDefaultShareViewUI.bundle in Resources */,
 				B2353ACD1835BBCF00E8AED0 /* Main_iPhone.storyboard in Resources */,
@@ -1542,9 +1620,9 @@
 				B20801D417FE6F710044EA4F /* ShareSDKiPhoneSimpleShareViewUI.bundle in Resources */,
 				B20801CD17FE6F710044EA4F /* ShareSDKiPadDefaultShareViewUI.bundle in Resources */,
 				B20801CF17FE6F710044EA4F /* ShareSDKiPadSimpleShareViewUI.bundle in Resources */,
-				B2A50DC318433F2400F292E6 /* ViewController.xib in Resources */,
 				B20801A717FE6F710044EA4F /* InstapaperResource.bundle in Resources */,
 				B20801BD17FE6F710044EA4F /* Resource.bundle in Resources */,
+				B26F54FF184DA6AC00513FCA /* HLLFavoriteGroupViewController.xib in Resources */,
 				B246631A183DDCAA00B070E6 /* HLLProductBuyViewController.xib in Resources */,
 				B20801BC17FE6F710044EA4F /* ShareSDKLocalizable.strings in Resources */,
 				B246633B183E0F3200B070E6 /* HLLCSBrandViewController.xib in Resources */,
@@ -1563,6 +1641,7 @@
 				B20801C517FE6F710044EA4F /* PinterestSDKResources.bundle in Resources */,
 				B20801C317FE6F710044EA4F /* WeiboSDK.bundle in Resources */,
 				B2466324183DE1DB00B070E6 /* HLLTOPriceViewController.xib in Resources */,
+				B26F54EA184C586B00513FCA /* HLLCommentCell.xib in Resources */,
 				B23E048C1835C03700358447 /* CSUserFavoritesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1674,8 +1753,10 @@
 				B246633F183E0F5800B070E6 /* HLLCSUserViewController.m in Sources */,
 				B2C105BD180BEF6300238046 /* HLLSelectButton.m in Sources */,
 				B23E04891835C03700358447 /* CSCreateNewCSViewController.m in Sources */,
+				B26F5510184DDAC300513FCA /* HLLSelectCell.m in Sources */,
 				B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */,
 				B246633A183E0F3200B070E6 /* HLLCSBrandViewController.m in Sources */,
+				B2A50EFD1848567500F292E6 /* HLLLinkView.m in Sources */,
 				B2466328183DE1E900B070E6 /* HLLCSPriceViewController.m in Sources */,
 				B2ADC1F317F188880055F275 /* HLLProductUnitView.m in Sources */,
 				B243926C17EFFF8E002FD388 /* HLLMainMenuViewController.m in Sources */,
@@ -1686,10 +1767,11 @@
 				B2C105BA180BE37D00238046 /* HLLBorderButton.m in Sources */,
 				B27B854C180E6C15004D0DC9 /* HLLTracker.m in Sources */,
 				B243927417F01E6B002FD388 /* HLLProductListViewController.m in Sources */,
+				B26F54FE184DA6AC00513FCA /* HLLFavoriteGroupViewController.m in Sources */,
 				B26AD497183C8A0600BAD8F6 /* HLLProductImageViewController.m in Sources */,
 				B292A7381806480E004225B5 /* HLLProductFilterViewController.m in Sources */,
 				B2353ABC1833762100E8AED0 /* HLLCollectGroupListModel.m in Sources */,
-				B2A50DCF1843418300F292E6 /* HLLTestViewController.m in Sources */,
+				B2A50F001848568B00F292E6 /* HLLLinkButton.m in Sources */,
 				B26AD48D183C69F600BAD8F6 /* HLLCSTitleViewController.m in Sources */,
 				B2466319183DDCAA00B070E6 /* HLLProductBuyViewController.m in Sources */,
 				B2466323183DE1DB00B070E6 /* HLLTOPriceViewController.m in Sources */,
@@ -1698,11 +1780,11 @@
 				B2BC0FCF17EEECA40071036D /* HLLAppDelegate.m in Sources */,
 				B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,
-				B2A50DC218433F2400F292E6 /* ViewController.m in Sources */,
 				B2A50DBE18431CAE00F292E6 /* HLLCurrencyView.m in Sources */,
 				B29AB59917FFFD25007D884E /* HLLUserLoginViewController.m in Sources */,
 				B2353AC518347C3300E8AED0 /* HLLFowllowingUserListModel.m in Sources */,
 				B2D6475E18190258005E353E /* HLLHud.m in Sources */,
+				B26F54E8184C57EF00513FCA /* HLLCommentCell.m in Sources */,
 				B23E048B1835C03700358447 /* CSUserFavoritesViewController.m in Sources */,
 				B23C2BD618222CF20047920D /* HLLUserData.m in Sources */,
 				B2C105B51808F49C00238046 /* HLLNavigationController.m in Sources */,
@@ -1714,7 +1796,9 @@
 				B26AD484183C645600BAD8F6 /* HLLTOTitleViewController.m in Sources */,
 				B2466330183DFFFF00B070E6 /* HLLTOBrandProductViewController.m in Sources */,
 				B2BC0FD817EEECA40071036D /* HLLViewController.m in Sources */,
+				B26F5504184DB8B600513FCA /* HLLProductFavoriteViewController.m in Sources */,
 				B2858B94180D117200F8E105 /* HLLLoginButton.m in Sources */,
+				B26F54ED184C5F3D00513FCA /* HLLCommentView.m in Sources */,
 				B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */,
 				B211156F180FB2CB00254DBA /* HLLTextField.m in Sources */,
 				B230C0261814FD39007A3F5D /* HLLUserModel.m in Sources */,
@@ -1731,10 +1815,11 @@
 				B23C2BD2182220930047920D /* HLLDataVerify.m in Sources */,
 				B2858B97180D166C00F8E105 /* HLLButton.m in Sources */,
 				B2D0DC1D181A6FF500F171A7 /* HLLSuccessModel.m in Sources */,
-				B243925C17EFEC34002FD388 /* RRLocalizableString.m in Sources */,
+				B26F54F4184C871F00513FCA /* HLLUserFollowViewController.m in Sources */,
 				B2466310183CA81F00B070E6 /* NSString+Time.m in Sources */,
 				B226A79B181FB7E9004E7FB5 /* HLLProductModel.m in Sources */,
 				B226A7A2181FBE09004E7FB5 /* HLLProductListModel.m in Sources */,
+				B26F550C184DDA0000513FCA /* HLLSelectTableView.m in Sources */,
 				B2D647591818C15E005E353E /* HLLErrorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1909,7 +1994,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1943,7 +2028,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1981,7 +2066,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "TAG/TAG-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",
@@ -2027,7 +2112,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "TAG/TAG-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/ShareSDK/ShareSDK_v2.5.1/Extend/libWeiboSDK",

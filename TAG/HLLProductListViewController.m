@@ -59,26 +59,18 @@
 {
     [super viewDidLoad];
     
-    // navigation left button background image
-    //    UIImage *leftButtonBackgroundImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
-    //    UIImage *leftbuttonBackground9patchImage = [leftButtonBackgroundImage stretchableImageWithLeftCapWidth:10 topCapHeight:10];
-    // navigation left button
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [leftButton setFrame: CGRectMake(0, 0, 60, 60)];
-    //    [leftButton setBackgroundImage:leftbuttonBackground9patchImage forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_icon.png"] forState:UIControlStateNormal];
-    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_icon.png"] forState:UIControlStateHighlighted];
-    [leftButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
-    [leftButton sizeToFit];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    // navigation center title
+    NSMutableAttributedString* titleString = [NSMutableAttributedString attributedStringWithString:@"TAG ORIGINALS"];
+    [titleString setFont:APPLICATION_FONT];
+    [titleString setTextColor:APPLICATION_COLOR_BLUE];
+    [titleString setTextBold:YES range:NSMakeRange(0,3)];// "TAG" blod
+    OHAttributedLabel *titleLabel=[[OHAttributedLabel alloc] init];
+    titleLabel.attributedText=titleString;
+    [titleLabel sizeToFit];
+    self.navigationItem.titleView=titleLabel;
     
     // navigation right button background image
-    //    UIImage *rightButtonBackgroundImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_bar_button.png"];
-    //    UIImage *rightbuttonBackground9patchImage = [rightButtonBackgroundImage stretchableImageWithLeftCapWidth:10 topCapHeight:10];
-    // navigation right button
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [rightButton setFrame: CGRectMake(0, 0, 60, 60)];
-    //    [rightButton setBackgroundImage:rightbuttonBackground9patchImage forState:UIControlStateNormal];
     [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/filter_icon.png"] forState:UIControlStateNormal];
     [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/filter_icon.png"] forState:UIControlStateHighlighted];
     [rightButton addTarget:self.viewDeckController action:@selector(toggleRightView) forControlEvents:UIControlEventTouchDown];

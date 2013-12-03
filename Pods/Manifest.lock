@@ -1,5 +1,5 @@
 PODS:
-  - Analytics (0.7.5)
+  - Analytics (0.8.0)
   - cdebug (0.1.1)
   - CocoaSecurity (1.2.2)
   - FoundationExtension (0.45):
@@ -18,6 +18,9 @@ PODS:
   - JSONModel (0.10.0)
   - KeychainItemWrapper (1.2)
   - MBProgressHUD (0.8)
+  - MZAppearance (1.1.1)
+  - MZFormSheetController (1.4.0):
+    - MZAppearance (~> 1.1.1)
   - OHAttributedLabel (3.5.3)
   - RegexKitLite (4.0)
   - SDWebImage (3.5):
@@ -25,6 +28,7 @@ PODS:
   - SDWebImage/Core (3.5)
   - SevenSwitch (1.3.0)
   - SVPullToRefresh (0.4.1)
+  - SVWebViewController (HEAD based on 1.0)
   - TestFlightSDK (2.1.1-beta)
   - UI7Kit (0.9.11):
     - UI7Kit/All
@@ -75,12 +79,12 @@ PODS:
   - UI7Kit/UI7BarButtonItem (0.9.11):
     - UI7Kit/Core
     - UI7Kit/UI7Font
+    - UIKitResources/UIButtonBar
   - UI7Kit/UI7Button (0.9.11):
     - UI7Kit/Core
     - UI7Kit/UI7BarButtonItem
     - UI7Kit/UI7Font
     - UI7Kit/UI7View
-    - UIKitResources/UIButtonBar
   - UI7Kit/UI7Color (0.9.11):
     - UIKitResources/UIAccessoryButton
   - UI7Kit/UI7Font (0.9.11):
@@ -162,23 +166,25 @@ PODS:
   - ViewDeck (2.3.1)
 
 DEPENDENCIES:
-  - Analytics (~> 0.7.5)
+  - Analytics (~> 0.8.0)
   - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
   - HLLFont (~> 0.1)
   - JSONModel (~> 0.10.0)
   - KeychainItemWrapper (~> 1.2)
   - MBProgressHUD (~> 0.8)
+  - MZFormSheetController (~> 1.4.0)
   - OHAttributedLabel (~> 3.5.3)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 3.4)
   - SVPullToRefresh (~> 0.4.1)
+  - SVWebViewController (HEAD)
   - TestFlightSDK (~> 2.1.1-beta)
-  - UI7Kit (~> 0.9.9)
+  - UI7Kit (~> 0.9.11)
   - ViewDeck (~> 2.3.1)
 
 SPEC CHECKSUMS:
-  Analytics: fd8e51bc2d9b9ad02066a9acd0f823309ee92912
+  Analytics: 64c4b84c5e119080b3927a7352ba86945a6ecaaa
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
   CocoaSecurity: f53058286161eca4483a8e7370d7c99e85e4a592
   FoundationExtension: 9ea775b06ff4a3914db341cefdcaa8180c6e0366
@@ -188,13 +194,16 @@ SPEC CHECKSUMS:
   JSONModel: cecca3c3a9ee1a248b56f7139e2d64b85ce536ec
   KeychainItemWrapper: b532e85de8792ea70dad237e7ead90993af763cf
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MZAppearance: 8b02683f0019f725557ae9839ed6cab153fff669
+  MZFormSheetController: 6253af6f7c5baede40b8d2b02af5af9fe820fc39
   OHAttributedLabel: 985e4b57eec0dc6add79179ac47ec888b8a914e7
   RegexKitLite: f7af7b4d2b675cd2ec9a4abab6aad6ae1f6499c0
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
+  SVWebViewController: e576371f7015bce92c97c304c32336700064847b
   TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
-  UI7Kit: 73ec855280c328c37c18d55fbcc5a7576d16a7af
+  UI7Kit: 8911c7b993e728f97dfdc2cd0fc908b26fdad239
   UIKitResources: 3f3b1787af49bb881fc5b6dba2d34d2d4682f0e7
   ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
 

@@ -8,14 +8,14 @@
 
 #import <JSONModel/JSONModel.h>
 
-@protocol HLLLinkModel @end
+//@protocol HLLLinkModel @end
 @protocol HLLProductModel @end
 
 @interface HLLBrandModel : JSONModel
 
 @property (assign, nonatomic) int id;
 @property (strong, nonatomic) NSString<Optional>* name;
-@property (assign, nonatomic) BOOL followed;
+@property (strong, nonatomic) NSNumber<Optional>* followed;
 @property (strong, nonatomic) NSString<Optional>* description;
 @property (strong, nonatomic) NSURL<Optional>* thumbnail_image_url;
 @property (strong, nonatomic) NSURL<Optional>* middle_image_url;

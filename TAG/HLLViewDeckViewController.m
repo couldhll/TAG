@@ -40,16 +40,21 @@
     self.viewDeckController.rightSize=48;
     self.viewDeckController.delegate=self;
     
-    // navigation center title
-    NSMutableAttributedString* titleString = [NSMutableAttributedString attributedStringWithString:@"TAG ORIGINALS"];
-    [titleString setFont:APPLICATION_FONT];
-    [titleString setTextColor:APPLICATION_COLOR_BLUE];
-    [titleString setTextBold:YES range:NSMakeRange(0,3)];// "TAG" blod
-    OHAttributedLabel *titleLabel=[[OHAttributedLabel alloc] init];
-    titleLabel.backgroundColor=APPLICATION_COLOR_YELLOW;
-    titleLabel.attributedText=titleString;
-    [titleLabel sizeToFit];
-    self.navigationItem.titleView=titleLabel;
+    // navigation left button
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_icon.png"] forState:UIControlStateNormal];
+    [leftButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_icon.png"] forState:UIControlStateHighlighted];
+    [leftButton addTarget:self.viewDeckController action:@selector(toggleLeftView) forControlEvents:UIControlEventTouchDown];
+    [leftButton sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    
+    // navigation right button
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_product_icon.png"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"Resource/Frame/Navigation/menu_product_icon.png"] forState:UIControlStateHighlighted];
+    [rightButton addTarget:self action:@selector(gotoProductList:) forControlEvents:UIControlEventTouchDown];
+    [rightButton sizeToFit];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     
 //    [self prefersStatusBarHidden];
 //    [self setNeedsStatusBarAppearanceUpdate];
@@ -83,6 +88,13 @@
     [super viewDidDisappear:animated];
 }
 
+#pragma mark - Private Methods
+
+- (void)gotoProductList:(id)sender
+{
+    [AppDelegate openViewController:@"HLLProductListViewController" sender:self];
+}
+
 #pragma mark - view deck
 
 //- (void)viewDeckController:(IIViewDeckController *)viewDeckController applyShadow:(CALayer *)shadowLayer withBounds:(CGRect)rect
@@ -106,6 +118,5 @@
 {
     return NO;
 }
-
 
 @end

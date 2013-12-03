@@ -18,8 +18,7 @@
 + (HLLUserData*)sharedInstance;
 
 @property (strong, nonatomic) HLLUserModel *authorizationUser;
-
-- (BOOL)isAuthorized;
+@property (assign, nonatomic) BOOL isAuthorized;
 
 - (BOOL)checkAuthorize:(UIViewController*)sender;
 

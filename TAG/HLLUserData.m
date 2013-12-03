@@ -21,6 +21,7 @@
 @implementation HLLUserData
 
 @synthesize authorizationUser;
+@synthesize isAuthorized;
 
 #pragma mark - Singleton methods
 
@@ -42,6 +43,8 @@
 {
     self = [super init];
     if (self) {
+        isAuthorized=NO;
+        
 //        wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
         wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
     }
@@ -135,87 +138,96 @@
 {
     authorizationUser=userModel;
     
-//    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
-//    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
-//    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:nil];
-    
-    // delete all keychain
-    [wrapper resetKeychainItem];
-    
-    if (authorizationUser.canTAGAuthorize)
+    if (authorizationUser==nil)
     {
-        [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
-        [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
+        isAuthorized=NO;
     }
-    else if(authorizationUser.canThirdAuthorize)
+    else
     {
-        HLLThirdAuthorizationModel *thirdAuthorizationModel=[authorizationUser.thirds objectAtIndex:0];
+        isAuthorized=YES;
+        
+        //    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
+        //    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
+        //    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:nil];
+        
+        // delete all keychain
+        [wrapper resetKeychainItem];
+        
+        if (authorizationUser.canTAGAuthorize)
+        {
+            [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
+            [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
+        }
+        else if(authorizationUser.canThirdAuthorize)
+        {
+            HLLThirdAuthorizationModel *thirdAuthorizationModel=[authorizationUser.thirds objectAtIndex:0];
+            
+            
+            //        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrService];
+            //        [wrapper setObject:userModel forKey:(__bridge id)kSecAttrService];
+            
+            //        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+            //        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
+            
+            [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+            [wrapper setObject:thirdAuthorizationModel.user_id forKey:(__bridge id)kSecValueData];
+        }
         
         
-//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrService];
-//        [wrapper setObject:userModel forKey:(__bridge id)kSecAttrService];
+        //    // delete all keychain
+        //    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
+        //    query.service = [[NSBundle mainBundle] bundleIdentifier];
+        //    NSError *error = nil;
+        //    [query deleteItem:&error];
         
-//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
-//        [wrapper setObject:[NSNumber numberWithInt:thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
+        //    // save to keychain
+        ////    [wrapper setObject:[NSString stringWithFormat:@"%d",userModel.id] forKey:(__bridge id)kSecAttrAccount];
+        ////    [wrapper setObject:userModel forKey:(__bridge id)kSecValueData];
+        //    if (self.authorizationUser.canThirdAuthorize)
+        //    {
+        //        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
+        //
+        //        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
+        //        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
+        //
+        ////        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
+        //    }
+        //    else
+        //    {
+        //        [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
+        //        [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
+        //
+        ////        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
+        //    }
         
-        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
-        [wrapper setObject:thirdAuthorizationModel.user_id forKey:(__bridge id)kSecValueData];
+        //    // save account to keycain
+        //    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
+        //    query.account=@"Account";
+        //    query.passwordData=(NSData*)userModel;
+        //    NSError *error = nil;
+        //    [query save:&error];
+        //    if (error!=nil)
+        //    {
+        //        NSLog(@"Unable to save item: %@", error);
+        //    }
+        
+        // change user for Analytics
+        [[Analytics sharedAnalytics] identify:[NSString stringWithFormat:@"%d",userModel.id] traits:nil];
     }
-    
-    
-//    // delete all keychain
-//    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
-//    query.service = [[NSBundle mainBundle] bundleIdentifier];
-//    NSError *error = nil;
-//    [query deleteItem:&error];
-    
-//    // save to keychain
-////    [wrapper setObject:[NSString stringWithFormat:@"%d",userModel.id] forKey:(__bridge id)kSecAttrAccount];
-////    [wrapper setObject:userModel forKey:(__bridge id)kSecValueData];
-//    if (self.authorizationUser.canThirdAuthorize)
-//    {
-//        HLLThirdAuthorizationModel *thirdAuthorizationModel=[self.authorizationUser.thirds objectAtIndex:0];
-//        
-//        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id] forKey:(__bridge id)kSecAttrAccount];
-//        [wrapper setObject:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forKey:(__bridge id)kSecValueData];
-//        
-////        [SSKeychain setPassword:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.user_id] forService:[[NSBundle mainBundle] bundleIdentifier] account:[NSString stringWithFormat:@"%d",thirdAuthorizationModel.id]];
-//    }
-//    else
-//    {
-//        [wrapper setObject:userModel.email forKey:(__bridge id)kSecAttrAccount];
-//        [wrapper setObject:userModel.password forKey:(__bridge id)kSecValueData];
-//        
-////        [SSKeychain setPassword:userModel.password forService:[[NSBundle mainBundle] bundleIdentifier] account:userModel.email];
-//    }
-    
-//    // save account to keycain
-//    SSKeychainQuery *query = [[SSKeychainQuery alloc] init];
-//    query.account=@"Account";
-//    query.passwordData=(NSData*)userModel;
-//    NSError *error = nil;
-//    [query save:&error];
-//    if (error!=nil)
-//    {
-//        NSLog(@"Unable to save item: %@", error);
-//    }
-    
-    // change user for Analytics
-    [[Analytics sharedAnalytics] identify:[NSString stringWithFormat:@"%d",userModel.id] traits:(NSDictionary*)userModel];
 }
 
 #pragma mark - Public methods
 
-- (BOOL)isAuthorized
-{
-    return self.authorizationUser!=nil;
-}
+//- (BOOL)isAuthorized
+//{
+//    return self.authorizationUser!=nil;
+//}
 
 - (BOOL)checkAuthorize:(UIViewController*)sender
 {
     BOOL result=YES;
     
-    if (![self isAuthorized])
+    if (!self.isAuthorized)
     {
         if (self.authorizationUser!=nil)
         {
@@ -229,6 +241,9 @@
         {
             // popup UserLoginViewcontroller to login
             [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
+            
+            // hud
+            [HLLHud error:NSLocalizedString(@"Hud_Error_UserAuthorize_NeedLogin",@"") detail:nil];
         }
         
         result=NO;

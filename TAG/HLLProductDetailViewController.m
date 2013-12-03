@@ -20,13 +20,16 @@
 #import "HLLTOBrandProductViewController.h"
 #import "HLLProductCommentViewController.h"
 
+#import "HLLProductFavoriteViewController.h"
+
 #import <ShareSDK/ShareSDK.h>
 
 #define VIDEOVIEW_SIZE CGSizeMake(200, 200)
 
-@interface HLLProductDetailViewController () <UINavigationControllerDelegate,HLLProductBuyViewControllerDelegate,HLLProductBrandProductViewControllerDelegate>
+@interface HLLProductDetailViewController () <UINavigationControllerDelegate,HLLProductBuyViewControllerDelegate,HLLProductBrandProductViewControllerDelegate,HLLProductCommentViewControllerDelegate>
 {
     HLLProductModel *model;
+    NSArray<HLLCommentModel> *commentModels;
     
     UIScrollView *containView;
     NSMutableArray *subControllers;
@@ -83,6 +86,24 @@
                         }
                           error:nil];
     
+    // load data
+    [HLLDataJson commentGetList:nil
+                      productId:[NSString stringWithFormat:@"%d",self.productId]
+                          count:nil
+                           page:nil
+                     completion:nil
+                        success:^(id json, JSONModelError *err) {
+                            HLLCommentListModel* commentListModel = [[HLLCommentListModel alloc] initWithDictionary:json error:nil];
+                            if (commentListModel)
+                            {
+                                commentModels=commentListModel.comments;
+                                
+                                // load comment view
+                                [self commentViewLoadData:commentModels];
+                            }
+                        }
+                          error:nil];
+    
     // navigation left button
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setImage:[UIImage imageNamed:@"Resource/Common/arrow_blue_icon.png"] forState:UIControlStateNormal];
@@ -101,10 +122,11 @@
     
     // init contain view
     containView=[[UIScrollView alloc] initWithFrame:self.view.bounds];
+    containView.canCancelContentTouches=NO;
     [self.view addSubview:containView];
     
     // init sub view
-    [self addSubControllers:containView];
+    [self subViewsAddToParent:containView];
     
 //    // add video view
 //    CGSize videoViewSize=VIDEOVIEW_SIZE;
@@ -143,7 +165,7 @@
 
 #pragma mark - Sub View
 
-- (void)addSubControllers:(UIView*)parentView
+- (void)subViewsAddToParent:(UIView*)parentView
 {
     // init sub view
     subControllers=[[NSMutableArray alloc] init];
@@ -229,29 +251,17 @@
     
     // comment view
     commentViewController = [[HLLProductCommentViewController alloc] initWithNibName:@"HLLProductCommentViewController" bundle:nil];
+    commentViewController.delegate=self;
     [subControllers addObject:commentViewController];
     
     // add sub view
-    float nowheight=0;
     for (UIViewController *viewController in subControllers)
     {
-        UIView *nowView=viewController.view;
-        [nowView setFrame:CGRectMake(nowView.frame.origin.x, nowheight, nowView.frame.size.width, nowView.frame.size.height)];
-        [parentView addSubview:nowView];
-        
-        nowheight+=nowView.frame.size.height;
+        [parentView addSubview:viewController.view];
     }
     
-    // front view
-    for (UIViewController *viewController in subControllers)
-    {
-        if ([viewController isMemberOfClass:HLLCSPriceViewController.class]||[viewController isMemberOfClass:HLLTOPriceViewController.class])
-        {
-            [parentView bringSubviewToFront:viewController.view];
-        }
-    }
-    
-    
+    // position sub view
+    [self subViewsResetPosition];
 }
 
 - (void)subViewsLoadData:(HLLProductModel*)productModel
@@ -306,7 +316,13 @@
     // brand view
     if (self.productType==HLLProductTypeCS)
     {
-//        brandViewController = [[HLLCSBrandViewController alloc] initWithNibName:@"HLLCSBrandViewController" bundle:nil];
+        HLLCSBrandViewController *csBrandViewController=(HLLCSBrandViewController*)brandViewController;
+        csBrandViewController.brandImageUrl=model.brand.middle_image_url;
+        csBrandViewController.brandFollowed=[model.brand.followed boolValue];
+        csBrandViewController.brandName=model.brand.name;
+        csBrandViewController.brandDescription=model.brand.description;
+        csBrandViewController.brandLinks=model.brand.links;
+        csBrandViewController.brandId=model.brand.id;
     }
     else
     {
@@ -316,7 +332,14 @@
     // user view
     if (self.productType==HLLProductTypeCS)
     {
-//        userViewController = [[HLLCSUserViewController alloc] initWithNibName:@"HLLCSUserViewController" bundle:nil];
+        HLLCSUserViewController *csUserViewController=(HLLCSUserViewController*)userViewController;
+        csUserViewController.userImageUrl=model.user.middle_image_url;
+        csUserViewController.userFollowed=[model.user.followed boolValue];
+        csUserViewController.userName=model.user.name;
+        csUserViewController.userDescription=model.user.description;
+        csUserViewController.productSuccessRate=[model.user.product_success_rate floatValue];
+        csUserViewController.productFavoritedCount=[model.user.product_favorited_count intValue];
+        csUserViewController.userId=model.user.id;
     }
     else
     {
@@ -326,7 +349,8 @@
     // information view
     if (self.productType==HLLProductTypeCS)
     {
-//        informationViewController = [[HLLCSInformationViewController alloc] initWithNibName:@"HLLCSInformationViewController" bundle:nil];
+        HLLCSInformationViewController *csInformationViewController=(HLLCSInformationViewController*)informationViewController;
+        csInformationViewController.productInformation=model.information;
     }
     else
     {
@@ -345,8 +369,37 @@
         toBrandProductViewController.brandProducts=model.brand.products;
     }
     
+    // set sub view position
+    [self subViewsResetPosition];
+}
+
+- (void)subViewsResetPosition
+{
+    float containViewHeight = 0.0f;
+    for (UIViewController *viewController in subControllers)
+    {
+        UIView *view=viewController.view;
+        
+        // position
+        [view setFrame:CGRectMake(view.frame.origin.x, containViewHeight, view.frame.size.width, view.frame.size.height)];
+        
+        // front
+        if ([viewController isMemberOfClass:HLLCSPriceViewController.class]||[viewController isMemberOfClass:HLLTOPriceViewController.class])
+        {
+            [containView bringSubviewToFront:view];
+        }
+        
+        containViewHeight += view.frame.size.height;
+    }
+    
+    // all height
+    [containView setContentSize:(CGSizeMake(containView.frame.size.width, containViewHeight))];
+}
+
+- (void)commentViewLoadData:(NSArray<HLLCommentModel>*)aCommentModels
+{
     // comment view
-//    commentViewController = [[HLLProductCommentViewController alloc] initWithNibName:@"HLLProductCommentViewController" bundle:nil];
+    commentViewController.productComments=aCommentModels;
 }
 
 #pragma mark - Share
@@ -386,7 +439,9 @@
 
 - (void)viewController:(UIViewController *)viewController save:(UIButton *)button
 {
-
+    // popup product favorite view
+    HLLProductFavoriteViewController *productFavoriteViewController = [[HLLProductFavoriteViewController alloc] initWithNibName:@"HLLProductFavoriteViewController" bundle:nil];
+    [self presentFormSheetWithViewController:productFavoriteViewController animated:YES completionHandler:nil];
 }
 
 - (void)viewController:(UIViewController *)viewController buy:(UIButton *)button
@@ -405,6 +460,32 @@
         productDetailController.productId=productModel.id;
         productDetailController.productType=productModel.show_type.intValue;
         [self.navigationController pushViewController:productDetailController animated:YES];
+    }
+}
+
+#pragma mark - HLLProductCommentViewControllerDelegate
+
+- (void)viewController:(UIViewController *)viewController addComment:(NSString *)comment
+{
+    if (comment!=nil)
+    {
+        // add comment
+        [HLLDataAuthorizeProvider commentAdd:nil
+                                   productId:[NSString stringWithFormat:@"%d",self.productId]
+                                     comment:comment
+                                  completion:nil
+                                     success:^(id json, JSONModelError *err) {
+                                         HLLCommentModel* commentModel = [[HLLCommentModel alloc] initWithDictionary:json error:nil];
+                                         if (commentModel)
+                                         {
+                                             // add effect
+                                             
+                                             
+                                             // hud
+                                             [HLLHud success:NSLocalizedString(@"Hud_Success_Product_Comment_AddCompleted",@"") detail:nil];
+                                         }
+                                     }
+                                       error:nil];
     }
 }
 

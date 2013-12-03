@@ -109,7 +109,7 @@
     [productBuildAttributedString setTextColor:APPLICATION_COLOR_YELLOW range:brandNameRange];
     
     // userName blod&color
-    NSRange userNameRange=NSMakeRange(productBuildString.length-userName.length-1,userName.length);
+    NSRange userNameRange=NSMakeRange(productBuildString.length-userName.length,userName.length);
     [productBuildAttributedString setTextBold:YES range:userNameRange];
     [productBuildAttributedString setTextColor:APPLICATION_COLOR_YELLOW range:userNameRange];
     

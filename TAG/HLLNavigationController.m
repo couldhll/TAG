@@ -38,6 +38,16 @@
     // navigation background image
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/bar_background.png"] forBarMetrics:UIBarMetricsDefault];
 
+    
+    NSDictionary *textAttributesDictionary=[NSDictionary dictionaryWithObjectsAndKeys:
+                                            APPLICATION_COLOR_BLUE, UITextAttributeTextColor,
+                                            [UIFont fontWithFont:[UIFont fontWithName:APPLICATION_FONT_NAME size:APPLICATION_FONT_SIZE] style:UIFONT_LIGHT], UITextAttributeFont,
+                                            nil];
+    
+    [self.navigationBar setTitleTextAttributes:textAttributesDictionary];
+    
+
+    
     //    // navigation center image
     //    UIImage * titleImage = [UIImage imageNamed:@"Resource/Frame/Navigation/navigation_logo.png"];
     //    UIImageView * titleview = [[UIImageView alloc]initWithImage:titleImage];

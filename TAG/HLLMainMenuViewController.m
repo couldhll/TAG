@@ -57,7 +57,7 @@
     [buttonNotificationDictionary setValue:nil forKey:@"brandButton"];
     [buttonNotificationDictionary setValue:@"CSUserFavoritesViewController" forKey:@"favoriteButton"];
     [buttonNotificationDictionary setValue:@"HLLUserFriendViewController" forKey:@"friendButton"];
-    [buttonNotificationDictionary setValue:nil forKey:@"followButton"];
+    [buttonNotificationDictionary setValue:@"HLLUserFollowViewController" forKey:@"followButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"userHomeButton"];
     [buttonNotificationDictionary setValue:@"CSCreateNewCSViewController" forKey:@"createCSButton"];
     [buttonNotificationDictionary setValue:nil forKey:@"settingButton"];

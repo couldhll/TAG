@@ -10,4 +10,8 @@
 
 @interface HLLCSInformationViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIWebView *productInformationWebView;
+
+@property (strong, nonatomic) NSString *productInformation;
+
 @end

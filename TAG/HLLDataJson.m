@@ -252,7 +252,7 @@
 
 #pragma mark Fowllowing Brand
 
-+ (void)fowllowingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingBrandGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"count",
@@ -267,7 +267,7 @@
     [self postJSONWithUrl:DATA_API_FOLLOWING_BRAND_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)fowllowingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingBrandAdd:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"id"];
@@ -278,7 +278,7 @@
     [self postJSONWithUrl:DATA_API_FOLLOWING_BRAND_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)fowllowingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingBrandRemove:(UIView*)view brandId:(NSString*)brandId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"id"];
@@ -291,7 +291,7 @@
 
 #pragma mark Fowllowing User
 
-+ (void)fowllowingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingUserGetList:(UIView*)view count:(NSString*)count page:(NSString*)page needDetail:(NSString*)needDetail completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"count",
@@ -306,7 +306,7 @@
     [self postJSONWithUrl:DATA_API_FOLLOWING_USER_GETLIST_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)fowllowingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingUserAdd:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"id"];
@@ -317,7 +317,7 @@
     [self postJSONWithUrl:DATA_API_FOLLOWING_USER_ADD_URL params:params completion:completeBlock success:successBlock error:errorBlock];
 }
 
-+ (void)fowllowingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
++ (void)followingUserRemove:(UIView*)view userId:(NSString*)userId completion:(JSONObjectBlock)completeBlock success:(JSONObjectBlock)successBlock error:(JSONErrorBlock)errorBlock
 {
     // params
     NSArray *paramsKeys=@[@"id"];

@@ -113,6 +113,9 @@
     [super userLogout:view
            completion:completeBlock
               success:^(id json, JSONModelError *e) {
+                  // save user data
+                  [HLLUserData sharedInstance].authorizationUser=nil;
+                  
                   // hud
                   [HLLHud success:NSLocalizedString(@"Hud_Success_UserAuthorize_LogoutCompleted",@"") detail:nil];
                   

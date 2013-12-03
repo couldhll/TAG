@@ -53,7 +53,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingBrandGetList:nil
+    [HLLDataJson followingBrandGetList:nil
                                   count:@"15"
                                    page:@"1"
                              needDetail:@"true"
@@ -79,7 +79,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingBrandAdd:nil
+    [HLLDataJson followingBrandAdd:nil
                             brandId:@"1"
                          completion:nil
                             success:^(id json, JSONModelError *err) {
@@ -103,7 +103,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingBrandRemove:nil
+    [HLLDataJson followingBrandRemove:nil
                                brandId:@"1"
                             completion:nil
                                success:^(id json, JSONModelError *err) {
@@ -127,7 +127,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingUserGetList:nil
+    [HLLDataJson followingUserGetList:nil
                                  count:@"15"
                                   page:@"1"
                             needDetail:@"true"
@@ -153,7 +153,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingUserAdd:nil
+    [HLLDataJson followingUserAdd:nil
                             userId:@"1"
                          completion:nil
                             success:^(id json, JSONModelError *err) {
@@ -177,7 +177,7 @@
 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    [HLLDataJson fowllowingUserRemove:nil
+    [HLLDataJson followingUserRemove:nil
                                userId:@"1"
                            completion:nil
                               success:^(id json, JSONModelError *err) {

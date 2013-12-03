@@ -24,7 +24,7 @@
     CGRect frame=self.titleLabel.frame;
     self.titleLabel.frame=CGRectMake(15, frame.origin.y, frame.size.width, frame.size.height);
     self.optionBackgroundImage=[UIImage imageNamed:@"Resource/Common/Currency/option_background.png"];
-    self.optionFont=[UIFont fontWithName:APPLICATION_FONT_NAME size:12];
+    self.optionFont=APPLICATION_FONT;
     self.optionColor=APPLICATION_COLOR_BLUE;
     self.title = CURRENCY_MAIN_NAME;
     

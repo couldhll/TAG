@@ -8,7 +8,7 @@
 
 #import "HLLTAGLoginViewController.h"
 
-@interface HLLTAGLoginViewController ()
+@interface HLLTAGLoginViewController () <UITextFieldDelegate>
 
 @end
 
@@ -93,7 +93,7 @@
     [notificationuUserInfo setValue:self forKey:@"sender"];
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)loginButtonPressed:(id)sender
@@ -111,7 +111,7 @@
                              completion:nil
                                 success:^(id json, JSONModelError *e) {
                                     // exit
-                                    [self dismissModalViewControllerAnimated:YES];
+                                    [self dismissViewControllerAnimated:YES completion:nil];
                                 }
                                   error:nil];
 }

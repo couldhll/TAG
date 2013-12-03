@@ -18,12 +18,6 @@
     
     // init data
     self.followed=NO;
-    
-    // notification
-    [[NSNotificationCenter defaultCenter] addObserver: self
-                                             selector: @selector(changeLoginState:)
-                                                 name: NOTIFICATION_CHANGELOGINSTATE
-                                               object: nil];
 }
 
 #pragma mark - Property
@@ -34,23 +28,12 @@
     
     if (followed)
     {
-        [self setTitle:@"unFollow" forState:UIControlStateNormal];
+        [self setTitle:NSLocalizedString(@"Button_Follow_State_Follow_Text",@"") forState:UIControlStateNormal];
     }
     else
     {
-        [self setTitle:@"Follow" forState:UIControlStateNormal];
+        [self setTitle:NSLocalizedString(@"Button_Follow_State_Unfollow_Text",@"") forState:UIControlStateNormal];
     }
-}
-
-#pragma mark - Login state
-
-- (void)changeLoginState:(NSNotification *)notification
-{
-    // get login state
-	NSNumber *loginState=(NSNumber*)[notification.userInfo valueForKey:@"logined"];
-    
-    // set select button
-    [self setFollowed:[loginState boolValue]];
 }
 
 /*

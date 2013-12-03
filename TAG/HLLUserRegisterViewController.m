@@ -8,7 +8,7 @@
 
 #import "HLLUserRegisterViewController.h"
 
-@interface HLLUserRegisterViewController ()
+@interface HLLUserRegisterViewController () <UITextFieldDelegate>
 
 @end
 
@@ -97,7 +97,7 @@
     [notificationuUserInfo setValue:self forKey:@"sender"];
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)registerButtonPressed:(id)sender
@@ -132,7 +132,7 @@
                              [TestFlight passCheckpoint:CHECKPOINT_USER_REGISTER];
                              
                              // exit
-                             [self dismissModalViewControllerAnimated:YES];
+                             [self dismissViewControllerAnimated:YES completion:nil];
                          }
                      }
                        error:nil];

@@ -12,6 +12,7 @@
 #pragma mark - Import
 
 #import "HLLComponent.h"
+#import "HLLTAGComponent.h"
 
 #import "HLLModel.h"
 #import "HLLDataAuthorizeProvider.h"

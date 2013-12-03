@@ -9,19 +9,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "HLLLoginButton.h"
-
 @interface HLLMainMenuViewController : HLLViewController
 
-@property (strong, nonatomic) IBOutlet HLLButton  *productListButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *brandButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *favoriteButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *friendButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *followButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *userHomeButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *createCSButton;
-@property (strong, nonatomic) IBOutlet HLLButton  *settingButton;
-@property (strong, nonatomic) IBOutlet HLLLoginButton  *loginorloginoutButton;
+@property (strong, nonatomic) IBOutlet HLLButton *productListButton;
+@property (strong, nonatomic) IBOutlet HLLButton *brandButton;
+@property (strong, nonatomic) IBOutlet HLLButton *favoriteButton;
+@property (strong, nonatomic) IBOutlet HLLButton *friendButton;
+@property (strong, nonatomic) IBOutlet HLLButton *followButton;
+@property (strong, nonatomic) IBOutlet HLLButton *userHomeButton;
+@property (strong, nonatomic) IBOutlet HLLButton *createCSButton;
+@property (strong, nonatomic) IBOutlet HLLButton *settingButton;
+@property (strong, nonatomic) IBOutlet HLLLoginButton *loginorloginoutButton;
 
 - (IBAction)buttonPressed:(id)sender;
 

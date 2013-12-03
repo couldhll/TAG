@@ -79,7 +79,7 @@
     [notificationuUserInfo setValue:self forKey:@"sender"];
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CHANGELOGINSTATE object:self userInfo:notificationuUserInfo];
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)tagRegisterButtonPressed:(id)sender
@@ -164,7 +164,7 @@
                                                             completion:nil
                                                                success:^(id json, JSONModelError *e) {
                                                                    // exit
-                                                                   [self dismissModalViewControllerAnimated:YES];
+                                                                   [self dismissViewControllerAnimated:YES completion:nil];
                                                                }
                                                                  error:nil];
                                }
