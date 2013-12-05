@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define HLLCOMMENTCELL_CELLIDENTIFIER @"HLLCommentCellIdentifier"
+
 @interface HLLCommentCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *userImageView;

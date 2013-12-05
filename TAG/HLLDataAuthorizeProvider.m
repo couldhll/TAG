@@ -58,7 +58,7 @@ static NSMutableDictionary* needAuthorizationDictionary;
     
     if (needAuthorization)// need authorize
     {
-        if (![[HLLUserData sharedInstance] checkAuthorize:nil])// no authorize in local
+        if (![[HLLUserData sharedInstance] checkAuthorize:nil popupLoginView:YES])// no authorize in local
         {
             return;
         }

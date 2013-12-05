@@ -20,6 +20,6 @@
 @property (strong, nonatomic) HLLUserModel *authorizationUser;
 @property (assign, nonatomic) BOOL isAuthorized;
 
-- (BOOL)checkAuthorize:(UIViewController*)sender;
+- (BOOL)checkAuthorize:(UIViewController*)sender popupLoginView:(BOOL)isPopup;
 
 @end

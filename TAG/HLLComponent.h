@@ -11,6 +11,8 @@
 
 #import "HLLAppDelegate.h"
 
+#import "HLLTextField.h"
+
 #import "HLLButton.h"
 #import "HLLBorderButton.h"
 #import "HLLSelectButton.h"

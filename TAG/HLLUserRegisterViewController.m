@@ -114,7 +114,7 @@
                     password:self.userPasswordTextField.text
                   completion:nil
                      success:^(id json, JSONModelError *err) {
-                         HLLUserModel* userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
+                         HLLUserModel *userModel = [[HLLUserModel alloc] initWithDictionary:json error:nil];
                          if (userModel)
                          {
                              // get login user info

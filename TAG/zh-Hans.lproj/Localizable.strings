@@ -21,7 +21,6 @@
 "Hud_Success_UserAuthorize_RegisterCompleted"="注册完成";
 "Hud_Success_UserAuthorize_LoginCompleted"="登录完成";
 "Hud_Success_UserAuthorize_LogoutCompleted"="注销完成";
-"Hud_Success_Product_Comment_AddCompleted"="评论成功";
 
 "Time_Format_Now"="刚刚";
 "Time_Format_Minute"="%d分钟前";

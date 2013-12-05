@@ -169,7 +169,6 @@
 		B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AB59817FFFD25007D884E /* HLLUserLoginViewController.xib */; };
 		B2A50DBE18431CAE00F292E6 /* HLLCurrencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */; };
 		B2A50DD3184429A700F292E6 /* HLLCurrencyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */; };
-		B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */; };
 		B2A50EF4184582CF00F292E6 /* HLLFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */; };
 		B2A50EFD1848567500F292E6 /* HLLLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EFC1848567500F292E6 /* HLLLinkView.m */; };
 		B2A50F001848568B00F292E6 /* HLLLinkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A50EFF1848568B00F292E6 /* HLLLinkButton.m */; };
@@ -208,6 +207,8 @@
 		B2E4FA391828877D0055E2AB /* HLLDataAuthorizeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4FA381828877D0055E2AB /* HLLDataAuthorizeProvider.m */; };
 		B2EBB0F71816225F00805621 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EBB0F61816225F00805621 /* Crashlytics.framework */; };
 		B2F7998D182A21440010EA65 /* HLLLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F7998C182A21440010EA65 /* HLLLinkModel.m */; };
+		B2F9F733184EC50B000E5374 /* HLLCSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9F731184EC50B000E5374 /* HLLCSVideoViewController.m */; };
+		B2F9F734184EC50B000E5374 /* HLLCSVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F9F732184EC50B000E5374 /* HLLCSVideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -436,8 +437,6 @@
 		B2A50DBD18431CAE00F292E6 /* HLLCurrencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyView.m; sourceTree = "<group>"; };
 		B2A50DD1184429A700F292E6 /* HLLCurrencyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCurrencyModel.h; sourceTree = "<group>"; };
 		B2A50DD2184429A700F292E6 /* HLLCurrencyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCurrencyModel.m; sourceTree = "<group>"; };
-		B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLDropDownQuickView.h; sourceTree = "<group>"; };
-		B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLDropDownQuickView.m; sourceTree = "<group>"; };
 		B2A50EF2184582CF00F292E6 /* HLLFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLFollowButton.h; sourceTree = "<group>"; };
 		B2A50EF3184582CF00F292E6 /* HLLFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLFollowButton.m; sourceTree = "<group>"; };
 		B2A50EF81846E6C800F292E6 /* HLLTAGComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLLTAGComponent.h; sourceTree = "<group>"; };
@@ -498,6 +497,9 @@
 		B2F8C80317FE50C0001C7DCA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B2F8C80517FE50CB001C7DCA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B2F8C80717FE50D4001C7DCA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B2F9F730184EC50B000E5374 /* HLLCSVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCSVideoViewController.h; sourceTree = "<group>"; };
+		B2F9F731184EC50B000E5374 /* HLLCSVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCSVideoViewController.m; sourceTree = "<group>"; };
+		B2F9F732184EC50B000E5374 /* HLLCSVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCSVideoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1043,6 +1045,9 @@
 				B246633C183E0F5800B070E6 /* HLLCSUserViewController.h */,
 				B246633D183E0F5800B070E6 /* HLLCSUserViewController.m */,
 				B246633E183E0F5800B070E6 /* HLLCSUserViewController.xib */,
+				B2F9F730184EC50B000E5374 /* HLLCSVideoViewController.h */,
+				B2F9F731184EC50B000E5374 /* HLLCSVideoViewController.m */,
+				B2F9F732184EC50B000E5374 /* HLLCSVideoViewController.xib */,
 				B2466341183E0F7E00B070E6 /* HLLCSInformationViewController.h */,
 				B2466342183E0F7E00B070E6 /* HLLCSInformationViewController.m */,
 				B2466343183E0F7E00B070E6 /* HLLCSInformationViewController.xib */,
@@ -1214,15 +1219,6 @@
 			name = CurrencyView;
 			sourceTree = "<group>";
 		};
-		B2A50EEE18444F4000F292E6 /* HLLDropDownQuickView */ = {
-			isa = PBXGroup;
-			children = (
-				B2A50EEF18444F4000F292E6 /* HLLDropDownQuickView.h */,
-				B2A50EF018444F4000F292E6 /* HLLDropDownQuickView.m */,
-			);
-			path = HLLDropDownQuickView;
-			sourceTree = "<group>";
-		};
 		B2A50EF51845857900F292E6 /* TAGComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -1290,7 +1286,6 @@
 				B208015717FE6F710044EA4F /* ShareSDK_v2.5.1 */,
 				B2EBB0F81816227D00805621 /* Crashlytics */,
 				B246630C183CA7B300B070E6 /* NSString+Time */,
-				B2A50EEE18444F4000F292E6 /* HLLDropDownQuickView */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -1601,6 +1596,7 @@
 				B2ADC1F917F18B950055F275 /* Resource in Resources */,
 				B295DE6E17EFDF6F00DFCD1E /* HLLProductListViewController.xib in Resources */,
 				B2466331183DFFFF00B070E6 /* HLLTOBrandProductViewController.xib in Resources */,
+				B2F9F734184EC50B000E5374 /* HLLCSVideoViewController.xib in Resources */,
 				B243926D17EFFF8E002FD388 /* HLLMainMenuViewController.xib in Resources */,
 				B29AB59A17FFFD25007D884E /* HLLUserLoginViewController.xib in Resources */,
 				B26F54F5184C871F00513FCA /* HLLUserFollowViewController.xib in Resources */,
@@ -1775,8 +1771,8 @@
 				B26AD48D183C69F600BAD8F6 /* HLLCSTitleViewController.m in Sources */,
 				B2466319183DDCAA00B070E6 /* HLLProductBuyViewController.m in Sources */,
 				B2466323183DE1DB00B070E6 /* HLLTOPriceViewController.m in Sources */,
+				B2F9F733184EC50B000E5374 /* HLLCSVideoViewController.m in Sources */,
 				B2BC0FCB17EEECA40071036D /* main.m in Sources */,
-				B2A50EF118444F4000F292E6 /* HLLDropDownQuickView.m in Sources */,
 				B2BC0FCF17EEECA40071036D /* HLLAppDelegate.m in Sources */,
 				B22640EF1816635E00F2A4A5 /* HLLUserRegisterViewController.m in Sources */,
 				B21C3E6E17F5240D0034DCEF /* HLLVideoView.m in Sources */,

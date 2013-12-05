@@ -21,7 +21,6 @@
 "Hud_Success_UserAuthorize_RegisterCompleted"="RegisterCompleted";
 "Hud_Success_UserAuthorize_LoginCompleted"="LoginCompleted";
 "Hud_Success_UserAuthorize_LogoutCompleted"="LogoutCompleted";
-"Hud_Success_Product_Comment_AddCompleted"="CommentAddCompleted";
 
 "Time_Format_Now"="now";
 "Time_Format_Minute"="%d minute(s) ago";

@@ -30,15 +30,46 @@
 
 - (void)initialize
 {
+    self.opaque=NO;
+    self.backgroundColor=[UIColor clearColor];
+    
     self.scrollView.scrollEnabled = NO;
     self.scrollView.bounces = NO;
 }
 
-- (void)loadVideo:(NSString*)url
+- (void)loadVideo:(NSString*)urlString
 {
-    NSString *htmlTemplate=@"<iframe height=\"100%\" width=\"100%\" src=\"%@\" frameborder=0 allowfullscreen></iframe>";
-    NSString *html = [NSString stringWithFormat:htmlTemplate, url];
-    [self loadHTMLString:html baseURL:nil];
+//    NSString *htmlTemplate=@"<iframe height=\"100%%\" width=\"100%%\" src=\"%@\" frameborder=0 allowfullscreen></iframe>";
+//    NSString *html = [NSString stringWithFormat:htmlTemplate, url];
+//    [self loadHTMLString:html baseURL:nil];
+    
+    // load url
+    NSURL *url=[NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest=[NSURLRequest requestWithURL:url];
+    [self loadRequest:urlRequest];
+    
+    // select button notification
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
+    {
+        [[NSNotificationCenter defaultCenter] addObserver: self
+                                                 selector: @selector(enterFullScreen:)
+                                                     name: @"UIMoviePlayerControllerDidEnterFullscreenNotification"
+                                                   object: nil];
+        [[NSNotificationCenter defaultCenter] addObserver: self
+                                                 selector: @selector(exitFullScreen:)
+                                                     name: @"UIMoviePlayerControllerDidExitFullscreenNotification"
+                                                   object: nil];
+    }
+}
+
+- (void)enterFullScreen:(NSNotification *)notification
+{
+    AppDelegate.isFullScreen=YES;
+}
+
+- (void)exitFullScreen:(NSNotification *)notification
+{
+    AppDelegate.isFullScreen=NO;
 }
 
 /*

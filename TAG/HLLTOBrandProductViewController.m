@@ -8,8 +8,6 @@
 
 #import "HLLTOBrandProductViewController.h"
 
-#import "HLLProductDetailViewController.h"
-
 #define BRAND_TITLE_STRING @"More From"
 
 #define GMGRIDVIEW_PAGE_COL_COUNT 4

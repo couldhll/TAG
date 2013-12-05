@@ -10,6 +10,6 @@
 
 @interface HLLVideoView : UIWebView
 
-- (void)loadVideo:(NSString*)url;
+- (void)loadVideo:(NSString*)urlString;
 
 @end

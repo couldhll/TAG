@@ -2,6 +2,7 @@ platform :ios, '6.0'
 
 pod 'UI7Kit', '~> 0.9.11'
 pod 'HLLFont', '~> 0.1'
+pod 'HLLDropDownQuickView', '~> 0.1'
 #pod 'ViewDeck', '= 2.2.11'
 pod 'ViewDeck', '~> 2.3.1'
 pod 'GMGridView', '~> 1.1.1'

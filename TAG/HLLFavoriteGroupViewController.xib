@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLLFavoriteGroupViewController">
             <connections>
+                <outlet property="groupAddButton" destination="KLh-mb-L7O" id="Vhp-fO-pAO"/>
+                <outlet property="groupNameTextField" destination="1qh-RE-OCj" id="OtP-Jv-fQo"/>
                 <outlet property="groupTableView" destination="Jrn-TH-dqf" id="vx5-lu-hbK"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -42,6 +44,9 @@
                     <state key="normal" image="Resource/Common/Favorite/add_icon.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="groupAddButtonPress:" destination="-1" eventType="touchUpInside" id="tft-9a-lUl"/>
+                    </connections>
                 </button>
             </subviews>
         </view>

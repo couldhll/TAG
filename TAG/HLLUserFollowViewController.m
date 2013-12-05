@@ -35,6 +35,9 @@
 {
     [super viewDidLoad];
     
+    // navigation background image
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/bar_white_background.png"] forBarMetrics:UIBarMetricsDefault];
+    
     self.title=@"MY FOLLOWS";
 }
 

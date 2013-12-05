@@ -223,7 +223,7 @@
 //    return self.authorizationUser!=nil;
 //}
 
-- (BOOL)checkAuthorize:(UIViewController*)sender
+- (BOOL)checkAuthorize:(UIViewController*)sender popupLoginView:(BOOL)isPopup
 {
     BOOL result=YES;
     
@@ -239,11 +239,14 @@
         }
         else
         {
-            // popup UserLoginViewcontroller to login
-            [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
-            
-            // hud
-            [HLLHud error:NSLocalizedString(@"Hud_Error_UserAuthorize_NeedLogin",@"") detail:nil];
+            if (isPopup)
+            {
+                // popup UserLoginViewcontroller to login
+                [AppDelegate openViewController:@"HLLUserLoginViewController" sender:sender];
+                
+                // hud
+                [HLLHud error:NSLocalizedString(@"Hud_Error_UserAuthorize_NeedLogin",@"") detail:nil];
+            }
         }
         
         result=NO;

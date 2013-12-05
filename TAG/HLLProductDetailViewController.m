@@ -16,6 +16,7 @@
 #import "HLLCSPriceViewController.h"
 #import "HLLCSBrandViewController.h"
 #import "HLLCSUserViewController.h"
+#import "HLLCSVideoViewController.h"
 #import "HLLCSInformationViewController.h"
 #import "HLLTOBrandProductViewController.h"
 #import "HLLProductCommentViewController.h"
@@ -24,12 +25,10 @@
 
 #import <ShareSDK/ShareSDK.h>
 
-#define VIDEOVIEW_SIZE CGSizeMake(200, 200)
-
 @interface HLLProductDetailViewController () <UINavigationControllerDelegate,HLLProductBuyViewControllerDelegate,HLLProductBrandProductViewControllerDelegate,HLLProductCommentViewControllerDelegate>
 {
     HLLProductModel *model;
-    NSArray<HLLCommentModel> *commentModels;
+    NSMutableArray<HLLCommentModel> *commentModels;
     
     UIScrollView *containView;
     NSMutableArray *subControllers;
@@ -40,6 +39,7 @@
     UIViewController *priceViewController;
     UIViewController *brandViewController;
     UIViewController *userViewController;
+    UIViewController *videoViewController;
     UIViewController *informationViewController;
     UIViewController *brandProductViewController;
     HLLProductCommentViewController *commentViewController;
@@ -96,7 +96,7 @@
                             HLLCommentListModel* commentListModel = [[HLLCommentListModel alloc] initWithDictionary:json error:nil];
                             if (commentListModel)
                             {
-                                commentModels=commentListModel.comments;
+                                commentModels=(NSMutableArray<HLLCommentModel>*)commentListModel.comments;
                                 
                                 // load comment view
                                 [self commentViewLoadData:commentModels];
@@ -129,7 +129,7 @@
     [self subViewsAddToParent:containView];
     
 //    // add video view
-//    CGSize videoViewSize=VIDEOVIEW_SIZE;
+//    CGSize videoViewSize=CGSizeMake(200, 200);
 //    HLLVideoView *videoView=[[HLLVideoView alloc] initWithFrame:CGRectMake(0, 0, videoViewSize.width, videoViewSize.height)];
 //    [videoView loadVideo:@"http://player.youku.com/embed/XNjA4NjU4MzYw"];
 //    [self.view addSubview:videoView];
@@ -218,6 +218,17 @@
     {
         userViewController = [[HLLCSUserViewController alloc] initWithNibName:@"HLLCSUserViewController" bundle:nil];
         [subControllers addObject:userViewController];
+    }
+    else
+    {
+        
+    }
+    
+    // video view
+    if (self.productType==HLLProductTypeCS)
+    {
+        videoViewController = [[HLLCSVideoViewController alloc] initWithNibName:@"HLLCSVideoViewController" bundle:nil];
+        [subControllers addObject:videoViewController];
     }
     else
     {
@@ -346,6 +357,17 @@
         
     }
     
+    // video view
+    if (self.productType==HLLProductTypeCS)
+    {
+        HLLCSVideoViewController *csVideoViewController=(HLLCSVideoViewController*)videoViewController;
+        csVideoViewController.videoUrls=model.video_urls;
+    }
+    else
+    {
+        
+    }
+    
     // information view
     if (self.productType==HLLProductTypeCS)
     {
@@ -406,15 +428,13 @@
 
 - (void)share
 {
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"ShareSDK"  ofType:@"jpg"];
-    
     // share content
-    id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
-                                       defaultContent:@"默认分享内容，没内容时显示"
-                                                image:[ShareSDK imageWithPath:imagePath]
-                                                title:@"ShareSDK"
-                                                  url:@"http://www.sharesdk.cn"
-                                          description:@"这是一条测试信息"
+    id<ISSContent> publishContent = [ShareSDK content:[NSString stringWithFormat:@"分享%@",model.name]
+                                       defaultContent:[NSString stringWithFormat:@"默认分享内容，没内容时显示,%@",model.name]
+                                                image:[ShareSDK imageWithUrl:model.middle_image_url.absoluteString]
+                                                title:@"TAG ORIGINALS"
+                                                  url:model.buy_url.absoluteString
+                                          description:model.information
                                             mediaType:SSPublishContentMediaTypeNews];
     
     [ShareSDK showShareActionSheet:nil
@@ -478,11 +498,18 @@
                                          HLLCommentModel* commentModel = [[HLLCommentModel alloc] initWithDictionary:json error:nil];
                                          if (commentModel)
                                          {
-                                             // add effect
+                                             // get comment info
+                                             commentModel.comment=comment;
+                                             commentModel.user=(HLLUserModel<Optional,ConvertOnDemand>*)[[HLLUserData sharedInstance] authorizationUser];
                                              
+                                             // add new model
+                                             NSMutableArray<HLLCommentModel> *newCommentModels=(NSMutableArray<HLLCommentModel>*)[[NSMutableArray alloc] init];
+                                             [newCommentModels addObject:commentModel];
+                                             [newCommentModels addObjectsFromArray:commentModels];
+                                             commentModels=newCommentModels;
                                              
-                                             // hud
-                                             [HLLHud success:NSLocalizedString(@"Hud_Success_Product_Comment_AddCompleted",@"") detail:nil];
+                                             // load comment view
+                                             [self commentViewLoadData:commentModels];
                                          }
                                      }
                                        error:nil];

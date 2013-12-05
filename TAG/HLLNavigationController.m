@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     // navigation background image
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/bar_background.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"Resource/Frame/Navigation/bar_blue_background.png"] forBarMetrics:UIBarMetricsDefault];
 
     
     NSDictionary *textAttributesDictionary=[NSDictionary dictionaryWithObjectsAndKeys:

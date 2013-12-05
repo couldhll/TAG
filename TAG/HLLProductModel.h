@@ -22,7 +22,7 @@
 @property (strong, nonatomic) NSNumber<Optional>* favorited;
 @property (strong, nonatomic) NSNumber<Optional>* favorited_count;
 @property (strong, nonatomic) NSString<Optional>* information;
-@property (strong, nonatomic) NSArray<NSURL,Optional,ConvertOnDemand>* video_urls;
+@property (strong, nonatomic) NSArray<Optional,ConvertOnDemand>* video_urls;
 @property (strong, nonatomic) NSNumber<Optional>* price_usd;
 @property (strong, nonatomic) NSURL<Optional>* buy_url;
 

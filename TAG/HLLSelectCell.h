@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define HLLSELECTCELL_CELLIDENTIFIER @"HLLSelectCellIdentifier"
+
 @interface HLLSelectCell : UITableViewCell
 
 @property (strong, nonatomic) HLLSelectButton *selectButton;

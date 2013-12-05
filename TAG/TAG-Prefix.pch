@@ -19,6 +19,7 @@
     #import <SDWebImage/UIImageView+WebCache.h>
     #import <TestFlightSDK/TestFlight.h>
     #import <HLLFont/UIFont+HLLFont.h>
+    #import <HLLDropDownQuickView/HLLDropDownQuickView.h>
     #import <GMGridView/GMGridView.h>
     #import <GMGridView/GMGridViewLayoutStrategies.h>
     #import <MZFormSheetController/MZFormSheetController.h>
@@ -26,7 +27,6 @@
     #import <SVWebViewController/SVModalWebViewController.h>
 
     #import "NSString+Time.h"
-    #import "HLLDropDownQuickView.h"
 
     #import "HLLMacroDefinition.h"
     #import "HLLAppConfig.h"

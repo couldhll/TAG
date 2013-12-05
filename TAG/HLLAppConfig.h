@@ -64,7 +64,7 @@
 
 #pragma mark - App Delegate
 
-#define AppDelegate (HLLAppDelegate *)[[UIApplication sharedApplication] delegate]
+#define AppDelegate ((HLLAppDelegate *)[[UIApplication sharedApplication] delegate])
 
 
 #pragma mark - Regular Expression

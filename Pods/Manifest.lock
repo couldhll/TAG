@@ -2,18 +2,19 @@ PODS:
   - Analytics (0.8.0)
   - cdebug (0.1.1)
   - CocoaSecurity (1.2.2)
-  - FoundationExtension (0.45):
+  - FoundationExtension (0.46):
     - cdebug (~> 0.1)
     - FoundationExtension/CocoaExtension
     - FoundationExtension/FoundationExtension
     - FoundationExtension/UIKitExtension
-  - FoundationExtension/FoundationExtension (0.45):
+  - FoundationExtension/FoundationExtension (0.46):
     - cdebug (~> 0.1)
-  - FoundationExtension/UIKitExtension (0.45):
+  - FoundationExtension/UIKitExtension (0.46):
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
   - GIKPopoverBackgroundView/Core (0.0.1)
   - GMGridView (1.1.1)
+  - HLLDropDownQuickView (0.1)
   - HLLFont (0.1)
   - JSONModel (0.10.0)
   - KeychainItemWrapper (1.2)
@@ -169,6 +170,7 @@ DEPENDENCIES:
   - Analytics (~> 0.8.0)
   - CocoaSecurity (~> 1.2.1)
   - GMGridView (~> 1.1.1)
+  - HLLDropDownQuickView (~> 0.1)
   - HLLFont (~> 0.1)
   - JSONModel (~> 0.10.0)
   - KeychainItemWrapper (~> 1.2)
@@ -187,9 +189,10 @@ SPEC CHECKSUMS:
   Analytics: 64c4b84c5e119080b3927a7352ba86945a6ecaaa
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
   CocoaSecurity: f53058286161eca4483a8e7370d7c99e85e4a592
-  FoundationExtension: 9ea775b06ff4a3914db341cefdcaa8180c6e0366
+  FoundationExtension: 1b14075e6d6a76182e4e8e678eabd697f315ee73
   GIKPopoverBackgroundView: 6163da8cb906689732e5900c1484e6a411ce4da3
   GMGridView: a17a31f010990eb8f802abb4cab50e6e03e993ea
+  HLLDropDownQuickView: bad0f44dbc29b05a76d087f0fbc22cf6a4af2007
   HLLFont: b74c37c01c7957df048a0b875dfc292265f5a973
   JSONModel: cecca3c3a9ee1a248b56f7139e2d64b85ce536ec
   KeychainItemWrapper: b532e85de8792ea70dad237e7ead90993af763cf

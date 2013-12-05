@@ -14,7 +14,7 @@
 
 @interface HLLFavoriteGroupViewController ()
 {
-    NSArray<HLLCollectGroupModel> *groupModels;
+    NSMutableArray<HLLCollectGroupModel> *groupModels;
 }
 
 @end
@@ -42,22 +42,23 @@
 {
     [super viewDidLoad];
     
+    self.groupTableView.dataSource=self;
+    self.groupTableView.delegate=self;
+    
     [HLLDataAuthorizeProvider collectGetGroupList:nil
                                        completion:nil
                                           success:^(id json, JSONModelError *err) {
                                               HLLCollectGroupListModel* collectGroupListModel = [[HLLCollectGroupListModel alloc] initWithDictionary:json error:nil];
                                               if (collectGroupListModel)
                                               {
-                                                  groupModels=collectGroupListModel.groups;
+                                                  // load data
+                                                  groupModels=(NSMutableArray<HLLCollectGroupModel> *)collectGroupListModel.groups;
                                                   
                                                   // update collect group list
                                                   [self.groupTableView reloadData];
                                               }
                                           }
                                             error:nil];
-    
-    self.groupTableView.dataSource=self;
-    self.groupTableView.delegate=self;
 }
 
 - (void)viewDidUnload
@@ -85,6 +86,35 @@
     [super viewDidDisappear:animated];
 }
 
+#pragma mark - Actions
+
+- (IBAction)groupAddButtonPress:(id)sender
+{
+    // add group
+    [HLLDataAuthorizeProvider collectAddGroup:nil
+                                         name:self.groupNameTextField.text
+                                   completion:nil
+                                      success:^(id json, JSONModelError *err) {
+                                          HLLCollectGroupModel *collectGroupModel = [[HLLCollectGroupModel alloc] initWithDictionary:json error:nil];
+                                          if (collectGroupModel)
+                                          {
+                                              // get info
+                                              collectGroupModel.name=self.groupNameTextField.text;
+                                              
+                                              // add new model
+                                              [groupModels addObject:collectGroupModel];
+                                              
+                                              // update collect group list
+                                              [self.groupTableView reloadData];
+                                              
+                                              // scroll to new model
+//                                             HLLCommentView *commentView=(HLLCommentView*)commentViewController.productCommentView;
+//                                             [commentView scrollToRowAtIndexPath:[NSIndexPath indexPathWithIndex:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+                                          }
+                                      }
+                                        error:nil];
+}
+
 #pragma mark - Private Methods
 
 #pragma mark - UITableViewDataSource
@@ -96,23 +126,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * CellIdentifier = @"HLLSelectCellIdentifier";
-    
-    // register cell
-    static BOOL IsRegNib = NO;
-    if (!IsRegNib)
-    {
-        [tableView registerNib:[UINib nibWithNibName:@"HLLSelectCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
-        IsRegNib = YES;
-    }
-    
     // get exist cell
-    HLLSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    HLLSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:HLLSELECTCELL_CELLIDENTIFIER];
     
     // if no cell create one
     if (!cell)
     {
-        cell = [[HLLSelectCell alloc] init];
+        cell = [[HLLSelectCell alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor=[UIColor clearColor];
     }

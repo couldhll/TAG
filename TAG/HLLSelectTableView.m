@@ -8,24 +8,50 @@
 
 #import "HLLSelectTableView.h"
 
+#import "HLLSelectCell.h"
+
 @implementation HLLSelectTableView
+
+#pragma mark - Init
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self initialize];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)initialize
 {
-    // Drawing code
+    // register cell
+    static BOOL IsRegNib = NO;
+    if (!IsRegNib)
+    {
+        [self registerNib:[UINib nibWithNibName:@"HLLSelectCell" bundle:nil] forCellReuseIdentifier:HLLSELECTCELL_CELLIDENTIFIER];
+        IsRegNib = YES;
+    }
+    
+    self.separatorStyle = NO;
 }
-*/
+
+/*
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect
+ {
+ // Drawing code
+ }
+ */
 
 @end

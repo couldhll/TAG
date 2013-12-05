@@ -38,6 +38,14 @@
 
 - (void)initialize
 {
+    // register cell
+    static BOOL IsRegNib = NO;
+    if (!IsRegNib)
+    {
+        [self registerNib:[UINib nibWithNibName:@"HLLCommentCell" bundle:nil] forCellReuseIdentifier:HLLCOMMENTCELL_CELLIDENTIFIER];
+        IsRegNib = YES;
+    }
+    
     self.separatorStyle = NO;
     
     self.dataSource=self;
@@ -61,18 +69,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * CellIdentifier = @"HLLCommentCellIdentifier";
-    
-    // register cell
-    static BOOL IsRegNib = NO;
-    if (!IsRegNib)
-    {
-        [tableView registerNib:[UINib nibWithNibName:@"HLLCommentCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
-        IsRegNib = YES;
-    }
-    
     // get exist cell
-    HLLCommentCell *cell = [self dequeueReusableCellWithIdentifier:CellIdentifier];
+    HLLCommentCell *cell = [self dequeueReusableCellWithIdentifier:HLLCOMMENTCELL_CELLIDENTIFIER];
     
     // if no cell create one
     if (!cell)

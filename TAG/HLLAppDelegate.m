@@ -24,8 +24,13 @@
 
 @implementation HLLAppDelegate
 
+@synthesize isFullScreen;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // init
+    isFullScreen=NO;
+    
 //    // init GoogleSDK
 //    // Optional: automatically send uncaught exceptions to Google Analytics.
 //    [GAI sharedInstance].trackUncaughtExceptions = YES;
@@ -107,8 +112,8 @@
                                 }];
     }
     
-    // check Authorize
-//    [[HLLUserData sharedInstance] checkAuthorize:self.window.rootViewController];
+    // auto login
+    [[HLLUserData sharedInstance] checkAuthorize:self.window.rootViewController popupLoginView:NO];
     
     return YES;
 }
@@ -151,6 +156,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Orientation
+
+-(NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    if (isFullScreen)
+    {
+        return UIInterfaceOrientationMaskAll;
+    }
+    
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 #pragma mark - Controller

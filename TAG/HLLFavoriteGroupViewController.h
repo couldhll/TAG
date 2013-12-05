@@ -11,5 +11,9 @@
 @interface HLLFavoriteGroupViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HLLSelectTableView *groupTableView;
+@property (strong, nonatomic) IBOutlet HLLTextField *groupNameTextField;
+@property (strong, nonatomic) IBOutlet UIButton *groupAddButton;
+
+- (IBAction)groupAddButtonPress:(id)sender;
 
 @end

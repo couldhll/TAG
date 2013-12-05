@@ -16,6 +16,8 @@
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) IIViewDeckController *deckController;
 
+@property (assign, nonatomic) BOOL isFullScreen;
+
 - (void)openViewController:(NSString *)name sender:(UIViewController*)sender;
 
 @end
