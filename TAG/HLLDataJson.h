@@ -49,7 +49,7 @@
 #pragma mark - Url
 
 #ifdef DEBUG
-#   define DATA_API_BASE_URL @"http://api-tagoriginals-com-3u8vy4kocu16.runscope.net/"
+#   define DATA_API_BASE_URL @"http://api-tagoriginals-com-pf12l26kmt1v.runscope.net/"
 #else
 #   define DATA_API_BASE_URL @"http://api.tagoriginals.com/"
 #endif

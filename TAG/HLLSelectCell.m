@@ -18,6 +18,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         selectButton=[[HLLSelectButton alloc] initWithFrame:self.frame];
+        [self addSubview:selectButton];
     }
     return self;
 }

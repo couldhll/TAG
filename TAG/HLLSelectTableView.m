@@ -35,12 +35,12 @@
 - (void)initialize
 {
     // register cell
-    static BOOL IsRegNib = NO;
-    if (!IsRegNib)
-    {
-        [self registerNib:[UINib nibWithNibName:@"HLLSelectCell" bundle:nil] forCellReuseIdentifier:HLLSELECTCELL_CELLIDENTIFIER];
-        IsRegNib = YES;
-    }
+//    static BOOL IsRegNib = NO;
+//    if (!IsRegNib)
+//    {
+//        [self registerNib:[UINib nibWithNibName:@"HLLSelectCell" bundle:nil] forCellReuseIdentifier:HLLSELECTCELL_CELLIDENTIFIER];
+//        IsRegNib = YES;
+//    }
     
     self.separatorStyle = NO;
 }

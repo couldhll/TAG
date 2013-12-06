@@ -138,9 +138,15 @@
 {
     authorizationUser=userModel;
     
+    // delete all keychain
+    [wrapper resetKeychainItem];
+    
     if (authorizationUser==nil)
     {
         isAuthorized=NO;
+        
+        [wrapper setObject:nil forKey:(__bridge id)kSecAttrAccount];
+        [wrapper setObject:nil forKey:(__bridge id)kSecValueData];
     }
     else
     {
@@ -149,9 +155,6 @@
         //    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
         //    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:[[NSBundle mainBundle] bundleIdentifier]];
         //    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"Account" accessGroup:nil];
-        
-        // delete all keychain
-        [wrapper resetKeychainItem];
         
         if (authorizationUser.canTAGAuthorize)
         {

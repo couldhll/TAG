@@ -127,12 +127,6 @@
     
     // init sub view
     [self subViewsAddToParent:containView];
-    
-//    // add video view
-//    CGSize videoViewSize=CGSizeMake(200, 200);
-//    HLLVideoView *videoView=[[HLLVideoView alloc] initWithFrame:CGRectMake(0, 0, videoViewSize.width, videoViewSize.height)];
-//    [videoView loadVideo:@"http://player.youku.com/embed/XNjA4NjU4MzYw"];
-//    [self.view addSubview:videoView];
 }
 
 - (void)viewDidUnload

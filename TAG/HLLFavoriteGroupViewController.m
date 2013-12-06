@@ -56,6 +56,9 @@
                                                   
                                                   // update collect group list
                                                   [self.groupTableView reloadData];
+                                                  
+                                                  NSIndexSet * sections = [NSIndexSet indexSetWithIndex:0];
+                                                  [self.groupTableView reloadSections:sections withRowAnimation:UITableViewRowAnimationNone];
                                               }
                                           }
                                             error:nil];
@@ -135,6 +138,7 @@
         cell = [[HLLSelectCell alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor=[UIColor clearColor];
+        cell.backgroundColor=[UIColor redColor];
     }
     
     // load data
