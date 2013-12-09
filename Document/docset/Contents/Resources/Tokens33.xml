@@ -1,80 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMErrorInfo.html">
+	<File path="Classes/CMDeviceInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	异常信息</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMDeviceInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	设备信息</Abstract>
+			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>
 			
 			<NodeRef refid="33"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	错误代码，如果为调用API出错则应该参考API错误码对照表，如果为HTTP错误，此属性则指示HTTP错误码。</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/CMDeviceInfo/macAddress</TokenIdentifier>
+			<Abstract type="html">	@brief	取得网卡的物理地址</Abstract>
+			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) NSInteger errorCode</Declaration>
+			<Declaration>+ (NSString *)macAddress</Declaration>
 			
-			
-			<Anchor>//api/name/errorCode</Anchor>
+			<ReturnValue><Abstract type="html">网卡物理地址</Abstract></ReturnValue>
+			<Anchor>//api/name/macAddress</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorCode</TokenIdentifier>
-			<Abstract type="html">	@brief	错误代码，如果为调用API出错则应该参考API错误码对照表，如果为HTTP错误，此属性则指示HTTP错误码。</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/CMDeviceInfo/deviceModel</TokenIdentifier>
+			<Abstract type="html">	@brief	获取设备型号</Abstract>
+			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) NSInteger errorCode</Declaration>
+			<Declaration>+ (NSString *)deviceModel</Declaration>
 			
-			
-			<Anchor>//api/name/errorCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorDescription:</TokenIdentifier>
-			<Abstract type="html">	@brief	错误描述，对应相应的错误码的描述</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
-			
-			
-			<Anchor>//api/name/errorDescription</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorDescription</TokenIdentifier>
-			<Abstract type="html">	@brief	错误描述，对应相应的错误码的描述</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
-			
-			
-			<Anchor>//api/name/errorDescription</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorLevel:</TokenIdentifier>
-			<Abstract type="html">	@brief	错误级别</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CMErrorLevel errorLevel</Declaration>
-			
-			
-			<Anchor>//api/name/errorLevel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorLevel</TokenIdentifier>
-			<Abstract type="html">	@brief	错误级别</Abstract>
-			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CMErrorLevel errorLevel</Declaration>
-			
-			
-			<Anchor>//api/name/errorLevel</Anchor>
+			<ReturnValue><Abstract type="html">设备型号：设备型号对照如下：
+iPhone1,1 -&gt;    iPhone 1G
+iPhone1,2 -&gt;    iPhone 3G
+iPhone2,1 -&gt;    iPhone 3GS
+iPhone3,1 -&gt;    iPhone 4
+
+iPod1,1   -&gt; iPod touch 1G
+iPod2,1   -&gt; iPod touch 2G
+iPod2,2   -&gt; iPod touch 2.5G
+iPod3,1   -&gt; iPod touch 3G
+iPod4,1   -&gt; iPod touch 4
+
+iPad1,1   -&gt; iPad 1G, WiFi</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceModel</Anchor>
 		</Token>
 		
 	</File>

@@ -1,221 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JSONHTTPClient.html">
+	<File path="Classes/QQApiResultObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JSONHTTPClient</TokenIdentifier>
-			<Abstract type="html">@discussion A very thin HTTP client that can do GET and POST HTTP requests.
-It fetches only JSON data and also deserializes it using NSJSONSerialization.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiResultObject</TokenIdentifier>
+			<Abstract type="html">\brief 用于请求回应的数据类型。
+&lt;h3&gt;可能错误码及描述如下:&lt;/h3&gt;
+&lt;TABLE&gt;
+&lt;TR&gt;&lt;TD&gt;error&lt;/TD&gt;&lt;TD&gt;errorDescription&lt;/TD&gt;&lt;TD&gt;注释&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;0&lt;/TD&gt;&lt;TD&gt;nil&lt;/TD&gt;&lt;TD&gt;成功&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-1&lt;/TD&gt;&lt;TD&gt;param error&lt;/TD&gt;&lt;TD&gt;参数错误&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-2&lt;/TD&gt;&lt;TD&gt;group code is invalid&lt;/TD&gt;&lt;TD&gt;该群不在自己的群列表里面&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-3&lt;/TD&gt;&lt;TD&gt;upload photo failed&lt;/TD&gt;&lt;TD&gt;上传图片失败&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-4&lt;/TD&gt;&lt;TD&gt;user give up the current operation&lt;/TD&gt;&lt;TD&gt;用户放弃当前操作&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD&gt;-5&lt;/TD&gt;&lt;TD&gt;client internal error&lt;/TD&gt;&lt;TD&gt;客户端内部处理错误&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="124"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/requestHeaders</TokenIdentifier>
-			<Abstract type="html">Returns a modifyable dictionary of the client&apos;s default HTTP headers.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiResultObject/setErrorDescription:</TokenIdentifier>
+			<Abstract type="html">&lt;错误</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary *)requestHeaders</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *errorDescription</Declaration>
 			
-			<ReturnValue><Abstract type="html">A mutable dictionary of pairs - HTTP header names and values.
-@discussion You can use the result to modify the http client headers like so:
-&lt;pre&gt;
-NSMutableDictionary* headers = [JSONHTTPClient requestHeaders];
-headers[@&quot;APIToken&quot;] = @&quot;MySecretTokenValue&quot;;
-&lt;/pre&gt;</Abstract></ReturnValue>
-			<Anchor>//api/name/requestHeaders</Anchor>
+			
+			<Anchor>//api/name/errorDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/setDefaultTextEncoding:</TokenIdentifier>
-			<Abstract type="html">Sets the default encoding of the request body.
-See NSStringEncoding for a list of supported encodings</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiResultObject/errorDescription</TokenIdentifier>
+			<Abstract type="html">&lt;错误</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setDefaultTextEncoding:(NSStringEncoding)encoding</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>encoding</Name>
-					<Abstract type="html">text encoding constant</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSString *errorDescription</Declaration>
 			
-			<Anchor>//api/name/setDefaultTextEncoding:</Anchor>
+			
+			<Anchor>//api/name/errorDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/setCachingPolicy:</TokenIdentifier>
-			<Abstract type="html">Sets the policies for caching HTTP data
-See NSURLRequestCachePolicy for a list of the pre-defined policies</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiResultObject/setExtendInfo:</TokenIdentifier>
+			<Abstract type="html">&lt;错误描述</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setCachingPolicy:(NSURLRequestCachePolicy)policy</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>policy</Name>
-					<Abstract type="html">the caching policy</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSString *extendInfo</Declaration>
 			
-			<Anchor>//api/name/setCachingPolicy:</Anchor>
+			
+			<Anchor>//api/name/extendInfo</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/setTimeoutInSeconds:</TokenIdentifier>
-			<Abstract type="html">Sets the timeout for network calls</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiResultObject/extendInfo</TokenIdentifier>
+			<Abstract type="html">&lt;错误描述</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setTimeoutInSeconds:(int)seconds</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>seconds</Name>
-					<Abstract type="html">the amount of seconds to wait before considering the call failed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setTimeoutInSeconds:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/setControlsNetworkIndicator:</TokenIdentifier>
-			<Abstract type="html">A method to enable/disable automatic network indicator showing.
-Set to YES by default.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setControlsNetworkIndicator:(BOOL)doesControlIndicator</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>doesControlIndicator</Name>
-					<Abstract type="html">if YES, the library shows and hides the
-system network indicator automatically on begin and end of
-network operations</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setControlsNetworkIndicator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/setRequestContentType:</TokenIdentifier>
-			<Abstract type="html">A method to set the default conent type of the request body
-By default the content type is set to kContentTypeAutomatic
-which checks the body request and decides between &quot;application/json&quot;
-and &quot;application/x-www-form-urlencoded&quot;</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setRequestContentType:(NSString *)contentTypeString</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *extendInfo</Declaration>
 			
 			
-			<Anchor>//api/name/setRequestContentType:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/getJSONFromURLWithString:completion:</TokenIdentifier>
-			<Abstract type="html">Makes GET request to the given URL address and fetches a JSON response.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)getJSONFromURLWithString:(NSString *)urlString completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the URL as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getJSONFromURLWithString:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/getJSONFromURLWithString:params:completion:</TokenIdentifier>
-			<Abstract type="html">Makes GET request to the given URL address and fetches a JSON response. Sends the params as a query string variables.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)getJSONFromURLWithString:(NSString *)urlString params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the URL as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>params</Name>
-					<Abstract type="html">a dictionary of key / value pairs to be send as variables to the request</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getJSONFromURLWithString:params:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/postJSONFromURLWithString:params:completion:</TokenIdentifier>
-			<Abstract type="html">Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)postJSONFromURLWithString:(NSString *)urlString params:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the URL as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>params</Name>
-					<Abstract type="html">a dictionary of key / value pairs to be send as variables to the request</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/postJSONFromURLWithString:params:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/postJSONFromURLWithString:bodyString:completion:</TokenIdentifier>
-			<Abstract type="html">Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)postJSONFromURLWithString:(NSString *)urlString bodyString:(NSString *)bodyString completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the URL as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>bodyString</Name>
-					<Abstract type="html">the body of the POST request as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/postJSONFromURLWithString:bodyString:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONHTTPClient/postJSONFromURLWithString:bodyData:completion:</TokenIdentifier>
-			<Abstract type="html">Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</Abstract>
-			<DeclaredIn>JSONHTTPClient.h</DeclaredIn>			
-			
-			<Declaration>+ (void)postJSONFromURLWithString:(NSString *)urlString bodyData:(NSData *)bodyData completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the URL as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>bodyData</Name>
-					<Abstract type="html">the body of the POST request as an NSData object</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/postJSONFromURLWithString:bodyData:completion:</Anchor>
+			<Anchor>//api/name/extendInfo</Anchor>
 		</Token>
 		
 	</File>

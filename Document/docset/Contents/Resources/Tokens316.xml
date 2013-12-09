@@ -1,15 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSQZoneErrorInfo.html">
+	<File path="Classes/TCAddAlbumDic.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	QQ空间异常信息</Abstract>
-			<DeclaredIn>SSQZoneErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TCAddAlbumDic</TokenIdentifier>
+			<Abstract type="html">\brief 创建空间相册的参数字典定义</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
 			
 			<NodeRef refid="316"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TCAddAlbumDic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>+ (TCAddAlbumDic *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/dictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddAlbumDic/setParamAlbumname:</TokenIdentifier>
+			<Abstract type="html">albumname 必须 string 相册名 不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramAlbumname</Declaration>
+			
+			
+			<Anchor>//api/name/paramAlbumname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddAlbumDic/paramAlbumname</TokenIdentifier>
+			<Abstract type="html">albumname 必须 string 相册名 不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramAlbumname</Declaration>
+			
+			
+			<Anchor>//api/name/paramAlbumname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddAlbumDic/setParamAlbumdesc:</TokenIdentifier>
+			<Abstract type="html">albumdesc string 相册描述，不能超过200个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramAlbumdesc</Declaration>
+			
+			
+			<Anchor>//api/name/paramAlbumdesc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddAlbumDic/paramAlbumdesc</TokenIdentifier>
+			<Abstract type="html">albumdesc string 相册描述，不能超过200个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramAlbumdesc</Declaration>
+			
+			
+			<Anchor>//api/name/paramAlbumdesc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddAlbumDic/setParamPriv:</TokenIdentifier>
+			<Abstract type="html">priv string	相册权限</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPriv</Declaration>
+			
+			
+			<Anchor>//api/name/paramPriv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddAlbumDic/paramPriv</TokenIdentifier>
+			<Abstract type="html">priv string	相册权限</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPriv</Declaration>
+			
+			
+			<Anchor>//api/name/paramPriv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddAlbumDic/setParamQuestion:</TokenIdentifier>
+			<Abstract type="html">question 问题，不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramQuestion</Declaration>
+			
+			
+			<Anchor>//api/name/paramQuestion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddAlbumDic/paramQuestion</TokenIdentifier>
+			<Abstract type="html">question 问题，不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramQuestion</Declaration>
+			
+			
+			<Anchor>//api/name/paramQuestion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddAlbumDic/setParamAnswer:</TokenIdentifier>
+			<Abstract type="html">answer 答案，不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramAnswer</Declaration>
+			
+			
+			<Anchor>//api/name/paramAnswer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddAlbumDic/paramAnswer</TokenIdentifier>
+			<Abstract type="html">answer 答案，不能超过30个字符。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramAnswer</Declaration>
+			
+			
+			<Anchor>//api/name/paramAnswer</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

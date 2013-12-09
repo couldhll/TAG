@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/MailConnection.html">
+	<File path="Classes/SMSConnection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/MailConnection</TokenIdentifier>
-			<Abstract type="html">	@brief	邮件连接器</Abstract>
-			<DeclaredIn>MailConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SMSConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	短信链接器</Abstract>
+			<DeclaredIn>SMSConnection.h</DeclaredIn>
 			
 			<NodeRef refid="137"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MailConnection/registerApp:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/SMSConnection/registerApp:</TokenIdentifier>
 			<Abstract type="html">	@brief	注册应用</Abstract>
-			<DeclaredIn>MailConnection.h</DeclaredIn>			
+			<DeclaredIn>SMSConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSMailApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account</Declaration>
+			<Declaration>+ (id&lt;ISSSMSApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>account</Name>
-					<Abstract type="html">帐户</Abstract>
+					<Abstract type="html">帐号</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>

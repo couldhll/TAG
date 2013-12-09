@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSDouBanErrorInfo.html">
+	<File path="Classes/SSPinterestErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanErrorInfo</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPinterestErrorInfo</TokenIdentifier>
 			<Abstract type="html">	@brief	错误信息</Abstract>
-			<DeclaredIn>SSDouBanErrorInfo.h</DeclaredIn>
+			<DeclaredIn>SSPinterestErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="227"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanErrorInfo/setRequest:</TokenIdentifier>
-			<Abstract type="html">	@brief	请求路径</Abstract>
-			<DeclaredIn>SSDouBanErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
-			
-			
-			<Anchor>//api/name/request</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanErrorInfo/request</TokenIdentifier>
-			<Abstract type="html">	@brief	请求路径</Abstract>
-			<DeclaredIn>SSDouBanErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
-			
-			
-			<Anchor>//api/name/request</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

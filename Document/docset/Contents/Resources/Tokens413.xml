@@ -1,96 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TencentApiResp.html">
+	<File path="Categories/NSData+CommonCrypto.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TencentApiResp</TokenIdentifier>
-			<Abstract type="html">\brief 答复包</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCrypto)</TokenIdentifier>
+			<Abstract type="html">@brief Shortcuts for CommonCrypto digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>
 			
 			<NodeRef refid="413"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/TencentApiResp/respFromReq:</TokenIdentifier>
-			<Abstract type="html">根据序列号生成一个答复包</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestByMD2</TokenIdentifier>
+			<Abstract type="html">@brief MD2 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>+ (TencentApiResp *)respFromReq:(TencentApiReq *)req</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>req</Name>
-					<Abstract type="html">答复对应的请求包（如果req不是TencentApiReq或者他的子类，会抛出异常）</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">答复包体</Abstract></ReturnValue>
-			<Anchor>//api/name/respFromReq:</Anchor>
+			<Declaration>- (NSData *)digestByMD2</Declaration>
+			
+			
+			<Anchor>//api/name/digestByMD2</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setNRetCode:</TokenIdentifier>
-			<Abstract type="html">返回码</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestByMD4</TokenIdentifier>
+			<Abstract type="html">@brief MD4 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			<Declaration>- (NSData *)digestByMD4</Declaration>
 			
 			
-			<Anchor>//api/name/nRetCode</Anchor>
+			<Anchor>//api/name/digestByMD4</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/nRetCode</TokenIdentifier>
-			<Abstract type="html">返回码</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestByMD5</TokenIdentifier>
+			<Abstract type="html">@brief MD5 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			<Declaration>- (NSData *)digestByMD5</Declaration>
 			
 			
-			<Anchor>//api/name/nRetCode</Anchor>
+			<Anchor>//api/name/digestByMD5</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setSRetMsg:</TokenIdentifier>
-			<Abstract type="html">返回消息</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestBySHA1</TokenIdentifier>
+			<Abstract type="html">@brief SHA1 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			<Declaration>- (NSData *)digestBySHA1</Declaration>
 			
 			
-			<Anchor>//api/name/sRetMsg</Anchor>
+			<Anchor>//api/name/digestBySHA1</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/sRetMsg</TokenIdentifier>
-			<Abstract type="html">返回消息</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestBySHA224</TokenIdentifier>
+			<Abstract type="html">@brief SHA224 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			<Declaration>- (NSData *)digestBySHA224</Declaration>
 			
 			
-			<Anchor>//api/name/sRetMsg</Anchor>
+			<Anchor>//api/name/digestBySHA224</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setObjReq:</TokenIdentifier>
-			<Abstract type="html">答复对应的请求包</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestBySHA256</TokenIdentifier>
+			<Abstract type="html">@brief SSH256 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			<Declaration>- (NSData *)digestBySHA256</Declaration>
 			
 			
-			<Anchor>//api/name/objReq</Anchor>
+			<Anchor>//api/name/digestBySHA256</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/objReq</TokenIdentifier>
-			<Abstract type="html">答复对应的请求包</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestBySHA384</TokenIdentifier>
+			<Abstract type="html">@brief SSH384 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			<Declaration>- (NSData *)digestBySHA384</Declaration>
 			
 			
-			<Anchor>//api/name/objReq</Anchor>
+			<Anchor>//api/name/digestBySHA384</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCrypto)/digestBySHA512</TokenIdentifier>
+			<Abstract type="html">@brief SSH512 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA512</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA512</Anchor>
 		</Token>
 		
 	</File>

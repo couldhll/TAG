@@ -1,15 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookErrorInfo.html">
+	<File path="Classes/SSSinaWeiboComment.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	错误信息</Abstract>
-			<DeclaredIn>SSFacebookErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboComment</TokenIdentifier>
+			<Abstract type="html">	@brief	新浪评论信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>
 			
 			<NodeRef refid="253"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论创建时间</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/createdAt</TokenIdentifier>
+			<Abstract type="html">	@brief	评论创建时间</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的ID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的ID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的内容</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/text</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的内容</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的来源</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/source</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的来源</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论作者的用户信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/user</TokenIdentifier>
+			<Abstract type="html">	@brief	评论作者的用户信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setMid:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的MID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mid</Declaration>
+			
+			
+			<Anchor>//api/name/mid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/mid</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的MID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mid</Declaration>
+			
+			
+			<Anchor>//api/name/mid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	字符串型的评论ID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	字符串型的评论ID</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			
+			
+			<Anchor>//api/name/idStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/status</TokenIdentifier>
+			<Abstract type="html">	@brief	评论的微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setReplyComment:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论来源评论，当本评论属于对另一评论的回复时返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboComment *replyComment</Declaration>
+			
+			
+			<Anchor>//api/name/replyComment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/replyComment</TokenIdentifier>
+			<Abstract type="html">	@brief	评论来源评论，当本评论属于对另一评论的回复时返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboComment *replyComment</Declaration>
+			
+			
+			<Anchor>//api/name/replyComment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboComment/commentWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建评论信息</Abstract>
+			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSinaWeiboComment *)commentWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">评论信息</Abstract></ReturnValue>
+			<Anchor>//api/name/commentWithResponse:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

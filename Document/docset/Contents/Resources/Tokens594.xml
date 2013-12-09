@@ -1,182 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/FBGraphLocation.html">
+	<File path="Protocols/QuiltViewDataSource.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/FBGraphLocation</TokenIdentifier>
-			<Abstract type="html">@protocol</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/QuiltViewDataSource</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图数据源</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>
 			
 			<NodeRef refid="594"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setStreet:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s street.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDataSource/quiltViewNumberOfItem:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) NSString *street</Declaration>
-			
-			
-			<Anchor>//api/name/street</Anchor>
+			<Declaration>- (NSInteger)quiltViewNumberOfItem:(CMQuiltView *)quiltView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">子项数量</Abstract></ReturnValue>
+			<Anchor>//api/name/quiltViewNumberOfItem:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/street</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s street.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDataSource/quiltView:itemForIndexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回子项内容</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
 			
-			<Declaration>@property (retain, nonatomic) NSString *street</Declaration>
-			
-			
-			<Anchor>//api/name/street</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setCity:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s city.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *city</Declaration>
-			
-			
-			<Anchor>//api/name/city</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/city</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s city.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *city</Declaration>
-			
-			
-			<Anchor>//api/name/city</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setState:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s state.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *state</Declaration>
-			
-			
-			<Anchor>//api/name/state</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/state</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s state.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *state</Declaration>
-			
-			
-			<Anchor>//api/name/state</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setCountry:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s country.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *country</Declaration>
-			
-			
-			<Anchor>//api/name/country</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/country</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s country.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *country</Declaration>
-			
-			
-			<Anchor>//api/name/country</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setZip:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s zip code.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *zip</Declaration>
-			
-			
-			<Anchor>//api/name/zip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/zip</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s zip code.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSString *zip</Declaration>
-			
-			
-			<Anchor>//api/name/zip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setLatitude:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s latitude.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSNumber *latitude</Declaration>
-			
-			
-			<Anchor>//api/name/latitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/latitude</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s latitude.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSNumber *latitude</Declaration>
-			
-			
-			<Anchor>//api/name/latitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphLocation/setLongitude:</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s longitude.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSNumber *longitude</Declaration>
-			
-			
-			<Anchor>//api/name/longitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphLocation/longitude</TokenIdentifier>
-			<Abstract type="html">@property
-@abstract Typed access to a location&apos;s longitude.</Abstract>
-			<DeclaredIn>FBGraphLocation.h</DeclaredIn>			
-			
-			<Declaration>@property (retain, nonatomic) NSNumber *longitude</Declaration>
-			
-			
-			<Anchor>//api/name/longitude</Anchor>
+			<Declaration>- (UIView&lt;ICMQuiltItemView&gt; *)quiltView:(CMQuiltView *)quiltView itemForIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter><Parameter>
+					<Name>QuiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">子项对象</Abstract></ReturnValue>
+			<Anchor>//api/name/quiltView:itemForIndexPath:</Anchor>
 		</Token>
 		
 	</File>

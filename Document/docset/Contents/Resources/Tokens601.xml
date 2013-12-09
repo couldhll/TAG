@@ -1,88 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/FBPlacePickerDelegate.html">
+	<File path="Protocols/TencentLoginDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/FBPlacePickerDelegate</TokenIdentifier>
-			<Abstract type="html">@protocol</Abstract>
-			<DeclaredIn>FBPlacePickerViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/TencentLoginDelegate</TokenIdentifier>
+			<Abstract type="html">\brief TencentLoginDelegate iOS Open SDK 1.3 API回调协议</Abstract>
+			<DeclaredIn>TencentOAuth.h</DeclaredIn>
 			
 			<NodeRef refid="601"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBPlacePickerDelegate/placePickerViewControllerDataDidChange:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that data has been loaded.</Abstract>
-			<DeclaredIn>FBPlacePickerViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentLoginDelegate/tencentDidLogin</TokenIdentifier>
+			<Abstract type="html">登录成功后的回调</Abstract>
+			<DeclaredIn>TencentOAuth.h</DeclaredIn>			
 			
-			<Declaration>- (void)placePickerViewControllerDataDidChange:(FBPlacePickerViewController *)placePicker</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>placePicker</Name>
-					<Abstract type="html">The place picker view controller whose data changed.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)tencentDidLogin</Declaration>
 			
-			<Anchor>//api/name/placePickerViewControllerDataDidChange:</Anchor>
+			
+			<Anchor>//api/name/tencentDidLogin</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBPlacePickerDelegate/placePickerViewControllerSelectionDidChange:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that the selection has changed.</Abstract>
-			<DeclaredIn>FBPlacePickerViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentLoginDelegate/tencentDidNotLogin:</TokenIdentifier>
+			<Abstract type="html">登录失败后的回调</Abstract>
+			<DeclaredIn>TencentOAuth.h</DeclaredIn>			
 			
-			<Declaration>- (void)placePickerViewControllerSelectionDidChange:(FBPlacePickerViewController *)placePicker</Declaration>
+			<Declaration>- (void)tencentDidNotLogin:(BOOL)cancelled</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>placePicker</Name>
-					<Abstract type="html">The place picker view controller whose selection changed.</Abstract>
+					<Name>cancelled</Name>
+					<Abstract type="html">代表用户是否主动退出登录</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/placePickerViewControllerSelectionDidChange:</Anchor>
+			<Anchor>//api/name/tencentDidNotLogin:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBPlacePickerDelegate/placePickerViewController:shouldIncludePlace:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Asks the delegate whether to include a place in the list.</Abstract>
-			<DeclaredIn>FBPlacePickerViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentLoginDelegate/tencentDidNotNetWork</TokenIdentifier>
+			<Abstract type="html">登录时网络有问题的回调</Abstract>
+			<DeclaredIn>TencentOAuth.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)placePickerViewController:(FBPlacePickerViewController *)placePicker shouldIncludePlace:(id&lt;FBGraphPlace&gt;)place</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>placePicker</Name>
-					<Abstract type="html">The place picker view controller that is requesting this information.</Abstract>
-				</Parameter><Parameter>
-					<Name>place</Name>
-					<Abstract type="html">An FBGraphPlace object representing the place.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)tencentDidNotNetWork</Declaration>
 			
-			<Anchor>//api/name/placePickerViewController:shouldIncludePlace:</Anchor>
+			
+			<Anchor>//api/name/tencentDidNotNetWork</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBPlacePickerDelegate/placePickerViewController:handleError:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Called if there is a communication error.</Abstract>
-			<DeclaredIn>FBPlacePickerViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/TencentLoginDelegate/getAuthorizedPermissions:withExtraParams:</TokenIdentifier>
+			<Abstract type="html">登录时权限信息的获得</Abstract>
+			<DeclaredIn>TencentOAuth.h</DeclaredIn>			
 			
-			<Declaration>- (void)placePickerViewController:(FBPlacePickerViewController *)placePicker handleError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>placePicker</Name>
-					<Abstract type="html">The place picker view controller that encountered the error.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">An error object containing details of the error.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSArray *)getAuthorizedPermissions:(NSArray *)permissions withExtraParams:(NSDictionary *)extraParams</Declaration>
 			
-			<Anchor>//api/name/placePickerViewController:handleError:</Anchor>
+			
+			<Anchor>//api/name/getAuthorizedPermissions:withExtraParams:</Anchor>
 		</Token>
 		
 	</File>

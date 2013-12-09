@@ -1,163 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSArray+Functional.html">
+	<File path="Categories/UIImage+Common.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSArray(Functional)</TokenIdentifier>
-			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(Common)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(Functional)</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="484"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/applyProcedure:</TokenIdentifier>
-			<Abstract type="html">@brief Apply procedure to objects.
-@details Shallow wrapper of @link NSAApply @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/imageWithView:</TokenIdentifier>
+			<Abstract type="html">	@brief	由视图创建图片</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (void)applyProcedure:(NSAObjectProcedure)procedure</Declaration>
-			
-			
-			<Anchor>//api/name/applyProcedure:</Anchor>
+			<Declaration>+ (UIImage *)imageWithView:(UIView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">视图对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片对象</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWithView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/applyProcedureWithIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Apply procedure with index to objects.
-@details Shallow wrapper of @link NSAApply @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/imageNamed:bundleName:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片对象</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (void)applyProcedureWithIndex:(NSAObjectProcedureWithIndex)procedure</Declaration>
-			
-			
-			<Anchor>//api/name/applyProcedureWithIndex:</Anchor>
+			<Declaration>+ (UIImage *)imageNamed:(NSString *)name bundleName:(NSString *)bundleName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">图片名称</Abstract>
+				</Parameter><Parameter>
+					<Name>bundleName</Name>
+					<Abstract type="html">Bundle名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片对象</Abstract></ReturnValue>
+			<Anchor>//api/name/imageNamed:bundleName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByMappingOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper to objects and returns the result as array.
-@details Shallow wrapper of @link NSAMap @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/scaleImageWithSize:</TokenIdentifier>
+			<Abstract type="html">	@brief	等比缩放照片</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)arrayByMappingOperator:(NSAObjectUnaryOperator)mapper</Declaration>
-			
-			
-			<Anchor>//api/name/arrayByMappingOperator:</Anchor>
+			<Declaration>- (UIImage *)scaleImageWithSize:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">缩放的图片尺寸。如果该尺寸不是按照等比设置，则函数按照宽度或高度最大比例进行等比缩放。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">等比缩放后的图片对象</Abstract></ReturnValue>
+			<Anchor>//api/name/scaleImageWithSize:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByMappingOperatorWithIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper with index to objects and returns the result as array.
-@details Shallow wrapper of @link NSAMapWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/createRoundedRectWithsize:ovalWidth:ovalHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建圆角图片</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)arrayByMappingOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
-			
-			
-			<Anchor>//api/name/arrayByMappingOperatorWithIndex:</Anchor>
+			<Declaration>- (UIImage *)createRoundedRectWithsize:(CGSize)size ovalWidth:(CGFloat)ovalWidth ovalHeight:(CGFloat)ovalHeight</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">圆角图像的图片尺寸</Abstract>
+				</Parameter><Parameter>
+					<Name>ovalWidth</Name>
+					<Abstract type="html">圆角宽度</Abstract>
+				</Parameter><Parameter>
+					<Name>ovalHeight</Name>
+					<Abstract type="html">圆角高度</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">圆角图片对象引用</Abstract></ReturnValue>
+			<Anchor>//api/name/createRoundedRectWithsize:ovalWidth:ovalHeight:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByMapFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper to objects and filters nil result and returns the result as array.
-@details Shallow wrapper of @link NSAMapFilter @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/clipImageWithRect:</TokenIdentifier>
+			<Abstract type="html">	@brief	裁剪图片</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)arrayByMapFilteringOperator:(NSAObjectUnaryOperator)mapper</Declaration>
-			
-			
-			<Anchor>//api/name/arrayByMapFilteringOperator:</Anchor>
+			<Declaration>- (UIImage *)clipImageWithRect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">裁剪范围</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">裁剪后的图片对象</Abstract></ReturnValue>
+			<Anchor>//api/name/clipImageWithRect:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByMapFilteringOperatorWithIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper with index to objects and filters nil result and returns the result as array.
-@details Shallow wrapper of @link NSAMapFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(Common)/grayImage</TokenIdentifier>
+			<Abstract type="html">	@brief	获取灰度化图片</Abstract>
+			<DeclaredIn>UIImage+Common.h</DeclaredIn>			
 			
-			<Declaration>- (NSArray *)arrayByMapFilteringOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
+			<Declaration>- (UIImage *)grayImage</Declaration>
 			
-			
-			<Anchor>//api/name/arrayByMapFilteringOperatorWithIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects and returns result as array.
-@details Shallow wrapper of @link NSAFilter @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (NSArray *)arrayByFilteringOperator:(NSAObjectPicker)filter</Declaration>
-			
-			
-			<Anchor>//api/name/arrayByFilteringOperator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/arrayByFilteringOperatorWithIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects with index and returns result as array.
-@details Shallow wrapper of @link NSAFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (NSArray *)arrayByFilteringOperatorWithIndex:(NSAObjectPickerWithIndex)filter</Declaration>
-			
-			
-			<Anchor>//api/name/arrayByFilteringOperatorWithIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/reduce:</TokenIdentifier>
-			<Abstract type="html">@brief Reduces objects and returns the result.
-@details Shallow wrapper of @link NSAReduce @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)reduce:(NSAObjectBinaryOperator)reduce</Declaration>
-			
-			
-			<Anchor>//api/name/reduce:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/reduce:initialObject:</TokenIdentifier>
-			<Abstract type="html">@brief Reduces objects and returns the result.
-@details Shallow wrapper of @link NSAReduceWithInitialObject @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)reduce:(NSAObjectBinaryOperator)reduce initialObject:(id)initialObject</Declaration>
-			
-			
-			<Anchor>//api/name/reduce:initialObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/firstObjectByFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects and returns the first object of result.
-@details Shallow wrapper of @link NSAFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)firstObjectByFilteringOperator:(NSAObjectPicker)filter</Declaration>
-			
-			
-			<Anchor>//api/name/firstObjectByFilteringOperator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Functional)/firstObjectByFilteringOperatorWithIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects with index and returns the first object of result.
-@details Shallow wrapper of @link NSAFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)firstObjectByFilteringOperatorWithIndex:(NSAObjectPickerWithIndex)filter</Declaration>
-			
-			
-			<Anchor>//api/name/firstObjectByFilteringOperatorWithIndex:</Anchor>
+			<ReturnValue><Abstract type="html">灰度化图片</Abstract></ReturnValue>
+			<Anchor>//api/name/grayImage</Anchor>
 		</Token>
 		
 	</File>

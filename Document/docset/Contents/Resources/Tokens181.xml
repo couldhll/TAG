@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFSignUpViewController.html">
+	<File path="Classes/SSFacebookSchool.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFSignUpViewController</TokenIdentifier>
-			<Abstract type="html">The class that presents and manages a standard authentication interface for signing up a PFUser.</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookSchool</TokenIdentifier>
+			<Abstract type="html">	@brief	学校信息</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>
 			
 			<NodeRef refid="181"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setFields:</TokenIdentifier>
-			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
-    enum {
-        PFSignUpFieldsUsernameAndPassword = 0,
-        PFSignUpFieldsEmail = 1 &lt;&lt; 0,
-        PFSignUpFieldsAdditional = 1 &lt;&lt; 1, // this field can be used for something else
-        PFSignUpFieldsSignUpButton = 1 &lt;&lt; 2,
-        PFSignUpFieldsDismissButton = 1 &lt;&lt; 3,
-        PFSignUpFieldsDefault = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton | PFSignUpFieldsDismissButton
-    };</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSchool/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) PFSignUpFields fields</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/fields</TokenIdentifier>
-			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
-    enum {
-        PFSignUpFieldsUsernameAndPassword = 0,
-        PFSignUpFieldsEmail = 1 &lt;&lt; 0,
-        PFSignUpFieldsAdditional = 1 &lt;&lt; 1, // this field can be used for something else
-        PFSignUpFieldsSignUpButton = 1 &lt;&lt; 2,
-        PFSignUpFieldsDismissButton = 1 &lt;&lt; 3,
-        PFSignUpFieldsDefault = PFSignUpFieldsUsernameAndPassword | PFSignUpFieldsEmail | PFSignUpFieldsSignUpButton | PFSignUpFieldsDismissButton
-    };</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSchool/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) PFSignUpFields fields</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setSignUpView:</TokenIdentifier>
-			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSchool/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	学校Id</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, retain) PFSignUpView *signUpView</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/signUpView</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/signUpView</TokenIdentifier>
-			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSchool/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	学校Id</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, retain) PFSignUpView *signUpView</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/signUpView</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setDelegate:</TokenIdentifier>
-			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookSchool/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	学校名称</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
-			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookSchool/name</TokenIdentifier>
+			<Abstract type="html">	@brief	学校名称</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookSchool/schoolWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建学校消息</Abstract>
+			<DeclaredIn>SSFacebookSchool.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookSchool *)schoolWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">学校信息</Abstract></ReturnValue>
+			<Anchor>//api/name/schoolWithResponse:</Anchor>
 		</Token>
 		
 	</File>

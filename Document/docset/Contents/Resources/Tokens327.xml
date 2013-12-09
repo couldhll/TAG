@@ -1,206 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSRenRenPhoto.html">
+	<File path="Classes/TencentApiInterface.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenPhoto</TokenIdentifier>
-			<Abstract type="html">	@brief	照片信息</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentApiInterface</TokenIdentifier>
+			<Abstract type="html">\brief TencentApiInterface的回调</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>
 			
 			<NodeRef refid="327"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/sendRespMessageToTencentApp:</TokenIdentifier>
+			<Abstract type="html">发送答复返回腾讯业务</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setAlbumId:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片所属相册的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long albumId</Declaration>
-			
-			
-			<Anchor>//api/name/albumId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/albumId</TokenIdentifier>
-			<Abstract type="html">	@brief	照片所属相册的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long albumId</Declaration>
-			
-			
-			<Anchor>//api/name/albumId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setOwnerId:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片所有者的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long ownerId</Declaration>
-			
-			
-			<Anchor>//api/name/ownerId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/ownerId</TokenIdentifier>
-			<Abstract type="html">	@brief	照片所有者的ID</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long ownerId</Declaration>
-			
-			
-			<Anchor>//api/name/ownerId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setDescription:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的描述</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/description</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的描述</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setImages:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片对应的各种类型图片</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
-			
-			
-			<Anchor>//api/name/images</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/images</TokenIdentifier>
-			<Abstract type="html">	@brief	照片对应的各种类型图片</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
-			
-			
-			<Anchor>//api/name/images</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setCreateTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的创建时间</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *createTime</Declaration>
-			
-			
-			<Anchor>//api/name/createTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/createTime</TokenIdentifier>
-			<Abstract type="html">	@brief	照片的创建时间</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *createTime</Declaration>
-			
-			
-			<Anchor>//api/name/createTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setViewCount:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片被浏览的次数</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger viewCount</Declaration>
-			
-			
-			<Anchor>//api/name/viewCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/viewCount</TokenIdentifier>
-			<Abstract type="html">	@brief	照片被浏览的次数</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger viewCount</Declaration>
-			
-			
-			<Anchor>//api/name/viewCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPhoto/setCommentCount:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片被回复的次数</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger commentCount</Declaration>
-			
-			
-			<Anchor>//api/name/commentCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPhoto/commentCount</TokenIdentifier>
-			<Abstract type="html">	@brief	照片被回复的次数</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger commentCount</Declaration>
-			
-			
-			<Anchor>//api/name/commentCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenPhoto/photoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建照片信息</Abstract>
-			<DeclaredIn>SSRenRenPhoto.h</DeclaredIn>			
-			
-			<Declaration>+ (SSRenRenPhoto *)photoWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (TencentApiRetCode)sendRespMessageToTencentApp:(TencentApiResp *)resp</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>resp</Name>
+					<Abstract type="html">答复内容</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">照片信息</Abstract></ReturnValue>
-			<Anchor>//api/name/photoWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">返回码</Abstract></ReturnValue>
+			<Anchor>//api/name/sendRespMessageToTencentApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/canOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">是否可以处理拉起协议
+\param url</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)canOpenURL:(NSURL *)url delegate:(id&lt;TencentApiInterfaceDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">指定的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否是腾讯API认识的消息类型</Abstract></ReturnValue>
+			<Anchor>//api/name/canOpenURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/handleOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">处理应用拉起协议
+\param url</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url delegate:(id&lt;TencentApiInterfaceDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">指定的回调</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">是否是腾讯API认识的消息类型</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/isTencentAppInstall:</TokenIdentifier>
+			<Abstract type="html">用户设备是否安装腾讯APP</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTencentAppInstall:(TecnentPlatformType)platform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>platform</Name>
+					<Abstract type="html">指定的腾讯业务</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES:安装 NO:未安装</Abstract></ReturnValue>
+			<Anchor>//api/name/isTencentAppInstall:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiInterface/isTencentAppSupportTencentApi:</TokenIdentifier>
+			<Abstract type="html">用户设备是否支持调用SDK</Abstract>
+			<DeclaredIn>TencentApiInterface.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isTencentAppSupportTencentApi:(TecnentPlatformType)platform</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>platform</Name>
+					<Abstract type="html">指定的腾讯业务</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES:支持 NO:不支持</Abstract></ReturnValue>
+			<Anchor>//api/name/isTencentAppSupportTencentApi:</Anchor>
 		</Token>
 		
 	</File>

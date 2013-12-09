@@ -1,63 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GAIFields.html">
+	<File path="Classes/PrintConnection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GAIFields</TokenIdentifier>
-			<Abstract type="html">This class provides several fields and methods useful as wire format parameter
-names.  The methods are used for wire format parameter names that are indexed.</Abstract>
-			<DeclaredIn>GAIFields.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PrintConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	打印链接器</Abstract>
+			<DeclaredIn>PrintConnection.h</DeclaredIn>
 			
 			<NodeRef refid="112"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/GAIFields/contentGroupForIndex:</TokenIdentifier>
-			<Abstract type="html">Generates the correct parameter name for a content group with an index.</Abstract>
-			<DeclaredIn>GAIFields.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/PrintConnection/registerApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册应用</Abstract>
+			<DeclaredIn>PrintConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)contentGroupForIndex:(NSUInteger)index</Declaration>
+			<Declaration>+ (id&lt;ISSPrintApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">the index of the content group.</Abstract>
+					<Name>account</Name>
+					<Abstract type="html">帐号</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">an NSString representing the content group parameter for the index.</Abstract></ReturnValue>
-			<Anchor>//api/name/contentGroupForIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/GAIFields/customDimensionForIndex:</TokenIdentifier>
-			<Abstract type="html">Generates the correct parameter name for a custon dimension with an index.</Abstract>
-			<DeclaredIn>GAIFields.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)customDimensionForIndex:(NSUInteger)index</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">the index of the custom dimension.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">an NSString representing the custom dimension parameter for the index.</Abstract></ReturnValue>
-			<Anchor>//api/name/customDimensionForIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/GAIFields/customMetricForIndex:</TokenIdentifier>
-			<Abstract type="html">Generates the correct parameter name for a custom metric with an index.</Abstract>
-			<DeclaredIn>GAIFields.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)customMetricForIndex:(NSUInteger)index</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">the index of the custom metric.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">an NSString representing the custom metric parameter for the index.</Abstract></ReturnValue>
-			<Anchor>//api/name/customMetricForIndex:</Anchor>
+			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:</Anchor>
 		</Token>
 		
 	</File>

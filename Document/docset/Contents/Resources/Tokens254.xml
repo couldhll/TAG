@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookHometown.html">
+	<File path="Classes/SSSinaWeiboCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookHometown</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡信息</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	新浪微博授权信息</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>
 			
 			<NodeRef refid="254"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookHometown/setSourceData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/setSourceData:</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -23,9 +23,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookHometown/sourceData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboCredential/sourceData</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -34,63 +34,123 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookHometown/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/uid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookHometown/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/uid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookHometown/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	名称</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookHometown/name</TokenIdentifier>
-			<Abstract type="html">	@brief	名称</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookHometown/hometownWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建家乡信息</Abstract>
-			<DeclaredIn>SSFacebookHometown.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookHometown *)hometownWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">家乡信息</Abstract></ReturnValue>
-			<Anchor>//api/name/hometownWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSSinaWeiboCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

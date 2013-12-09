@@ -1,102 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusEmail.html">
+	<File path="Classes/SSTencentWeiboTag.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusEmail</TokenIdentifier>
-			<Abstract type="html">	@brief	邮箱信息</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboTag</TokenIdentifier>
+			<Abstract type="html">	@brief	标签信息</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>
 			
 			<NodeRef refid="275"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setValue:</TokenIdentifier>
-			<Abstract type="html">	@brief	The email address.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboTag/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/value</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/value</TokenIdentifier>
-			<Abstract type="html">	@brief	The email address.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboTag/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/value</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	The type of address. Possible values are:
-&quot;home&quot; - Home email address.
-&quot;work&quot; - Work email address.
-&quot;other&quot; - Other.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboTag/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人标签id</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/type</TokenIdentifier>
-			<Abstract type="html">	@brief	The type of address. Possible values are:
-&quot;home&quot; - Home email address.
-&quot;work&quot; - Work email address.
-&quot;other&quot; - Other.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboTag/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	个人标签id</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setPrimary:</TokenIdentifier>
-			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboTag/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签名</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/primary</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/primary</TokenIdentifier>
-			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboTag/name</TokenIdentifier>
+			<Abstract type="html">	@brief	标签名</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/primary</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusEmail/emailWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建邮箱信息</Abstract>
-			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboTag/tagWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建标签信息</Abstract>
+			<DeclaredIn>SSTencentWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>+ (SSGooglePlusEmail *)emailWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (SSTencentWeiboTag *)tagWithResponse:(id)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">邮箱信息</Abstract></ReturnValue>
-			<Anchor>//api/name/emailWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">标签信息</Abstract></ReturnValue>
+			<Anchor>//api/name/tagWithResponse:</Anchor>
 		</Token>
 		
 	</File>

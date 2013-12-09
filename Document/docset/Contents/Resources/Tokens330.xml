@@ -1,277 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSRenRenUser.html">
+	<File path="Classes/TencentAudioMessageObjV1.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenUser</TokenIdentifier>
-			<Abstract type="html">	@brief	用户信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentAudioMessageObjV1</TokenIdentifier>
+			<Abstract type="html">\brief 音频的消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
 			
 			<NodeRef refid="330"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	表示用户id</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSUrl:</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	表示用户id</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sUrl</TokenIdentifier>
+			<Abstract type="html">音频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	表示用户名</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setDataImagePreview:</TokenIdentifier>
+			<Abstract type="html">音频的预览图
+\note图片不能大于1M</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/dataImagePreview</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/name</TokenIdentifier>
-			<Abstract type="html">	@brief	表示用户名</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/dataImagePreview</TokenIdentifier>
+			<Abstract type="html">音频的预览图
+\note图片不能大于1M</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/dataImagePreview</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setAvatar:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户头像列表</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSImagePreviewUrl:</TokenIdentifier>
+			<Abstract type="html">音频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *avatar</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
 			
 			
-			<Anchor>//api/name/avatar</Anchor>
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/avatar</TokenIdentifier>
-			<Abstract type="html">	@brief	用户头像列表</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sImagePreviewUrl</TokenIdentifier>
+			<Abstract type="html">音频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *avatar</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
 			
 			
-			<Anchor>//api/name/avatar</Anchor>
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setStar:</TokenIdentifier>
-			<Abstract type="html">	@brief	表示是否为星级用户，值“1”表示“是”；值“0”表示“不是”</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/setSDescription:</TokenIdentifier>
+			<Abstract type="html">音频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger star</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
 			
 			
-			<Anchor>//api/name/star</Anchor>
+			<Anchor>//api/name/sDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/star</TokenIdentifier>
-			<Abstract type="html">	@brief	表示是否为星级用户，值“1”表示“是”；值“0”表示“不是”</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentAudioMessageObjV1/sDescription</TokenIdentifier>
+			<Abstract type="html">音频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger star</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
 			
 			
-			<Anchor>//api/name/star</Anchor>
+			<Anchor>//api/name/sDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setBasicInformation:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户基本信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentAudioMessageObjV1/initWithAudioUrl:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSRenRenBasicInformation *basicInformation</Declaration>
-			
-			
-			<Anchor>//api/name/basicInformation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/basicInformation</TokenIdentifier>
-			<Abstract type="html">	@brief	用户基本信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSRenRenBasicInformation *basicInformation</Declaration>
-			
-			
-			<Anchor>//api/name/basicInformation</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setEducation:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户学校信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
-			
-			
-			<Anchor>//api/name/education</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/education</TokenIdentifier>
-			<Abstract type="html">	@brief	用户学校信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
-			
-			
-			<Anchor>//api/name/education</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setWork:</TokenIdentifier>
-			<Abstract type="html">	@brief	工作信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
-			
-			
-			<Anchor>//api/name/work</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/work</TokenIdentifier>
-			<Abstract type="html">	@brief	工作信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
-			
-			
-			<Anchor>//api/name/work</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setLike:</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *like</Declaration>
-			
-			
-			<Anchor>//api/name/like</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/like</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *like</Declaration>
-			
-			
-			<Anchor>//api/name/like</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setEmotionalState:</TokenIdentifier>
-			<Abstract type="html">	@brief	感情状态
-INLOVE          恋爱中
-OTHER           其他
-SINGLE          单身
-MARRIED         已婚
-UNOBVIOUSLOVE	暗恋
-DIVORCE         离异
-ENGAGE          订婚
-OUTLOVE         失恋</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *emotionalState</Declaration>
-			
-			
-			<Anchor>//api/name/emotionalState</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/emotionalState</TokenIdentifier>
-			<Abstract type="html">	@brief	感情状态
-INLOVE          恋爱中
-OTHER           其他
-SINGLE          单身
-MARRIED         已婚
-UNOBVIOUSLOVE	暗恋
-DIVORCE         离异
-ENGAGE          订婚
-OUTLOVE         失恋</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *emotionalState</Declaration>
-			
-			
-			<Anchor>//api/name/emotionalState</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setCredential:</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) SSRenRenCredential *credential</Declaration>
-			
-			
-			<Anchor>//api/name/credential</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/credential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) SSRenRenCredential *credential</Declaration>
-			
-			
-			<Anchor>//api/name/credential</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenUser/userWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>+ (SSRenRenUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>- (id)initWithAudioUrl:(NSString *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">音频URL</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
-			<Anchor>//api/name/userWithResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/descriptor</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
-			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
-			
-			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
-			<Anchor>//api/name/descriptor</Anchor>
+			<ReturnValue><Abstract type="html">初始化返回的音频消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAudioUrl:</Anchor>
 		</Token>
 		
 	</File>

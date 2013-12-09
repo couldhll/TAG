@@ -1,172 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFGeoPoint.html">
+	<File path="Classes/SSFacebookAgeRange.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFGeoPoint</TokenIdentifier>
-			<Abstract type="html">Object which may be used to embed a latitude / longitude point as the value for a key in a PFObject.
-PFObjects with a PFGeoPoint field may be queried in a geospatial manner using PFQuery&apos;s whereKey:nearGeoPoint:.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookAgeRange</TokenIdentifier>
+			<Abstract type="html">	@brief	年龄范围信息</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>
 			
 			<NodeRef refid="166"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPoint</TokenIdentifier>
-			<Abstract type="html">Create a PFGeoPoint object.  Latitude and longitude are set to 0.0.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
 			
-			<Declaration>+ (PFGeoPoint *)geoPoint</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<ReturnValue><Abstract type="html">Returns a new PFGeoPoint.</Abstract></ReturnValue>
-			<Anchor>//api/name/geoPoint</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointWithLocation:</TokenIdentifier>
-			<Abstract type="html">Creates a new PFGeoPoint object for the given CLLocation, set to the location&apos;s
-coordinates.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
 			
-			<Declaration>+ (PFGeoPoint *)geoPointWithLocation:(CLLocation *)location</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setMin:</TokenIdentifier>
+			<Abstract type="html">	@brief	范围最小值</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			
+			
+			<Anchor>//api/name/min</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/min</TokenIdentifier>
+			<Abstract type="html">	@brief	范围最小值</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			
+			
+			<Anchor>//api/name/min</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setMax:</TokenIdentifier>
+			<Abstract type="html">	@brief	范围最大值</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			
+			
+			<Anchor>//api/name/max</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/max</TokenIdentifier>
+			<Abstract type="html">	@brief	范围最大值</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			
+			
+			<Anchor>//api/name/max</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookAgeRange/ageRangeWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建年龄范围信息</Abstract>
+			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookAgeRange *)ageRangeWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>location</Name>
-					<Abstract type="html">CLLocation object, with set latitude and longitude.</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Returns a new PFGeoPoint at specified location.</Abstract></ReturnValue>
-			<Anchor>//api/name/geoPointWithLocation:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointWithLatitude:longitude:</TokenIdentifier>
-			<Abstract type="html">Creates a new PFGeoPoint object with the specified latitude and longitude.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>+ (PFGeoPoint *)geoPointWithLatitude:(double)latitude longitude:(double)longitude</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>latitude</Name>
-					<Abstract type="html">Latitude of point in degrees.</Abstract>
-				</Parameter><Parameter>
-					<Name>longitude</Name>
-					<Abstract type="html">Longitude of point in degrees.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">New point object with specified latitude and longitude.</Abstract></ReturnValue>
-			<Anchor>//api/name/geoPointWithLatitude:longitude:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointForCurrentLocationInBackground:</TokenIdentifier>
-			<Abstract type="html">Fetches the user&apos;s current location and returns a new PFGeoPoint object via the
-provided block.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>+ (void)geoPointForCurrentLocationInBackground:(void ( ^ ) ( PFGeoPoint *geoPoint , NSError *error ))geoPointHandler</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>geoPointHandler</Name>
-					<Abstract type="html">A block which takes the newly created PFGeoPoint as an
-argument.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/geoPointForCurrentLocationInBackground:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/setLatitude:</TokenIdentifier>
-			<Abstract type="html">Latitude of point in degrees.  Valid range (-90.0, 90.0).</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double latitude</Declaration>
-			
-			
-			<Anchor>//api/name/latitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFGeoPoint/latitude</TokenIdentifier>
-			<Abstract type="html">Latitude of point in degrees.  Valid range (-90.0, 90.0).</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double latitude</Declaration>
-			
-			
-			<Anchor>//api/name/latitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/setLongitude:</TokenIdentifier>
-			<Abstract type="html">Longitude of point in degrees.  Valid range (-180.0, 180.0).</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double longitude</Declaration>
-			
-			
-			<Anchor>//api/name/longitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFGeoPoint/longitude</TokenIdentifier>
-			<Abstract type="html">Longitude of point in degrees.  Valid range (-180.0, 180.0).</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) double longitude</Declaration>
-			
-			
-			<Anchor>//api/name/longitude</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInRadiansTo:</TokenIdentifier>
-			<Abstract type="html">Get distance in radians from this point to specified point.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>- (double)distanceInRadiansTo:(PFGeoPoint *)point</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">PFGeoPoint location of other point.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">distance in radians</Abstract></ReturnValue>
-			<Anchor>//api/name/distanceInRadiansTo:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInMilesTo:</TokenIdentifier>
-			<Abstract type="html">Get distance in miles from this point to specified point.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>- (double)distanceInMilesTo:(PFGeoPoint *)point</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">PFGeoPoint location of other point.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">distance in miles</Abstract></ReturnValue>
-			<Anchor>//api/name/distanceInMilesTo:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInKilometersTo:</TokenIdentifier>
-			<Abstract type="html">Get distance in kilometers from this point to specified point.</Abstract>
-			<DeclaredIn>PFGeoPoint.h</DeclaredIn>			
-			
-			<Declaration>- (double)distanceInKilometersTo:(PFGeoPoint *)point</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>point</Name>
-					<Abstract type="html">PFGeoPoint location of other point.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">distance in kilometers</Abstract></ReturnValue>
-			<Anchor>//api/name/distanceInKilometersTo:</Anchor>
+			<ReturnValue><Abstract type="html">年龄范围信息</Abstract></ReturnValue>
+			<Anchor>//api/name/ageRangeWithResponse:</Anchor>
 		</Token>
 		
 	</File>

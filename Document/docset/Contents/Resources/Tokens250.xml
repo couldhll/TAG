@@ -1,162 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookCurrency.html">
+	<File path="Classes/SSRenRenUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCurrency</TokenIdentifier>
-			<Abstract type="html">	@brief	货币信息</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>
 			
 			<NodeRef refid="250"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户id</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	货币信息Id</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
 			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	货币信息Id</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户id</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
 			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setUserCurrency:</TokenIdentifier>
-			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户名</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/userCurrency</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/userCurrency</TokenIdentifier>
-			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	表示用户名</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/userCurrency</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchange:</TokenIdentifier>
-			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setAvatar:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像列表</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *avatar</Declaration>
 			
 			
-			<Anchor>//api/name/currencyExchange</Anchor>
+			<Anchor>//api/name/avatar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchange</TokenIdentifier>
-			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/avatar</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像列表</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *avatar</Declaration>
 			
 			
-			<Anchor>//api/name/currencyExchange</Anchor>
+			<Anchor>//api/name/avatar</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchangeInverse:</TokenIdentifier>
-			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setStar:</TokenIdentifier>
+			<Abstract type="html">	@brief	表示是否为星级用户，值“1”表示“是”；值“0”表示“不是”</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger star</Declaration>
 			
 			
-			<Anchor>//api/name/currencyExchangeInverse</Anchor>
+			<Anchor>//api/name/star</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchangeInverse</TokenIdentifier>
-			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/star</TokenIdentifier>
+			<Abstract type="html">	@brief	表示是否为星级用户，值“1”表示“是”；值“0”表示“不是”</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger star</Declaration>
 			
 			
-			<Anchor>//api/name/currencyExchangeInverse</Anchor>
+			<Anchor>//api/name/star</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyOffset:</TokenIdentifier>
-			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setBasicInformation:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户基本信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenBasicInformation *basicInformation</Declaration>
 			
 			
-			<Anchor>//api/name/currencyOffset</Anchor>
+			<Anchor>//api/name/basicInformation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyOffset</TokenIdentifier>
-			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/basicInformation</TokenIdentifier>
+			<Abstract type="html">	@brief	用户基本信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenBasicInformation *basicInformation</Declaration>
 			
 			
-			<Anchor>//api/name/currencyOffset</Anchor>
+			<Anchor>//api/name/basicInformation</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCurrency/currencyWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建货币信息</Abstract>
-			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setEducation:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户学校信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookCurrency *)currencyWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/education</TokenIdentifier>
+			<Abstract type="html">	@brief	用户学校信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setWork:</TokenIdentifier>
+			<Abstract type="html">	@brief	工作信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
+			
+			
+			<Anchor>//api/name/work</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/work</TokenIdentifier>
+			<Abstract type="html">	@brief	工作信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
+			
+			
+			<Anchor>//api/name/work</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setLike:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *like</Declaration>
+			
+			
+			<Anchor>//api/name/like</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/like</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *like</Declaration>
+			
+			
+			<Anchor>//api/name/like</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setEmotionalState:</TokenIdentifier>
+			<Abstract type="html">	@brief	感情状态
+INLOVE          恋爱中
+OTHER           其他
+SINGLE          单身
+MARRIED         已婚
+UNOBVIOUSLOVE	暗恋
+DIVORCE         离异
+ENGAGE          订婚
+OUTLOVE         失恋</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *emotionalState</Declaration>
+			
+			
+			<Anchor>//api/name/emotionalState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/emotionalState</TokenIdentifier>
+			<Abstract type="html">	@brief	感情状态
+INLOVE          恋爱中
+OTHER           其他
+SINGLE          单身
+MARRIED         已婚
+UNOBVIOUSLOVE	暗恋
+DIVORCE         离异
+ENGAGE          订婚
+OUTLOVE         失恋</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *emotionalState</Declaration>
+			
+			
+			<Anchor>//api/name/emotionalState</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSRenRenCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSRenRenCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenUser *)userWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">货币信息</Abstract></ReturnValue>
-			<Anchor>//api/name/currencyWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSRenRenUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

@@ -1,90 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMEventDispatcher.html">
+	<File path="Classes/CMErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMEventDispatcher</TokenIdentifier>
-			<Abstract type="html">	@brief	事件派发器</Abstract>
-			<DeclaredIn>CMEventDispatcher.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	异常信息</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="34"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMEventDispatcher/addNotificationWithName:target:action:</TokenIdentifier>
-			<Abstract type="html">	@brief	添加通知监听</Abstract>
-			<DeclaredIn>CMEventDispatcher.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	错误代码，如果为调用API出错则应该参考API错误码对照表，如果为HTTP错误，此属性则指示HTTP错误码。</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>- (void)addNotificationWithName:(NSString *)name target:(id)target action:(SEL)action</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">通知名称</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">监听目标</Abstract>
-				</Parameter><Parameter>
-					<Name>action</Name>
-					<Abstract type="html">监听处理</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) NSInteger errorCode</Declaration>
 			
-			<Anchor>//api/name/addNotificationWithName:target:action:</Anchor>
+			
+			<Anchor>//api/name/errorCode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMEventDispatcher/removeNotificationWithName:target:</TokenIdentifier>
-			<Abstract type="html">	@brief	移除通知监听</Abstract>
-			<DeclaredIn>CMEventDispatcher.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorCode</TokenIdentifier>
+			<Abstract type="html">	@brief	错误代码，如果为调用API出错则应该参考API错误码对照表，如果为HTTP错误，此属性则指示HTTP错误码。</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeNotificationWithName:(NSString *)name target:(id)target</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">通知名称</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">监听目标</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) NSInteger errorCode</Declaration>
 			
-			<Anchor>//api/name/removeNotificationWithName:target:</Anchor>
+			
+			<Anchor>//api/name/errorCode</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMEventDispatcher/removeAllNotificationWithTarget:</TokenIdentifier>
-			<Abstract type="html">	@brief	移除某个监听目标的所有通知</Abstract>
-			<DeclaredIn>CMEventDispatcher.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	错误描述，对应相应的错误码的描述</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeAllNotificationWithTarget:(id)target</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">监听目标</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
 			
-			<Anchor>//api/name/removeAllNotificationWithTarget:</Anchor>
+			
+			<Anchor>//api/name/errorDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMEventDispatcher/postNotificationWithName:data:</TokenIdentifier>
-			<Abstract type="html">	@brief	派发通知</Abstract>
-			<DeclaredIn>CMEventDispatcher.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorDescription</TokenIdentifier>
+			<Abstract type="html">	@brief	错误描述，对应相应的错误码的描述</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>- (void)postNotificationWithName:(NSString *)name data:(NSDictionary *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>name</Name>
-					<Abstract type="html">通知名称</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">通知数据</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
 			
-			<Anchor>//api/name/postNotificationWithName:data:</Anchor>
+			
+			<Anchor>//api/name/errorDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMErrorInfo/setErrorLevel:</TokenIdentifier>
+			<Abstract type="html">	@brief	错误级别</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CMErrorLevel errorLevel</Declaration>
+			
+			
+			<Anchor>//api/name/errorLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMErrorInfo/errorLevel</TokenIdentifier>
+			<Abstract type="html">	@brief	错误级别</Abstract>
+			<DeclaredIn>CMErrorInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CMErrorLevel errorLevel</Declaration>
+			
+			
+			<Anchor>//api/name/errorLevel</Anchor>
 		</Token>
 		
 	</File>

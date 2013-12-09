@@ -1,69 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TCMatchNickTipsDic.html">
+	<File path="Categories/NSArray+Rearrange.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TCMatchNickTipsDic</TokenIdentifier>
-			<Abstract type="html">\brief 微博获取好友输入提示的参数字典定义</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(Rearrange)</TokenIdentifier>
+			<Abstract type="html">@brief NSArray rearrangement methods extension.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
 			
 			<NodeRef refid="407"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/TCMatchNickTipsDic/dictionary</TokenIdentifier>
-			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Rearrange)/moveObjectAtIndex:toIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Moves the object in the array at given index to another index.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
 			
-			<Declaration>+ (TCMatchNickTipsDic *)dictionary</Declaration>
+			<Declaration>- (void)moveObjectAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fromIndex</Name>
+					<Abstract type="html">The index of the object with which to moves.</Abstract>
+				</Parameter><Parameter>
+					<Name>toIndex</Name>
+					<Abstract type="html">The index of the object wants moves to.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/dictionary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCMatchNickTipsDic/setParamMatch:</TokenIdentifier>
-			<Abstract type="html">匹配字符串（目前匹配范围为我收听的人）</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramMatch</Declaration>
-			
-			
-			<Anchor>//api/name/paramMatch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCMatchNickTipsDic/paramMatch</TokenIdentifier>
-			<Abstract type="html">匹配字符串（目前匹配范围为我收听的人）</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramMatch</Declaration>
-			
-			
-			<Anchor>//api/name/paramMatch</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCMatchNickTipsDic/setParamReqnum:</TokenIdentifier>
-			<Abstract type="html">请求个数（1-10）</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramReqnum</Declaration>
-			
-			
-			<Anchor>//api/name/paramReqnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCMatchNickTipsDic/paramReqnum</TokenIdentifier>
-			<Abstract type="html">请求个数（1-10）</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramReqnum</Declaration>
-			
-			
-			<Anchor>//api/name/paramReqnum</Anchor>
+			<Anchor>//api/name/moveObjectAtIndex:toIndex:</Anchor>
 		</Token>
 		
 	</File>

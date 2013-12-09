@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookPost.html">
+	<File path="Classes/SSSinaWeiboTag.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookPost</TokenIdentifier>
-			<Abstract type="html">	@brief	文章信息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboTag</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>
 			
 			<NodeRef refid="259"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setSourceData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setSourceData:</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -23,9 +23,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/sourceData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/sourceData</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -34,327 +34,63 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
 			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setPostId:</TokenIdentifier>
-			<Abstract type="html">	@brief	文章ID</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	标签ID</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *postId</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
-			<Anchor>//api/name/postId</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/postId</TokenIdentifier>
-			<Abstract type="html">	@brief	文章ID</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setTag:</TokenIdentifier>
+			<Abstract type="html">	@brief	标签</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *postId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
 			
 			
-			<Anchor>//api/name/postId</Anchor>
+			<Anchor>//api/name/tag</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setFrom:</TokenIdentifier>
-			<Abstract type="html">	@brief	发送用户</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/tag</TokenIdentifier>
+			<Abstract type="html">	@brief	标签</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSFacebookUser *from</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
 			
 			
-			<Anchor>//api/name/from</Anchor>
+			<Anchor>//api/name/tag</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/from</TokenIdentifier>
-			<Abstract type="html">	@brief	发送用户</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookUser *from</Declaration>
-			
-			
-			<Anchor>//api/name/from</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setMessage:</TokenIdentifier>
-			<Abstract type="html">	@brief	消息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *message</Declaration>
-			
-			
-			<Anchor>//api/name/message</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/message</TokenIdentifier>
-			<Abstract type="html">	@brief	消息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *message</Declaration>
-			
-			
-			<Anchor>//api/name/message</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setUpdatedTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	更新时间</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *updatedTime</Declaration>
-			
-			
-			<Anchor>//api/name/updatedTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/updatedTime</TokenIdentifier>
-			<Abstract type="html">	@brief	更新时间</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *updatedTime</Declaration>
-			
-			
-			<Anchor>//api/name/updatedTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setCreatedTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建时间</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *createdTime</Declaration>
-			
-			
-			<Anchor>//api/name/createdTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/createdTime</TokenIdentifier>
-			<Abstract type="html">	@brief	创建时间</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *createdTime</Declaration>
-			
-			
-			<Anchor>//api/name/createdTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setIcon:</TokenIdentifier>
-			<Abstract type="html">	@brief	图标</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *icon</Declaration>
-			
-			
-			<Anchor>//api/name/icon</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/icon</TokenIdentifier>
-			<Abstract type="html">	@brief	图标</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *icon</Declaration>
-			
-			
-			<Anchor>//api/name/icon</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setLink:</TokenIdentifier>
-			<Abstract type="html">	@brief	链接</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *link</Declaration>
-			
-			
-			<Anchor>//api/name/link</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/link</TokenIdentifier>
-			<Abstract type="html">	@brief	链接</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *link</Declaration>
-			
-			
-			<Anchor>//api/name/link</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片名称</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/name</TokenIdentifier>
-			<Abstract type="html">	@brief	照片名称</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setPicture:</TokenIdentifier>
-			<Abstract type="html">	@brief	缩略图路径</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *picture</Declaration>
-			
-			
-			<Anchor>//api/name/picture</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/picture</TokenIdentifier>
-			<Abstract type="html">	@brief	缩略图路径</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *picture</Declaration>
-			
-			
-			<Anchor>//api/name/picture</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setSource:</TokenIdentifier>
-			<Abstract type="html">	@brief	源图路径</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
-			
-			
-			<Anchor>//api/name/source</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/source</TokenIdentifier>
-			<Abstract type="html">	@brief	源图路径</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
-			
-			
-			<Anchor>//api/name/source</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setHeight:</TokenIdentifier>
-			<Abstract type="html">	@brief	高度</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
-			
-			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/height</TokenIdentifier>
-			<Abstract type="html">	@brief	高度</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
-			
-			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setWidth:</TokenIdentifier>
-			<Abstract type="html">	@brief	宽度</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/width</TokenIdentifier>
-			<Abstract type="html">	@brief	宽度</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPost/setImages:</TokenIdentifier>
-			<Abstract type="html">	@brief	图片信息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
-			
-			
-			<Anchor>//api/name/images</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPost/images</TokenIdentifier>
-			<Abstract type="html">	@brief	图片信息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
-			
-			
-			<Anchor>//api/name/images</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookPost/postWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建文章信息</Abstract>
-			<DeclaredIn>SSFacebookPost.h</DeclaredIn>			
-			
-			<Declaration>+ (SSFacebookPost *)postWithResponse:(NSDictionary *)response</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboTag/tagWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建标签信息</Abstract>
+			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			
+			<Declaration>+ (SSSinaWeiboTag *)tagWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">文章信息</Abstract></ReturnValue>
-			<Anchor>//api/name/postWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">标签信息</Abstract></ReturnValue>
+			<Anchor>//api/name/tagWithResponse:</Anchor>
 		</Token>
 		
 	</File>

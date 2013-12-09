@@ -1,36 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQApiTextObject.html">
+	<File path="Classes/SSInstapaperCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQApiTextObject</TokenIdentifier>
-			<Abstract type="html">\brief 文本对象</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSInstapaperCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>
 			
 			<NodeRef refid="205"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQApiTextObject/initWithText:</TokenIdentifier>
-			<Abstract type="html">&lt;文本内容，必填，最长1536个字符</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithText:(NSString *)text</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/initWithText:</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiTextObject/objectWithText:</TokenIdentifier>
-			<Abstract type="html">&lt;初始化方法</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectWithText:(NSString *)text</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/objectWithText:</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/setOauthToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperCredential/oauthToken</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/setOauthTokenSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperCredential/oauthTokenSecret</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSInstapaperCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

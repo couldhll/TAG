@@ -1,316 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTwitterMedia.html">
+	<File path="Classes/WXApi.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterMedia</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体信息</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WXApi</TokenIdentifier>
+			<Abstract type="html">@brief 微信Api接口函数类</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>
 			
 			<NodeRef refid="366"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setDisplayUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	客户端显示URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *displayUrl</Declaration>
-			
-			
-			<Anchor>//api/name/displayUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/displayUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	客户端显示URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *displayUrl</Declaration>
-			
-			
-			<Anchor>//api/name/displayUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setExpandedUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	扩展版显示URL，链接到显示页面。</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *expandedUrl</Declaration>
-			
-			
-			<Anchor>//api/name/expandedUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/expandedUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	扩展版显示URL，链接到显示页面。</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *expandedUrl</Declaration>
-			
-			
-			<Anchor>//api/name/expandedUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体ID</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体ID</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setIdStr:</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体ID字符串</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
-			
-			
-			<Anchor>//api/name/idStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/idStr</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体ID字符串</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
-			
-			
-			<Anchor>//api/name/idStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setIndices:</TokenIdentifier>
-			<Abstract type="html">	@brief	URL在Tweet文本中的起始位置和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
-			
-			
-			<Anchor>//api/name/indices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/indices</TokenIdentifier>
-			<Abstract type="html">	@brief	URL在Tweet文本中的起始位置和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
-			
-			
-			<Anchor>//api/name/indices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setMediaUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	上传媒体文件的URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *mediaUrl</Declaration>
-			
-			
-			<Anchor>//api/name/mediaUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/mediaUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	上传媒体文件的URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *mediaUrl</Declaration>
-			
-			
-			<Anchor>//api/name/mediaUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setMediaUrlHttps:</TokenIdentifier>
-			<Abstract type="html">	@brief	基于HTTPS的上传媒体文件URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *mediaUrlHttps</Declaration>
-			
-			
-			<Anchor>//api/name/mediaUrlHttps</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/mediaUrlHttps</TokenIdentifier>
-			<Abstract type="html">	@brief	基于HTTPS的上传媒体文件URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *mediaUrlHttps</Declaration>
-			
-			
-			<Anchor>//api/name/mediaUrlHttps</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSizes:</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体文件大小</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSTwitterSizes *sizes</Declaration>
-			
-			
-			<Anchor>//api/name/sizes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sizes</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体文件大小</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSTwitterSizes *sizes</Declaration>
-			
-			
-			<Anchor>//api/name/sizes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceStatusId:</TokenIdentifier>
-			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long sourceStatusId</Declaration>
-			
-			
-			<Anchor>//api/name/sourceStatusId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceStatusId</TokenIdentifier>
-			<Abstract type="html">	@brief	源Tweet的ID</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long sourceStatusId</Declaration>
-			
-			
-			<Anchor>//api/name/sourceStatusId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setSourceStatusIdStr:</TokenIdentifier>
-			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceStatusIdStr</Declaration>
-			
-			
-			<Anchor>//api/name/sourceStatusIdStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/sourceStatusIdStr</TokenIdentifier>
-			<Abstract type="html">	@brief	源Tweet的ID字符串</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceStatusIdStr</Declaration>
-			
-			
-			<Anchor>//api/name/sourceStatusIdStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterMedia/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体链接的URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterMedia/url</TokenIdentifier>
-			<Abstract type="html">	@brief	媒体链接的URL</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterMedia/mediaWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建媒体信息</Abstract>
-			<DeclaredIn>SSTwitterMedia.h</DeclaredIn>			
-			
-			<Declaration>+ (SSTwitterMedia *)mediaWithResponse:(NSDictionary *)response</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/registerApp:</TokenIdentifier>
+			<Abstract type="html">@brief WXApi的成员函数，向微信终端程序注册第三方应用。</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)registerApp:(NSString *)appid</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>appid</Name>
+					<Abstract type="html">微信开发者ID</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">媒体信息</Abstract></ReturnValue>
-			<Anchor>//api/name/mediaWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/registerApp:withDescription:</TokenIdentifier>
+			<Abstract type="html">@brief WXApi的成员函数，向微信终端程序注册第三方应用。</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)registerApp:(NSString *)appid withDescription:(NSString *)appdesc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appid</Name>
+					<Abstract type="html">微信开发者ID</Abstract>
+				</Parameter><Parameter>
+					<Name>appdesc</Name>
+					<Abstract type="html">应用附加信息，长度不超过1024字节</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:withDescription:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/handleOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief 处理微信通过URL启动App时传递的数据</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url delegate:(id&lt;WXApiDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">微信启动第三方应用时传递过来的URL</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">WXApiDelegate对象，用来接收微信触发的消息。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/isWXAppInstalled</TokenIdentifier>
+			<Abstract type="html">@brief 检查微信是否已被用户安装</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isWXAppInstalled</Declaration>
+			
+			<ReturnValue><Abstract type="html">微信已安装返回YES，未安装返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/isWXAppInstalled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/isWXAppSupportApi</TokenIdentifier>
+			<Abstract type="html">@brief 判断当前微信的版本是否支持OpenApi</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isWXAppSupportApi</Declaration>
+			
+			<ReturnValue><Abstract type="html">支持返回YES，不支持返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/isWXAppSupportApi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/getWXAppInstallUrl</TokenIdentifier>
+			<Abstract type="html">@brief 获取微信的itunes安装地址</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getWXAppInstallUrl</Declaration>
+			
+			<ReturnValue><Abstract type="html">微信的安装地址字符串。</Abstract></ReturnValue>
+			<Anchor>//api/name/getWXAppInstallUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/getApiVersion</TokenIdentifier>
+			<Abstract type="html">@brief 获取当前微信SDK的版本号</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getApiVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">返回当前微信SDK的版本号</Abstract></ReturnValue>
+			<Anchor>//api/name/getApiVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/openWXApp</TokenIdentifier>
+			<Abstract type="html">@brief 打开微信</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)openWXApp</Declaration>
+			
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/openWXApp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/sendReq:</TokenIdentifier>
+			<Abstract type="html">@brief 发送请求到微信，等待微信返回onResp</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)sendReq:(BaseReq *)req</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>req</Name>
+					<Abstract type="html">具体的发送请求，在调用函数后，请自己释放。</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/sendReq:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WXApi/sendResp:</TokenIdentifier>
+			<Abstract type="html">@brief 收到微信onReq的请求，发送对应的应答给微信，并切换到微信界面</Abstract>
+			<DeclaredIn>WXApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)sendResp:(BaseResp *)resp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resp</Name>
+					<Abstract type="html">具体的应答内容，调用函数后，请自己释放</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">成功返回YES，失败返回NO。</Abstract></ReturnValue>
+			<Anchor>//api/name/sendResp:</Anchor>
 		</Token>
 		
 	</File>

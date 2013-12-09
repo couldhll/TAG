@@ -1,247 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TCAddShareDic.html">
+	<File path="Categories/NSArray+JSONModel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TCAddShareDic</TokenIdentifier>
-			<Abstract type="html">\brief 同步分享到QQ空间,腾讯微博的参数字典定义</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(JSONModel)</TokenIdentifier>
+			<Abstract type="html">Exposes invisible JSONModelArray methods</Abstract>
+			<DeclaredIn>NSArray+JSONModel.h</DeclaredIn>
 			
 			<NodeRef refid="402"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/TCAddShareDic/dictionary</TokenIdentifier>
-			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(JSONModel)/modelWithIndexValue:</TokenIdentifier>
+			<Abstract type="html">Looks up the array&apos;s contents and tries to find a JSONModel object
+with matching index property value to the indexValue param.</Abstract>
+			<DeclaredIn>NSArray+JSONModel.h</DeclaredIn>			
 			
-			<Declaration>+ (TCAddShareDic *)dictionary</Declaration>
-			
-			
-			<Anchor>//api/name/dictionary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamTitle:</TokenIdentifier>
-			<Abstract type="html">title 必须 string	 feeds的标题 最长36个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
-			
-			
-			<Anchor>//api/name/paramTitle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramTitle</TokenIdentifier>
-			<Abstract type="html">title 必须 string	 feeds的标题 最长36个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
-			
-			
-			<Anchor>//api/name/paramTitle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamUrl:</TokenIdentifier>
-			<Abstract type="html">url 必须 string 分享所在网页资源的链接，点击后跳转至第三方网页，对应上文接口说明中2的超链接。请以http://开头。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramUrl</Declaration>
-			
-			
-			<Anchor>//api/name/paramUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramUrl</TokenIdentifier>
-			<Abstract type="html">url 必须 string 分享所在网页资源的链接，点击后跳转至第三方网页，对应上文接口说明中2的超链接。请以http://开头。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramUrl</Declaration>
-			
-			
-			<Anchor>//api/name/paramUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamComment:</TokenIdentifier>
-			<Abstract type="html">comment string 用户评论内容，也叫发表分享时的分享理由 禁止使用系统生产的语句进行代替。
-最长40个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramComment</Declaration>
-			
-			
-			<Anchor>//api/name/paramComment</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramComment</TokenIdentifier>
-			<Abstract type="html">comment string 用户评论内容，也叫发表分享时的分享理由 禁止使用系统生产的语句进行代替。
-最长40个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramComment</Declaration>
-			
-			
-			<Anchor>//api/name/paramComment</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamSummary:</TokenIdentifier>
-			<Abstract type="html">summary string 所分享的网页资源的摘要内容，或者是网页的概要描述 最长80个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramSummary</Declaration>
-			
-			
-			<Anchor>//api/name/paramSummary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramSummary</TokenIdentifier>
-			<Abstract type="html">summary string 所分享的网页资源的摘要内容，或者是网页的概要描述 最长80个中文字，超出部分会被截断。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramSummary</Declaration>
-			
-			
-			<Anchor>//api/name/paramSummary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamImages:</TokenIdentifier>
-			<Abstract type="html">images string 所分享的网页资源的代表性图片链接&quot;，请以http://开头，长度限制255字符。多张图片以竖线（|）分隔，目前只有第一张图片有效，图片规格100*100为佳。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramImages</Declaration>
-			
-			
-			<Anchor>//api/name/paramImages</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramImages</TokenIdentifier>
-			<Abstract type="html">images string 所分享的网页资源的代表性图片链接&quot;，请以http://开头，长度限制255字符。多张图片以竖线（|）分隔，目前只有第一张图片有效，图片规格100*100为佳。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramImages</Declaration>
-			
-			
-			<Anchor>//api/name/paramImages</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamType:</TokenIdentifier>
-			<Abstract type="html">type string 分享内容的类型。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramType</Declaration>
-			
-			
-			<Anchor>//api/name/paramType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramType</TokenIdentifier>
-			<Abstract type="html">type string 分享内容的类型。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramType</Declaration>
-			
-			
-			<Anchor>//api/name/paramType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamPlayurl:</TokenIdentifier>
-			<Abstract type="html">playurl string 长度限制为256字节。仅在type=5的时候有效，表示视频的swf播放地址。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPlayurl</Declaration>
-			
-			
-			<Anchor>//api/name/paramPlayurl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramPlayurl</TokenIdentifier>
-			<Abstract type="html">playurl string 长度限制为256字节。仅在type=5的时候有效，表示视频的swf播放地址。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPlayurl</Declaration>
-			
-			
-			<Anchor>//api/name/paramPlayurl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamSite:</TokenIdentifier>
-			<Abstract type="html">site 必须 string 分享的来源网站名称，请填写网站申请接入时注册的网站名称</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramSite</Declaration>
-			
-			
-			<Anchor>//api/name/paramSite</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramSite</TokenIdentifier>
-			<Abstract type="html">site 必须 string 分享的来源网站名称，请填写网站申请接入时注册的网站名称</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramSite</Declaration>
-			
-			
-			<Anchor>//api/name/paramSite</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamFromurl:</TokenIdentifier>
-			<Abstract type="html">fromurl 必须 string 分享的来源网站对应的网站地址url 请以http://开头。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramFromurl</Declaration>
-			
-			
-			<Anchor>//api/name/paramFromurl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramFromurl</TokenIdentifier>
-			<Abstract type="html">fromurl 必须 string 分享的来源网站对应的网站地址url 请以http://开头。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramFromurl</Declaration>
-			
-			
-			<Anchor>//api/name/paramFromurl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamNswb:</TokenIdentifier>
-			<Abstract type="html">nswb string	值为1时，表示分享不默认同步到微博，其他值或者不传此参数表示默认同步到微博。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramNswb</Declaration>
-			
-			
-			<Anchor>//api/name/paramNswb</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramNswb</TokenIdentifier>
-			<Abstract type="html">nswb string	值为1时，表示分享不默认同步到微博，其他值或者不传此参数表示默认同步到微博。</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCOptionalStr paramNswb</Declaration>
-			
-			
-			<Anchor>//api/name/paramNswb</Anchor>
+			<Declaration>- (id)modelWithIndexValue:(id)indexValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexValue</Name>
+					<Abstract type="html">the id value to search for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the found model or nil</Abstract></ReturnValue>
+			<Anchor>//api/name/modelWithIndexValue:</Anchor>
 		</Token>
 		
 	</File>

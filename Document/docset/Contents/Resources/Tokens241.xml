@@ -1,270 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSEverNotePremiumInfo.html">
+	<File path="Classes/SSRenRenErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSEverNotePremiumInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	premium info</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息</Abstract>
+			<DeclaredIn>SSRenRenErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="241"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setCurrentTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	The server-side date and time when this data was generated.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenErrorInfo/setErrorUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	请求路径</Abstract>
+			<DeclaredIn>SSRenRenErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long currentTime</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *errorUri</Declaration>
 			
 			
-			<Anchor>//api/name/currentTime</Anchor>
+			<Anchor>//api/name/errorUri</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/currentTime</TokenIdentifier>
-			<Abstract type="html">	@brief	The server-side date and time when this data was generated.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenErrorInfo/errorUri</TokenIdentifier>
+			<Abstract type="html">	@brief	请求路径</Abstract>
+			<DeclaredIn>SSRenRenErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long currentTime</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *errorUri</Declaration>
 			
 			
-			<Anchor>//api/name/currentTime</Anchor>
+			<Anchor>//api/name/errorUri</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremium:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s account is Premium.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenErrorInfo/setCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	错误码</Abstract>
+			<DeclaredIn>SSRenRenErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL premium</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *code</Declaration>
 			
 			
-			<Anchor>//api/name/premium</Anchor>
+			<Anchor>//api/name/code</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premium</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s account is Premium.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenErrorInfo/code</TokenIdentifier>
+			<Abstract type="html">	@brief	错误码</Abstract>
+			<DeclaredIn>SSRenRenErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL premium</Declaration>
-			
-			
-			<Anchor>//api/name/premium</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremiumRecurring:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s account is Premium and has a recurring payment method.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumRecurring</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *code</Declaration>
 			
 			
-			<Anchor>//api/name/premiumRecurring</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premiumRecurring</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s account is Premium and has a recurring payment method.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumRecurring</Declaration>
-			
-			
-			<Anchor>//api/name/premiumRecurring</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremiumExpirationDate:</TokenIdentifier>
-			<Abstract type="html">	@brief	The date when the user&apos;s Premium account expires, 
-or the date when the user&apos;s account will be charged if it has a recurring payment method.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long premiumExpirationDate</Declaration>
-			
-			
-			<Anchor>//api/name/premiumExpirationDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premiumExpirationDate</TokenIdentifier>
-			<Abstract type="html">	@brief	The date when the user&apos;s Premium account expires, 
-or the date when the user&apos;s account will be charged if it has a recurring payment method.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long premiumExpirationDate</Declaration>
-			
-			
-			<Anchor>//api/name/premiumExpirationDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremiumExtendable:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user is eligible for purchasing Premium account extensions.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumExtendable</Declaration>
-			
-			
-			<Anchor>//api/name/premiumExtendable</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premiumExtendable</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user is eligible for purchasing Premium account extensions.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumExtendable</Declaration>
-			
-			
-			<Anchor>//api/name/premiumExtendable</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremiumPending:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s Premium account is pending payment confirmation</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumPending</Declaration>
-			
-			
-			<Anchor>//api/name/premiumPending</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premiumPending</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user&apos;s Premium account is pending payment confirmation</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumPending</Declaration>
-			
-			
-			<Anchor>//api/name/premiumPending</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setPremiumCancellationPending:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user has requested that no further charges to be made; 
-the Premium account will remain active until it expires.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumCancellationPending</Declaration>
-			
-			
-			<Anchor>//api/name/premiumCancellationPending</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/premiumCancellationPending</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user has requested that no further charges to be made; 
-the Premium account will remain active until it expires.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL premiumCancellationPending</Declaration>
-			
-			
-			<Anchor>//api/name/premiumCancellationPending</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setCanPurchaseUploadAllowance:</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user is eligible for purchasing additional upload allowance.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL canPurchaseUploadAllowance</Declaration>
-			
-			
-			<Anchor>//api/name/canPurchaseUploadAllowance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/canPurchaseUploadAllowance</TokenIdentifier>
-			<Abstract type="html">	@brief	True if the user is eligible for purchasing additional upload allowance.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL canPurchaseUploadAllowance</Declaration>
-			
-			
-			<Anchor>//api/name/canPurchaseUploadAllowance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setSponsoredGroupName:</TokenIdentifier>
-			<Abstract type="html">	@brief	The name of the sponsored group that the user is part of.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sponsoredGroupName</Declaration>
-			
-			
-			<Anchor>//api/name/sponsoredGroupName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/sponsoredGroupName</TokenIdentifier>
-			<Abstract type="html">	@brief	The name of the sponsored group that the user is part of.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sponsoredGroupName</Declaration>
-			
-			
-			<Anchor>//api/name/sponsoredGroupName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/setSponsoredGroupRole:</TokenIdentifier>
-			<Abstract type="html">	@brief	DEPRECATED - will be removed in a future update.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteSponsoredGroupRole sponsoredGroupRole</Declaration>
-			
-			
-			<Anchor>//api/name/sponsoredGroupRole</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNotePremiumInfo/sponsoredGroupRole</TokenIdentifier>
-			<Abstract type="html">	@brief	DEPRECATED - will be removed in a future update.</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteSponsoredGroupRole sponsoredGroupRole</Declaration>
-			
-			
-			<Anchor>//api/name/sponsoredGroupRole</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNotePremiumInfo/premiumInfoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建premium信息</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNotePremiumInfo *)premiumInfoWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">premium信息</Abstract></ReturnValue>
-			<Anchor>//api/name/premiumInfoWithResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNotePremiumInfo/parse:</TokenIdentifier>
-			<Abstract type="html">	@brief	解析数据</Abstract>
-			<DeclaredIn>SSEverNotePremiumInfo.h</DeclaredIn>			
-			
-			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/parse:</Anchor>
+			<Anchor>//api/name/code</Anchor>
 		</Token>
 		
 	</File>

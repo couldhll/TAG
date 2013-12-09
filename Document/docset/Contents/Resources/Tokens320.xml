@@ -1,200 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSRenRenCredential.html">
+	<File path="Classes/TCCheckPageFansDic.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TCCheckPageFansDic</TokenIdentifier>
+			<Abstract type="html">\brief 验证是否认证空间粉丝tttyttyyyu的参数字典定义</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
 			
 			<NodeRef refid="320"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TCCheckPageFansDic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>+ (TCCheckPageFansDic *)dictionary</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/dictionary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCCheckPageFansDic/setParamPage_id:</TokenIdentifier>
+			<Abstract type="html">表示认证空间的QQ号码</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramPage_id</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/paramPage_id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	访问令牌</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCCheckPageFansDic/paramPage_id</TokenIdentifier>
+			<Abstract type="html">表示认证空间的QQ号码</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	访问令牌</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramPage_id</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
-			
-			
-			<Anchor>//api/name/expiresIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
-			
-			
-			<Anchor>//api/name/expiresIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setRefreshToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/refreshToken</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setScope:</TokenIdentifier>
-			<Abstract type="html">	@brief	权限</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
-			
-			
-			<Anchor>//api/name/scope</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/scope</TokenIdentifier>
-			<Abstract type="html">	@brief	权限</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
-			
-			
-			<Anchor>//api/name/scope</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setUid:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
-			
-			
-			<Anchor>//api/name/uid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/uid</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
-			
-			
-			<Anchor>//api/name/uid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<Anchor>//api/name/paramPage_id</Anchor>
 		</Token>
 		
 	</File>

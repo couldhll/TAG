@@ -1,65 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFImageView.html">
+	<File path="Classes/SSFacebookAthlete.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
-			<Abstract type="html">An image view that downloads and displays remote image stored on Parse&apos;s server.</Abstract>
-			<DeclaredIn>PFImageView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookAthlete</TokenIdentifier>
+			<Abstract type="html">	@brief	运动员信息</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>
 			
 			<NodeRef refid="167"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/setFile:</TokenIdentifier>
-			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.
-Note that the download does not start until loadInBackground: is called.</Abstract>
-			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAthlete/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) PFFile *file</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/file</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFImageView/file</TokenIdentifier>
-			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.
-Note that the download does not start until loadInBackground: is called.</Abstract>
-			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAthlete/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) PFFile *file</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/file</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground</TokenIdentifier>
-			<Abstract type="html">Initiate downloading of the remote image. Once the download completes, the remote image will be displayed.</Abstract>
-			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAthlete/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	运动员ID</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadInBackground</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/loadInBackground</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground:</TokenIdentifier>
-			<Abstract type="html">Initiate downloading of the remote image. Once the download completes, the remote image will be displayed.</Abstract>
-			<DeclaredIn>PFImageView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAthlete/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	运动员ID</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
 			
-			<Declaration>- (void)loadInBackground:(void ( ^ ) ( UIImage *image , NSError *error ))completion</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAthlete/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	运动员名称</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAthlete/name</TokenIdentifier>
+			<Abstract type="html">	@brief	运动员名称</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookAthlete/athleteWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建运动员信息</Abstract>
+			<DeclaredIn>SSFacebookAthlete.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookAthlete *)athleteWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>completion</Name>
-					<Abstract type="html">the completion block.</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/loadInBackground:</Anchor>
+			<ReturnValue><Abstract type="html">运动员信息</Abstract></ReturnValue>
+			<Anchor>//api/name/athleteWithResponse:</Anchor>
 		</Token>
 		
 	</File>

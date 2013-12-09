@@ -1,140 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSRenRenSchool.html">
+	<File path="Classes/TencentApiResp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenSchool</TokenIdentifier>
-			<Abstract type="html">	@brief	大学信息</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentApiResp</TokenIdentifier>
+			<Abstract type="html">\brief 答复包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
 			
 			<NodeRef refid="329"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenSchool/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	学校名称</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TencentApiResp/respFromReq:</TokenIdentifier>
+			<Abstract type="html">根据序列号生成一个答复包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenSchool/name</TokenIdentifier>
-			<Abstract type="html">	@brief	学校名称</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenSchool/setYear:</TokenIdentifier>
-			<Abstract type="html">	@brief	入学日期</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *year</Declaration>
-			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenSchool/year</TokenIdentifier>
-			<Abstract type="html">	@brief	入学日期</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *year</Declaration>
-			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenSchool/setDepartment:</TokenIdentifier>
-			<Abstract type="html">	@brief	所在专业</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *department</Declaration>
-			
-			
-			<Anchor>//api/name/department</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenSchool/department</TokenIdentifier>
-			<Abstract type="html">	@brief	所在专业</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *department</Declaration>
-			
-			
-			<Anchor>//api/name/department</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenSchool/setEducationBackground:</TokenIdentifier>
-			<Abstract type="html">	@brief	学历
-DOCTOR      博士
-COLLEGE     本科
-GVY         校工
-PRIMARY     小学
-OTHER       其他
-TEACHER     教师
-MASTER      硕士
-HIGHSCHOOL	高中
-TECHNICAL	中专技校
-JUNIOR      初中
-SECRET      保密</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *educationBackground</Declaration>
-			
-			
-			<Anchor>//api/name/educationBackground</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenSchool/educationBackground</TokenIdentifier>
-			<Abstract type="html">	@brief	学历
-DOCTOR      博士
-COLLEGE     本科
-GVY         校工
-PRIMARY     小学
-OTHER       其他
-TEACHER     教师
-MASTER      硕士
-HIGHSCHOOL	高中
-TECHNICAL	中专技校
-JUNIOR      初中
-SECRET      保密</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *educationBackground</Declaration>
-			
-			
-			<Anchor>//api/name/educationBackground</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenSchool/schoolWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建学校信息</Abstract>
-			<DeclaredIn>SSRenRenSchool.h</DeclaredIn>			
-			
-			<Declaration>+ (SSRenRenSchool *)schoolWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (TencentApiResp *)respFromReq:(TencentApiReq *)req</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>req</Name>
+					<Abstract type="html">答复对应的请求包（如果req不是TencentApiReq或者他的子类，会抛出异常）</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">学校信息</Abstract></ReturnValue>
-			<Anchor>//api/name/schoolWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">答复包体</Abstract></ReturnValue>
+			<Anchor>//api/name/respFromReq:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setNRetCode:</TokenIdentifier>
+			<Abstract type="html">返回码</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/nRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/nRetCode</TokenIdentifier>
+			<Abstract type="html">返回码</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) TCOptionalInt nRetCode</Declaration>
+			
+			
+			<Anchor>//api/name/nRetCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setSRetMsg:</TokenIdentifier>
+			<Abstract type="html">返回消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			
+			
+			<Anchor>//api/name/sRetMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/sRetMsg</TokenIdentifier>
+			<Abstract type="html">返回消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalStr sRetMsg</Declaration>
+			
+			
+			<Anchor>//api/name/sRetMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentApiResp/setObjReq:</TokenIdentifier>
+			<Abstract type="html">答复对应的请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			
+			
+			<Anchor>//api/name/objReq</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentApiResp/objReq</TokenIdentifier>
+			<Abstract type="html">答复对应的请求包</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCOptionalReq objReq</Declaration>
+			
+			
+			<Anchor>//api/name/objReq</Anchor>
 		</Token>
 		
 	</File>

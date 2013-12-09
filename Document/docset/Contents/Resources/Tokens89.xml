@@ -1,103 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBSessionAuthLogger.html">
+	<File path="Classes/NSADictionary.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBSessionAuthLogger</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/NSADictionary</TokenIdentifier>
+			<Abstract type="html">@brief [NSDictionary][0] subclass-available implementation.
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/Reference/Reference.html
+@details See @ref CoreFoundation-Subclass for concept of these objects.</Abstract>
+			<DeclaredIn>NSADictionary.h</DeclaredIn>
 			
 			<NodeRef refid="89"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/initWithSession:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Returns an initialized FBSessionAuthLogger instance.</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithSession:(FBSession *)session</Declaration>
-			
-			
-			<Anchor>//api/name/initWithSession:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/initWithSession:ID:authMethod:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Returns an initialized FBSessionAuthLogger instance with the passed in parameters. This method
-is designed to be used when deserializing a logger from a URL.</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithSession:(FBSession *)session ID:(NSString *)ID authMethod:(NSString *)authMethod</Declaration>
-			
-			
-			<Anchor>//api/name/initWithSession:ID:authMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/addExtrasForNextEvent:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Add JSON-serializable data to the &apos;extras&apos; JSON blob that is attached to these auth events. The
-keys and values passed in here will be attached to the next event that is logged via this
-logger, and cleared after that. They are lost if no events are logged after a call to this method.
-Multiple calls to this method between log events, will append all the extras together.</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (void)addExtrasForNextEvent:(NSDictionary *)metadata</Declaration>
-			
-			
-			<Anchor>//api/name/addExtrasForNextEvent:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/logStartAuth</TokenIdentifier>
-			<Abstract type="html">@abstract
-Logs the start of an auth request</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (void)logStartAuth</Declaration>
-			
-			
-			<Anchor>//api/name/logStartAuth</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/logStartAuthMethod:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Logs the start of a specific auth method, as part of an auth request (e.g. Native GDP)</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (void)logStartAuthMethod:(NSString *)authMethodName</Declaration>
-			
-			
-			<Anchor>//api/name/logStartAuthMethod:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/logEndAuthMethodWithResult:error:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Logs the end of the last-known auth method with the passed in result and error</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (void)logEndAuthMethodWithResult:(NSString *)result error:(NSError *)error</Declaration>
-			
-			
-			<Anchor>//api/name/logEndAuthMethodWithResult:error:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionAuthLogger/logEndAuthWithResult:error:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Logs the end of the overall auth request with the passed in result and error</Abstract>
-			<DeclaredIn>FBSessionAuthLogger.h</DeclaredIn>			
-			
-			<Declaration>- (void)logEndAuthWithResult:(NSString *)result error:(NSError *)error</Declaration>
-			
-			
-			<Anchor>//api/name/logEndAuthWithResult:error:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

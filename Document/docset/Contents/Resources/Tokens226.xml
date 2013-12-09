@@ -1,119 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSDouBanEntity.html">
+	<File path="Classes/SSMailErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanEntity</TokenIdentifier>
-			<Abstract type="html">	@brief	实体信息</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSMailErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息</Abstract>
+			<DeclaredIn>SSMailErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="226"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanEntity/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanEntity/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanEntity/setTopics:</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *topics</Declaration>
-			
-			
-			<Anchor>//api/name/topics</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanEntity/topics</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *topics</Declaration>
-			
-			
-			<Anchor>//api/name/topics</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanEntity/setUrls:</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
-			
-			
-			<Anchor>//api/name/urls</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanEntity/urls</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *urls</Declaration>
-			
-			
-			<Anchor>//api/name/urls</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanEntity/setUserMentions:</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *userMentions</Declaration>
-			
-			
-			<Anchor>//api/name/userMentions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanEntity/userMentions</TokenIdentifier>
-			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *userMentions</Declaration>
-			
-			
-			<Anchor>//api/name/userMentions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanEntity/entityWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建实体信息</Abstract>
-			<DeclaredIn>SSDouBanEntity.h</DeclaredIn>			
-			
-			<Declaration>+ (SSDouBanEntity *)entityWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">实体信息</Abstract></ReturnValue>
-			<Anchor>//api/name/entityWithResponse:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

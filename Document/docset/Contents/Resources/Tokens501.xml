@@ -1,59 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+NSURL_deprecated.html">
+	<File path="Protocols/CLSCrashReport.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(NSURL_deprecated)</TokenIdentifier>
-			<Abstract type="html">@brief NSData creation shortcuts from URL.
-@deprecated This category is deprecated. See each method deprecated section about replacement.</Abstract>
-			<DeclaredIn>NSURL.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/CLSCrashReport</TokenIdentifier>
+			<Abstract type="html">The CLSCrashReport protocol exposes methods that you can call on crash report objects passed
+to delegate methods. If you want these values or the entire object to stay in memory retain
+them or copy them.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>
 			
 			<NodeRef refid="501"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/initWithContentsOfAbstractPath:</TokenIdentifier>
-			<Abstract type="html">@deprecated Use initWithContentOfURL: and @ref NSString(NSURL)::smartURL</Abstract>
-			<DeclaredIn>NSURL.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns the session identifier for the crash report.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithContentsOfAbstractPath:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
 			
 			
-			<Anchor>//api/name/initWithContentsOfAbstractPath:</Anchor>
+			<Anchor>//api/name/identifier</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/dataWithContentsOfAbstractPath:</TokenIdentifier>
-			<Abstract type="html">@deprecated Use dataWithContentOfURL: and @ref NSString(NSURL)::smartURL</Abstract>
-			<DeclaredIn>NSURL.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/identifier</TokenIdentifier>
+			<Abstract type="html">Returns the session identifier for the crash report.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
 			
-			<Declaration>+ (NSData *)dataWithContentsOfAbstractPath:(NSString *)path</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
 			
 			
-			<Anchor>//api/name/dataWithContentsOfAbstractPath:</Anchor>
+			<Anchor>//api/name/identifier</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/initWithContentsOfAbstractPath:options:error:</TokenIdentifier>
-			<Abstract type="html">@deprecated Use initWithContentOfURL:options:error and @ref NSString(NSURL)::smartURL</Abstract>
-			<DeclaredIn>NSURL.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setCustomKeys:</TokenIdentifier>
+			<Abstract type="html">Returns the custom key value data for the crash report.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithContentsOfAbstractPath:(NSString *)path options:(NSDataReadingOptions)opt error:(NSError **)error</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
 			
 			
-			<Anchor>//api/name/initWithContentsOfAbstractPath:options:error:</Anchor>
+			<Anchor>//api/name/customKeys</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/dataWithContentsOfAbstractPath:options:error:</TokenIdentifier>
-			<Abstract type="html">@deprecated Use dataWithContentOfURL:options:error and @ref NSString(NSURL)::smartURL</Abstract>
-			<DeclaredIn>NSURL.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/customKeys</TokenIdentifier>
+			<Abstract type="html">Returns the custom key value data for the crash report.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
 			
-			<Declaration>+ (NSData *)dataWithContentsOfAbstractPath:(NSString *)path options:(NSDataReadingOptions)opt error:(NSError **)error</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
 			
 			
-			<Anchor>//api/name/dataWithContentsOfAbstractPath:options:error:</Anchor>
+			<Anchor>//api/name/customKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setBundleVersion:</TokenIdentifier>
+			<Abstract type="html">Returns the CFBundleVersion of the application that crashed.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bundleVersion</Declaration>
+			
+			
+			<Anchor>//api/name/bundleVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/bundleVersion</TokenIdentifier>
+			<Abstract type="html">Returns the CFBundleVersion of the application that crashed.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bundleVersion</Declaration>
+			
+			
+			<Anchor>//api/name/bundleVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setBundleShortVersionString:</TokenIdentifier>
+			<Abstract type="html">Returns the CFBundleShortVersionString of the application that crashed.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bundleShortVersionString</Declaration>
+			
+			
+			<Anchor>//api/name/bundleShortVersionString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/bundleShortVersionString</TokenIdentifier>
+			<Abstract type="html">Returns the CFBundleShortVersionString of the application that crashed.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bundleShortVersionString</Declaration>
+			
+			
+			<Anchor>//api/name/bundleShortVersionString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setCrashedOnDate:</TokenIdentifier>
+			<Abstract type="html">Returns the date that the application crashed at.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *crashedOnDate</Declaration>
+			
+			
+			<Anchor>//api/name/crashedOnDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/crashedOnDate</TokenIdentifier>
+			<Abstract type="html">Returns the date that the application crashed at.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *crashedOnDate</Declaration>
+			
+			
+			<Anchor>//api/name/crashedOnDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setOSVersion:</TokenIdentifier>
+			<Abstract type="html">Returns the os version that the application crashed on.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *OSVersion</Declaration>
+			
+			
+			<Anchor>//api/name/OSVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/OSVersion</TokenIdentifier>
+			<Abstract type="html">Returns the os version that the application crashed on.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *OSVersion</Declaration>
+			
+			
+			<Anchor>//api/name/OSVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setOSBuildVersion:</TokenIdentifier>
+			<Abstract type="html">Returns the os build version that the application crashed on.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *OSBuildVersion</Declaration>
+			
+			
+			<Anchor>//api/name/OSBuildVersion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/OSBuildVersion</TokenIdentifier>
+			<Abstract type="html">Returns the os build version that the application crashed on.</Abstract>
+			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *OSBuildVersion</Declaration>
+			
+			
+			<Anchor>//api/name/OSBuildVersion</Anchor>
 		</Token>
 		
 	</File>

@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBCacheDescriptor.html">
+	<File path="Classes/GetMessageFromQQResp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBCacheDescriptor</TokenIdentifier>
-			<Abstract type="html">@class</Abstract>
-			<DeclaredIn>FBCacheDescriptor.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GetMessageFromQQResp</TokenIdentifier>
+			<Abstract type="html">GetMessageFromQQResp应答帮助类</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
 			
 			<NodeRef refid="61"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBCacheDescriptor/prefetchAndCacheForSession:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Fetches and caches the data described by the cache descriptor instance, for the given session.</Abstract>
-			<DeclaredIn>FBCacheDescriptor.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/GetMessageFromQQResp/respWithContent:</TokenIdentifier>
+			<Abstract type="html">创建一个GetMessageFromQQResp应答实例</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)prefetchAndCacheForSession:(FBSession *)session</Declaration>
+			<Declaration>+ (GetMessageFromQQResp *)respWithContent:(QQApiObject *)message</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>session</Name>
-					<Abstract type="html">the FBSession to use for fetching data</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">具体分享消息实例</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">新创建的GetMessageFromQQResp应答实例</Abstract></ReturnValue>
+			<Anchor>//api/name/respWithContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GetMessageFromQQResp/setMessage:</TokenIdentifier>
+			<Abstract type="html">具体分享消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
 			
-			<Anchor>//api/name/prefetchAndCacheForSession:</Anchor>
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GetMessageFromQQResp/message</TokenIdentifier>
+			<Abstract type="html">具体分享消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 	</File>

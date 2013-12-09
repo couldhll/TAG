@@ -1,40 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSString+GTMNSStringURLArgumentsAdditions.html">
+	<File path="Protocols/ISSEverNoteDataOutput.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSString(GTMNSStringURLArgumentsAdditions)</TokenIdentifier>
-			<Abstract type="html">Utilities for encoding and decoding URL arguments.</Abstract>
-			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSEverNoteDataOutput</TokenIdentifier>
+			<Abstract type="html">	@brief	数据读取协议</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>
 			
 			<NodeRef refid="538"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByEscapingForURLArgument</TokenIdentifier>
-			<Abstract type="html">This differs from stringByAddingPercentEscapesUsingEncoding: in that it
-will escape all the reserved characters (per RFC 3986
-http://www.ietf.org/rfc/rfc3986.txt which
-stringByAddingPercentEscapesUsingEncoding would leave.</Abstract>
-			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readString</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个字符串</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_stringByEscapingForURLArgument</Declaration>
+			<Declaration>- (NSString *)readString</Declaration>
 			
-			
-			<Anchor>//api/name/gtm_stringByEscapingForURLArgument</Anchor>
+			<ReturnValue><Abstract type="html">字符串</Abstract></ReturnValue>
+			<Anchor>//api/name/readString</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByUnescapingFromURLArgument</TokenIdentifier>
-			<Abstract type="html">This has the same behavior as stringByReplacingPercentEscapesUsingEncoding:,
-except that it will also convert &apos;+&apos; to space.</Abstract>
-			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readBool</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个布尔值</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)gtm_stringByUnescapingFromURLArgument</Declaration>
+			<Declaration>- (BOOL)readBool</Declaration>
+			
+			<ReturnValue><Abstract type="html">布尔值</Abstract></ReturnValue>
+			<Anchor>//api/name/readBool</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readByte</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个字节</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (unsigned char)readByte</Declaration>
+			
+			<ReturnValue><Abstract type="html">字节</Abstract></ReturnValue>
+			<Anchor>//api/name/readByte</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readShort</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个短整型</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (short)readShort</Declaration>
+			
+			<ReturnValue><Abstract type="html">短整型值</Abstract></ReturnValue>
+			<Anchor>//api/name/readShort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readInt32</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个32位整型值</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (int32_t)readInt32</Declaration>
+			
+			<ReturnValue><Abstract type="html">整型值</Abstract></ReturnValue>
+			<Anchor>//api/name/readInt32</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readInt64</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个64位整型值</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (int64_t)readInt64</Declaration>
+			
+			<ReturnValue><Abstract type="html">整型值</Abstract></ReturnValue>
+			<Anchor>//api/name/readInt64</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readDouble</TokenIdentifier>
+			<Abstract type="html">	@brief	读取一个双精度浮点型</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (double)readDouble</Declaration>
+			
+			<ReturnValue><Abstract type="html">浮点型值 </Abstract></ReturnValue>
+			<Anchor>//api/name/readDouble</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readBinary</TokenIdentifier>
+			<Abstract type="html">	@brief	读取二进制流</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)readBinary</Declaration>
+			
+			<ReturnValue><Abstract type="html">二进制流对象</Abstract></ReturnValue>
+			<Anchor>//api/name/readBinary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/readBytes:offset:len:</TokenIdentifier>
+			<Abstract type="html">	@brief	读取字节数组</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)readBytes:(uint8_t *)buf offset:(NSInteger)offset len:(NSInteger)len</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buf</Name>
+					<Abstract type="html">缓存区</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">偏移位置，从缓存区的指定位置开始写入位置</Abstract>
+				</Parameter><Parameter>
+					<Name>len</Name>
+					<Abstract type="html">读入长度</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readBytes:offset:len:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadMessage:type:sequenceID:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取消息</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadMessage:(NSString **)name type:(int *)type sequenceID:(int *)sequenceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">用于保存读取的消息名称指向</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">用于保存读取的消息类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>sequenceID</Name>
+					<Abstract type="html">用于保存读取的消息序列指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadMessage:type:sequenceID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadMessage</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取消息</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadMessage</Declaration>
 			
 			
-			<Anchor>//api/name/gtm_stringByUnescapingFromURLArgument</Anchor>
+			<Anchor>//api/name/endReadMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadStruct:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取结构</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadStruct:(NSString **)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">用于保存读取的结构名称指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadStruct:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadStruct</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取结构</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadStruct</Declaration>
+			
+			
+			<Anchor>//api/name/endReadStruct</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadField:type:fieldID:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取字段信息</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadField:(NSString **)name type:(int *)type fieldID:(int *)fieldID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">用于保存字段名称指向</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">用于保存字段类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldID</Name>
+					<Abstract type="html">用于保存字段ID指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadField:type:fieldID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadField</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取字段</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadField</Declaration>
+			
+			
+			<Anchor>//api/name/endReadField</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadMap:valueType:size:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取图信息</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadMap:(int *)keyType valueType:(int *)valueType size:(int *)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyType</Name>
+					<Abstract type="html">用于保存Key类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>valueType</Name>
+					<Abstract type="html">用于保存Value类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">用于保存长度指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadMap:valueType:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadMap</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取图信息</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadMap</Declaration>
+			
+			
+			<Anchor>//api/name/endReadMap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadSet:size:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取集合</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadSet:(int *)elementType size:(int *)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elementType</Name>
+					<Abstract type="html">用于保存元素类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">用于保存长度指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadSet:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadSet</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取集合</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadSet</Declaration>
+			
+			
+			<Anchor>//api/name/endReadSet</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/beginReadList:size:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始读取列表</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReadList:(int *)elementType size:(int *)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>elementType</Name>
+					<Abstract type="html">用于保存元素类型指向</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">用于保存长度指向</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginReadList:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSEverNoteDataOutput/endReadList</TokenIdentifier>
+			<Abstract type="html">	@brief	结束读取列表</Abstract>
+			<DeclaredIn>ISSEverNoteDataOutput.h</DeclaredIn>			
+			
+			<Declaration>- (void)endReadList</Declaration>
+			
+			
+			<Anchor>//api/name/endReadList</Anchor>
 		</Token>
 		
 	</File>

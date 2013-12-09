@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TCListPhotoDic.html">
+	<File path="Categories/NSArray+Random.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TCListPhotoDic</TokenIdentifier>
-			<Abstract type="html">\brief 获取用户QQ空间相册中的照片列表</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(Random)</TokenIdentifier>
+			<Abstract type="html">@brief Random selection in NSArray objects.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
 			
 			<NodeRef refid="406"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/TCListPhotoDic/dictionary</TokenIdentifier>
-			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Random)/randomObject</TokenIdentifier>
+			<Abstract type="html">@brief Select random object from NSArray.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
 			
-			<Declaration>+ (TCListPhotoDic *)dictionary</Declaration>
+			<Declaration>- (id)randomObject</Declaration>
 			
 			
-			<Anchor>//api/name/dictionary</Anchor>
+			<Anchor>//api/name/randomObject</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TCListPhotoDic/setParamAlbumid:</TokenIdentifier>
-			<Abstract type="html">表示要获取的照片列表所在的相册ID</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Random)/randomObjectsOfCount:</TokenIdentifier>
+			<Abstract type="html">@brief Select the given count number of random objects form NSArray.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramAlbumid</Declaration>
+			<Declaration>- (NSArray *)randomObjectsOfCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">The number of items to select.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/paramAlbumid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TCListPhotoDic/paramAlbumid</TokenIdentifier>
-			<Abstract type="html">表示要获取的照片列表所在的相册ID</Abstract>
-			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr paramAlbumid</Declaration>
-			
-			
-			<Anchor>//api/name/paramAlbumid</Anchor>
+			<Anchor>//api/name/randomObjectsOfCount:</Anchor>
 		</Token>
 		
 	</File>

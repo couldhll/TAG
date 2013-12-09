@@ -1,170 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CLSCrashReport.html">
+	<File path="Protocols/ISSiPadViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CLSCrashReport</TokenIdentifier>
-			<Abstract type="html">The CLSCrashReport protocol exposes methods that you can call on crash report objects passed
-to delegate methods. If you want these values or the entire object to stay in memory retain
-them or copy them.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSiPadViewController</TokenIdentifier>
+			<Abstract type="html">	@brief	iPad视图控制器协议，用于描述iPad中显示容器</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>
 			
 			<NodeRef refid="584"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setIdentifier:</TokenIdentifier>
-			<Abstract type="html">Returns the session identifier for the crash report.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/view</TokenIdentifier>
+			<Abstract type="html">	@brief	获取视图,表示弹出菜单显示在哪一个视图上</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			<Declaration>- (UIView *)view</Declaration>
 			
-			
-			<Anchor>//api/name/identifier</Anchor>
+			<ReturnValue><Abstract type="html">视图对象</Abstract></ReturnValue>
+			<Anchor>//api/name/view</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/identifier</TokenIdentifier>
-			<Abstract type="html">Returns the session identifier for the crash report.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/setView:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置视图</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			<Declaration>- (void)setView:(UIView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">视图对象</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/identifier</Anchor>
+			<Anchor>//api/name/setView:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setCustomKeys:</TokenIdentifier>
-			<Abstract type="html">Returns the custom key value data for the crash report.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/buttonItem</TokenIdentifier>
+			<Abstract type="html">	@brief	获取按钮项，表示弹出菜单用于显示在哪一个导航按钮上</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
+			<Declaration>- (UIBarButtonItem *)buttonItem</Declaration>
 			
-			
-			<Anchor>//api/name/customKeys</Anchor>
+			<ReturnValue><Abstract type="html">按钮项对象</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonItem</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/customKeys</TokenIdentifier>
-			<Abstract type="html">Returns the custom key value data for the crash report.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/setButtonItem:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置按钮项</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *customKeys</Declaration>
+			<Declaration>- (void)setButtonItem:(UIBarButtonItem *)buttonItem</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buttonItem</Name>
+					<Abstract type="html">按钮项对象</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/customKeys</Anchor>
+			<Anchor>//api/name/setButtonItem:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setBundleVersion:</TokenIdentifier>
-			<Abstract type="html">Returns the CFBundleVersion of the application that crashed.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/arrowDirection</TokenIdentifier>
+			<Abstract type="html">	@brief	获取菜单方向</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *bundleVersion</Declaration>
+			<Declaration>- (UIPopoverArrowDirection)arrowDirection</Declaration>
 			
-			
-			<Anchor>//api/name/bundleVersion</Anchor>
+			<ReturnValue><Abstract type="html">菜单方向</Abstract></ReturnValue>
+			<Anchor>//api/name/arrowDirection</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/bundleVersion</TokenIdentifier>
-			<Abstract type="html">Returns the CFBundleVersion of the application that crashed.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/setArrowDirection:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置菜单方向</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *bundleVersion</Declaration>
+			<Declaration>- (void)setArrowDirection:(UIPopoverArrowDirection)arrowDirection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrowDirection</Name>
+					<Abstract type="html">菜单方向</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/bundleVersion</Anchor>
+			<Anchor>//api/name/setArrowDirection:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setBundleShortVersionString:</TokenIdentifier>
-			<Abstract type="html">Returns the CFBundleShortVersionString of the application that crashed.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/rect</TokenIdentifier>
+			<Abstract type="html">	@brief	获取容器显示区域</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *bundleShortVersionString</Declaration>
+			<Declaration>- (CGRect)rect</Declaration>
 			
-			
-			<Anchor>//api/name/bundleShortVersionString</Anchor>
+			<ReturnValue><Abstract type="html">区域对象</Abstract></ReturnValue>
+			<Anchor>//api/name/rect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/bundleShortVersionString</TokenIdentifier>
-			<Abstract type="html">Returns the CFBundleShortVersionString of the application that crashed.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSiPadViewController/setRect:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置容器显示区域</Abstract>
+			<DeclaredIn>ISSiPadViewController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *bundleShortVersionString</Declaration>
+			<Declaration>- (void)setRect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">区域对象</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/bundleShortVersionString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setCrashedOnDate:</TokenIdentifier>
-			<Abstract type="html">Returns the date that the application crashed at.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *crashedOnDate</Declaration>
-			
-			
-			<Anchor>//api/name/crashedOnDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/crashedOnDate</TokenIdentifier>
-			<Abstract type="html">Returns the date that the application crashed at.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *crashedOnDate</Declaration>
-			
-			
-			<Anchor>//api/name/crashedOnDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setOSVersion:</TokenIdentifier>
-			<Abstract type="html">Returns the os version that the application crashed on.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *OSVersion</Declaration>
-			
-			
-			<Anchor>//api/name/OSVersion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/OSVersion</TokenIdentifier>
-			<Abstract type="html">Returns the os version that the application crashed on.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *OSVersion</Declaration>
-			
-			
-			<Anchor>//api/name/OSVersion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CLSCrashReport/setOSBuildVersion:</TokenIdentifier>
-			<Abstract type="html">Returns the os build version that the application crashed on.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *OSBuildVersion</Declaration>
-			
-			
-			<Anchor>//api/name/OSBuildVersion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/CLSCrashReport/OSBuildVersion</TokenIdentifier>
-			<Abstract type="html">Returns the os build version that the application crashed on.</Abstract>
-			<DeclaredIn>Crashlytics.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *OSBuildVersion</Declaration>
-			
-			
-			<Anchor>//api/name/OSBuildVersion</Anchor>
+			<Anchor>//api/name/setRect:</Anchor>
 		</Token>
 		
 	</File>

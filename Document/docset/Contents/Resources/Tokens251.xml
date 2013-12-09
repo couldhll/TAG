@@ -1,96 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookDevice.html">
+	<File path="Classes/SSRenRenWork.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookDevice</TokenIdentifier>
-			<Abstract type="html">	@brief	设备信息</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenWork</TokenIdentifier>
+			<Abstract type="html">	@brief	工作</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>
 			
 			<NodeRef refid="251"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/name</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setOs:</TokenIdentifier>
-			<Abstract type="html">	@brief	操作系统</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setTime:</TokenIdentifier>
+			<Abstract type="html">	@brief	入职日期</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *os</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *time</Declaration>
 			
 			
-			<Anchor>//api/name/os</Anchor>
+			<Anchor>//api/name/time</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/os</TokenIdentifier>
-			<Abstract type="html">	@brief	操作系统</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/time</TokenIdentifier>
+			<Abstract type="html">	@brief	入职日期</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *os</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *time</Declaration>
 			
 			
-			<Anchor>//api/name/os</Anchor>
+			<Anchor>//api/name/time</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookDevice/setHardware:</TokenIdentifier>
-			<Abstract type="html">	@brief	设备型号</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setIndustry:</TokenIdentifier>
+			<Abstract type="html">	@brief	行业</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *hardware</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenIndustry *industry</Declaration>
 			
 			
-			<Anchor>//api/name/hardware</Anchor>
+			<Anchor>//api/name/industry</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookDevice/hardware</TokenIdentifier>
-			<Abstract type="html">	@brief	设备型号</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/industry</TokenIdentifier>
+			<Abstract type="html">	@brief	行业</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *hardware</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenIndustry *industry</Declaration>
 			
 			
-			<Anchor>//api/name/hardware</Anchor>
+			<Anchor>//api/name/industry</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookDevice/deviceWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建设备信息</Abstract>
-			<DeclaredIn>SSFacebookDevice.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setJob:</TokenIdentifier>
+			<Abstract type="html">	@brief	职位</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookDevice *)deviceWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenJob *job</Declaration>
+			
+			
+			<Anchor>//api/name/job</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/job</TokenIdentifier>
+			<Abstract type="html">	@brief	职位</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSRenRenJob *job</Declaration>
+			
+			
+			<Anchor>//api/name/job</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenWork/workWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建工作信息</Abstract>
+			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenWork *)workWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">设备信息</Abstract></ReturnValue>
-			<Anchor>//api/name/deviceWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">工作信息</Abstract></ReturnValue>
+			<Anchor>//api/name/workWithResponse:</Anchor>
 		</Token>
 		
 	</File>

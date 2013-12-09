@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSBundle+Shortcuts.html">
+	<File path="Categories/UIViewController+MZFormSheet.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSBundle(Shortcuts)</TokenIdentifier>
-			<Abstract type="html">@brief NSBundle extensions</Abstract>
-			<DeclaredIn>NSBundle.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(MZFormSheet)</TokenIdentifier>
+			<Abstract type="html">Category on UIViewController to provide access to the formSheetController.</Abstract>
+			<DeclaredIn>MZFormSheetController.h</DeclaredIn>
 			
 			<NodeRef refid="494"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSBundle(Shortcuts)/pathForResourceFile:</TokenIdentifier>
-			<Abstract type="html">@brief Returns resource file path for given filename.</Abstract>
-			<DeclaredIn>NSBundle.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(MZFormSheet)/presentFormSheetController:animated:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Presents a form sheet cotnroller</Abstract>
+			<DeclaredIn>MZFormSheetController.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)pathForResourceFile:(NSString *)filename</Declaration>
+			<Declaration>- (void)presentFormSheetController:(MZFormSheetController *)formSheetController animated:(BOOL)animated completionHandler:(MZFormSheetPresentationCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>formSheetController</Name>
+					<Abstract type="html">The form sheet controller or a subclass of MZFormSheetController.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A completion handler or NULL.</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/presentFormSheetController:animated:completionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(MZFormSheet)/presentFormSheetWithViewController:animated:transitionStyle:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a new form sheet controller and presents it.</Abstract>
+			<DeclaredIn>MZFormSheetController.h</DeclaredIn>			
 			
-			<Anchor>//api/name/pathForResourceFile:</Anchor>
+			<Declaration>- (void)presentFormSheetWithViewController:(UIViewController *)viewController animated:(BOOL)animated transitionStyle:(MZFormSheetTransitionStyle)transitionStyle completionHandler:(MZFormSheetPresentationCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The view controller that is presented by form sheet controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>transitionStyle</Name>
+					<Abstract type="html">he transition style to use when presenting the receiver.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A completion handler or NULL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/presentFormSheetWithViewController:animated:transitionStyle:completionHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(MZFormSheet)/dismissFormSheetControllerAnimated:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Dismisses the form sheet controller that was presented by the receiver. If not find, last form sheet will be dismissed.</Abstract>
+			<DeclaredIn>MZFormSheetController.h</DeclaredIn>			
+			
+			<Declaration>- (void)dismissFormSheetControllerAnimated:(BOOL)animated completionHandler:(MZFormSheetPresentationCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">Pass YES to animate the transition.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A completion handler (didDismissCompletionHandler) or NULL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dismissFormSheetControllerAnimated:completionHandler:</Anchor>
 		</Token>
 		
 	</File>

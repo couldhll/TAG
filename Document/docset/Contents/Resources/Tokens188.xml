@@ -1,67 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Parse.html">
+	<File path="Classes/SSFacebookWork.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Parse</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>Parse.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookWork</TokenIdentifier>
+			<Abstract type="html">	@brief	工作信息</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>
 			
 			<NodeRef refid="188"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Parse/setApplicationId:clientKey:</TokenIdentifier>
-			<Abstract type="html">Sets the applicationId and clientKey of your application.</Abstract>
-			<DeclaredIn>Parse.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setApplicationId:(NSString *)applicationId clientKey:(NSString *)clientKey</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>applicationId</Name>
-					<Abstract type="html">The application id for your Parse application.</Abstract>
-				</Parameter><Parameter>
-					<Name>clientKey</Name>
-					<Abstract type="html">The client key for your Parse application.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<Anchor>//api/name/setApplicationId:clientKey:</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Parse/offlineMessagesEnabled:</TokenIdentifier>
-			<Abstract type="html">Set whether to show offline messages when using a Parse view or view controller related classes.</Abstract>
-			<DeclaredIn>Parse.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
 			
-			<Declaration>+ (void)offlineMessagesEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Whether a UIAlert should be shown when the device is offline and network access is required
-                from a view or view controller.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<Anchor>//api/name/offlineMessagesEnabled:</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Parse/errorMessagesEnabled:</TokenIdentifier>
-			<Abstract type="html">Set whether to show an error message when using a Parse view or view controller related classes
-and a Parse error was generated via a query.</Abstract>
-			<DeclaredIn>Parse.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setEmployer:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
 			
-			<Declaration>+ (void)errorMessagesEnabled:(BOOL)enabled</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSFacebookEmployer *employer</Declaration>
+			
+			
+			<Anchor>//api/name/employer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/employer</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSFacebookEmployer *employer</Declaration>
+			
+			
+			<Anchor>//api/name/employer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司所在地</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/location</TokenIdentifier>
+			<Abstract type="html">	@brief	公司所在地</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setPosition:</TokenIdentifier>
+			<Abstract type="html">	@brief	职务</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSFacebookPosition *position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/position</TokenIdentifier>
+			<Abstract type="html">	@brief	职务</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSFacebookPosition *position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setStartDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始时间</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/startDate</TokenIdentifier>
+			<Abstract type="html">	@brief	开始时间</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookWork/setEndDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	结束时间</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookWork/endDate</TokenIdentifier>
+			<Abstract type="html">	@brief	结束时间</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookWork/workWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建职业信息</Abstract>
+			<DeclaredIn>SSFacebookWork.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookWork *)workWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Whether a UIAlert should be shown when a Parse error occurs.</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/errorMessagesEnabled:</Anchor>
+			<ReturnValue><Abstract type="html">职业信息</Abstract></ReturnValue>
+			<Anchor>//api/name/workWithResponse:</Anchor>
 		</Token>
 		
 	</File>

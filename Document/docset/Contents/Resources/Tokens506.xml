@@ -1,140 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSDictionary+Functional.html">
+	<File path="Protocols/CMPageViewDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(Functional)</TokenIdentifier>
-			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.
-@details Dictionary is not fit for this functional tools. But this implementation takes concept of them.</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/CMPageViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(Functional)</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="506"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/applyProcedureWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Apply procedure with key to objects.
-@details Works like NSAApply is adjusted to values of dictionary.</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageView:willDiplayPage:indexPath:</TokenIdentifier>
+			<Abstract type="html">	页面将要显示</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
 			
-			<Declaration>- (void)applyProcedureWithKey:(NSAObjectProcedureWithKey)procedure</Declaration>
+			<Declaration>- (void)pageView:(CMPageView *)pageView willDiplayPage:(UIView&lt;ICMPageContentView&gt; *)contentView indexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">页面内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/applyProcedureWithKey:</Anchor>
+			<Anchor>//api/name/pageView:willDiplayPage:indexPath:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMappingOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper to objects and returns the result as dictionary.
-@details Works like @link NSAMap @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageView:didShowPage:indexPath:</TokenIdentifier>
+			<Abstract type="html">	页面显示</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
 			
-			<Declaration>- (NSDictionary *)dictionaryByMappingOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			<Declaration>- (void)pageView:(CMPageView *)pageView didShowPage:(UIView&lt;ICMPageContentView&gt; *)contentView indexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">页面内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/dictionaryByMappingOperator:</Anchor>
+			<Anchor>//api/name/pageView:didShowPage:indexPath:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMappingOperatorWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper with key to objects and returns the result as array.
-@details Works like @link NSAMapWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	视图滚动</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
 			
-			<Declaration>- (NSDictionary *)dictionaryByMappingOperatorWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
+			<Declaration>- (void)pageViewDidScroll:(CMPageView *)pageView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/dictionaryByMappingOperatorWithKey:</Anchor>
+			<Anchor>//api/name/pageViewDidScroll:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMapFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper to objects and filters nil result and returns the result as array.
-@details Works like @link NSAMapFilter @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/pageViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	视图停止拖动</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
 			
-			<Declaration>- (NSDictionary *)dictionaryByMapFilteringOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			<Declaration>- (void)pageViewDidEndDragging:(CMPageView *)pageView willDecelerate:(BOOL)decelerate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">页面视图</Abstract>
+				</Parameter><Parameter>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速标识</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/dictionaryByMapFilteringOperator:</Anchor>
+			<Anchor>//api/name/pageViewDidEndDragging:willDecelerate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMapFilteringOperatorWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Maps mapper with index to objects and filters nil result and returns the result as array.
-@details Works like @link NSAMapFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDelegate/sizeForPageContentView:</TokenIdentifier>
+			<Abstract type="html">	@brief	分页内容尺寸</Abstract>
+			<DeclaredIn>CMPageView.h</DeclaredIn>			
 			
-			<Declaration>- (NSDictionary *)dictionaryByMapFilteringOperatorWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
-			
-			
-			<Anchor>//api/name/dictionaryByMapFilteringOperatorWithKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects and returns result as array.
-@details Works like @link NSAFilter @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (NSDictionary *)dictionaryByFilteringOperator:(NSAObjectPicker)filter</Declaration>
-			
-			
-			<Anchor>//api/name/dictionaryByFilteringOperator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByFilteringOperatorWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects with key and returns result as array.
-@details Works like @link NSAFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (NSDictionary *)dictionaryByFilteringOperatorWithKey:(NSAObjectPickerWithKey)filter</Declaration>
-			
-			
-			<Anchor>//api/name/dictionaryByFilteringOperatorWithKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/firstObjectByFilteringOperator:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects and returns the first object of result.
-@details Shallow wrapper of @link NSAFilter @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)firstObjectByFilteringOperator:(NSAObjectPicker)filter</Declaration>
-			
-			
-			<Anchor>//api/name/firstObjectByFilteringOperator:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/firstObjectByFilteringOperatorWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects with key and returns the first object of result.
-@details Shallow wrapper of @link NSAFilterWithInde @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)firstObjectByFilteringOperatorWithKey:(NSAObjectPickerWithKey)filter</Declaration>
-			
-			
-			<Anchor>//api/name/firstObjectByFilteringOperatorWithKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/firstKeyByFilteringOperatorWithKey:</TokenIdentifier>
-			<Abstract type="html">@brief Filters objects with key and returns the first key of result.
-@details Shallow wrapper of @link NSAFilterWithIndex @endlink</Abstract>
-			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
-			
-			<Declaration>- (id)firstKeyByFilteringOperatorWithKey:(NSAObjectPickerWithKey)filter</Declaration>
-			
-			
-			<Anchor>//api/name/firstKeyByFilteringOperatorWithKey:</Anchor>
+			<Declaration>- (CGSize)sizeForPageContentView:(CMPageView *)pageView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageView</Name>
+					<Abstract type="html">分页视图</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分页尺寸</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeForPageContentView:</Anchor>
 		</Token>
 		
 	</File>

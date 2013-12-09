@@ -1,96 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTwitterCoordinates.html">
+	<File path="Classes/WBSendMessageToWeiboRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterCoordinates</TokenIdentifier>
-			<Abstract type="html">	@brief	位置信息</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBSendMessageToWeiboRequest</TokenIdentifier>
+			<Abstract type="html">第三方应用发送消息至微博客户端程序的消息结构体</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="361"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterCoordinates/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBSendMessageToWeiboRequest/setMessage:</TokenIdentifier>
+			<Abstract type="html">发送给微博客户端的消息</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) WBMessageObject *message</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterCoordinates/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBSendMessageToWeiboRequest/message</TokenIdentifier>
+			<Abstract type="html">发送给微博客户端的消息</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) WBMessageObject *message</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterCoordinates/setCoordinates:</TokenIdentifier>
-			<Abstract type="html">	@brief	位置信息数组,[经度，纬度]</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/WBSendMessageToWeiboRequest/requestWithMessage:</TokenIdentifier>
+			<Abstract type="html">返回一个 WBSendMessageToWeiboRequest 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *coordinates</Declaration>
-			
-			
-			<Anchor>//api/name/coordinates</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterCoordinates/coordinates</TokenIdentifier>
-			<Abstract type="html">	@brief	位置信息数组,[经度，纬度]</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *coordinates</Declaration>
-			
-			
-			<Anchor>//api/name/coordinates</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterCoordinates/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterCoordinates/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterCoordinates/coordinatesWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建位置信息</Abstract>
-			<DeclaredIn>SSTwitterCoordinates.h</DeclaredIn>			
-			
-			<Declaration>+ (SSTwitterCoordinates *)coordinatesWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (id)requestWithMessage:(WBMessageObject *)message</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">需要发送给微博客户端程序的消息对象</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">位置信息</Abstract></ReturnValue>
-			<Anchor>//api/name/coordinatesWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBSendMessageToWeiboRequest对象</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMessage:</Anchor>
 		</Token>
 		
 	</File>

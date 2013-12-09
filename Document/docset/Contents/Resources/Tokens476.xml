@@ -1,15 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiYun_modify_record_POST.html">
+	<File path="Categories/UIColor+HTMLColorInternal.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_modify_record_POST</TokenIdentifier>
-			<Abstract type="html">\brief 修改key-value键值对的value为新值</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIColor(HTMLColorInternal)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>
 			
 			<NodeRef refid="476"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression16:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with html color code
+@details This method accepts formats like &quot;#fff&quot;.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)initWithHTMLHexExpression16:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHTMLHexExpression16:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression32:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with html color code
+@details This method accepts formats like &quot;#0f0f0f&quot;</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)initWithHTMLHexExpression32:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHTMLHexExpression32:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression16a:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with html color code
+@details This method accepts formats like &quot;#dddf&quot;. Last character represents alpha channel.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)initWithHTMLHexExpression16a:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHTMLHexExpression16a:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression32a:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with html color code
+@details This method accepts formats like &quot;#ddddddff&quot;. Last 2 characters represent alpha channel.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)initWithHTMLHexExpression32a:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHTMLHexExpression32a:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression16:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns color object with html color code
+@details This method accepts formats like &quot;#fff&quot;.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)colorWithHTMLHexExpression16:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/colorWithHTMLHexExpression16:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression32:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns color object with html color code
+@details This method accepts formats like &quot;#0f0f0f&quot;.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)colorWithHTMLHexExpression32:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/colorWithHTMLHexExpression32:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression16a:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns color object with html color code
+@details This method accepts formats like &quot;#dddf&quot;. Last character represents alpha channel.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)colorWithHTMLHexExpression16a:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/colorWithHTMLHexExpression16a:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression32a:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns color object with html color code
+@details This method accepts formats like &quot;#ddddddff&quot;. Last 2 characters represent alpha channel.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)colorWithHTMLHexExpression32a:(NSString *)code</Declaration>
+			
+			
+			<Anchor>//api/name/colorWithHTMLHexExpression32a:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLColorName:</TokenIdentifier>
+			<Abstract type="html">@brief Returns constant color object for given color name.
+@details Available color names are standard HTML color names, &quot;orange&quot; for css and &quot;transperent&quot; for clear color.</Abstract>
+			<DeclaredIn>UIColor.m</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)colorWithHTMLColorName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/colorWithHTMLColorName:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

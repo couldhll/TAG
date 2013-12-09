@@ -1,118 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSSohuBookmark.html">
+	<File path="Classes/UIAPlaceholderTextView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSSohuBookmark</TokenIdentifier>
-			<Abstract type="html">	@brief	搜狐书签</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAPlaceholderTextView</TokenIdentifier>
+			<Abstract type="html">@brief UITextView with placeholder.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>
 			
 			<NodeRef refid="342"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSohuBookmark/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	书签id，对单个用户此id具有唯一性</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderString:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder string</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/placeholderString</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSohuBookmark/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	书签id，对单个用户此id具有唯一性</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderString</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder string</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
+			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/placeholderString</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSohuBookmark/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	书签来源url</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/set__deprecated:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/__deprecated</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSohuBookmark/url</TokenIdentifier>
-			<Abstract type="html">	@brief	书签来源url</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/__deprecated</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/__deprecated</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSohuBookmark/setTitle:</TokenIdentifier>
-			<Abstract type="html">	@brief	书签标题</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderTextView:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/placeholderTextView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSohuBookmark/title</TokenIdentifier>
-			<Abstract type="html">	@brief	书签标题</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderTextView</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/placeholderTextView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSohuBookmark/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderAnimated:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/placeholderAnimated</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSohuBookmark/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderAnimated</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSSohuBookmark/bookmarkWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSSohuBookmark.h</DeclaredIn>			
-			
-			<Declaration>+ (SSSohuBookmark *)bookmarkWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/bookmarkWithResponse:</Anchor>
+			<Anchor>//api/name/placeholderAnimated</Anchor>
 		</Token>
 		
 	</File>

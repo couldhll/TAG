@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSString+CommonCryptorString.html">
+	<File path="Protocols/ISSDouBanAuthSession.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSString(CommonCryptorString)</TokenIdentifier>
-			<Abstract type="html">	@brief CommonCryptor NSString to NSData encryption shortcuts</Abstract>
-			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSDouBanAuthSession</TokenIdentifier>
+			<Abstract type="html">	@brief	授权会话</Abstract>
+			<DeclaredIn>ISSDouBanAuthSession.h</DeclaredIn>
 			
 			<NodeRef refid="535"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSDouBanAuthSession/allowCallback</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否允许回调到服务器标识，默认YES</Abstract>
+			<DeclaredIn>ISSDouBanAuthSession.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)allowCallback</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示回调服务器，NO 表示不回调服务器</Abstract></ReturnValue>
+			<Anchor>//api/name/allowCallback</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSDouBanAuthSession/setAllowCallback:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置回调服务器标识，对于没有服务器的客户端应用可以设置为NO，则在接收授权信息后拦截回调。</Abstract>
+			<DeclaredIn>ISSDouBanAuthSession.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAllowCallback:(BOOL)allowCallback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>allowCallback</Name>
+					<Abstract type="html">回调服务器标识</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAllowCallback:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

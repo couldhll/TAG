@@ -1,80 +1,345 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFAnonymousUtils.html">
+	<File path="Classes/SSEverNoteResource.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFAnonymousUtils</TokenIdentifier>
-			<Abstract type="html">Provides utility functions for working with Anonymously logged-in users.  Anonymous users have some unique characteristics:
-&lt;ul&gt;
-   &lt;li&gt;Anonymous users don&apos;t need a user name or password.&lt;/li&gt;
-   &lt;li&gt;Once logged out, an anonymous user cannot be recovered.&lt;/li&gt;
-   &lt;li&gt;When the current user is anonymous, the following methods can be used to switch to a different user or convert the
-     anonymous user into a regular one:
-     &lt;ul&gt;
-       &lt;li&gt;signUp converts an anonymous user to a standard user with the given username and password.
-           Data associated with the anonymous user is retained.&lt;/li&gt;
-       &lt;li&gt;logIn switches users without converting the anonymous user.  Data associated with the anonymous user will be lost.&lt;/li&gt;
-       &lt;li&gt;Service logIn (e.g. Facebook, Twitter) will attempt to convert the anonymous user into a standard user by linking it to the service.
-           If a user already exists that is linked to the service, it will instead switch to the existing user.&lt;/li&gt;
-       &lt;li&gt;Service linking (e.g. Facebook, Twitter) will convert the anonymous user into a standard user by linking it to the service.&lt;/li&gt;
-     &lt;/ul&gt;
-&lt;/ul&gt;</Abstract>
-			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteResource</TokenIdentifier>
+			<Abstract type="html">	@brief	资源信息</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>
 			
 			<NodeRef refid="162"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/logInWithBlock:</TokenIdentifier>
-			<Abstract type="html">Creates an anonymous user.</Abstract>
-			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setGuid:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
 			
-			<Declaration>+ (void)logInWithBlock:(PFUserResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute when anonymous user creation is complete. The block should have the following argument signature:
-(PFUser user, NSError error)</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSString *guid</Declaration>
 			
-			<Anchor>//api/name/logInWithBlock:</Anchor>
+			
+			<Anchor>//api/name/guid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/logInWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Creates an anonymous user.  The selector for the callback should look like: (PFUser )user error:(NSError )error</Abstract>
-			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/guid</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
 			
-			<Declaration>+ (void)logInWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *guid</Declaration>
+			
+			
+			<Anchor>//api/name/guid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setNoteGuid:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *noteGuid</Declaration>
+			
+			
+			<Anchor>//api/name/noteGuid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/noteGuid</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *noteGuid</Declaration>
+			
+			
+			<Anchor>//api/name/noteGuid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setData:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/data</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setMime:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mime</Declaration>
+			
+			
+			<Anchor>//api/name/mime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/mime</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mime</Declaration>
+			
+			
+			<Anchor>//api/name/mime</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setWidth:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/width</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setHeight:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/height</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setDuration:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/duration</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int16_t duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setActive:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/active</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setRecognition:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *recognition</Declaration>
+			
+			
+			<Anchor>//api/name/recognition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/recognition</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *recognition</Declaration>
+			
+			
+			<Anchor>//api/name/recognition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setAttributes:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteResourceAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/attributes</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteResourceAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setUpdateSequenceNum:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger updateSequenceNum</Declaration>
+			
+			
+			<Anchor>//api/name/updateSequenceNum</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/updateSequenceNum</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger updateSequenceNum</Declaration>
+			
+			
+			<Anchor>//api/name/updateSequenceNum</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/setAlternateData:</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *alternateData</Declaration>
+			
+			
+			<Anchor>//api/name/alternateData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResource/alternateData</TokenIdentifier>
+			<Abstract type="html">#end</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteData *alternateData</Declaration>
+			
+			
+			<Anchor>//api/name/alternateData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteResource/resourceWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建资源对象</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteResource *)resourceWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector.</Abstract>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">资源对象</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteResource/resourceWithData:mime:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建资源对象</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteResource *)resourceWithData:(SSEverNoteData *)data mime:(NSString *)mime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">资源数据</Abstract>
 				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
+					<Name>mime</Name>
+					<Abstract type="html">MIME类型</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/logInWithTarget:selector:</Anchor>
+			<ReturnValue><Abstract type="html">资源对象</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceWithData:mime:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/isLinkedWithUser:</TokenIdentifier>
-			<Abstract type="html">Whether the user is logged in anonymously.</Abstract>
-			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)isLinkedWithUser:(PFUser *)user</Declaration>
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to check for anonymity. The user must be logged in on this device.</Abstract>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">True if the user is anonymous.  False if the user is not the current user or is not anonymous.</Abstract></ReturnValue>
-			<Anchor>//api/name/isLinkedWithUser:</Anchor>
+			
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResource/putData:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置数据</Abstract>
+			<DeclaredIn>SSEverNoteResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>writer</Name>
+					<Abstract type="html">数据写入器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putData:</Anchor>
 		</Token>
 		
 	</File>

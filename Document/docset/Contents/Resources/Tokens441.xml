@@ -1,102 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WBMusicObject.html">
+	<File path="Categories/NSNumberFormatter+Shortcuts.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WBMusicObject</TokenIdentifier>
-			<Abstract type="html">消息中包含的音乐数据对象</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNumberFormatter(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief Common shortcuts</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>
 			
 			<NodeRef refid="441"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMusicObject/setMusicUrl:</TokenIdentifier>
-			<Abstract type="html">音乐网页url地址</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formatter</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns default formatter.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
+			<Declaration>+ (NSNumberFormatter *)formatter</Declaration>
 			
 			
-			<Anchor>//api/name/musicUrl</Anchor>
+			<Anchor>//api/name/formatter</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMusicObject/musicUrl</TokenIdentifier>
-			<Abstract type="html">音乐网页url地址</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/initWithNumberStyle:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with number style.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
+			<Declaration>- (id)initWithNumberStyle:(NSNumberFormatterStyle)style</Declaration>
 			
 			
-			<Anchor>//api/name/musicUrl</Anchor>
+			<Anchor>//api/name/initWithNumberStyle:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMusicObject/setMusicLowBandUrl:</TokenIdentifier>
-			<Abstract type="html">音乐lowband网页url地址</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formatterWithNumberStyle:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns with number style.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/initWithNumberStyle:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (NSNumberFormatter *)formatterWithNumberStyle:(NSNumberFormatterStyle)style</Declaration>
 			
 			
-			<Anchor>//api/name/musicLowBandUrl</Anchor>
+			<Anchor>//api/name/formatterWithNumberStyle:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMusicObject/musicLowBandUrl</TokenIdentifier>
-			<Abstract type="html">音乐lowband网页url地址</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForNumber:</TokenIdentifier>
+			<Abstract type="html">@brief Quick decimal formatting for NSNumber</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
+			<Declaration>+ (NSString *)formattedStringByDecimalStyleForNumber:(NSNumber *)number</Declaration>
 			
 			
-			<Anchor>//api/name/musicLowBandUrl</Anchor>
+			<Anchor>//api/name/formattedStringByDecimalStyleForNumber:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMusicObject/setMusicStreamUrl:</TokenIdentifier>
-			<Abstract type="html">音乐数据流url</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForInteger:</TokenIdentifier>
+			<Abstract type="html">@brief Quick decimal formatting for NSInteger</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *musicStreamUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicStreamUrl</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForNumber:</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMusicObject/musicStreamUrl</TokenIdentifier>
-			<Abstract type="html">音乐数据流url</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicStreamUrl</Declaration>
+	</RelatedTokens>
+	
+			<Declaration>+ (NSString *)formattedStringByDecimalStyleForInteger:(NSInteger)integer</Declaration>
 			
 			
-			<Anchor>//api/name/musicStreamUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMusicObject/setMusicLowBandStreamUrl:</TokenIdentifier>
-			<Abstract type="html">音乐lowband数据流url</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandStreamUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandStreamUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMusicObject/musicLowBandStreamUrl</TokenIdentifier>
-			<Abstract type="html">音乐lowband数据流url</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandStreamUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandStreamUrl</Anchor>
+			<Anchor>//api/name/formattedStringByDecimalStyleForInteger:</Anchor>
 		</Token>
 		
 	</File>

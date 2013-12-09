@@ -1,294 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFLogInView.html">
+	<File path="Classes/SSFacebookCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFLogInView</TokenIdentifier>
-			<Abstract type="html">The class provides a standard log in interface for authenticating a PFUser.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>
 			
 			<NodeRef refid="169"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/initWithFields:</TokenIdentifier>
-			<Abstract type="html">Initializes the view with the specified log in elements.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithFields:(PFLogInFields)fields</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/accessToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>fields</Name>
-					<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/initWithFields:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setLogo:</TokenIdentifier>
-			<Abstract type="html">The logo. By default, it is the Parse logo.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIView *logo</Declaration>
-			
-			
-			<Anchor>//api/name/logo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/logo</TokenIdentifier>
-			<Abstract type="html">The logo. By default, it is the Parse logo.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIView *logo</Declaration>
-			
-			
-			<Anchor>//api/name/logo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setFields:</TokenIdentifier>
-			<Abstract type="html">The bitmask which specifies the enabled log in elements in the view</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, assign) PFLogInFields fields</Declaration>
-			
-			
-			<Anchor>//api/name/fields</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/fields</TokenIdentifier>
-			<Abstract type="html">The bitmask which specifies the enabled log in elements in the view</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, assign) PFLogInFields fields</Declaration>
-			
-			
-			<Anchor>//api/name/fields</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setUsernameField:</TokenIdentifier>
-			<Abstract type="html">The username text field. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UITextField *usernameField</Declaration>
-			
-			
-			<Anchor>//api/name/usernameField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/usernameField</TokenIdentifier>
-			<Abstract type="html">The username text field. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UITextField *usernameField</Declaration>
-			
-			
-			<Anchor>//api/name/usernameField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setPasswordField:</TokenIdentifier>
-			<Abstract type="html">The password text field. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UITextField *passwordField</Declaration>
-			
-			
-			<Anchor>//api/name/passwordField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/passwordField</TokenIdentifier>
-			<Abstract type="html">The password text field. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UITextField *passwordField</Declaration>
-			
-			
-			<Anchor>//api/name/passwordField</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setPasswordForgottenButton:</TokenIdentifier>
-			<Abstract type="html">The password forgotten button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *passwordForgottenButton</Declaration>
-			
-			
-			<Anchor>//api/name/passwordForgottenButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/passwordForgottenButton</TokenIdentifier>
-			<Abstract type="html">The password forgotten button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *passwordForgottenButton</Declaration>
-			
-			
-			<Anchor>//api/name/passwordForgottenButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setLogInButton:</TokenIdentifier>
-			<Abstract type="html">The log in button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *logInButton</Declaration>
-			
-			
-			<Anchor>//api/name/logInButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/logInButton</TokenIdentifier>
-			<Abstract type="html">The log in button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *logInButton</Declaration>
-			
-			
-			<Anchor>//api/name/logInButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setFacebookButton:</TokenIdentifier>
-			<Abstract type="html">The Facebook button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *facebookButton</Declaration>
-			
-			
-			<Anchor>//api/name/facebookButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/facebookButton</TokenIdentifier>
-			<Abstract type="html">The Facebook button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *facebookButton</Declaration>
-			
-			
-			<Anchor>//api/name/facebookButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setTwitterButton:</TokenIdentifier>
-			<Abstract type="html">The Twitter button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *twitterButton</Declaration>
-			
-			
-			<Anchor>//api/name/twitterButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/twitterButton</TokenIdentifier>
-			<Abstract type="html">The Twitter button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *twitterButton</Declaration>
-			
-			
-			<Anchor>//api/name/twitterButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setSignUpButton:</TokenIdentifier>
-			<Abstract type="html">The sign up button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *signUpButton</Declaration>
-			
-			
-			<Anchor>//api/name/signUpButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/signUpButton</TokenIdentifier>
-			<Abstract type="html">The sign up button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *signUpButton</Declaration>
-			
-			
-			<Anchor>//api/name/signUpButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setDismissButton:</TokenIdentifier>
-			<Abstract type="html">The dismiss button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *dismissButton</Declaration>
-			
-			
-			<Anchor>//api/name/dismissButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/dismissButton</TokenIdentifier>
-			<Abstract type="html">The dismiss button. It is nil if the element is not enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UIButton *dismissButton</Declaration>
-			
-			
-			<Anchor>//api/name/dismissButton</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setExternalLogInLabel:</TokenIdentifier>
-			<Abstract type="html">The facebook/twitter login label. It is only shown if the external login is enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UILabel *externalLogInLabel</Declaration>
-			
-			
-			<Anchor>//api/name/externalLogInLabel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/externalLogInLabel</TokenIdentifier>
-			<Abstract type="html">The facebook/twitter login label. It is only shown if the external login is enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UILabel *externalLogInLabel</Declaration>
-			
-			
-			<Anchor>//api/name/externalLogInLabel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInView/setSignUpLabel:</TokenIdentifier>
-			<Abstract type="html">The sign up label. It is only shown if sign up button is enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UILabel *signUpLabel</Declaration>
-			
-			
-			<Anchor>//api/name/signUpLabel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInView/signUpLabel</TokenIdentifier>
-			<Abstract type="html">The sign up label. It is only shown if sign up button is enabled.</Abstract>
-			<DeclaredIn>PFLogInView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) UILabel *signUpLabel</Declaration>
-			
-			
-			<Anchor>//api/name/signUpLabel</Anchor>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSFacebookCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

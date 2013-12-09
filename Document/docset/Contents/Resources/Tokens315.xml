@@ -1,156 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSQZoneCredential.html">
+	<File path="Classes/TCAPIRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	QQ空间授权凭证</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TCAPIRequest</TokenIdentifier>
+			<Abstract type="html">\brief CGI请求的参数字典封装辅助基类</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>
 			
 			<NodeRef refid="315"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAPIRequest/setApiURL:</TokenIdentifier>
+			<Abstract type="html">CGI请求的URL地址</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSURL *apiURL</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/apiURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneCredential/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAPIRequest/apiURL</TokenIdentifier>
+			<Abstract type="html">CGI请求的URL地址</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSURL *apiURL</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/apiURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/setOpenId:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAPIRequest/setMethod:</TokenIdentifier>
+			<Abstract type="html">CGI请求方式：&quot;GET&quot;，&quot;POST&quot;</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *method</Declaration>
 			
 			
-			<Anchor>//api/name/openId</Anchor>
+			<Anchor>//api/name/method</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneCredential/openId</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAPIRequest/method</TokenIdentifier>
+			<Abstract type="html">CGI请求方式：&quot;GET&quot;，&quot;POST&quot;</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *method</Declaration>
 			
 			
-			<Anchor>//api/name/openId</Anchor>
+			<Anchor>//api/name/method</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAPIRequest/setParamUserData:</TokenIdentifier>
+			<Abstract type="html">API参数中的保留字段，可以塞入任意字典支持的类型，再调用完成后会带回给调用方</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredId paramUserData</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/paramUserData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAPIRequest/paramUserData</TokenIdentifier>
+			<Abstract type="html">API参数中的保留字段，可以塞入任意字典支持的类型，再调用完成后会带回给调用方</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredId paramUserData</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/paramUserData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAPIRequest/setResponse:</TokenIdentifier>
+			<Abstract type="html">APIResponse,API的返回结果</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) APIResponse *response</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/response</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAPIRequest/response</TokenIdentifier>
+			<Abstract type="html">APIResponse,API的返回结果</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) APIResponse *response</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/response</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAPIRequest/cancel</TokenIdentifier>
+			<Abstract type="html">取消相应的CGI请求任务</Abstract>
+			<DeclaredIn>sdkdef.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>- (void)cancel</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSQZoneCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<Anchor>//api/name/cancel</Anchor>
 		</Token>
 		
 	</File>

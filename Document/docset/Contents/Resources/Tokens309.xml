@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSPocketErrorInfo.html">
+	<File path="Classes/ShowMessageFromWXReq.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSPocketErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	错误信息类，用于记录Pocket中产生的错误信息（报错错误码、错误描述）</Abstract>
-			<DeclaredIn>SSPocketErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/ShowMessageFromWXReq</TokenIdentifier>
+			<Abstract type="html">@brief 微信通知第三方程序，要求第三方程序显示的消息结构体。</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>
 			
 			<NodeRef refid="309"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ShowMessageFromWXReq/setMessage:</TokenIdentifier>
+			<Abstract type="html">微信终端向第三方程序发送的要求第三方程序处理的多媒体内容</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WXMediaMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ShowMessageFromWXReq/message</TokenIdentifier>
+			<Abstract type="html">微信终端向第三方程序发送的要求第三方程序处理的多媒体内容</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WXMediaMessage *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

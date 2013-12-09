@@ -1,97 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookVideoUploadLimits.html">
+	<File path="Classes/SSSohuWeiboErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookVideoUploadLimits</TokenIdentifier>
-			<Abstract type="html">	@brief	视频上传限制</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSohuWeiboErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	搜狐微博错误信息</Abstract>
+			<DeclaredIn>SSSohuWeiboErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="267"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setLength:</TokenIdentifier>
-			<Abstract type="html">	@brief	限制长度</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger length</Declaration>
-			
-			
-			<Anchor>//api/name/length</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/length</TokenIdentifier>
-			<Abstract type="html">	@brief	限制长度</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger length</Declaration>
-			
-			
-			<Anchor>//api/name/length</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setSize:</TokenIdentifier>
-			<Abstract type="html">	@brief	限制大小</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
-			
-			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/size</TokenIdentifier>
-			<Abstract type="html">	@brief	限制大小</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
-			
-			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookVideoUploadLimits/videoUploadLimitsWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建视频上传显示信息</Abstract>
-			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
-			
-			<Declaration>+ (SSFacebookVideoUploadLimits *)videoUploadLimitsWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">视图上传显示信息</Abstract></ReturnValue>
-			<Anchor>//api/name/videoUploadLimitsWithResponse:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

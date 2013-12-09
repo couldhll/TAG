@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GMGridViewCell.html">
+	<File path="Classes/QQApiAudioObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GMGridViewCell</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GMGridViewCell.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiAudioObject</TokenIdentifier>
+			<Abstract type="html">@brief 音频URL对象
+     用于分享目标内容为音频的URL的对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="115"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GMGridViewCell/prepareForReuse</TokenIdentifier>
-			<Abstract type="html">Override to release custom data before cell is reused.</Abstract>
-			<DeclaredIn>GMGridViewCell+Extended.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiAudioObject/objectWithURL:title:description:previewImageData:</TokenIdentifier>
+			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiAudioObject&lt;/code&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (void)prepareForReuse</Declaration>
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">音频内容的目标URL</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享内容的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">分享内容的描述</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">分享内容的预览图像</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/objectWithURL:title:description:previewImageData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiAudioObject/objectWithURL:title:description:previewImageURL:</TokenIdentifier>
+			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiAudioObject&lt;/code&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Anchor>//api/name/prepareForReuse</Anchor>
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageURL:(NSURL *)previewURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">音频内容的目标URL</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享内容的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">分享内容的描述</Abstract>
+				</Parameter><Parameter>
+					<Name>previewURL</Name>
+					<Abstract type="html">分享内容的预览图像URL</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectWithURL:title:description:previewImageURL:</Anchor>
 		</Token>
 		
 	</File>

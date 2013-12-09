@@ -1,94 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GetMessageFromWXResp.html">
+	<File path="Classes/QQApiInterface.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GetMessageFromWXResp</TokenIdentifier>
-			<Abstract type="html">@brief 微信终端向第三方程序请求提供内容，第三方程序向微信终端返回处理结果类型。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiInterface</TokenIdentifier>
+			<Abstract type="html">\brief 对QQApi的简单封装类</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>
 			
 			<NodeRef refid="119"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GetMessageFromWXResp/setText:</TokenIdentifier>
-			<Abstract type="html">向微信终端提供的文本内容
-@attention 文本长度必须大于0且小于10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/handleOpenURL:delegate:</TokenIdentifier>
+			<Abstract type="html">处理由手Q唤起的跳转请求</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
+			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url delegate:(id&lt;QQApiInterfaceDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">待处理的url跳转请求</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">第三方应用用于处理来至QQ请求及响应的委托对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">跳转请求处理结果，YES表示成功处理，NO表示不支持的请求协议或处理失败</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:delegate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GetMessageFromWXResp/text</TokenIdentifier>
-			<Abstract type="html">向微信终端提供的文本内容
-@attention 文本长度必须大于0且小于10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/sendReq:</TokenIdentifier>
+			<Abstract type="html">向手Q发起分享请求</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
+			<Declaration>+ (QQApiSendResultCode)sendReq:(QQBaseReq *)req</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>req</Name>
+					<Abstract type="html">分享内容的请求</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">请求发送结果码</Abstract></ReturnValue>
+			<Anchor>//api/name/sendReq:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GetMessageFromWXResp/setMessage:</TokenIdentifier>
-			<Abstract type="html">向微信终端提供的多媒体内容。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/sendResp:</TokenIdentifier>
+			<Abstract type="html">向手Q发送应答消息</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WXMediaMessage *message</Declaration>
-			
-			
-			<Anchor>//api/name/message</Anchor>
+			<Declaration>+ (QQApiSendResultCode)sendResp:(QQBaseResp *)resp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resp</Name>
+					<Abstract type="html">应答消息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应答发送结果码</Abstract></ReturnValue>
+			<Anchor>//api/name/sendResp:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GetMessageFromWXResp/message</TokenIdentifier>
-			<Abstract type="html">向微信终端提供的多媒体内容。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/isQQInstalled</TokenIdentifier>
+			<Abstract type="html">检测是否已安装QQ</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WXMediaMessage *message</Declaration>
+			<Declaration>+ (BOOL)isQQInstalled</Declaration>
 			
-			
-			<Anchor>//api/name/message</Anchor>
+			<ReturnValue><Abstract type="html">如果QQ已安装则返回YES，否则返回NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isQQInstalled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GetMessageFromWXResp/setBText:</TokenIdentifier>
-			<Abstract type="html">向微信终端提供内容的消息类型，包括文本消息和多媒体消息两种
-@attention 两者只能选择其一，不能同时发送文本和多媒体消息</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/isQQSupportApi</TokenIdentifier>
+			<Abstract type="html">检测QQ是否支持API调用</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL bText</Declaration>
+			<Declaration>+ (BOOL)isQQSupportApi</Declaration>
 			
-			
-			<Anchor>//api/name/bText</Anchor>
+			<ReturnValue><Abstract type="html">如果当前安装QQ版本支持API调用则返回YES，否则返回NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isQQSupportApi</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GetMessageFromWXResp/bText</TokenIdentifier>
-			<Abstract type="html">向微信终端提供内容的消息类型，包括文本消息和多媒体消息两种
-@attention 两者只能选择其一，不能同时发送文本和多媒体消息</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/openQQ</TokenIdentifier>
+			<Abstract type="html">启动QQ</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL bText</Declaration>
+			<Declaration>+ (BOOL)openQQ</Declaration>
 			
+			<ReturnValue><Abstract type="html">成功返回YES，否则返回NO</Abstract></ReturnValue>
+			<Anchor>//api/name/openQQ</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiInterface/getQQInstallUrl</TokenIdentifier>
+			<Abstract type="html">获取QQ下载地址</Abstract>
+			<DeclaredIn>QQApiInterface.h</DeclaredIn>			
 			
-			<Anchor>//api/name/bText</Anchor>
+			<Declaration>+ (NSString *)getQQInstallUrl</Declaration>
+			
+			<ReturnValue><Abstract type="html">iPhoneQQ下载地址</Abstract></ReturnValue>
+			<Anchor>//api/name/getQQInstallUrl</Anchor>
 		</Token>
 		
 	</File>

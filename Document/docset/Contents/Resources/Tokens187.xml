@@ -1,49 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PF_Twitter.html">
+	<File path="Classes/SSFacebookVideoUploadLimits.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PF_Twitter</TokenIdentifier>
-			<Abstract type="html">A simple interface for interacting with the Twitter REST API, automating sign-in and OAuth signing of requests against the API.</Abstract>
-			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookVideoUploadLimits</TokenIdentifier>
+			<Abstract type="html">	@brief	视频上传限制</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>
 			
 			<NodeRef refid="187"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authorizeWithSuccess:failure:cancel:</TokenIdentifier>
-			<Abstract type="html">Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties if the Twitter user
-grants permission to the application.</Abstract>
-			<DeclaredIn>PF_Twitter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
 			
-			<Declaration>- (void)authorizeWithSuccess:(void ( ^ ) ( void ))success failure:(void ( ^ ) ( NSError *error ))failure cancel:(void ( ^ ) ( void ))cancel</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>success</Name>
-					<Abstract type="html">Invoked upon successful authorization.</Abstract>
-				</Parameter><Parameter>
-					<Name>failure</Name>
-					<Abstract type="html">Invoked upon an error occurring in the authorization process.</Abstract>
-				</Parameter><Parameter>
-					<Name>cancel</Name>
-					<Abstract type="html">Invoked when the user cancels authorization.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<Anchor>//api/name/authorizeWithSuccess:failure:cancel:</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/signRequest:</TokenIdentifier>
-			<Abstract type="html">Adds a 3-legged OAuth signature to an NSMutableURLRequest based upon the properties set for the Twitter object.  Use this
-function to sign requests being made to the Twitter API.</Abstract>
-			<DeclaredIn>PF_Twitter.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
 			
-			<Declaration>- (void)signRequest:(NSMutableURLRequest *)request</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/signRequest:</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setLength:</TokenIdentifier>
+			<Abstract type="html">	@brief	限制长度</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/length</TokenIdentifier>
+			<Abstract type="html">	@brief	限制长度</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookVideoUploadLimits/setSize:</TokenIdentifier>
+			<Abstract type="html">	@brief	限制大小</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookVideoUploadLimits/size</TokenIdentifier>
+			<Abstract type="html">	@brief	限制大小</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookVideoUploadLimits/videoUploadLimitsWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建视频上传显示信息</Abstract>
+			<DeclaredIn>SSFacebookVideoUploadLimits.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookVideoUploadLimits *)videoUploadLimitsWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">视图上传显示信息</Abstract></ReturnValue>
+			<Anchor>//api/name/videoUploadLimitsWithResponse:</Anchor>
 		</Token>
 		
 	</File>

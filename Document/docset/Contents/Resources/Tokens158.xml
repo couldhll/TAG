@@ -1,51 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/OHASMarkupParserBase.html">
+	<File path="Classes/SSEverNoteLazyMap.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/OHASMarkupParserBase</TokenIdentifier>
-			<Abstract type="html">@class OHASTagParserBase
-This is an Abstract class to be used for Tag parsers subclasses</Abstract>
-			<DeclaredIn>OHASMarkupParserBase.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteLazyMap</TokenIdentifier>
+			<Abstract type="html">	@brief	Lazy Map</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>
 			
 			<NodeRef refid="158"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OHASMarkupParserBase/processMarkupInAttributedString:</TokenIdentifier>
-			<Abstract type="html">Call this on concrete subclasses to process tags in an NSMutableAttributedString
-and apply them (by changing the corresponding attributes)</Abstract>
-			<DeclaredIn>OHASMarkupParserBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/setKeysOnly:</TokenIdentifier>
+			<Abstract type="html">	@brief	The set of keys for the map. This field is ignored by the server when set.</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
 			
-			<Declaration>+ (void)processMarkupInAttributedString:(NSMutableAttributedString *)mutAttrString</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSSet *keysOnly</Declaration>
 			
 			
-			<Anchor>//api/name/processMarkupInAttributedString:</Anchor>
+			<Anchor>//api/name/keysOnly</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OHASMarkupParserBase/attributedStringByProcessingMarkupInAttributedString:</TokenIdentifier>
-			<Abstract type="html">Call this on concrete subclasses to get a parsed NSAttributedString with its attributes
-changed according to the tags in the original attributed string.</Abstract>
-			<DeclaredIn>OHASMarkupParserBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteLazyMap/keysOnly</TokenIdentifier>
+			<Abstract type="html">	@brief	The set of keys for the map. This field is ignored by the server when set.</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableAttributedString *)attributedStringByProcessingMarkupInAttributedString:(NSAttributedString *)attrString</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSSet *keysOnly</Declaration>
 			
 			
-			<Anchor>//api/name/attributedStringByProcessingMarkupInAttributedString:</Anchor>
+			<Anchor>//api/name/keysOnly</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/OHASMarkupParserBase/attributedStringByProcessingMarkupInString:</TokenIdentifier>
-			<Abstract type="html">Call this on concrete subclasses to get a parsed NSAttributedString with its attributes
-set according to the tags in the original string.</Abstract>
-			<DeclaredIn>OHASMarkupParserBase.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/setFullMap:</TokenIdentifier>
+			<Abstract type="html">	@brief	The complete map, including all keys and values.</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableAttributedString *)attributedStringByProcessingMarkupInString:(NSString *)string</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *fullMap</Declaration>
 			
 			
-			<Anchor>//api/name/attributedStringByProcessingMarkupInString:</Anchor>
+			<Anchor>//api/name/fullMap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteLazyMap/fullMap</TokenIdentifier>
+			<Abstract type="html">	@brief	The complete map, including all keys and values.</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *fullMap</Declaration>
+			
+			
+			<Anchor>//api/name/fullMap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteLazyMap/lazyMapWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建LazyMap对象</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteLazyMap *)lazyMapWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">LazyMap对象</Abstract></ReturnValue>
+			<Anchor>//api/name/lazyMapWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/putData:</TokenIdentifier>
+			<Abstract type="html">	@brief	放入数据</Abstract>
+			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			
+			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>writer</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putData:</Anchor>
 		</Token>
 		
 	</File>

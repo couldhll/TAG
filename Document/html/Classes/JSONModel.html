@@ -46,7 +46,13 @@
 	
 	<option value="//api/name/arrayOfModelsFromDictionaries:">&nbsp;&nbsp;&nbsp;&nbsp;+ arrayOfModelsFromDictionaries:</option>
 	
+	<option value="//api/name/getModelFromURLWithString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getModelFromURLWithString:completion:</option>
+	
 	<option value="//api/name/keyMapper">&nbsp;&nbsp;&nbsp;&nbsp;+ keyMapper</option>
+	
+	<option value="//api/name/postModel:toURLWithString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postModel:toURLWithString:completion:</option>
+	
+	<option value="//api/name/propertyIsIgnored:">&nbsp;&nbsp;&nbsp;&nbsp;+ propertyIsIgnored:</option>
 	
 	<option value="//api/name/propertyIsOptional:">&nbsp;&nbsp;&nbsp;&nbsp;+ propertyIsOptional:</option>
 	
@@ -121,7 +127,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayOfModelsFromDictionaries:">arrayOfModelsFromDictionaries:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getModelFromURLWithString:completion:">getModelFromURLWithString:completion:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyMapper">keyMapper</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postModel:toURLWithString:completion:">postModel:toURLWithString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyIsIgnored:">propertyIsIgnored:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyIsOptional:">propertyIsOptional:</a></span></li>
 	
@@ -249,7 +261,7 @@ Use #import &ldquo;JSONModel+networking.h&rdquo; to import networking capabiliti
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/toDictionary">&ndash;&nbsp;toDictionary</a></code>
-		<span class="tooltip"><p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictioanry of
+		<span class="tooltip"><p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictionary of
 JSON compliant objects.</p></span>
 	</span>
 	
@@ -370,7 +382,16 @@ NB: Custom key mappers take precendence over the global key mapper.</p></span>
 		<code><a href="#//api/name/propertyIsOptional:">+&nbsp;propertyIsOptional:</a></code>
 		<span class="tooltip"><p>Indicates whether the property with the given name is <a href="../Protocols/Optional.html">Optional</a>.
 To have a model with all of its properties being <a href="../Protocols/Optional.html">Optional</a> just return YES.
-This method returns by default NO, since the default behaviour is to have all propertoes required.</p></span>
+This method returns by default NO, since the default behaviour is to have all properties required.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyIsIgnored:">+&nbsp;propertyIsIgnored:</a></code>
+		<span class="tooltip"><p>Indicates whether the property with the given name is Ignored.
+To have a model with all of its properties being Ignored just return YES.
+This method returns by default NO, since the default behaviour is to have all properties required.</p></span>
 	</span>
 	
 	
@@ -386,6 +407,24 @@ This method returns by default NO, since the default behaviour is to have all pr
 	<span class="tooltip">
 		<code><a href="#//api/name/initFromURLWithString:completion:">&ndash;&nbsp;initFromURLWithString:completion:</a></code>
 		<span class="tooltip"><p>Asynchroniously create a model over the network. Create a new model instance and initialize it with the JSON fetched from the given URL</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getModelFromURLWithString:completion:">+&nbsp;getModelFromURLWithString:completion:</a></code>
+		<span class="tooltip"><p>Asynchronously gets the contents of a URL and constructs a JSONModel object from the response.
+The constructed JSONModel object passed as the first parameter to the completion block will be of the same
+class as the receiver. So call this method on yourJSONModel sub-class rather than directly on JSONModel.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postModel:toURLWithString:completion:">+&nbsp;postModel:toURLWithString:completion:</a></code>
+		<span class="tooltip"><p>Asynchronously posts a JSONModel object (as JSON) to a URL and constructs a JSONModel object from the response.
+The constructed JSONModel object passed as the first parameter to the completion block will be of the same
+class as the receiver. So call this method on yourJSONModel sub-class rather than directly on JSONModel.</p></span>
 	</span>
 	
 	
@@ -555,6 +594,64 @@ or a property type in your model is not supported by <a href="../Classes/JSONVal
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/getModelFromURLWithString:completion:" title="getModelFromURLWithString:completion:"></a>
+	<h3 class="subsubtitle method-title">getModelFromURLWithString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously gets the contents of a URL and constructs a JSONModel object from the response.
+The constructed JSONModel object passed as the first parameter to the completion block will be of the same
+class as the receiver. So call this method on yourJSONModel sub-class rather than directly on JSONModel.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getModelFromURLWithString:(NSString *)<em>urlString</em> completion:(JSONModelBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>The absolute URL of the JSON resource, as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>The block to be called upon completion.</p>
+
+<pre><code>                        JSONModelBlock type is defined as: void (^JSONModelBlock)(JSONModel* model, JSONModelError* err);
+                        The first parameter is the initialized model (of the same JSONModel sub-class as the receiver) or nil if there was an error;
+                        The second parameter is the initialization error, if any.
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel+networking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/keyMapper" title="keyMapper"></a>
 	<h3 class="subsubtitle method-title">keyMapper</h3>
 	
@@ -592,6 +689,122 @@ Lookup <a href="../Classes/JSONKeyMapper.html">JSONKeyMapper</a> docs for more d
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/postModel:toURLWithString:completion:" title="postModel:toURLWithString:completion:"></a>
+	<h3 class="subsubtitle method-title">postModel:toURLWithString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asynchronously posts a JSONModel object (as JSON) to a URL and constructs a JSONModel object from the response.
+The constructed JSONModel object passed as the first parameter to the completion block will be of the same
+class as the receiver. So call this method on yourJSONModel sub-class rather than directly on JSONModel.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postModel:(JSONModel *)<em>post</em> toURLWithString:(NSString *)<em>urlString</em> completion:(JSONModelBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>post</em></dt>
+			<dd><p>A JSONModel object that will be converted to JSON and sent as the POST data to the HTTP request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>The absolute URL of the JSON resource, as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>The block to be called upon completion.</p>
+
+<pre><code>                        JSONModelBlock type is defined as: void (^JSONModelBlock)(JSONModel* model, JSONModelError* err);
+                        The first parameter is the initialized model (of the same JSONModel sub-class as the receiver) or nil if there was an error;
+                        The second parameter is the initialization error, if any.
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel+networking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyIsIgnored:" title="propertyIsIgnored:"></a>
+	<h3 class="subsubtitle method-title">propertyIsIgnored:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the property with the given name is Ignored.
+To have a model with all of its properties being Ignored just return YES.
+This method returns by default NO, since the default behaviour is to have all properties required.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)propertyIsIgnored:(NSString *)<em>propertyName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>propertyName</em></dt>
+			<dd><p>the name of the property</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a BOOL result indicating whether the property is ignored</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/propertyIsOptional:" title="propertyIsOptional:"></a>
 	<h3 class="subsubtitle method-title">propertyIsOptional:</h3>
 	
@@ -600,7 +813,7 @@ Lookup <a href="../Classes/JSONKeyMapper.html">JSONKeyMapper</a> docs for more d
 	<div class="method-subsection brief-description">
 		<p>Indicates whether the property with the given name is <a href="../Protocols/Optional.html">Optional</a>.
 To have a model with all of its properties being <a href="../Protocols/Optional.html">Optional</a> just return YES.
-This method returns by default NO, since the default behaviour is to have all propertoes required.</p>
+This method returns by default NO, since the default behaviour is to have all properties required.</p>
 	</div>		
 	
     
@@ -1091,7 +1304,7 @@ if an index property is defined.</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictioanry of
+		<p>All <a href="../Classes/JSONModel.html">JSONModel</a> classes should be able to export themselves as a dictionary of
 JSON compliant objects.</p>
 	</div>		
 	
@@ -1266,7 +1479,7 @@ are encountered return NO and set the error parameter to an NSError object. If t
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-12-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

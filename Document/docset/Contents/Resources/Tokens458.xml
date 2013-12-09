@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiBo_add_pic_t_POST.html">
+	<File path="Categories/NSString+RegexKitLiteAdditions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiBo_add_pic_t_POST</TokenIdentifier>
-			<Abstract type="html">\brief 上传一张图片，并发布一条消息到腾讯微博平台上。</Abstract>
-			<DeclaredIn>WeiBoAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(RegexKitLiteAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMRegexKitLite.h</DeclaredIn>
 			
 			<NodeRef refid="458"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_pic_t_POST/setParam_pic:</TokenIdentifier>
-			<Abstract type="html">要上传的图片的文件名以及图片的内容</Abstract>
-			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RegexKitLiteAdditions)/RKL_METHOD_PREPEND</TokenIdentifier>
+			<Abstract type="html">/ &gt;= 3.0</Abstract>
+			<DeclaredIn>RegexKitLite.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredImage param_pic</Declaration>
+			<Declaration>- (NSArray *)RKL_METHOD_PREPEND</Declaration>
 			
 			
-			<Anchor>//api/name/param_pic</Anchor>
+			<Anchor>//api/name/RKL_METHOD_PREPEND</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_pic_t_POST/param_pic</TokenIdentifier>
-			<Abstract type="html">要上传的图片的文件名以及图片的内容</Abstract>
-			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(RegexKitLiteAdditions)/AG_RKL_METHOD_PREPEND</TokenIdentifier>
+			<Abstract type="html">/ &gt;= 3.0</Abstract>
+			<DeclaredIn>CMRegexKitLite.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredImage param_pic</Declaration>
+			<Declaration>- (NSArray *)AG_RKL_METHOD_PREPEND</Declaration>
 			
 			
-			<Anchor>//api/name/param_pic</Anchor>
+			<Anchor>//api/name/AG_RKL_METHOD_PREPEND</Anchor>
 		</Token>
 		
 	</File>

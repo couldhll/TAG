@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UIADimmingView.html">
+	<File path="Categories/NSDictionary+GTMNSDictionaryURLArgumentsAdditions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UIADimmingView</TokenIdentifier>
-			<Abstract type="html">@brief A general dimming view to implement dimming like UISearchDisplayController is dimmed.</Abstract>
-			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(GTMNSDictionaryURLArgumentsAdditions)</TokenIdentifier>
+			<Abstract type="html">Utility for building a URL or POST argument string.</Abstract>
+			<DeclaredIn>GTMNSDictionary+URLArguments.h</DeclaredIn>
 			
 			<NodeRef refid="424"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIADimmingView/setDelegate:</TokenIdentifier>
-			<Abstract type="html">@brief The view&apos;s delegate.</Abstract>
-			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(GTMNSDictionaryURLArgumentsAdditions)/gtm_dictionaryWithHttpArgumentsString:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of the decoded key-value pairs in a http arguments
+string of the form key1=value1&amp;amp;key2=value2&amp;amp;...&amp;amp;keyN=valueN.
+Keys and values will be unescaped automatically.
+Only the first value for a repeated key is returned.</Abstract>
+			<DeclaredIn>GTMNSDictionary+URLArguments.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIADimmingViewDelegate&gt; delegate</Declaration>
+			<Declaration>+ (NSDictionary *)gtm_dictionaryWithHttpArgumentsString:(NSString *)argString</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/gtm_dictionaryWithHttpArgumentsString:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UIADimmingView/delegate</TokenIdentifier>
-			<Abstract type="html">@brief The view&apos;s delegate.</Abstract>
-			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(GTMNSDictionaryURLArgumentsAdditions)/gtm_httpArgumentsString</TokenIdentifier>
+			<Abstract type="html">Gets a string representation of the dictionary in the form
+key1=value1&amp;amp;key2=value2&amp;amp;...&amp;amp;keyN=valueN, suitable for use as either
+URL arguments (after a &apos;?&apos;) or POST body. Keys and values will be escaped
+automatically, so should be unescaped in the dictionary.</Abstract>
+			<DeclaredIn>GTMNSDictionary+URLArguments.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIADimmingViewDelegate&gt; delegate</Declaration>
+			<Declaration>- (NSString *)gtm_httpArgumentsString</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/gtm_httpArgumentsString</Anchor>
 		</Token>
 		
 	</File>

@@ -1,30 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PrintConnection.html">
+	<File path="Classes/SSGooglePlusCoverInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PrintConnection</TokenIdentifier>
-			<Abstract type="html">	@brief	打印链接器</Abstract>
-			<DeclaredIn>PrintConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCoverInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	封面信息</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>
 			
 			<NodeRef refid="192"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PrintConnection/registerApp:</TokenIdentifier>
-			<Abstract type="html">	@brief	注册应用</Abstract>
-			<DeclaredIn>PrintConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverInfo/setTopImageOffset:</TokenIdentifier>
+			<Abstract type="html">	@brief	The difference between the top position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSPrintApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger topImageOffset</Declaration>
+			
+			
+			<Anchor>//api/name/topImageOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverInfo/topImageOffset</TokenIdentifier>
+			<Abstract type="html">	@brief	The difference between the top position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger topImageOffset</Declaration>
+			
+			
+			<Anchor>//api/name/topImageOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverInfo/setLeftImageOffset:</TokenIdentifier>
+			<Abstract type="html">	@brief	The difference between the left position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger leftImageOffset</Declaration>
+			
+			
+			<Anchor>//api/name/leftImageOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverInfo/leftImageOffset</TokenIdentifier>
+			<Abstract type="html">	@brief	The difference between the left position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger leftImageOffset</Declaration>
+			
+			
+			<Anchor>//api/name/leftImageOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusCoverInfo/coverInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建封面信息</Abstract>
+			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusCoverInfo *)coverInfoWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>account</Name>
-					<Abstract type="html">帐号</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
-			<Anchor>//api/name/registerApp:</Anchor>
+			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
+			<Anchor>//api/name/coverInfoWithResponse:</Anchor>
 		</Token>
 		
 	</File>

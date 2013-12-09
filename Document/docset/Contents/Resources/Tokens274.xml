@@ -1,134 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusCredential.html">
+	<File path="Classes/SSTencentWeiboMusic.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboMusic</TokenIdentifier>
+			<Abstract type="html">	@brief	音乐信息</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>
 			
 			<NodeRef refid="274"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setUid:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/uid</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/uid</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/uid</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setAuthor:</TokenIdentifier>
+			<Abstract type="html">	@brief	演唱者</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/author</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/author</TokenIdentifier>
+			<Abstract type="html">	@brief	演唱者</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/author</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	音频地址</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/url</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/url</TokenIdentifier>
+			<Abstract type="html">	@brief	音频地址</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/url</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboMusic/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	音频名字，歌名</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboMusic/title</TokenIdentifier>
+			<Abstract type="html">	@brief	音频名字，歌名</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboMusic/musicWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建音乐信息</Abstract>
+			<DeclaredIn>SSTencentWeiboMusic.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>+ (SSTencentWeiboMusic *)musicWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSGooglePlusCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<ReturnValue><Abstract type="html">音乐信息</Abstract></ReturnValue>
+			<Anchor>//api/name/musicWithResponse:</Anchor>
 		</Token>
 		
 	</File>

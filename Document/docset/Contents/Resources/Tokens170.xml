@@ -1,152 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFLogInViewController.html">
+	<File path="Classes/SSFacebookCurrency.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFLogInViewController</TokenIdentifier>
-			<Abstract type="html">The class that presents and manages a standard authentication interface for logging in a PFUser.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCurrency</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>
 			
 			<NodeRef refid="170"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFields:</TokenIdentifier>
-			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
-    enum {
-        PFLogInFieldsNone = 0,
-        PFLogInFieldsUsernameAndPassword = 1 &lt;&lt; 0,
-        PFLogInFieldsPasswordForgotten = 1 &lt;&lt; 1,
-        PFLogInFieldsLogInButton = 1 &lt;&lt; 2,
-        PFLogInFieldsFacebook = 1 &lt;&lt; 3,
-        PFLogInFieldsTwitter = 1 &lt;&lt; 4,
-        PFLogInFieldsSignUpButton = 1 &lt;&lt; 5,
-        PFLogInFieldsDismissButton = 1 &lt;&lt; 6,
-        PFLogInFieldsDefault = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton | PFLogInFieldsPasswordForgotten | PFLogInFieldsDismissButton
-    };</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) PFLogInFields fields</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/fields</TokenIdentifier>
-			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.
-    enum {
-        PFLogInFieldsNone = 0,
-        PFLogInFieldsUsernameAndPassword = 1 &lt;&lt; 0,
-        PFLogInFieldsPasswordForgotten = 1 &lt;&lt; 1,
-        PFLogInFieldsLogInButton = 1 &lt;&lt; 2,
-        PFLogInFieldsFacebook = 1 &lt;&lt; 3,
-        PFLogInFieldsTwitter = 1 &lt;&lt; 4,
-        PFLogInFieldsSignUpButton = 1 &lt;&lt; 5,
-        PFLogInFieldsDismissButton = 1 &lt;&lt; 6,
-        PFLogInFieldsDefault = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsSignUpButton | PFLogInFieldsPasswordForgotten | PFLogInFieldsDismissButton
-    };</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) PFLogInFields fields</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/fields</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setLogInView:</TokenIdentifier>
-			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息Id</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, retain) PFLogInView *logInView</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/logInView</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/logInView</TokenIdentifier>
-			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	货币信息Id</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, retain) PFLogInView *logInView</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/logInView</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setDelegate:</TokenIdentifier>
-			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setUserCurrency:</TokenIdentifier>
+			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/userCurrency</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/delegate</TokenIdentifier>
-			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/userCurrency</TokenIdentifier>
+			<Abstract type="html">	@brief	首选货币ISO-4217-3编码 (默认USD)</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *userCurrency</Declaration>
 			
 			
-			<Anchor>//api/name/delegate</Anchor>
+			<Anchor>//api/name/userCurrency</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFacebookPermissions:</TokenIdentifier>
-			<Abstract type="html">The facebook permissions that Facebook log in requests for.
-If unspecified, the default is basic facebook permissions.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchange:</TokenIdentifier>
+			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSArray *facebookPermissions</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
 			
 			
-			<Anchor>//api/name/facebookPermissions</Anchor>
+			<Anchor>//api/name/currencyExchange</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/facebookPermissions</TokenIdentifier>
-			<Abstract type="html">The facebook permissions that Facebook log in requests for.
-If unspecified, the default is basic facebook permissions.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchange</TokenIdentifier>
+			<Abstract type="html">	@brief	对应首选货币的一个单位可交换的Facebook Credits数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSArray *facebookPermissions</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchange</Declaration>
 			
 			
-			<Anchor>//api/name/facebookPermissions</Anchor>
+			<Anchor>//api/name/currencyExchange</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setSignUpController:</TokenIdentifier>
-			<Abstract type="html">The sign up controller if sign up is enabled.
-Use this to configure the sign up view, and the transition animation to the sign up view.
-The default is a sign up view with a username, a password, a dismiss button and a sign up button.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyExchangeInverse:</TokenIdentifier>
+			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) PFSignUpViewController *signUpController</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
 			
 			
-			<Anchor>//api/name/signUpController</Anchor>
+			<Anchor>//api/name/currencyExchangeInverse</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/signUpController</TokenIdentifier>
-			<Abstract type="html">The sign up controller if sign up is enabled.
-Use this to configure the sign up view, and the transition animation to the sign up view.
-The default is a sign up view with a username, a password, a dismiss button and a sign up button.</Abstract>
-			<DeclaredIn>PFLogInViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyExchangeInverse</TokenIdentifier>
+			<Abstract type="html">	@brief	对应Facebook Credits的一个单位可交换的首选货币数量</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) PFSignUpViewController *signUpController</Declaration>
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyExchangeInverse</Declaration>
 			
 			
-			<Anchor>//api/name/signUpController</Anchor>
+			<Anchor>//api/name/currencyExchangeInverse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCurrency/setCurrencyOffset:</TokenIdentifier>
+			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			
+			
+			<Anchor>//api/name/currencyOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCurrency/currencyOffset</TokenIdentifier>
+			<Abstract type="html">	@brief	货币价格偏移值，如$1.20在API中返回120。此值转换回真实货币数量可由 API返回货币价格 ／ 偏移值 ＝ 真实货币价格</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat currencyOffset</Declaration>
+			
+			
+			<Anchor>//api/name/currencyOffset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCurrency/currencyWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建货币信息</Abstract>
+			<DeclaredIn>SSFacebookCurrency.h</DeclaredIn>			
+			
+			<Declaration>+ (SSFacebookCurrency *)currencyWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">货币信息</Abstract></ReturnValue>
+			<Anchor>//api/name/currencyWithResponse:</Anchor>
 		</Token>
 		
 	</File>

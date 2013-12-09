@@ -1,74 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSQZoneShareInfo.html">
+	<File path="Classes/TCAddOneBlogDic.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneShareInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	分享信息</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TCAddOneBlogDic</TokenIdentifier>
+			<Abstract type="html">\brief 发表日志的参数字典定义</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
 			
 			<NodeRef refid="317"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneShareInfo/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TCAddOneBlogDic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>+ (TCAddOneBlogDic *)dictionary</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/dictionary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneShareInfo/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddOneBlogDic/setParamTitle:</TokenIdentifier>
+			<Abstract type="html">日志标题（纯文本，最大长度128个字节，utf-8编码）。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/paramTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneShareInfo/setShareId:</TokenIdentifier>
-			<Abstract type="html">	@brief	分享ID</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddOneBlogDic/paramTitle</TokenIdentifier>
+			<Abstract type="html">日志标题（纯文本，最大长度128个字节，utf-8编码）。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long shareId</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
 			
 			
-			<Anchor>//api/name/shareId</Anchor>
+			<Anchor>//api/name/paramTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneShareInfo/shareId</TokenIdentifier>
-			<Abstract type="html">	@brief	分享ID</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddOneBlogDic/setParamContent:</TokenIdentifier>
+			<Abstract type="html">content 文章内容（html数据，最大长度100*1024个字节，utf-8编码）</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long shareId</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramContent</Declaration>
 			
 			
-			<Anchor>//api/name/shareId</Anchor>
+			<Anchor>//api/name/paramContent</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneShareInfo/shareInfoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建分享信息</Abstract>
-			<DeclaredIn>SSQZoneShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddOneBlogDic/paramContent</TokenIdentifier>
+			<Abstract type="html">content 文章内容（html数据，最大长度100*1024个字节，utf-8编码）</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>+ (SSQZoneShareInfo *)shareInfoWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">分享信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/shareInfoWithResponse:</Anchor>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramContent</Declaration>
+			
+			
+			<Anchor>//api/name/paramContent</Anchor>
 		</Token>
 		
 	</File>

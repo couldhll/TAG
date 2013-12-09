@@ -1,74 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMLoadingView.html">
+	<File path="Classes/CMLoader.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMLoadingView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMLoader</TokenIdentifier>
+			<Abstract type="html">	@brief	加载器</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>
 			
 			<NodeRef refid="47"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoadingView/setText:</TokenIdentifier>
-			<Abstract type="html">	@brief	提示信息</Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setState:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载状态</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, readonly) CMLoaderState state</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/state</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMLoadingView/text</TokenIdentifier>
-			<Abstract type="html">	@brief	提示信息</Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/state</TokenIdentifier>
+			<Abstract type="html">	@brief	加载状态</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, readonly) CMLoaderState state</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/state</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoadingView/show</TokenIdentifier>
-			<Abstract type="html">	@brief	显示</Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setSourceType:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源类型</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Declaration>- (void)show</Declaration>
+			<Declaration>@property (nonatomic, readonly) CMLoaderSourceType sourceType</Declaration>
 			
 			
-			<Anchor>//api/name/show</Anchor>
+			<Anchor>//api/name/sourceType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoadingView/showInView:</TokenIdentifier>
-			<Abstract type="html">	@brief	显示到指定视图中</Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/sourceType</TokenIdentifier>
+			<Abstract type="html">	@brief	来源类型</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Declaration>- (void)showInView:(UIView *)view</Declaration>
+			<Declaration>@property (nonatomic, readonly) CMLoaderSourceType sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/sourceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setData:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载数据</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/data</TokenIdentifier>
+			<Abstract type="html">	@brief	加载数据</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			
+			
+			<Anchor>//api/name/data</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载器标识，唯一标识一个资源</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/key</TokenIdentifier>
+			<Abstract type="html">	@brief	加载器标识，唯一标识一个资源</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/initWithKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化加载器</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithKey:(NSString *)key</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>view</Name>
-					<Abstract type="html">视图</Abstract>
+					<Name>key</Name>
+					<Abstract type="html">加载标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">加载器实例</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载网络图片对象</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadByUrl:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/showInView:</Anchor>
+			<Anchor>//api/name/loadByUrl:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoadingView/hide</TokenIdentifier>
-			<Abstract type="html">	@brief	隐藏</Abstract>
-			<DeclaredIn>CMLoadingView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载本地图片对象</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Declaration>- (void)hide</Declaration>
+			<Declaration>- (void)loadByPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">路径</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/loadByPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByCache:</TokenIdentifier>
+			<Abstract type="html">	@brief	加载缓存图片对象</Abstract>
+			<DeclaredIn>CMLoader.h</DeclaredIn>			
 			
-			<Anchor>//api/name/hide</Anchor>
+			<Declaration>- (void)loadByCache:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">数据对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadByCache:</Anchor>
 		</Token>
 		
 	</File>

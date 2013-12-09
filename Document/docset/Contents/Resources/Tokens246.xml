@@ -1,96 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookAgeRange.html">
+	<File path="Classes/SSRenRenLike.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookAgeRange</TokenIdentifier>
-			<Abstract type="html">	@brief	年龄范围信息</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenLike</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>
 			
 			<NodeRef refid="246"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenLike/setCatagory:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的类型
+SPORT       运动
+MOVIE       电影
+CARTOON     动漫
+GAME        游戏
+MUSIC       音乐
+BOOK        书籍
+INTEREST	爱好</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *catagory</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/catagory</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenLike/catagory</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的类型
+SPORT       运动
+MOVIE       电影
+CARTOON     动漫
+GAME        游戏
+MUSIC       音乐
+BOOK        书籍
+INTEREST	爱好</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *catagory</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/catagory</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setMin:</TokenIdentifier>
-			<Abstract type="html">	@brief	范围最小值</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenLike/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的东西</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/min</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/min</TokenIdentifier>
-			<Abstract type="html">	@brief	范围最小值</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenLike/name</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的东西</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/min</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookAgeRange/setMax:</TokenIdentifier>
-			<Abstract type="html">	@brief	范围最大值</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenLike/likeWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建喜欢信息</Abstract>
+			<DeclaredIn>SSRenRenLike.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
-			
-			
-			<Anchor>//api/name/max</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookAgeRange/max</TokenIdentifier>
-			<Abstract type="html">	@brief	范围最大值</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
-			
-			
-			<Anchor>//api/name/max</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookAgeRange/ageRangeWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建年龄范围信息</Abstract>
-			<DeclaredIn>SSFacebookAgeRange.h</DeclaredIn>			
-			
-			<Declaration>+ (SSFacebookAgeRange *)ageRangeWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (SSRenRenLike *)likeWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">年龄范围信息</Abstract></ReturnValue>
-			<Anchor>//api/name/ageRangeWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">喜欢信息</Abstract></ReturnValue>
+			<Anchor>//api/name/likeWithResponse:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,131 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+Serialization.html">
+	<File path="Protocols/CMGridViewDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(Serialization)</TokenIdentifier>
-			<Abstract type="html">@brief NSData serialization/deserialization extension collection.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/CMGridViewDelegate</TokenIdentifier>
+			<Abstract type="html">	表格视图委托</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>
 			
 			<NodeRef refid="502"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/propertyListObjectUsingFormat:error:</TokenIdentifier>
-			<Abstract type="html">@brief Deserialize property list data to object.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:itemRenderer:itemData:index:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格项渲染</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
 			
-			<Declaration>- (id)propertyListObjectUsingFormat:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			<Declaration>- (void)gridView:(CMGridView *)gridView itemRenderer:(UIView&lt;ICMGridItemView&gt; *)itemRenderer itemData:(id)itemData index:(NSInteger)index</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>format</Name>
-					<Abstract type="html">A property list format. Possible values for format are described in &apos;NSPropertyListFormat&apos;.</Abstract>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
 				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">If the method does not complete successfully, upon return contains an NSError object that describes the problem.</Abstract>
+					<Name>itemRenderer</Name>
+					<Abstract type="html">表格项渲染器</Abstract>
+				</Parameter><Parameter>
+					<Name>itemData</Name>
+					<Abstract type="html">表格项数据</Abstract>
+				</Parameter><Parameter>
+					<Name>index</Name>
+					<Abstract type="html">位置索引</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Property list object. Usually NSArray or NSDictionary.</Abstract></ReturnValue>
-			<Anchor>//api/name/propertyListObjectUsingFormat:error:</Anchor>
+			
+			<Anchor>//api/name/gridView:itemRenderer:itemData:index:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/hexadecimalString</TokenIdentifier>
-			<Abstract type="html">@brief Serialized string in hexadecimal format.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图滚动</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)hexadecimalString</Declaration>
-			
-			<ReturnValue><Abstract type="html">Hexadecimal string.</Abstract></ReturnValue>
-			<Anchor>//api/name/hexadecimalString</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/initWithHexadecimalString:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with deserialized data from hexadecimal string.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithHexadecimalString:(NSString *)hexadecimal</Declaration>
+			<Declaration>- (void)gridViewDidScroll:(CMGridView *)gridView</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>hexadecimal</Name>
-					<Abstract type="html">Hexadecimal string.</Abstract>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/initWithHexadecimalString:</Anchor>
+			<Anchor>//api/name/gridViewDidScroll:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/dataWithHexadecimalString:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns deserialized data from hexadecimal string.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图停止拖动</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/initWithHexadecimalString:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (id)dataWithHexadecimalString:(NSString *)hexadecimal</Declaration>
-			
-			
-			<Anchor>//api/name/dataWithHexadecimalString:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/base64String</TokenIdentifier>
-			<Abstract type="html">@brief Serialized string in base64 format.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/initWithBase64String:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/dataWithBase64String:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (NSString *)base64String</Declaration>
-			
-			<ReturnValue><Abstract type="html">base64 string.</Abstract></ReturnValue>
-			<Anchor>//api/name/base64String</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/initWithBase64String:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with deserialized data from base64 string.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/base64String</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (id)initWithBase64String:(NSString *)base64</Declaration>
+			<Declaration>- (void)gridViewDidEndDragging:(CMGridView *)gridView willDecelerate:(BOOL)decelerate</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>base64</Name>
-					<Abstract type="html">base64 string.</Abstract>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速运动标识，YES表示进行减速运动，否则不进行减速运动</Abstract>
+				</Parameter><Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">表格视图</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Initialized data object.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithBase64String:</Anchor>
+			
+			<Anchor>//api/name/gridViewDidEndDragging:willDecelerate:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/dataWithBase64String:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns deserialized data from base64 string.</Abstract>
-			<DeclaredIn>NSData.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:footerWillDisplay:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图页脚将要显示</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/initWithBase64String:</TokenIdentifier>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSData(Serialization)/base64String</TokenIdentifier>
+			<Declaration>- (void)gridView:(CMGridView *)gridView footerWillDisplay:(UITableViewCell *)cell</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>cell</Name>
+					<Abstract type="html">页脚项</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridView:footerWillDisplay:</Anchor>
+		</Token>
 		
-	</RelatedTokens>
-	
-			<Declaration>+ (id)dataWithBase64String:(NSString *)base64</Declaration>
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CMGridViewDelegate/gridView:footerDidSelected:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格视图页脚被选中</Abstract>
+			<DeclaredIn>CMGridView.h</DeclaredIn>			
 			
-			<ReturnValue><Abstract type="html">Created data object.</Abstract></ReturnValue>
-			<Anchor>//api/name/dataWithBase64String:</Anchor>
+			<Declaration>- (void)gridView:(CMGridView *)gridView footerDidSelected:(UITableViewCell *)cell</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gridView</Name>
+					<Abstract type="html">表格视图</Abstract>
+				</Parameter><Parameter>
+					<Name>cell</Name>
+					<Abstract type="html">页脚项</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/gridView:footerDidSelected:</Anchor>
 		</Token>
 		
 	</File>

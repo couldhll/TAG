@@ -1,331 +1,657 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SDImageCache.html">
+	<File path="Classes/SSKaiXinUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SDImageCache</TokenIdentifier>
-			<Abstract type="html">SDImageCache maintains a memory cache and an optional disk cache. Disk cache write operations are performed
-asynchronous so it doesn’t add unnecessary latency to the UI.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>
 			
 			<NodeRef refid="213"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMaxCacheAge:</TokenIdentifier>
-			<Abstract type="html">The maximum length of time to keep an image in the cache, in seconds</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) NSInteger maxCacheAge</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/maxCacheAge</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/maxCacheAge</TokenIdentifier>
-			<Abstract type="html">The maximum length of time to keep an image in the cache, in seconds</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) NSInteger maxCacheAge</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/maxCacheAge</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/setMaxCacheSize:</TokenIdentifier>
-			<Abstract type="html">The maximum size of the cache, in bytes.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) unsigned long long maxCacheSize</Declaration>
+			<Declaration>@property (nonatomic, retain) SSKaiXinCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/maxCacheSize</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SDImageCache/maxCacheSize</TokenIdentifier>
-			<Abstract type="html">The maximum size of the cache, in bytes.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) unsigned long long maxCacheSize</Declaration>
+			<Declaration>@property (nonatomic, retain) SSKaiXinCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/maxCacheSize</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SDImageCache/sharedImageCache</TokenIdentifier>
-			<Abstract type="html">Returns global shared cache instance</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>+ (SDImageCache *)sharedImageCache</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
-			<ReturnValue><Abstract type="html">SDImageCache global instance</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedImageCache</Anchor>
+			
+			<Anchor>//api/name/uid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/initWithNamespace:</TokenIdentifier>
-			<Abstract type="html">Init a new cache store with a specific namespace</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithNamespace:(NSString *)ns</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setGender:</TokenIdentifier>
+			<Abstract type="html">	@brief	性别 0:男 1:女</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/gender</TokenIdentifier>
+			<Abstract type="html">	@brief	性别 0:男 1:女</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setHometown:</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hometown</Declaration>
+			
+			
+			<Anchor>//api/name/hometown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/hometown</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *hometown</Declaration>
+			
+			
+			<Anchor>//api/name/hometown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCity:</TokenIdentifier>
+			<Abstract type="html">	@brief	现居住地</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/city</TokenIdentifier>
+			<Abstract type="html">	@brief	现居住地</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *city</Declaration>
+			
+			
+			<Anchor>//api/name/city</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	状态 0:其它 1:学生 2:已工作</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/status</TokenIdentifier>
+			<Abstract type="html">	@brief	状态 0:其它 1:学生 2:已工作</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setLogo120:</TokenIdentifier>
+			<Abstract type="html">	@brief	头像120 x 120</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo120</Declaration>
+			
+			
+			<Anchor>//api/name/logo120</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/logo120</TokenIdentifier>
+			<Abstract type="html">	@brief	头像120 x 120</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo120</Declaration>
+			
+			
+			<Anchor>//api/name/logo120</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setLogo50:</TokenIdentifier>
+			<Abstract type="html">	@brief	头像50 x 50</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo50</Declaration>
+			
+			
+			<Anchor>//api/name/logo50</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/logo50</TokenIdentifier>
+			<Abstract type="html">	@brief	头像50 x 50</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *logo50</Declaration>
+			
+			
+			<Anchor>//api/name/logo50</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBirthday:</TokenIdentifier>
+			<Abstract type="html">	@brief	生日</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/birthday</TokenIdentifier>
+			<Abstract type="html">	@brief	生日</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBodyform:</TokenIdentifier>
+			<Abstract type="html">	@brief	体型 0:保密 1:苗条 2:匀称 3:健壮 4:高大 5:小巧 6:丰满 7:高挑 8:较胖 9:较瘦 10:运动型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bodyform</Declaration>
+			
+			
+			<Anchor>//api/name/bodyform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/bodyform</TokenIdentifier>
+			<Abstract type="html">	@brief	体型 0:保密 1:苗条 2:匀称 3:健壮 4:高大 5:小巧 6:丰满 7:高挑 8:较胖 9:较瘦 10:运动型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bodyform</Declaration>
+			
+			
+			<Anchor>//api/name/bodyform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setBlood:</TokenIdentifier>
+			<Abstract type="html">	@brief	血型 0:没有填写 1:O型血 2:A型血 3:B型血 4:AB型血 5:稀有血型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *blood</Declaration>
+			
+			
+			<Anchor>//api/name/blood</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/blood</TokenIdentifier>
+			<Abstract type="html">	@brief	血型 0:没有填写 1:O型血 2:A型血 3:B型血 4:AB型血 5:稀有血型</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *blood</Declaration>
+			
+			
+			<Anchor>//api/name/blood</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setMarriage:</TokenIdentifier>
+			<Abstract type="html">	@brief	婚姻状态 0:没有填写 1:单身 2:恋爱中 3:订婚 4:已婚 5:离异</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *marriage</Declaration>
+			
+			
+			<Anchor>//api/name/marriage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/marriage</TokenIdentifier>
+			<Abstract type="html">	@brief	婚姻状态 0:没有填写 1:单身 2:恋爱中 3:订婚 4:已婚 5:离异</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *marriage</Declaration>
+			
+			
+			<Anchor>//api/name/marriage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setTrainwith:</TokenIdentifier>
+			<Abstract type="html">	@brief	希望结交</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *trainwith</Declaration>
+			
+			
+			<Anchor>//api/name/trainwith</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/trainwith</TokenIdentifier>
+			<Abstract type="html">	@brief	希望结交</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *trainwith</Declaration>
+			
+			
+			<Anchor>//api/name/trainwith</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setInterest:</TokenIdentifier>
+			<Abstract type="html">	@brief	兴趣爱好</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *interest</Declaration>
+			
+			
+			<Anchor>//api/name/interest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/interest</TokenIdentifier>
+			<Abstract type="html">	@brief	兴趣爱好</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *interest</Declaration>
+			
+			
+			<Anchor>//api/name/interest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavbook:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的书籍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favbook</Declaration>
+			
+			
+			<Anchor>//api/name/favbook</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favbook</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的书籍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favbook</Declaration>
+			
+			
+			<Anchor>//api/name/favbook</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavmovie:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电影</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favmovie</Declaration>
+			
+			
+			<Anchor>//api/name/favmovie</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favmovie</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电影</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favmovie</Declaration>
+			
+			
+			<Anchor>//api/name/favmovie</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setFavtv:</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电视剧</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favtv</Declaration>
+			
+			
+			<Anchor>//api/name/favtv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/favtv</TokenIdentifier>
+			<Abstract type="html">	@brief	喜欢的电视剧</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *favtv</Declaration>
+			
+			
+			<Anchor>//api/name/favtv</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIdol:</TokenIdentifier>
+			<Abstract type="html">	@brief	偶像</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idol</Declaration>
+			
+			
+			<Anchor>//api/name/idol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/idol</TokenIdentifier>
+			<Abstract type="html">	@brief	偶像</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *idol</Declaration>
+			
+			
+			<Anchor>//api/name/idol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setMotto:</TokenIdentifier>
+			<Abstract type="html">	@brief	座右铭</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *motto</Declaration>
+			
+			
+			<Anchor>//api/name/motto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/motto</TokenIdentifier>
+			<Abstract type="html">	@brief	座右铭</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *motto</Declaration>
+			
+			
+			<Anchor>//api/name/motto</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setWishlist:</TokenIdentifier>
+			<Abstract type="html">	@brief	愿望列表</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *wishlist</Declaration>
+			
+			
+			<Anchor>//api/name/wishlist</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/wishlist</TokenIdentifier>
+			<Abstract type="html">	@brief	愿望列表</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *wishlist</Declaration>
+			
+			
+			<Anchor>//api/name/wishlist</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIntro:</TokenIdentifier>
+			<Abstract type="html">	@brief	介绍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/intro</TokenIdentifier>
+			<Abstract type="html">	@brief	介绍</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *intro</Declaration>
+			
+			
+			<Anchor>//api/name/intro</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setEducation:</TokenIdentifier>
+			<Abstract type="html">	@brief	教育经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/education</TokenIdentifier>
+			<Abstract type="html">	@brief	教育经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
+			
+			
+			<Anchor>//api/name/education</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setCareer:</TokenIdentifier>
+			<Abstract type="html">	@brief	工作经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *career</Declaration>
+			
+			
+			<Anchor>//api/name/career</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/career</TokenIdentifier>
+			<Abstract type="html">	@brief	工作经历</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *career</Declaration>
+			
+			
+			<Anchor>//api/name/career</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setIsStar:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否公共主页 0:否 1:是</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *isStar</Declaration>
+			
+			
+			<Anchor>//api/name/isStar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/isStar</TokenIdentifier>
+			<Abstract type="html">	@brief	是否公共主页 0:否 1:是</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *isStar</Declaration>
+			
+			
+			<Anchor>//api/name/isStar</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setPinyin:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户的姓名拼音</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pinyin</Declaration>
+			
+			
+			<Anchor>//api/name/pinyin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/pinyin</TokenIdentifier>
+			<Abstract type="html">	@brief	用户的姓名拼音</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pinyin</Declaration>
+			
+			
+			<Anchor>//api/name/pinyin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/setOnline:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户是否在线 0:不在线 1:在线</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinUser/online</TokenIdentifier>
+			<Abstract type="html">	@brief	用户是否在线 0:不在线 1:在线</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSKaiXinUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSKaiXinUser *)userWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>ns</Name>
-					<Abstract type="html">The namespace to use for this cache store</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/initWithNamespace:</Anchor>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/addReadOnlyCachePath:</TokenIdentifier>
-			<Abstract type="html">Add a read-only cache path to search for images pre-cached by SDImageCache
-Useful if you want to bundle pre-loaded images with your app</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSKaiXinUser.h</DeclaredIn>			
 			
-			<Declaration>- (void)addReadOnlyCachePath:(NSString *)path</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">The path to use for this read-only cache path</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
 			
-			<Anchor>//api/name/addReadOnlyCachePath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:forKey:</TokenIdentifier>
-			<Abstract type="html">Store an image into memory and disk cache at the given key.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)storeImage:(UIImage *)image forKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">The image to store</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/storeImage:forKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:forKey:toDisk:</TokenIdentifier>
-			<Abstract type="html">Store an image into memory and optionally disk cache at the given key.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)storeImage:(UIImage *)image forKey:(NSString *)key toDisk:(BOOL)toDisk</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">The image to store</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
-				</Parameter><Parameter>
-					<Name>toDisk</Name>
-					<Abstract type="html">Store the image to disk cache if YES</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/storeImage:forKey:toDisk:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/storeImage:imageData:forKey:toDisk:</TokenIdentifier>
-			<Abstract type="html">Store an image into memory and optionally disk cache at the given key.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)storeImage:(UIImage *)image imageData:(NSData *)data forKey:(NSString *)key toDisk:(BOOL)toDisk</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">The image to store</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">The image data as returned by the server, this representation will be used for disk storage
-instead of converting the given image object into a storable/compressed image format in order
-to save quality and CPU</Abstract>
-				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique image cache key, usually it&apos;s image absolute URL</Abstract>
-				</Parameter><Parameter>
-					<Name>toDisk</Name>
-					<Abstract type="html">Store the image to disk cache if YES</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/storeImage:imageData:forKey:toDisk:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/queryDiskCacheForKey:done:</TokenIdentifier>
-			<Abstract type="html">Query the disk cache asynchronously.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (NSOperation *)queryDiskCacheForKey:(NSString *)key done:(void ( ^ ) ( UIImage *image , SDImageCacheType cacheType ))doneBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique key used to store the wanted image</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/queryDiskCacheForKey:done:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/imageFromMemoryCacheForKey:</TokenIdentifier>
-			<Abstract type="html">Query the memory cache synchronously.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (UIImage *)imageFromMemoryCacheForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique key used to store the wanted image</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/imageFromMemoryCacheForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/imageFromDiskCacheForKey:</TokenIdentifier>
-			<Abstract type="html">Query the disk cache synchronously after checking the memory cache.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (UIImage *)imageFromDiskCacheForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique key used to store the wanted image</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/imageFromDiskCacheForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/removeImageForKey:</TokenIdentifier>
-			<Abstract type="html">Remove the image from memory and disk cache synchronously</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeImageForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique image cache key</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeImageForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/removeImageForKey:fromDisk:</TokenIdentifier>
-			<Abstract type="html">Remove the image from memory and optionaly disk cache synchronously</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeImageForKey:(NSString *)key fromDisk:(BOOL)fromDisk</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The unique image cache key</Abstract>
-				</Parameter><Parameter>
-					<Name>fromDisk</Name>
-					<Abstract type="html">Also remove cache entry from disk if YES</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeImageForKey:fromDisk:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/clearMemory</TokenIdentifier>
-			<Abstract type="html">Clear all memory cached images</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)clearMemory</Declaration>
-			
-			
-			<Anchor>//api/name/clearMemory</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/clearDisk</TokenIdentifier>
-			<Abstract type="html">Clear all disk cached images</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)clearDisk</Declaration>
-			
-			
-			<Anchor>//api/name/clearDisk</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/cleanDisk</TokenIdentifier>
-			<Abstract type="html">Remove all expired cached image from disk</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)cleanDisk</Declaration>
-			
-			
-			<Anchor>//api/name/cleanDisk</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/getSize</TokenIdentifier>
-			<Abstract type="html">Get the size used by the disk cache</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (unsigned long long)getSize</Declaration>
-			
-			
-			<Anchor>//api/name/getSize</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/getDiskCount</TokenIdentifier>
-			<Abstract type="html">Get the number of images in the disk cache</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (int)getDiskCount</Declaration>
-			
-			
-			<Anchor>//api/name/getDiskCount</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/calculateSizeWithCompletionBlock:</TokenIdentifier>
-			<Abstract type="html">Asynchronously calculate the disk cache&apos;s size.</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (void)calculateSizeWithCompletionBlock:(void ( ^ ) ( NSUInteger fileCount , unsigned long long totalSize ))completionBlock</Declaration>
-			
-			
-			<Anchor>//api/name/calculateSizeWithCompletionBlock:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SDImageCache/diskImageExistsWithKey:</TokenIdentifier>
-			<Abstract type="html">Check if image exists in cache already</Abstract>
-			<DeclaredIn>SDImageCache.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)diskImageExistsWithKey:(NSString *)key</Declaration>
-			
-			
-			<Anchor>//api/name/diskImageExistsWithKey:</Anchor>
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

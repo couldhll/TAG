@@ -1,65 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQApiVideoObject.html">
+	<File path="Classes/SSInstapaperUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQApiVideoObject</TokenIdentifier>
-			<Abstract type="html">@brief 视频URL对象
-     用于分享目标内容为视频的URL的对象</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSInstapaperUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>
 			
 			<NodeRef refid="207"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiVideoObject/objectWithURL:title:description:previewImageData:</TokenIdentifier>
-			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiVideoObject&lt;/code&gt;</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">视频内容的目标URL</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">分享内容的标题</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">分享内容的描述</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">分享内容的预览图像</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<Anchor>//api/name/objectWithURL:title:description:previewImageData:</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiVideoObject/objectWithURL:title:description:previewImageURL:</TokenIdentifier>
-			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiVideoObject&lt;/code&gt;</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageURL:(NSURL *)previewURL</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief  授权凭证</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSInstapaperCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief  授权凭证</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) SSInstapaperCredential *credential</Declaration>
+			
+			
+			<Anchor>//api/name/credential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/setUserId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperUser/userId</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/setUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperUser/userName</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			
+			
+			<Anchor>//api/name/userName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/setSubscriptionIsActive:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为订阅用户</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL subscriptionIsActive</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionIsActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSInstapaperUser/subscriptionIsActive</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为订阅用户</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL subscriptionIsActive</Declaration>
+			
+			
+			<Anchor>//api/name/subscriptionIsActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSInstapaperUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSInstapaperUser *)userWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">视频内容的目标URL</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">分享内容的标题</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">分享内容的描述</Abstract>
-				</Parameter><Parameter>
-					<Name>previewURL</Name>
-					<Abstract type="html">分享内容的预览图像URL</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复信息</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSInstapaperUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSInstapaperUser.h</DeclaredIn>			
 			
-			<Anchor>//api/name/objectWithURL:title:description:previewImageURL:</Anchor>
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

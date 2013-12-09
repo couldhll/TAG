@@ -1,141 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookEducation.html">
+	<File path="Classes/SSSMSErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookEducation</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSMSErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息类，用于记录发送短信是产生的错误信息（包括错误码、错误描述）</Abstract>
+			<DeclaredIn>SSSMSErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="252"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookEducation/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookEducation/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookEducation/setSchool:</TokenIdentifier>
-			<Abstract type="html">	@brief	学校信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSchool *school</Declaration>
-			
-			
-			<Anchor>//api/name/school</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookEducation/school</TokenIdentifier>
-			<Abstract type="html">	@brief	学校信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSchool *school</Declaration>
-			
-			
-			<Anchor>//api/name/school</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookEducation/setYear:</TokenIdentifier>
-			<Abstract type="html">	@brief	年份信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookYear *year</Declaration>
-			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookEducation/year</TokenIdentifier>
-			<Abstract type="html">	@brief	年份信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookYear *year</Declaration>
-			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookEducation/setDegree:</TokenIdentifier>
-			<Abstract type="html">	@brief	学历</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookDegree *degree</Declaration>
-			
-			
-			<Anchor>//api/name/degree</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookEducation/degree</TokenIdentifier>
-			<Abstract type="html">	@brief	学历</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookDegree *degree</Declaration>
-			
-			
-			<Anchor>//api/name/degree</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookEducation/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookEducation/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookEducation/educationWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建教育信息</Abstract>
-			<DeclaredIn>SSFacebookEducation.h</DeclaredIn>			
-			
-			<Declaration>+ (SSFacebookEducation *)educationWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">教育信息</Abstract></ReturnValue>
-			<Anchor>//api/name/educationWithResponse:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

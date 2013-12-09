@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSSinaWeiboVisible.html">
+	<File path="Classes/UIADimmingView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboVisible</TokenIdentifier>
-			<Abstract type="html">	@brief	可见性信息</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UIADimmingView</TokenIdentifier>
+			<Abstract type="html">@brief A general dimming view to implement dimming like UISearchDisplayController is dimmed.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>
 			
 			<NodeRef refid="341"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboVisible/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/UIADimmingView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">@brief The view&apos;s delegate.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger type</Declaration>
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIADimmingViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboVisible/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/UIADimmingView/delegate</TokenIdentifier>
+			<Abstract type="html">@brief The view&apos;s delegate.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboVisible/setListid:</TokenIdentifier>
-			<Abstract type="html">	@brief	分组ID</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *listid</Declaration>
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIADimmingViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/listid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboVisible/listid</TokenIdentifier>
-			<Abstract type="html">	@brief	分组ID</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *listid</Declaration>
-			
-			
-			<Anchor>//api/name/listid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboVisible/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboVisible/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboVisible/visibleWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建可视信息</Abstract>
-			<DeclaredIn>SSSinaWeiboVisible.h</DeclaredIn>			
-			
-			<Declaration>+ (SSSinaWeiboVisible *)visibleWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">可视信息</Abstract></ReturnValue>
-			<Anchor>//api/name/visibleWithResponse:</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 	</File>

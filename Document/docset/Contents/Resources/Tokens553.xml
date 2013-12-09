@@ -1,31 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIApplication+Private.html">
+	<File path="Protocols/ISSPinterestApp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(Private)</TokenIdentifier>
-			<Abstract type="html">@brief Safe private methods of [UIApplication][0]
-[0]: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html</Abstract>
-			<DeclaredIn>UIApplication.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSPinterestApp</TokenIdentifier>
+			<Abstract type="html">	@brief	Pinterest应用协议</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>
 			
 			<NodeRef refid="553"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Private)/statusBarFrameForOrientation:</TokenIdentifier>
-			<Abstract type="html">@brief statusbar size calculated for given orientation.</Abstract>
-			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐户</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
 			
-			<Declaration>- (CGRect)statusBarFrameForOrientation:(UIInterfaceOrientation)orientation</Declaration>
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">帐户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/clientId</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用ID</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)clientId</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用ID</Abstract></ReturnValue>
+			<Anchor>//api/name/clientId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>orientation</Name>
-					<Abstract type="html">The orientation to calculate status bar frame.</Abstract>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/statusBarFrameForOrientation:</Anchor>
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求 NO 表示不接受</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/handleOpenURL:sourceApplication:annotation:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceApplication</Name>
+					<Abstract type="html">源应用</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">源应用提供的信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求，NO 表示不接受请求</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSPinterestApp/createPinWithImage:url:description:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	分享内容</Abstract>
+			<DeclaredIn>ISSPinterestApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)createPinWithImage:(id&lt;ISSCAttachment&gt;)image url:(NSString *)url description:(NSString *)description result:(void ( ^ ) ( SSCShareSessionState state , SSPinterestErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">图片，只允许网络图片路径</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">网址</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">回调方法</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createPinWithImage:url:description:result:</Anchor>
 		</Token>
 		
 	</File>

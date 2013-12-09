@@ -1,166 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMLoader.html">
+	<File path="Classes/CMImageView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMLoader</TokenIdentifier>
-			<Abstract type="html">	@brief	加载器</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMImageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>
 			
 			<NodeRef refid="46"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setState:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载状态</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageView/setImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片对象</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMLoaderState state</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/image</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/state</TokenIdentifier>
-			<Abstract type="html">	@brief	加载状态</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageView/image</TokenIdentifier>
+			<Abstract type="html">	@brief	图片对象</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMLoaderState state</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/image</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setSourceType:</TokenIdentifier>
-			<Abstract type="html">	@brief	来源类型</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageView/setDefaultImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片对象，在没有设置图片时显示</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMLoaderSourceType sourceType</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *defaultImage</Declaration>
 			
 			
-			<Anchor>//api/name/sourceType</Anchor>
+			<Anchor>//api/name/defaultImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/sourceType</TokenIdentifier>
-			<Abstract type="html">	@brief	来源类型</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageView/defaultImage</TokenIdentifier>
+			<Abstract type="html">	@brief	默认图片对象，在没有设置图片时显示</Abstract>
+			<DeclaredIn>CMImageView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMLoaderSourceType sourceType</Declaration>
-			
-			
-			<Anchor>//api/name/sourceType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setData:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载数据</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *defaultImage</Declaration>
 			
 			
-			<Anchor>//api/name/data</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/data</TokenIdentifier>
-			<Abstract type="html">	@brief	加载数据</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *data</Declaration>
-			
-			
-			<Anchor>//api/name/data</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/setKey:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载器标识，唯一标识一个资源</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *key</Declaration>
-			
-			
-			<Anchor>//api/name/key</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMLoader/key</TokenIdentifier>
-			<Abstract type="html">	@brief	加载器标识，唯一标识一个资源</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *key</Declaration>
-			
-			
-			<Anchor>//api/name/key</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/initWithKey:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化加载器</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">加载标识</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">加载器实例</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载网络图片对象</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadByUrl:(NSURL *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">URL</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadByUrl:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByPath:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载本地图片对象</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadByPath:(NSString *)path</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">路径</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadByPath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMLoader/loadByCache:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载缓存图片对象</Abstract>
-			<DeclaredIn>CMLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadByCache:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">数据对象</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadByCache:</Anchor>
+			<Anchor>//api/name/defaultImage</Anchor>
 		</Token>
 		
 	</File>

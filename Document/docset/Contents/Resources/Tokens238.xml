@@ -1,106 +1,371 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSEverNoteLazyMap.html">
+	<File path="Classes/SSQZoneUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteLazyMap</TokenIdentifier>
-			<Abstract type="html">	@brief	Lazy Map</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneUser</TokenIdentifier>
+			<Abstract type="html">	@brief	QQ空间用户</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>
 			
 			<NodeRef refid="238"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/setKeysOnly:</TokenIdentifier>
-			<Abstract type="html">	@brief	The set of keys for the map. This field is ignored by the server when set.</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据结构</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSSet *keysOnly</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/keysOnly</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteLazyMap/keysOnly</TokenIdentifier>
-			<Abstract type="html">	@brief	The set of keys for the map. This field is ignored by the server when set.</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据结构</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSSet *keysOnly</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/keysOnly</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/setFullMap:</TokenIdentifier>
-			<Abstract type="html">	@brief	The complete map, including all keys and values.</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *fullMap</Declaration>
+			<Declaration>@property (nonatomic, retain) SSQZoneCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/fullMap</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteLazyMap/fullMap</TokenIdentifier>
-			<Abstract type="html">	@brief	The complete map, including all keys and values.</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *fullMap</Declaration>
+			<Declaration>@property (nonatomic, retain) SSQZoneCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/fullMap</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteLazyMap/lazyMapWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建LazyMap对象</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setOpenId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>+ (SSEverNoteLazyMap *)lazyMapWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			
+			
+			<Anchor>//api/name/openId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/openId</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			
+			
+			<Anchor>//api/name/openId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setNickname:</TokenIdentifier>
+			<Abstract type="html">	@brief	昵称</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			
+			
+			<Anchor>//api/name/nickname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/nickname</TokenIdentifier>
+			<Abstract type="html">	@brief	昵称</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			
+			
+			<Anchor>//api/name/nickname</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl:</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为30×30像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为30×30像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl1:</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为50×50像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl1</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl1</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl1</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为50×50像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl1</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl1</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl2:</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为100×100像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl2</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl2</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl2</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为100×100像素的QQ空间头像URL。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurl2</Declaration>
+			
+			
+			<Anchor>//api/name/figureurl2</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurlQQ1:</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为40×40像素的QQ头像URL</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ1</Declaration>
+			
+			
+			<Anchor>//api/name/figureurlQQ1</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurlQQ1</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为40×40像素的QQ头像URL</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ1</Declaration>
+			
+			
+			<Anchor>//api/name/figureurlQQ1</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurlQQ2:</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为100×100像素的QQ头像URL。需要注意，不是所有的用户都拥有QQ的100x100的头像，但40x40像素则是一定会有。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ2</Declaration>
+			
+			
+			<Anchor>//api/name/figureurlQQ2</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurlQQ2</TokenIdentifier>
+			<Abstract type="html">	@brief	大小为100×100像素的QQ头像URL。需要注意，不是所有的用户都拥有QQ的100x100的头像，但40x40像素则是一定会有。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ2</Declaration>
+			
+			
+			<Anchor>//api/name/figureurlQQ2</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setGender:</TokenIdentifier>
+			<Abstract type="html">	@brief	性别,如果获取不到则默认返回“男”</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/gender</TokenIdentifier>
+			<Abstract type="html">	@brief	性别,如果获取不到则默认返回“男”</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setIsYellowYearVip:</TokenIdentifier>
+			<Abstract type="html">	@brief	标识是否为年费黄钻用户（NO：不是； YES：是）</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isYellowYearVip</Declaration>
+			
+			
+			<Anchor>//api/name/isYellowYearVip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/isYellowYearVip</TokenIdentifier>
+			<Abstract type="html">	@brief	标识是否为年费黄钻用户（NO：不是； YES：是）</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isYellowYearVip</Declaration>
+			
+			
+			<Anchor>//api/name/isYellowYearVip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setIsYellowVip:</TokenIdentifier>
+			<Abstract type="html">	@brief	标识用户是否为黄钻用户（0：不是；1：是）。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isYellowVip</Declaration>
+			
+			
+			<Anchor>//api/name/isYellowVip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/isYellowVip</TokenIdentifier>
+			<Abstract type="html">	@brief	标识用户是否为黄钻用户（0：不是；1：是）。</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isYellowVip</Declaration>
+			
+			
+			<Anchor>//api/name/isYellowVip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setVip:</TokenIdentifier>
+			<Abstract type="html">	@brief	标识用户是否为黄钻用户（NO：不是；YES：是）</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL vip</Declaration>
+			
+			
+			<Anchor>//api/name/vip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/vip</TokenIdentifier>
+			<Abstract type="html">	@brief	标识用户是否为黄钻用户（NO：不是；YES：是）</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL vip</Declaration>
+			
+			
+			<Anchor>//api/name/vip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setYellowVipLevel:</TokenIdentifier>
+			<Abstract type="html">	@brief	黄钻等级</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger yellowVipLevel</Declaration>
+			
+			
+			<Anchor>//api/name/yellowVipLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/yellowVipLevel</TokenIdentifier>
+			<Abstract type="html">	@brief	黄钻等级</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger yellowVipLevel</Declaration>
+			
+			
+			<Anchor>//api/name/yellowVipLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setLevel:</TokenIdentifier>
+			<Abstract type="html">	@brief	黄钻等级</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/level</TokenIdentifier>
+			<Abstract type="html">	@brief	黄钻等级</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSQZoneUser *)userWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">LazyMap对象</Abstract></ReturnValue>
-			<Anchor>//api/name/lazyMapWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/parse:</TokenIdentifier>
-			<Abstract type="html">	@brief	解析数据</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
 			
-			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
 			
-			<Anchor>//api/name/parse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteLazyMap/putData:</TokenIdentifier>
-			<Abstract type="html">	@brief	放入数据</Abstract>
-			<DeclaredIn>SSEverNoteLazyMap.h</DeclaredIn>			
-			
-			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>writer</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/putData:</Anchor>
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

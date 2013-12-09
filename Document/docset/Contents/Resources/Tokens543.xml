@@ -1,126 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSString+Shortcuts.html">
+	<File path="Protocols/ISSInstapaperApp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSString(Shortcuts)</TokenIdentifier>
-			<Abstract type="html">@brief NSString method shortcuts</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSInstapaperApp</TokenIdentifier>
+			<Abstract type="html">	@brief	Instapaper应用</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>
 			
 			<NodeRef refid="543"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/hasSubstring:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a Boolean value that indicates whether a given string is contained in the receiver.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	获取授权帐号</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)hasSubstring:(NSString *)aString</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aString</Name>
-					<Abstract type="html">A string.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if aString is contained in the receiver, otherwise NO. Returns NO if aString is empty.</Abstract></ReturnValue>
-			<Anchor>//api/name/hasSubstring:</Anchor>
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">授权帐号</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a string made by using self as a format string template into which the argument values are substituted.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/appKey</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用Key</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format0:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (NSString *)format:(id)first, ...</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>first,</Name>
-					<Abstract type="html">... A comma-separated list of arguments to substitute into format. first should be id type.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A string created by using self as a template into which the argument values are substituted according to the canonical locale.
-@details This requires first argument type to be id. To avoid this problems, use @link format0: @endlink.</Abstract></ReturnValue>
-			<Anchor>//api/name/format:</Anchor>
+			<Declaration>- (NSString *)appKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用Key</Abstract></ReturnValue>
+			<Anchor>//api/name/appKey</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format0:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a string made by using self as a format string template into which the remaining argument values are substituted.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/appSecret</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用密钥</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format:</TokenIdentifier>
+			<Declaration>- (NSString *)appSecret</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用密钥</Abstract></ReturnValue>
+			<Anchor>//api/name/appSecret</Anchor>
+		</Token>
 		
-	</RelatedTokens>
-	
-			<Declaration>- (NSString *)format0:(id)dummyLikeNil, ...</Declaration>
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>dummyLikeNil</Name>
-					<Abstract type="html">Do nothing. Value will be ignored. This is placeholder</Abstract>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/authorize</TokenIdentifier>
+			<Abstract type="html">	@brief	授权应用</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSInstapaperAuthSession&gt;)authorize</Declaration>
+			
+			<ReturnValue><Abstract type="html">授权视图，此视图是用于让用户进行登录,如果返回nil则表示使用SSO登录</Abstract></ReturnValue>
+			<Anchor>//api/name/authorize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/registerUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册用户信息</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)registerUser:(SSInstapaperUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注册成功， NO 表示注册失败</Abstract></ReturnValue>
+			<Anchor>//api/name/registerUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/unregisterUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注销用户信息</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)unregisterUser:(SSInstapaperUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注销成功， NO 表示注销失败</Abstract></ReturnValue>
+			<Anchor>//api/name/unregisterUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/getUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取注册用户信息</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSInstapaperUser *)getUser:(long long)uid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户ID</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回用户信息，nil表示尚未注册</Abstract></ReturnValue>
+			<Anchor>//api/name/getUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/defaultUser</TokenIdentifier>
+			<Abstract type="html">	@brief	获取默认注册用户</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSInstapaperUser *)defaultUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">默认注册用户</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/setDefaultUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置默认注册用户</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaultUser:(SSInstapaperUser *)defaultUser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>defaultUser</Name>
+					<Abstract type="html">默认注册用户</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/checkUnauthWithError:</TokenIdentifier>
+			<Abstract type="html">	@brief	检测用户是否已授权</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)checkUnauthWithError:(SSInstapaperErrorInfo *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示没有授权，NO 表示已授权</Abstract></ReturnValue>
+			<Anchor>//api/name/checkUnauthWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置凭证</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCredential:(SSInstapaperCredential *)credential</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract type="html">授权凭证信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCredential:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/api:method:params:user:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	以GET方式调用开放平台API</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)api:(NSString *)path method:(SSInstapaperRequestMethod)method params:(id&lt;ISSCOAuthParameters&gt;)params user:(SSInstapaperUser *)user result:(void ( ^ ) ( id responder ))result fault:(void ( ^ ) ( SSInstapaperErrorInfo *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">路径</Abstract>
 				</Parameter><Parameter>
-					<Name>...</Name>
-					<Abstract type="html">A comma-separated list of arguments to substitute into format.</Abstract>
+					<Name>params</Name>
+					<Abstract type="html">请求参数</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">授权用户,如果传入nil则表示默认的授权用户</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">失败回调</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A string created by using self as a template into which the remaining argument values are substituted according to the canonical locale.
-@details This ignores first argument. Pass anything.</Abstract></ReturnValue>
-			<Anchor>//api/name/format0:</Anchor>
+			
+			<Anchor>//api/name/api:method:params:user:result:fault:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/range</TokenIdentifier>
-			<Abstract type="html">@brief Returns range of string.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/showMe:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示授权用户信息</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
 			
-			<Declaration>- (NSRange)range</Declaration>
-			
-			
-			<Anchor>//api/name/range</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/substringFromIndex:length:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a new string containing the characters of the receiver from the one at a given index with a given length.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)substringFromIndex:(NSUInteger)from length:(NSUInteger)length</Declaration>
+			<Declaration>- (void)showMe:(void ( ^ ) ( BOOL result , SSInstapaperUser *userInfo , SSInstapaperErrorInfo *error ))result</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>from</Name>
-					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
-				</Parameter><Parameter>
-					<Name>length</Name>
-					<Abstract type="html">A length. The summation of this value and from index must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">new string containing the characters of the receiver from the one at from index with given length.</Abstract></ReturnValue>
-			<Anchor>//api/name/substringFromIndex:length:</Anchor>
+			
+			<Anchor>//api/name/showMe:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/substringFromIndex:toIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a new string containing the characters of the receiver from the one at a given index to the other given index.</Abstract>
-			<DeclaredIn>NSString.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSInstapaperApp/addBookmark:title:description:folderId:resolveFinalUrl:isPrivateFromSource:content:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加书签</Abstract>
+			<DeclaredIn>ISSInstapaperApp.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)substringFromIndex:(NSUInteger)from toIndex:(NSUInteger)to</Declaration>
+			<Declaration>- (void)addBookmark:(NSString *)url title:(NSString *)title description:(NSString *)description folderId:(NSInteger)folderId resolveFinalUrl:(NSInteger)resolveFinalUrl isPrivateFromSource:(NSString *)isPrivateFromSource content:(NSString *)content result:(void ( ^ ) ( SSCShareSessionState state , SSInstapaperBookmark *bookmark , SSInstapaperErrorInfo *error ))result</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>from</Name>
-					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">URL地址</Abstract>
 				</Parameter><Parameter>
-					<Name>to</Name>
-					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter><Parameter>
+					<Name>folderId</Name>
+					<Abstract type="html">文件夹ID</Abstract>
+				</Parameter><Parameter>
+					<Name>resolveFinalUrl</Name>
+					<Abstract type="html">解决最终URL问题标识，默认开启，用于解决跳转页面问题，设置为NO则表示不进行跳转</Abstract>
+				</Parameter><Parameter>
+					<Name>isPrivateFromSource</Name>
+					<Abstract type="html">私有源标签</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">对应于URL指定的完整内容，允许带HTML标识，用于在Instapaper无法爬取服务器内容时显示。</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">new string containing the characters of the receiver from the one at from index to to index.</Abstract></ReturnValue>
-			<Anchor>//api/name/substringFromIndex:toIndex:</Anchor>
+			
+			<Anchor>//api/name/addBookmark:title:description:folderId:resolveFinalUrl:isPrivateFromSource:content:result:</Anchor>
 		</Token>
 		
 	</File>

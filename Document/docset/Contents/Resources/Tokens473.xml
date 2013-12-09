@@ -1,36 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiYun_get_photo_thumb_GET.html">
+	<File path="Categories/UIColor+Common.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_get_photo_thumb_GET</TokenIdentifier>
-			<Abstract type="html">\brief 获取照片缩略图下载地址</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIColor(Common)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor+Common.h</DeclaredIn>
 			
 			<NodeRef refid="473"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_get_photo_thumb_GET/setParam_thumb:</TokenIdentifier>
-			<Abstract type="html">缩略图尺寸，目前支持四种类型: 10241024，640640，128128，6464</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(Common)/colorWithRGB:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取颜色对象</Abstract>
+			<DeclaredIn>UIColor+Common.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr param_thumb</Declaration>
-			
-			
-			<Anchor>//api/name/param_thumb</Anchor>
+			<Declaration>+ (UIColor *)colorWithRGB:(NSUInteger)rgb</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rgb</Name>
+					<Abstract type="html">RGB颜色值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">颜色对象</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithRGB:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_get_photo_thumb_GET/param_thumb</TokenIdentifier>
-			<Abstract type="html">缩略图尺寸，目前支持四种类型: 10241024，640640，128128，6464</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(Common)/colorWithARGB:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取颜色对象</Abstract>
+			<DeclaredIn>UIColor+Common.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr param_thumb</Declaration>
+			<Declaration>+ (UIColor *)colorWithARGB:(NSUInteger)argb</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>argb</Name>
+					<Abstract type="html">ARGB颜色值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">颜色对象</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithARGB:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(Common)/colorWithString:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取颜色对象</Abstract>
+			<DeclaredIn>UIColor+Common.h</DeclaredIn>			
 			
-			
-			<Anchor>//api/name/param_thumb</Anchor>
+			<Declaration>+ (UIColor *)colorWithString:(NSString *)string</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">颜色描述字符串，带“＃”开头</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">颜色对象</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithString:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,250 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSSinaWeiboComment.html">
+	<File path="Classes/TencentImageMessageObjV1.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboComment</TokenIdentifier>
-			<Abstract type="html">	@brief	新浪评论信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentImageMessageObjV1</TokenIdentifier>
+			<Abstract type="html">\brief 图片的消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
 			
 			<NodeRef refid="333"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setDataImage:</TokenIdentifier>
+			<Abstract type="html">图片数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImage</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/dataImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/dataImage</TokenIdentifier>
+			<Abstract type="html">图片数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImage</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/dataImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setCreatedAt:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论创建时间</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setDataThumbImage:</TokenIdentifier>
+			<Abstract type="html">缩略图的数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataThumbImage</Declaration>
 			
 			
-			<Anchor>//api/name/createdAt</Anchor>
+			<Anchor>//api/name/dataThumbImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/createdAt</TokenIdentifier>
-			<Abstract type="html">	@brief	评论创建时间</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/dataThumbImage</TokenIdentifier>
+			<Abstract type="html">缩略图的数据</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataThumbImage</Declaration>
 			
 			
-			<Anchor>//api/name/createdAt</Anchor>
+			<Anchor>//api/name/dataThumbImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的ID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSUrl:</TokenIdentifier>
+			<Abstract type="html">图片URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的ID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/sUrl</TokenIdentifier>
+			<Abstract type="html">图片URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setText:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的内容</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSDescription:</TokenIdentifier>
+			<Abstract type="html">图片的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/sDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/text</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的内容</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/sDescription</TokenIdentifier>
+			<Abstract type="html">图片的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/sDescription</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setSource:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的来源</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setSzImage:</TokenIdentifier>
+			<Abstract type="html">图片的size</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize szImage</Declaration>
 			
 			
-			<Anchor>//api/name/source</Anchor>
+			<Anchor>//api/name/szImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/source</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的来源</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/szImage</TokenIdentifier>
+			<Abstract type="html">图片的size</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize szImage</Declaration>
 			
 			
-			<Anchor>//api/name/source</Anchor>
+			<Anchor>//api/name/szImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setUser:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论作者的用户信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/setNType:</TokenIdentifier>
+			<Abstract type="html">图片来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
 			
 			
-			<Anchor>//api/name/user</Anchor>
+			<Anchor>//api/name/nType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/user</TokenIdentifier>
-			<Abstract type="html">	@brief	评论作者的用户信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentImageMessageObjV1/nType</TokenIdentifier>
+			<Abstract type="html">图片来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
 			
 			
-			<Anchor>//api/name/user</Anchor>
+			<Anchor>//api/name/nType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setMid:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的MID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithImageData:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *mid</Declaration>
-			
-			
-			<Anchor>//api/name/mid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/mid</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的MID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *mid</Declaration>
-			
-			
-			<Anchor>//api/name/mid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setIdStr:</TokenIdentifier>
-			<Abstract type="html">	@brief	字符串型的评论ID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
-			
-			
-			<Anchor>//api/name/idStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/idStr</TokenIdentifier>
-			<Abstract type="html">	@brief	字符串型的评论ID</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
-			
-			
-			<Anchor>//api/name/idStr</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setStatus:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的微博信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
-			
-			
-			<Anchor>//api/name/status</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/status</TokenIdentifier>
-			<Abstract type="html">	@brief	评论的微博信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
-			
-			
-			<Anchor>//api/name/status</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboComment/setReplyComment:</TokenIdentifier>
-			<Abstract type="html">	@brief	评论来源评论，当本评论属于对另一评论的回复时返回此字段</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboComment *replyComment</Declaration>
-			
-			
-			<Anchor>//api/name/replyComment</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboComment/replyComment</TokenIdentifier>
-			<Abstract type="html">	@brief	评论来源评论，当本评论属于对另一评论的回复时返回此字段</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboComment *replyComment</Declaration>
-			
-			
-			<Anchor>//api/name/replyComment</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboComment/commentWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建评论信息</Abstract>
-			<DeclaredIn>SSSinaWeiboComment.h</DeclaredIn>			
-			
-			<Declaration>+ (SSSinaWeiboComment *)commentWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>- (id)initWithImageData:(NSData *)dataImage</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>dataImage</Name>
+					<Abstract type="html">图片类型</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">评论信息</Abstract></ReturnValue>
-			<Anchor>//api/name/commentWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImageData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithImageUrl:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithImageUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片url</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImageUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentImageMessageObjV1/initWithType:</TokenIdentifier>
+			<Abstract type="html">初始化图片消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithType:(TencentApiImageSourceType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">图片类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的图片消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithType:</Anchor>
 		</Token>
 		
 	</File>

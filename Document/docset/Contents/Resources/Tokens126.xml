@@ -1,302 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JSONModel.html">
+	<File path="Classes/QQApiURLObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JSONModel</TokenIdentifier>
-			<Abstract type="html">The JSONModel is an abstract model class, you should ot instantiate it directly,
-as it does not have any properties, and therefore cannot serve as a data model.
-Instead you should subclass it, and define the properties you want your data model
-to have as properties of your own class.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiURLObject</TokenIdentifier>
+			<Abstract type="html">@brief URL对象类型。</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="126"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/initWithString:error:</TokenIdentifier>
-			<Abstract type="html">Create a new model instance and initialize it with the JSON from a text parameter. The method assumes UTF8 encoded input text.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setTargetContentType:</TokenIdentifier>
+			<Abstract type="html">URL地址所指向的目标类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/JSONModel/initWithString:usingEncoding:error:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (instancetype)initWithString:(NSString *)string error:(JSONModelError **)err</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">JSON text data</Abstract>
-				</Parameter><Parameter>
-					<Name>err</Name>
-					<Abstract type="html">an initialization error or nil</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) QQApiURLTargetType targetContentType</Declaration>
 			
-			<Anchor>//api/name/initWithString:error:</Anchor>
+			
+			<Anchor>//api/name/targetContentType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/initWithString:usingEncoding:error:</TokenIdentifier>
-			<Abstract type="html">Create a new model instance and initialize it with the JSON from a text parameter using the given encoding.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/targetContentType</TokenIdentifier>
+			<Abstract type="html">URL地址所指向的目标类型.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (instancetype)initWithString:(NSString *)string usingEncoding:(NSStringEncoding)encoding error:(JSONModelError **)err</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>string</Name>
-					<Abstract type="html">JSON text data</Abstract>
-				</Parameter><Parameter>
-					<Name>encoding</Name>
-					<Abstract type="html">the text encoding to use when parsing the string (see NSStringEncoding)</Abstract>
-				</Parameter><Parameter>
-					<Name>err</Name>
-					<Abstract type="html">an initialization error or nil</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) QQApiURLTargetType targetContentType</Declaration>
 			
-			<Anchor>//api/name/initWithString:usingEncoding:error:</Anchor>
+			
+			<Anchor>//api/name/targetContentType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/initWithDictionary:error:</TokenIdentifier>
-			<Abstract type="html">All JSONModel classes should implement initWithDictionary:</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setPreviewImageData:</TokenIdentifier>
+			<Abstract type="html">&lt;URL地址,必填，最长512个字符</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (instancetype)initWithDictionary:(NSDictionary *)dict error:(NSError **)err</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>dict</Name>
-					<Abstract type="html">a dictionary holding JSON objects, to be imported in the model.</Abstract>
-				</Parameter><Parameter>
-					<Name>err</Name>
-					<Abstract type="html">an error or NULL
-   </Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
 			
-			<Anchor>//api/name/initWithDictionary:error:</Anchor>
+			
+			<Anchor>//api/name/previewImageData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/toDictionary</TokenIdentifier>
-			<Abstract type="html">All JSONModel classes should be able to export themselves as a dictioanry of
-JSON compliant objects.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/previewImageData</TokenIdentifier>
+			<Abstract type="html">&lt;URL地址,必填，最长512个字符</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/JSONValueTransformer</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (NSDictionary *)toDictionary</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
 			
-			<ReturnValue><Abstract type="html">NSDictionary dictionary of JSON compliant objects</Abstract></ReturnValue>
-			<Anchor>//api/name/toDictionary</Anchor>
+			
+			<Anchor>//api/name/previewImageData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/toJSONString</TokenIdentifier>
-			<Abstract type="html">Export the whole object to a JSON data text string</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/setPreviewImageURL:</TokenIdentifier>
+			<Abstract type="html">&lt;预览图像数据，最大1M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)toJSONString</Declaration>
+			<Declaration>@property (nonatomic, retain) NSURL *previewImageURL</Declaration>
 			
-			<ReturnValue><Abstract type="html">JSON text describing the data model
-   </Abstract></ReturnValue>
-			<Anchor>//api/name/toJSONString</Anchor>
+			
+			<Anchor>//api/name/previewImageURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONModel/arrayOfModelsFromDictionaries:</TokenIdentifier>
-			<Abstract type="html">If you have a list of dictionaries in a JSON feed, you can use this method to create an NSArray
-of model objects. Handy when importing JSON data lists.
-This method will loop over the input list and initialize a data model for every dictionary in the list.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiURLObject/previewImageURL</TokenIdentifier>
+			<Abstract type="html">&lt;预览图像数据，最大1M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/clm/JSONModel/arrayOfDictionariesFromModels:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (NSMutableArray *)arrayOfModelsFromDictionaries:(NSArray *)array</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>array</Name>
-					<Abstract type="html">list of dictionaries to be imported as models</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">list of initialized data model objects</Abstract></ReturnValue>
-			<Anchor>//api/name/arrayOfModelsFromDictionaries:</Anchor>
+			<Declaration>@property (nonatomic, retain) NSURL *previewImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONModel/arrayOfDictionariesFromModels:</TokenIdentifier>
-			<Abstract type="html">If you have an NSArray of data model objects, this method takes it in and outputs a list of the
-matching dictionaries. This method does the opposite of arrayOfObjectsFromDictionaries:</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiURLObject/initWithURL:title:description:previewImageData:targetContentType:</TokenIdentifier>
+			<Abstract type="html">初始化方法</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/clm/JSONModel/arrayOfModelsFromDictionaries:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (NSMutableArray *)arrayOfDictionariesFromModels:(NSArray *)array</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>array</Name>
-					<Abstract type="html">list of JSONModel objects</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a list of NSDictionary objects</Abstract></ReturnValue>
-			<Anchor>//api/name/arrayOfDictionariesFromModels:</Anchor>
+			<Declaration>- (id)initWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data targetContentType:(QQApiURLTargetType)targetContentType</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:title:description:previewImageData:targetContentType:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/indexPropertyName</TokenIdentifier>
-			<Abstract type="html">The name of the model&apos;s property, which is considered the model&apos;s unique identifier.
-You can define Index property by using the Index protocol:
-@property (strong, nonatomic) NSString&amp;amp;lt;Index&amp;amp;gt;* id;
-   </Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiURLObject/objectWithURL:title:description:previewImageData:targetContentType:</TokenIdentifier>
+			<Abstract type="html">工厂方法,获取一个QQApiURLObject对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)indexPropertyName</Declaration>
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data targetContentType:(QQApiURLTargetType)targetContentType</Declaration>
 			
 			
-			<Anchor>//api/name/indexPropertyName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/isEqual:</TokenIdentifier>
-			<Abstract type="html">Overriden NSObject method to compare model objects. Compares the &amp;amp;lt;Index&amp;amp;gt; property of the two models,
-if an index property is defined.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isEqual:(id)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">a JSONModel instance to compare to for equality
-   </Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/isEqual:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/compare:</TokenIdentifier>
-			<Abstract type="html">Comparision method, which uses the defined &amp;amp;lt;Index&amp;amp;gt; property of the two models, to compare them.
-If there isn&apos;t an index property throws an exception. If the Index property does not have a compare: method
-also throws an exception. NSString and NSNumber have compare: methods, and in case the Index property is
-a another custom class, the programmer should create a custom compare: method then.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>- (NSComparisonResult)compare:(id)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">a JSONModel instance to compare to
-   </Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/compare:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/validate:</TokenIdentifier>
-			<Abstract type="html">Overwrite the validate method in your own models if you need to perform some custom validation over the model data.
-This method gets called at the very end of the JSONModel initializer, thus the model is in the state that you would
-get it back when initialzed. Check the values of any property that needs to be validated and if any invalid values
-are encountered return NO and set the error parameter to an NSError object. If the model is valid return YES.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)validate:(NSError **)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>error</Name>
-					<Abstract type="html">a pointer to an NSError object, to pass back an error if needed</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a BOOL result, showing whether the model data validates or not. You can use the convenience method
-[JSONModelError errorModelIsInvalid] to set the NSError param if the data fails your custom validation
-   </Abstract></ReturnValue>
-			<Anchor>//api/name/validate:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONModel/keyMapper</TokenIdentifier>
-			<Abstract type="html">Overwrite in your models if your property names don&apos;t match your JSON key names.
-Lookup JSONKeyMapper docs for more details.
-   </Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>+ (JSONKeyMapper *)keyMapper</Declaration>
-			
-			
-			<Anchor>//api/name/keyMapper</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONModel/setGlobalKeyMapper:</TokenIdentifier>
-			<Abstract type="html">Sets a key mapper which affects ALL the models in your project. Use this if you need only one mapper to work
-with your API. For example if you are using the [JSONKeyMapper mapperFromUnderscoreCaseToCamelCase] it is more
-likely that you will need to use it with ALL of your models.
-NB: Custom key mappers take precendence over the global key mapper.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setGlobalKeyMapper:(JSONKeyMapper *)globalKeyMapper</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>globalKeyMapper</Name>
-					<Abstract type="html">a key mapper to apply to all models in your project.
-
-Lookup JSONKeyMapper docs for more details.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setGlobalKeyMapper:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONModel/propertyIsOptional:</TokenIdentifier>
-			<Abstract type="html">Indicates whether the property with the given name is Optional.
-To have a model with all of its properties being Optional just return YES.
-This method returns by default NO, since the default behaviour is to have all propertoes required.</Abstract>
-			<DeclaredIn>JSONModel.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)propertyIsOptional:(NSString *)propertyName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>propertyName</Name>
-					<Abstract type="html">the name of the property</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">a BOOL result indicating whether the property is optional</Abstract></ReturnValue>
-			<Anchor>//api/name/propertyIsOptional:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JSONModel/initFromURLWithString:completion:</TokenIdentifier>
-			<Abstract type="html">Asynchroniously create a model over the network. Create a new model instance and initialize it with the JSON fetched from the given URL</Abstract>
-			<DeclaredIn>JSONModel+networking.h</DeclaredIn>			
-			
-			<Declaration>- (instancetype)initFromURLWithString:(NSString *)urlString completion:(JSONModelBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">the absolute URL address of the JSON feed as a string</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONModelBlock executed upon completion. The JSONModelBlock type is defined as: void (^JSONModelBlock)(JSONModel model, JSONModelError e); the first parameter is the initialized model or nil,
-and second parameter holds the model initialization error, if any</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initFromURLWithString:completion:</Anchor>
+			<Anchor>//api/name/objectWithURL:title:description:previewImageData:targetContentType:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,168 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WBToken.html">
+	<File path="Categories/NSObject+ObjCRuntimeClass.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WBToken</TokenIdentifier>
-			<Abstract type="html">授权成功时，sdk返回的授权token结构</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+			<Abstract type="html">@brief Class extensions.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>
 			
 			<NodeRef refid="446"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOpenid:</TokenIdentifier>
-			<Abstract type="html">授权账号id</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/name</TokenIdentifier>
+			<Abstract type="html">@brief Returns name of class.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *openid</Declaration>
+			<Declaration>+ (NSString *)name</Declaration>
 			
 			
-			<Anchor>//api/name/openid</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/openid</TokenIdentifier>
-			<Abstract type="html">授权账号id</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/className</TokenIdentifier>
+			<Abstract type="html">@brief Returns name of class.
+@deprecated Renamed to name</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *openid</Declaration>
+			<Declaration>+ (NSString *)className</Declaration>
 			
 			
-			<Anchor>//api/name/openid</Anchor>
+			<Anchor>//api/name/className</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">访问Token</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodValueForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *accessToken</Declaration>
+			<Declaration>+ (Method)methodValueForSelector:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/methodValueForSelector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/accessToken</TokenIdentifier>
-			<Abstract type="html">访问Token</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodObjectForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *accessToken</Declaration>
+			<Declaration>+ (NSAMethod *)methodObjectForSelector:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/methodObjectForSelector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setExpires:</TokenIdentifier>
-			<Abstract type="html">访问Token的过期时间戳</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/classMethodValueForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) unsigned int expires</Declaration>
+			<Declaration>+ (Method)classMethodValueForSelector:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/expires</Anchor>
+			<Anchor>//api/name/classMethodValueForSelector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/expires</TokenIdentifier>
-			<Abstract type="html">访问Token的过期时间戳</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/classMethodObjectForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (assign, nonatomic) unsigned int expires</Declaration>
+			<Declaration>+ (NSAMethod *)classMethodObjectForSelector:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/expires</Anchor>
+			<Anchor>//api/name/classMethodObjectForSelector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setRefreshToken:</TokenIdentifier>
-			<Abstract type="html">刷新Token</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodImplementationForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns IMP from given method</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *refreshToken</Declaration>
+			<Declaration>+ (IMP)methodImplementationForSelector:(SEL)selector</Declaration>
 			
 			
-			<Anchor>//api/name/refreshToken</Anchor>
+			<Anchor>//api/name/methodImplementationForSelector:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/refreshToken</TokenIdentifier>
-			<Abstract type="html">刷新Token</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addMethodForSelector:fromMethod:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new method to a class with a given name and template method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *refreshToken</Declaration>
+			<Declaration>+ (void)addMethodForSelector:(SEL)selector fromMethod:(NSAMethod *)method</Declaration>
 			
 			
-			<Anchor>//api/name/refreshToken</Anchor>
+			<Anchor>//api/name/addMethodForSelector:fromMethod:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOmasToken:</TokenIdentifier>
-			<Abstract type="html">用于加密，开发者不用关心</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addMethodForSelector:implementation:types:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new method to a class with a given name and implementation.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *omasToken</Declaration>
+			<Declaration>+ (void)addMethodForSelector:(SEL)selector implementation:(IMP)implementation types:(NSString *)implementationTypes</Declaration>
 			
 			
-			<Anchor>//api/name/omasToken</Anchor>
+			<Anchor>//api/name/addMethodForSelector:implementation:types:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/omasToken</TokenIdentifier>
-			<Abstract type="html">用于加密，开发者不用关心</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addClassMethodForSelector:fromMethod:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new class method to a class with a given name and template method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *omasToken</Declaration>
+			<Declaration>+ (void)addClassMethodForSelector:(SEL)selector fromMethod:(NSAMethod *)method</Declaration>
 			
 			
-			<Anchor>//api/name/omasToken</Anchor>
+			<Anchor>//api/name/addClassMethodForSelector:fromMethod:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setOmasKey:</TokenIdentifier>
-			<Abstract type="html">用于加密，开发者不用关心</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addClassMethodForSelector:implementation:types:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new class method to a class with a given name and implementation.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
 			
-			<Declaration>@property (strong, nonatomic) NSString *omasKey</Declaration>
-			
-			
-			<Anchor>//api/name/omasKey</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/omasKey</TokenIdentifier>
-			<Abstract type="html">用于加密，开发者不用关心</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (strong, nonatomic) NSString *omasKey</Declaration>
+			<Declaration>+ (void)addClassMethodForSelector:(SEL)selector implementation:(IMP)implementation types:(NSString *)implementationTypes</Declaration>
 			
 			
-			<Anchor>//api/name/omasKey</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBToken/setReserver:</TokenIdentifier>
-			<Abstract type="html">预留字段</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (strong, nonatomic) NSString *reserver</Declaration>
-			
-			
-			<Anchor>//api/name/reserver</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBToken/reserver</TokenIdentifier>
-			<Abstract type="html">预留字段</Abstract>
-			<DeclaredIn>WBApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (strong, nonatomic) NSString *reserver</Declaration>
-			
-			
-			<Anchor>//api/name/reserver</Anchor>
+			<Anchor>//api/name/addClassMethodForSelector:implementation:types:</Anchor>
 		</Token>
 		
 	</File>

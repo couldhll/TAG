@@ -1,90 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMDebugLog.html">
+	<File path="Classes/CMCacheManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMDebugLog</TokenIdentifier>
-			<Abstract type="html">	@brief  调试日志类</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMCacheManager</TokenIdentifier>
+			<Abstract type="html">	@brief	缓存管理器</Abstract>
+			<DeclaredIn>CMCacheManager.h</DeclaredIn>
 			
 			<NodeRef refid="31"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/logPath</TokenIdentifier>
-			<Abstract type="html">	@brief	获取日志保存路径</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
-			
-			<Declaration>+ (NSString *)logPath</Declaration>
-			
-			<ReturnValue><Abstract type="html">日志路径</Abstract></ReturnValue>
-			<Anchor>//api/name/logPath</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeInfo:</TokenIdentifier>
-			<Abstract type="html">	@brief	写入信息</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
-			
-			<Declaration>+ (void)writeInfo:(NSString *)content</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">内容</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeInfo:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeWarning:</TokenIdentifier>
-			<Abstract type="html">	@brief	写入警告</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
-			
-			<Declaration>+ (void)writeWarning:(NSString *)content</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">内容</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeWarning:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeError:</TokenIdentifier>
-			<Abstract type="html">	@brief	写入错误</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
-			
-			<Declaration>+ (void)writeError:(NSString *)content</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">内容</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeError:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeContentWithDictionary:</TokenIdentifier>
-			<Abstract type="html">	@brief	写入内容</Abstract>
-			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
-			
-			<Declaration>+ (void)writeContentWithDictionary:(NSDictionary *)content</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">内容字典对象</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/writeContentWithDictionary:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

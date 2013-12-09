@@ -1,15 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiYun_upload_video_GET.html">
+	<File path="Categories/UIDevice+Common.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_upload_video_GET</TokenIdentifier>
-			<Abstract type="html">\brief 申请上传视频</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(Common)</TokenIdentifier>
+			<Abstract type="html">&lt; wifi</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>
 			
 			<NodeRef refid="480"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/isPhone5</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否为iPhone5</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isPhone5</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES：是，NO：否</Abstract></ReturnValue>
+			<Anchor>//api/name/isPhone5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/isJailBroken</TokenIdentifier>
+			<Abstract type="html">	@brief	获取系统越狱标识</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isJailBroken</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示已经越狱，否则没有越狱。</Abstract></ReturnValue>
+			<Anchor>//api/name/isJailBroken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/macAddress</TokenIdentifier>
+			<Abstract type="html">	@brief	取得网卡的物理地址</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)macAddress</Declaration>
+			
+			<ReturnValue><Abstract type="html">网卡物理地址</Abstract></ReturnValue>
+			<Anchor>//api/name/macAddress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/deviceModel</TokenIdentifier>
+			<Abstract type="html">	@brief	获取设备型号</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)deviceModel</Declaration>
+			
+			<ReturnValue><Abstract type="html">设备型号：设备型号对照如下：
+iPhone1,1  -&gt;   iPhone (Original/EDGE)
+iPhone1,2  -&gt;   iPhone 3G
+iPhone1,2* -&gt;   iPhone 3G (China/No Wi-Fi)
+iPhone2,1  -&gt;   iPhone 3GS
+iPhone2,1* -&gt;   iPhone 3GS (China/No Wi-Fi)
+iPhone3,1  -&gt;   iPhone 4 (GSM)
+iPhone3,3  -&gt;   iPhone 4 (CDMA/Verizon/Sprint)
+iPhone4,1  -&gt;   iPhone 4S
+iPhone4,1* -&gt;   iPhone 4S (GSM China/WAPI)
+iPhone5,1  -&gt;   iPhone 5 (GSM/LTE 4, 17/North America), iPhone 5 (GSM/LTE 1, 3, 5/International), iPhone 5 (GSM/LTE/AWS/North America)
+iPhone5,2  -&gt;   iPhone 5 (CDMA/LTE, Sprint/Verizon/KDDI)
+iPhone5,2* -&gt;   iPhone 5 (CDMA China/UIM/WAPI)
+
+iPod1,1   -&gt; iPod touch (Original)
+iPod2,1   -&gt; iPod touch (2nd Gen)
+iPod2,2   -&gt; iPod touch 2.5G
+iPod3,1   -&gt; iPod touch (3rd Gen/8 GB), iPod touch (3rd Gen/32 &amp;amp; 64 GB)
+iPod4,1   -&gt; iPod touch (4th Gen/FaceTime), iPod touch (4th Gen, 2011), iPod touch (4th Gen, 2012)
+iPod5,1   -&gt; iPod touch (5th Gen)
+
+iPad1,1   -&gt; iPad Wi-Fi (Original), iPad Wi-Fi/3G/GPS (Original)
+iPad2,1   -&gt; iPad 2 (Wi-Fi Only)
+iPad2,2   -&gt; iPad 2 (Wi-Fi/GSM/GPS)
+iPad2,3   -&gt; iPad 2 (Wi-Fi/CDMA/GPS)
+iPad2,4   -&gt; iPad 2 (Wi-Fi Only, iPad2,4)
+iPad3,1   -&gt; iPad 3rd Gen (Wi-Fi Only)
+iPad3,3   -&gt; iPad 3rd Gen (Wi-Fi/Cellular AT&amp;amp;T/GPS)
+iPad3,2   -&gt; iPad 3rd Gen (Wi-Fi/Cellular Verizon/GPS)
+iPad3,4   -&gt; iPad 4th Gen (Wi-Fi Only)
+iPad3,5   -&gt; iPad 4th Gen (Wi-Fi/AT&amp;amp;T/GPS)
+iPad3,6   -&gt; iPad 4th Gen (Wi-Fi/Verizon &amp;amp; Sprint/GPS)
+iPad2,5   -&gt; iPad mini (Wi-Fi Only)
+iPad2,6   -&gt; iPad mini (Wi-Fi/AT&amp;amp;T/GPS)
+iPad2,7   -&gt; iPad mini (Wi-Fi/Verizon &amp;amp; Sprint/GPS)</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/currentNetworkType</TokenIdentifier>
+			<Abstract type="html">	@brief	获取当前网络类型</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (CMNetworkType)currentNetworkType</Declaration>
+			
+			<ReturnValue><Abstract type="html">网络类型</Abstract></ReturnValue>
+			<Anchor>//api/name/currentNetworkType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/isEnableWIFI</TokenIdentifier>
+			<Abstract type="html">	@brief	获取wifi的使能状态</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEnableWIFI</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES wifi可用，NO wifi不可用</Abstract></ReturnValue>
+			<Anchor>//api/name/isEnableWIFI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/isEnable3G</TokenIdentifier>
+			<Abstract type="html">	@brief	获取3G的使能状态</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEnable3G</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 3G可用，NO 3G不可用</Abstract></ReturnValue>
+			<Anchor>//api/name/isEnable3G</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/isPad</TokenIdentifier>
+			<Abstract type="html">	@brief	判断是否为iPad设备</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isPad</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES：是，NO：否</Abstract></ReturnValue>
+			<Anchor>//api/name/isPad</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Common)/runningProcesses</TokenIdentifier>
+			<Abstract type="html">	@brief	获取运行进程</Abstract>
+			<DeclaredIn>UIDevice+Common.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)runningProcesses</Declaration>
+			
+			<ReturnValue><Abstract type="html">运行进程</Abstract></ReturnValue>
+			<Anchor>//api/name/runningProcesses</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

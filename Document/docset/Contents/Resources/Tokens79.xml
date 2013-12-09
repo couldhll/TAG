@@ -1,66 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBNativeDialogs.html">
+	<File path="Classes/MBBarProgressView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBNativeDialogs</TokenIdentifier>
-			<Abstract type="html">@class FBNativeDialogs</Abstract>
-			<DeclaredIn>FBNativeDialogs.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/MBBarProgressView</TokenIdentifier>
+			<Abstract type="html">A flat bar progress view.</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>
 			
 			<NodeRef refid="79"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBNativeDialogs/presentShareDialogModallyFrom:initialText:image:url:handler:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Please note that this method has been deprecated, please migrate your
-code to use FBDialogs and the related method presentOSIntegratedShareDialogModallyFrom.</Abstract>
-			<DeclaredIn>FBNativeDialogs.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MBBarProgressView/setProgress:</TokenIdentifier>
+			<Abstract type="html">Progress (0.0 to 1.0)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)presentShareDialogModallyFrom:(UIViewController *)viewController initialText:(NSString *)initialText image:(UIImage *)image url:(NSURL *)url handler:(FBShareDialogHandler)handler</Declaration>
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
 			
 			
-			<Anchor>//api/name/presentShareDialogModallyFrom:initialText:image:url:handler:</Anchor>
+			<Anchor>//api/name/progress</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBNativeDialogs/presentShareDialogModallyFrom:initialText:images:urls:handler:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Please note that this method has been deprecated, please migrate your
-code to use FBDialogs and the related method presentOSIntegratedShareDialogModallyFrom.</Abstract>
-			<DeclaredIn>FBNativeDialogs.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/MBBarProgressView/progress</TokenIdentifier>
+			<Abstract type="html">Progress (0.0 to 1.0)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)presentShareDialogModallyFrom:(UIViewController *)viewController initialText:(NSString *)initialText images:(NSArray *)images urls:(NSArray *)urls handler:(FBShareDialogHandler)handler</Declaration>
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
 			
 			
-			<Anchor>//api/name/presentShareDialogModallyFrom:initialText:images:urls:handler:</Anchor>
+			<Anchor>//api/name/progress</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBNativeDialogs/presentShareDialogModallyFrom:session:initialText:images:urls:handler:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Please note that this method has been deprecated, please migrate your
-code to use FBDialogs and the related method presentOSIntegratedShareDialogModallyFrom.</Abstract>
-			<DeclaredIn>FBNativeDialogs.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MBBarProgressView/setLineColor:</TokenIdentifier>
+			<Abstract type="html">Bar border line color.
+Defaults to white [UIColor whiteColor].</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)presentShareDialogModallyFrom:(UIViewController *)viewController session:(FBSession *)session initialText:(NSString *)initialText images:(NSArray *)images urls:(NSArray *)urls handler:(FBShareDialogHandler)handler</Declaration>
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *lineColor</Declaration>
 			
 			
-			<Anchor>//api/name/presentShareDialogModallyFrom:session:initialText:images:urls:handler:</Anchor>
+			<Anchor>//api/name/lineColor</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBNativeDialogs/canPresentShareDialogWithSession:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Please note that this method has been deprecated, please migrate your
-code to use FBDialogs and the related method canPresentOSIntegratedShareDialogWithSession.</Abstract>
-			<DeclaredIn>FBNativeDialogs.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/MBBarProgressView/lineColor</TokenIdentifier>
+			<Abstract type="html">Bar border line color.
+Defaults to white [UIColor whiteColor].</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)canPresentShareDialogWithSession:(FBSession *)session</Declaration>
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *lineColor</Declaration>
 			
 			
-			<Anchor>//api/name/canPresentShareDialogWithSession:</Anchor>
+			<Anchor>//api/name/lineColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBBarProgressView/setProgressRemainingColor:</TokenIdentifier>
+			<Abstract type="html">Bar background color.
+Defaults to clear [UIColor clearColor];</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressRemainingColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressRemainingColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBBarProgressView/progressRemainingColor</TokenIdentifier>
+			<Abstract type="html">Bar background color.
+Defaults to clear [UIColor clearColor];</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressRemainingColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressRemainingColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBBarProgressView/setProgressColor:</TokenIdentifier>
+			<Abstract type="html">Bar progress color.
+Defaults to white [UIColor whiteColor].</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBBarProgressView/progressColor</TokenIdentifier>
+			<Abstract type="html">Bar progress color.
+Defaults to white [UIColor whiteColor].</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressColor</Anchor>
 		</Token>
 		
 	</File>

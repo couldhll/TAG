@@ -1,16 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQApiImageObject.html">
+	<File path="Classes/SSGooglePlusOrganization.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQApiImageObject</TokenIdentifier>
-			<Abstract type="html">@brief 图片对象
-     用于分享图片内容的对象，是一个指定为图片类型的&lt;code&gt;QQApiExtendObject&lt;/code&gt;</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusOrganization</TokenIdentifier>
+			<Abstract type="html">	@brief	组织信息</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>
 			
 			<NodeRef refid="198"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	The name of the organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/name</TokenIdentifier>
+			<Abstract type="html">	@brief	The name of the organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setDepartment:</TokenIdentifier>
+			<Abstract type="html">	@brief	The department within the organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *department</Declaration>
+			
+			
+			<Anchor>//api/name/department</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/department</TokenIdentifier>
+			<Abstract type="html">	@brief	The department within the organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *department</Declaration>
+			
+			
+			<Anchor>//api/name/department</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s job title or role within the organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/title</TokenIdentifier>
+			<Abstract type="html">	@brief	The person&apos;s job title or role within the organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of organization. Possible values are:
+&quot;work&quot; - Work.
+&quot;school&quot; - School.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/type</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of organization. Possible values are:
+&quot;work&quot; - Work.
+&quot;school&quot; - School.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setStartDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	The date the person joined this organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/startDate</TokenIdentifier>
+			<Abstract type="html">	@brief	The date the person joined this organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *startDate</Declaration>
+			
+			
+			<Anchor>//api/name/startDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setEndDate:</TokenIdentifier>
+			<Abstract type="html">	@brief	The date the person left this organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/endDate</TokenIdentifier>
+			<Abstract type="html">	@brief	The date the person left this organization.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endDate</Declaration>
+			
+			
+			<Anchor>//api/name/endDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	The location of this organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/location</TokenIdentifier>
+			<Abstract type="html">	@brief	The location of this organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	A short description of the person&apos;s role in this organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/description</TokenIdentifier>
+			<Abstract type="html">	@brief	A short description of the person&apos;s role in this organization. Deprecated.</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusOrganization/setPrimary:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this organization is the person&apos;s primary one (typically interpreted as current one).</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusOrganization/primary</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this organization is the person&apos;s primary one (typically interpreted as current one).</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusOrganization/organizationWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建组织信息</Abstract>
+			<DeclaredIn>SSGooglePlusOrganization.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusOrganization *)organizationWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">组织信息</Abstract></ReturnValue>
+			<Anchor>//api/name/organizationWithResponse:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

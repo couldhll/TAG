@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/ShowMessageFromWXResp.html">
+	<File path="Classes/WeiYun_get_photo_thumb_GET.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/ShowMessageFromWXResp</TokenIdentifier>
-			<Abstract type="html">@brief 微信通知第三方程序，要求第三方程序显示或处理某些消息，第三方程序处理完后向微信终端发送的处理结果。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_get_photo_thumb_GET</TokenIdentifier>
+			<Abstract type="html">\brief 获取照片缩略图下载地址</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
 			
 			<NodeRef refid="390"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_get_photo_thumb_GET/setParam_thumb:</TokenIdentifier>
+			<Abstract type="html">缩略图尺寸，目前支持四种类型: 10241024，640640，128128，6464</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_thumb</Declaration>
+			
+			
+			<Anchor>//api/name/param_thumb</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_get_photo_thumb_GET/param_thumb</TokenIdentifier>
+			<Abstract type="html">缩略图尺寸，目前支持四种类型: 10241024，640640，128128，6464</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_thumb</Declaration>
+			
+			
+			<Anchor>//api/name/param_thumb</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -1,244 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTencentWeiboCredential.html">
+	<File path="Classes/WBAuthorizeResponse.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBAuthorizeResponse</TokenIdentifier>
+			<Abstract type="html">微博客户端处理完第三方应用的认证申请后向第三方应用回送的处理结果</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="351"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBAuthorizeResponse/setUserID:</TokenIdentifier>
+			<Abstract type="html">用户ID</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *userID</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/userID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBAuthorizeResponse/userID</TokenIdentifier>
+			<Abstract type="html">用户ID</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *userID</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/userID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setOpenId:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户统一标识，可以唯一标识一个用户</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBAuthorizeResponse/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">认证口令</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
-			
-			
-			<Anchor>//api/name/openId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/openId</TokenIdentifier>
-			<Abstract type="html">	@brief	用户统一标识，可以唯一标识一个用户</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
-			
-			
-			<Anchor>//api/name/openId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setOpenKey:</TokenIdentifier>
-			<Abstract type="html">	@brief	与openid对应的用户key，是验证openid身份的验证密钥</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *openKey</Declaration>
-			
-			
-			<Anchor>//api/name/openKey</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/openKey</TokenIdentifier>
-			<Abstract type="html">	@brief	与openid对应的用户key，是验证openid身份的验证密钥</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *openKey</Declaration>
-			
-			
-			<Anchor>//api/name/openKey</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	访问第三方资源的凭证</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *accessToken</Declaration>
 			
 			
 			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	访问第三方资源的凭证</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBAuthorizeResponse/accessToken</TokenIdentifier>
+			<Abstract type="html">认证口令</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *accessToken</Declaration>
 			
 			
 			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	accesstoken过期时间，以返回的时间的准，单位为秒，注意过期时提醒用户重新授权</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBAuthorizeResponse/setExpirationDate:</TokenIdentifier>
+			<Abstract type="html">认证过期时间</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *expirationDate</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/expirationDate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	accesstoken过期时间，以返回的时间的准，单位为秒，注意过期时提醒用户重新授权</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBAuthorizeResponse/expirationDate</TokenIdentifier>
+			<Abstract type="html">认证过期时间</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
-			
-			
-			<Anchor>//api/name/expiresIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDate *expirationDate</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/name</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setNick:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户昵称</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
-			
-			
-			<Anchor>//api/name/nick</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/nick</TokenIdentifier>
-			<Abstract type="html">	@brief	用户昵称</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
-			
-			
-			<Anchor>//api/name/nick</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/setRefreshToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCredential/refreshToken</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSTencentWeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<Anchor>//api/name/expirationDate</Anchor>
 		</Token>
 		
 	</File>

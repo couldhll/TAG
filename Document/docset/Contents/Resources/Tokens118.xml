@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GetMessageFromWXReq.html">
+	<File path="Classes/QQApiImageObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GetMessageFromWXReq</TokenIdentifier>
-			<Abstract type="html">@brief 微信终端向第三方程序请求提供内容请求类型。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiImageObject</TokenIdentifier>
+			<Abstract type="html">@brief 图片对象
+     用于分享图片内容的对象，是一个指定为图片类型的&lt;code&gt;QQApiExtendObject&lt;/code&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="118"/>
 		</Token>

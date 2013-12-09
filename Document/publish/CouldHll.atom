@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://www.couldhll.com/CouldHll/CouldHll.atom/20131023140839</id>
+    <id>http://www.couldhll.com/CouldHll/CouldHll.atom/20131209165509</id>
     <title type="text">TAG Documentation</title>
     <rights>Copyright © 2013 CouldHll. All rights reserved.</rights>
     <link rel="self" href="http://www.couldhll.com/CouldHll/CouldHll.atom"></link>
     <docset:publisherName>CouldHll</docset:publisherName>
     <docset:publisherID>com.couldhll.documentation</docset:publisherID>
-    <updated>2013-10-23T14:08:39+08:00</updated>
+    <updated>2013-12-09T16:55:09+08:00</updated>
     <entry>
-        <id>tag:www.couldhll.com,2013-10-23:com.couldhll.TAG/1.0.0</id>
+        <id>tag:www.couldhll.com,2013-12-09:com.couldhll.TAG/1.0.0</id>
         <title type="text">TAG Documentation</title>
-        <updated>2013-10-23T14:08:39+08:00</updated>
+        <updated>2013-12-09T16:55:09+08:00</updated>
         <content type="text">TAG Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://www.couldhll.com/CouldHll/com.couldhll.TAG-1.0.xar" length="5019071"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://www.couldhll.com/CouldHll/com.couldhll.TAG-1.0.xar" length="4588879"></link>
         <docset:identifier>com.couldhll.TAG</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>

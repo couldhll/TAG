@@ -1,501 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFFacebookUtils.html">
+	<File path="Classes/SSEverNoteUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFFacebookUtils</TokenIdentifier>
-			<Abstract type="html">Provides utility functions for working with Facebook in a Parse application.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>
 			
 			<NodeRef refid="164"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/session</TokenIdentifier>
-			<Abstract type="html">Gets the Facebook session for the current user.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (FBSession *)session</Declaration>
+			<Declaration>@property (nonatomic, retain) SSEverNoteCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/session</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeWithApplicationId:</TokenIdentifier>
-			<Abstract type="html">Deprecated. Please call [PFFacebookUtils initializeFacebook] instead.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (void)initializeWithApplicationId:(NSString *)appId</Declaration>
+			<Declaration>@property (nonatomic, retain) SSEverNoteCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/initializeWithApplicationId:</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeWithApplicationId:urlSchemeSuffix:</TokenIdentifier>
-			<Abstract type="html">Deprecated. Please call [PFFacebookUtils initializeFacebookWithUrlSchemeSuffix:] instead.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID
+he unique numeric identifier for the account, which will not change for the lifetime of the account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (void)initializeWithApplicationId:(NSString *)appId urlSchemeSuffix:(NSString *)urlSchemeSuffix</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
 			
 			
-			<Anchor>//api/name/initializeWithApplicationId:urlSchemeSuffix:</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeFacebook</TokenIdentifier>
-			<Abstract type="html">Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
-You must provide your Facebook application ID as the value for FacebookAppID in your bundle&apos;s plist file as
-described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID
+he unique numeric identifier for the account, which will not change for the lifetime of the account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (void)initializeFacebook</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
 			
 			
-			<Anchor>//api/name/initializeFacebook</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeFacebookWithUrlShemeSuffix:</TokenIdentifier>
-			<Abstract type="html">Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in Parse.
-You must provide your Facebook application ID as the value for FacebookAppID in your bundle&apos;s plist file as
-described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setUsername:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称
+The name that uniquely identifies a single user account.
+This name may be presented by the user, along with their password, to log into their account.
+May only contain a-z, 0-9, or &apos;-&apos;, and may not start or end with the &apos;-&apos;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (void)initializeFacebookWithUrlShemeSuffix:(NSString *)urlSchemeSuffix</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/username</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称
+The name that uniquely identifies a single user account.
+This name may be presented by the user, along with their password, to log into their account.
+May only contain a-z, 0-9, or &apos;-&apos;, and may not start or end with the &apos;-&apos;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setEmail:</TokenIdentifier>
+			<Abstract type="html">	@brief	电子邮箱
+The email address registered for the user. Must comply with RFC 2821 and RFC 2822.
+For privacy reasons, this field may not be populated when a User is retrieved via a call to UserStore.getUser().</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/email</TokenIdentifier>
+			<Abstract type="html">	@brief	电子邮箱
+The email address registered for the user. Must comply with RFC 2821 and RFC 2822.
+For privacy reasons, this field may not be populated when a User is retrieved via a call to UserStore.getUser().</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	名称
+The printable name of the user, which may be a combination of given and family names.
+This is used instead of separate &quot;first&quot; and &quot;last&quot; names due to variations in international name format/order.
+May not start or end with a whitespace character.
+May contain any character but carriage return or newline (Unicode classes Zl and Zp).</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	名称
+The printable name of the user, which may be a combination of given and family names.
+This is used instead of separate &quot;first&quot; and &quot;last&quot; names due to variations in international name format/order.
+May not start or end with a whitespace character.
+May contain any character but carriage return or newline (Unicode classes Zl and Zp).</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setTimezone:</TokenIdentifier>
+			<Abstract type="html">	@brief	时区
+The zone ID for the user&apos;s default location. If present,
+this may be used to localize the display of any timestamp for which no other timezone is available.
+The format must be encoded as a standard zone ID such as &quot;America/Los_Angeles&quot; or &quot;GMT+08:00&quot;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timezone</Declaration>
+			
+			
+			<Anchor>//api/name/timezone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/timezone</TokenIdentifier>
+			<Abstract type="html">	@brief	时区
+The zone ID for the user&apos;s default location. If present,
+this may be used to localize the display of any timestamp for which no other timezone is available.
+The format must be encoded as a standard zone ID such as &quot;America/Los_Angeles&quot; or &quot;GMT+08:00&quot;</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *timezone</Declaration>
+			
+			
+			<Anchor>//api/name/timezone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setPrivilege:</TokenIdentifier>
+			<Abstract type="html">	@brief	权限
+The level of access permitted for the user.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePrivilegeLevel privilege</Declaration>
+			
+			
+			<Anchor>//api/name/privilege</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/privilege</TokenIdentifier>
+			<Abstract type="html">	@brief	权限
+The level of access permitted for the user.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePrivilegeLevel privilege</Declaration>
+			
+			
+			<Anchor>//api/name/privilege</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setCreated:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间
+The date and time when this user account was created in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/created</TokenIdentifier>
+			<Abstract type="html">	@brief	创建时间
+The date and time when this user account was created in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setUpdated:</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一次修改时间
+The date and time when this user account was last modified in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
+			
+			
+			<Anchor>//api/name/updated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/updated</TokenIdentifier>
+			<Abstract type="html">	@brief	最近一次修改时间
+The date and time when this user account was last modified in the service.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
+			
+			
+			<Anchor>//api/name/updated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setDeleted:</TokenIdentifier>
+			<Abstract type="html">	@brief	删除时间
+If the account has been deleted from the system (e.g. as the result of a legal request by the user),
+the date and time of the deletion will be represented here. If not, this value will not be set.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/deleted</TokenIdentifier>
+			<Abstract type="html">	@brief	删除时间
+If the account has been deleted from the system (e.g. as the result of a legal request by the user),
+the date and time of the deletion will be represented here. If not, this value will not be set.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setActive:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否有效
+If the user account is available for login and synchronization, this flag will be set to true.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/active</TokenIdentifier>
+			<Abstract type="html">	@brief	是否有效
+If the user account is available for login and synchronization, this flag will be set to true.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setShardId:</TokenIdentifier>
+			<Abstract type="html">	@brief	此字段已过时</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shardId</Declaration>
+			
+			
+			<Anchor>//api/name/shardId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/shardId</TokenIdentifier>
+			<Abstract type="html">	@brief	此字段已过时</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *shardId</Declaration>
+			
+			
+			<Anchor>//api/name/shardId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setAttributes:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户属性对象
+If present, this will contain a list of the attributes for this user account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteUserAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/attributes</TokenIdentifier>
+			<Abstract type="html">	@brief	用户属性对象
+If present, this will contain a list of the attributes for this user account.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteUserAttributes *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setAccounting:</TokenIdentifier>
+			<Abstract type="html">	@brief	簿记用户的订阅信息
+Bookkeeping information for the user&apos;s subscription.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteAccounting *accounting</Declaration>
+			
+			
+			<Anchor>//api/name/accounting</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/accounting</TokenIdentifier>
+			<Abstract type="html">	@brief	簿记用户的订阅信息
+Bookkeeping information for the user&apos;s subscription.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteAccounting *accounting</Declaration>
+			
+			
+			<Anchor>//api/name/accounting</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/setPremiumInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	地价信息
+If present, this will contain a set of commerce information relating to the user&apos;s premium service level.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumInfo *premiumInfo</Declaration>
+			
+			
+			<Anchor>//api/name/premiumInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteUser/premiumInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	地价信息
+If present, this will contain a set of commerce information relating to the user&apos;s premium service level.</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumInfo *premiumInfo</Declaration>
+			
+			
+			<Anchor>//api/name/premiumInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteUser *)userWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>urlSchemeSuffix</Name>
-					<Abstract type="html">The URL suffix for this application - used when multiple applications with the same
-Facebook application ID may be on the same device.</Abstract>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据并转化为用户信息</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/initializeFacebookWithUrlShemeSuffix:</Anchor>
+			<Anchor>//api/name/parse:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/isLinkedWithUser:</TokenIdentifier>
-			<Abstract type="html">Whether the user has their account linked to Facebook.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSEverNoteUser.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)isLinkedWithUser:(PFUser *)user</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to check for a facebook link. The user must be logged in on this device.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">True if the user has their account linked to Facebook.</Abstract></ReturnValue>
-			<Anchor>//api/name/isLinkedWithUser:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithPermissions:block:</TokenIdentifier>
-			<Abstract type="html">Logs in a user using Facebook. This method delegates to the Facebook SDK to authenticate
-the user, and then automatically logs in (or creates, in the case where it is a new user)
-a PFUser.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
 			
-			<Declaration>+ (void)logInWithPermissions:(NSArray *)permissions block:(PFUserResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
-the Facebook instance.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature:
-(PFUser user, NSError error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/logInWithPermissions:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithPermissions:target:selector:</TokenIdentifier>
-			<Abstract type="html">Logs in a user using Facebook. This method delegates to the Facebook SDK to authenticate
-the user, and then automatically logs in (or creates, in the case where it is a new user)
-a PFUser. The selector for the callback should look like: (PFUser )user error:(NSError *)error</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)logInWithPermissions:(NSArray *)permissions target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
-the Facebook instance.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/logInWithPermissions:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithFacebookId:accessToken:expirationDate:block:</TokenIdentifier>
-			<Abstract type="html">Logs in a user using Facebook. Allows you to handle user login to Facebook, then provide authentication
-data to log in (or create, in the case where it is a new user) the PFUser.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)logInWithFacebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate block:(PFUserResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>facebookId</Name>
-					<Abstract type="html">The id of the Facebook user being linked</Abstract>
-				</Parameter><Parameter>
-					<Name>accessToken</Name>
-					<Abstract type="html">The access token for the user&apos;s session</Abstract>
-				</Parameter><Parameter>
-					<Name>expirationDate</Name>
-					<Abstract type="html">The expiration date for the access token</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature:
-(PFUser user, NSError error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/logInWithFacebookId:accessToken:expirationDate:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInWithFacebookId:accessToken:expirationDate:target:selector:</TokenIdentifier>
-			<Abstract type="html">Logs in a user using Facebook. Allows you to handle user login to Facebook, then provide authentication
-data to log in (or create, in the case where it is a new user) the PFUser.
-The selector for the callback should look like: (PFUser )user error:(NSError )error</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)logInWithFacebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>facebookId</Name>
-					<Abstract type="html">The id of the Facebook user being linked</Abstract>
-				</Parameter><Parameter>
-					<Name>accessToken</Name>
-					<Abstract type="html">The access token for the user&apos;s session</Abstract>
-				</Parameter><Parameter>
-					<Name>expirationDate</Name>
-					<Abstract type="html">The expiration date for the access token</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/logInWithFacebookId:accessToken:expirationDate:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:</TokenIdentifier>
-			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
-the user, and then automatically links the account to the PFUser.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to link to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
-the Facebook instance.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/linkUser:permissions:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:block:</TokenIdentifier>
-			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
-the user, and then automatically links the account to the PFUser.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions block:(PFBooleanResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to link to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
-the Facebook instance.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature:
-(BOOL success, NSError error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/linkUser:permissions:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:permissions:target:selector:</TokenIdentifier>
-			<Abstract type="html">Links Facebook to an existing PFUser. This method delegates to the Facebook SDK to authenticate
-the user, and then automatically links the account to the PFUser.
-The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)linkUser:(PFUser *)user permissions:(NSArray *)permissions target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to link to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The permissions required for Facebook log in. This passed to the authorize method on
-the Facebook instance.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/linkUser:permissions:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:facebookId:accessToken:expirationDate:block:</TokenIdentifier>
-			<Abstract type="html">Links Facebook to an existing PFUser. Allows you to handle user login to Facebook, then provide authentication
-data to link the account to the PFUser.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)linkUser:(PFUser *)user facebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate block:(PFBooleanResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to link to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>facebookId</Name>
-					<Abstract type="html">The id of the Facebook user being linked</Abstract>
-				</Parameter><Parameter>
-					<Name>accessToken</Name>
-					<Abstract type="html">The access token for the user&apos;s session</Abstract>
-				</Parameter><Parameter>
-					<Name>expirationDate</Name>
-					<Abstract type="html">The expiration date for the access token</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature:
-(BOOL success, NSError error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/linkUser:facebookId:accessToken:expirationDate:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUser:facebookId:accessToken:expirationDate:target:selector:</TokenIdentifier>
-			<Abstract type="html">Links Facebook to an existing PFUser. Allows you to handle user login to Facebook, then provide authentication
-data to link the account to the PFUser.
-The selector for the callback should look like: (NSNumber )result error:(NSError )error</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)linkUser:(PFUser *)user facebookId:(NSString *)facebookId accessToken:(NSString *)accessToken expirationDate:(NSDate *)expirationDate target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to link to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>facebookId</Name>
-					<Abstract type="html">The id of the Facebook user being linked</Abstract>
-				</Parameter><Parameter>
-					<Name>accessToken</Name>
-					<Abstract type="html">The access token for the user&apos;s session</Abstract>
-				</Parameter><Parameter>
-					<Name>expirationDate</Name>
-					<Abstract type="html">The expiration date for the access token</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/linkUser:facebookId:accessToken:expirationDate:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUser:</TokenIdentifier>
-			<Abstract type="html">Unlinks the PFUser from a Facebook account.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to unlink from Facebook.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
-			<Anchor>//api/name/unlinkUser:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUser:error:</TokenIdentifier>
-			<Abstract type="html">Unlinks the PFUser from a Facebook account.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)unlinkUser:(PFUser *)user error:(NSError **)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to unlink from Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">Error object to set on error.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Returns true if the unlink was successful.</Abstract></ReturnValue>
-			<Anchor>//api/name/unlinkUser:error:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to unlink from Facebook.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/unlinkUserInBackground:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:block:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user block:(PFBooleanResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to unlink from Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/unlinkUserInBackground:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:target:selector:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronous request to unlink a user from a Facebook account.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to unlink from Facebook</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/unlinkUserInBackground:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/reauthorizeUser:withPublishPermissions:audience:block:</TokenIdentifier>
-			<Abstract type="html">Requests new Facebook publish permissions for the given user.  This may prompt the user to
-reauthorize the application. The user will be saved as part of this operation.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)reauthorizeUser:(PFUser *)user withPublishPermissions:(NSArray *)permissions audience:(FBSessionDefaultAudience)audience block:(PFBooleanResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to request new permissions for.  The user must be linked to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The new publishing permissions to request.</Abstract>
-				</Parameter><Parameter>
-					<Name>audience</Name>
-					<Abstract type="html">The default audience for publishing permissions to request.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/reauthorizeUser:withPublishPermissions:audience:block:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/reauthorizeUser:withPublishPermissions:audience:target:selector:</TokenIdentifier>
-			<Abstract type="html">Requests new Facebook publish permissions for the given user.  This may prompt the user to
-reauthorize the application. The user will be saved as part of this operation.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (void)reauthorizeUser:(PFUser *)user withPublishPermissions:(NSArray *)permissions audience:(FBSessionDefaultAudience)audience target:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">User to request new permissions for.  The user must be linked to Facebook.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">The new publishing permissions to request.</Abstract>
-				</Parameter><Parameter>
-					<Name>audience</Name>
-					<Abstract type="html">The default audience for publishing permissions to request.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/reauthorizeUser:withPublishPermissions:audience:target:selector:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/handleOpenURL:</TokenIdentifier>
-			<Abstract type="html">Handles URLs being opened by your AppDelegate. Invoke and return this from application:handleOpenURL:
-or application:openURL:sourceApplication:annotation in your AppDelegate.</Abstract>
-			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)handleOpenURL:(NSURL *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">URL being opened by your application.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">True if Facebook will handle this URL.</Abstract></ReturnValue>
-			<Anchor>//api/name/handleOpenURL:</Anchor>
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

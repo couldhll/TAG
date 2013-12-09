@@ -1,226 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMImageLoader.html">
+	<File path="Classes/CMImageHeaderTableView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMImageLoader</TokenIdentifier>
-			<Abstract type="html">	@brief	图片加载器，带有图片加载状态，由ImageCacheManager管理分发。</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMImageHeaderTableView</TokenIdentifier>
+			<Abstract type="html">	@brief	带图片头部的表格视图</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>
 			
 			<NodeRef refid="44"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setContent:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片数据</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格委托</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain, readonly) UIImage *content</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/content</TokenIdentifier>
-			<Abstract type="html">	@brief	照片数据</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	表格委托</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain, readonly) UIImage *content</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setState:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片状态</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setDataSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格事件</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMImageLoaderState state</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDataSource&gt; dataSource</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/dataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/state</TokenIdentifier>
-			<Abstract type="html">	@brief	照片状态</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/dataSource</TokenIdentifier>
+			<Abstract type="html">	@brief	表格事件</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMImageLoaderState state</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDataSource&gt; dataSource</Declaration>
 			
 			
-			<Anchor>//api/name/state</Anchor>
+			<Anchor>//api/name/dataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setSourceType:</TokenIdentifier>
-			<Abstract type="html">	@brief	来源类型</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setHeaderImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	表头图片</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMImageLoaderSourceType sourceType</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *headerImage</Declaration>
 			
 			
-			<Anchor>//api/name/sourceType</Anchor>
+			<Anchor>//api/name/headerImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/sourceType</TokenIdentifier>
-			<Abstract type="html">	@brief	来源类型</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/headerImage</TokenIdentifier>
+			<Abstract type="html">	@brief	表头图片</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) CMImageLoaderSourceType sourceType</Declaration>
+			<Declaration>@property (nonatomic, retain) UIImage *headerImage</Declaration>
 			
 			
-			<Anchor>//api/name/sourceType</Anchor>
+			<Anchor>//api/name/headerImage</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/setTag:</TokenIdentifier>
-			<Abstract type="html">	@brief	标志</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setHeaderHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	表头高度</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *tag</Declaration>
+			<Declaration>@property (nonatomic) CGFloat headerHeight</Declaration>
 			
 			
-			<Anchor>//api/name/tag</Anchor>
+			<Anchor>//api/name/headerHeight</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageLoader/tag</TokenIdentifier>
-			<Abstract type="html">	@brief	标志</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/headerHeight</TokenIdentifier>
+			<Abstract type="html">	@brief	表头高度</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *tag</Declaration>
+			<Declaration>@property (nonatomic) CGFloat headerHeight</Declaration>
 			
 			
-			<Anchor>//api/name/tag</Anchor>
+			<Anchor>//api/name/headerHeight</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithClipSize:clipType:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setTableBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格背景颜色</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithClipSize:(CGSize)clipSize clipType:(CMImageClipType)clipType</Declaration>
+			<Declaration>@property (nonatomic, retain) UIColor *tableBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/tableBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/tableBackgroundColor</TokenIdentifier>
+			<Abstract type="html">	@brief	表格背景颜色</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIColor *tableBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/tableBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setTableBackgroundImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	表格背景图片</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *tableBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/tableBackgroundImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/tableBackgroundImage</TokenIdentifier>
+			<Abstract type="html">	@brief	表格背景图片</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *tableBackgroundImage</Declaration>
+			
+			
+			<Anchor>//api/name/tableBackgroundImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setSeparatorColor:</TokenIdentifier>
+			<Abstract type="html">	@brief	分隔线颜色</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIColor *separatorColor</Declaration>
+			
+			
+			<Anchor>//api/name/separatorColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/separatorColor</TokenIdentifier>
+			<Abstract type="html">	@brief	分隔线颜色</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIColor *separatorColor</Declaration>
+			
+			
+			<Anchor>//api/name/separatorColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setSeparatorStyle:</TokenIdentifier>
+			<Abstract type="html">	@brief	分隔线样式</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) UITableViewCellSeparatorStyle separatorStyle</Declaration>
+			
+			
+			<Anchor>//api/name/separatorStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/separatorStyle</TokenIdentifier>
+			<Abstract type="html">	@brief	分隔线样式</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) UITableViewCellSeparatorStyle separatorStyle</Declaration>
+			
+			
+			<Anchor>//api/name/separatorStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setRowHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	行高度</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat rowHeight</Declaration>
+			
+			
+			<Anchor>//api/name/rowHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/rowHeight</TokenIdentifier>
+			<Abstract type="html">	@brief	行高度</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat rowHeight</Declaration>
+			
+			
+			<Anchor>//api/name/rowHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/addHeaderSubview:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加表头子视图</Abstract>
+			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)addHeaderSubview:(UIView *)subview</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>clipSize</Name>
-					<Abstract type="html">裁剪尺寸</Abstract>
-				</Parameter><Parameter>
-					<Name>clipType</Name>
-					<Abstract type="html">裁剪类型</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithClipSize:clipType:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithCornerRadius:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCornerRadius:(CGFloat)cornerRadius</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cornerRadius</Name>
-					<Abstract type="html">圆角</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCornerRadius:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithCornerRadius:size:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCornerRadius:(CGFloat)cornerRadius size:(CGSize)size</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cornerRadius</Name>
-					<Abstract type="html">圆角</Abstract>
-				</Parameter><Parameter>
-					<Name>size</Name>
-					<Abstract type="html">实际显示尺寸</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCornerRadius:size:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/initWithClipSize:clipType:cornerRadius:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化图片加载器</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithClipSize:(CGSize)clipSize clipType:(CMImageClipType)clipType cornerRadius:(CGFloat)cornerRadius</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>clipSize</Name>
-					<Abstract type="html">裁剪尺寸</Abstract>
-				</Parameter><Parameter>
-					<Name>clipType</Name>
-					<Abstract type="html">裁剪类型</Abstract>
-				</Parameter><Parameter>
-					<Name>cornerRadius</Name>
-					<Abstract type="html">圆角</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">加载器</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithClipSize:clipType:cornerRadius:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载网络图片对象</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadImageByUrl:(NSString *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">图片URL</Abstract>
+					<Name>subview</Name>
+					<Abstract type="html">子视图</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/loadImageByUrl:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByFilePath:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载本地图片对象</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadImageByFilePath:(NSString *)filePath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>filePath</Name>
-					<Abstract type="html">图片路径</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadImageByFilePath:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageLoader/loadImageByCache:</TokenIdentifier>
-			<Abstract type="html">	@brief	加载缓存图片对象</Abstract>
-			<DeclaredIn>CMImageLoader.h</DeclaredIn>			
-			
-			<Declaration>- (void)loadImageByCache:(UIImage *)image</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">图片对象</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadImageByCache:</Anchor>
+			<Anchor>//api/name/addHeaderSubview:</Anchor>
 		</Token>
 		
 	</File>

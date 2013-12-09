@@ -1,58 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMHTableViewItem.html">
+	<File path="Classes/CMHTableView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMHTableViewItem</TokenIdentifier>
-			<Abstract type="html">	@brief	水平排版表格列表项视图</Abstract>
-			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMHTableView</TokenIdentifier>
+			<Abstract type="html">	@brief	水平排版表格</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>
 			
 			<NodeRef refid="41"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTableViewItem/setReuseIdentifier:</TokenIdentifier>
-			<Abstract type="html">	@brief	复用标识</Abstract>
-			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/setDataSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	数据源</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;CMHTableViewDataSource&gt; dataSource</Declaration>
 			
 			
-			<Anchor>//api/name/reuseIdentifier</Anchor>
+			<Anchor>//api/name/dataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTableViewItem/reuseIdentifier</TokenIdentifier>
-			<Abstract type="html">	@brief	复用标识</Abstract>
-			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableView/dataSource</TokenIdentifier>
+			<Abstract type="html">	@brief	数据源</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *reuseIdentifier</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;CMHTableViewDataSource&gt; dataSource</Declaration>
 			
 			
-			<Anchor>//api/name/reuseIdentifier</Anchor>
+			<Anchor>//api/name/dataSource</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTableViewItem/setIndexPath:</TokenIdentifier>
-			<Abstract type="html">	@brief	位置索引</Abstract>
-			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	委托</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSIndexPath *indexPath</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;CMHTableViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/indexPath</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTableViewItem/indexPath</TokenIdentifier>
-			<Abstract type="html">	@brief	位置索引</Abstract>
-			<DeclaredIn>CMHTableViewItem.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableView/delegate</TokenIdentifier>
+			<Abstract type="html">	@brief	委托</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSIndexPath *indexPath</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;CMHTableViewDelegate&gt; delegate</Declaration>
 			
 			
-			<Anchor>//api/name/indexPath</Anchor>
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/setItemWidth:</TokenIdentifier>
+			<Abstract type="html">	@brief	列表项宽度</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat itemWidth</Declaration>
+			
+			
+			<Anchor>//api/name/itemWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableView/itemWidth</TokenIdentifier>
+			<Abstract type="html">	@brief	列表项宽度</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGFloat itemWidth</Declaration>
+			
+			
+			<Anchor>//api/name/itemWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/setShowsHorizontalScrollIndicator:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示水平方向滚动条</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL showsHorizontalScrollIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/showsHorizontalScrollIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTableView/showsHorizontalScrollIndicator</TokenIdentifier>
+			<Abstract type="html">	@brief	显示水平方向滚动条</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL showsHorizontalScrollIndicator</Declaration>
+			
+			
+			<Anchor>//api/name/showsHorizontalScrollIndicator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/reloadData</TokenIdentifier>
+			<Abstract type="html">	@brief	重新刷新数据</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadData</Declaration>
+			
+			
+			<Anchor>//api/name/reloadData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTableView/dequeueReusableItemWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据标识值获取可用的子项视图</Abstract>
+			<DeclaredIn>CMHTableView.h</DeclaredIn>			
+			
+			<Declaration>- (UIView&lt;ICMHTableViewItem&gt; *)dequeueReusableItemWithIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">复用标识</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">子项视图对象</Abstract></ReturnValue>
+			<Anchor>//api/name/dequeueReusableItemWithIdentifier:</Anchor>
 		</Token>
 		
 	</File>

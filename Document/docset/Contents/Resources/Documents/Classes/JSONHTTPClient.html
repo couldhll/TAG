@@ -42,6 +42,12 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
+	<option value="//api/name/JSONFromURLWithString:method:params:orBodyData:headers:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ JSONFromURLWithString:method:params:orBodyData:headers:completion:</option>
+	
+	<option value="//api/name/JSONFromURLWithString:method:params:orBodyString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ JSONFromURLWithString:method:params:orBodyString:completion:</option>
+	
+	<option value="//api/name/JSONFromURLWithString:method:params:orBodyString:headers:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ JSONFromURLWithString:method:params:orBodyString:headers:completion:</option>
+	
 	<option value="//api/name/getJSONFromURLWithString:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getJSONFromURLWithString:completion:</option>
 	
 	<option value="//api/name/getJSONFromURLWithString:params:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getJSONFromURLWithString:params:completion:</option>
@@ -95,6 +101,12 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONFromURLWithString:method:params:orBodyData:headers:completion:">JSONFromURLWithString:method:params:orBodyData:headers:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONFromURLWithString:method:params:orBodyString:completion:">JSONFromURLWithString:method:params:orBodyString:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/JSONFromURLWithString:method:params:orBodyString:headers:completion:">JSONFromURLWithString:method:params:orBodyString:headers:completion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getJSONFromURLWithString:completion:">getJSONFromURLWithString:completion:</a></span></li>
 	
@@ -246,6 +258,27 @@ and &ldquo;application/x-www-form-urlencoded&rdquo;</p></span>
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/JSONFromURLWithString:method:params:orBodyString:completion:">+&nbsp;JSONFromURLWithString:method:params:orBodyString:completion:</a></code>
+		<span class="tooltip"><p>Makes a request to the given URL address and fetches a JSON response.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONFromURLWithString:method:params:orBodyString:headers:completion:">+&nbsp;JSONFromURLWithString:method:params:orBodyString:headers:completion:</a></code>
+		<span class="tooltip"><p>Makes a request to the given URL address and fetches a JSON response.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/JSONFromURLWithString:method:params:orBodyData:headers:completion:">+&nbsp;JSONFromURLWithString:method:params:orBodyData:headers:completion:</a></code>
+		<span class="tooltip"><p>Makes a request to the given URL address and fetches a JSON response.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/postJSONFromURLWithString:params:completion:">+&nbsp;postJSONFromURLWithString:params:completion:</a></code>
 		<span class="tooltip"><p>Makes POST request to the given URL address and fetches a JSON response. Sends the bodyString param as the POST request body.</p></span>
 	</span>
@@ -279,6 +312,214 @@ and &ldquo;application/x-www-form-urlencoded&rdquo;</p></span>
 					<div class="section section-methods">
 						<a title="Class Methods" name="class_methods"></a>
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONFromURLWithString:method:params:orBodyData:headers:completion:" title="JSONFromURLWithString:method:params:orBodyData:headers:completion:"></a>
+	<h3 class="subsubtitle method-title">JSONFromURLWithString:method:params:orBodyData:headers:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a request to the given URL address and fetches a JSON response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)JSONFromURLWithString:(NSString *)<em>urlString</em> method:(NSString *)<em>method</em> params:(NSDictionary *)<em>params</em> orBodyData:(NSData *)<em>bodyData</em> headers:(NSDictionary *)<em>headers</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>the method of the request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>a dictionary of key / value pairs to be send as variables to the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyData</em></dt>
+			<dd><p>the body of the POST request as raw binary data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>the headers to set on the request &ndash; overrides those in <a href="#//api/name/requestHeaders">requestHeaders</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONFromURLWithString:method:params:orBodyString:completion:" title="JSONFromURLWithString:method:params:orBodyString:completion:"></a>
+	<h3 class="subsubtitle method-title">JSONFromURLWithString:method:params:orBodyString:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a request to the given URL address and fetches a JSON response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)JSONFromURLWithString:(NSString *)<em>urlString</em> method:(NSString *)<em>method</em> params:(NSDictionary *)<em>params</em> orBodyString:(NSString *)<em>bodyString</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>the method of the request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>a dictionary of key / value pairs to be send as variables to the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyString</em></dt>
+			<dd><p>the body of the POST request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/JSONFromURLWithString:method:params:orBodyString:headers:completion:" title="JSONFromURLWithString:method:params:orBodyString:headers:completion:"></a>
+	<h3 class="subsubtitle method-title">JSONFromURLWithString:method:params:orBodyString:headers:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Makes a request to the given URL address and fetches a JSON response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)JSONFromURLWithString:(NSString *)<em>urlString</em> method:(NSString *)<em>method</em> params:(NSDictionary *)<em>params</em> orBodyString:(NSString *)<em>bodyString</em> headers:(NSDictionary *)<em>headers</em> completion:(JSONObjectBlock)<em>completeBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>urlString</em></dt>
+			<dd><p>the URL as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>the method of the request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>a dictionary of key / value pairs to be send as variables to the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyString</em></dt>
+			<dd><p>the body of the POST request as a string</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>the headers to set on the request &ndash; overrides those in <a href="#//api/name/requestHeaders">requestHeaders</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completeBlock</em></dt>
+			<dd><p>JSONObjectBlock to execute upon completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONHTTPClient.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/getJSONFromURLWithString:completion:" title="getJSONFromURLWithString:completion:"></a>
@@ -846,7 +1087,7 @@ and &ldquo;application/x-www-form-urlencoded&rdquo;</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-12-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

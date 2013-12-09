@@ -1,36 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQBaseReq.html">
+	<File path="Classes/SSKaiXinCareer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQBaseReq</TokenIdentifier>
-			<Abstract type="html">QQApi请求消息基类</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinCareer</TokenIdentifier>
+			<Abstract type="html">	@brief	职业信息</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>
 			
 			<NodeRef refid="208"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQBaseReq/setType:</TokenIdentifier>
-			<Abstract type="html">请求消息类型，参见\ref QQApiInterfaceReqType</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) int type</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQBaseReq/type</TokenIdentifier>
-			<Abstract type="html">请求消息类型，参见\ref QQApiInterfaceReqType</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) int type</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setCompany:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *company</Declaration>
+			
+			
+			<Anchor>//api/name/company</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/company</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *company</Declaration>
+			
+			
+			<Anchor>//api/name/company</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setDept:</TokenIdentifier>
+			<Abstract type="html">	@brief	所在部门</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *dept</Declaration>
+			
+			
+			<Anchor>//api/name/dept</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/dept</TokenIdentifier>
+			<Abstract type="html">	@brief	所在部门</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *dept</Declaration>
+			
+			
+			<Anchor>//api/name/dept</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setBeginyear:</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作开始年份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *beginyear</Declaration>
+			
+			
+			<Anchor>//api/name/beginyear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/beginyear</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作开始年份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *beginyear</Declaration>
+			
+			
+			<Anchor>//api/name/beginyear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setBeginmonth:</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作开始月份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *beginmonth</Declaration>
+			
+			
+			<Anchor>//api/name/beginmonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/beginmonth</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作开始月份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *beginmonth</Declaration>
+			
+			
+			<Anchor>//api/name/beginmonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setEndyear:</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作结束年份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endyear</Declaration>
+			
+			
+			<Anchor>//api/name/endyear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/endyear</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作结束年份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endyear</Declaration>
+			
+			
+			<Anchor>//api/name/endyear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCareer/setEndmonth:</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作结束月份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endmonth</Declaration>
+			
+			
+			<Anchor>//api/name/endmonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCareer/endmonth</TokenIdentifier>
+			<Abstract type="html">	@brief	当前工作结束月份</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *endmonth</Declaration>
+			
+			
+			<Anchor>//api/name/endmonth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSKaiXinCareer/careerWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建职业信息</Abstract>
+			<DeclaredIn>SSKaiXinCareer.h</DeclaredIn>			
+			
+			<Declaration>+ (SSKaiXinCareer *)careerWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">职业信息</Abstract></ReturnValue>
+			<Anchor>//api/name/careerWithResponse:</Anchor>
 		</Token>
 		
 	</File>

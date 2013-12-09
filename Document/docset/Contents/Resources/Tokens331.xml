@@ -1,118 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSRenRenWork.html">
+	<File path="Classes/TencentBaseMessageObj.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenWork</TokenIdentifier>
-			<Abstract type="html">	@brief	工作</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentBaseMessageObj</TokenIdentifier>
+			<Abstract type="html">\brief 消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
 			
 			<NodeRef refid="331"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	公司名称</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setNVersion:</TokenIdentifier>
+			<Abstract type="html">消息类型</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, assign) NSInteger nVersion</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/nVersion</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/name</TokenIdentifier>
-			<Abstract type="html">	@brief	公司名称</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/nVersion</TokenIdentifier>
+			<Abstract type="html">消息类型</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, assign) NSInteger nVersion</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/nVersion</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	入职日期</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setSName:</TokenIdentifier>
+			<Abstract type="html">消息描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *time</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sName</Declaration>
 			
 			
-			<Anchor>//api/name/time</Anchor>
+			<Anchor>//api/name/sName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/time</TokenIdentifier>
-			<Abstract type="html">	@brief	入职日期</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/sName</TokenIdentifier>
+			<Abstract type="html">消息描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *time</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sName</Declaration>
 			
 			
-			<Anchor>//api/name/time</Anchor>
+			<Anchor>//api/name/sName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setIndustry:</TokenIdentifier>
-			<Abstract type="html">	@brief	行业</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setDictExpandInfo:</TokenIdentifier>
+			<Abstract type="html">消息的扩展信息 主要是可以用来进行一些请求消息体的描述 譬如图片要求的width height 文字的关键字什么的, 也可以不用填写</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSRenRenIndustry *industry</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *dictExpandInfo</Declaration>
 			
 			
-			<Anchor>//api/name/industry</Anchor>
+			<Anchor>//api/name/dictExpandInfo</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/industry</TokenIdentifier>
-			<Abstract type="html">	@brief	行业</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/dictExpandInfo</TokenIdentifier>
+			<Abstract type="html">消息的扩展信息 主要是可以用来进行一些请求消息体的描述 譬如图片要求的width height 文字的关键字什么的, 也可以不用填写</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSRenRenIndustry *industry</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *dictExpandInfo</Declaration>
 			
 			
-			<Anchor>//api/name/industry</Anchor>
+			<Anchor>//api/name/dictExpandInfo</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenWork/setJob:</TokenIdentifier>
-			<Abstract type="html">	@brief	职位</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/isVaild</TokenIdentifier>
+			<Abstract type="html">消息是否有效</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSRenRenJob *job</Declaration>
-			
-			
-			<Anchor>//api/name/job</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenWork/job</TokenIdentifier>
-			<Abstract type="html">	@brief	职位</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSRenRenJob *job</Declaration>
+			<Declaration>- (BOOL)isVaild</Declaration>
 			
 			
-			<Anchor>//api/name/job</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenWork/workWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建工作信息</Abstract>
-			<DeclaredIn>SSRenRenWork.h</DeclaredIn>			
-			
-			<Declaration>+ (SSRenRenWork *)workWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">工作信息</Abstract></ReturnValue>
-			<Anchor>//api/name/workWithResponse:</Anchor>
+			<Anchor>//api/name/isVaild</Anchor>
 		</Token>
 		
 	</File>

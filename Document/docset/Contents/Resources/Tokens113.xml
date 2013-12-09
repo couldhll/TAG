@@ -1,64 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GAITrackedViewController.html">
+	<File path="Classes/QQApi.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GAITrackedViewController</TokenIdentifier>
-			<Abstract type="html">Extends UIViewController to generate Google Analytics appview calls
-whenever the view appears; this is done by overriding the viewDidAppear:
-method. The screen name must be set for any tracking calls to be made.</Abstract>
-			<DeclaredIn>GAITrackedViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApi</TokenIdentifier>
+			<Abstract type="html">\brief QQApi主要接口类。.</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="113"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GAITrackedViewController/setTracker:</TokenIdentifier>
-			<Abstract type="html">The tracker on which view tracking calls are be made, or nil, in which case
-[GAI defaultTracker] will be used.</Abstract>
-			<DeclaredIn>GAITrackedViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/sendMessage:</TokenIdentifier>
+			<Abstract type="html">向QQ App发送消息</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;GAITracker&gt; tracker</Declaration>
+			<Declaration>+ (int)sendMessage:(QQApiMessage *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">待发送的消息对象
+
+@return
+成功将消息发送给QQ是返回TRUE,否则返回FALSE</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/tracker</Anchor>
+			<Anchor>//api/name/sendMessage:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GAITrackedViewController/tracker</TokenIdentifier>
-			<Abstract type="html">The tracker on which view tracking calls are be made, or nil, in which case
-[GAI defaultTracker] will be used.</Abstract>
-			<DeclaredIn>GAITrackedViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/handleOpenURL:sourceApplication:annotation:</TokenIdentifier>
+			<Abstract type="html">把URL反序列化成&lt;code&gt;QQApiMessage&lt;/code&gt;对象，在AppDelegate的handleOpenURL中调用
+@return
+     如果这是来自QQ的调用，一个QQApiMessage实例将被返回，否则返回nil。
+@note
+     App应通过&lt;code&gt;QQApiMessage.type&lt;/code&gt;来判断具体消息类型以作出进一步的处理。</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;GAITracker&gt; tracker</Declaration>
+			<Declaration>+ (QQApiMessage *)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)source annotation:(id)annotation</Declaration>
 			
 			
-			<Anchor>//api/name/tracker</Anchor>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GAITrackedViewController/setScreenName:</TokenIdentifier>
-			<Abstract type="html">The screen name, for purposes of Google Analytics tracking. If this is nil,
-no tracking calls will be made.</Abstract>
-			<DeclaredIn>GAITrackedViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">QQApi#handleOpenURL:sourceApplication:annotation:</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *screenName</Declaration>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/QQApi/handleOpenURL:sourceApplication:annotation:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (QQApiMessage *)handleOpenURL:(NSURL *)url</Declaration>
 			
 			
-			<Anchor>//api/name/screenName</Anchor>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GAITrackedViewController/screenName</TokenIdentifier>
-			<Abstract type="html">The screen name, for purposes of Google Analytics tracking. If this is nil,
-no tracking calls will be made.</Abstract>
-			<DeclaredIn>GAITrackedViewController.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/getAdItemArray</TokenIdentifier>
+			<Abstract type="html">获取广告数据列表
+@return
+     &lt;code&gt;QQApiAdItem&lt;/code&gt;数组</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *screenName</Declaration>
+			<Declaration>+ (NSArray *)getAdItemArray</Declaration>
 			
 			
-			<Anchor>//api/name/screenName</Anchor>
+			<Anchor>//api/name/getAdItemArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/isQQInstalled</TokenIdentifier>
+			<Abstract type="html">检测是否已安装QQ
+@return
+     如果QQ已安装则返回TRUE，否则返回FALSE</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isQQInstalled</Declaration>
+			
+			
+			<Anchor>//api/name/isQQInstalled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/isQQSupportApi</TokenIdentifier>
+			<Abstract type="html">检测QQ是否支持API调用
+@return
+     如果当前安装QQ版本支持API调用则返回TRUE，否则返回FALSE</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isQQSupportApi</Declaration>
+			
+			
+			<Anchor>//api/name/isQQSupportApi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/getQQInstallURL</TokenIdentifier>
+			<Abstract type="html">获取QQ下载地址</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getQQInstallURL</Declaration>
+			
+			
+			<Anchor>//api/name/getQQInstallURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/QQApi/openQQApp</TokenIdentifier>
+			<Abstract type="html">启动QQ
+@return
+     成功返回TRUE，否则返回FALSE</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)openQQApp</Declaration>
+			
+			
+			<Anchor>//api/name/openQQApp</Anchor>
 		</Token>
 		
 	</File>

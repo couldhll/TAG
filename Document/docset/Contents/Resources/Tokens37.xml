@@ -1,168 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMHTTPPostedFile.html">
+	<File path="Classes/CMGridViewCell.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMHTTPPostedFile</TokenIdentifier>
-			<Abstract type="html">	@brief	HTTP上传文件信息</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMGridViewCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CMGridViewCell.h</DeclaredIn>
 			
 			<NodeRef refid="37"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/setFileName:</TokenIdentifier>
-			<Abstract type="html">	@brief	文件名称</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridViewCell/updateItemType:itemSize:topPadding:rightPadding:bottomPadding:leftPadding:hGap:</TokenIdentifier>
+			<Abstract type="html">	更新列表项类型以及列数量</Abstract>
+			<DeclaredIn>CMGridViewCell.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
-			
-			
-			<Anchor>//api/name/fileName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPPostedFile/fileName</TokenIdentifier>
-			<Abstract type="html">	@brief	文件名称</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
-			
-			
-			<Anchor>//api/name/fileName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/setContentType:</TokenIdentifier>
-			<Abstract type="html">	@brief	内容类型</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *contentType</Declaration>
-			
-			
-			<Anchor>//api/name/contentType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPPostedFile/contentType</TokenIdentifier>
-			<Abstract type="html">	@brief	内容类型</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *contentType</Declaration>
-			
-			
-			<Anchor>//api/name/contentType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/setFileData:</TokenIdentifier>
-			<Abstract type="html">	@brief	文件数据</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *fileData</Declaration>
-			
-			
-			<Anchor>//api/name/fileData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPPostedFile/fileData</TokenIdentifier>
-			<Abstract type="html">	@brief	文件数据</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *fileData</Declaration>
-			
-			
-			<Anchor>//api/name/fileData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/setTransferEncoding:</TokenIdentifier>
-			<Abstract type="html">	@brief	内容传输编码</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *transferEncoding</Declaration>
-			
-			
-			<Anchor>//api/name/transferEncoding</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPPostedFile/transferEncoding</TokenIdentifier>
-			<Abstract type="html">	@brief	内容传输编码</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *transferEncoding</Declaration>
-			
-			
-			<Anchor>//api/name/transferEncoding</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/initWithFileName:data:contentType:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化上传文件</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithFileName:(NSString *)fileName data:(NSData *)data contentType:(NSString *)contentType</Declaration>
+			<Declaration>- (void)updateItemType:(Class)itemType itemSize:(CGSize)itemSize topPadding:(CGFloat)topPadding rightPadding:(CGFloat)rightPadding bottomPadding:(CGFloat)bottomPadding leftPadding:(CGFloat)leftPadding hGap:(CGFloat)hGap</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>fileName</Name>
-					<Abstract type="html">文件名称</Abstract>
+					<Name>itemType</Name>
+					<Abstract type="html">列表项类型</Abstract>
 				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">文件数据</Abstract>
+					<Name>itemSize</Name>
+					<Abstract type="html">列表项大小</Abstract>
 				</Parameter><Parameter>
-					<Name>contentType</Name>
-					<Abstract type="html">内容类型</Abstract>
+					<Name>topPadding</Name>
+					<Abstract type="html">顶部边距</Abstract>
+				</Parameter><Parameter>
+					<Name>rightPadding</Name>
+					<Abstract type="html">右边距</Abstract>
+				</Parameter><Parameter>
+					<Name>bottomPadding</Name>
+					<Abstract type="html">底部边距</Abstract>
+				</Parameter><Parameter>
+					<Name>leftPadding</Name>
+					<Abstract type="html">左边距</Abstract>
+				</Parameter><Parameter>
+					<Name>hGap</Name>
+					<Abstract type="html">水平间距</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">上传文件信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithFileName:data:contentType:</Anchor>
+			
+			<Anchor>//api/name/updateItemType:itemSize:topPadding:rightPadding:bottomPadding:leftPadding:hGap:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/initWithFileName:data:contentType:transferEncoding:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化上传文件</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridViewCell/getItemAtIndex:</TokenIdentifier>
+			<Abstract type="html">	获取表格项视图</Abstract>
+			<DeclaredIn>CMGridViewCell.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithFileName:(NSString *)fileName data:(NSData *)data contentType:(NSString *)contentType transferEncoding:(NSString *)transferEncoding</Declaration>
+			<Declaration>- (UIView&lt;ICMGridItemView&gt; *)getItemAtIndex:(NSInteger)index</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>fileName</Name>
-					<Abstract type="html">文件名称</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">文件数据</Abstract>
-				</Parameter><Parameter>
-					<Name>contentType</Name>
-					<Abstract type="html">内容类型</Abstract>
-				</Parameter><Parameter>
-					<Name>transferEncoding</Name>
-					<Abstract type="html">传输编码</Abstract>
+					<Name>index</Name>
+					<Abstract type="html">索引位置</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">上传文件信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithFileName:data:contentType:transferEncoding:</Anchor>
+			<ReturnValue><Abstract type="html">表格项视图对象</Abstract></ReturnValue>
+			<Anchor>//api/name/getItemAtIndex:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPPostedFile/initWithFilePath:contentType:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化上传文件</Abstract>
-			<DeclaredIn>CMHTTPPostedFile.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMGridViewCell/hideItemFromIndex:</TokenIdentifier>
+			<Abstract type="html">	从指定位置开始隐藏不必要的列表项</Abstract>
+			<DeclaredIn>CMGridViewCell.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithFilePath:(NSString *)path contentType:(NSString *)contentType</Declaration>
+			<Declaration>- (void)hideItemFromIndex:(NSInteger)index</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">文件路径</Abstract>
-				</Parameter><Parameter>
-					<Name>contentType</Name>
-					<Abstract type="html">内容类型</Abstract>
+					<Name>index</Name>
+					<Abstract type="html">索引位置</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">上传文件信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithFilePath:contentType:</Anchor>
+			
+			<Anchor>//api/name/hideItemFromIndex:</Anchor>
 		</Token>
 		
 	</File>

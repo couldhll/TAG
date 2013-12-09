@@ -1,33 +1,356 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/AGSinaWeiboStatusCellDelegate.html">
+	<File path="Protocols/ISSWeChatApp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/AGSinaWeiboStatusCellDelegate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSWeChatApp</TokenIdentifier>
+			<Abstract type="html">	@brief	微信应用协议</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>
 			
 			<NodeRef refid="581"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AGSinaWeiboStatusCellDelegate/cell:onShowPic:</TokenIdentifier>
-			<Abstract type="html">	@brief	显示图片</Abstract>
-			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	登录帐户</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
 			
-			<Declaration>- (void)cell:(AGSinaWeiboStatusCell *)cell onShowPic:(NSString *)url</Declaration>
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
+			
+			<ReturnValue><Abstract type="html">帐户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/appId</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用ID</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appId</Declaration>
+			
+			<ReturnValue><Abstract type="html">应用ID</Abstract></ReturnValue>
+			<Anchor>//api/name/appId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>cell</Name>
-					<Abstract type="html">状态单元</Abstract>
-				</Parameter><Parameter>
-					<Name>url</Name>
-					<Abstract type="html">图片路径</Abstract>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/cell:onShowPic:</Anchor>
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/handleOpenURL:wxDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url wxDelegate:(id)wxDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>wxDelegate</Name>
+					<Abstract type="html">微信委托</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求 NO 表示不接受</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:wxDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/handleOpenURL:sourceApplication:annotation:wxDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation wxDelegate:(id)wxDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceApplication</Name>
+					<Abstract type="html">源应用</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">源应用提供的信息</Abstract>
+				</Parameter><Parameter>
+					<Name>wxDelegate</Name>
+					<Abstract type="html">微信委托</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求，NO 表示不接受请求</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:wxDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendText:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送文本消息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendText:(NSString *)content scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendText:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendPic:description:pic:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送图片消息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendPic:(NSString *)title description:(NSString *)description pic:(id&lt;ISSCAttachment&gt;)pic scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">图片</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPic:description:pic:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendNews:content:pic:url:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送新闻消息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendNews:(NSString *)title content:(NSString *)content pic:(id&lt;ISSCAttachment&gt;)pic url:(NSString *)url scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNews:content:pic:url:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendMusic:content:pic:url:musicFileUrl:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送音乐消息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMusic:(NSString *)title content:(NSString *)content pic:(id&lt;ISSCAttachment&gt;)pic url:(NSString *)url musicFileUrl:(NSString *)musicFileUrl scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>musicFileUrl</Name>
+					<Abstract type="html">音乐文件路径</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMusic:content:pic:url:musicFileUrl:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendVideo:content:pic:url:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送视频消息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendVideo:(NSString *)title content:(NSString *)content pic:(id&lt;ISSCAttachment&gt;)pic url:(NSString *)url scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendVideo:content:pic:url:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendApp:content:pic:url:extInfo:fileData:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送App信息</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendApp:(NSString *)title content:(NSString *)content pic:(id&lt;ISSCAttachment&gt;)pic url:(NSString *)url extInfo:(NSString *)extInfo fileData:(NSData *)fileData scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter><Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>extInfo</Name>
+					<Abstract type="html">扩展信息</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">文件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendApp:content:pic:url:extInfo:fileData:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendNonGif:emoticonData:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送非Gif图</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendNonGif:(id&lt;ISSCAttachment&gt;)pic emoticonData:(NSData *)emoticonData scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>emoticonData</Name>
+					<Abstract type="html">图片数据</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendNonGif:emoticonData:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/sendGif:emoticonData:scene:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发送Gif图</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendGif:(id&lt;ISSCAttachment&gt;)pic emoticonData:(NSData *)emoticonData scene:(SSWeChatScene)scene result:(void ( ^ ) ( SSCShareSessionState state , SSWeChatScene scene , SSWeChatErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pic</Name>
+					<Abstract type="html">预览图</Abstract>
+				</Parameter><Parameter>
+					<Name>emoticonData</Name>
+					<Abstract type="html">图片数据</Abstract>
+				</Parameter><Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">类型</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendGif:emoticonData:scene:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSWeChatApp/followUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注微信公众帐号</Abstract>
+			<DeclaredIn>ISSWeChatApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)followUser:(NSString *)qrCodeData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>qrCodeData</Name>
+					<Abstract type="html">公众帐号的二维码数据</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followUser:</Anchor>
 		</Token>
 		
 	</File>

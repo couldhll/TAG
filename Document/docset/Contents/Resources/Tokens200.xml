@@ -1,91 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQApiMessage.html">
+	<File path="Classes/SSGooglePlusShareInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQApiMessage</TokenIdentifier>
-			<Abstract type="html">@brief API MESSAGE对象.</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusShareInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	分享信息</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>
 			
 			<NodeRef refid="200"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/setType:</TokenIdentifier>
-			<Abstract type="html">消息类型.</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	链接</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) QQApiMessageType type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/url</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQApiMessage/type</TokenIdentifier>
-			<Abstract type="html">消息类型.</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/url</TokenIdentifier>
+			<Abstract type="html">	@brief	链接</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) QQApiMessageType type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/url</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/setObject:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) QQApiObject *object</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
 			
 			
-			<Anchor>//api/name/object</Anchor>
+			<Anchor>//api/name/text</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQApiMessage/object</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/text</TokenIdentifier>
+			<Abstract type="html">	@brief	内容</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) QQApiObject *object</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
 			
 			
-			<Anchor>//api/name/object</Anchor>
+			<Anchor>//api/name/text</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQApiMessage/initWithObject:andType:</TokenIdentifier>
-			<Abstract type="html">初始化函数</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDeepLinkId:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接ID</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithObject:(QQApiObject *)obj andType:(QQApiMessageType)type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
 			
 			
-			<Anchor>//api/name/initWithObject:andType:</Anchor>
+			<Anchor>//api/name/deepLinkId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiMessage/messageWithObject:</TokenIdentifier>
-			<Abstract type="html">通过ApiObject获取QQApiMessage对象</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/deepLinkId</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接ID</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>+ (QQApiMessage *)messageWithObject:(QQApiObject *)obj</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
 			
 			
-			<Anchor>//api/name/messageWithObject:</Anchor>
+			<Anchor>//api/name/deepLinkId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiMessage/messageWithObject:andType:</TokenIdentifier>
-			<Abstract type="html">通过ApiObject及MessageType获取QQApiMessage对象</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接标题</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
 			
-			<Declaration>+ (QQApiMessage *)messageWithObject:(QQApiObject *)obj andType:(QQApiMessageType)type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/messageWithObject:andType:</Anchor>
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/title</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接标题</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接描述</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/description</TokenIdentifier>
+			<Abstract type="html">	@brief	深链接描述</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setThumbnail:</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/thumbnail</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnail</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusShareInfo/shareInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建分享信息</Abstract>
+			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusShareInfo *)shareInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">分享信息</Abstract></ReturnValue>
+			<Anchor>//api/name/shareInfoWithResponse:</Anchor>
 		</Token>
 		
 	</File>

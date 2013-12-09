@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSDouBanCredential.html">
+	<File path="Classes/SSLinkedInUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>
 			
 			<NodeRef refid="225"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) SSLinkedInCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) SSLinkedInCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setUid:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	a unique identifier token for this member</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
@@ -45,9 +45,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/uid</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	a unique identifier token for this member</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
@@ -56,145 +56,514 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setUserName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFirstName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s first name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/userName</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/userName</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/firstName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s first name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
 			
 			
-			<Anchor>//api/name/userName</Anchor>
+			<Anchor>//api/name/firstName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	访问令牌</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setLastName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s last name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	访问令牌</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/lastName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s last name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
 			
 			
-			<Anchor>//api/name/accessToken</Anchor>
+			<Anchor>//api/name/lastName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setMaidenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s maiden name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *maidenName</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/maidenName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/maidenName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s maiden name</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *maidenName</Declaration>
 			
 			
-			<Anchor>//api/name/expiresIn</Anchor>
+			<Anchor>//api/name/maidenName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setRefreshToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFormattedName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s name formatted based on language</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *formattedName</Declaration>
 			
 			
-			<Anchor>//api/name/refreshToken</Anchor>
+			<Anchor>//api/name/formattedName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/refreshToken</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/formattedName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s name formatted based on language</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *formattedName</Declaration>
 			
 			
-			<Anchor>//api/name/refreshToken</Anchor>
+			<Anchor>//api/name/formattedName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPhoneticFirstName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s first name spelled phonetically</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *phoneticFirstName</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
+			<Anchor>//api/name/phoneticFirstName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/phoneticFirstName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s first name spelled phonetically</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *phoneticFirstName</Declaration>
 			
 			
-			<Anchor>//api/name/available</Anchor>
+			<Anchor>//api/name/phoneticFirstName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPhoneticLastName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s last name spelled phonetically</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *phoneticLastName</Declaration>
+			
+			
+			<Anchor>//api/name/phoneticLastName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/phoneticLastName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s last name spelled phonetically</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *phoneticLastName</Declaration>
+			
+			
+			<Anchor>//api/name/phoneticLastName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFormattedPhoneticName:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s name spelled phonetically and formatted based on language</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *formattedPhoneticName</Declaration>
+			
+			
+			<Anchor>//api/name/formattedPhoneticName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/formattedPhoneticName</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s name spelled phonetically and formatted based on language</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *formattedPhoneticName</Declaration>
+			
+			
+			<Anchor>//api/name/formattedPhoneticName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setHeadline:</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s headline (often &quot;Job Title at Company&quot;)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *headline</Declaration>
+			
+			
+			<Anchor>//api/name/headline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/headline</TokenIdentifier>
+			<Abstract type="html">	@brief	the member&apos;s headline (often &quot;Job Title at Company&quot;)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *headline</Declaration>
+			
+			
+			<Anchor>//api/name/headline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setIndustry:</TokenIdentifier>
+			<Abstract type="html">	@brief	the industry the LinkedIn member has indicated their profile belongs to (Industry Codes)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
+			
+			
+			<Anchor>//api/name/industry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/industry</TokenIdentifier>
+			<Abstract type="html">	@brief	the industry the LinkedIn member has indicated their profile belongs to (Industry Codes)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
+			
+			
+			<Anchor>//api/name/industry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setDistance:</TokenIdentifier>
+			<Abstract type="html">	@brief	the degree distance of the fetched profile from the member who fetched the profile</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/distance</TokenIdentifier>
+			<Abstract type="html">	@brief	the degree distance of the fetched profile from the member who fetched the profile</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger distance</Declaration>
+			
+			
+			<Anchor>//api/name/distance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setCurrentShare:</TokenIdentifier>
+			<Abstract type="html">	@brief	Overloaded to also return &quot;current-status&quot; (if there is no URL shared). (Status and share are the same.)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currentShare</Declaration>
+			
+			
+			<Anchor>//api/name/currentShare</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/currentShare</TokenIdentifier>
+			<Abstract type="html">	@brief	Overloaded to also return &quot;current-status&quot; (if there is no URL shared). (Status and share are the same.)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currentShare</Declaration>
+			
+			
+			<Anchor>//api/name/currentShare</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setNumConnections:</TokenIdentifier>
+			<Abstract type="html">	@brief	the # of connections the member has</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger numConnections</Declaration>
+			
+			
+			<Anchor>//api/name/numConnections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/numConnections</TokenIdentifier>
+			<Abstract type="html">	@brief	the # of connections the member has</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger numConnections</Declaration>
+			
+			
+			<Anchor>//api/name/numConnections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setNumConnectionsCapped:</TokenIdentifier>
+			<Abstract type="html">	@brief	true if the value of num-connections has been capped at 500. false otherwise.</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL numConnectionsCapped</Declaration>
+			
+			
+			<Anchor>//api/name/numConnectionsCapped</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/numConnectionsCapped</TokenIdentifier>
+			<Abstract type="html">	@brief	true if the value of num-connections has been capped at 500. false otherwise.</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL numConnectionsCapped</Declaration>
+			
+			
+			<Anchor>//api/name/numConnectionsCapped</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSummary:</TokenIdentifier>
+			<Abstract type="html">	@brief	A long-form text area where the member describes their professional profile</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *summary</Declaration>
+			
+			
+			<Anchor>//api/name/summary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/summary</TokenIdentifier>
+			<Abstract type="html">	@brief	A long-form text area where the member describes their professional profile</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *summary</Declaration>
+			
+			
+			<Anchor>//api/name/summary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSpecialties:</TokenIdentifier>
+			<Abstract type="html">	@brief	A short-form text area where the member enumerates their specialties</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *specialties</Declaration>
+			
+			
+			<Anchor>//api/name/specialties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/specialties</TokenIdentifier>
+			<Abstract type="html">	@brief	A short-form text area where the member enumerates their specialties</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *specialties</Declaration>
+			
+			
+			<Anchor>//api/name/specialties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPositions:</TokenIdentifier>
+			<Abstract type="html">	@brief	A collection of positions a member has had, the total indicated by a total attribute</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInPositions *positions</Declaration>
+			
+			
+			<Anchor>//api/name/positions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/positions</TokenIdentifier>
+			<Abstract type="html">	@brief	A collection of positions a member has had, the total indicated by a total attribute</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInPositions *positions</Declaration>
+			
+			
+			<Anchor>//api/name/positions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPictureUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	A URL to the profile picture, if the member has associated one with their profile and it is visible to the requestor</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pictureUrl</Declaration>
+			
+			
+			<Anchor>//api/name/pictureUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/pictureUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	A URL to the profile picture, if the member has associated one with their profile and it is visible to the requestor</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *pictureUrl</Declaration>
+			
+			
+			<Anchor>//api/name/pictureUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSiteStandardProfileRequest:</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL to the member&apos;s authenticated profile on LinkedIn (requires a login to be viewed, unlike public profiles)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInSiteStandardProfileRequest *siteStandardProfileRequest</Declaration>
+			
+			
+			<Anchor>//api/name/siteStandardProfileRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/siteStandardProfileRequest</TokenIdentifier>
+			<Abstract type="html">	@brief	The URL to the member&apos;s authenticated profile on LinkedIn (requires a login to be viewed, unlike public profiles)</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInSiteStandardProfileRequest *siteStandardProfileRequest</Declaration>
+			
+			
+			<Anchor>//api/name/siteStandardProfileRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPublicProfileUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	A URL to the member&apos;s public profile, if enabled</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publicProfileUrl</Declaration>
+			
+			
+			<Anchor>//api/name/publicProfileUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/publicProfileUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	A URL to the member&apos;s public profile, if enabled</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publicProfileUrl</Declaration>
+			
+			
+			<Anchor>//api/name/publicProfileUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setRelationToViewer:</TokenIdentifier>
+			<Abstract type="html">	@brief	</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInRelationToViewer *relationToViewer</Declaration>
+			
+			
+			<Anchor>//api/name/relationToViewer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/relationToViewer</TokenIdentifier>
+			<Abstract type="html">	@brief	</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInRelationToViewer *relationToViewer</Declaration>
+			
+			
+			<Anchor>//api/name/relationToViewer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setApiStandardProfileRequest:</TokenIdentifier>
+			<Abstract type="html">	@brief	标准个人信息请求信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInApiStandardProfileRequest *apiStandardProfileRequest</Declaration>
+			
+			
+			<Anchor>//api/name/apiStandardProfileRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/apiStandardProfileRequest</TokenIdentifier>
+			<Abstract type="html">	@brief	标准个人信息请求信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInApiStandardProfileRequest *apiStandardProfileRequest</Declaration>
+			
+			
+			<Anchor>//api/name/apiStandardProfileRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	位置信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/location</TokenIdentifier>
+			<Abstract type="html">	@brief	位置信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSLinkedInLocation *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInUser/userWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SSLinkedInUser *)userWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/userWithResponse:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSDouBanCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

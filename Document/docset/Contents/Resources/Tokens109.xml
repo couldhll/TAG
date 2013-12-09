@@ -1,116 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FacebookConnection.html">
+	<File path="Classes/Pinterest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FacebookConnection</TokenIdentifier>
-			<Abstract type="html">	@brief	Facebook链接器</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Pinterest</TokenIdentifier>
+			<Abstract type="html">The Pin It SDK allows for the creation of Pinterest content inside of third party applications.
+Currently the SDK only supports pinning images from a specified URL.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>
 			
 			<NodeRef refid="109"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/registerApp:appKey:appSecret:</TokenIdentifier>
-			<Abstract type="html">	@brief	注册应用,同一个AppKey只需要注册一次。</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/initWithClientId:</TokenIdentifier>
+			<Abstract type="html">Initializes a Pinterest instance.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSFacebookApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account appKey:(NSString *)appKey appSecret:(NSString *)appSecret</Declaration>
+			<Declaration>- (id)initWithClientId:(NSString *)clientId</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>account</Name>
-					<Abstract type="html">授权帐号，使用ShareSDK注册的应用Key换取。</Abstract>
+					<Name>clientId</Name>
+					<Abstract type="html">A Pinterest client id.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Pinterest instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClientId:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/initWithClientId:urlSchemeSuffix:</TokenIdentifier>
+			<Abstract type="html">Initializes a Pinterest instance with a URL scheme suffix.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClientId:(NSString *)clientId urlSchemeSuffix:(NSString *)suffix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientId</Name>
+					<Abstract type="html">A Pinterest client id.</Abstract>
 				</Parameter><Parameter>
-					<Name>appKey</Name>
-					<Abstract type="html">应用Key</Abstract>
+					<Name>suffix</Name>
+					<Abstract type="html">URL scheme suffix that is used to futher identify an application in addition to a client id.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Pinterest instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClientId:urlSchemeSuffix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/canPinWithSDK</TokenIdentifier>
+			<Abstract type="html">Checks if a version of the Pinterest app that supports the Pin It SDK is installed.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)canPinWithSDK</Declaration>
+			
+			<ReturnValue><Abstract type="html">If pinning is possible via the Pin It SDK on the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/canPinWithSDK</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/createPinWithImageURL:sourceURL:description:</TokenIdentifier>
+			<Abstract type="html">Creates a pin with specified image URL.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
+			
+			<Declaration>- (void)createPinWithImageURL:(NSURL *)imageURL sourceURL:(NSURL *)sourceURL description:(NSString *)descriptionText</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageURL</Name>
+					<Abstract type="html">URL of the image to pin.</Abstract>
 				</Parameter><Parameter>
-					<Name>appSecret</Name>
-					<Abstract type="html">应用密钥</Abstract>
+					<Name>sourceURL</Name>
+					<Abstract type="html">The source page of the image.</Abstract>
+				</Parameter><Parameter>
+					<Name>descriptionText</Name>
+					<Abstract type="html">The pin&apos;s description.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">应用对象,返回nil则表示应用注册失败。</Abstract></ReturnValue>
-			<Anchor>//api/name/registerApp:appKey:appSecret:</Anchor>
+			
+			<Anchor>//api/name/createPinWithImageURL:sourceURL:description:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/unregisterApp:</TokenIdentifier>
-			<Abstract type="html">	@brief	注销应用</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/Pinterest/pinItButton</TokenIdentifier>
+			<Abstract type="html">Creates a Pin It button.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)unregisterApp:(id&lt;ISSFacebookApp&gt;)app</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>app</Name>
-					<Abstract type="html">应用对象</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES表示注销成功，NO表示注销失败</Abstract></ReturnValue>
-			<Anchor>//api/name/unregisterApp:</Anchor>
+			<Declaration>+ (UIButton *)pinItButton</Declaration>
+			
+			<ReturnValue><Abstract type="html">Pin It button.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinItButton</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/getApp:</TokenIdentifier>
-			<Abstract type="html">	@brief	取的已注册新浪应用</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openUserWithUsername:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a user&apos;s profile.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSFacebookApp&gt;)getApp:(NSString *)appKey</Declaration>
+			<Declaration>- (void)openUserWithUsername:(NSString *)username</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>appKey</Name>
-					<Abstract type="html">应用Key</Abstract>
+					<Name>username</Name>
+					<Abstract type="html">Username of user&apos;s profile to open.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">应用对象，返回nil则表示应用尚未注册</Abstract></ReturnValue>
-			<Anchor>//api/name/getApp:</Anchor>
+			
+			<Anchor>//api/name/openUserWithUsername:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/credentialWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	获取授权凭证</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openPinWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a pin.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookCredential *)credentialWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>- (void)openPinWithIdentifier:(NSString *)identifier</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源数据</Abstract>
+					<Name>identifier</Name>
+					<Abstract type="html">Id of the pin to open.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/credentialWithData:</Anchor>
+			
+			<Anchor>//api/name/openPinWithIdentifier:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/credentialWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建授权凭证</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/Pinterest/openBoardWithSlug:fromUser:</TokenIdentifier>
+			<Abstract type="html">Opens the Pinterest application to a user&apos;s board.</Abstract>
+			<DeclaredIn>Pinterest.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookCredential *)credentialWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Declaration>- (void)openBoardWithSlug:(NSString *)slug fromUser:(NSString *)username</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权数据</Abstract>
+					<Name>slug</Name>
+					<Abstract type="html">The board&apos;s slug from a Pinterest URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user who owns the board.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/credentialWithCredentialData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FacebookConnection/getErrorDescriptionWithCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	根据新浪微博错误码返回错误描述</Abstract>
-			<DeclaredIn>FacebookConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)getErrorDescriptionWithCode:(NSInteger)code</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>code</Name>
-					<Abstract type="html">错误码</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">错误描述</Abstract></ReturnValue>
-			<Anchor>//api/name/getErrorDescriptionWithCode:</Anchor>
+			<Anchor>//api/name/openBoardWithSlug:fromUser:</Anchor>
 		</Token>
 		
 	</File>

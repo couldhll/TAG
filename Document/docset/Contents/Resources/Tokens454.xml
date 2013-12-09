@@ -1,149 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WXMediaMessage.html">
+	<File path="Categories/NSString+GTMNSStringURLArgumentsAdditions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
-			<Abstract type="html">@brief 多媒体消息结构体</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(GTMNSStringURLArgumentsAdditions)</TokenIdentifier>
+			<Abstract type="html">Utilities for encoding and decoding URL arguments.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>
 			
 			<NodeRef refid="454"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setTitle:</TokenIdentifier>
-			<Abstract type="html">标题
-@attention 长度不能超过512字节</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByEscapingForURLArgument</TokenIdentifier>
+			<Abstract type="html">This differs from stringByAddingPercentEscapesUsingEncoding: in that it
+will escape all the reserved characters (per RFC 3986
+http://www.ietf.org/rfc/rfc3986.txt which
+stringByAddingPercentEscapesUsingEncoding would leave.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
+			<Declaration>- (NSString *)gtm_stringByEscapingForURLArgument</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/gtm_stringByEscapingForURLArgument</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMediaMessage/title</TokenIdentifier>
-			<Abstract type="html">标题
-@attention 长度不能超过512字节</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(GTMNSStringURLArgumentsAdditions)/gtm_stringByUnescapingFromURLArgument</TokenIdentifier>
+			<Abstract type="html">This has the same behavior as stringByReplacingPercentEscapesUsingEncoding:,
+except that it will also convert &apos;+&apos; to space.</Abstract>
+			<DeclaredIn>GTMNSString+URLArguments.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
-			
-			
-			<Anchor>//api/name/title</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setDescription:</TokenIdentifier>
-			<Abstract type="html">描述内容
-@attention 长度不能超过1K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
+			<Declaration>- (NSString *)gtm_stringByUnescapingFromURLArgument</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMediaMessage/description</TokenIdentifier>
-			<Abstract type="html">描述内容
-@attention 长度不能超过1K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setThumbData:</TokenIdentifier>
-			<Abstract type="html">缩略图数据
-@attention 内存大小不能超过32K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSData *thumbData</Declaration>
-			
-			
-			<Anchor>//api/name/thumbData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMediaMessage/thumbData</TokenIdentifier>
-			<Abstract type="html">缩略图数据
-@attention 内存大小不能超过32K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSData *thumbData</Declaration>
-			
-			
-			<Anchor>//api/name/thumbData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setMediaTagName:</TokenIdentifier>
-			<Abstract type="html">多媒体消息标签，第三方程序可选填此字段，用于数据运营统计等
-@attention 长度不能超过64字节</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *mediaTagName</Declaration>
-			
-			
-			<Anchor>//api/name/mediaTagName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMediaMessage/mediaTagName</TokenIdentifier>
-			<Abstract type="html">多媒体消息标签，第三方程序可选填此字段，用于数据运营统计等
-@attention 长度不能超过64字节</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *mediaTagName</Declaration>
-			
-			
-			<Anchor>//api/name/mediaTagName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setMediaObject:</TokenIdentifier>
-			<Abstract type="html">多媒体数据对象，可以为WXImageObject，WXMusicObject，WXVideoObject，WXWebpageObject等。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id mediaObject</Declaration>
-			
-			
-			<Anchor>//api/name/mediaObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMediaMessage/mediaObject</TokenIdentifier>
-			<Abstract type="html">多媒体数据对象，可以为WXImageObject，WXMusicObject，WXVideoObject，WXWebpageObject等。</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) id mediaObject</Declaration>
-			
-			
-			<Anchor>//api/name/mediaObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMediaMessage/setThumbImage:</TokenIdentifier>
-			<Abstract type="html">@brief 设置消息缩略图的方法</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>- (void)setThumbImage:(UIImage *)image</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">缩略图
-@attention 内存大小不能超过32K</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setThumbImage:</Anchor>
+			<Anchor>//api/name/gtm_stringByUnescapingFromURLArgument</Anchor>
 		</Token>
 		
 	</File>

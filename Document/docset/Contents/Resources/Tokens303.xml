@@ -1,74 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSLinkedInPositions.html">
+	<File path="Classes/SevenSwitch.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInPositions</TokenIdentifier>
-			<Abstract type="html">	@brief	职位列表</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SevenSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SevenSwitch.h</DeclaredIn>
 			
 			<NodeRef refid="303"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInPositions/set_total:</TokenIdentifier>
-			<Abstract type="html">	@brief	总数量</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SevenSwitch/setup</TokenIdentifier>
+			<Abstract type="html">	Setup the individual elements of the switch and set default values</Abstract>
+			<DeclaredIn>SevenSwitch.m</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger _total</Declaration>
-			
-			
-			<Anchor>//api/name/_total</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInPositions/_total</TokenIdentifier>
-			<Abstract type="html">	@brief	总数量</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger _total</Declaration>
+			<Declaration>- (void)setup</Declaration>
 			
 			
-			<Anchor>//api/name/_total</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInPositions/setValues:</TokenIdentifier>
-			<Abstract type="html">	@brief	列表数据</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *values</Declaration>
-			
-			
-			<Anchor>//api/name/values</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInPositions/values</TokenIdentifier>
-			<Abstract type="html">	@brief	列表数据</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *values</Declaration>
-			
-			
-			<Anchor>//api/name/values</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInPositions/positionsWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建职位列表</Abstract>
-			<DeclaredIn>SSLinkedInPositions.h</DeclaredIn>			
-			
-			<Declaration>+ (SSLinkedInPositions *)positionsWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复信息</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">职位列表信息</Abstract></ReturnValue>
-			<Anchor>//api/name/positionsWithResponse:</Anchor>
+			<Anchor>//api/name/setup</Anchor>
 		</Token>
 		
 	</File>

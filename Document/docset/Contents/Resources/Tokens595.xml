@@ -1,127 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/FBGraphObject.html">
+	<File path="Protocols/QuiltViewDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/FBGraphObject</TokenIdentifier>
-			<Abstract type="html">@protocol</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/QuiltViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图协议</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>
 			
 			<NodeRef refid="595"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/count</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns the number of properties on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltView:willDisplayItemView:indexPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	子项视图将要显示</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
 			
-			<Declaration>- (NSUInteger)count</Declaration>
-			
-			
-			<Anchor>//api/name/count</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/objectForKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
-			
-			<Declaration>- (id)objectForKey:(id)aKey</Declaration>
+			<Declaration>- (void)quiltView:(CMQuiltView *)quiltView willDisplayItemView:(UIView&lt;ICMQuiltItemView&gt; *)itemView indexPath:(NSIndexPath *)indexPath</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to return</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/objectForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/keyEnumerator</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns an enumerator of the property naems on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
-			
-			<Declaration>- (NSEnumerator *)keyEnumerator</Declaration>
-			
-			
-			<Anchor>//api/name/keyEnumerator</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/removeObjectForKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Removes a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
-			
-			<Declaration>- (void)removeObjectForKey:(id)aKey</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to remove</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeObjectForKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Sets the value of a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
-			
-			<Declaration>- (void)setObject:(id)anObject forKey:(id)aKey</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>anObject</Name>
-					<Abstract type="html">the new value of the property</Abstract>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
 				</Parameter><Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to set</Abstract>
+					<Name>itemView</Name>
+					<Abstract type="html">子项视图</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">索引位置</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
+			<Anchor>//api/name/quiltView:willDisplayItemView:indexPath:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBGraphObject/setProvisionedForPost:</TokenIdentifier>
-			<Abstract type="html">@abstract
-This property signifies that the current graph object is provisioned for POST (as a definition
-for a new or updated graph object), and should be posted AS-IS in its JSON encoded form, whereas
-some graph objects (usually those embedded in other graph objects as references to existing objects)
-may only have their &quot;id&quot; or &quot;url&quot; posted.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltViewDidScroll:</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图滚动</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL provisionedForPost</Declaration>
+			<Declaration>- (void)quiltViewDidScroll:(CMQuiltView *)quiltView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/provisionedForPost</Anchor>
+			<Anchor>//api/name/quiltViewDidScroll:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/FBGraphObject/provisionedForPost</TokenIdentifier>
-			<Abstract type="html">@abstract
-This property signifies that the current graph object is provisioned for POST (as a definition
-for a new or updated graph object), and should be posted AS-IS in its JSON encoded form, whereas
-some graph objects (usually those embedded in other graph objects as references to existing objects)
-may only have their &quot;id&quot; or &quot;url&quot; posted.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/QuiltViewDelegate/quiltViewDidEndDragging:willDecelerate:</TokenIdentifier>
+			<Abstract type="html">	@brief	瀑布流视图停止拖动</Abstract>
+			<DeclaredIn>CMQuiltView.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) BOOL provisionedForPost</Declaration>
+			<Declaration>- (void)quiltViewDidEndDragging:(CMQuiltView *)quiltView willDecelerate:(BOOL)decelerate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>quiltView</Name>
+					<Abstract type="html">瀑布流视图</Abstract>
+				</Parameter><Parameter>
+					<Name>decelerate</Name>
+					<Abstract type="html">减速运动标识，YES表示进行减速运动，否则不进行减速运动</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/provisionedForPost</Anchor>
+			<Anchor>//api/name/quiltViewDidEndDragging:willDecelerate:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookCover.html">
+	<File path="Classes/SSRenRenPost.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCover</TokenIdentifier>
-			<Abstract type="html">	@brief	封面信息</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenPost</TokenIdentifier>
+			<Abstract type="html">	@brief	文章信息</Abstract>
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>
 			
 			<NodeRef refid="248"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	ID</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setSourceData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPost/setSourceData:</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -45,9 +23,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/sourceData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPost/sourceData</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -56,19 +34,41 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCover/coverWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建封面信息</Abstract>
-			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenPost/setPostId:</TokenIdentifier>
+			<Abstract type="html">	@brief	文章ID</Abstract>
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookCover *)coverWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long postId</Declaration>
+			
+			
+			<Anchor>//api/name/postId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenPost/postId</TokenIdentifier>
+			<Abstract type="html">	@brief	文章ID</Abstract>
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long postId</Declaration>
+			
+			
+			<Anchor>//api/name/postId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenPost/postWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建文章信息</Abstract>
+			<DeclaredIn>SSRenRenPost.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenPost *)postWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
-			<Anchor>//api/name/coverWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">文章信息</Abstract></ReturnValue>
+			<Anchor>//api/name/postWithResponse:</Anchor>
 		</Token>
 		
 	</File>

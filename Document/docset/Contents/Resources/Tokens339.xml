@@ -1,96 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSSinaWeiboTag.html">
+	<File path="Classes/TwitterConnection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboTag</TokenIdentifier>
-			<Abstract type="html">	@brief	标签ID</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TwitterConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	Twitter连接器</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>
 			
 			<NodeRef refid="339"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/registerApp:consumerKey:consumerSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册应用,同一个AppKey只需要注册一次。</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	标签ID</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	标签ID</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
-			
-			
-			<Anchor>//api/name/Id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboTag/setTag:</TokenIdentifier>
-			<Abstract type="html">	@brief	标签</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
-			
-			
-			<Anchor>//api/name/tag</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboTag/tag</TokenIdentifier>
-			<Abstract type="html">	@brief	标签</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *tag</Declaration>
-			
-			
-			<Anchor>//api/name/tag</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboTag/tagWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建标签信息</Abstract>
-			<DeclaredIn>SSSinaWeiboTag.h</DeclaredIn>			
-			
-			<Declaration>+ (SSSinaWeiboTag *)tagWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (id&lt;ISSTwitterApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret redirectUri:(NSString *)redirectUri</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>account</Name>
+					<Abstract type="html">授权帐号，使用ShareSDK注册的应用Key换取。</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
+				</Parameter><Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">标签信息</Abstract></ReturnValue>
-			<Anchor>//api/name/tagWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">应用对象,返回nil则表示应用注册失败。</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:consumerKey:consumerSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/unregisterApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	注销应用</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unregisterApp:(id&lt;ISSTwitterApp&gt;)app</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>app</Name>
+					<Abstract type="html">应用对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示注销成功，NO表示注销失败</Abstract></ReturnValue>
+			<Anchor>//api/name/unregisterApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/getApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	取的已注册新浪应用</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSTwitterApp&gt;)getApp:(NSString *)consumerKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应用对象，返回nil则表示应用尚未注册</Abstract></ReturnValue>
+			<Anchor>//api/name/getApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/credentialWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权凭证</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterCredential *)credentialWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/credentialWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权凭证</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTwitterCredential *)credentialWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithCredentialData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwitterConnection/getErrorDescriptionWithCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据新浪微博错误码返回错误描述</Abstract>
+			<DeclaredIn>TwitterConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getErrorDescriptionWithCode:(NSInteger)code</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>code</Name>
+					<Abstract type="html">错误码</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">错误描述</Abstract></ReturnValue>
+			<Anchor>//api/name/getErrorDescriptionWithCode:</Anchor>
 		</Token>
 		
 	</File>

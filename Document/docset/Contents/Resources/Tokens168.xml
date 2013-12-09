@@ -1,201 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFInstallation.html">
+	<File path="Classes/SSFacebookCover.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFInstallation</TokenIdentifier>
-			<Abstract type="html">A Parse Framework Installation Object that is a local representation of an
-installation persisted to the Parse cloud. This class is a subclass of a
-PFObject, and retains the same functionality of a PFObject, but also extends
-it with installation-specific fields and related immutability and validity
-checks.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookCover</TokenIdentifier>
+			<Abstract type="html">	@brief	封面信息</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>
 			
 			<NodeRef refid="168"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/parseClassName</TokenIdentifier>
-			<Abstract type="html">The name of the Installation class in the REST API. This is a required
-PFSubclassing method</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)parseClassName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/parseClassName</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/query</TokenIdentifier>
-			<Abstract type="html">Creates a query for PFInstallation objects. The resulting query can only
-be used for targeting a PFPush. Calling find methods on the resulting query
-will raise an exception.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
 			
-			<Declaration>+ (PFQuery *)query</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *Id</Declaration>
 			
 			
-			<Anchor>//api/name/query</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/currentInstallation</TokenIdentifier>
-			<Abstract type="html">Gets the currently-running installation from disk and returns an instance of
-it. If this installation is not stored on disk, returns a PFInstallation
-with deviceType and installationId fields set to those of the
-current installation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookCover/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
 			
-			<Declaration>+ (instancetype)currentInstallation</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
-			<ReturnValue><Abstract type="html">Returns a PFInstallation that represents the currently-running
-installation.</Abstract></ReturnValue>
-			<Anchor>//api/name/currentInstallation</Anchor>
+			
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceTokenFromData:</TokenIdentifier>
-			<Abstract type="html">Sets the device token string property from an NSData-encoded token.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookCover/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
 			
-			<Declaration>- (void)setDeviceTokenFromData:(NSData *)deviceTokenData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/setDeviceTokenFromData:</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceType:</TokenIdentifier>
-			<Abstract type="html">The device type for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookCover/coverWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建封面信息</Abstract>
+			<DeclaredIn>SSFacebookCover.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *deviceType</Declaration>
-			
-			
-			<Anchor>//api/name/deviceType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/deviceType</TokenIdentifier>
-			<Abstract type="html">The device type for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *deviceType</Declaration>
-			
-			
-			<Anchor>//api/name/deviceType</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setInstallationId:</TokenIdentifier>
-			<Abstract type="html">The installationId for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *installationId</Declaration>
-			
-			
-			<Anchor>//api/name/installationId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/installationId</TokenIdentifier>
-			<Abstract type="html">The installationId for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *installationId</Declaration>
-			
-			
-			<Anchor>//api/name/installationId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceToken:</TokenIdentifier>
-			<Abstract type="html">The device token for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *deviceToken</Declaration>
-			
-			
-			<Anchor>//api/name/deviceToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/deviceToken</TokenIdentifier>
-			<Abstract type="html">The device token for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *deviceToken</Declaration>
-			
-			
-			<Anchor>//api/name/deviceToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setBadge:</TokenIdentifier>
-			<Abstract type="html">The badge for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) NSInteger badge</Declaration>
-			
-			
-			<Anchor>//api/name/badge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/badge</TokenIdentifier>
-			<Abstract type="html">The badge for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) NSInteger badge</Declaration>
-			
-			
-			<Anchor>//api/name/badge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setTimeZone:</TokenIdentifier>
-			<Abstract type="html">The timeZone for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *timeZone</Declaration>
-			
-			
-			<Anchor>//api/name/timeZone</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/timeZone</TokenIdentifier>
-			<Abstract type="html">The timeZone for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly, retain) NSString *timeZone</Declaration>
-			
-			
-			<Anchor>//api/name/timeZone</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setChannels:</TokenIdentifier>
-			<Abstract type="html">The channels for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSArray *channels</Declaration>
-			
-			
-			<Anchor>//api/name/channels</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/channels</TokenIdentifier>
-			<Abstract type="html">The channels for the PFInstallation.</Abstract>
-			<DeclaredIn>PFInstallation.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSArray *channels</Declaration>
-			
-			
-			<Anchor>//api/name/channels</Anchor>
+			<Declaration>+ (SSFacebookCover *)coverWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
+			<Anchor>//api/name/coverWithResponse:</Anchor>
 		</Token>
 		
 	</File>

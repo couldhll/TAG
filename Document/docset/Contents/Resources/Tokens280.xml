@@ -1,162 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusShareInfo.html">
+	<File path="Classes/SSTwitterContributor.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusShareInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	分享信息</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterContributor</TokenIdentifier>
+			<Abstract type="html">	@brief	贡献者信息</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>
 			
 			<NodeRef refid="280"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	链接</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/url</TokenIdentifier>
-			<Abstract type="html">	@brief	链接</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setText:</TokenIdentifier>
-			<Abstract type="html">	@brief	内容</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/text</TokenIdentifier>
-			<Abstract type="html">	@brief	内容</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	ID</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/Id</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDeepLinkId:</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接ID</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setIdStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	ID字符串</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
 			
 			
-			<Anchor>//api/name/deepLinkId</Anchor>
+			<Anchor>//api/name/idStr</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/deepLinkId</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接ID</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/idStr</TokenIdentifier>
+			<Abstract type="html">	@brief	ID字符串</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *deepLinkId</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
 			
 			
-			<Anchor>//api/name/deepLinkId</Anchor>
+			<Anchor>//api/name/idStr</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setTitle:</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接标题</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterContributor/setScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/screenName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/title</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接标题</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterContributor/screenName</TokenIdentifier>
+			<Abstract type="html">	@brief	屏幕名称</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/screenName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setDescription:</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接描述</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterContributor/contributorsWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建贡献者对象</Abstract>
+			<DeclaredIn>SSTwitterContributor.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/description</TokenIdentifier>
-			<Abstract type="html">	@brief	深链接描述</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusShareInfo/setThumbnail:</TokenIdentifier>
-			<Abstract type="html">	@brief	缩略图</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
-			
-			
-			<Anchor>//api/name/thumbnail</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusShareInfo/thumbnail</TokenIdentifier>
-			<Abstract type="html">	@brief	缩略图</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *thumbnail</Declaration>
-			
-			
-			<Anchor>//api/name/thumbnail</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusShareInfo/shareInfoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建分享信息</Abstract>
-			<DeclaredIn>SSGooglePlusShareInfo.h</DeclaredIn>			
-			
-			<Declaration>+ (SSGooglePlusShareInfo *)shareInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (SSTwitterContributor *)contributorsWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">分享信息</Abstract></ReturnValue>
-			<Anchor>//api/name/shareInfoWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">贡献者信息</Abstract></ReturnValue>
+			<Anchor>//api/name/contributorsWithResponse:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,965 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTencentWeiboUser.html">
+	<File path="Classes/WBMessageObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboUser</TokenIdentifier>
-			<Abstract type="html">	@brief	腾讯用户信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBMessageObject</TokenIdentifier>
+			<Abstract type="html">微博客户端程序和第三方应用之间传递的消息结构</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="357"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setCredential:</TokenIdentifier>
-			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setText:</TokenIdentifier>
+			<Abstract type="html">消息的文本内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSTencentWeiboCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/text</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/credential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/text</TokenIdentifier>
+			<Abstract type="html">消息的文本内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSTencentWeiboCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/text</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setImageObject:</TokenIdentifier>
+			<Abstract type="html">消息的图片内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setBirthDay:</TokenIdentifier>
-			<Abstract type="html">	@brief	出生天</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthDay</Declaration>
-			
-			
-			<Anchor>//api/name/birthDay</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/birthDay</TokenIdentifier>
-			<Abstract type="html">	@brief	出生天</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthDay</Declaration>
-			
-			
-			<Anchor>//api/name/birthDay</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setBirthMonth:</TokenIdentifier>
-			<Abstract type="html">	@brief	出生月</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthMonth</Declaration>
-			
-			
-			<Anchor>//api/name/birthMonth</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/birthMonth</TokenIdentifier>
-			<Abstract type="html">	@brief	出生月</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthMonth</Declaration>
-			
-			
-			<Anchor>//api/name/birthMonth</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setBirthYear:</TokenIdentifier>
-			<Abstract type="html">	@brief	出生年</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthYear</Declaration>
-			
-			
-			<Anchor>//api/name/birthYear</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/birthYear</TokenIdentifier>
-			<Abstract type="html">	@brief	出生年</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger birthYear</Declaration>
-			
-			
-			<Anchor>//api/name/birthYear</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setCityCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	城市id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *cityCode</Declaration>
-			
-			
-			<Anchor>//api/name/cityCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/cityCode</TokenIdentifier>
-			<Abstract type="html">	@brief	城市id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *cityCode</Declaration>
-			
-			
-			<Anchor>//api/name/cityCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setComp:</TokenIdentifier>
-			<Abstract type="html">	@brief	职业信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *comp</Declaration>
-			
-			
-			<Anchor>//api/name/comp</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/comp</TokenIdentifier>
-			<Abstract type="html">	@brief	职业信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *comp</Declaration>
-			
-			
-			<Anchor>//api/name/comp</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setCountryCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	国家id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *countryCode</Declaration>
-			
-			
-			<Anchor>//api/name/countryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/countryCode</TokenIdentifier>
-			<Abstract type="html">	@brief	国家id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *countryCode</Declaration>
-			
-			
-			<Anchor>//api/name/countryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setEdu:</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *edu</Declaration>
-			
-			
-			<Anchor>//api/name/edu</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/edu</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *edu</Declaration>
-			
-			
-			<Anchor>//api/name/edu</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setEmail:</TokenIdentifier>
-			<Abstract type="html">	@brief	邮箱</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
-			
-			
-			<Anchor>//api/name/email</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/email</TokenIdentifier>
-			<Abstract type="html">	@brief	邮箱</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
-			
-			
-			<Anchor>//api/name/email</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setExp:</TokenIdentifier>
-			<Abstract type="html">	@brief	经验值</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger exp</Declaration>
-			
-			
-			<Anchor>//api/name/exp</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/exp</TokenIdentifier>
-			<Abstract type="html">	@brief	经验值</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger exp</Declaration>
-			
-			
-			<Anchor>//api/name/exp</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setFansnum:</TokenIdentifier>
-			<Abstract type="html">	@brief	听众数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger fansnum</Declaration>
-			
-			
-			<Anchor>//api/name/fansnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/fansnum</TokenIdentifier>
-			<Abstract type="html">	@brief	听众数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger fansnum</Declaration>
-			
-			
-			<Anchor>//api/name/fansnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setFavnum:</TokenIdentifier>
-			<Abstract type="html">	@brief	收藏数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger favnum</Declaration>
-			
-			
-			<Anchor>//api/name/favnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/favnum</TokenIdentifier>
-			<Abstract type="html">	@brief	收藏数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger favnum</Declaration>
-			
-			
-			<Anchor>//api/name/favnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHead:</TokenIdentifier>
-			<Abstract type="html">	@brief	头像url</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *head</Declaration>
-			
-			
-			<Anchor>//api/name/head</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/head</TokenIdentifier>
-			<Abstract type="html">	@brief	头像url</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *head</Declaration>
-			
-			
-			<Anchor>//api/name/head</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHomecityCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在城市id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homecityCode</Declaration>
-			
-			
-			<Anchor>//api/name/homecityCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/homecityCode</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在城市id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homecityCode</Declaration>
-			
-			
-			<Anchor>//api/name/homecityCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHomecountryCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在国家id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homecountryCode</Declaration>
-			
-			
-			<Anchor>//api/name/homecountryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/homecountryCode</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在国家id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homecountryCode</Declaration>
-			
-			
-			<Anchor>//api/name/homecountryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHomepage:</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homepage</Declaration>
-			
-			
-			<Anchor>//api/name/homepage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/homepage</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homepage</Declaration>
-			
-			
-			<Anchor>//api/name/homepage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHomeprovinceCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在省id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homeprovinceCode</Declaration>
-			
-			
-			<Anchor>//api/name/homeprovinceCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/homeprovinceCode</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在省id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *homeprovinceCode</Declaration>
-			
-			
-			<Anchor>//api/name/homeprovinceCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setHometownCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在城镇id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *hometownCode</Declaration>
-			
-			
-			<Anchor>//api/name/hometownCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/hometownCode</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡所在城镇id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *hometownCode</Declaration>
-			
-			
-			<Anchor>//api/name/hometownCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIdolnum:</TokenIdentifier>
-			<Abstract type="html">	@brief	收听的人数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger idolnum</Declaration>
-			
-			
-			<Anchor>//api/name/idolnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/idolnum</TokenIdentifier>
-			<Abstract type="html">	@brief	收听的人数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger idolnum</Declaration>
-			
-			
-			<Anchor>//api/name/idolnum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIndustryCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	行业id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger industryCode</Declaration>
-			
-			
-			<Anchor>//api/name/industryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/industryCode</TokenIdentifier>
-			<Abstract type="html">	@brief	行业id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger industryCode</Declaration>
-			
-			
-			<Anchor>//api/name/industryCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIntroduction:</TokenIdentifier>
-			<Abstract type="html">	@brief	个人介绍</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *introduction</Declaration>
-			
-			
-			<Anchor>//api/name/introduction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/introduction</TokenIdentifier>
-			<Abstract type="html">	@brief	个人介绍</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *introduction</Declaration>
-			
-			
-			<Anchor>//api/name/introduction</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsent:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否企业机构</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isent</Declaration>
-			
-			
-			<Anchor>//api/name/isent</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/isent</TokenIdentifier>
-			<Abstract type="html">	@brief	是否企业机构</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isent</Declaration>
-			
-			
-			<Anchor>//api/name/isent</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsmyblack:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否在当前用户的黑名单中，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyblack</Declaration>
-			
-			
-			<Anchor>//api/name/ismyblack</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/ismyblack</TokenIdentifier>
-			<Abstract type="html">	@brief	是否在当前用户的黑名单中，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyblack</Declaration>
-			
-			
-			<Anchor>//api/name/ismyblack</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsmyfans:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否是当前用户的听众，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyfans</Declaration>
-			
-			
-			<Anchor>//api/name/ismyfans</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/ismyfans</TokenIdentifier>
-			<Abstract type="html">	@brief	是否是当前用户的听众，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyfans</Declaration>
-			
-			
-			<Anchor>//api/name/ismyfans</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsmyidol:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否是当前用户的偶像，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyidol</Declaration>
-			
-			
-			<Anchor>//api/name/ismyidol</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/ismyidol</TokenIdentifier>
-			<Abstract type="html">	@brief	是否是当前用户的偶像，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL ismyidol</Declaration>
-			
-			
-			<Anchor>//api/name/ismyidol</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsrealname:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否实名认证，1-已实名认证，2-未实名认证</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger isrealname</Declaration>
-			
-			
-			<Anchor>//api/name/isrealname</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/isrealname</TokenIdentifier>
-			<Abstract type="html">	@brief	是否实名认证，1-已实名认证，2-未实名认证</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger isrealname</Declaration>
-			
-			
-			<Anchor>//api/name/isrealname</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setIsvip:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否认证用户，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isvip</Declaration>
-			
-			
-			<Anchor>//api/name/isvip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/isvip</TokenIdentifier>
-			<Abstract type="html">	@brief	是否认证用户，0-不是，1-是</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isvip</Declaration>
-			
-			
-			<Anchor>//api/name/isvip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setLevel:</TokenIdentifier>
-			<Abstract type="html">	@brief	微博等级</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
-			
-			
-			<Anchor>//api/name/level</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/level</TokenIdentifier>
-			<Abstract type="html">	@brief	微博等级</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
-			
-			
-			<Anchor>//api/name/level</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setLocation:</TokenIdentifier>
-			<Abstract type="html">	@brief	所在地</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/location</TokenIdentifier>
-			<Abstract type="html">	@brief	所在地</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setMutualFansNum:</TokenIdentifier>
-			<Abstract type="html">	@brief	互听好友数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger mutualFansNum</Declaration>
-			
-			
-			<Anchor>//api/name/mutualFansNum</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBImageObject</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/mutualFansNum</TokenIdentifier>
-			<Abstract type="html">	@brief	互听好友数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger mutualFansNum</Declaration>
-			
-			
-			<Anchor>//api/name/mutualFansNum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户帐户名</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/name</TokenIdentifier>
-			<Abstract type="html">	@brief	用户帐户名</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setNick:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户昵称</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
-			
-			
-			<Anchor>//api/name/nick</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/nick</TokenIdentifier>
-			<Abstract type="html">	@brief	用户昵称</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *nick</Declaration>
-			
-			
-			<Anchor>//api/name/nick</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setOpenid:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户唯一id，与name相对应</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *openid</Declaration>
-			
-			
-			<Anchor>//api/name/openid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/openid</TokenIdentifier>
-			<Abstract type="html">	@brief	用户唯一id，与name相对应</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *openid</Declaration>
-			
-			
-			<Anchor>//api/name/openid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setProvinceCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	地区id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *provinceCode</Declaration>
-			
-			
-			<Anchor>//api/name/provinceCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/provinceCode</TokenIdentifier>
-			<Abstract type="html">	@brief	地区id</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *provinceCode</Declaration>
-			
-			
-			<Anchor>//api/name/provinceCode</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setRegtime:</TokenIdentifier>
-			<Abstract type="html">	@brief	注册时间</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval regtime</Declaration>
-			
-			
-			<Anchor>//api/name/regtime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/regtime</TokenIdentifier>
-			<Abstract type="html">	@brief	注册时间</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval regtime</Declaration>
-			
-			
-			<Anchor>//api/name/regtime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setSendPrivateFlag:</TokenIdentifier>
-			<Abstract type="html">	@brief	是否允许所有人给当前用户发私信，0-仅有偶像，1-名人+听众，2-所有人</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger sendPrivateFlag</Declaration>
-			
-			
-			<Anchor>//api/name/sendPrivateFlag</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/sendPrivateFlag</TokenIdentifier>
-			<Abstract type="html">	@brief	是否允许所有人给当前用户发私信，0-仅有偶像，1-名人+听众，2-所有人</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger sendPrivateFlag</Declaration>
-			
-			
-			<Anchor>//api/name/sendPrivateFlag</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setSex:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户性别，1-男，2-女，0-未填写</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger sex</Declaration>
-			
-			
-			<Anchor>//api/name/sex</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/sex</TokenIdentifier>
-			<Abstract type="html">	@brief	用户性别，1-男，2-女，0-未填写</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger sex</Declaration>
-			
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WBImageObject *imageObject</Declaration>
 			
-			<Anchor>//api/name/sex</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setTag:</TokenIdentifier>
-			<Abstract type="html">	@brief	标签</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tag</Declaration>
-			
-			
-			<Anchor>//api/name/tag</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/tag</TokenIdentifier>
-			<Abstract type="html">	@brief	标签</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tag</Declaration>
-			
 			
-			<Anchor>//api/name/tag</Anchor>
+			<Anchor>//api/name/imageObject</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setTweetinfo:</TokenIdentifier>
-			<Abstract type="html">	@brief	最近的一条原创微博信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/imageObject</TokenIdentifier>
+			<Abstract type="html">消息的图片内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tweetinfo</Declaration>
-			
-			
-			<Anchor>//api/name/tweetinfo</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBImageObject</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/tweetinfo</TokenIdentifier>
-			<Abstract type="html">	@brief	最近的一条原创微博信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WBImageObject *imageObject</Declaration>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tweetinfo</Declaration>
 			
-			
-			<Anchor>//api/name/tweetinfo</Anchor>
+			<Anchor>//api/name/imageObject</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setTweetnum:</TokenIdentifier>
-			<Abstract type="html">	@brief	发表的微博数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger tweetnum</Declaration>
-			
+			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setMediaObject:</TokenIdentifier>
+			<Abstract type="html">消息的多媒体内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Anchor>//api/name/tweetnum</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBBaseMediaObject</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/tweetnum</TokenIdentifier>
-			<Abstract type="html">	@brief	发表的微博数</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WBBaseMediaObject *mediaObject</Declaration>
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger tweetnum</Declaration>
 			
-			
-			<Anchor>//api/name/tweetnum</Anchor>
+			<Anchor>//api/name/mediaObject</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/setVerifyinfo:</TokenIdentifier>
-			<Abstract type="html">	@brief	认证信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *verifyinfo</Declaration>
+			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/mediaObject</TokenIdentifier>
+			<Abstract type="html">消息的多媒体内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			
-			<Anchor>//api/name/verifyinfo</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WBBaseMediaObject</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboUser/verifyinfo</TokenIdentifier>
-			<Abstract type="html">	@brief	认证信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *verifyinfo</Declaration>
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, retain) WBBaseMediaObject *mediaObject</Declaration>
 			
-			
-			<Anchor>//api/name/verifyinfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboUser/userWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
 			
-			<Declaration>+ (SSTencentWeiboUser *)userWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/userWithResponse:</Anchor>
+			<Anchor>//api/name/mediaObject</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboUser/descriptor</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
-			<DeclaredIn>SSTencentWeiboUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/WBMessageObject/message</TokenIdentifier>
+			<Abstract type="html">返回一个 WBMessageObject 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			<Declaration>+ (id)message</Declaration>
 			
-			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
-			<Anchor>//api/name/descriptor</Anchor>
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBMessageObject对象</Abstract></ReturnValue>
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 	</File>

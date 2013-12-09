@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+CommonCryptor.html">
+	<File path="Protocols/AGSinaWeiboRefContentViewDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCryptor)</TokenIdentifier>
-			<Abstract type="html">	@brief CommonCryptor wrapper.
-@details
-		If key is shorter than required length, methods return nil.
-		If key is longer than requried length, it is cut as required length.</Abstract>
-			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/AGSinaWeiboRefContentViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>
 			
 			<NodeRef refid="497"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCryptor)/encryptedAES128DataWithKey:</TokenIdentifier>
-			<Abstract type="html">	@name Encryption Shortcut
-	@details These shortcuts use default option as kCCOptionPKCS7Padding</Abstract>
-			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/AGSinaWeiboRefContentViewDelegate/contentView:showPic:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示图片</Abstract>
+			<DeclaredIn>AGSinaWeiboRefContentView.h</DeclaredIn>			
 			
-			<Declaration>- (NSData *)encryptedAES128DataWithKey:(NSData *)key</Declaration>
+			<Declaration>- (void)contentView:(AGSinaWeiboRefContentView *)contentView showPic:(NSString *)imageUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentView</Name>
+					<Abstract type="html">内容视图</Abstract>
+				</Parameter><Parameter>
+					<Name>imageUrl</Name>
+					<Abstract type="html">图片URL</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/encryptedAES128DataWithKey:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCryptor)/decryptedAES128DataWithKey:</TokenIdentifier>
-			<Abstract type="html">	@name Decryption Shortcut
-	@details These shortcuts use default option as kCCOptionPKCS7Padding</Abstract>
-			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>			
-			
-			<Declaration>- (NSData *)decryptedAES128DataWithKey:(NSData *)key</Declaration>
-			
-			
-			<Anchor>//api/name/decryptedAES128DataWithKey:</Anchor>
+			<Anchor>//api/name/contentView:showPic:</Anchor>
 		</Token>
 		
 	</File>

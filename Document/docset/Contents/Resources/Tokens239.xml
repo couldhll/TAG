@@ -1,439 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSEverNoteNote.html">
+	<File path="Classes/SSRenRenBasicInformation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteNote</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记信息</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenBasicInformation</TokenIdentifier>
+			<Abstract type="html">	@brief	基本信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>
 			
 			<NodeRef refid="239"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setGuid:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setSex:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户性别
+FEMALE	女性
+MALE	男性</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *guid</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sex</Declaration>
 			
 			
-			<Anchor>//api/name/guid</Anchor>
+			<Anchor>//api/name/sex</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/guid</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/sex</TokenIdentifier>
+			<Abstract type="html">	@brief	用户性别
+FEMALE	女性
+MALE	男性</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *guid</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sex</Declaration>
 			
 			
-			<Anchor>//api/name/guid</Anchor>
+			<Anchor>//api/name/sex</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setTitle:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setBirthday:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户生日，格式为&apos;yyyy-mm-dd&apos;或&apos;y0后-mm-dd&apos;</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/birthday</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/title</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/birthday</TokenIdentifier>
+			<Abstract type="html">	@brief	用户生日，格式为&apos;yyyy-mm-dd&apos;或&apos;y0后-mm-dd&apos;</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/birthday</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setContent:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenBasicInformation/setHomeTown:</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *content</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenHometown *homeTown</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/homeTown</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/content</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenBasicInformation/homeTown</TokenIdentifier>
+			<Abstract type="html">	@brief	家乡信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *content</Declaration>
+			<Declaration>@property (nonatomic, readonly) SSRenRenHometown *homeTown</Declaration>
 			
 			
-			<Anchor>//api/name/content</Anchor>
+			<Anchor>//api/name/homeTown</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setContentHash:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *contentHash</Declaration>
-			
-			
-			<Anchor>//api/name/contentHash</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/contentHash</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *contentHash</Declaration>
-			
-			
-			<Anchor>//api/name/contentHash</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setContentLength:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger contentLength</Declaration>
-			
-			
-			<Anchor>//api/name/contentLength</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/contentLength</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger contentLength</Declaration>
-			
-			
-			<Anchor>//api/name/contentLength</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setCreated:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
-			
-			
-			<Anchor>//api/name/created</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/created</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long created</Declaration>
-			
-			
-			<Anchor>//api/name/created</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setUpdated:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
-			
-			
-			<Anchor>//api/name/updated</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/updated</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
-			
-			
-			<Anchor>//api/name/updated</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setDeleted:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
-			
-			
-			<Anchor>//api/name/deleted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/deleted</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long deleted</Declaration>
-			
-			
-			<Anchor>//api/name/deleted</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setActive:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
-			
-			
-			<Anchor>//api/name/active</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/active</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
-			
-			
-			<Anchor>//api/name/active</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setUpdateSequenceNum:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger updateSequenceNum</Declaration>
-			
-			
-			<Anchor>//api/name/updateSequenceNum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/updateSequenceNum</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger updateSequenceNum</Declaration>
-			
-			
-			<Anchor>//api/name/updateSequenceNum</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setNotebookGuid:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *notebookGuid</Declaration>
-			
-			
-			<Anchor>//api/name/notebookGuid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/notebookGuid</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *notebookGuid</Declaration>
-			
-			
-			<Anchor>//api/name/notebookGuid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setTagGuids:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tagGuids</Declaration>
-			
-			
-			<Anchor>//api/name/tagGuids</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/tagGuids</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tagGuids</Declaration>
-			
-			
-			<Anchor>//api/name/tagGuids</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setResources:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *resources</Declaration>
-			
-			
-			<Anchor>//api/name/resources</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/resources</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *resources</Declaration>
-			
-			
-			<Anchor>//api/name/resources</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setAttributes:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteNoteAttributes *attributes</Declaration>
-			
-			
-			<Anchor>//api/name/attributes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/attributes</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteNoteAttributes *attributes</Declaration>
-			
-			
-			<Anchor>//api/name/attributes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/setTagNames:</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tagNames</Declaration>
-			
-			
-			<Anchor>//api/name/tagNames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNote/tagNames</TokenIdentifier>
-			<Abstract type="html">#end</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *tagNames</Declaration>
-			
-			
-			<Anchor>//api/name/tagNames</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteNote/noteWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建笔记信息</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNoteNote *)noteWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/SSRenRenBasicInformation/basicInformationWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建基本信息</Abstract>
+			<DeclaredIn>SSRenRenBasicInformation.h</DeclaredIn>			
+			
+			<Declaration>+ (SSRenRenBasicInformation *)basicInformationWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">笔记信息</Abstract></ReturnValue>
-			<Anchor>//api/name/noteWithResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteNote/noteWithContent:title:active:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建笔记信息</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNoteNote *)noteWithContent:(NSString *)content title:(NSString *)title active:(BOOL)active</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">笔记内容</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">标题</Abstract>
-				</Parameter><Parameter>
-					<Name>active</Name>
-					<Abstract type="html">笔记是否激活</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">笔记信息</Abstract></ReturnValue>
-			<Anchor>//api/name/noteWithContent:title:active:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteNote/noteWithContent:title:resources:active:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建笔记信息</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNoteNote *)noteWithContent:(NSString *)content title:(NSString *)title resources:(NSArray *)resources active:(BOOL)active</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>content</Name>
-					<Abstract type="html">笔记内容</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">标题</Abstract>
-				</Parameter><Parameter>
-					<Name>resources</Name>
-					<Abstract type="html">笔记中嵌入的资源列表</Abstract>
-				</Parameter><Parameter>
-					<Name>active</Name>
-					<Abstract type="html">笔记是否激活</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">笔记信息</Abstract></ReturnValue>
-			<Anchor>//api/name/noteWithContent:title:resources:active:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/parse:</TokenIdentifier>
-			<Abstract type="html">	@brief	解析数据</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/parse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNote/putData:</TokenIdentifier>
-			<Abstract type="html">	@brief	设置数据</Abstract>
-			<DeclaredIn>SSEverNoteNote.h</DeclaredIn>			
-			
-			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>writer</Name>
-					<Abstract type="html">数据写入器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/putData:</Anchor>
+			<ReturnValue><Abstract type="html">基本信息实例对象</Abstract></ReturnValue>
+			<Anchor>//api/name/basicInformationWithResponse:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,97 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSYouDaoNoteResource.html">
+	<File path="Classes/WeiBo_baseRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSYouDaoNoteResource</TokenIdentifier>
-			<Abstract type="html">	@brief	附件信息</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiBo_baseRequest</TokenIdentifier>
+			<Abstract type="html">微博相关接口基类</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>
 			
 			<NodeRef refid="377"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteResource/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteResource/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteResource/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	附件URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteResource/url</TokenIdentifier>
-			<Abstract type="html">	@brief	附件URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteResource/setSrc:</TokenIdentifier>
-			<Abstract type="html">	@brief	图标URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
-			
-			
-			<Anchor>//api/name/src</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteResource/src</TokenIdentifier>
-			<Abstract type="html">	@brief	图标URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
-			
-			
-			<Anchor>//api/name/src</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSYouDaoNoteResource/resourceWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建附件信息</Abstract>
-			<DeclaredIn>SSYouDaoNoteResource.h</DeclaredIn>			
-			
-			<Declaration>+ (SSYouDaoNoteResource *)resourceWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">附件信息</Abstract></ReturnValue>
-			<Anchor>//api/name/resourceWithResponse:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

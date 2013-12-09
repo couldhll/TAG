@@ -1,162 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTencentWeiboEdu.html">
+	<File path="Classes/WBBaseMediaObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboEdu</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBBaseMediaObject</TokenIdentifier>
+			<Abstract type="html">消息中包含的多媒体数据对象基类</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="352"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseMediaObject/setObjectID:</TokenIdentifier>
+			<Abstract type="html">对象唯一ID，用于唯一标识一个多媒体内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *objectID</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/objectID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseMediaObject/objectID</TokenIdentifier>
+			<Abstract type="html">对象唯一ID，用于唯一标识一个多媒体内容</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *objectID</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/objectID</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setDepartmentid:</TokenIdentifier>
-			<Abstract type="html">	@brief	院系id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseMediaObject/setTitle:</TokenIdentifier>
+			<Abstract type="html">多媒体内容标题</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger departmentid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/departmentid</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/departmentid</TokenIdentifier>
-			<Abstract type="html">	@brief	院系id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseMediaObject/title</TokenIdentifier>
+			<Abstract type="html">多媒体内容标题</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger departmentid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/departmentid</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息记录id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseMediaObject/setDescription:</TokenIdentifier>
+			<Abstract type="html">多媒体内容描述</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/description</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息记录id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseMediaObject/description</TokenIdentifier>
+			<Abstract type="html">多媒体内容描述</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *description</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/description</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setLevel:</TokenIdentifier>
-			<Abstract type="html">	@brief	学历级别</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseMediaObject/setThumbnailData:</TokenIdentifier>
+			<Abstract type="html">多媒体内容缩略图</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *thumbnailData</Declaration>
 			
 			
-			<Anchor>//api/name/level</Anchor>
+			<Anchor>//api/name/thumbnailData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/level</TokenIdentifier>
-			<Abstract type="html">	@brief	学历级别</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseMediaObject/thumbnailData</TokenIdentifier>
+			<Abstract type="html">多媒体内容缩略图</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *thumbnailData</Declaration>
 			
 			
-			<Anchor>//api/name/level</Anchor>
+			<Anchor>//api/name/thumbnailData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setSchoolid:</TokenIdentifier>
-			<Abstract type="html">	@brief	学校id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBBaseMediaObject/setScheme:</TokenIdentifier>
+			<Abstract type="html">点击多媒体内容之后呼起第三方应用特定页面的scheme</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger schoolid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *scheme</Declaration>
 			
 			
-			<Anchor>//api/name/schoolid</Anchor>
+			<Anchor>//api/name/scheme</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/schoolid</TokenIdentifier>
-			<Abstract type="html">	@brief	学校id</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBBaseMediaObject/scheme</TokenIdentifier>
+			<Abstract type="html">点击多媒体内容之后呼起第三方应用特定页面的scheme</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger schoolid</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *scheme</Declaration>
 			
 			
-			<Anchor>//api/name/schoolid</Anchor>
+			<Anchor>//api/name/scheme</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setYear:</TokenIdentifier>
-			<Abstract type="html">	@brief	入学年</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/WBBaseMediaObject/object</TokenIdentifier>
+			<Abstract type="html">返回一个 WBBaseMediaObject 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger year</Declaration>
+			<Declaration>+ (id)object</Declaration>
 			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/year</TokenIdentifier>
-			<Abstract type="html">	@brief	入学年</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger year</Declaration>
-			
-			
-			<Anchor>//api/name/year</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboEdu/eduWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建教育信息</Abstract>
-			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
-			
-			<Declaration>+ (SSTencentWeiboEdu *)eduWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">教育信息</Abstract></ReturnValue>
-			<Anchor>//api/name/eduWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBBaseMediaObject对象</Abstract></ReturnValue>
+			<Anchor>//api/name/object</Anchor>
 		</Token>
 		
 	</File>

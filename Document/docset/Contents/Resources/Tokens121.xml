@@ -1,50 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/HLLAPI.html">
+	<File path="Classes/QQApiNewsObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/HLLAPI</TokenIdentifier>
-			<Abstract type="html">Data provider API</Abstract>
-			<DeclaredIn>HLLAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiNewsObject</TokenIdentifier>
+			<Abstract type="html">@brief 新闻URL对象
+     用于分享目标内容为新闻的URL的对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="121"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/HLLAPI/sharedInstance</TokenIdentifier>
-			<Abstract type="html">Singleton methods</Abstract>
-			<DeclaredIn>HLLAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiNewsObject/objectWithURL:title:description:previewImageData:</TokenIdentifier>
+			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiNewsObject&lt;/code&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (HLLAPI *)sharedInstance</Declaration>
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">视频内容的目标URL</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享内容的标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">分享内容的描述</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">分享内容的预览图像</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/sharedInstance</Anchor>
+			<Anchor>//api/name/objectWithURL:title:description:previewImageData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/HLLAPI/userRegisterWith:name:password:completion:</TokenIdentifier>
-			<Abstract type="html">	@brief	userRegisterWithadfadafasf</Abstract>
-			<DeclaredIn>HLLAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiNewsObject/objectWithURL:title:description:previewImageURL:</TokenIdentifier>
+			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiNewsObject&lt;/code&gt;</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>- (HLLUserModel *)userRegisterWith:(NSString *)email name:(NSString *)name password:(NSString *)password completion:(JSONObjectBlock)completeBlock</Declaration>
+			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageURL:(NSURL *)previewURL</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">fsadfadfa</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">视频内容的目标URL</Abstract>
 				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">afdsfaafda</Abstract>
+					<Name>title</Name>
+					<Abstract type="html">分享内容的标题</Abstract>
 				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract type="html">afdfaf</Abstract>
+					<Name>description</Name>
+					<Abstract type="html">分享内容的描述</Abstract>
 				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">afdfa</Abstract>
+					<Name>previewURL</Name>
+					<Abstract type="html">分享内容的预览图像URL</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">asdfa</Abstract></ReturnValue>
-			<Anchor>//api/name/userRegisterWith:name:password:completion:</Anchor>
+			
+			<Anchor>//api/name/objectWithURL:title:description:previewImageURL:</Anchor>
 		</Token>
 		
 	</File>

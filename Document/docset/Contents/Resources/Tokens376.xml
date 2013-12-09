@@ -1,228 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSYouDaoNoteNote.html">
+	<File path="Classes/WeiBo_add_t_POST.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSYouDaoNoteNote</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记信息</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WeiBo_add_t_POST</TokenIdentifier>
+			<Abstract type="html">\brief 发表一条微博信息（纯文本）到腾讯微博平台上。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>
 			
 			<NodeRef refid="376"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_t_POST/setParam_content:</TokenIdentifier>
+			<Abstract type="html">表示要发表的微博内容。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_content</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/param_content</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_t_POST/param_content</TokenIdentifier>
+			<Abstract type="html">表示要发表的微博内容。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_content</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/param_content</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setPath:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记路径</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_t_POST/setParam_clientip:</TokenIdentifier>
+			<Abstract type="html">用户ip。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_clientip</Declaration>
 			
 			
-			<Anchor>//api/name/path</Anchor>
+			<Anchor>//api/name/param_clientip</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/path</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记路径</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_t_POST/param_clientip</TokenIdentifier>
+			<Abstract type="html">用户ip。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *path</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_clientip</Declaration>
 			
 			
-			<Anchor>//api/name/path</Anchor>
+			<Anchor>//api/name/param_clientip</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setTitle:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记标题</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_t_POST/setParam_longitude:</TokenIdentifier>
+			<Abstract type="html">用户所在地理位置的经度。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_longitude</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/param_longitude</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/title</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记标题</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_t_POST/param_longitude</TokenIdentifier>
+			<Abstract type="html">用户所在地理位置的经度。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_longitude</Declaration>
 			
 			
-			<Anchor>//api/name/title</Anchor>
+			<Anchor>//api/name/param_longitude</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setAuthor:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记作者</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_t_POST/setParam_latitude:</TokenIdentifier>
+			<Abstract type="html">用户所在地理位置的纬度。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_latitude</Declaration>
 			
 			
-			<Anchor>//api/name/author</Anchor>
+			<Anchor>//api/name/param_latitude</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/author</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记作者</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_t_POST/param_latitude</TokenIdentifier>
+			<Abstract type="html">用户所在地理位置的纬度。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr param_latitude</Declaration>
 			
 			
-			<Anchor>//api/name/author</Anchor>
+			<Anchor>//api/name/param_latitude</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setSource:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记来源URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WeiBo_add_t_POST/setParam_compatibleflag:</TokenIdentifier>
+			<Abstract type="html">容错标志，支持按位操作，默认为0。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_compatibleflag</Declaration>
 			
 			
-			<Anchor>//api/name/source</Anchor>
+			<Anchor>//api/name/param_compatibleflag</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/source</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记来源URL</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WeiBo_add_t_POST/param_compatibleflag</TokenIdentifier>
+			<Abstract type="html">容错标志，支持按位操作，默认为0。</Abstract>
+			<DeclaredIn>WeiBoAPI.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
-			
-			
-			<Anchor>//api/name/source</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setSize:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记大小，包括笔记正文及附件</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr param_compatibleflag</Declaration>
 			
 			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/size</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记大小，包括笔记正文及附件</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger size</Declaration>
-			
-			
-			<Anchor>//api/name/size</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setCreateTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记的创建时间，单位秒</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval createTime</Declaration>
-			
-			
-			<Anchor>//api/name/createTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/createTime</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记的创建时间，单位秒</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval createTime</Declaration>
-			
-			
-			<Anchor>//api/name/createTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setModifyTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记的最后修改时间，单位秒</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval modifyTime</Declaration>
-			
-			
-			<Anchor>//api/name/modifyTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/modifyTime</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记的最后修改时间，单位秒</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSTimeInterval modifyTime</Declaration>
-			
-			
-			<Anchor>//api/name/modifyTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteNote/setContent:</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记正文</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteNote/content</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记正文</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *content</Declaration>
-			
-			
-			<Anchor>//api/name/content</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSYouDaoNoteNote/noteWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建笔记信息</Abstract>
-			<DeclaredIn>SSYouDaoNoteNote.h</DeclaredIn>			
-			
-			<Declaration>+ (SSYouDaoNoteNote *)noteWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">笔记信息</Abstract></ReturnValue>
-			<Anchor>//api/name/noteWithResponse:</Anchor>
+			<Anchor>//api/name/param_compatibleflag</Anchor>
 		</Token>
 		
 	</File>

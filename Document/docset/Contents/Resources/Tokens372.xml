@@ -1,162 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTwitterUserMention.html">
+	<File path="Classes/WXMusicObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterUserMention</TokenIdentifier>
-			<Abstract type="html">	@brief	提及用户信息</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WXMusicObject</TokenIdentifier>
+			<Abstract type="html">@brief 多媒体消息中包含的音乐数据对象</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<NodeRef refid="372"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/WXMusicObject/object</TokenIdentifier>
+			<Abstract type="html">@brief 返回一个WXMusicObject对象</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>+ (WXMusicObject *)object</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/object</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicUrl:</TokenIdentifier>
+			<Abstract type="html">音乐网页的url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/musicUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setId:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicUrl</TokenIdentifier>
+			<Abstract type="html">音乐网页的url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/musicUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/Id</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicLowBandUrl:</TokenIdentifier>
+			<Abstract type="html">音乐lowband网页的url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long Id</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
 			
 			
-			<Anchor>//api/name/Id</Anchor>
+			<Anchor>//api/name/musicLowBandUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setIdStr:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID字符串</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicLowBandUrl</TokenIdentifier>
+			<Abstract type="html">音乐lowband网页的url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
 			
 			
-			<Anchor>//api/name/idStr</Anchor>
+			<Anchor>//api/name/musicLowBandUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/idStr</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID字符串</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicDataUrl:</TokenIdentifier>
+			<Abstract type="html">音乐数据url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *idStr</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicDataUrl</Declaration>
 			
 			
-			<Anchor>//api/name/idStr</Anchor>
+			<Anchor>//api/name/musicDataUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setIndices:</TokenIdentifier>
-			<Abstract type="html">	@brief	用提及用户信息的起始位置和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicDataUrl</TokenIdentifier>
+			<Abstract type="html">音乐数据url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicDataUrl</Declaration>
 			
 			
-			<Anchor>//api/name/indices</Anchor>
+			<Anchor>//api/name/musicDataUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/indices</TokenIdentifier>
-			<Abstract type="html">	@brief	用提及用户信息的起始位置和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicLowBandDataUrl:</TokenIdentifier>
+			<Abstract type="html">音乐lowband数据url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicLowBandDataUrl</Declaration>
 			
 			
-			<Anchor>//api/name/indices</Anchor>
+			<Anchor>//api/name/musicLowBandDataUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicLowBandDataUrl</TokenIdentifier>
+			<Abstract type="html">音乐lowband数据url地址
+@attention 长度不能超过10K</Abstract>
+			<DeclaredIn>WXApiObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/name</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *musicLowBandDataUrl</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterUserMention/setScreenName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户屏幕名称</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
-			
-			
-			<Anchor>//api/name/screenName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterUserMention/screenName</TokenIdentifier>
-			<Abstract type="html">	@brief	用户屏幕名称</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
-			
-			
-			<Anchor>//api/name/screenName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterUserMention/userMentionWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建提及用户信息</Abstract>
-			<DeclaredIn>SSTwitterUserMention.h</DeclaredIn>			
-			
-			<Declaration>+ (SSTwitterUserMention *)userMentionWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">提及用户信息</Abstract></ReturnValue>
-			<Anchor>//api/name/userMentionWithResponse:</Anchor>
+			<Anchor>//api/name/musicLowBandDataUrl</Anchor>
 		</Token>
 		
 	</File>

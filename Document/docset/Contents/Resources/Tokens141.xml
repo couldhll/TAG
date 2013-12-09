@@ -1,93 +1,613 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/NSAMethod.html">
+	<File path="Classes/SS163WeiboUser.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/NSAMethod</TokenIdentifier>
-			<Abstract type="html">@brief Object wrapper for Method</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SS163WeiboUser</TokenIdentifier>
+			<Abstract type="html">	@brief	用户信息</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>
 			
 			<NodeRef refid="141"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setMethod:</TokenIdentifier>
-			<Abstract type="html">@brief Wrapped value of type [Method][0]
-[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html#//apple_ref/c/tdef/Method</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) Method method</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/method</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/method</TokenIdentifier>
-			<Abstract type="html">@brief Wrapped value of type [Method][0]
-[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html#//apple_ref/c/tdef/Method</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) Method method</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/method</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setImplementation:</TokenIdentifier>
-			<Abstract type="html">@brief Implementation of the method.</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) IMP implementation</Declaration>
+			<Declaration>@property (nonatomic, retain) SS163WeiboCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/implementation</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/implementation</TokenIdentifier>
-			<Abstract type="html">@brief Implementation of the method.</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/credential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) IMP implementation</Declaration>
+			<Declaration>@property (nonatomic, retain) SS163WeiboCredential *credential</Declaration>
 			
 			
-			<Anchor>//api/name/implementation</Anchor>
+			<Anchor>//api/name/credential</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setTypeEncoding:</TokenIdentifier>
-			<Abstract type="html">@brief Type encoding of the method.</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setColumnIdNameWithCounts:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *typeEncoding</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger columnIdNameWithCounts</Declaration>
 			
 			
-			<Anchor>//api/name/typeEncoding</Anchor>
+			<Anchor>//api/name/columnIdNameWithCounts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/typeEncoding</TokenIdentifier>
-			<Abstract type="html">@brief Type encoding of the method.</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/columnIdNameWithCounts</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *typeEncoding</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger columnIdNameWithCounts</Declaration>
 			
 			
-			<Anchor>//api/name/typeEncoding</Anchor>
+			<Anchor>//api/name/columnIdNameWithCounts</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/exchangeImplementationWith:</TokenIdentifier>
-			<Abstract type="html">@brief Exchanges the implementation of tho methods.</Abstract>
-			<DeclaredIn>NSObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户注册时间</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
 			
-			<Declaration>- (void)exchangeImplementationWith:(NSAMethod *)method</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *createdAt</Declaration>
 			
 			
-			<Anchor>//api/name/exchangeImplementationWith:</Anchor>
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/createdAt</TokenIdentifier>
+			<Abstract type="html">	@brief	用户注册时间</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setDarenRec:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *darenRec</Declaration>
+			
+			
+			<Anchor>//api/name/darenRec</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/darenRec</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *darenRec</Declaration>
+			
+			
+			<Anchor>//api/name/darenRec</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setDescription:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户描述</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/description</TokenIdentifier>
+			<Abstract type="html">	@brief	用户描述</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setEmail:</TokenIdentifier>
+			<Abstract type="html">	@brief	邮箱地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/email</TokenIdentifier>
+			<Abstract type="html">	@brief	邮箱地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setFavouritesCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger favouritesCount</Declaration>
+			
+			
+			<Anchor>//api/name/favouritesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/favouritesCount</TokenIdentifier>
+			<Abstract type="html">	@brief	收藏数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger favouritesCount</Declaration>
+			
+			
+			<Anchor>//api/name/favouritesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setFollowersCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	被关注数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger followersCount</Declaration>
+			
+			
+			<Anchor>//api/name/followersCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/followersCount</TokenIdentifier>
+			<Abstract type="html">	@brief	被关注数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger followersCount</Declaration>
+			
+			
+			<Anchor>//api/name/followersCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setFriendsCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	关注数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger friendsCount</Declaration>
+			
+			
+			<Anchor>//api/name/friendsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/friendsCount</TokenIdentifier>
+			<Abstract type="html">	@brief	关注数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger friendsCount</Declaration>
+			
+			
+			<Anchor>//api/name/friendsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setGender:</TokenIdentifier>
+			<Abstract type="html">	@brief	性别，0为保密，1为男性，2为女性</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/gender</TokenIdentifier>
+			<Abstract type="html">	@brief	性别，0为保密，1为男性，2为女性</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger gender</Declaration>
+			
+			
+			<Anchor>//api/name/gender</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setGeoEnable:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL geoEnable</Declaration>
+			
+			
+			<Anchor>//api/name/geoEnable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/geoEnable</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL geoEnable</Declaration>
+			
+			
+			<Anchor>//api/name/geoEnable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setIcorp:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger icorp</Declaration>
+			
+			
+			<Anchor>//api/name/icorp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/icorp</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger icorp</Declaration>
+			
+			
+			<Anchor>//api/name/icorp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setInGroups:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *inGroups</Declaration>
+			
+			
+			<Anchor>//api/name/inGroups</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/inGroups</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *inGroups</Declaration>
+			
+			
+			<Anchor>//api/name/inGroups</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setLocation:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/location</TokenIdentifier>
+			<Abstract type="html">	@brief	用户地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/name</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setProfileImageUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像URL，最大长度为255</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/profileImageUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	用户头像URL，最大长度为255</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *profileImageUrl</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setRealName:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *realName</Declaration>
+			
+			
+			<Anchor>//api/name/realName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/realName</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *realName</Declaration>
+			
+			
+			<Anchor>//api/name/realName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	个性网址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/screenName</TokenIdentifier>
+			<Abstract type="html">	@brief	个性网址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setStatusesCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	发微博数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusesCount</Declaration>
+			
+			
+			<Anchor>//api/name/statusesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/statusesCount</TokenIdentifier>
+			<Abstract type="html">	@brief	发微博数</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger statusesCount</Declaration>
+			
+			
+			<Anchor>//api/name/statusesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setSysTag:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sysTag</Declaration>
+			
+			
+			<Anchor>//api/name/sysTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/sysTag</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sysTag</Declaration>
+			
+			
+			<Anchor>//api/name/sysTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	个人博客地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/url</TokenIdentifier>
+			<Abstract type="html">	@brief	个人博客地址</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setUserTag:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userTag</Declaration>
+			
+			
+			<Anchor>//api/name/userTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/userTag</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *userTag</Declaration>
+			
+			
+			<Anchor>//api/name/userTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setVerified:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/verified</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/setStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	最新一条微博</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SS163WeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboUser/status</TokenIdentifier>
+			<Abstract type="html">	@brief	最新一条微博</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SS163WeiboStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SS163WeiboUser/userInfoWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>+ (SS163WeiboUser *)userInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
+			<Anchor>//api/name/userInfoWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboUser/descriptor</TokenIdentifier>
+			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
+			<DeclaredIn>SS163WeiboUser.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			
+			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
+			<Anchor>//api/name/descriptor</Anchor>
 		</Token>
 		
 	</File>

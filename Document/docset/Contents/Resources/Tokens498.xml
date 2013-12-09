@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+CommonCryptorString.html">
+	<File path="Protocols/AGSinaWeiboStatusCellDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCryptorString)</TokenIdentifier>
-			<Abstract type="html">	@brief CommonCryptor NSData to NSString decryption shortcuts</Abstract>
-			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/AGSinaWeiboStatusCellDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>
 			
 			<NodeRef refid="498"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AGSinaWeiboStatusCellDelegate/cell:onShowPic:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示图片</Abstract>
+			<DeclaredIn>AGSinaWeiboStatusCell.h</DeclaredIn>			
+			
+			<Declaration>- (void)cell:(AGSinaWeiboStatusCell *)cell onShowPic:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cell</Name>
+					<Abstract type="html">状态单元</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cell:onShowPic:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

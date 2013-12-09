@@ -1,48 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMDeviceInfo.html">
+	<File path="Classes/CMDebugLog.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMDeviceInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	设备信息</Abstract>
-			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMDebugLog</TokenIdentifier>
+			<Abstract type="html">	@brief  调试日志类</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>
 			
 			<NodeRef refid="32"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDeviceInfo/macAddress</TokenIdentifier>
-			<Abstract type="html">	@brief	取得网卡的物理地址</Abstract>
-			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/logPath</TokenIdentifier>
+			<Abstract type="html">	@brief	获取日志保存路径</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)macAddress</Declaration>
+			<Declaration>+ (NSString *)logPath</Declaration>
 			
-			<ReturnValue><Abstract type="html">网卡物理地址</Abstract></ReturnValue>
-			<Anchor>//api/name/macAddress</Anchor>
+			<ReturnValue><Abstract type="html">日志路径</Abstract></ReturnValue>
+			<Anchor>//api/name/logPath</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMDeviceInfo/deviceModel</TokenIdentifier>
-			<Abstract type="html">	@brief	获取设备型号</Abstract>
-			<DeclaredIn>CMDeviceInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeInfo:</TokenIdentifier>
+			<Abstract type="html">	@brief	写入信息</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
 			
-			<Declaration>+ (NSString *)deviceModel</Declaration>
+			<Declaration>+ (void)writeInfo:(NSString *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			<ReturnValue><Abstract type="html">设备型号：设备型号对照如下：
-iPhone1,1 -&gt;    iPhone 1G
-iPhone1,2 -&gt;    iPhone 3G
-iPhone2,1 -&gt;    iPhone 3GS
-iPhone3,1 -&gt;    iPhone 4
-
-iPod1,1   -&gt; iPod touch 1G
-iPod2,1   -&gt; iPod touch 2G
-iPod2,2   -&gt; iPod touch 2.5G
-iPod3,1   -&gt; iPod touch 3G
-iPod4,1   -&gt; iPod touch 4
-
-iPad1,1   -&gt; iPad 1G, WiFi</Abstract></ReturnValue>
-			<Anchor>//api/name/deviceModel</Anchor>
+			<Anchor>//api/name/writeInfo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeWarning:</TokenIdentifier>
+			<Abstract type="html">	@brief	写入警告</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)writeWarning:(NSString *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeWarning:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeError:</TokenIdentifier>
+			<Abstract type="html">	@brief	写入错误</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)writeError:(NSString *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CMDebugLog/writeContentWithDictionary:</TokenIdentifier>
+			<Abstract type="html">	@brief	写入内容</Abstract>
+			<DeclaredIn>CMDebugLog.h</DeclaredIn>			
+			
+			<Declaration>+ (void)writeContentWithDictionary:(NSDictionary *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">内容字典对象</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeContentWithDictionary:</Anchor>
 		</Token>
 		
 	</File>

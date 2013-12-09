@@ -1,92 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TencentBaseMessageObj.html">
+	<File path="Categories/NSData+CommonCryptorString.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TencentBaseMessageObj</TokenIdentifier>
-			<Abstract type="html">\brief 消息体</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCryptorString)</TokenIdentifier>
+			<Abstract type="html">	@brief CommonCryptor NSData to NSString decryption shortcuts</Abstract>
+			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>
 			
 			<NodeRef refid="415"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setNVersion:</TokenIdentifier>
-			<Abstract type="html">消息类型</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) NSInteger nVersion</Declaration>
-			
-			
-			<Anchor>//api/name/nVersion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/nVersion</TokenIdentifier>
-			<Abstract type="html">消息类型</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) NSInteger nVersion</Declaration>
-			
-			
-			<Anchor>//api/name/nVersion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setSName:</TokenIdentifier>
-			<Abstract type="html">消息描述</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *sName</Declaration>
-			
-			
-			<Anchor>//api/name/sName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/sName</TokenIdentifier>
-			<Abstract type="html">消息描述</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *sName</Declaration>
-			
-			
-			<Anchor>//api/name/sName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/setDictExpandInfo:</TokenIdentifier>
-			<Abstract type="html">消息的扩展信息 主要是可以用来进行一些请求消息体的描述 譬如图片要求的width height 文字的关键字什么的, 也可以不用填写</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *dictExpandInfo</Declaration>
-			
-			
-			<Anchor>//api/name/dictExpandInfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/TencentBaseMessageObj/dictExpandInfo</TokenIdentifier>
-			<Abstract type="html">消息的扩展信息 主要是可以用来进行一些请求消息体的描述 譬如图片要求的width height 文字的关键字什么的, 也可以不用填写</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *dictExpandInfo</Declaration>
-			
-			
-			<Anchor>//api/name/dictExpandInfo</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TencentBaseMessageObj/isVaild</TokenIdentifier>
-			<Abstract type="html">消息是否有效</Abstract>
-			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isVaild</Declaration>
-			
-			
-			<Anchor>//api/name/isVaild</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

@@ -1,102 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UIAPlaceholderTextView.html">
+	<File path="Categories/NSDictionary+NSData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UIAPlaceholderTextView</TokenIdentifier>
-			<Abstract type="html">@brief UITextView with placeholder.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(NSData)</TokenIdentifier>
+			<Abstract type="html">@brief NSDictionary creation methods extension with [NSData][1].
+[1]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/Reference/Reference.html
+@details Data must be property list.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>
 			
 			<NodeRef refid="425"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderString:</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder string</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated dictionary with the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
-			
-			
-			<Anchor>//api/name/placeholderString</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:format:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/dictionaryWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object containing bytes of plist file representation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A dictionary initialized to contain the contents in data. Returns nil if the contents of the request can’t be parsed into a dictionary. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderString</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder string</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated dictionary with the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
-			
-			
-			<Anchor>//api/name/placeholderString</Anchor>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/dictionaryWithData:format:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithData:(NSData *)data format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object containing bytes of plist file representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">A property list format. Possible values for format are described in [NSPropertyListFormat][1].</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If the method does not complete successfully, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A dictionary initialized to contain the contents in data. Returns nil if the contents of the request can’t be parsed into a dictionary. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:format:error:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/set__deprecated:</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/dictionaryWithData:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns a dictionary containing the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)dictionaryWithData:(NSData *)data</Declaration>
 			
 			
-			<Anchor>//api/name/__deprecated</Anchor>
+			<Anchor>//api/name/dictionaryWithData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/__deprecated</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/dictionaryWithData:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns a dictionary containing the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
-			
-			
-			<Anchor>//api/name/__deprecated</Anchor>
-		</Token>
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(NSData)/initWithData:format:error:</TokenIdentifier>
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderTextView:</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
+	</RelatedTokens>
+	
+			<Declaration>+ (id)dictionaryWithData:(NSData *)data format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
 			
 			
-			<Anchor>//api/name/placeholderTextView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderTextView</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
-			
-			
-			<Anchor>//api/name/placeholderTextView</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderAnimated:</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
-			
-			
-			<Anchor>//api/name/placeholderAnimated</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderAnimated</TokenIdentifier>
-			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
-			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
-			
-			
-			<Anchor>//api/name/placeholderAnimated</Anchor>
+			<Anchor>//api/name/dictionaryWithData:format:error:</Anchor>
 		</Token>
 		
 	</File>

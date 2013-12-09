@@ -1,112 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WBMessageObject.html">
+	<File path="Categories/NSNumber+Description.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WBMessageObject</TokenIdentifier>
-			<Abstract type="html">微博客户端程序和第三方应用之间传递的消息结构</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNumber(Description)</TokenIdentifier>
+			<Abstract type="html">@brief NSNumber description method extension</Abstract>
+			<DeclaredIn>NSNumber.h</DeclaredIn>
 			
 			<NodeRef refid="440"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setText:</TokenIdentifier>
-			<Abstract type="html">消息的文本内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/text</TokenIdentifier>
-			<Abstract type="html">消息的文本内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setImageObject:</TokenIdentifier>
-			<Abstract type="html">消息的图片内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WBImageObject</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WBImageObject *imageObject</Declaration>
-			
-			
-			<Anchor>//api/name/imageObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/imageObject</TokenIdentifier>
-			<Abstract type="html">消息的图片内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WBImageObject</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WBImageObject *imageObject</Declaration>
-			
-			
-			<Anchor>//api/name/imageObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WBMessageObject/setMediaObject:</TokenIdentifier>
-			<Abstract type="html">消息的多媒体内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WBBaseMediaObject</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WBBaseMediaObject *mediaObject</Declaration>
-			
-			
-			<Anchor>//api/name/mediaObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WBMessageObject/mediaObject</TokenIdentifier>
-			<Abstract type="html">消息的多媒体内容</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WBBaseMediaObject</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>@property (nonatomic, retain) WBBaseMediaObject *mediaObject</Declaration>
-			
-			
-			<Anchor>//api/name/mediaObject</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WBMessageObject/message</TokenIdentifier>
-			<Abstract type="html">返回一个 WBMessageObject 对象</Abstract>
-			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
-			
-			<Declaration>+ (id)message</Declaration>
-			
-			<ReturnValue><Abstract type="html">返回一个自动释放的WBMessageObject对象</Abstract></ReturnValue>
-			<Anchor>//api/name/message</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

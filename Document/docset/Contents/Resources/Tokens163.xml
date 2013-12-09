@@ -1,102 +1,340 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PFCloud.html">
+	<File path="Classes/SSEverNoteResourceAttributes.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PFCloud</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>PFCloud.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteResourceAttributes</TokenIdentifier>
+			<Abstract type="html">	@brief	资源属性</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>
 			
 			<NodeRef refid="163"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:</TokenIdentifier>
-			<Abstract type="html">Calls the given cloud function with the parameters passed in.</Abstract>
-			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setSourceURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	the original location where the resource was hosted </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
 			
-			<Declaration>+ (id)callFunction:(NSString *)function withParameters:(NSDictionary *)parameters</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>function</Name>
-					<Abstract type="html">The function name to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>parameters</Name>
-					<Abstract type="html">The parameters to send to the function.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The response from the cloud function.</Abstract></ReturnValue>
-			<Anchor>//api/name/callFunction:withParameters:</Anchor>
+			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:error:</TokenIdentifier>
-			<Abstract type="html">Calls the given cloud function with the parameters passed in and sets the error if there is one.</Abstract>
-			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/sourceURL</TokenIdentifier>
+			<Abstract type="html">	@brief	the original location where the resource was hosted </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
 			
-			<Declaration>+ (id)callFunction:(NSString *)function withParameters:(NSDictionary *)parameters error:(NSError **)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>function</Name>
-					<Abstract type="html">The function name to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>parameters</Name>
-					<Abstract type="html">The parameters to send to the function.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The response from the cloud function.  This result could be a NSDictionary, an NSArray, NSInteger or NSString.</Abstract></ReturnValue>
-			<Anchor>//api/name/callFunction:withParameters:error:</Anchor>
+			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURL</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:block:</TokenIdentifier>
-			<Abstract type="html">Calls the given cloud function with the parameters provided asynchronously and calls the given block when it is done.</Abstract>
-			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">	@brief	the date and time that is associated with this resource (e.g. the time embedded in an image from a digital camera with a clock)</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
 			
-			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters block:(PFIdResultBlock)block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>function</Name>
-					<Abstract type="html">The function name to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>parameters</Name>
-					<Abstract type="html">The parameters to send to the function.</Abstract>
-				</Parameter><Parameter>
-					<Name>block</Name>
-					<Abstract type="html">The block to execute. The block should have the following argument signature:(id result, NSError *error).</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) long long timestamp</Declaration>
 			
-			<Anchor>//api/name/callFunctionInBackground:withParameters:block:</Anchor>
+			
+			<Anchor>//api/name/timestamp</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:target:selector:</TokenIdentifier>
-			<Abstract type="html">Calls the given cloud function with the parameters provided asynchronously and runs the callback when it is done.</Abstract>
-			<DeclaredIn>PFCloud.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/timestamp</TokenIdentifier>
+			<Abstract type="html">	@brief	the date and time that is associated with this resource (e.g. the time embedded in an image from a digital camera with a clock)</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
 			
-			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters target:(id)target selector:(SEL)selector</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long timestamp</Declaration>
+			
+			
+			<Anchor>//api/name/timestamp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setLatitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the latitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/latitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the latitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setLongitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the longitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/longitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the longitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setAltitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	the altitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			
+			
+			<Anchor>//api/name/altitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/altitude</TokenIdentifier>
+			<Abstract type="html">	@brief	the altitude where the resource was captured</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			
+			
+			<Anchor>//api/name/altitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setCameraMake:</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraMake</Declaration>
+			
+			
+			<Anchor>//api/name/cameraMake</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/cameraMake</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraMake</Declaration>
+			
+			
+			<Anchor>//api/name/cameraMake</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setCameraModel:</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraModel</Declaration>
+			
+			
+			<Anchor>//api/name/cameraModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/cameraModel</TokenIdentifier>
+			<Abstract type="html">	@brief	information about an image&apos;s camera, e.g. as embedded in the image&apos;s EXIF data </Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *cameraModel</Declaration>
+			
+			
+			<Anchor>//api/name/cameraModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setClientWillIndex:</TokenIdentifier>
+			<Abstract type="html">	@brief	if true, then the original client that submitted the resource plans to submit the recognition index for this resource at a later time.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clientWillIndex</Declaration>
+			
+			
+			<Anchor>//api/name/clientWillIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/clientWillIndex</TokenIdentifier>
+			<Abstract type="html">	@brief	if true, then the original client that submitted the resource plans to submit the recognition index for this resource at a later time.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL clientWillIndex</Declaration>
+			
+			
+			<Anchor>//api/name/clientWillIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setRecoType:</TokenIdentifier>
+			<Abstract type="html">	@brief	DEPRECATED - this field is no longer set by the service, so should be ignored.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recoType</Declaration>
+			
+			
+			<Anchor>//api/name/recoType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/recoType</TokenIdentifier>
+			<Abstract type="html">	@brief	DEPRECATED - this field is no longer set by the service, so should be ignored.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *recoType</Declaration>
+			
+			
+			<Anchor>//api/name/recoType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setFileName:</TokenIdentifier>
+			<Abstract type="html">	@brief	if the resource came from a source that provided an explicit file name, 
+the original name will be stored here. Many resources come from unnamed sources, so this will not always be set.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/fileName</TokenIdentifier>
+			<Abstract type="html">	@brief	if the resource came from a source that provided an explicit file name, 
+the original name will be stored here. Many resources come from unnamed sources, so this will not always be set.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setAttachment:</TokenIdentifier>
+			<Abstract type="html">	@brief	this will be true if the resource should be displayed as an attachment, 
+or false if the resource should be displayed inline (if possible).</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/attachment</TokenIdentifier>
+			<Abstract type="html">	@brief	this will be true if the resource should be displayed as an attachment, 
+or false if the resource should be displayed inline (if possible).</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/setApplicationData:</TokenIdentifier>
+			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) blob of data associated 
+with a Resource that is not visible to the user and that is opaque to the Evernote service.
+A single application may use at most one entry in this map, using its API consumer key as the map key.
+See the documentation for LazyMap for a description of when the actual map values are returned by the service.
+To safely add or modify your application&apos;s entry in the map, use NoteStore.setResourceApplicationDataEntry.
+To safely remove your application&apos;s entry from the map, use NoteStore.unsetResourceApplicationDataEntry.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
+			
+			
+			<Anchor>//api/name/applicationData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteResourceAttributes/applicationData</TokenIdentifier>
+			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) blob of data associated 
+with a Resource that is not visible to the user and that is opaque to the Evernote service.
+A single application may use at most one entry in this map, using its API consumer key as the map key.
+See the documentation for LazyMap for a description of when the actual map values are returned by the service.
+To safely add or modify your application&apos;s entry in the map, use NoteStore.setResourceApplicationDataEntry.
+To safely remove your application&apos;s entry from the map, use NoteStore.unsetResourceApplicationDataEntry.</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
+			
+			
+			<Anchor>//api/name/applicationData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteResourceAttributes/resourceAttributesWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建资源属性对象</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>+ (SSEverNoteResourceAttributes *)resourceAttributesWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>function</Name>
-					<Abstract type="html">The function name to call.</Abstract>
-				</Parameter><Parameter>
-					<Name>parameters</Name>
-					<Abstract type="html">The parameters to send to the function.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call the selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call. It should have the following signature: (void)callbackWithResult:(id) result error:(NSError *)error. result will be nil if error is set and vice versa.</Abstract>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">资源属性对象</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceAttributesWithResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/parse:</TokenIdentifier>
+			<Abstract type="html">	@brief	解析数据</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>reader</Name>
+					<Abstract type="html">数据读取器</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/callFunctionInBackground:withParameters:target:selector:</Anchor>
+			<Anchor>//api/name/parse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteResourceAttributes/putData:</TokenIdentifier>
+			<Abstract type="html">	@brief	放入数据</Abstract>
+			<DeclaredIn>SSEverNoteResourceAttributes.h</DeclaredIn>			
+			
+			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>writer</Name>
+					<Abstract type="html">数据写入器</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putData:</Anchor>
 		</Token>
 		
 	</File>

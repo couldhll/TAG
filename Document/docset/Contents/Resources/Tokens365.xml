@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTwitterHashTag.html">
+	<File path="Classes/WBWebpageObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTwitterHashTag</TokenIdentifier>
-			<Abstract type="html">	@brief	Hashtag信息</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBWebpageObject</TokenIdentifier>
+			<Abstract type="html">消息中包含的网页数据对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="365"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/WBWebpageObject/setWebpageUrl:</TokenIdentifier>
+			<Abstract type="html">网页的url地址</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *webpageUrl</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/webpageUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/WBWebpageObject/webpageUrl</TokenIdentifier>
+			<Abstract type="html">网页的url地址</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setIndices:</TokenIdentifier>
-			<Abstract type="html">	@brief	表示Hashtag在Tweet文本中的偏移位置,起始和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *webpageUrl</Declaration>
 			
 			
-			<Anchor>//api/name/indices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/indices</TokenIdentifier>
-			<Abstract type="html">	@brief	表示Hashtag在Tweet文本中的偏移位置,起始和结束位置索引</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *indices</Declaration>
-			
-			
-			<Anchor>//api/name/indices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTwitterHashTag/setText:</TokenIdentifier>
-			<Abstract type="html">	@brief	Hashtag文本</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTwitterHashTag/text</TokenIdentifier>
-			<Abstract type="html">	@brief	Hashtag文本</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
-			
-			
-			<Anchor>//api/name/text</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSTwitterHashTag/hashtagWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建Hashtag</Abstract>
-			<DeclaredIn>SSTwitterHashTag.h</DeclaredIn>			
-			
-			<Declaration>+ (SSTwitterHashTag *)hashtagWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Hashtag对象</Abstract></ReturnValue>
-			<Anchor>//api/name/hashtagWithResponse:</Anchor>
+			<Anchor>//api/name/webpageUrl</Anchor>
 		</Token>
 		
 	</File>

@@ -1,316 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMHTTPToken.html">
+	<File path="Classes/CMHTTPRequestParameters.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMHTTPToken</TokenIdentifier>
-			<Abstract type="html">	@brief	HTTP令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMHTTPRequestParameters</TokenIdentifier>
+			<Abstract type="html">	@brief	HTTP请求参数列表类,用于快捷填充HTTP请求数据的工具类</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>
 			
 			<NodeRef refid="39"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setUseCacheResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	使用缓存回复, YES 表示使用， NO 表示不使用</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/setParameterDictionary:</TokenIdentifier>
+			<Abstract type="html">	@brief	参数字典</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) BOOL useCacheResponse</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *parameterDictionary</Declaration>
 			
 			
-			<Anchor>//api/name/useCacheResponse</Anchor>
+			<Anchor>//api/name/parameterDictionary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/useCacheResponse</TokenIdentifier>
-			<Abstract type="html">	@brief	使用缓存回复, YES 表示使用， NO 表示不使用</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPRequestParameters/parameterDictionary</TokenIdentifier>
+			<Abstract type="html">	@brief	参数字典</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) BOOL useCacheResponse</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDictionary *parameterDictionary</Declaration>
 			
 			
-			<Anchor>//api/name/useCacheResponse</Anchor>
+			<Anchor>//api/name/parameterDictionary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setRequest:</TokenIdentifier>
-			<Abstract type="html">	@brief	请求对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/initWithURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化HTTP请求参数列表</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSMutableURLRequest *request</Declaration>
-			
-			
-			<Anchor>//api/name/request</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/request</TokenIdentifier>
-			<Abstract type="html">	@brief	请求对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSMutableURLRequest *request</Declaration>
-			
-			
-			<Anchor>//api/name/request</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	请求回复对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSHTTPURLResponse *response</Declaration>
-			
-			
-			<Anchor>//api/name/response</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/response</TokenIdentifier>
-			<Abstract type="html">	@brief	请求回复对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSHTTPURLResponse *response</Declaration>
-			
-			
-			<Anchor>//api/name/response</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setResponseData:</TokenIdentifier>
-			<Abstract type="html">	@brief	回复数据</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *responseData</Declaration>
-			
-			
-			<Anchor>//api/name/responseData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/responseData</TokenIdentifier>
-			<Abstract type="html">	@brief	回复数据</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSData *responseData</Declaration>
-			
-			
-			<Anchor>//api/name/responseData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setError:</TokenIdentifier>
-			<Abstract type="html">	@brief	请求错误对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSError *error</Declaration>
-			
-			
-			<Anchor>//api/name/error</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/error</TokenIdentifier>
-			<Abstract type="html">	@brief	请求错误对象</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSError *error</Declaration>
-			
-			
-			<Anchor>//api/name/error</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/setUserData:</TokenIdentifier>
-			<Abstract type="html">	@brief	附加数据</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) id userData</Declaration>
-			
-			
-			<Anchor>//api/name/userData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMHTTPToken/userData</TokenIdentifier>
-			<Abstract type="html">	@brief	附加数据</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) id userData</Declaration>
-			
-			
-			<Anchor>//api/name/userData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMHTTPToken/tokenWithUrlString:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	获取HTTP令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>+ (CMHTTPToken *)tokenWithUrlString:(NSString *)urlString userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">请求地址字符串</Abstract>
-				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">HTTP令牌</Abstract></ReturnValue>
-			<Anchor>//api/name/tokenWithUrlString:userData:worker:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMHTTPToken/tokenWithUrl:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	获取HTTP令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
-			
-			<Declaration>+ (CMHTTPToken *)tokenWithUrl:(NSURL *)url userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
+			<Declaration>- (id)initWithURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>url</Name>
-					<Abstract type="html">请求地址</Abstract>
-				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
+					<Abstract type="html">请求的URL对象</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">HTTP令牌</Abstract></ReturnValue>
-			<Anchor>//api/name/tokenWithUrl:userData:worker:</Anchor>
+			<ReturnValue><Abstract type="html">请求参数列表对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/CMHTTPToken/tokenWithRequest:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	获取HTTP令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/initWithQueryString:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化HTTP请求参数列表</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>+ (CMHTTPToken *)tokenWithRequest:(NSMutableURLRequest *)request userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
+			<Declaration>- (id)initWithQueryString:(NSString *)queryString</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>request</Name>
-					<Abstract type="html">请求对象</Abstract>
-				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
+					<Name>queryString</Name>
+					<Abstract type="html">请求的URL参数部分字符串</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">HTTP令牌</Abstract></ReturnValue>
-			<Anchor>//api/name/tokenWithRequest:userData:worker:</Anchor>
+			<ReturnValue><Abstract type="html">请求参数列表对象</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithQueryString:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/initWithURL:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/addParameterWithName:value:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加参数</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithURL:(NSURL *)url userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
+			<Declaration>- (void)addParameterWithName:(NSString *)name value:(id)value</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">请求地址</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">参数名称</Abstract>
 				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
+					<Name>value</Name>
+					<Abstract type="html">参数值</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">令牌对象</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithURL:userData:worker:</Anchor>
+			
+			<Anchor>//api/name/addParameterWithName:value:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/initWithURLString:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/addParameters:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加多个参数</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithURLString:(NSString *)urlString userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
+			<Declaration>- (void)addParameters:(CMHTTPRequestParameters *)parameters</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>urlString</Name>
-					<Abstract type="html">请求地址字符串</Abstract>
-				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
+					<Name>parameters</Name>
+					<Abstract type="html">请求参数列表对象</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">令牌对象</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithURLString:userData:worker:</Anchor>
+			
+			<Anchor>//api/name/addParameters:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/initWithRequest:userData:worker:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化令牌</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/addParametersWithDictionary:</TokenIdentifier>
+			<Abstract type="html">	@brief	添加多个参数</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithRequest:(NSMutableURLRequest *)request userData:(id)userData worker:(id&lt;ICMHTTPWorker&gt;)worker</Declaration>
+			<Declaration>- (void)addParametersWithDictionary:(NSDictionary *)dictionary</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>request</Name>
-					<Abstract type="html">请求对象</Abstract>
-				</Parameter><Parameter>
-					<Name>userData</Name>
-					<Abstract type="html">附加数据</Abstract>
-				</Parameter><Parameter>
-					<Name>worker</Name>
-					<Abstract type="html">处理器，如果传入该参数则不进行默认处理。注意，此参数会在内部引用，切勿传入该Token对象的父级对象。</Abstract>
+					<Name>dictionary</Name>
+					<Abstract type="html">请求参数字典</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">令牌对象</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithRequest:userData:worker:</Anchor>
+			
+			<Anchor>//api/name/addParametersWithDictionary:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/start</TokenIdentifier>
-			<Abstract type="html">	@brief	开始请求</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/removeParameterWithName:</TokenIdentifier>
+			<Abstract type="html">	@brief	删除参数</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (void)start</Declaration>
+			<Declaration>- (void)removeParameterWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">参数名称</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/start</Anchor>
+			<Anchor>//api/name/removeParameterWithName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/cancelRequest</TokenIdentifier>
-			<Abstract type="html">	@brief	取消请求</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/getValueForName:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取参数值</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (void)cancelRequest</Declaration>
-			
-			
-			<Anchor>//api/name/cancelRequest</Anchor>
+			<Declaration>- (id)getValueForName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">参数名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">参数值</Abstract></ReturnValue>
+			<Anchor>//api/name/getValueForName:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPToken/responseString:</TokenIdentifier>
-			<Abstract type="html">	@brief	获取回复数据字符串</Abstract>
-			<DeclaredIn>CMHTTPToken.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/clear</TokenIdentifier>
+			<Abstract type="html">	@brief	清除所有参数</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)responseString:(NSStringEncoding)encoding</Declaration>
+			<Declaration>- (void)clear</Declaration>
+			
+			
+			<Anchor>//api/name/clear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/dataUsingEncoding:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取请求参数的二进制数据</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)dataUsingEncoding:(NSStringEncoding)encoding</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>encoding</Name>
 					<Abstract type="html">编码</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">数据字符串</Abstract></ReturnValue>
-			<Anchor>//api/name/responseString:</Anchor>
+			<ReturnValue><Abstract type="html">二进制数据对象</Abstract></ReturnValue>
+			<Anchor>//api/name/dataUsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/multipartDataUsingEncoding:boundary:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取Multipart格式的二进制数据</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)multipartDataUsingEncoding:(NSStringEncoding)encoding boundary:(NSString *)boundary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码</Abstract>
+				</Parameter><Parameter>
+					<Name>boundary</Name>
+					<Abstract type="html">分隔符号</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">二进制数据对象</Abstract></ReturnValue>
+			<Anchor>//api/name/multipartDataUsingEncoding:boundary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMHTTPRequestParameters/stringUsingEncoding:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取请求参数字符串</Abstract>
+			<DeclaredIn>CMHTTPRequestParameters.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringUsingEncoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">编码</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">字符串对象</Abstract></ReturnValue>
+			<Anchor>//api/name/stringUsingEncoding:</Anchor>
 		</Token>
 		
 	</File>

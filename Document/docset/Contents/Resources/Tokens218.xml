@@ -1,178 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SS163WeiboCredential.html">
+	<File path="Classes/SSLinkedInCompany.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SS163WeiboCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInCompany</TokenIdentifier>
+			<Abstract type="html">	@brief	公司信息</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>
 			
 			<NodeRef refid="218"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInCompany/setIndustry:</TokenIdentifier>
+			<Abstract type="html">	@brief	行业</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/industry</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInCompany/industry</TokenIdentifier>
+			<Abstract type="html">	@brief	行业</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/industry</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setUid:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInCompany/setName:</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/uid</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/uid</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInCompany/name</TokenIdentifier>
+			<Abstract type="html">	@brief	名称</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/uid</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInCompany/companyWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建公司信息</Abstract>
+			<DeclaredIn>SSLinkedInCompany.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setExpiresIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
-			
-			
-			<Anchor>//api/name/expiresIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/expiresIn</TokenIdentifier>
-			<Abstract type="html">	@brief	过期时间</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
-			
-			
-			<Anchor>//api/name/expiresIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setRefreshToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/refreshToken</TokenIdentifier>
-			<Abstract type="html">	@brief	刷新令牌</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
-			
-			
-			<Anchor>//api/name/refreshToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>+ (SSLinkedInCompany *)companyWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复对象</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SS163WeiboCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<ReturnValue><Abstract type="html">公司信息</Abstract></ReturnValue>
+			<Anchor>//api/name/companyWithResponse:</Anchor>
 		</Token>
 		
 	</File>

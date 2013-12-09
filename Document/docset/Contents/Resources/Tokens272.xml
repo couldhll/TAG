@@ -1,74 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusCoverInfo.html">
+	<File path="Classes/SSTencentWeiboEdu.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCoverInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	封面信息</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboEdu</TokenIdentifier>
+			<Abstract type="html">	@brief	教育信息</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>
 			
 			<NodeRef refid="272"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverInfo/setTopImageOffset:</TokenIdentifier>
-			<Abstract type="html">	@brief	The difference between the top position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger topImageOffset</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/topImageOffset</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverInfo/topImageOffset</TokenIdentifier>
-			<Abstract type="html">	@brief	The difference between the top position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger topImageOffset</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/topImageOffset</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverInfo/setLeftImageOffset:</TokenIdentifier>
-			<Abstract type="html">	@brief	The difference between the left position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setDepartmentid:</TokenIdentifier>
+			<Abstract type="html">	@brief	院系id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger leftImageOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger departmentid</Declaration>
 			
 			
-			<Anchor>//api/name/leftImageOffset</Anchor>
+			<Anchor>//api/name/departmentid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverInfo/leftImageOffset</TokenIdentifier>
-			<Abstract type="html">	@brief	The difference between the left position of the image cover and the actual displayed cover image. Only valid for BANNER layout.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/departmentid</TokenIdentifier>
+			<Abstract type="html">	@brief	院系id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger leftImageOffset</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger departmentid</Declaration>
 			
 			
-			<Anchor>//api/name/leftImageOffset</Anchor>
+			<Anchor>//api/name/departmentid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusCoverInfo/coverInfoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建封面信息</Abstract>
-			<DeclaredIn>SSGooglePlusCoverInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	教育信息记录id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
 			
-			<Declaration>+ (SSGooglePlusCoverInfo *)coverInfoWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	教育信息记录id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setLevel:</TokenIdentifier>
+			<Abstract type="html">	@brief	学历级别</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/level</TokenIdentifier>
+			<Abstract type="html">	@brief	学历级别</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
+			
+			
+			<Anchor>//api/name/level</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setSchoolid:</TokenIdentifier>
+			<Abstract type="html">	@brief	学校id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger schoolid</Declaration>
+			
+			
+			<Anchor>//api/name/schoolid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/schoolid</TokenIdentifier>
+			<Abstract type="html">	@brief	学校id</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger schoolid</Declaration>
+			
+			
+			<Anchor>//api/name/schoolid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboEdu/setYear:</TokenIdentifier>
+			<Abstract type="html">	@brief	入学年</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger year</Declaration>
+			
+			
+			<Anchor>//api/name/year</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboEdu/year</TokenIdentifier>
+			<Abstract type="html">	@brief	入学年</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger year</Declaration>
+			
+			
+			<Anchor>//api/name/year</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboEdu/eduWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建教育信息</Abstract>
+			<DeclaredIn>SSTencentWeiboEdu.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTencentWeiboEdu *)eduWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">封面信息</Abstract></ReturnValue>
-			<Anchor>//api/name/coverInfoWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">教育信息</Abstract></ReturnValue>
+			<Anchor>//api/name/eduWithResponse:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,16 +1,393 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIDevice+MACAddress.html">
+	<File path="Protocols/ISSShareOptions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(MACAddress)</TokenIdentifier>
-			<Abstract type="html">@brief [UIDevice][0] MAC address extension, useful to make unique identifier.
-[0]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIDevice_Class/Reference/UIDevice.html</Abstract>
-			<DeclaredIn>UIDevice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSShareOptions</TokenIdentifier>
+			<Abstract type="html">	@brief	分享选项协议</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>
 			
 			<NodeRef refid="565"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/oneKeyShareList</TokenIdentifier>
+			<Abstract type="html">	@brief	获取一键分享列表</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)oneKeyShareList</Declaration>
+			
+			<ReturnValue><Abstract type="html">一键分享列表</Abstract></ReturnValue>
+			<Anchor>//api/name/oneKeyShareList</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setOneKeyShareList:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置一键分享列表</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setOneKeyShareList:(NSArray *)oneKeyShareList</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oneKeyShareList</Name>
+					<Abstract type="html">一键分享列表</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOneKeyShareList:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/title</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享视图标题</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)title</Declaration>
+			
+			<ReturnValue><Abstract type="html">分享视图标题</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享视图标题</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">分享视图标题</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/qqButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	QQ分享按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)qqButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/qqButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setQqButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置QQ分享按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setQqButtonHidden:(BOOL)qqButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>qqButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setQqButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/wxSessionButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	微信好友分享按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wxSessionButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/wxSessionButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setWxSessionButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置微信好友分享按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setWxSessionButtonHidden:(BOOL)wxSessionButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wxSessionButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWxSessionButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/wxTimelineButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	微信朋友圈分享按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wxTimelineButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/wxTimelineButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setWxTimelineButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置微信朋友圈分享按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setWxTimelineButtonHidden:(BOOL)wxTimelineButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wxTimelineButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWxTimelineButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/cameraButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	拍照按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)cameraButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/cameraButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setCameraButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	拍照按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCameraButtonHidden:(BOOL)cameraButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cameraButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCameraButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/mentionButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	@按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)mentionButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/mentionButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setMentionButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	@按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMentionButtonHidden:(BOOL)mentionButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mentionButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMentionButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/topicButtonHidden</TokenIdentifier>
+			<Abstract type="html">	@brief	话题按钮隐藏标识，默认NO, 样式为ShareViewStyleDefault时有效</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)topicButtonHidden</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示隐藏， NO表示显示</Abstract></ReturnValue>
+			<Anchor>//api/name/topicButtonHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setTopicButtonHidden:</TokenIdentifier>
+			<Abstract type="html">	@brief	话题按钮隐藏标识</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTopicButtonHidden:(BOOL)mentionButtonHidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>topicButtonHidden</Name>
+					<Abstract type="html">YES表示隐藏， NO表示显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTopicButtonHidden:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/showKeyboardOnAppear</TokenIdentifier>
+			<Abstract type="html">	@brief	是否在视图显示时显示键盘,默认NO。当一键分享列表为nil时，此值无效。</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)showKeyboardOnAppear</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES表示显示，NO表示不显示</Abstract></ReturnValue>
+			<Anchor>//api/name/showKeyboardOnAppear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setShowKeyboardOnAppear:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置在视图显示时是否显示键盘</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setShowKeyboardOnAppear:(BOOL)showKeyboardOnAppear</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>showKeyboardOnAppear</Name>
+					<Abstract type="html">YES表示显示，NO表示不显示</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setShowKeyboardOnAppear:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/shareViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取分享视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSShareViewDelegate&gt;)shareViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">协议委托</Abstract></ReturnValue>
+			<Anchor>//api/name/shareViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setShareViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置分享视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setShareViewDelegate:(id&lt;ISSShareViewDelegate&gt;)shareViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shareViewDelegate</Name>
+					<Abstract type="html">协议委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setShareViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/friendsViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取好友视图委托,此委托仅使用在默认样式视图中弹出的好友列表</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSViewDelegate&gt;)friendsViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">协议委托</Abstract></ReturnValue>
+			<Anchor>//api/name/friendsViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setFriendsViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置好友视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setFriendsViewDelegate:(id&lt;ISSViewDelegate&gt;)friendsViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>friendsViewDelegate</Name>
+					<Abstract type="html">协议委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFriendsViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/picViewerViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	图片查看器视图委托,此委托仅使用在默认样式视图中图片查看器视图</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSViewDelegate&gt;)picViewerViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">协议委托</Abstract></ReturnValue>
+			<Anchor>//api/name/picViewerViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setPicViewerViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置图片查看器视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPicViewerViewDelegate:(id&lt;ISSViewDelegate&gt;)picViewerViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>picViewerViewDelegate</Name>
+					<Abstract type="html">协议委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPicViewerViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/mailViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取邮件视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSViewDelegate&gt;)mailViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">协议委托</Abstract></ReturnValue>
+			<Anchor>//api/name/mailViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setMailViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置邮件视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMailViewDelegate:(id&lt;ISSViewDelegate&gt;)mailViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mailViewDelegate</Name>
+					<Abstract type="html">协议委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMailViewDelegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/smsViewDelegate</TokenIdentifier>
+			<Abstract type="html">	@brief	获取短信视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSViewDelegate&gt;)smsViewDelegate</Declaration>
+			
+			<ReturnValue><Abstract type="html">协议委托</Abstract></ReturnValue>
+			<Anchor>//api/name/smsViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSShareOptions/setSmsViewDelegate:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置短信视图委托</Abstract>
+			<DeclaredIn>ISSShareOptions.h</DeclaredIn>			
+			
+			<Declaration>- (void)setSmsViewDelegate:(id&lt;ISSViewDelegate&gt;)smsViewDelegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smsViewDelegate</Name>
+					<Abstract type="html">协议委托</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSmsViewDelegate:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

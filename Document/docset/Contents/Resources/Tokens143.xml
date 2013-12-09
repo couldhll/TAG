@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/NSAMutableDictionary.html">
+	<File path="Classes/SSCLocationCoordinate2D.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/NSAMutableDictionary</TokenIdentifier>
-			<Abstract type="html">@brief [NSMutableDictionary][1] subclass-available implementation.
-[1]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/Reference.html
-@details See @ref CoreFoundation-Subclass for concept of these objects.</Abstract>
-			<DeclaredIn>NSADictionary.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSCLocationCoordinate2D</TokenIdentifier>
+			<Abstract type="html">	@brief	地理位置信息</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>
 			
 			<NodeRef refid="143"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSCLocationCoordinate2D/setLatitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	纬度</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSCLocationCoordinate2D/latitude</TokenIdentifier>
+			<Abstract type="html">	@brief	纬度</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSCLocationCoordinate2D/setLongitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	经度</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSCLocationCoordinate2D/longitude</TokenIdentifier>
+			<Abstract type="html">	@brief	经度</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSCLocationCoordinate2D/locationCoordinate2DWithLatitude:longitude:</TokenIdentifier>
+			<Abstract type="html">	@brief	地理位置信息</Abstract>
+			<DeclaredIn>SSCLocationCoordinate2D.h</DeclaredIn>			
+			
+			<Declaration>+ (SSCLocationCoordinate2D *)locationCoordinate2DWithLatitude:(double)latitude longitude:(double)longitude</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">纬度</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">经度</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">地理位置信息</Abstract></ReturnValue>
+			<Anchor>//api/name/locationCoordinate2DWithLatitude:longitude:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

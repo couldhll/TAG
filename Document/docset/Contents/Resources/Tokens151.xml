@@ -1,188 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/NSATriple.html">
+	<File path="Classes/SSDouBanSource.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/NSATriple</TokenIdentifier>
-			<Abstract type="html">@brief Manages ordered collections of 3 objects.</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanSource</TokenIdentifier>
+			<Abstract type="html">	@brief	来源信息</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>
 			
 			<NodeRef refid="151"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setFirst:</TokenIdentifier>
-			<Abstract type="html">@brief first object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/first</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/first</TokenIdentifier>
-			<Abstract type="html">@brief first object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/first</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setSecond:</TokenIdentifier>
-			<Abstract type="html">@brief second object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setHref:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源地址</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *href</Declaration>
 			
 			
-			<Anchor>//api/name/second</Anchor>
+			<Anchor>//api/name/href</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/second</TokenIdentifier>
-			<Abstract type="html">@brief second object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/href</TokenIdentifier>
+			<Abstract type="html">	@brief	来源地址</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *href</Declaration>
 			
 			
-			<Anchor>//api/name/second</Anchor>
+			<Anchor>//api/name/href</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setThird:</TokenIdentifier>
-			<Abstract type="html">@brief third object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanSource/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	来源标题</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id third</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/third</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/third</TokenIdentifier>
-			<Abstract type="html">@brief third object</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanSource/title</TokenIdentifier>
+			<Abstract type="html">	@brief	来源标题</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) id third</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
 			
-			<Anchor>//api/name/third</Anchor>
+			<Anchor>//api/name/title</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/NSATriple/triple</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns an empty triple.</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanSource/sourceWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建来源信息</Abstract>
+			<DeclaredIn>SSDouBanSource.h</DeclaredIn>			
 			
-			<Declaration>+ (id)triple</Declaration>
-			
-			<ReturnValue><Abstract type="html">An empty triple.</Abstract></ReturnValue>
-			<Anchor>//api/name/triple</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/initWithFirst:second:third:</TokenIdentifier>
-			<Abstract type="html">@brief Initilize a triple containing first as first object, second as second object and third as third object.
-@param first
-Value for first
-@param second
-Value for second
-@param third
-Value for third</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithFirst:(id)first second:(id)second third:(id)third</Declaration>
-			
-			<ReturnValue><Abstract type="html">A tuple with first, second and third value.</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithFirst:second:third:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/NSATriple/tripleWithFirst:second:third:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns a triple containing first as first object, second as second object and third as third object.</Abstract>
-			<DeclaredIn>NSADataObject.h</DeclaredIn>			
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/NSATriple/initWithFirst:second:third:</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>+ (id)tripleWithFirst:(id)first second:(id)second third:(id)third</Declaration>
-			
-			
-			<Anchor>//api/name/tripleWithFirst:second:third:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/count</TokenIdentifier>
-			<Abstract type="html">@brief Returns the number of objects currently in the data object.</Abstract>
-			<DeclaredIn>NSADataObject.m</DeclaredIn>			
-			
-			<Declaration>- (NSUInteger)count</Declaration>
-			
-			
-			<Anchor>//api/name/count</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/objectAtIndex:</TokenIdentifier>
-			<Abstract type="html">@brief Returns the object located at index.
-@param index
-An index within the bounds of data object.</Abstract>
-			<DeclaredIn>NSADataObject.m</DeclaredIn>			
-			
-			<Declaration>- (id)objectAtIndex:(NSUInteger)index</Declaration>
-			
-			<ReturnValue><Abstract type="html">The object located at index.</Abstract></ReturnValue>
-			<Anchor>//api/name/objectAtIndex:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/:</TokenIdentifier>
-			<Abstract type="html">@brief Returns the object located at index. Shortcut of @ref objectAtIndex:
-@param index
-An index within the bounds of data object.</Abstract>
-			<DeclaredIn>NSADataObject.m</DeclaredIn>			
-			
-			<Declaration>- (id):</Declaration>
-			
-			<ReturnValue><Abstract type="html">The object located at index.</Abstract></ReturnValue>
-			<Anchor>//api/name/:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/indexOfObject:</TokenIdentifier>
-			<Abstract type="html">*  @brief Returns the lowest index whose corresponding member value is equal to a given object.
-*  @param anObject
-        An object.
-*  @return The lowest index whose corresponding member value is equal to anObject. If none of the objects in the data object is equal to anObject, returns NSNotFound.</Abstract>
-			<DeclaredIn>NSADataObject.m</DeclaredIn>			
-			
-			<Declaration>- (NSUInteger)indexOfObject:(id)anObject</Declaration>
-			
-			
-			<Anchor>//api/name/indexOfObject:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/containsObject:</TokenIdentifier>
-			<Abstract type="html">@brief Returns a Boolean value that indicates whether a given object is present in the array.
-@param anObject
-An object.</Abstract>
-			<DeclaredIn>NSADataObject.m</DeclaredIn>			
-			
-			<Declaration>- (BOOL)containsObject:(id)anObject</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES if anObject is present in the array, otherwise NO.</Abstract></ReturnValue>
-			<Anchor>//api/name/containsObject:</Anchor>
+			<Declaration>+ (SSDouBanSource *)sourceWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">来源信息</Abstract></ReturnValue>
+			<Anchor>//api/name/sourceWithResponse:</Anchor>
 		</Token>
 		
 	</File>

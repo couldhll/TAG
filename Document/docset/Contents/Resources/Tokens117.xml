@@ -1,52 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GetMessageFromQQResp.html">
+	<File path="Classes/QQApiExtendObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GetMessageFromQQResp</TokenIdentifier>
-			<Abstract type="html">GetMessageFromQQResp应答帮助类</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiExtendObject</TokenIdentifier>
+			<Abstract type="html">@brief 扩展数据类型</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="117"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/GetMessageFromQQResp/respWithContent:</TokenIdentifier>
-			<Abstract type="html">创建一个GetMessageFromQQResp应答实例</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiExtendObject/setPreviewImageData:</TokenIdentifier>
+			<Abstract type="html">&lt;具体数据内容，必填，最大5M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (GetMessageFromQQResp *)respWithContent:(QQApiObject *)message</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/QQApiExtendObject/previewImageData</TokenIdentifier>
+			<Abstract type="html">&lt;具体数据内容，必填，最大5M字节</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSData *previewImageData</Declaration>
+			
+			
+			<Anchor>//api/name/previewImageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiExtendObject/initWithData:previewImageData:title:description:</TokenIdentifier>
+			<Abstract type="html">初始化方法</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSData *)data previewImageData:(NSData *)previewImageData title:(NSString *)title description:(NSString *)description</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>message</Name>
-					<Abstract type="html">具体分享消息实例</Abstract>
+					<Name>data</Name>
+					<Abstract type="html">数据内容</Abstract>
+				</Parameter><Parameter>
+					<Name>previewImageData</Name>
+					<Abstract type="html">用于预览的图片</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">此对象，分享的描述</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">新创建的GetMessageFromQQResp应答实例</Abstract></ReturnValue>
-			<Anchor>//api/name/respWithContent:</Anchor>
+			
+			<Anchor>//api/name/initWithData:previewImageData:title:description:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GetMessageFromQQResp/setMessage:</TokenIdentifier>
-			<Abstract type="html">具体分享消息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiExtendObject/objectWithData:previewImageData:title:description:</TokenIdentifier>
+			<Abstract type="html">helper方法获取一个autorelease的&lt;code&gt;QQApiExtendObject&lt;/code&gt;对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			<Declaration>+ (id)objectWithData:(NSData *)data previewImageData:(NSData *)previewImageData title:(NSString *)title description:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">数据内容</Abstract>
+				</Parameter><Parameter>
+					<Name>previewImageData</Name>
+					<Abstract type="html">用于预览的图片</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">标题</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">此对象，分享的描述
+@return
+     一个自动释放的&lt;code&gt;QQApiExtendObject&lt;/code&gt;实例</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/message</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GetMessageFromQQResp/message</TokenIdentifier>
-			<Abstract type="html">具体分享消息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
-			
-			
-			<Anchor>//api/name/message</Anchor>
+			<Anchor>//api/name/objectWithData:previewImageData:title:description:</Anchor>
 		</Token>
 		
 	</File>

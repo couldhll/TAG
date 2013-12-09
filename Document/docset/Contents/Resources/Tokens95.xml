@@ -1,54 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBSessionSystemLoginStategy.html">
+	<File path="Classes/NSAMutableTriple.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBSessionSystemLoginStategy</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>FBSessionSystemLoginStategy.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAMutableTriple</TokenIdentifier>
+			<Abstract type="html">@brief Manages ordered collections of 3 objects.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>
 			
 			<NodeRef refid="95"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionSystemLoginStategy/tryPerformAuthorizeWithParams:session:logger:</TokenIdentifier>
-			<Abstract type="html">@method</Abstract>
-			<DeclaredIn>FBSessionSystemLoginStategy.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMutableTriple/setFirst:</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)tryPerformAuthorizeWithParams:(FBSessionLoginStrategyParams *)params session:(FBSession *)session logger:(FBSessionAuthLogger *)logger</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>params</Name>
-					<Abstract type="html">A collection of parameters typically used to evalute if a given strategy should be invoked.</Abstract>
-				</Parameter><Parameter>
-					<Name>session</Name>
-					<Abstract type="html">The session instance.</Abstract>
-				</Parameter><Parameter>
-					<Name>logger</Name>
-					<Abstract type="html">The logger instance.
-
-@discussion
-A return value of &apos;NO&apos; indicates
-another login strategy should be tried. A value of &apos;YES&apos; means the strategy has handled the login flow
-and no other strategies should be tried (note this does not necessarily mean the login was successful).</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) id first</Declaration>
 			
-			<Anchor>//api/name/tryPerformAuthorizeWithParams:session:logger:</Anchor>
+			
+			<Anchor>//api/name/first</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBSessionSystemLoginStategy/methodName</TokenIdentifier>
-			<Abstract type="html">@
-abstract Gets the methodName describing this login strategy, typically for external logging.
-@discussion This should only be invoked if a tryPerformAuthorizeWithParams:... call returned YES.</Abstract>
-			<DeclaredIn>FBSessionSystemLoginStategy.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMutableTriple/first</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
 			
-			<Declaration>- (NSString *)methodName</Declaration>
+			<Declaration>@property (nonatomic, retain) id first</Declaration>
 			
 			
-			<Anchor>//api/name/methodName</Anchor>
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMutableTriple/setSecond:</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMutableTriple/second</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMutableTriple/setThird:</TokenIdentifier>
+			<Abstract type="html">@brief third object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id third</Declaration>
+			
+			
+			<Anchor>//api/name/third</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMutableTriple/third</TokenIdentifier>
+			<Abstract type="html">@brief third object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id third</Declaration>
+			
+			
+			<Anchor>//api/name/third</Anchor>
 		</Token>
 		
 	</File>

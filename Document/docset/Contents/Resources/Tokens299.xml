@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSLinkedInCountry.html">
+	<File path="Classes/SendMessageToQQReq.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInCountry</TokenIdentifier>
-			<Abstract type="html">	@brief	国家信息</Abstract>
-			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SendMessageToQQReq</TokenIdentifier>
+			<Abstract type="html">SendMessageToQQReq请求帮助类</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
 			
 			<NodeRef refid="299"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInCountry/setCode:</TokenIdentifier>
-			<Abstract type="html">	@brief	国家代码</Abstract>
-			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SendMessageToQQReq/reqWithContent:</TokenIdentifier>
+			<Abstract type="html">创建一个SendMessageToQQReq请求实例</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *code</Declaration>
-			
-			
-			<Anchor>//api/name/code</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInCountry/code</TokenIdentifier>
-			<Abstract type="html">	@brief	国家代码</Abstract>
-			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *code</Declaration>
-			
-			
-			<Anchor>//api/name/code</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInCountry/countryWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建国家信息</Abstract>
-			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
-			
-			<Declaration>+ (SSLinkedInCountry *)countryWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (SendMessageToQQReq *)reqWithContent:(QQApiObject *)message</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">具体分享消息实例</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">国家信息</Abstract></ReturnValue>
-			<Anchor>//api/name/countryWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">新创建的SendMessageToQQReq请求实例</Abstract></ReturnValue>
+			<Anchor>//api/name/reqWithContent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendMessageToQQReq/setMessage:</TokenIdentifier>
+			<Abstract type="html">具体分享消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendMessageToQQReq/message</TokenIdentifier>
+			<Abstract type="html">具体分享消息</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) QQApiObject *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
 		</Token>
 		
 	</File>

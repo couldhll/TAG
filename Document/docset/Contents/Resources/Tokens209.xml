@@ -1,102 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQBaseResp.html">
+	<File path="Classes/SSKaiXinCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQBaseResp</TokenIdentifier>
-			<Abstract type="html">QQApi应答消息基类</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSKaiXinCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>
 			
 			<NodeRef refid="209"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQBaseResp/setResult:</TokenIdentifier>
-			<Abstract type="html">请求处理结果</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *result</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/result</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQBaseResp/result</TokenIdentifier>
-			<Abstract type="html">请求处理结果</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *result</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/result</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQBaseResp/setErrorDescription:</TokenIdentifier>
-			<Abstract type="html">具体错误描述信息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setEncodeuid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *encodeuid</Declaration>
 			
 			
-			<Anchor>//api/name/errorDescription</Anchor>
+			<Anchor>//api/name/encodeuid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQBaseResp/errorDescription</TokenIdentifier>
-			<Abstract type="html">具体错误描述信息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/encodeuid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *errorDescription</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *encodeuid</Declaration>
 			
 			
-			<Anchor>//api/name/errorDescription</Anchor>
+			<Anchor>//api/name/encodeuid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQBaseResp/setType:</TokenIdentifier>
-			<Abstract type="html">应答消息类型，参见\ref QQApiInterfaceRespType</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) int type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQBaseResp/type</TokenIdentifier>
-			<Abstract type="html">应答消息类型，参见\ref QQApiInterfaceRespType</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) int type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/QQBaseResp/setExtendInfo:</TokenIdentifier>
-			<Abstract type="html">扩展信息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setRefreshToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) NSString *extendInfo</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/extendInfo</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/QQBaseResp/extendInfo</TokenIdentifier>
-			<Abstract type="html">扩展信息</Abstract>
-			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/refreshToken</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) NSString *extendInfo</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/extendInfo</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setScope:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token最终的访问范围，即用户实际授予的权限列表</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
+			
+			
+			<Anchor>//api/name/scope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/scope</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token最终的访问范围，即用户实际授予的权限列表</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
+			
+			
+			<Anchor>//api/name/scope</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
+			
+			
+			<Anchor>//api/name/expiresIn</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSKaiXinCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSKaiXinCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSKaiXinCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,65 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/QQApiAudioObject.html">
+	<File path="Classes/SSGooglePlusEmail.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/QQApiAudioObject</TokenIdentifier>
-			<Abstract type="html">@brief 音频URL对象
-     用于分享目标内容为音频的URL的对象</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusEmail</TokenIdentifier>
+			<Abstract type="html">	@brief	邮箱信息</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>
 			
 			<NodeRef refid="195"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiAudioObject/objectWithURL:title:description:previewImageData:</TokenIdentifier>
-			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiAudioObject&lt;/code&gt;</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setValue:</TokenIdentifier>
+			<Abstract type="html">	@brief	The email address.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageData:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">音频内容的目标URL</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">分享内容的标题</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">分享内容的描述</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">分享内容的预览图像</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
 			
-			<Anchor>//api/name/objectWithURL:title:description:previewImageData:</Anchor>
+			
+			<Anchor>//api/name/value</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/QQApiAudioObject/objectWithURL:title:description:previewImageURL:</TokenIdentifier>
-			<Abstract type="html">获取一个autorelease的&lt;code&gt;QQApiAudioObject&lt;/code&gt;</Abstract>
-			<DeclaredIn>QQApi.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/value</TokenIdentifier>
+			<Abstract type="html">	@brief	The email address.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
 			
-			<Declaration>+ (id)objectWithURL:(NSURL *)url title:(NSString *)title description:(NSString *)description previewImageURL:(NSURL *)previewURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setType:</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of address. Possible values are:
+&quot;home&quot; - Home email address.
+&quot;work&quot; - Work email address.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/type</TokenIdentifier>
+			<Abstract type="html">	@brief	The type of address. Possible values are:
+&quot;home&quot; - Home email address.
+&quot;work&quot; - Work email address.
+&quot;other&quot; - Other.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusEmail/setPrimary:</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusEmail/primary</TokenIdentifier>
+			<Abstract type="html">	@brief	If &quot;true&quot;, indicates this email address is the person&apos;s primary one.</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL primary</Declaration>
+			
+			
+			<Anchor>//api/name/primary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusEmail/emailWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建邮箱信息</Abstract>
+			<DeclaredIn>SSGooglePlusEmail.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusEmail *)emailWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">音频内容的目标URL</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">分享内容的标题</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">分享内容的描述</Abstract>
-				</Parameter><Parameter>
-					<Name>previewURL</Name>
-					<Abstract type="html">分享内容的预览图像URL</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/objectWithURL:title:description:previewImageURL:</Anchor>
+			<ReturnValue><Abstract type="html">邮箱信息</Abstract></ReturnValue>
+			<Anchor>//api/name/emailWithResponse:</Anchor>
 		</Token>
 		
 	</File>

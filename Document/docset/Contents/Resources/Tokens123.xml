@@ -1,138 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JSONAPI.html">
+	<File path="Classes/QQApiPayObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JSONAPI</TokenIdentifier>
-			<Abstract type="html">@discussion Class for working with JSON APIs. It builds upon the JSONHTTPClient class
-and facilitates making requests to the same web host. Also features helper
-method for making calls to a JSON RPC service</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/QQApiPayObject</TokenIdentifier>
+			<Abstract type="html">\brief 支付对象</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>
 			
 			<NodeRef refid="123"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/setAPIBaseURLWithString:</TokenIdentifier>
-			<Abstract type="html">Sets the API url</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/QQApiPayObject/initWithOrderNo:</TokenIdentifier>
+			<Abstract type="html">&lt;支付订单号，必填</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setAPIBaseURLWithString:(NSString *)base</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>base</Name>
-					<Abstract type="html">the API url as a string</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (id)initWithOrderNo:(NSString *)OrderNo</Declaration>
 			
-			<Anchor>//api/name/setAPIBaseURLWithString:</Anchor>
+			
+			<Anchor>//api/name/initWithOrderNo:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/setContentType:</TokenIdentifier>
-			<Abstract type="html">Sets the default content type for the requests/responses</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/QQApiPayObject/objectWithOrderNo:</TokenIdentifier>
+			<Abstract type="html">&lt;初始化方法</Abstract>
+			<DeclaredIn>QQApi.h</DeclaredIn>			
 			
-			<Declaration>+ (void)setContentType:(NSString *)ctype</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>ctype</Name>
-					<Abstract type="html">The content-type as a string. Some possible types,
-depending on the service: application/json, text/json, x-application/javascript, etc.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (id)objectWithOrderNo:(NSString *)OrderNo</Declaration>
 			
-			<Anchor>//api/name/setContentType:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/getWithPath:andParams:completion:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronious GET request to the API</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
 			
-			<Declaration>+ (void)getWithPath:(NSString *)path andParams:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">the URL path to add to the base API URL for this HTTP call</Abstract>
-				</Parameter><Parameter>
-					<Name>params</Name>
-					<Abstract type="html">the variables to pass to the API</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">a JSONObjectBlock block to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getWithPath:andParams:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/postWithPath:andParams:completion:</TokenIdentifier>
-			<Abstract type="html">Makes a POST request to the API</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)postWithPath:(NSString *)path andParams:(NSDictionary *)params completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>path</Name>
-					<Abstract type="html">the URL path to add to the base API URL for this HTTP call</Abstract>
-				</Parameter><Parameter>
-					<Name>params</Name>
-					<Abstract type="html">the variables to pass to the API</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">a JSONObjectBlock block to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/postWithPath:andParams:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/rpcWithMethodName:andArguments:completion:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronious JSON RPC request to the API. Read more: http://www.jsonrpc.org</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)rpcWithMethodName:(NSString *)method andArguments:(NSArray *)args completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>method</Name>
-					<Abstract type="html">the HTTP method name; GET or POST only</Abstract>
-				</Parameter><Parameter>
-					<Name>args</Name>
-					<Abstract type="html">the list of arguments to pass to the API</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/rpcWithMethodName:andArguments:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/JSONAPI/rpc2WithMethodName:andParams:completion:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronious JSON RPC 2.0 request to the API. Read more: http://www.jsonrpc.org</Abstract>
-			<DeclaredIn>JSONAPI.h</DeclaredIn>			
-			
-			<Declaration>+ (void)rpc2WithMethodName:(NSString *)method andParams:(id)params completion:(JSONObjectBlock)completeBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>method</Name>
-					<Abstract type="html">the HTTP method name; GET or POST only</Abstract>
-				</Parameter><Parameter>
-					<Name>params</Name>
-					<Abstract type="html">the params to pass to the API - an NSArray or an NSDictionary,
-depending whether you&apos;re using named or unnamed parameters</Abstract>
-				</Parameter><Parameter>
-					<Name>completeBlock</Name>
-					<Abstract type="html">JSONObjectBlock to execute upon completion</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/rpc2WithMethodName:andParams:completion:</Anchor>
+			<Anchor>//api/name/objectWithOrderNo:</Anchor>
 		</Token>
 		
 	</File>

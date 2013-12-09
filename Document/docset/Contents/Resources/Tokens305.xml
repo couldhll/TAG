@@ -1,569 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSLinkedInUser.html">
+	<File path="Classes/ShareSDKCoreService.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInUser</TokenIdentifier>
-			<Abstract type="html">	@brief	用户信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/ShareSDKCoreService</TokenIdentifier>
+			<Abstract type="html">	@brief	ShareSDK核心服务层</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>
 			
 			<NodeRef refid="305"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setCredential:</TokenIdentifier>
-			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) SSLinkedInCredential *credential</Declaration>
-			
-			
-			<Anchor>//api/name/credential</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/credential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权信息，如果为nil则表示非当前应用授权用户</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) SSLinkedInCredential *credential</Declaration>
-			
-			
-			<Anchor>//api/name/credential</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setUid:</TokenIdentifier>
-			<Abstract type="html">	@brief	a unique identifier token for this member</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
-			
-			
-			<Anchor>//api/name/uid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/uid</TokenIdentifier>
-			<Abstract type="html">	@brief	a unique identifier token for this member</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
-			
-			
-			<Anchor>//api/name/uid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFirstName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s first name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
-			
-			
-			<Anchor>//api/name/firstName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/firstName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s first name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
-			
-			
-			<Anchor>//api/name/firstName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setLastName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s last name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/lastName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s last name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setMaidenName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s maiden name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *maidenName</Declaration>
-			
-			
-			<Anchor>//api/name/maidenName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/maidenName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s maiden name</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *maidenName</Declaration>
-			
-			
-			<Anchor>//api/name/maidenName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFormattedName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s name formatted based on language</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *formattedName</Declaration>
-			
-			
-			<Anchor>//api/name/formattedName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/formattedName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s name formatted based on language</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *formattedName</Declaration>
-			
-			
-			<Anchor>//api/name/formattedName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPhoneticFirstName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s first name spelled phonetically</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *phoneticFirstName</Declaration>
-			
-			
-			<Anchor>//api/name/phoneticFirstName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/phoneticFirstName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s first name spelled phonetically</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *phoneticFirstName</Declaration>
-			
-			
-			<Anchor>//api/name/phoneticFirstName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPhoneticLastName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s last name spelled phonetically</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *phoneticLastName</Declaration>
-			
-			
-			<Anchor>//api/name/phoneticLastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/phoneticLastName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s last name spelled phonetically</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *phoneticLastName</Declaration>
-			
-			
-			<Anchor>//api/name/phoneticLastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setFormattedPhoneticName:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s name spelled phonetically and formatted based on language</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *formattedPhoneticName</Declaration>
-			
-			
-			<Anchor>//api/name/formattedPhoneticName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/formattedPhoneticName</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s name spelled phonetically and formatted based on language</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *formattedPhoneticName</Declaration>
-			
-			
-			<Anchor>//api/name/formattedPhoneticName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setHeadline:</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s headline (often &quot;Job Title at Company&quot;)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *headline</Declaration>
-			
-			
-			<Anchor>//api/name/headline</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/headline</TokenIdentifier>
-			<Abstract type="html">	@brief	the member&apos;s headline (often &quot;Job Title at Company&quot;)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *headline</Declaration>
-			
-			
-			<Anchor>//api/name/headline</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setIndustry:</TokenIdentifier>
-			<Abstract type="html">	@brief	the industry the LinkedIn member has indicated their profile belongs to (Industry Codes)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
-			
-			
-			<Anchor>//api/name/industry</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/industry</TokenIdentifier>
-			<Abstract type="html">	@brief	the industry the LinkedIn member has indicated their profile belongs to (Industry Codes)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *industry</Declaration>
-			
-			
-			<Anchor>//api/name/industry</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setDistance:</TokenIdentifier>
-			<Abstract type="html">	@brief	the degree distance of the fetched profile from the member who fetched the profile</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger distance</Declaration>
-			
-			
-			<Anchor>//api/name/distance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/distance</TokenIdentifier>
-			<Abstract type="html">	@brief	the degree distance of the fetched profile from the member who fetched the profile</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger distance</Declaration>
-			
-			
-			<Anchor>//api/name/distance</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setCurrentShare:</TokenIdentifier>
-			<Abstract type="html">	@brief	Overloaded to also return &quot;current-status&quot; (if there is no URL shared). (Status and share are the same.)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *currentShare</Declaration>
-			
-			
-			<Anchor>//api/name/currentShare</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/currentShare</TokenIdentifier>
-			<Abstract type="html">	@brief	Overloaded to also return &quot;current-status&quot; (if there is no URL shared). (Status and share are the same.)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *currentShare</Declaration>
-			
-			
-			<Anchor>//api/name/currentShare</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setNumConnections:</TokenIdentifier>
-			<Abstract type="html">	@brief	the # of connections the member has</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger numConnections</Declaration>
-			
-			
-			<Anchor>//api/name/numConnections</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/numConnections</TokenIdentifier>
-			<Abstract type="html">	@brief	the # of connections the member has</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger numConnections</Declaration>
-			
-			
-			<Anchor>//api/name/numConnections</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setNumConnectionsCapped:</TokenIdentifier>
-			<Abstract type="html">	@brief	true if the value of num-connections has been capped at 500. false otherwise.</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL numConnectionsCapped</Declaration>
-			
-			
-			<Anchor>//api/name/numConnectionsCapped</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/numConnectionsCapped</TokenIdentifier>
-			<Abstract type="html">	@brief	true if the value of num-connections has been capped at 500. false otherwise.</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL numConnectionsCapped</Declaration>
-			
-			
-			<Anchor>//api/name/numConnectionsCapped</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSummary:</TokenIdentifier>
-			<Abstract type="html">	@brief	A long-form text area where the member describes their professional profile</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *summary</Declaration>
-			
-			
-			<Anchor>//api/name/summary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/summary</TokenIdentifier>
-			<Abstract type="html">	@brief	A long-form text area where the member describes their professional profile</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *summary</Declaration>
-			
-			
-			<Anchor>//api/name/summary</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSpecialties:</TokenIdentifier>
-			<Abstract type="html">	@brief	A short-form text area where the member enumerates their specialties</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *specialties</Declaration>
-			
-			
-			<Anchor>//api/name/specialties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/specialties</TokenIdentifier>
-			<Abstract type="html">	@brief	A short-form text area where the member enumerates their specialties</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *specialties</Declaration>
-			
-			
-			<Anchor>//api/name/specialties</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPositions:</TokenIdentifier>
-			<Abstract type="html">	@brief	A collection of positions a member has had, the total indicated by a total attribute</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInPositions *positions</Declaration>
-			
-			
-			<Anchor>//api/name/positions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/positions</TokenIdentifier>
-			<Abstract type="html">	@brief	A collection of positions a member has had, the total indicated by a total attribute</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInPositions *positions</Declaration>
-			
-			
-			<Anchor>//api/name/positions</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPictureUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	A URL to the profile picture, if the member has associated one with their profile and it is visible to the requestor</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pictureUrl</Declaration>
-			
-			
-			<Anchor>//api/name/pictureUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/pictureUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	A URL to the profile picture, if the member has associated one with their profile and it is visible to the requestor</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *pictureUrl</Declaration>
-			
-			
-			<Anchor>//api/name/pictureUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setSiteStandardProfileRequest:</TokenIdentifier>
-			<Abstract type="html">	@brief	The URL to the member&apos;s authenticated profile on LinkedIn (requires a login to be viewed, unlike public profiles)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInSiteStandardProfileRequest *siteStandardProfileRequest</Declaration>
-			
-			
-			<Anchor>//api/name/siteStandardProfileRequest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/siteStandardProfileRequest</TokenIdentifier>
-			<Abstract type="html">	@brief	The URL to the member&apos;s authenticated profile on LinkedIn (requires a login to be viewed, unlike public profiles)</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInSiteStandardProfileRequest *siteStandardProfileRequest</Declaration>
-			
-			
-			<Anchor>//api/name/siteStandardProfileRequest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setPublicProfileUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	A URL to the member&apos;s public profile, if enabled</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *publicProfileUrl</Declaration>
-			
-			
-			<Anchor>//api/name/publicProfileUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/publicProfileUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	A URL to the member&apos;s public profile, if enabled</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *publicProfileUrl</Declaration>
-			
-			
-			<Anchor>//api/name/publicProfileUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setRelationToViewer:</TokenIdentifier>
-			<Abstract type="html">	@brief	</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInRelationToViewer *relationToViewer</Declaration>
-			
-			
-			<Anchor>//api/name/relationToViewer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/relationToViewer</TokenIdentifier>
-			<Abstract type="html">	@brief	</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInRelationToViewer *relationToViewer</Declaration>
-			
-			
-			<Anchor>//api/name/relationToViewer</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setApiStandardProfileRequest:</TokenIdentifier>
-			<Abstract type="html">	@brief	标准个人信息请求信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInApiStandardProfileRequest *apiStandardProfileRequest</Declaration>
-			
-			
-			<Anchor>//api/name/apiStandardProfileRequest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/apiStandardProfileRequest</TokenIdentifier>
-			<Abstract type="html">	@brief	标准个人信息请求信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInApiStandardProfileRequest *apiStandardProfileRequest</Declaration>
-			
-			
-			<Anchor>//api/name/apiStandardProfileRequest</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/setLocation:</TokenIdentifier>
-			<Abstract type="html">	@brief	位置信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInUser/location</TokenIdentifier>
-			<Abstract type="html">	@brief	位置信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSLinkedInLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInUser/userWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
-			
-			<Declaration>+ (SSLinkedInUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/loginWithAppKey:</TokenIdentifier>
+			<Abstract type="html">	@brief	使用AppKey进行登录</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAccount&gt;)loginWithAppKey:(NSString *)appKey</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
+					<Name>appKey</Name>
+					<Abstract type="html">应用标志</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/userWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">登录帐户对象</Abstract></ReturnValue>
+			<Anchor>//api/name/loginWithAppKey:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInUser/descriptor</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
-			<DeclaredIn>SSLinkedInUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/hasLogined:</TokenIdentifier>
+			<Abstract type="html">	@brief	检查帐号是否已经登录</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
 			
-			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
+			<Declaration>+ (BOOL)hasLogined:(id&lt;ISSCAccount&gt;)account</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">登录帐号</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示登录，NO表示尚未登录</Abstract></ReturnValue>
+			<Anchor>//api/name/hasLogined:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/parameters</TokenIdentifier>
+			<Abstract type="html">	@brief	创建请求参数</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
 			
-			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
-			<Anchor>//api/name/descriptor</Anchor>
+			<Declaration>+ (id&lt;ISSCParameters&gt;)parameters</Declaration>
+			
+			<ReturnValue><Abstract type="html">请求参数对象</Abstract></ReturnValue>
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/parametersWithQuery:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建请求参数</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCParameters&gt;)parametersWithQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">URL中的query字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">请求参数对象</Abstract></ReturnValue>
+			<Anchor>//api/name/parametersWithQuery:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/oauthParameters:consumerSecret:oauthToken:oauthSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建OAuth请求参数</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCOAuthParameters&gt;)oauthParameters:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret oauthToken:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthToken</Name>
+					<Abstract type="html">OAuth令牌</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthSecret</Name>
+					<Abstract type="html">OAuth密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">OAuth请求参数</Abstract></ReturnValue>
+			<Anchor>//api/name/oauthParameters:consumerSecret:oauthToken:oauthSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/oauthParameters:consumerSecret:oauthToken:oauthSecret:query:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建OAuth请求参数</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCOAuthParameters&gt;)oauthParameters:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret oauthToken:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret query:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">消费者Key</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthToken</Name>
+					<Abstract type="html">OAuth令牌</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthSecret</Name>
+					<Abstract type="html">OAuth密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">URL中的query字符串</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">OAuth请求参数</Abstract></ReturnValue>
+			<Anchor>//api/name/oauthParameters:consumerSecret:oauthToken:oauthSecret:query:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/requestWithAccount:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取请求</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCRequest&gt;)requestWithAccount:(id&lt;ISSCAccount&gt;)account</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">授权帐号</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">请求对象,如果返回nil则表示帐户尚未通过授权</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithAccount:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/attachmentWithPath:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建附件</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)attachmentWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">文件路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">附件对象</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/attachmentWithUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建附件</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)attachmentWithUrl:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">文件网络地址</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">附件对象</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentWithUrl:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/attachmentWithData:fileName:mimeType:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建附件</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISSCAttachment&gt;)attachmentWithData:(NSData *)data fileName:(NSString *)fileName mimeType:(NSString *)mimeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">文件数据</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">文件名称</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">MIME类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">附件对象</Abstract></ReturnValue>
+			<Anchor>//api/name/attachmentWithData:fileName:mimeType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/oauthSignatureWithURL:method:parameters:consumerSecret:oauthTokenSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth签名</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)oauthSignatureWithURL:(NSURL *)url method:(NSString *)method parameters:(id&lt;ISSCParameters&gt;)parameters consumerSecret:(NSString *)consumerSecret oauthTokenSecret:(NSString *)oauthTokenSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL</Abstract>
+				</Parameter><Parameter>
+					<Name>method</Name>
+					<Abstract type="html">请求方法GET或POST</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">参数</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">消费者密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthTokenSecret</Name>
+					<Abstract type="html">OAuth令牌密钥</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">签名值</Abstract></ReturnValue>
+			<Anchor>//api/name/oauthSignatureWithURL:method:parameters:consumerSecret:oauthTokenSecret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/localizableString:comment:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取SDK本地化字符串资源</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)localizableString:(NSString *)name comment:(NSString *)comment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter><Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">描述</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">字符串资源</Abstract></ReturnValue>
+			<Anchor>//api/name/localizableString:comment:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShareSDKCoreService/imageNamed:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取SDK的图片资源</Abstract>
+			<DeclaredIn>ShareSDKCoreService.h</DeclaredIn>			
+			
+			<Declaration>+ (UIImage *)imageNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">名称</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片资源</Abstract></ReturnValue>
+			<Anchor>//api/name/imageNamed:</Anchor>
 		</Token>
 		
 	</File>

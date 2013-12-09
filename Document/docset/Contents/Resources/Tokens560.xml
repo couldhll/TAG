@@ -1,122 +1,393 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIColor+HTMLColorInternal.html">
+	<File path="Protocols/ISSRenRenApp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIColor(HTMLColorInternal)</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSRenRenApp</TokenIdentifier>
+			<Abstract type="html">	@brief	人人网应用协议</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>
 			
 			<NodeRef refid="560"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression16:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with html color code
-@details This method accepts formats like &quot;#fff&quot;.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/account</TokenIdentifier>
+			<Abstract type="html">	@brief	获取授权帐号</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>- (UIColor *)initWithHTMLHexExpression16:(NSString *)code</Declaration>
+			<Declaration>- (id&lt;ISSCAccount&gt;)account</Declaration>
 			
-			
-			<Anchor>//api/name/initWithHTMLHexExpression16:</Anchor>
+			<ReturnValue><Abstract type="html">授权帐号</Abstract></ReturnValue>
+			<Anchor>//api/name/account</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression32:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with html color code
-@details This method accepts formats like &quot;#0f0f0f&quot;</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/appId</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用ID</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>- (UIColor *)initWithHTMLHexExpression32:(NSString *)code</Declaration>
+			<Declaration>- (NSString *)appId</Declaration>
 			
-			
-			<Anchor>//api/name/initWithHTMLHexExpression32:</Anchor>
+			<ReturnValue><Abstract type="html">应用ID</Abstract></ReturnValue>
+			<Anchor>//api/name/appId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression16a:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with html color code
-@details This method accepts formats like &quot;#dddf&quot;. Last character represents alpha channel.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/appKey</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用Key</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>- (UIColor *)initWithHTMLHexExpression16a:(NSString *)code</Declaration>
+			<Declaration>- (NSString *)appKey</Declaration>
 			
-			
-			<Anchor>//api/name/initWithHTMLHexExpression16a:</Anchor>
+			<ReturnValue><Abstract type="html">应用Key</Abstract></ReturnValue>
+			<Anchor>//api/name/appKey</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/initWithHTMLHexExpression32a:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with html color code
-@details This method accepts formats like &quot;#ddddddff&quot;. Last 2 characters represent alpha channel.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/appSecret</TokenIdentifier>
+			<Abstract type="html">	@brief	获取应用密钥</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>- (UIColor *)initWithHTMLHexExpression32a:(NSString *)code</Declaration>
+			<Declaration>- (NSString *)appSecret</Declaration>
 			
-			
-			<Anchor>//api/name/initWithHTMLHexExpression32a:</Anchor>
+			<ReturnValue><Abstract type="html">应用密钥</Abstract></ReturnValue>
+			<Anchor>//api/name/appSecret</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression16:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns color object with html color code
-@details This method accepts formats like &quot;#fff&quot;.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/ssoCallbackUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	获取SSO回调地址</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>+ (UIColor *)colorWithHTMLHexExpression16:(NSString *)code</Declaration>
+			<Declaration>- (NSString *)ssoCallbackUrl</Declaration>
 			
-			
-			<Anchor>//api/name/colorWithHTMLHexExpression16:</Anchor>
+			<ReturnValue><Abstract type="html">SSO回调地址</Abstract></ReturnValue>
+			<Anchor>//api/name/ssoCallbackUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression32:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns color object with html color code
-@details This method accepts formats like &quot;#0f0f0f&quot;.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/ssoEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	SSO登录使能状态</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>+ (UIColor *)colorWithHTMLHexExpression32:(NSString *)code</Declaration>
+			<Declaration>- (BOOL)ssoEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/colorWithHTMLHexExpression32:</Anchor>
+			<Anchor>//api/name/ssoEnabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression16a:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns color object with html color code
-@details This method accepts formats like &quot;#dddf&quot;. Last character represents alpha channel.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/setSsoEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置SSO登录使能状态</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>+ (UIColor *)colorWithHTMLHexExpression16a:(NSString *)code</Declaration>
+			<Declaration>- (void)setSsoEnabled:(BOOL)ssoEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/colorWithHTMLHexExpression16a:</Anchor>
+			<Anchor>//api/name/setSsoEnabled:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLHexExpression32a:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns color object with html color code
-@details This method accepts formats like &quot;#ddddddff&quot;. Last 2 characters represent alpha channel.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/convertUrlEnabled</TokenIdentifier>
+			<Abstract type="html">	@brief	获取是否转换链接标识</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>+ (UIColor *)colorWithHTMLHexExpression32a:(NSString *)code</Declaration>
+			<Declaration>- (BOOL)convertUrlEnabled</Declaration>
 			
-			
-			<Anchor>//api/name/colorWithHTMLHexExpression32a:</Anchor>
+			<ReturnValue><Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract></ReturnValue>
+			<Anchor>//api/name/convertUrlEnabled</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColorInternal)/colorWithHTMLColorName:</TokenIdentifier>
-			<Abstract type="html">@brief Returns constant color object for given color name.
-@details Available color names are standard HTML color names, &quot;orange&quot; for css and &quot;transperent&quot; for clear color.</Abstract>
-			<DeclaredIn>UIColor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/setConvertUrlEnabled:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置是否转换链接标识</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Declaration>+ (UIColor *)colorWithHTMLColorName:(NSString *)name</Declaration>
+			<Declaration>- (void)setConvertUrlEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">YES 表示转换链接，NO 表示不转换链接</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/setConvertUrlEnabled:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/handleOpenURL:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
 			
-			<Anchor>//api/name/colorWithHTMLColorName:</Anchor>
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求 NO 表示不接受</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/handleOpenURL:sourceApplication:annotation:</TokenIdentifier>
+			<Abstract type="html">	@brief	处理请求打开链接</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">链接</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceApplication</Name>
+					<Abstract type="html">源应用</Abstract>
+				</Parameter><Parameter>
+					<Name>annotation</Name>
+					<Abstract type="html">源应用提供的信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示接受请求，NO 表示不接受请求</Abstract></ReturnValue>
+			<Anchor>//api/name/handleOpenURL:sourceApplication:annotation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/authorize</TokenIdentifier>
+			<Abstract type="html">	@brief	授权应用</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;ISSRenRenAuthSession&gt;)authorize</Declaration>
+			
+			<ReturnValue><Abstract type="html">授权会话</Abstract></ReturnValue>
+			<Anchor>//api/name/authorize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/registerUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册用户信息</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)registerUser:(SSRenRenUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注册成功， NO 表示注册失败</Abstract></ReturnValue>
+			<Anchor>//api/name/registerUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/unregisterUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	注销用户信息</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)unregisterUser:(SSRenRenUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">用户信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示注销成功， NO 表示注销失败</Abstract></ReturnValue>
+			<Anchor>//api/name/unregisterUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/getUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取注册用户信息</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSRenRenUser *)getUser:(long long)uid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户ID</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">返回用户信息，nil表示尚未注册</Abstract></ReturnValue>
+			<Anchor>//api/name/getUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/defaultUser</TokenIdentifier>
+			<Abstract type="html">	@brief	获取默认注册用户</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (SSRenRenUser *)defaultUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">默认注册用户</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/setDefaultUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置默认注册用户</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaultUser:(SSRenRenUser *)defaultUser</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>defaultUser</Name>
+					<Abstract type="html">默认注册用户</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/checkUnauthWithError:</TokenIdentifier>
+			<Abstract type="html">	@brief	检测用户是否已授权</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)checkUnauthWithError:(SSRenRenErrorInfo *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">错误信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES 表示没有授权，NO 表示已授权</Abstract></ReturnValue>
+			<Anchor>//api/name/checkUnauthWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/setCredential:</TokenIdentifier>
+			<Abstract type="html">	@brief	设置凭证</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCredential:(SSRenRenCredential *)credential</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credential</Name>
+					<Abstract type="html">授权凭证信息</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCredential:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/api:method:params:user:result:fault:</TokenIdentifier>
+			<Abstract type="html">	@brief	调用开放平台API</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)api:(NSString *)path method:(SSRenRenRequestMethod)method params:(id&lt;ISSCParameters&gt;)params user:(SSRenRenUser *)user result:(void ( ^ ) ( id responder ))result fault:(void ( ^ ) ( SSRenRenErrorInfo *error ))fault</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">方法</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">请求参数</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">授权用户,如果传入nil则表示默认的授权用户</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter><Parameter>
+					<Name>fault</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/api:method:params:user:result:fault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/showMe:</TokenIdentifier>
+			<Abstract type="html">	@brief	显示授权用户信息</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)showMe:(void ( ^ ) ( BOOL result , SSRenRenUser *userInfo , SSRenRenErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">授权用户,为nil则为默认用户</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showMe:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/getUserInfoWithUid:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取用户信息</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)getUserInfoWithUid:(long long)uid result:(void ( ^ ) ( BOOL result , SSRenRenUser *userInfo , SSRenRenErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户ID</Abstract>
+				</Parameter><Parameter>
+					<Name>result</Name>
+					<Abstract type="html">返回回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getUserInfoWithUid:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/uploadPhoto:description:albumId:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	上传照片</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)uploadPhoto:(id&lt;ISSCAttachment&gt;)file description:(NSString *)description albumId:(long)albumId result:(void ( ^ ) ( BOOL result , SSRenRenPhoto *photo , SSRenRenErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">文件</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">照片描述。不能超过200个字符</Abstract>
+				</Parameter><Parameter>
+					<Name>albumId</Name>
+					<Abstract type="html">相册ID,albumId省略时会上传到应用相册</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadPhoto:description:albumId:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSRenRenApp/publishFeedWithName:description:url:message:image:caption:result:</TokenIdentifier>
+			<Abstract type="html">	@brief	发布新鲜事</Abstract>
+			<DeclaredIn>ISSRenRenApp.h</DeclaredIn>			
+			
+			<Declaration>- (void)publishFeedWithName:(NSString *)name description:(NSString *)description url:(NSString *)url message:(NSString *)message image:(NSString *)image caption:(NSString *)caption result:(void ( ^ ) ( SSCShareSessionState state , SSRenRenPost *post , SSRenRenErrorInfo *error ))result</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">标题，最多30个字符</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">新鲜事主体内容 注意：最多200个字符。</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">新鲜事标题和图片指向的链接。</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">用户输入的自定义内容。注意：最多200个字符。</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">新鲜事图片地址</Abstract>
+				</Parameter><Parameter>
+					<Name>caption</Name>
+					<Abstract type="html">新鲜事副标题 注意：最多20个字符</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/publishFeedWithName:description:url:message:image:caption:result:</Anchor>
 		</Token>
 		
 	</File>

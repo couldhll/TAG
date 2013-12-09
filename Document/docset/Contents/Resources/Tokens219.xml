@@ -1,36 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SS163WeiboErrorInfo.html">
+	<File path="Classes/SSLinkedInCountry.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SS163WeiboErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	错误信息</Abstract>
-			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInCountry</TokenIdentifier>
+			<Abstract type="html">	@brief	国家信息</Abstract>
+			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>
 			
 			<NodeRef refid="219"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SS163WeiboErrorInfo/setRequest:</TokenIdentifier>
-			<Abstract type="html">	@brief	请求地址</Abstract>
-			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSLinkedInCountry/setCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	国家代码</Abstract>
+			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *code</Declaration>
 			
 			
-			<Anchor>//api/name/request</Anchor>
+			<Anchor>//api/name/code</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SS163WeiboErrorInfo/request</TokenIdentifier>
-			<Abstract type="html">	@brief	请求地址</Abstract>
-			<DeclaredIn>SS163WeiboErrorInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSLinkedInCountry/code</TokenIdentifier>
+			<Abstract type="html">	@brief	国家代码</Abstract>
+			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, copy) NSString *request</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *code</Declaration>
 			
 			
-			<Anchor>//api/name/request</Anchor>
+			<Anchor>//api/name/code</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInCountry/countryWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建国家信息</Abstract>
+			<DeclaredIn>SSLinkedInCountry.h</DeclaredIn>			
+			
+			<Declaration>+ (SSLinkedInCountry *)countryWithResponse:(NSDictionary *)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">国家信息</Abstract></ReturnValue>
+			<Anchor>//api/name/countryWithResponse:</Anchor>
 		</Token>
 		
 	</File>

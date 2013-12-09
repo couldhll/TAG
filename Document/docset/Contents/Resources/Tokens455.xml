@@ -1,126 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WXMusicObject.html">
+	<File path="Categories/NSString+NSPathUtilities.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WXMusicObject</TokenIdentifier>
-			<Abstract type="html">@brief 多媒体消息中包含的音乐数据对象</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(NSPathUtilities)</TokenIdentifier>
+			<Abstract type="html">@brief Extensions of NSString(NSStringPathExtensions)</Abstract>
+			<DeclaredIn>NSPathUtilities.h</DeclaredIn>
 			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/cl/WXMediaMessage</TokenIdentifier>
-		
-	</RelatedTokens>
-	
 			<NodeRef refid="455"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/WXMusicObject/object</TokenIdentifier>
-			<Abstract type="html">@brief 返回一个WXMusicObject对象</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSPathUtilities)/stringByAppendingPathFormat:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a new string made by appending to the receiver a given string.</Abstract>
+			<DeclaredIn>NSPathUtilities.h</DeclaredIn>			
 			
-			<Declaration>+ (WXMusicObject *)object</Declaration>
+			<Declaration>- (NSString *)stringByAppendingPathFormat:(NSString *)format, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>format</Name>
+					<Abstract type="html">A format string.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">A comma-separated list of arguments to substitute into format.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/object</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicUrl:</TokenIdentifier>
-			<Abstract type="html">音乐网页的url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicUrl</TokenIdentifier>
-			<Abstract type="html">音乐网页的url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicLowBandUrl:</TokenIdentifier>
-			<Abstract type="html">音乐lowband网页的url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicLowBandUrl</TokenIdentifier>
-			<Abstract type="html">音乐lowband网页的url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicDataUrl:</TokenIdentifier>
-			<Abstract type="html">音乐数据url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicDataUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicDataUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicDataUrl</TokenIdentifier>
-			<Abstract type="html">音乐数据url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicDataUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicDataUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WXMusicObject/setMusicLowBandDataUrl:</TokenIdentifier>
-			<Abstract type="html">音乐lowband数据url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandDataUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandDataUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WXMusicObject/musicLowBandDataUrl</TokenIdentifier>
-			<Abstract type="html">音乐lowband数据url地址
-@attention 长度不能超过10K</Abstract>
-			<DeclaredIn>WXApiObject.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSString *musicLowBandDataUrl</Declaration>
-			
-			
-			<Anchor>//api/name/musicLowBandDataUrl</Anchor>
+			<Anchor>//api/name/stringByAppendingPathFormat:</Anchor>
 		</Token>
 		
 	</File>

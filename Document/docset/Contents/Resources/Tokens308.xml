@@ -1,112 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSPocketCredential.html">
+	<File path="Classes/ShowMessageFromQQResp.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSPocketCredential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/ShowMessageFromQQResp</TokenIdentifier>
+			<Abstract type="html">ShowMessageFromQQResp应答帮助类</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>
 			
 			<NodeRef refid="308"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/ShowMessageFromQQResp/respWithResult:errorDescription:</TokenIdentifier>
+			<Abstract type="html">创建一个ShowMessageFromQQResp应答实例</Abstract>
+			<DeclaredIn>QQApiInterfaceObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/accessToken</TokenIdentifier>
-			<Abstract type="html">	@brief	Access Token</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setUserName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
-			
-			
-			<Anchor>//api/name/userName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/userName</TokenIdentifier>
-			<Abstract type="html">	@brief	用户名称</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
-			
-			
-			<Anchor>//api/name/userName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAvailable:</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/available</TokenIdentifier>
-			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
-			
-			
-			<Anchor>//api/name/available</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权信息</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>+ (ShowMessageFromQQResp *)respWithResult:(NSString *)result errorDescription:(NSString *)errDesp</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>sourceData</Name>
-					<Abstract type="html">源授权数据</Abstract>
+					<Name>result</Name>
+					<Abstract type="html">展现消息结果</Abstract>
+				</Parameter><Parameter>
+					<Name>errDesp</Name>
+					<Abstract type="html">具体错误描述信息</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithData:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithCredentialData:</TokenIdentifier>
-			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
-			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>credentialData</Name>
-					<Abstract type="html">授权凭证数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithCredentialData:</Anchor>
+			<ReturnValue><Abstract type="html">新创建的ShowMessageFromQQResp应答实例</Abstract></ReturnValue>
+			<Anchor>//api/name/respWithResult:errorDescription:</Anchor>
 		</Token>
 		
 	</File>

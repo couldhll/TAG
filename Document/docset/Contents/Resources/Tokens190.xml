@@ -1,36 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/PinterestConnection.html">
+	<File path="Classes/SSGooglePlusAgeRange.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/PinterestConnection</TokenIdentifier>
-			<Abstract type="html">	@brief	Pinterest连接器</Abstract>
-			<DeclaredIn>PinterestConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusAgeRange</TokenIdentifier>
+			<Abstract type="html">	@brief	年龄范围</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>
 			
 			<NodeRef refid="190"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PinterestConnection/registerApp:clientId:pinterestCls:</TokenIdentifier>
-			<Abstract type="html">	@brief	注册微信应用</Abstract>
-			<DeclaredIn>PinterestConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusAgeRange/setMax:</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range&apos;s lower bound, if any.</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSPinterestApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account clientId:(NSString *)clientId pinterestCls:(Class)pinterestCls</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			
+			
+			<Anchor>//api/name/max</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusAgeRange/max</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range&apos;s lower bound, if any.</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			
+			
+			<Anchor>//api/name/max</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusAgeRange/setMin:</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range&apos;s upper bound, if any.</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			
+			
+			<Anchor>//api/name/min</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusAgeRange/min</TokenIdentifier>
+			<Abstract type="html">	@brief	The age range&apos;s upper bound, if any.</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			
+			
+			<Anchor>//api/name/min</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusAgeRange/ageRangeWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建年龄范围</Abstract>
+			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			
+			<Declaration>+ (SSGooglePlusAgeRange *)ageRangeWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>account</Name>
-					<Abstract type="html">帐号</Abstract>
-				</Parameter><Parameter>
-					<Name>clientId</Name>
-					<Abstract type="html">应用ID</Abstract>
-				</Parameter><Parameter>
-					<Name>pinterestCls</Name>
-					<Abstract type="html">微信API类型</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">应用对象</Abstract></ReturnValue>
-			<Anchor>//api/name/registerApp:clientId:pinterestCls:</Anchor>
+			<ReturnValue><Abstract type="html">年龄范围</Abstract></ReturnValue>
+			<Anchor>//api/name/ageRangeWithResponse:</Anchor>
 		</Token>
 		
 	</File>

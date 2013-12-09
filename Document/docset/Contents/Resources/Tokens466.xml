@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiYun_delete_record_GET.html">
+	<File path="Categories/NSURLRequest+Creations_deprecated.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_delete_record_GET</TokenIdentifier>
-			<Abstract type="html">\brief 查询key所对应的键值对是否存在</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURLRequest(Creations_deprecated)</TokenIdentifier>
+			<Abstract type="html">@brief Deprecated creation shortcuts
+@deprecated Use NSURLRequest initWithURL:, @ref NSString(Shortcuts) and @ref NSURL(Creations)</Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>
 			
 			<NodeRef refid="466"/>
 		</Token>

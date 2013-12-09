@@ -1,96 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBProfilePictureView.html">
+	<File path="Classes/MZFormSheetBackgroundWindow.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBProfilePictureView</TokenIdentifier>
-			<Abstract type="html">@class
-@abstract
-An instance of FBProfilePictureView is used to display a profile picture.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/MZFormSheetBackgroundWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>
 			
 			<NodeRef refid="83"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBProfilePictureView/setProfileID:</TokenIdentifier>
-			<Abstract type="html">@abstract
-The Facebook ID of the user, place or object for which a picture should be fetched and displayed.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MZFormSheetBackgroundWindow/setFormSheetBackgroundWindowDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving form sheet background window.</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *profileID</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;MZFormSheetBackgroundWindowDelegate&gt; formSheetBackgroundWindowDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/profileID</Anchor>
+			<Anchor>//api/name/formSheetBackgroundWindowDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FBProfilePictureView/profileID</TokenIdentifier>
-			<Abstract type="html">@abstract
-The Facebook ID of the user, place or object for which a picture should be fetched and displayed.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/MZFormSheetBackgroundWindow/formSheetBackgroundWindowDelegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving form sheet background window.</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>@property (copy, nonatomic) NSString *profileID</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;MZFormSheetBackgroundWindowDelegate&gt; formSheetBackgroundWindowDelegate</Declaration>
 			
 			
-			<Anchor>//api/name/profileID</Anchor>
+			<Anchor>//api/name/formSheetBackgroundWindowDelegate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBProfilePictureView/setPictureCropping:</TokenIdentifier>
-			<Abstract type="html">@abstract
-The cropping to use for the profile picture.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MZFormSheetBackgroundWindow/setMZ_APPEARANCE_SELECTOR:</TokenIdentifier>
+			<Abstract type="html">The positioning of windows relative to each other.
+If you want to cover status bar when a dialog is presented use MZFormSheetBackgroundWindowLevelAboveStatusBar
+(recomended for UIStatusBarStyleLightContent or if you don&apos;t use blur)</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) FBProfilePictureCropping pictureCropping</Declaration>
+			<Declaration>@property (nonatomic, readwrite) UIWindowLevel windowLevel MZ_APPEARANCE_SELECTOR</Declaration>
 			
 			
-			<Anchor>//api/name/pictureCropping</Anchor>
+			<Anchor>//api/name/MZ_APPEARANCE_SELECTOR</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FBProfilePictureView/pictureCropping</TokenIdentifier>
-			<Abstract type="html">@abstract
-The cropping to use for the profile picture.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/MZFormSheetBackgroundWindow/MZ_APPEARANCE_SELECTOR</TokenIdentifier>
+			<Abstract type="html">The positioning of windows relative to each other.
+If you want to cover status bar when a dialog is presented use MZFormSheetBackgroundWindowLevelAboveStatusBar
+(recomended for UIStatusBarStyleLightContent or if you don&apos;t use blur)</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) FBProfilePictureCropping pictureCropping</Declaration>
+			<Declaration>@property (nonatomic, readwrite) UIWindowLevel windowLevel MZ_APPEARANCE_SELECTOR</Declaration>
 			
 			
-			<Anchor>//api/name/pictureCropping</Anchor>
+			<Anchor>//api/name/MZ_APPEARANCE_SELECTOR</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBProfilePictureView/init</TokenIdentifier>
-			<Abstract type="html">@abstract
-Initializes and returns a profile view object.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MZFormSheetBackgroundWindow/setBackgroundImageView:</TokenIdentifier>
+			<Abstract type="html">The background image view.</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>- (id)init</Declaration>
+			<Declaration>@property (nonatomic, strong, readonly) UIImageView *backgroundImageView</Declaration>
 			
 			
-			<Anchor>//api/name/init</Anchor>
+			<Anchor>//api/name/backgroundImageView</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBProfilePictureView/initWithProfileID:pictureCropping:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Initializes and returns a profile view object for the given Facebook ID and cropping.</Abstract>
-			<DeclaredIn>FBProfilePictureView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/MZFormSheetBackgroundWindow/backgroundImageView</TokenIdentifier>
+			<Abstract type="html">The background image view.</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithProfileID:(NSString *)profileID pictureCropping:(FBProfilePictureCropping)pictureCropping</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>profileID</Name>
-					<Abstract type="html">The Facebook ID of the user, place or object for which a picture should be fetched and displayed.</Abstract>
-				</Parameter><Parameter>
-					<Name>pictureCropping</Name>
-					<Abstract type="html">The cropping to use for the profile picture.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, strong, readonly) UIImageView *backgroundImageView</Declaration>
 			
-			<Anchor>//api/name/initWithProfileID:pictureCropping:</Anchor>
+			
+			<Anchor>//api/name/backgroundImageView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MZFormSheetBackgroundWindow/appearance</TokenIdentifier>
+			<Abstract type="html">To customize the appearance of all instances of a class, send the relevant appearance modification messages to the appearance proxy for the class.</Abstract>
+			<DeclaredIn>MZFormSheetBackgroundWindow.m</DeclaredIn>			
+			
+			<Declaration>+ (id)appearance</Declaration>
+			
+			
+			<Anchor>//api/name/appearance</Anchor>
 		</Token>
 		
 	</File>

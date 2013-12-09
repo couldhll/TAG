@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBDialogsParams.html">
+	<File path="Classes/HLLUserData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBDialogsParams</TokenIdentifier>
-			<Abstract type="html">@class FBDialogsParams</Abstract>
-			<DeclaredIn>FBDialogsParams.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/HLLUserData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HLLUserData.h</DeclaredIn>
 			
 			<NodeRef refid="66"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBDialogsParams/dictionaryMethodArgs</TokenIdentifier>
-			<Abstract type="html">@abstract
-This method is abstract and must be defined my all classes that derive from FBDialogsParams</Abstract>
-			<DeclaredIn>FBDialogsParams+Internal.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/HLLUserData/sharedInstance</TokenIdentifier>
+			<Abstract type="html">	@brief	Singleton methods.</Abstract>
+			<DeclaredIn>HLLUserData.h</DeclaredIn>			
 			
-			<Declaration>- (NSDictionary *)dictionaryMethodArgs</Declaration>
+			<Declaration>+ (HLLUserData *)sharedInstance</Declaration>
 			
-			
-			<Anchor>//api/name/dictionaryMethodArgs</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBDialogsParams/appBridgeVersion</TokenIdentifier>
-			<Abstract type="html">@abstract
-This method is abstract and must be defined by all classes that derive from &apos;FBDialogParams&apos;.
-It validates the parameters and returns the app bridge version they should be used on.</Abstract>
-			<DeclaredIn>FBDialogsParams+Internal.h</DeclaredIn>			
-			
-			<Declaration>- (NSString *)appBridgeVersion</Declaration>
-			
-			
-			<Anchor>//api/name/appBridgeVersion</Anchor>
+			<ReturnValue><Abstract type="html">Singleton.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
 		</Token>
 		
 	</File>

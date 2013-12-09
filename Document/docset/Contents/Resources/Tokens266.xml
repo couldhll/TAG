@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookUser.html">
+	<File path="Classes/SSSohuWeiboCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookUser</TokenIdentifier>
-			<Abstract type="html">	@brief	用户信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSohuWeiboCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>
 			
 			<NodeRef refid="266"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setUid:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setUid:</TokenIdentifier>
 			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
@@ -23,9 +23,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/uid</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/uid</TokenIdentifier>
 			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
 			
@@ -34,845 +34,75 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setName:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户姓名</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/name</TokenIdentifier>
-			<Abstract type="html">	@brief	用户姓名</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *name</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/name</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setFirstName:</TokenIdentifier>
-			<Abstract type="html">	@brief	名字</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌密钥</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
 			
 			
-			<Anchor>//api/name/firstName</Anchor>
+			<Anchor>//api/name/expiresIn</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/firstName</TokenIdentifier>
-			<Abstract type="html">	@brief	名字</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌密钥</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *firstName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
 			
 			
-			<Anchor>//api/name/firstName</Anchor>
+			<Anchor>//api/name/expiresIn</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setMiddleName:</TokenIdentifier>
-			<Abstract type="html">	@brief	中间名字</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setRefreshToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *middleName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/middleName</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/middleName</TokenIdentifier>
-			<Abstract type="html">	@brief	中间名字</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/refreshToken</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *middleName</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/middleName</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setLastName:</TokenIdentifier>
-			<Abstract type="html">	@brief	姓</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/lastName</TokenIdentifier>
-			<Abstract type="html">	@brief	姓</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastName</Declaration>
-			
-			
-			<Anchor>//api/name/lastName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setGender:</TokenIdentifier>
-			<Abstract type="html">	@brief	性别</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
-			
-			
-			<Anchor>//api/name/gender</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/gender</TokenIdentifier>
-			<Abstract type="html">	@brief	性别</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
-			
-			
-			<Anchor>//api/name/gender</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setLocale:</TokenIdentifier>
-			<Abstract type="html">	@brief	语言环境</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *locale</Declaration>
-			
-			
-			<Anchor>//api/name/locale</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/locale</TokenIdentifier>
-			<Abstract type="html">	@brief	语言环境</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *locale</Declaration>
-			
-			
-			<Anchor>//api/name/locale</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setLanguages:</TokenIdentifier>
-			<Abstract type="html">	@brief	语言</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *languages</Declaration>
-			
-			
-			<Anchor>//api/name/languages</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/languages</TokenIdentifier>
-			<Abstract type="html">	@brief	语言</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *languages</Declaration>
-			
-			
-			<Anchor>//api/name/languages</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setLink:</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页链接</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *link</Declaration>
-			
-			
-			<Anchor>//api/name/link</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/link</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页链接</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *link</Declaration>
-			
-			
-			<Anchor>//api/name/link</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setUsername:</TokenIdentifier>
-			<Abstract type="html">	@brief	注册用户名称</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
-			
-			
-			<Anchor>//api/name/username</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/username</TokenIdentifier>
-			<Abstract type="html">	@brief	注册用户名称</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *username</Declaration>
-			
-			
-			<Anchor>//api/name/username</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setAgeRange:</TokenIdentifier>
-			<Abstract type="html">	@brief	年龄范围</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookAgeRange *ageRange</Declaration>
-			
-			
-			<Anchor>//api/name/ageRange</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/ageRange</TokenIdentifier>
-			<Abstract type="html">	@brief	年龄范围</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookAgeRange *ageRange</Declaration>
-			
-			
-			<Anchor>//api/name/ageRange</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setThirdPartyId:</TokenIdentifier>
-			<Abstract type="html">	@brief	匿名用户标识</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *thirdPartyId</Declaration>
-			
-			
-			<Anchor>//api/name/thirdPartyId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/thirdPartyId</TokenIdentifier>
-			<Abstract type="html">	@brief	匿名用户标识</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *thirdPartyId</Declaration>
-			
-			
-			<Anchor>//api/name/thirdPartyId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setInstalled:</TokenIdentifier>
-			<Abstract type="html">	@brief	按照应用标识</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL installed</Declaration>
-			
-			
-			<Anchor>//api/name/installed</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/installed</TokenIdentifier>
-			<Abstract type="html">	@brief	按照应用标识</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL installed</Declaration>
-			
-			
-			<Anchor>//api/name/installed</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setTimezone:</TokenIdentifier>
-			<Abstract type="html">	@brief	时区偏移值</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSNumber *timezone</Declaration>
-			
-			
-			<Anchor>//api/name/timezone</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/timezone</TokenIdentifier>
-			<Abstract type="html">	@brief	时区偏移值</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSNumber *timezone</Declaration>
-			
-			
-			<Anchor>//api/name/timezone</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setUpdatedTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	更新时间</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *updatedTime</Declaration>
-			
-			
-			<Anchor>//api/name/updatedTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/updatedTime</TokenIdentifier>
-			<Abstract type="html">	@brief	更新时间</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *updatedTime</Declaration>
-			
-			
-			<Anchor>//api/name/updatedTime</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setVerified:</TokenIdentifier>
-			<Abstract type="html">	@brief	认证状态</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
-			
-			
-			<Anchor>//api/name/verified</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/verified</TokenIdentifier>
-			<Abstract type="html">	@brief	认证状态</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
-			
-			
-			<Anchor>//api/name/verified</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setBio:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户描述</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *bio</Declaration>
-			
-			
-			<Anchor>//api/name/bio</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/bio</TokenIdentifier>
-			<Abstract type="html">	@brief	用户描述</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *bio</Declaration>
-			
-			
-			<Anchor>//api/name/bio</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setBirthday:</TokenIdentifier>
-			<Abstract type="html">	@brief	生日</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
-			
-			
-			<Anchor>//api/name/birthday</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/birthday</TokenIdentifier>
-			<Abstract type="html">	@brief	生日</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *birthday</Declaration>
-			
-			
-			<Anchor>//api/name/birthday</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setCover:</TokenIdentifier>
-			<Abstract type="html">	@brief	照片封面</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookCover *cover</Declaration>
-			
-			
-			<Anchor>//api/name/cover</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/cover</TokenIdentifier>
-			<Abstract type="html">	@brief	照片封面</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookCover *cover</Declaration>
-			
-			
-			<Anchor>//api/name/cover</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setCurrency:</TokenIdentifier>
-			<Abstract type="html">	@brief	货币设置信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookCurrency *currency</Declaration>
-			
-			
-			<Anchor>//api/name/currency</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/currency</TokenIdentifier>
-			<Abstract type="html">	@brief	货币设置信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookCurrency *currency</Declaration>
-			
-			
-			<Anchor>//api/name/currency</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setDevices:</TokenIdentifier>
-			<Abstract type="html">	@brief	设备信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *devices</Declaration>
-			
-			
-			<Anchor>//api/name/devices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/devices</TokenIdentifier>
-			<Abstract type="html">	@brief	设备信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *devices</Declaration>
-			
-			
-			<Anchor>//api/name/devices</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setEducation:</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
-			
-			
-			<Anchor>//api/name/education</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/education</TokenIdentifier>
-			<Abstract type="html">	@brief	教育信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *education</Declaration>
-			
-			
-			<Anchor>//api/name/education</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setEmail:</TokenIdentifier>
-			<Abstract type="html">	@brief	电子邮件</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
-			
-			
-			<Anchor>//api/name/email</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/email</TokenIdentifier>
-			<Abstract type="html">	@brief	电子邮件</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *email</Declaration>
-			
-			
-			<Anchor>//api/name/email</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setHometown:</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookHometown *hometown</Declaration>
-			
-			
-			<Anchor>//api/name/hometown</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/hometown</TokenIdentifier>
-			<Abstract type="html">	@brief	家乡</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookHometown *hometown</Declaration>
-			
-			
-			<Anchor>//api/name/hometown</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setInterestedIn:</TokenIdentifier>
-			<Abstract type="html">	@brief	 性取向</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *interestedIn</Declaration>
-			
-			
-			<Anchor>//api/name/interestedIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/interestedIn</TokenIdentifier>
-			<Abstract type="html">	@brief	 性取向</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *interestedIn</Declaration>
-			
-			
-			<Anchor>//api/name/interestedIn</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setLocation:</TokenIdentifier>
-			<Abstract type="html">	@brief	所在城市</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/location</TokenIdentifier>
-			<Abstract type="html">	@brief	所在城市</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookLocation *location</Declaration>
-			
-			
-			<Anchor>//api/name/location</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setPolitical:</TokenIdentifier>
-			<Abstract type="html">	@brief	政治观点</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *political</Declaration>
-			
-			
-			<Anchor>//api/name/political</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/political</TokenIdentifier>
-			<Abstract type="html">	@brief	政治观点</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *political</Declaration>
-			
-			
-			<Anchor>//api/name/political</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setPaymentPricepoints:</TokenIdentifier>
-			<Abstract type="html">	@brief	支付价格点</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookPaymentPricePoint *paymentPricepoints</Declaration>
-			
-			
-			<Anchor>//api/name/paymentPricepoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/paymentPricepoints</TokenIdentifier>
-			<Abstract type="html">	@brief	支付价格点</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookPaymentPricePoint *paymentPricepoints</Declaration>
-			
-			
-			<Anchor>//api/name/paymentPricepoints</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setFavoriteAthletes:</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢的运动员</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *favoriteAthletes</Declaration>
-			
-			
-			<Anchor>//api/name/favoriteAthletes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/favoriteAthletes</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢的运动员</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *favoriteAthletes</Declaration>
-			
-			
-			<Anchor>//api/name/favoriteAthletes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setFavoriteTeams:</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢的球队</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *favoriteTeams</Declaration>
-			
-			
-			<Anchor>//api/name/favoriteTeams</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/favoriteTeams</TokenIdentifier>
-			<Abstract type="html">	@brief	喜欢的球队</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *favoriteTeams</Declaration>
-			
-			
-			<Anchor>//api/name/favoriteTeams</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setPicture:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户头像</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) id picture</Declaration>
-			
-			
-			<Anchor>//api/name/picture</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/picture</TokenIdentifier>
-			<Abstract type="html">	@brief	用户头像</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) id picture</Declaration>
-			
-			
-			<Anchor>//api/name/picture</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setQuotes:</TokenIdentifier>
-			<Abstract type="html">	@brief	座右铭</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *quotes</Declaration>
-			
-			
-			<Anchor>//api/name/quotes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/quotes</TokenIdentifier>
-			<Abstract type="html">	@brief	座右铭</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *quotes</Declaration>
-			
-			
-			<Anchor>//api/name/quotes</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setRelationshipStatus:</TokenIdentifier>
-			<Abstract type="html">	@brief	婚恋状态</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *relationshipStatus</Declaration>
-			
-			
-			<Anchor>//api/name/relationshipStatus</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/relationshipStatus</TokenIdentifier>
-			<Abstract type="html">	@brief	婚恋状态</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *relationshipStatus</Declaration>
-			
-			
-			<Anchor>//api/name/relationshipStatus</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setReligion:</TokenIdentifier>
-			<Abstract type="html">	@brief	宗教</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *religion</Declaration>
-			
-			
-			<Anchor>//api/name/religion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/religion</TokenIdentifier>
-			<Abstract type="html">	@brief	宗教</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *religion</Declaration>
-			
-			
-			<Anchor>//api/name/religion</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setSecuritySettings:</TokenIdentifier>
-			<Abstract type="html">	@brief	安全设置</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSecuritySetting *securitySettings</Declaration>
-			
-			
-			<Anchor>//api/name/securitySettings</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/securitySettings</TokenIdentifier>
-			<Abstract type="html">	@brief	安全设置</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSecuritySetting *securitySettings</Declaration>
-			
-			
-			<Anchor>//api/name/securitySettings</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setSignificantOther:</TokenIdentifier>
-			<Abstract type="html">	@brief	The user&apos;s significant other</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSignficantOther *significantOther</Declaration>
-			
-			
-			<Anchor>//api/name/significantOther</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/significantOther</TokenIdentifier>
-			<Abstract type="html">	@brief	The user&apos;s significant other</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookSignficantOther *significantOther</Declaration>
-			
-			
-			<Anchor>//api/name/significantOther</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setVideoUploadLimits:</TokenIdentifier>
-			<Abstract type="html">	@brief	视频上传限制</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookVideoUploadLimits *videoUploadLimits</Declaration>
-			
-			
-			<Anchor>//api/name/videoUploadLimits</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/videoUploadLimits</TokenIdentifier>
-			<Abstract type="html">	@brief	视频上传限制</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSFacebookVideoUploadLimits *videoUploadLimits</Declaration>
-			
-			
-			<Anchor>//api/name/videoUploadLimits</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setWebsite:</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *website</Declaration>
-			
-			
-			<Anchor>//api/name/website</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/website</TokenIdentifier>
-			<Abstract type="html">	@brief	个人主页</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *website</Declaration>
-			
-			
-			<Anchor>//api/name/website</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setWork:</TokenIdentifier>
-			<Abstract type="html">	@brief	职业信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
-			
-			
-			<Anchor>//api/name/work</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/work</TokenIdentifier>
-			<Abstract type="html">	@brief	职业信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *work</Declaration>
-			
-			
-			<Anchor>//api/name/work</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setSourceData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setSourceData:</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -881,9 +111,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/sourceData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/sourceData</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -892,52 +122,57 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/setCredential:</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSFacebookCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookUser/credential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSSohuWeiboCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSFacebookCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookUser/userWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>+ (SSFacebookUser *)userWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复信息</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息</Abstract></ReturnValue>
-			<Anchor>//api/name/userWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookUser/descriptor</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
-			<DeclaredIn>SSFacebookUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSSohuWeiboCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSSohuWeiboCredential.h</DeclaredIn>			
 			
-			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
-			
-			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
-			<Anchor>//api/name/descriptor</Anchor>
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

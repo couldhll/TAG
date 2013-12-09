@@ -1,371 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSQZoneUser.html">
+	<File path="Classes/TCAddShareDic.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneUser</TokenIdentifier>
-			<Abstract type="html">	@brief	QQ空间用户</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TCAddShareDic</TokenIdentifier>
+			<Abstract type="html">\brief 同步分享到QQ空间,腾讯微博的参数字典定义</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>
 			
 			<NodeRef refid="318"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据结构</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/TCAddShareDic/dictionary</TokenIdentifier>
+			<Abstract type="html">返回一个对象用来进行API参数的填充</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>+ (TCAddShareDic *)dictionary</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/dictionary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据结构</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamTitle:</TokenIdentifier>
+			<Abstract type="html">title 必须 string	 feeds的标题 最长36个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/paramTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setCredential:</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramTitle</TokenIdentifier>
+			<Abstract type="html">title 必须 string	 feeds的标题 最长36个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSQZoneCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramTitle</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/paramTitle</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/credential</TokenIdentifier>
-			<Abstract type="html">	@brief	授权凭证</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamUrl:</TokenIdentifier>
+			<Abstract type="html">url 必须 string 分享所在网页资源的链接，点击后跳转至第三方网页，对应上文接口说明中2的超链接。请以http://开头。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) SSQZoneCredential *credential</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramUrl</Declaration>
 			
 			
-			<Anchor>//api/name/credential</Anchor>
+			<Anchor>//api/name/paramUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setOpenId:</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramUrl</TokenIdentifier>
+			<Abstract type="html">url 必须 string 分享所在网页资源的链接，点击后跳转至第三方网页，对应上文接口说明中2的超链接。请以http://开头。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramUrl</Declaration>
 			
 			
-			<Anchor>//api/name/openId</Anchor>
+			<Anchor>//api/name/paramUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/openId</TokenIdentifier>
-			<Abstract type="html">	@brief	用户ID</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamComment:</TokenIdentifier>
+			<Abstract type="html">comment string 用户评论内容，也叫发表分享时的分享理由 禁止使用系统生产的语句进行代替。
+最长40个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *openId</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramComment</Declaration>
 			
 			
-			<Anchor>//api/name/openId</Anchor>
+			<Anchor>//api/name/paramComment</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setNickname:</TokenIdentifier>
-			<Abstract type="html">	@brief	昵称</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramComment</TokenIdentifier>
+			<Abstract type="html">comment string 用户评论内容，也叫发表分享时的分享理由 禁止使用系统生产的语句进行代替。
+最长40个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramComment</Declaration>
 			
 			
-			<Anchor>//api/name/nickname</Anchor>
+			<Anchor>//api/name/paramComment</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/nickname</TokenIdentifier>
-			<Abstract type="html">	@brief	昵称</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamSummary:</TokenIdentifier>
+			<Abstract type="html">summary string 所分享的网页资源的摘要内容，或者是网页的概要描述 最长80个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *nickname</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramSummary</Declaration>
 			
 			
-			<Anchor>//api/name/nickname</Anchor>
+			<Anchor>//api/name/paramSummary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl:</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为30×30像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramSummary</TokenIdentifier>
+			<Abstract type="html">summary string 所分享的网页资源的摘要内容，或者是网页的概要描述 最长80个中文字，超出部分会被截断。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramSummary</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl</Anchor>
+			<Anchor>//api/name/paramSummary</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为30×30像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamImages:</TokenIdentifier>
+			<Abstract type="html">images string 所分享的网页资源的代表性图片链接&quot;，请以http://开头，长度限制255字符。多张图片以竖线（|）分隔，目前只有第一张图片有效，图片规格100*100为佳。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramImages</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl</Anchor>
+			<Anchor>//api/name/paramImages</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl1:</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为50×50像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramImages</TokenIdentifier>
+			<Abstract type="html">images string 所分享的网页资源的代表性图片链接&quot;，请以http://开头，长度限制255字符。多张图片以竖线（|）分隔，目前只有第一张图片有效，图片规格100*100为佳。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl1</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramImages</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl1</Anchor>
+			<Anchor>//api/name/paramImages</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl1</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为50×50像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamType:</TokenIdentifier>
+			<Abstract type="html">type string 分享内容的类型。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl1</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramType</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl1</Anchor>
+			<Anchor>//api/name/paramType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurl2:</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为100×100像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramType</TokenIdentifier>
+			<Abstract type="html">type string 分享内容的类型。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl2</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramType</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl2</Anchor>
+			<Anchor>//api/name/paramType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurl2</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为100×100像素的QQ空间头像URL。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamPlayurl:</TokenIdentifier>
+			<Abstract type="html">playurl string 长度限制为256字节。仅在type=5的时候有效，表示视频的swf播放地址。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurl2</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPlayurl</Declaration>
 			
 			
-			<Anchor>//api/name/figureurl2</Anchor>
+			<Anchor>//api/name/paramPlayurl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurlQQ1:</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为40×40像素的QQ头像URL</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramPlayurl</TokenIdentifier>
+			<Abstract type="html">playurl string 长度限制为256字节。仅在type=5的时候有效，表示视频的swf播放地址。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ1</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramPlayurl</Declaration>
 			
 			
-			<Anchor>//api/name/figureurlQQ1</Anchor>
+			<Anchor>//api/name/paramPlayurl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurlQQ1</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为40×40像素的QQ头像URL</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamSite:</TokenIdentifier>
+			<Abstract type="html">site 必须 string 分享的来源网站名称，请填写网站申请接入时注册的网站名称</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ1</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramSite</Declaration>
 			
 			
-			<Anchor>//api/name/figureurlQQ1</Anchor>
+			<Anchor>//api/name/paramSite</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setFigureurlQQ2:</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为100×100像素的QQ头像URL。需要注意，不是所有的用户都拥有QQ的100x100的头像，但40x40像素则是一定会有。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramSite</TokenIdentifier>
+			<Abstract type="html">site 必须 string 分享的来源网站名称，请填写网站申请接入时注册的网站名称</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ2</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramSite</Declaration>
 			
 			
-			<Anchor>//api/name/figureurlQQ2</Anchor>
+			<Anchor>//api/name/paramSite</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/figureurlQQ2</TokenIdentifier>
-			<Abstract type="html">	@brief	大小为100×100像素的QQ头像URL。需要注意，不是所有的用户都拥有QQ的100x100的头像，但40x40像素则是一定会有。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamFromurl:</TokenIdentifier>
+			<Abstract type="html">fromurl 必须 string 分享的来源网站对应的网站地址url 请以http://开头。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *figureurlQQ2</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramFromurl</Declaration>
 			
 			
-			<Anchor>//api/name/figureurlQQ2</Anchor>
+			<Anchor>//api/name/paramFromurl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setGender:</TokenIdentifier>
-			<Abstract type="html">	@brief	性别,如果获取不到则默认返回“男”</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramFromurl</TokenIdentifier>
+			<Abstract type="html">fromurl 必须 string 分享的来源网站对应的网站地址url 请以http://开头。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			<Declaration>@property (nonatomic, retain) TCRequiredStr paramFromurl</Declaration>
 			
 			
-			<Anchor>//api/name/gender</Anchor>
+			<Anchor>//api/name/paramFromurl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/gender</TokenIdentifier>
-			<Abstract type="html">	@brief	性别,如果获取不到则默认返回“男”</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TCAddShareDic/setParamNswb:</TokenIdentifier>
+			<Abstract type="html">nswb string	值为1时，表示分享不默认同步到微博，其他值或者不传此参数表示默认同步到微博。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *gender</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramNswb</Declaration>
 			
 			
-			<Anchor>//api/name/gender</Anchor>
+			<Anchor>//api/name/paramNswb</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setIsYellowYearVip:</TokenIdentifier>
-			<Abstract type="html">	@brief	标识是否为年费黄钻用户（NO：不是； YES：是）</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TCAddShareDic/paramNswb</TokenIdentifier>
+			<Abstract type="html">nswb string	值为1时，表示分享不默认同步到微博，其他值或者不传此参数表示默认同步到微博。</Abstract>
+			<DeclaredIn>TencentOAuthObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL isYellowYearVip</Declaration>
-			
-			
-			<Anchor>//api/name/isYellowYearVip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/isYellowYearVip</TokenIdentifier>
-			<Abstract type="html">	@brief	标识是否为年费黄钻用户（NO：不是； YES：是）</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isYellowYearVip</Declaration>
+			<Declaration>@property (nonatomic, retain) TCOptionalStr paramNswb</Declaration>
 			
 			
-			<Anchor>//api/name/isYellowYearVip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setIsYellowVip:</TokenIdentifier>
-			<Abstract type="html">	@brief	标识用户是否为黄钻用户（0：不是；1：是）。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isYellowVip</Declaration>
-			
-			
-			<Anchor>//api/name/isYellowVip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/isYellowVip</TokenIdentifier>
-			<Abstract type="html">	@brief	标识用户是否为黄钻用户（0：不是；1：是）。</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isYellowVip</Declaration>
-			
-			
-			<Anchor>//api/name/isYellowVip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setVip:</TokenIdentifier>
-			<Abstract type="html">	@brief	标识用户是否为黄钻用户（NO：不是；YES：是）</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL vip</Declaration>
-			
-			
-			<Anchor>//api/name/vip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/vip</TokenIdentifier>
-			<Abstract type="html">	@brief	标识用户是否为黄钻用户（NO：不是；YES：是）</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL vip</Declaration>
-			
-			
-			<Anchor>//api/name/vip</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setYellowVipLevel:</TokenIdentifier>
-			<Abstract type="html">	@brief	黄钻等级</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger yellowVipLevel</Declaration>
-			
-			
-			<Anchor>//api/name/yellowVipLevel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/yellowVipLevel</TokenIdentifier>
-			<Abstract type="html">	@brief	黄钻等级</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger yellowVipLevel</Declaration>
-			
-			
-			<Anchor>//api/name/yellowVipLevel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/setLevel:</TokenIdentifier>
-			<Abstract type="html">	@brief	黄钻等级</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
-			
-			
-			<Anchor>//api/name/level</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneUser/level</TokenIdentifier>
-			<Abstract type="html">	@brief	黄钻等级</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger level</Declaration>
-			
-			
-			<Anchor>//api/name/level</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneUser/userWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>+ (SSQZoneUser *)userWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/userWithResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneUser/descriptor</TokenIdentifier>
-			<Abstract type="html">	@brief	创建用户信息描述器</Abstract>
-			<DeclaredIn>SSQZoneUser.h</DeclaredIn>			
-			
-			<Declaration>- (id&lt;ISSCUserDescriptor&gt;)descriptor</Declaration>
-			
-			<ReturnValue><Abstract type="html">描述器对象</Abstract></ReturnValue>
-			<Anchor>//api/name/descriptor</Anchor>
+			<Anchor>//api/name/paramNswb</Anchor>
 		</Token>
 		
 	</File>

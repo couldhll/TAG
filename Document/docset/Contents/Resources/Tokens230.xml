@@ -1,64 +1,284 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSDouBanMusic.html">
+	<File path="Classes/SSPocketItem.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanMusic</TokenIdentifier>
-			<Abstract type="html">	@brief	音乐媒体</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPocketItem</TokenIdentifier>
+			<Abstract type="html">	@brief	项目对象</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>
 			
 			<NodeRef refid="230"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setItemId:</TokenIdentifier>
+			<Abstract type="html">	@brief	项目ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *itemId</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/itemId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/itemId</TokenIdentifier>
+			<Abstract type="html">	@brief	项目ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *itemId</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/itemId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setSrc:</TokenIdentifier>
-			<Abstract type="html">	@brief	音乐路径</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setNormalUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	原始链接地址</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *normalUrl</Declaration>
 			
 			
-			<Anchor>//api/name/src</Anchor>
+			<Anchor>//api/name/normalUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/src</TokenIdentifier>
-			<Abstract type="html">	@brief	音乐路径</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/normalUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	原始链接地址</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *normalUrl</Declaration>
 			
 			
-			<Anchor>//api/name/src</Anchor>
+			<Anchor>//api/name/normalUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setTitle:</TokenIdentifier>
-			<Abstract type="html">	@brief	标题</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setResolvedId:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedId</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/resolvedId</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedId</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setResolvedUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/resolvedUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setDomainId:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL域名ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *domainId</Declaration>
+			
+			
+			<Anchor>//api/name/domainId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/domainId</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL域名ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *domainId</Declaration>
+			
+			
+			<Anchor>//api/name/domainId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setOriginDomainId:</TokenIdentifier>
+			<Abstract type="html">	@brief	原始URL域名ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *originDomainId</Declaration>
+			
+			
+			<Anchor>//api/name/originDomainId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/originDomainId</TokenIdentifier>
+			<Abstract type="html">	@brief	原始URL域名ID</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *originDomainId</Declaration>
+			
+			
+			<Anchor>//api/name/originDomainId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setResponseCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	Pocket解析器尝试访问项目的回复状态</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/responseCode</TokenIdentifier>
+			<Abstract type="html">	@brief	Pocket解析器尝试访问项目的回复状态</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger responseCode</Declaration>
+			
+			
+			<Anchor>//api/name/responseCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setMimeType:</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的MIME类型</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/mimeType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/mimeType</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的MIME类型</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/mimeType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setContentLength:</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的内容长度</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/contentLength</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的内容长度</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setEncoding:</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的编码</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/encoding</TokenIdentifier>
+			<Abstract type="html">	@brief	项目的编码</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *encoding</Declaration>
+			
+			
+			<Anchor>//api/name/encoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setDateResolved:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项目生成时间</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *dateResolved</Declaration>
+			
+			
+			<Anchor>//api/name/dateResolved</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/dateResolved</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项目生成时间</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *dateResolved</Declaration>
+			
+			
+			<Anchor>//api/name/dateResolved</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setDatePublished:</TokenIdentifier>
+			<Abstract type="html">	@brief	发布时间</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datePublished</Declaration>
+			
+			
+			<Anchor>//api/name/datePublished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/datePublished</TokenIdentifier>
+			<Abstract type="html">	@brief	发布时间</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *datePublished</Declaration>
+			
+			
+			<Anchor>//api/name/datePublished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setTitle:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL的标题</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
@@ -67,9 +287,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/title</TokenIdentifier>
-			<Abstract type="html">	@brief	标题</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/title</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL的标题</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, readonly) NSString *title</Declaration>
 			
@@ -78,85 +298,349 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setArtist:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setExcerpt:</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL的摘要</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *excerpt</Declaration>
+			
+			
+			<Anchor>//api/name/excerpt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/excerpt</TokenIdentifier>
+			<Abstract type="html">	@brief	解决项URL的摘要</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *excerpt</Declaration>
+			
+			
+			<Anchor>//api/name/excerpt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setWordCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	文章字数</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger wordCount</Declaration>
+			
+			
+			<Anchor>//api/name/wordCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/wordCount</TokenIdentifier>
+			<Abstract type="html">	@brief	文章字数</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger wordCount</Declaration>
+			
+			
+			<Anchor>//api/name/wordCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setHasImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否包含图片:0 无图片； 1 图文； 2 纯图片</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger hasImage</Declaration>
+			
+			
+			<Anchor>//api/name/hasImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/hasImage</TokenIdentifier>
+			<Abstract type="html">	@brief	是否包含图片:0 无图片； 1 图文； 2 纯图片</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger hasImage</Declaration>
+			
+			
+			<Anchor>//api/name/hasImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setHasVideo:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否包含视频：0 无视频，1 文章中包含视频；2 纯视频</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/hasVideo</TokenIdentifier>
+			<Abstract type="html">	@brief	是否包含视频：0 无视频，1 文章中包含视频；2 纯视频</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setIsIndex:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为首页，0 不是； 1 是</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger isIndex</Declaration>
+			
+			
+			<Anchor>//api/name/isIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/isIndex</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为首页，0 不是； 1 是</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger isIndex</Declaration>
+			
+			
+			<Anchor>//api/name/isIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setIsArticle:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为文章，0 不是； 1 是</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger isArticle</Declaration>
+			
+			
+			<Anchor>//api/name/isArticle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/isArticle</TokenIdentifier>
+			<Abstract type="html">	@brief	是否为文章，0 不是； 1 是</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger isArticle</Declaration>
+			
+			
+			<Anchor>//api/name/isArticle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setAuthors:</TokenIdentifier>
+			<Abstract type="html">	@brief	文章的作者列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *authors</Declaration>
+			
+			
+			<Anchor>//api/name/authors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/authors</TokenIdentifier>
+			<Abstract type="html">	@brief	文章的作者列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *authors</Declaration>
+			
+			
+			<Anchor>//api/name/authors</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setImages:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/images</TokenIdentifier>
+			<Abstract type="html">	@brief	图片列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *images</Declaration>
+			
+			
+			<Anchor>//api/name/images</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setVideos:</TokenIdentifier>
+			<Abstract type="html">	@brief	视频列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *videos</Declaration>
+			
+			
+			<Anchor>//api/name/videos</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/videos</TokenIdentifier>
+			<Abstract type="html">	@brief	视频列表</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *videos</Declaration>
+			
+			
+			<Anchor>//api/name/videos</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setExtendedItemId:</TokenIdentifier>
 			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *artist</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *extendedItemId</Declaration>
 			
 			
-			<Anchor>//api/name/artist</Anchor>
+			<Anchor>//api/name/extendedItemId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/artist</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/extendedItemId</TokenIdentifier>
 			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *artist</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *extendedItemId</Declaration>
 			
 			
-			<Anchor>//api/name/artist</Anchor>
+			<Anchor>//api/name/extendedItemId</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setAlbum:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setGivenUrl:</TokenIdentifier>
 			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *album</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *givenUrl</Declaration>
 			
 			
-			<Anchor>//api/name/album</Anchor>
+			<Anchor>//api/name/givenUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/album</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/givenUrl</TokenIdentifier>
 			<Abstract type="html">	@brief	暂无</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *album</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *givenUrl</Declaration>
 			
 			
-			<Anchor>//api/name/album</Anchor>
+			<Anchor>//api/name/givenUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanMusic/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setInnerdomainRedirect:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger innerdomainRedirect</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/innerdomainRedirect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanMusic/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/innerdomainRedirect</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger innerdomainRedirect</Declaration>
 			
 			
-			<Anchor>//api/name/type</Anchor>
+			<Anchor>//api/name/innerdomainRedirect</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanMusic/musicWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建音乐媒体信息</Abstract>
-			<DeclaredIn>SSDouBanMusic.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setLoginRequired:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
 			
-			<Declaration>+ (SSDouBanMusic *)musicWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger loginRequired</Declaration>
+			
+			
+			<Anchor>//api/name/loginRequired</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/loginRequired</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger loginRequired</Declaration>
+			
+			
+			<Anchor>//api/name/loginRequired</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setResolvedNormalUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedNormalUrl</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedNormalUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/resolvedNormalUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *resolvedNormalUrl</Declaration>
+			
+			
+			<Anchor>//api/name/resolvedNormalUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketItem/setUsedFallback:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger usedFallback</Declaration>
+			
+			
+			<Anchor>//api/name/usedFallback</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketItem/usedFallback</TokenIdentifier>
+			<Abstract type="html">	@brief	暂无</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger usedFallback</Declaration>
+			
+			
+			<Anchor>//api/name/usedFallback</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSPocketItem/itemWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建item</Abstract>
+			<DeclaredIn>SSPocketItem.h</DeclaredIn>			
+			
+			<Declaration>+ (SSPocketItem *)itemWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">音乐媒体信息</Abstract></ReturnValue>
-			<Anchor>//api/name/musicWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">item对象</Abstract></ReturnValue>
+			<Anchor>//api/name/itemWithResponse:</Anchor>
 		</Token>
 		
 	</File>

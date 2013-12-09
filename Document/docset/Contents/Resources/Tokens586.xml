@@ -1,50 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CMHTableViewDataSource.html">
+	<File path="Protocols/Index.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CMHTableViewDataSource</TokenIdentifier>
-			<Abstract type="html">	@brief	水平排版表格数据源</Abstract>
-			<DeclaredIn>CMHTableView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/Index</TokenIdentifier>
+			<Abstract type="html">Protocol for defining index properties in a JSON Model class. Use like below to define
+model properties that are considered the Model&apos;s identifier (id).</Abstract>
+			<DeclaredIn>JSONModel.h</DeclaredIn>
 			
 			<NodeRef refid="586"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CMHTableViewDataSource/itemNumberOfTableView:</TokenIdentifier>
-			<Abstract type="html">	@brief	返回表格的列表项数量</Abstract>
-			<DeclaredIn>CMHTableView.h</DeclaredIn>			
-			
-			<Declaration>- (NSInteger)itemNumberOfTableView:(CMHTableView *)tableView</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tableView</Name>
-					<Abstract type="html">表格视图</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">列表项数量</Abstract></ReturnValue>
-			<Anchor>//api/name/itemNumberOfTableView:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CMHTableViewDataSource/tableView:itemForIndexPath:</TokenIdentifier>
-			<Abstract type="html">	@brief	返回列表项视图</Abstract>
-			<DeclaredIn>CMHTableView.h</DeclaredIn>			
-			
-			<Declaration>- (UIView&lt;ICMHTableViewItem&gt; *)tableView:(CMHTableView *)tableView itemForIndexPath:(NSIndexPath *)indexPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tableView</Name>
-					<Abstract type="html">表格视图</Abstract>
-				</Parameter><Parameter>
-					<Name>indexPath</Name>
-					<Abstract type="html">索引位置</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">列表项视图</Abstract></ReturnValue>
-			<Anchor>//api/name/tableView:itemForIndexPath:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

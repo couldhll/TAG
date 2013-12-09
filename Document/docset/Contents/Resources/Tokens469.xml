@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/WeiYun_download_photo_GET.html">
+	<File path="Categories/UIApplication+Private.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/WeiYun_download_photo_GET</TokenIdentifier>
-			<Abstract type="html">\brief 获取照片下载url地址</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(Private)</TokenIdentifier>
+			<Abstract type="html">@brief Safe private methods of [UIApplication][0]
+[0]: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>
 			
 			<NodeRef refid="469"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/WeiYun_download_photo_GET/setParam_file_id:</TokenIdentifier>
-			<Abstract type="html">待下载文件的ID，字符串（68字节）</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Private)/statusBarFrameForOrientation:</TokenIdentifier>
+			<Abstract type="html">@brief statusbar size calculated for given orientation.</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr param_file_id</Declaration>
+			<Declaration>- (CGRect)statusBarFrameForOrientation:(UIInterfaceOrientation)orientation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>orientation</Name>
+					<Abstract type="html">The orientation to calculate status bar frame.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/param_file_id</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/WeiYun_download_photo_GET/param_file_id</TokenIdentifier>
-			<Abstract type="html">待下载文件的ID，字符串（68字节）</Abstract>
-			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) TCRequiredStr param_file_id</Declaration>
-			
-			
-			<Anchor>//api/name/param_file_id</Anchor>
+			<Anchor>//api/name/statusBarFrameForOrientation:</Anchor>
 		</Token>
 		
 	</File>

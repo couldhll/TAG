@@ -1,32 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBPlacePickerCacheDescriptor.html">
+	<File path="Classes/MBRoundProgressView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBPlacePickerCacheDescriptor</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>FBPlacePickerCacheDescriptor.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/MBRoundProgressView</TokenIdentifier>
+			<Abstract type="html">A progress view for showing definite progress by filling up a circle (pie chart).</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>
 			
 			<NodeRef refid="81"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBPlacePickerCacheDescriptor/prefetchAndCacheForSession:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Fetches and caches the data described by the cache descriptor instance, for the given session.</Abstract>
-			<DeclaredIn>FBPlacePickerCacheDescriptor.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/MBRoundProgressView/setProgress:</TokenIdentifier>
+			<Abstract type="html">Progress (0.0 to 1.0)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
 			
-			<Declaration>- (void)prefetchAndCacheForSession:(FBSession *)session</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>session</Name>
-					<Abstract type="html">the FBSession to use for fetching data</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
 			
-			<Anchor>//api/name/prefetchAndCacheForSession:</Anchor>
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBRoundProgressView/progress</TokenIdentifier>
+			<Abstract type="html">Progress (0.0 to 1.0)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBRoundProgressView/setProgressTintColor:</TokenIdentifier>
+			<Abstract type="html">Indicator progress color.
+Defaults to white [UIColor whiteColor]</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressTintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBRoundProgressView/progressTintColor</TokenIdentifier>
+			<Abstract type="html">Indicator progress color.
+Defaults to white [UIColor whiteColor]</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *progressTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/progressTintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MBRoundProgressView/setBackgroundTintColor:</TokenIdentifier>
+			<Abstract type="html">Indicator background (nonprogress color.
+Defaults to translucent white (alpha 0.1)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *backgroundTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MBRoundProgressView/backgroundTintColor</TokenIdentifier>
+			<Abstract type="html">Indicator background (nonprogress color.
+Defaults to translucent white (alpha 0.1)</Abstract>
+			<DeclaredIn>MBProgressHUD.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, MB_STRONG) UIColor *backgroundTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundTintColor</Anchor>
 		</Token>
 		
 	</File>

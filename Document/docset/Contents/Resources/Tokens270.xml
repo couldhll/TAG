@@ -1,74 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusAgeRange.html">
+	<File path="Classes/SSTencentWeiboCareer.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusAgeRange</TokenIdentifier>
-			<Abstract type="html">	@brief	年龄范围</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboCareer</TokenIdentifier>
+			<Abstract type="html">	@brief	职业信息</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>
 			
 			<NodeRef refid="270"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusAgeRange/setMax:</TokenIdentifier>
-			<Abstract type="html">	@brief	The age range&apos;s lower bound, if any.</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/max</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusAgeRange/max</TokenIdentifier>
-			<Abstract type="html">	@brief	The age range&apos;s lower bound, if any.</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger max</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/max</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusAgeRange/setMin:</TokenIdentifier>
-			<Abstract type="html">	@brief	The age range&apos;s upper bound, if any.</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setBeginYear:</TokenIdentifier>
+			<Abstract type="html">	@brief	开始年</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger beginYear</Declaration>
 			
 			
-			<Anchor>//api/name/min</Anchor>
+			<Anchor>//api/name/beginYear</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusAgeRange/min</TokenIdentifier>
-			<Abstract type="html">	@brief	The age range&apos;s upper bound, if any.</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/beginYear</TokenIdentifier>
+			<Abstract type="html">	@brief	开始年</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSInteger min</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger beginYear</Declaration>
 			
 			
-			<Anchor>//api/name/min</Anchor>
+			<Anchor>//api/name/beginYear</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusAgeRange/ageRangeWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建年龄范围</Abstract>
-			<DeclaredIn>SSGooglePlusAgeRange.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setCompanyName:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
 			
-			<Declaration>+ (SSGooglePlusAgeRange *)ageRangeWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *companyName</Declaration>
+			
+			
+			<Anchor>//api/name/companyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/companyName</TokenIdentifier>
+			<Abstract type="html">	@brief	公司名称</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *companyName</Declaration>
+			
+			
+			<Anchor>//api/name/companyName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setDepartmentName:</TokenIdentifier>
+			<Abstract type="html">	@brief	部门名称</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *departmentName</Declaration>
+			
+			
+			<Anchor>//api/name/departmentName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/departmentName</TokenIdentifier>
+			<Abstract type="html">	@brief	部门名称</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *departmentName</Declaration>
+			
+			
+			<Anchor>//api/name/departmentName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setEndYear:</TokenIdentifier>
+			<Abstract type="html">	@brief	结束年</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger endYear</Declaration>
+			
+			
+			<Anchor>//api/name/endYear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/endYear</TokenIdentifier>
+			<Abstract type="html">	@brief	结束年</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger endYear</Declaration>
+			
+			
+			<Anchor>//api/name/endYear</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboCareer/setId:</TokenIdentifier>
+			<Abstract type="html">	@brief	公司id</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboCareer/Id</TokenIdentifier>
+			<Abstract type="html">	@brief	公司id</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger Id</Declaration>
+			
+			
+			<Anchor>//api/name/Id</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SSTencentWeiboCareer/careerWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建职业信息</Abstract>
+			<DeclaredIn>SSTencentWeiboCareer.h</DeclaredIn>			
+			
+			<Declaration>+ (SSTencentWeiboCareer *)careerWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
 					<Abstract type="html">回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">年龄范围</Abstract></ReturnValue>
-			<Anchor>//api/name/ageRangeWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">职业信息</Abstract></ReturnValue>
+			<Anchor>//api/name/careerWithResponse:</Anchor>
 		</Token>
 		
 	</File>

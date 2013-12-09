@@ -1,118 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSSinaWeiboFavorite.html">
+	<File path="Classes/TencentVideoMessageV1.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboFavorite</TokenIdentifier>
-			<Abstract type="html">	@brief	新浪微博收藏信息</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TencentVideoMessageV1</TokenIdentifier>
+			<Abstract type="html">\brief 视频的消息体</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>
 			
 			<NodeRef refid="336"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/setSUrl:</TokenIdentifier>
+			<Abstract type="html">视频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentVideoMessageV1/sUrl</TokenIdentifier>
+			<Abstract type="html">视频URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sUrl</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/sUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setFavoritedTime:</TokenIdentifier>
-			<Abstract type="html">	@brief	收藏时间</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/setNType:</TokenIdentifier>
+			<Abstract type="html">视频来源 主要是用来让发起方指定视频的来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *favoritedTime</Declaration>
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
 			
 			
-			<Anchor>//api/name/favoritedTime</Anchor>
+			<Anchor>//api/name/nType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/favoritedTime</TokenIdentifier>
-			<Abstract type="html">	@brief	收藏时间</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentVideoMessageV1/nType</TokenIdentifier>
+			<Abstract type="html">视频来源 主要是用来让发起方指定视频的来源</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *favoritedTime</Declaration>
+			<Declaration>@property (readonly, assign) NSInteger nType</Declaration>
 			
 			
-			<Anchor>//api/name/favoritedTime</Anchor>
+			<Anchor>//api/name/nType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setStatus:</TokenIdentifier>
-			<Abstract type="html">	@brief	微博信息</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/setDataImagePreview:</TokenIdentifier>
+			<Abstract type="html">视频的预览图</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
 			
 			
-			<Anchor>//api/name/status</Anchor>
+			<Anchor>//api/name/dataImagePreview</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/status</TokenIdentifier>
-			<Abstract type="html">	@brief	微博信息</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentVideoMessageV1/dataImagePreview</TokenIdentifier>
+			<Abstract type="html">视频的预览图</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *status</Declaration>
+			<Declaration>@property (nonatomic, retain) NSData *dataImagePreview</Declaration>
 			
 			
-			<Anchor>//api/name/status</Anchor>
+			<Anchor>//api/name/dataImagePreview</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboFavorite/setTags:</TokenIdentifier>
-			<Abstract type="html">	@brief	标签列表</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/setSImagePreviewUrl:</TokenIdentifier>
+			<Abstract type="html">视频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
 			
 			
-			<Anchor>//api/name/tags</Anchor>
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboFavorite/tags</TokenIdentifier>
-			<Abstract type="html">	@brief	标签列表</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/TencentVideoMessageV1/sImagePreviewUrl</TokenIdentifier>
+			<Abstract type="html">视频的预览图URL</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *tags</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sImagePreviewUrl</Declaration>
 			
 			
-			<Anchor>//api/name/tags</Anchor>
+			<Anchor>//api/name/sImagePreviewUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboFavorite/favoriteWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建收藏信息</Abstract>
-			<DeclaredIn>SSSinaWeiboFavorite.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/setSDescription:</TokenIdentifier>
+			<Abstract type="html">视频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
 			
-			<Declaration>+ (SSSinaWeiboFavorite *)favoriteWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TencentVideoMessageV1/sDescription</TokenIdentifier>
+			<Abstract type="html">视频的描述</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *sDescription</Declaration>
+			
+			
+			<Anchor>//api/name/sDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/initWithVideoUrl:type:</TokenIdentifier>
+			<Abstract type="html">初始化视频消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithVideoUrl:(NSString *)url type:(TencentApiVideoSourceType)type</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">视频URL</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">视频来源类型</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">收藏信息</Abstract></ReturnValue>
-			<Anchor>//api/name/favoriteWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">初始化返回的视频消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithVideoUrl:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TencentVideoMessageV1/initWithType:</TokenIdentifier>
+			<Abstract type="html">初始化视频消息</Abstract>
+			<DeclaredIn>TencentMessageObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithType:(TencentApiVideoSourceType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">视频来源类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">初始化返回的视频消息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithType:</Anchor>
 		</Token>
 		
 	</File>

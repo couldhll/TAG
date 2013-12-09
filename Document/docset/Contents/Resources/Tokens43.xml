@@ -1,228 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CMImageHeaderTableView.html">
+	<File path="Classes/CMImageCacheManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CMImageHeaderTableView</TokenIdentifier>
-			<Abstract type="html">	@brief	带图片头部的表格视图</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CMImageCacheManager</TokenIdentifier>
+			<Abstract type="html">	@brief 图片缓存管理器，主要负责图片缓存管理</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>
 			
 			<NodeRef refid="43"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setDelegate:</TokenIdentifier>
-			<Abstract type="html">	@brief	表格委托</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/getImage:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/delegate</TokenIdentifier>
-			<Abstract type="html">	@brief	表格委托</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDelegate&gt; delegate</Declaration>
-			
-			
-			<Anchor>//api/name/delegate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setDataSource:</TokenIdentifier>
-			<Abstract type="html">	@brief	表格事件</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDataSource&gt; dataSource</Declaration>
-			
-			
-			<Anchor>//api/name/dataSource</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/dataSource</TokenIdentifier>
-			<Abstract type="html">	@brief	表格事件</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign) id&lt;UITableViewDataSource&gt; dataSource</Declaration>
-			
-			
-			<Anchor>//api/name/dataSource</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setHeaderImage:</TokenIdentifier>
-			<Abstract type="html">	@brief	表头图片</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIImage *headerImage</Declaration>
-			
-			
-			<Anchor>//api/name/headerImage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/headerImage</TokenIdentifier>
-			<Abstract type="html">	@brief	表头图片</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIImage *headerImage</Declaration>
-			
-			
-			<Anchor>//api/name/headerImage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setHeaderHeight:</TokenIdentifier>
-			<Abstract type="html">	@brief	表头高度</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CGFloat headerHeight</Declaration>
-			
-			
-			<Anchor>//api/name/headerHeight</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/headerHeight</TokenIdentifier>
-			<Abstract type="html">	@brief	表头高度</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CGFloat headerHeight</Declaration>
-			
-			
-			<Anchor>//api/name/headerHeight</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setTableBackgroundColor:</TokenIdentifier>
-			<Abstract type="html">	@brief	表格背景颜色</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *tableBackgroundColor</Declaration>
-			
-			
-			<Anchor>//api/name/tableBackgroundColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/tableBackgroundColor</TokenIdentifier>
-			<Abstract type="html">	@brief	表格背景颜色</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *tableBackgroundColor</Declaration>
-			
-			
-			<Anchor>//api/name/tableBackgroundColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setTableBackgroundImage:</TokenIdentifier>
-			<Abstract type="html">	@brief	表格背景图片</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIImage *tableBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/tableBackgroundImage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/tableBackgroundImage</TokenIdentifier>
-			<Abstract type="html">	@brief	表格背景图片</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIImage *tableBackgroundImage</Declaration>
-			
-			
-			<Anchor>//api/name/tableBackgroundImage</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setSeparatorColor:</TokenIdentifier>
-			<Abstract type="html">	@brief	分隔线颜色</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *separatorColor</Declaration>
-			
-			
-			<Anchor>//api/name/separatorColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/separatorColor</TokenIdentifier>
-			<Abstract type="html">	@brief	分隔线颜色</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) UIColor *separatorColor</Declaration>
-			
-			
-			<Anchor>//api/name/separatorColor</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setSeparatorStyle:</TokenIdentifier>
-			<Abstract type="html">	@brief	分隔线样式</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) UITableViewCellSeparatorStyle separatorStyle</Declaration>
-			
-			
-			<Anchor>//api/name/separatorStyle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/separatorStyle</TokenIdentifier>
-			<Abstract type="html">	@brief	分隔线样式</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) UITableViewCellSeparatorStyle separatorStyle</Declaration>
-			
-			
-			<Anchor>//api/name/separatorStyle</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/setRowHeight:</TokenIdentifier>
-			<Abstract type="html">	@brief	行高度</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CGFloat rowHeight</Declaration>
-			
-			
-			<Anchor>//api/name/rowHeight</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CMImageHeaderTableView/rowHeight</TokenIdentifier>
-			<Abstract type="html">	@brief	行高度</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) CGFloat rowHeight</Declaration>
-			
-			
-			<Anchor>//api/name/rowHeight</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CMImageHeaderTableView/addHeaderSubview:</TokenIdentifier>
-			<Abstract type="html">	@brief	添加表头子视图</Abstract>
-			<DeclaredIn>CMImageHeaderTableView.h</DeclaredIn>			
-			
-			<Declaration>- (void)addHeaderSubview:(UIView *)subview</Declaration>
+			<Declaration>- (CMImageLoader *)getImage:(NSString *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>subview</Name>
-					<Abstract type="html">子视图</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">图片路径，可以为本地或者网路路径</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">图片加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/getImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/getImage:size:clipType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
 			
-			<Anchor>//api/name/addHeaderSubview:</Anchor>
+			<Declaration>- (CMImageLoader *)getImage:(NSString *)url size:(CGSize)size clipType:(CMImageClipType)clipType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径，可以为本地或者网络路径</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">裁剪区域</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">图片裁剪类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/getImage:size:clipType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/getImage:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (CMImageLoader *)getImage:(NSString *)url cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径，可以为本地或者网络路径</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/getImage:cornerRadius:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/getImage:cornerRadius:size:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (CMImageLoader *)getImage:(NSString *)url cornerRadius:(CGFloat)cornerRadius size:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径，可以未本地或者网络路径</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角值，此值对应实际显示尺寸的圆角值</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">实际显示尺寸</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/getImage:cornerRadius:size:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/getImage:cornerRadius:size:clipType:</TokenIdentifier>
+			<Abstract type="html">	@brief	获取图片</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (CMImageLoader *)getImage:(NSString *)url cornerRadius:(CGFloat)cornerRadius size:(CGSize)size clipType:(CMImageClipType)clipType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径，可以为本地或者网络路径</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">裁减区域</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">图片裁剪类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">图片加载器</Abstract></ReturnValue>
+			<Anchor>//api/name/getImage:cornerRadius:size:clipType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/existsImageCache:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断图片缓存是否存在,使用getImage:得到的图片用此方法</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)existsImageCache:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示存在，NO表示不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/existsImageCache:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/existsImageCache:size:clipType:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断图片缓存是否存在,使用getImage:size:clipType:得到的图片用此方法</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)existsImageCache:(NSString *)url size:(CGSize)size clipType:(CMImageClipType)clipType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">裁剪区域</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">图片裁剪类型</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示存在，NO表示不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/existsImageCache:size:clipType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/existsImageCache:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断图片缓存是否存在,使用getImage:cornerRadius:得到的图片用此方法</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)existsImageCache:(NSString *)url cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示存在，NO表示不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/existsImageCache:cornerRadius:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CMImageCacheManager/existsImageCache:size:clipType:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断图片缓存是否存在,使用getImage:cornerRadius:size:clipType:得到的图片用此方法</Abstract>
+			<DeclaredIn>CMImageCacheManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)existsImageCache:(NSString *)url size:(CGSize)size clipType:(CMImageClipType)clipType cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">图片路径</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">裁剪尺寸</Abstract>
+				</Parameter><Parameter>
+					<Name>clipType</Name>
+					<Abstract type="html">裁剪类型</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">圆角</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES：存在，NO：不存在</Abstract></ReturnValue>
+			<Anchor>//api/name/existsImageCache:size:clipType:cornerRadius:</Anchor>
 		</Token>
 		
 	</File>

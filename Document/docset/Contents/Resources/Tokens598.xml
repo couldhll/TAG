@@ -1,90 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/FBLoginViewDelegate.html">
+	<File path="Protocols/TCAPIRequestDownloadDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/FBLoginViewDelegate</TokenIdentifier>
-			<Abstract type="html">@protocol</Abstract>
-			<DeclaredIn>FBLoginView.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/TCAPIRequestDownloadDelegate</TokenIdentifier>
+			<Abstract type="html">CGI请求下载数据回调协议</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>
 			
 			<NodeRef refid="598"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBLoginViewDelegate/loginViewShowingLoggedInUser:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that the view is now in logged in mode</Abstract>
-			<DeclaredIn>FBLoginView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/TCAPIRequestDownloadDelegate/cgiDownloadRequest:shouldBeginDownloadingStorageRequest:</TokenIdentifier>
+			<Abstract type="html">询问是否要开始下载数据</Abstract>
+			<DeclaredIn>WeiyunAPI.h</DeclaredIn>			
 			
-			<Declaration>- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView</Declaration>
+			<Declaration>- (BOOL)cgiDownloadRequest:(TCAPIRequest *)downloadRequest shouldBeginDownloadingStorageRequest:(NSURLRequest *)storageRequest</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>loginView</Name>
-					<Abstract type="html">The login view that transitioned its view mode</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loginViewShowingLoggedInUser:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBLoginViewDelegate/loginViewFetchedUserInfo:user:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that the view is has now fetched user info</Abstract>
-			<DeclaredIn>FBLoginView.h</DeclaredIn>			
-			
-			<Declaration>- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id&lt;FBGraphUser&gt;)user</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>loginView</Name>
-					<Abstract type="html">The login view that transitioned its view mode</Abstract>
+					<Name>downloadRequest</Name>
+					<Abstract type="html">对应的下载请求上下文</Abstract>
 				</Parameter><Parameter>
-					<Name>user</Name>
-					<Abstract type="html">The user info object describing the logged in user</Abstract>
+					<Name>storageRequest</Name>
+					<Abstract type="html">用于下载数据的NSURLRequest对象</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/loginViewFetchedUserInfo:user:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBLoginViewDelegate/loginViewShowingLoggedOutUser:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that the view is now in logged out mode</Abstract>
-			<DeclaredIn>FBLoginView.h</DeclaredIn>			
-			
-			<Declaration>- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>loginView</Name>
-					<Abstract type="html">The login view that transitioned its view mode</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loginViewShowingLoggedOutUser:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/FBLoginViewDelegate/loginView:handleError:</TokenIdentifier>
-			<Abstract type="html">@abstract
-Tells the delegate that there is a communication or authorization error.</Abstract>
-			<DeclaredIn>FBLoginView.h</DeclaredIn>			
-			
-			<Declaration>- (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>loginView</Name>
-					<Abstract type="html">The login view that transitioned its view mode</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">An error object containing details of the error.
-@discussion See https://developers.facebook.com/docs/technical-guides/iossdk/errors/
-for error handling best practices.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loginView:handleError:</Anchor>
+			<ReturnValue><Abstract type="html">是否要开始下载数据，YES表示自动开始下载，NO表示不下载</Abstract></ReturnValue>
+			<Anchor>//api/name/cgiDownloadRequest:shouldBeginDownloadingStorageRequest:</Anchor>
 		</Token>
 		
 	</File>

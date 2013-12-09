@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/CMPageViewDataSource.html">
+	<File path="Protocols/MZAppearance.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/CMPageViewDataSource</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intf/MZAppearance</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>CMPageView.h</DeclaredIn>
+			<DeclaredIn>MZAppearance.h</DeclaredIn>
 			
 			<NodeRef refid="588"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDataSource/pageViewNumberOfPage:</TokenIdentifier>
-			<Abstract type="html">	返回页面数量</Abstract>
-			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/MZAppearance/appearance</TokenIdentifier>
+			<Abstract type="html">To customize the appearance of all instances of a class, send the relevant appearance modification messages to the appearance proxy for the class.</Abstract>
+			<DeclaredIn>MZAppearance.h</DeclaredIn>			
 			
-			<Declaration>- (NSInteger)pageViewNumberOfPage:(CMPageView *)pageView</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageView</Name>
-					<Abstract type="html">页面视图</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">页面数量</Abstract></ReturnValue>
-			<Anchor>//api/name/pageViewNumberOfPage:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/CMPageViewDataSource/pageView:pageForIndexPath:</TokenIdentifier>
-			<Abstract type="html">	返回分页内容</Abstract>
-			<DeclaredIn>CMPageView.h</DeclaredIn>			
+			<Declaration>+ (id)appearance</Declaration>
 			
-			<Declaration>- (UIView&lt;ICMPageContentView&gt; *)pageView:(CMPageView *)pageView pageForIndexPath:(NSIndexPath *)indexPath</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>pageView</Name>
-					<Abstract type="html">页面视图</Abstract>
-				</Parameter><Parameter>
-					<Name>indexPath</Name>
-					<Abstract type="html">索引位置</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">页面内容</Abstract></ReturnValue>
-			<Anchor>//api/name/pageView:pageForIndexPath:</Anchor>
+			
+			<Anchor>//api/name/appearance</Anchor>
 		</Token>
 		
 	</File>

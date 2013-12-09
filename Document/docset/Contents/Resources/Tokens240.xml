@@ -1,426 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSEverNoteNoteAttributes.html">
+	<File path="Classes/SSRenRenCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteNoteAttributes</TokenIdentifier>
-			<Abstract type="html">	@brief	笔记属性列表</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSRenRenCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>
 			
 			<NodeRef refid="240"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setSubjectDate:</TokenIdentifier>
-			<Abstract type="html">	@brief	time that the note refers to</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long subjectDate</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/subjectDate</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/subjectDate</TokenIdentifier>
-			<Abstract type="html">	@brief	time that the note refers to</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long subjectDate</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/subjectDate</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setLatitude:</TokenIdentifier>
-			<Abstract type="html">	@brief	the latitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/latitude</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/latitude</TokenIdentifier>
-			<Abstract type="html">	@brief	the latitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	访问令牌</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double latitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/latitude</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setLongitude:</TokenIdentifier>
-			<Abstract type="html">	@brief	the longitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setExpiresIn:</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
 			
 			
-			<Anchor>//api/name/longitude</Anchor>
+			<Anchor>//api/name/expiresIn</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/longitude</TokenIdentifier>
-			<Abstract type="html">	@brief	the longitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/expiresIn</TokenIdentifier>
+			<Abstract type="html">	@brief	过期时间</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double longitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSDate *expiresIn</Declaration>
 			
 			
-			<Anchor>//api/name/longitude</Anchor>
+			<Anchor>//api/name/expiresIn</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setAltitude:</TokenIdentifier>
-			<Abstract type="html">	@brief	the altitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setRefreshToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/altitude</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/altitude</TokenIdentifier>
-			<Abstract type="html">	@brief	the altitude where the note was taken</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/refreshToken</TokenIdentifier>
+			<Abstract type="html">	@brief	刷新令牌</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) double altitude</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *refreshToken</Declaration>
 			
 			
-			<Anchor>//api/name/altitude</Anchor>
+			<Anchor>//api/name/refreshToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setAuthor:</TokenIdentifier>
-			<Abstract type="html">	@brief	the author of the content of the note</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setScope:</TokenIdentifier>
+			<Abstract type="html">	@brief	权限</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
 			
 			
-			<Anchor>//api/name/author</Anchor>
+			<Anchor>//api/name/scope</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/author</TokenIdentifier>
-			<Abstract type="html">	@brief	the author of the content of the note</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/scope</TokenIdentifier>
+			<Abstract type="html">	@brief	权限</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *author</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *scope</Declaration>
 			
 			
-			<Anchor>//api/name/author</Anchor>
+			<Anchor>//api/name/scope</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setSource:</TokenIdentifier>
-			<Abstract type="html">	@brief	the method that the note was added to the account, if the note wasn&apos;t directly authored in an Evernote desktop client. </Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
 			
 			
-			<Anchor>//api/name/source</Anchor>
+			<Anchor>//api/name/uid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/source</TokenIdentifier>
-			<Abstract type="html">	@brief	the method that the note was added to the account, if the note wasn&apos;t directly authored in an Evernote desktop client. </Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			<Declaration>@property (nonatomic, readonly) long long uid</Declaration>
 			
 			
-			<Anchor>//api/name/source</Anchor>
+			<Anchor>//api/name/uid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setSourceURL:</TokenIdentifier>
-			<Abstract type="html">	@brief	the original location where the resource was hosted. For web clips, this will be the URL of the page that was clipped. </Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/sourceURL</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/sourceURL</TokenIdentifier>
-			<Abstract type="html">	@brief	the original location where the resource was hosted. For web clips, this will be the URL of the page that was clipped. </Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSRenRenCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/sourceURL</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setSourceApplication:</TokenIdentifier>
-			<Abstract type="html">	@brief	an identifying string for the application that created this note. 
-This string does not have a guaranteed syntax or structure -- it is intended for human inspection and tracking.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceApplication</Declaration>
-			
-			
-			<Anchor>//api/name/sourceApplication</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/sourceApplication</TokenIdentifier>
-			<Abstract type="html">	@brief	an identifying string for the application that created this note. 
-This string does not have a guaranteed syntax or structure -- it is intended for human inspection and tracking.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sourceApplication</Declaration>
-			
-			
-			<Anchor>//api/name/sourceApplication</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setShareDate:</TokenIdentifier>
-			<Abstract type="html">	@brief	The date and time when this note was directly shared via its own URL. 
-This is only set on notes that were individually shared - it is independent of any notebook-level sharing of the containing notepbook.
-This field is treated as &quot;read-only&quot; for clients; the server will ignore changes to this field from an external client.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long shareDate</Declaration>
-			
-			
-			<Anchor>//api/name/shareDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/shareDate</TokenIdentifier>
-			<Abstract type="html">	@brief	The date and time when this note was directly shared via its own URL. 
-This is only set on notes that were individually shared - it is independent of any notebook-level sharing of the containing notepbook.
-This field is treated as &quot;read-only&quot; for clients; the server will ignore changes to this field from an external client.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long shareDate</Declaration>
-			
-			
-			<Anchor>//api/name/shareDate</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setPlaceName:</TokenIdentifier>
-			<Abstract type="html">	@brief	Allows the user to assign a human-readable location name associated with a note. 
-Users may assign values like &apos;Home&apos; and &apos;Work&apos;.
-Place names may also be populated with values from geonames database (e.g., a restaurant name).
-Applications are encouraged to normalize values so that grouping values by place name provides a useful result.
-Applications MUST NOT automatically add place name values based on geolocation without confirmation from the user;
-that is, the value in this field should be more useful than a simple automated lookup based on the note&apos;s latitude and longitude.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *placeName</Declaration>
-			
-			
-			<Anchor>//api/name/placeName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/placeName</TokenIdentifier>
-			<Abstract type="html">	@brief	Allows the user to assign a human-readable location name associated with a note. 
-Users may assign values like &apos;Home&apos; and &apos;Work&apos;.
-Place names may also be populated with values from geonames database (e.g., a restaurant name).
-Applications are encouraged to normalize values so that grouping values by place name provides a useful result.
-Applications MUST NOT automatically add place name values based on geolocation without confirmation from the user;
-that is, the value in this field should be more useful than a simple automated lookup based on the note&apos;s latitude and longitude.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *placeName</Declaration>
-			
-			
-			<Anchor>//api/name/placeName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setContentClass:</TokenIdentifier>
-			<Abstract type="html">	@brief	The class (or type) of note. This field is used to indicate to clients that special structured information 
-is represented within the note such that special rules apply when making modifications.
-If contentClass is set and the client application does not specifically support the specified class,
-the client MUST treat the note as read-only. In this case, the client MAY modify the note&apos;s notebook and tags via the Note.
-notebookGuid and Note.tagGuids fields.
-Applications should set contentClass only when they are creating notes that contain structured information that needs
-to be maintained in order for the user to be able to use the note within that application.
-Setting contentClass makes a note read-only in other applications, so there is a trade-off when an application chooses to use contentClass.
-Applications that set contentClass when creating notes must use a contentClass string of the
-form CompanyName.ApplicationName to ensure uniqueness.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *contentClass</Declaration>
-			
-			
-			<Anchor>//api/name/contentClass</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/contentClass</TokenIdentifier>
-			<Abstract type="html">	@brief	The class (or type) of note. This field is used to indicate to clients that special structured information 
-is represented within the note such that special rules apply when making modifications.
-If contentClass is set and the client application does not specifically support the specified class,
-the client MUST treat the note as read-only. In this case, the client MAY modify the note&apos;s notebook and tags via the Note.
-notebookGuid and Note.tagGuids fields.
-Applications should set contentClass only when they are creating notes that contain structured information that needs
-to be maintained in order for the user to be able to use the note within that application.
-Setting contentClass makes a note read-only in other applications, so there is a trade-off when an application chooses to use contentClass.
-Applications that set contentClass when creating notes must use a contentClass string of the
-form CompanyName.ApplicationName to ensure uniqueness.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *contentClass</Declaration>
-			
-			
-			<Anchor>//api/name/contentClass</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setApplicationData:</TokenIdentifier>
-			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) 
-blob of data that is not meant to be visible to the user and that is opaque to the Evernote service.
-A single application may use at most one entry in this map, using its API consumer key as the map key.
-See the documentation for LazyMap for a description of when the actual map values are returned by the service.
-To safely add or modify your application&apos;s entry in the map, use NoteStore.setNoteApplicationDataEntry.
-To safely remove your application&apos;s entry from the map, use NoteStore.unsetNoteApplicationDataEntry.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
-			
-			
-			<Anchor>//api/name/applicationData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/applicationData</TokenIdentifier>
-			<Abstract type="html">	@brief	Provides a location for applications to store a relatively small (4kb) 
-blob of data that is not meant to be visible to the user and that is opaque to the Evernote service.
-A single application may use at most one entry in this map, using its API consumer key as the map key.
-See the documentation for LazyMap for a description of when the actual map values are returned by the service.
-To safely add or modify your application&apos;s entry in the map, use NoteStore.setNoteApplicationDataEntry.
-To safely remove your application&apos;s entry from the map, use NoteStore.unsetNoteApplicationDataEntry.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteLazyMap *applicationData</Declaration>
-			
-			
-			<Anchor>//api/name/applicationData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setLastEditedBy:</TokenIdentifier>
-			<Abstract type="html">	@brief	An indication of who made the last change to the note. 
-If you are accessing the note via a shared notebook to which you have modification rights,
-or if you are the owner of the notebook to which the note belongs, then you have access to the value.
-In this case, the value will be unset if the owner of the notebook containing the note was the last to make the modification,
-else it will be a string describing the guest who made the last edit. If you do not have access to this value,
-it will be left unset. This field is read-only by clients. The server will ignore all values set by clients into this field.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastEditedBy</Declaration>
-			
-			
-			<Anchor>//api/name/lastEditedBy</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/lastEditedBy</TokenIdentifier>
-			<Abstract type="html">	@brief	An indication of who made the last change to the note. 
-If you are accessing the note via a shared notebook to which you have modification rights,
-or if you are the owner of the notebook to which the note belongs, then you have access to the value.
-In this case, the value will be unset if the owner of the notebook containing the note was the last to make the modification,
-else it will be a string describing the guest who made the last edit. If you do not have access to this value,
-it will be left unset. This field is read-only by clients. The server will ignore all values set by clients into this field.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastEditedBy</Declaration>
-			
-			
-			<Anchor>//api/name/lastEditedBy</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/setClassifications:</TokenIdentifier>
-			<Abstract type="html">	@brief	A map of classifications applied to the note by clients or by the Evernote service. 
-The key is the string name of the classification type, and the value is a constant that begins with CLASSIFICATION_.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *classifications</Declaration>
-			
-			
-			<Anchor>//api/name/classifications</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteNoteAttributes/classifications</TokenIdentifier>
-			<Abstract type="html">	@brief	A map of classifications applied to the note by clients or by the Evernote service. 
-The key is the string name of the classification type, and the value is a constant that begins with CLASSIFICATION_.</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *classifications</Declaration>
-			
-			
-			<Anchor>//api/name/classifications</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteNoteAttributes/noteAttributesWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建笔记属性列表对象</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNoteNoteAttributes *)noteAttributesWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">笔记属性类表对象</Abstract></ReturnValue>
-			<Anchor>//api/name/noteAttributesWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/parse:</TokenIdentifier>
-			<Abstract type="html">	@brief	解析数据</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSRenRenCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSRenRenCredential.h</DeclaredIn>			
 			
-			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/parse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteNoteAttributes/putData:</TokenIdentifier>
-			<Abstract type="html">	@brief	设置数据</Abstract>
-			<DeclaredIn>SSEverNoteNoteAttributes.h</DeclaredIn>			
-			
-			<Declaration>- (void)putData:(id&lt;ISSEverNoteDataInput&gt;)writer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>writer</Name>
-					<Abstract type="html">数据写入器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/putData:</Anchor>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

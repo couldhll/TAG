@@ -1,20 +1,504 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSFacebookPicture.html">
+	<File path="Classes/SSSinaWeiboStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSFacebookPicture</TokenIdentifier>
-			<Abstract type="html">	@brief	图片信息</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSSinaWeiboStatus</TokenIdentifier>
+			<Abstract type="html">	@brief	微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>
 			
 			<NodeRef refid="258"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setSourceData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博创建时间</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/createdAt</TokenIdentifier>
+			<Abstract type="html">	@brief	微博创建时间</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setSidStr:</TokenIdentifier>
+			<Abstract type="html">	@brief	字符串型的微博ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sidStr</Declaration>
+			
+			
+			<Anchor>//api/name/sidStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/sidStr</TokenIdentifier>
+			<Abstract type="html">	@brief	字符串型的微博ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *sidStr</Declaration>
+			
+			
+			<Anchor>//api/name/sidStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setSid:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sid</Declaration>
+			
+			
+			<Anchor>//api/name/sid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/sid</TokenIdentifier>
+			<Abstract type="html">	@brief	微博ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long sid</Declaration>
+			
+			
+			<Anchor>//api/name/sid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setMid:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博MID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long mid</Declaration>
+			
+			
+			<Anchor>//api/name/mid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/mid</TokenIdentifier>
+			<Abstract type="html">	@brief	微博MID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) long long mid</Declaration>
+			
+			
+			<Anchor>//api/name/mid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setText:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博信息内容</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/text</TokenIdentifier>
+			<Abstract type="html">	@brief	微博信息内容</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setSource:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博来源</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/source</TokenIdentifier>
+			<Abstract type="html">	@brief	微博来源</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *source</Declaration>
+			
+			
+			<Anchor>//api/name/source</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setFavorited:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否已收藏，true：是，false：否</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL favorited</Declaration>
+			
+			
+			<Anchor>//api/name/favorited</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/favorited</TokenIdentifier>
+			<Abstract type="html">	@brief	是否已收藏，true：是，false：否</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL favorited</Declaration>
+			
+			
+			<Anchor>//api/name/favorited</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setTruncated:</TokenIdentifier>
+			<Abstract type="html">	@brief	是否被截断，true：是，false：否</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL truncated</Declaration>
+			
+			
+			<Anchor>//api/name/truncated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/truncated</TokenIdentifier>
+			<Abstract type="html">	@brief	是否被截断，true：是，false：否</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL truncated</Declaration>
+			
+			
+			<Anchor>//api/name/truncated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setInReplyToStatusId:</TokenIdentifier>
+			<Abstract type="html">	@brief	回复ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/inReplyToStatusId</TokenIdentifier>
+			<Abstract type="html">	@brief	回复ID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToStatusId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToStatusId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setInReplyToUserId:</TokenIdentifier>
+			<Abstract type="html">	@brief	回复人UID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToUserId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/inReplyToUserId</TokenIdentifier>
+			<Abstract type="html">	@brief	回复人UID</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToUserId</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setInReplyToScreenName:</TokenIdentifier>
+			<Abstract type="html">	@brief	回复人昵称</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/inReplyToScreenName</TokenIdentifier>
+			<Abstract type="html">	@brief	回复人昵称</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setThumbnailPic:</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnailPic</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnailPic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/thumbnailPic</TokenIdentifier>
+			<Abstract type="html">	@brief	缩略图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *thumbnailPic</Declaration>
+			
+			
+			<Anchor>//api/name/thumbnailPic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setBmiddlePic:</TokenIdentifier>
+			<Abstract type="html">	@brief	中等尺寸图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bmiddlePic</Declaration>
+			
+			
+			<Anchor>//api/name/bmiddlePic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/bmiddlePic</TokenIdentifier>
+			<Abstract type="html">	@brief	中等尺寸图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *bmiddlePic</Declaration>
+			
+			
+			<Anchor>//api/name/bmiddlePic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setOriginalPic:</TokenIdentifier>
+			<Abstract type="html">	@brief	原始图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *originalPic</Declaration>
+			
+			
+			<Anchor>//api/name/originalPic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/originalPic</TokenIdentifier>
+			<Abstract type="html">	@brief	原始图片地址，没有时不返回此字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *originalPic</Declaration>
+			
+			
+			<Anchor>//api/name/originalPic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setGeo:</TokenIdentifier>
+			<Abstract type="html">	@brief	地理信息字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboGeo *geo</Declaration>
+			
+			
+			<Anchor>//api/name/geo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/geo</TokenIdentifier>
+			<Abstract type="html">	@brief	地理信息字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboGeo *geo</Declaration>
+			
+			
+			<Anchor>//api/name/geo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setUser:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博作者的用户信息字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/user</TokenIdentifier>
+			<Abstract type="html">	@brief	微博作者的用户信息字段</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboUser *user</Declaration>
+			
+			
+			<Anchor>//api/name/user</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setRepostsCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	转发数</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger repostsCount</Declaration>
+			
+			
+			<Anchor>//api/name/repostsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/repostsCount</TokenIdentifier>
+			<Abstract type="html">	@brief	转发数</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger repostsCount</Declaration>
+			
+			
+			<Anchor>//api/name/repostsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setCommentsCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	评论数</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger commentsCount</Declaration>
+			
+			
+			<Anchor>//api/name/commentsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/commentsCount</TokenIdentifier>
+			<Abstract type="html">	@brief	评论数</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger commentsCount</Declaration>
+			
+			
+			<Anchor>//api/name/commentsCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setAttitudesCount:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂未支持</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger attitudesCount</Declaration>
+			
+			
+			<Anchor>//api/name/attitudesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/attitudesCount</TokenIdentifier>
+			<Abstract type="html">	@brief	暂未支持</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger attitudesCount</Declaration>
+			
+			
+			<Anchor>//api/name/attitudesCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setMlevel:</TokenIdentifier>
+			<Abstract type="html">	@brief	暂未支持</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger mlevel</Declaration>
+			
+			
+			<Anchor>//api/name/mlevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/mlevel</TokenIdentifier>
+			<Abstract type="html">	@brief	暂未支持</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger mlevel</Declaration>
+			
+			
+			<Anchor>//api/name/mlevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setVisible:</TokenIdentifier>
+			<Abstract type="html">	@brief	微博的可见性及指定可见分组信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboVisible *visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/visible</TokenIdentifier>
+			<Abstract type="html">	@brief	微博的可见性及指定可见分组信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboVisible *visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setRetweetedStatus:</TokenIdentifier>
+			<Abstract type="html">	@brief	被转发微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *retweetedStatus</Declaration>
+			
+			
+			<Anchor>//api/name/retweetedStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/retweetedStatus</TokenIdentifier>
+			<Abstract type="html">	@brief	被转发微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) SSSinaWeiboStatus *retweetedStatus</Declaration>
+			
+			
+			<Anchor>//api/name/retweetedStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSSinaWeiboStatus/setSourceData:</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -23,9 +507,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/sourceData</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/SSSinaWeiboStatus/sourceData</TokenIdentifier>
 			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
@@ -34,63 +518,19 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	图片URL</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/SSSinaWeiboStatus/statusWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建微博信息</Abstract>
+			<DeclaredIn>SSSinaWeiboStatus.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/url</TokenIdentifier>
-			<Abstract type="html">	@brief	图片URL</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSFacebookPicture/setIsSilhouette:</TokenIdentifier>
-			<Abstract type="html">	@brief	默认图片标识，如果为YES，表示用户尚未上传过个人图片</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isSilhouette</Declaration>
-			
-			
-			<Anchor>//api/name/isSilhouette</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSFacebookPicture/isSilhouette</TokenIdentifier>
-			<Abstract type="html">	@brief	默认图片标识，如果为YES，表示用户尚未上传过个人图片</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) BOOL isSilhouette</Declaration>
-			
-			
-			<Anchor>//api/name/isSilhouette</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSFacebookPicture/pictureWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建图片信息</Abstract>
-			<DeclaredIn>SSFacebookPicture.h</DeclaredIn>			
-			
-			<Declaration>+ (SSFacebookPicture *)pictureWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (SSSinaWeiboStatus *)statusWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Abstract type="html">服务器回复数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">图片信息</Abstract></ReturnValue>
-			<Anchor>//api/name/pictureWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">微博信息</Abstract></ReturnValue>
+			<Anchor>//api/name/statusWithResponse:</Anchor>
 		</Token>
 		
 	</File>

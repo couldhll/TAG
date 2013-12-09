@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/EverNoteConnection.html">
+	<File path="Classes/DouBanConnection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/EverNoteConnection</TokenIdentifier>
-			<Abstract type="html">	@brief	印象笔记链接器</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/DouBanConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	豆瓣链接器</Abstract>
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>
 			
 			<NodeRef refid="55"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/registerApp:appType:consumerKey:consumerSecret:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/registerApp:appKey:appSecret:redirectUri:</TokenIdentifier>
 			<Abstract type="html">	@brief	注册应用,同一个AppKey只需要注册一次。</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSEverNoteApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account appType:(SSEverNoteAppType)appType consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			<Declaration>+ (id&lt;ISSDouBanApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account appKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>account</Name>
 					<Abstract type="html">授权帐号，使用ShareSDK注册的应用Key换取。</Abstract>
 				</Parameter><Parameter>
-					<Name>appType</Name>
-					<Abstract type="html">应用类型，可以指定是沙箱、印象笔记中国还是Evernote International,注：如果设置了沙箱类型，则需要在发布应用之前把类型改为其他的，否则会导致用户无法正常使用。</Abstract>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
 				</Parameter><Parameter>
-					<Name>consumerKey</Name>
-					<Abstract type="html">消费者Key</Abstract>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
 				</Parameter><Parameter>
-					<Name>consumerSecret</Name>
-					<Abstract type="html">消费者密钥</Abstract>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">应用对象,返回nil则表示应用注册失败。</Abstract></ReturnValue>
-			<Anchor>//api/name/registerApp:appType:consumerKey:consumerSecret:</Anchor>
+			<Anchor>//api/name/registerApp:appKey:appSecret:redirectUri:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/unregisterApp:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/unregisterApp:</TokenIdentifier>
 			<Abstract type="html">	@brief	注销应用</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)unregisterApp:(id&lt;ISSEverNoteApp&gt;)app</Declaration>
+			<Declaration>+ (BOOL)unregisterApp:(id&lt;ISSDouBanApp&gt;)app</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>app</Name>
@@ -53,15 +53,15 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/getApp:</TokenIdentifier>
-			<Abstract type="html">	@brief	取得已注册新浪应用</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/getApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	取的已注册新浪应用</Abstract>
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (id&lt;ISSEverNoteApp&gt;)getApp:(NSString *)consumerKey</Declaration>
+			<Declaration>+ (id&lt;ISSDouBanApp&gt;)getApp:(NSString *)appKey</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>consumerKey</Name>
-					<Abstract type="html">消费者Key</Abstract>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">应用对象，返回nil则表示应用尚未注册</Abstract></ReturnValue>
@@ -69,11 +69,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/credentialWithData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/credentialWithData:</TokenIdentifier>
 			<Abstract type="html">	@brief	创建授权凭证</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (SSEverNoteCredential *)credentialWithData:(NSDictionary *)sourceData</Declaration>
+			<Declaration>+ (SSDouBanCredential *)credentialWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>sourceData</Name>
@@ -85,11 +85,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/credentialWithCredentialData:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/credentialWithCredentialData:</TokenIdentifier>
 			<Abstract type="html">	@brief	创建授权凭证</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
-			<Declaration>+ (SSEverNoteCredential *)credentialWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Declaration>+ (SSDouBanCredential *)credentialWithCredentialData:(NSDictionary *)credentialData</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>credentialData</Name>
@@ -101,9 +101,9 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/EverNoteConnection/getErrorDescriptionWithCode:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/DouBanConnection/getErrorDescriptionWithCode:</TokenIdentifier>
 			<Abstract type="html">	@brief	根据新浪微博错误码返回错误描述</Abstract>
-			<DeclaredIn>EverNoteConnection.h</DeclaredIn>			
+			<DeclaredIn>DouBanConnection.h</DeclaredIn>			
 			
 			<Declaration>+ (NSString *)getErrorDescriptionWithCode:(NSInteger)code</Declaration>
 			<Parameters>

@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSGooglePlusCoverPhoto.html">
+	<File path="Classes/SSTencentWeiboErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSGooglePlusCoverPhoto</TokenIdentifier>
-			<Abstract type="html">	@brief	封面照片</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	腾讯微博错误信息</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="273"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverPhoto/setUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	The url to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboErrorInfo/setRet:</TokenIdentifier>
+			<Abstract type="html">	@brief	返回值</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
+			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
 			
 			
-			<Anchor>//api/name/url</Anchor>
+			<Anchor>//api/name/ret</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverPhoto/url</TokenIdentifier>
-			<Abstract type="html">	@brief	The url to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboErrorInfo/ret</TokenIdentifier>
+			<Abstract type="html">	@brief	返回值</Abstract>
+			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *url</Declaration>
-			
-			
-			<Anchor>//api/name/url</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverPhoto/setHeight:</TokenIdentifier>
-			<Abstract type="html">	@brief	The height to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
+			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
 			
 			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverPhoto/height</TokenIdentifier>
-			<Abstract type="html">	@brief	The height to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
-			
-			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSGooglePlusCoverPhoto/setWidth:</TokenIdentifier>
-			<Abstract type="html">	@brief	The width to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSGooglePlusCoverPhoto/width</TokenIdentifier>
-			<Abstract type="html">	@brief	The width to the image.</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSGooglePlusCoverPhoto/coverPhotoWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建封面照片对象</Abstract>
-			<DeclaredIn>SSGooglePlusCoverPhoto.h</DeclaredIn>			
-			
-			<Declaration>+ (SSGooglePlusCoverPhoto *)coverPhotoWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">照片对象</Abstract></ReturnValue>
-			<Anchor>//api/name/coverPhotoWithResponse:</Anchor>
+			<Anchor>//api/name/ret</Anchor>
 		</Token>
 		
 	</File>

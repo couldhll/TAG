@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSLinkedInApiStandardProfileRequestHeaders.html">
+	<File path="Classes/SSYouDaoNoteErrorInfo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInApiStandardProfileRequestHeaders</TokenIdentifier>
-			<Abstract type="html">	@brief	请求头信息</Abstract>
-			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeaders.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSYouDaoNoteErrorInfo</TokenIdentifier>
+			<Abstract type="html">	@brief	错误信息，用于记录有道云笔记中产生的错误信息（包括错误码、错误描述）</Abstract>
+			<DeclaredIn>SSYouDaoNoteErrorInfo.h</DeclaredIn>
 			
 			<NodeRef refid="295"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInApiStandardProfileRequestHeaders/headersWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建头信息</Abstract>
-			<DeclaredIn>SSLinkedInApiStandardProfileRequestHeaders.h</DeclaredIn>			
-			
-			<Declaration>+ (SSLinkedInApiStandardProfileRequestHeaders *)headersWithResponse:(NSDictionary *)response</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">头信息</Abstract></ReturnValue>
-			<Anchor>//api/name/headersWithResponse:</Anchor>
-		</Token>
 		
 	</File>
 </Tokens>

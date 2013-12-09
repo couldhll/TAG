@@ -1,118 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSDouBanFlash.html">
+	<File path="Classes/SSPocketCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSDouBanFlash</TokenIdentifier>
-			<Abstract type="html">	@brief	Flash信息</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSPocketCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	授权凭证</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>
 			
 			<NodeRef refid="228"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAccessToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/accessToken</TokenIdentifier>
+			<Abstract type="html">	@brief	Access Token</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/sourceData</Anchor>
+			<Anchor>//api/name/accessToken</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setSrc:</TokenIdentifier>
-			<Abstract type="html">	@brief	 Flash路径</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setUserName:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
 			
 			
-			<Anchor>//api/name/src</Anchor>
+			<Anchor>//api/name/userName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/src</TokenIdentifier>
-			<Abstract type="html">	@brief	 Flash路径</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/userName</TokenIdentifier>
+			<Abstract type="html">	@brief	用户名称</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *src</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *userName</Declaration>
 			
 			
-			<Anchor>//api/name/src</Anchor>
+			<Anchor>//api/name/userName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setImgsrc:</TokenIdentifier>
-			<Abstract type="html">	@brief	图片路径</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *imgsrc</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/imgsrc</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/imgsrc</TokenIdentifier>
-			<Abstract type="html">	@brief	图片路径</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSPocketCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	判断授权数据是否有效</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *imgsrc</Declaration>
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
 			
 			
-			<Anchor>//api/name/imgsrc</Anchor>
+			<Anchor>//api/name/available</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSDouBanFlash/setType:</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSDouBanFlash/type</TokenIdentifier>
-			<Abstract type="html">	@brief	类型</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSDouBanFlash/flashWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建Flash媒体信息</Abstract>
-			<DeclaredIn>SSDouBanFlash.h</DeclaredIn>			
-			
-			<Declaration>+ (SSDouBanFlash *)flashWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Flash媒体信息</Abstract></ReturnValue>
-			<Anchor>//api/name/flashWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSPocketCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSPocketCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

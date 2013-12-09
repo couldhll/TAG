@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIColor+HTMLColor.html">
+	<File path="Protocols/ISSQZoneAuthSession.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIColor(HTMLColor)</TokenIdentifier>
-			<Abstract type="html">@brief UIColor HTML color creations</Abstract>
-			<DeclaredIn>UIColor.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/ISSQZoneAuthSession</TokenIdentifier>
+			<Abstract type="html">	@brief	QQ空间授权会话对象协议，每个授权都回返回一个会话对象</Abstract>
+			<DeclaredIn>ISSQZoneAuthSession.h</DeclaredIn>
 			
 			<NodeRef refid="559"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColor)/initWithHTMLExpression:</TokenIdentifier>
-			<Abstract type="html">@brief Initialize with html color code
-@details This method accepts formats like &quot;#fff&quot; or &quot;#0f0f0f&quot; for formal colors. &quot;#dddf&quot; or &quot;#fdfdfdff&quot; for alpha value. If &quot;#&quot; prefix doesn&apos;t exist, select constant from HTML color name table. &quot;orange&quot; for css and &quot;transperent&quot; for clear color.</Abstract>
-			<DeclaredIn>UIColor.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/ISSQZoneAuthSession/isSSOLogin</TokenIdentifier>
+			<Abstract type="html">	@brief	SSO登录标识</Abstract>
+			<DeclaredIn>ISSQZoneAuthSession.h</DeclaredIn>			
 			
-			<Declaration>- (UIColor *)initWithHTMLExpression:(NSString *)code</Declaration>
+			<Declaration>- (BOOL)isSSOLogin</Declaration>
 			
-			
-			<Anchor>//api/name/initWithHTMLExpression:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIColor(HTMLColor)/colorWithHTMLExpression:</TokenIdentifier>
-			<Abstract type="html">@brief Creates and returns color object with html color code
-@details This method accepts formats like &quot;#fff&quot; or &quot;#0f0f0f&quot; for formal colors. &quot;#dddf&quot; or &quot;#fdfdfdff&quot; for alpha value. If &quot;#&quot; prefix doesn&apos;t exist, select constant from HTML color name table. &quot;orange&quot; for css and &quot;transperent&quot; for clear color.</Abstract>
-			<DeclaredIn>UIColor.h</DeclaredIn>			
-			
-			<Declaration>+ (UIColor *)colorWithHTMLExpression:(NSString *)code</Declaration>
-			
-			
-			<Anchor>//api/name/colorWithHTMLExpression:</Anchor>
+			<ReturnValue><Abstract type="html">YES 表示SSO登录， NO 表示Web登录</Abstract></ReturnValue>
+			<Anchor>//api/name/isSSOLogin</Anchor>
 		</Token>
 		
 	</File>

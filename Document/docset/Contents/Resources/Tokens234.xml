@@ -1,526 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSEverNoteAccounting.html">
+	<File path="Classes/SSQZoneAlbumImage.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSEverNoteAccounting</TokenIdentifier>
-			<Abstract type="html">	@brief	簿记用户订阅信息</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneAlbumImage</TokenIdentifier>
+			<Abstract type="html">	@brief	相册图片</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>
 			
 			<NodeRef refid="234"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setUploadLimit:</TokenIdentifier>
-			<Abstract type="html">	@brief	The number of bytes that can be uploaded to the account in the current month. 
-For new notes that are created, this is the length of the note content (in Unicode characters)
-plus the size of each resource (in bytes). For edited notes, this is the the difference between
-the old length and the new length (if this is greater than 0) plus the size of each new resource.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimit</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimit</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/uploadLimit</TokenIdentifier>
-			<Abstract type="html">	@brief	The number of bytes that can be uploaded to the account in the current month. 
-For new notes that are created, this is the length of the note content (in Unicode characters)
-plus the size of each resource (in bytes). For edited notes, this is the the difference between
-the old length and the new length (if this is greater than 0) plus the size of each new resource.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimit</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimit</Anchor>
+			<Anchor>//api/name/sourceData</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setUploadLimitEnd:</TokenIdentifier>
-			<Abstract type="html">	@brief	The date and time when the current upload limit expires. At this time, 
-the monthly upload count reverts to 0 and a new limit is imposed.
-This date and time is exclusive, so this is effectively the start of the new month.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setAlbumid:</TokenIdentifier>
+			<Abstract type="html">	@brief	相册ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimitEnd</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimitEnd</Anchor>
+			<Anchor>//api/name/albumid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/uploadLimitEnd</TokenIdentifier>
-			<Abstract type="html">	@brief	The date and time when the current upload limit expires. At this time, 
-the monthly upload count reverts to 0 and a new limit is imposed.
-This date and time is exclusive, so this is effectively the start of the new month.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/albumid</TokenIdentifier>
+			<Abstract type="html">	@brief	相册ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimitEnd</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimitEnd</Anchor>
+			<Anchor>//api/name/albumid</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setUploadLimitNextMonth:</TokenIdentifier>
-			<Abstract type="html">	@brief	When uploadLimitEnd is reached, the service will change uploadLimit to uploadLimitNextMonth.
-If a premium account is canceled, this mechanism will reset the quota appropriately.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLloc:</TokenIdentifier>
+			<Abstract type="html">	@brief	大图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimitNextMonth</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimitNextMonth</Anchor>
+			<Anchor>//api/name/lloc</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/uploadLimitNextMonth</TokenIdentifier>
-			<Abstract type="html">	@brief	When uploadLimitEnd is reached, the service will change uploadLimit to uploadLimitNextMonth.
-If a premium account is canceled, this mechanism will reset the quota appropriately.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/lloc</TokenIdentifier>
+			<Abstract type="html">	@brief	大图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long uploadLimitNextMonth</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
 			
 			
-			<Anchor>//api/name/uploadLimitNextMonth</Anchor>
+			<Anchor>//api/name/lloc</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumServiceStatus:</TokenIdentifier>
-			<Abstract type="html">	@brief	Indicates the phases of a premium account during the billing process.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSloc:</TokenIdentifier>
+			<Abstract type="html">	@brief	小图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumOrderStatus premiumServiceStatus</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceStatus</Anchor>
+			<Anchor>//api/name/sloc</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumServiceStatus</TokenIdentifier>
-			<Abstract type="html">	@brief	Indicates the phases of a premium account during the billing process.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sloc</TokenIdentifier>
+			<Abstract type="html">	@brief	小图ID</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) SSEverNotePremiumOrderStatus premiumServiceStatus</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceStatus</Anchor>
+			<Anchor>//api/name/sloc</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumOrderNumber:</TokenIdentifier>
-			<Abstract type="html">	@brief	The order number used by the commerce system to process recurring payments</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLargeUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	大图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumOrderNumber</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
 			
 			
-			<Anchor>//api/name/premiumOrderNumber</Anchor>
+			<Anchor>//api/name/largeUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumOrderNumber</TokenIdentifier>
-			<Abstract type="html">	@brief	The order number used by the commerce system to process recurring payments</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/largeUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	大图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumOrderNumber</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
 			
 			
-			<Anchor>//api/name/premiumOrderNumber</Anchor>
+			<Anchor>//api/name/largeUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumCommerceService:</TokenIdentifier>
-			<Abstract type="html">	@brief	The commerce system used (paypal, Google checkout, etc)</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSmallUrl:</TokenIdentifier>
+			<Abstract type="html">	@brief	小图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumCommerceService</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
 			
 			
-			<Anchor>//api/name/premiumCommerceService</Anchor>
+			<Anchor>//api/name/smallUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumCommerceService</TokenIdentifier>
-			<Abstract type="html">	@brief	The commerce system used (paypal, Google checkout, etc)</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/smallUrl</TokenIdentifier>
+			<Abstract type="html">	@brief	小图地址</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumCommerceService</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
 			
 			
-			<Anchor>//api/name/premiumCommerceService</Anchor>
+			<Anchor>//api/name/smallUrl</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumServiceStart:</TokenIdentifier>
-			<Abstract type="html">	@brief	The start date when this premium promotion began 
-(this number will get overwritten if a premium service is canceled and then re-activated).</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setHeight:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long premiumServiceStart</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceStart</Anchor>
+			<Anchor>//api/name/height</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumServiceStart</TokenIdentifier>
-			<Abstract type="html">	@brief	The start date when this premium promotion began 
-(this number will get overwritten if a premium service is canceled and then re-activated).</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/height</TokenIdentifier>
+			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) long long premiumServiceStart</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceStart</Anchor>
+			<Anchor>//api/name/height</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumServiceSKU:</TokenIdentifier>
-			<Abstract type="html">	@brief	The code associated with the purchase eg. 
-monthly or annual purchase. Clients should interpret this value and localize it.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setWidth:</TokenIdentifier>
+			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumServiceSKU</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceSKU</Anchor>
+			<Anchor>//api/name/width</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumServiceSKU</TokenIdentifier>
-			<Abstract type="html">	@brief	The code associated with the purchase eg. 
-monthly or annual purchase. Clients should interpret this value and localize it.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/width</TokenIdentifier>
+			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumServiceSKU</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
 			
 			
-			<Anchor>//api/name/premiumServiceSKU</Anchor>
+			<Anchor>//api/name/width</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setLastSuccessfulCharge:</TokenIdentifier>
-			<Abstract type="html">	@brief	Date the last time the user was charged. Null if never charged.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastSuccessfulCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastSuccessfulCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/lastSuccessfulCharge</TokenIdentifier>
-			<Abstract type="html">	@brief	Date the last time the user was charged. Null if never charged.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastSuccessfulCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastSuccessfulCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setLastFailedCharge:</TokenIdentifier>
-			<Abstract type="html">	@brief	Date the last time a charge was attempted and failed.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastFailedCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastFailedCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/lastFailedCharge</TokenIdentifier>
-			<Abstract type="html">	@brief	Date the last time a charge was attempted and failed.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastFailedCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastFailedCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setLastFailedChargeReason:</TokenIdentifier>
-			<Abstract type="html">	@brief	Reason provided for the charge failure</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastFailedChargeReason</Declaration>
-			
-			
-			<Anchor>//api/name/lastFailedChargeReason</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/lastFailedChargeReason</TokenIdentifier>
-			<Abstract type="html">	@brief	Reason provided for the charge failure</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lastFailedChargeReason</Declaration>
-			
-			
-			<Anchor>//api/name/lastFailedChargeReason</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setNextPaymentDue:</TokenIdentifier>
-			<Abstract type="html">	@brief	The end of the billing cycle. This could be in the past if there are failed charges.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long nextPaymentDue</Declaration>
-			
-			
-			<Anchor>//api/name/nextPaymentDue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/nextPaymentDue</TokenIdentifier>
-			<Abstract type="html">	@brief	The end of the billing cycle. This could be in the past if there are failed charges.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long nextPaymentDue</Declaration>
-			
-			
-			<Anchor>//api/name/nextPaymentDue</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumLockUntil:</TokenIdentifier>
-			<Abstract type="html">	@brief	An internal variable to manage locking operations on the commerce variables.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long premiumLockUntil</Declaration>
-			
-			
-			<Anchor>//api/name/premiumLockUntil</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumLockUntil</TokenIdentifier>
-			<Abstract type="html">	@brief	An internal variable to manage locking operations on the commerce variables.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long premiumLockUntil</Declaration>
-			
-			
-			<Anchor>//api/name/premiumLockUntil</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setUpdated:</TokenIdentifier>
-			<Abstract type="html">	@brief	The date any modification where made to this record.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
-			
-			
-			<Anchor>//api/name/updated</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/updated</TokenIdentifier>
-			<Abstract type="html">	@brief	The date any modification where made to this record.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long updated</Declaration>
-			
-			
-			<Anchor>//api/name/updated</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setPremiumSubscriptionNumber:</TokenIdentifier>
-			<Abstract type="html">	@brief	The number number identifying the recurring subscription used to make the recurring charges.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumSubscriptionNumber</Declaration>
-			
-			
-			<Anchor>//api/name/premiumSubscriptionNumber</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/premiumSubscriptionNumber</TokenIdentifier>
-			<Abstract type="html">	@brief	The number number identifying the recurring subscription used to make the recurring charges.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *premiumSubscriptionNumber</Declaration>
-			
-			
-			<Anchor>//api/name/premiumSubscriptionNumber</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setLastRequestedCharge:</TokenIdentifier>
-			<Abstract type="html">	@brief	Date charge last attempted</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastRequestedCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastRequestedCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/lastRequestedCharge</TokenIdentifier>
-			<Abstract type="html">	@brief	Date charge last attempted</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long long lastRequestedCharge</Declaration>
-			
-			
-			<Anchor>//api/name/lastRequestedCharge</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setCurrency:</TokenIdentifier>
-			<Abstract type="html">	@brief	ISO 4217 currency code</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *currency</Declaration>
-			
-			
-			<Anchor>//api/name/currency</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/currency</TokenIdentifier>
-			<Abstract type="html">	@brief	ISO 4217 currency code</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *currency</Declaration>
-			
-			
-			<Anchor>//api/name/currency</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setUnitPrice:</TokenIdentifier>
-			<Abstract type="html">	@brief	charge in the smallest unit of the currency (e.g. cents for USD)</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long unitPrice</Declaration>
-			
-			
-			<Anchor>//api/name/unitPrice</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/unitPrice</TokenIdentifier>
-			<Abstract type="html">	@brief	charge in the smallest unit of the currency (e.g. cents for USD)</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long unitPrice</Declaration>
-			
-			
-			<Anchor>//api/name/unitPrice</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setBusinessId:</TokenIdentifier>
-			<Abstract type="html">	@brief	If set, the ID of the Evernote Business account that the user is a member of.
-If not set, the user is not a member of a business.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long businessId</Declaration>
-			
-			
-			<Anchor>//api/name/businessId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/businessId</TokenIdentifier>
-			<Abstract type="html">	@brief	If set, the ID of the Evernote Business account that the user is a member of.
-If not set, the user is not a member of a business.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) long businessId</Declaration>
-			
-			
-			<Anchor>//api/name/businessId</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setBusinessName:</TokenIdentifier>
-			<Abstract type="html">	@brief	The human-readable name of the Evernote Business account that the user is a member of.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *businessName</Declaration>
-			
-			
-			<Anchor>//api/name/businessName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/businessName</TokenIdentifier>
-			<Abstract type="html">	@brief	The human-readable name of the Evernote Business account that the user is a member of.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *businessName</Declaration>
-			
-			
-			<Anchor>//api/name/businessName</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/setBusinessRole:</TokenIdentifier>
-			<Abstract type="html">	@brief	If set, the role of the user within the Evernote Business account that they are a member of.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteBusinessUserRole businessRole</Declaration>
-			
-			
-			<Anchor>//api/name/businessRole</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSEverNoteAccounting/businessRole</TokenIdentifier>
-			<Abstract type="html">	@brief	If set, the role of the user within the Evernote Business account that they are a member of.</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) SSEverNoteBusinessUserRole businessRole</Declaration>
-			
-			
-			<Anchor>//api/name/businessRole</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSEverNoteAccounting/accountingWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建簿记用户订阅信息</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>+ (SSEverNoteAccounting *)accountingWithResponse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
+			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneAlbumImage/albumWithResponse:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建相册图片信息</Abstract>
+			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			
+			<Declaration>+ (SSQZoneAlbumImage *)albumWithResponse:(NSDictionary *)response</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">服务器返回数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">用户订阅信息</Abstract></ReturnValue>
-			<Anchor>//api/name/accountingWithResponse:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSEverNoteAccounting/parse:</TokenIdentifier>
-			<Abstract type="html">	@brief	解析数据</Abstract>
-			<DeclaredIn>SSEverNoteAccounting.h</DeclaredIn>			
-			
-			<Declaration>- (void)parse:(id&lt;ISSEverNoteDataOutput&gt;)reader</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>reader</Name>
-					<Abstract type="html">数据读取器</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/parse:</Anchor>
+			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
+			<Anchor>//api/name/albumWithResponse:</Anchor>
 		</Token>
 		
 	</File>

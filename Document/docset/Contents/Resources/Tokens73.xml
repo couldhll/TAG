@@ -1,238 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBGraphObject.html">
+	<File path="Classes/JSONModelClassProperty.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBGraphObject</TokenIdentifier>
-			<Abstract type="html">@class</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/JSONModelClassProperty</TokenIdentifier>
+			<Abstract type="html">You do not need to instantiate this class yourself. This class is used internally by JSONModel
+to inspect the declared properties of your model class.</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>
 			
 			<NodeRef refid="73"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/graphObject</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to create a graph object, usually for use in posting a new graph object or action.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the declared property (not the ivar name)</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary&lt;FBGraphObject&gt; *)graphObject</Declaration>
+			<Declaration>@property (copy, nonatomic) NSString *name</Declaration>
 			
 			
-			<Anchor>//api/name/graphObject</Anchor>
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/graphObjectWrappingDictionary:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to wrap an existing dictionary with a FBGraphObject facade</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/name</TokenIdentifier>
+			<Abstract type="html">The name of the declared property (not the ivar name)</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary&lt;FBGraphObject&gt; *)graphObjectWrappingDictionary:(NSDictionary *)jsonDictionary</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>jsonDictionary</Name>
-					<Abstract type="html">the dictionary representing the underlying object to wrap</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (copy, nonatomic) NSString *name</Declaration>
 			
-			<Anchor>//api/name/graphObjectWrappingDictionary:</Anchor>
+			
+			<Anchor>//api/name/name</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/openGraphActionForPost</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to create a graph object that&apos;s provisioned for POST, usually for use in posting a new Open Graph Action.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setType:</TokenIdentifier>
+			<Abstract type="html">A property class type</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary&lt;FBOpenGraphAction&gt; *)openGraphActionForPost</Declaration>
+			<Declaration>@property (assign, nonatomic) Class type</Declaration>
 			
 			
-			<Anchor>//api/name/openGraphActionForPost</Anchor>
+			<Anchor>//api/name/type</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/openGraphObjectForPost</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to create a graph object that&apos;s provisioned for POST, usually for use in posting a new Open Graph object.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/type</TokenIdentifier>
+			<Abstract type="html">A property class type</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary&lt;FBOpenGraphObject&gt; *)openGraphObjectForPost</Declaration>
+			<Declaration>@property (assign, nonatomic) Class type</Declaration>
 			
 			
-			<Anchor>//api/name/openGraphObjectForPost</Anchor>
+			<Anchor>//api/name/type</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/openGraphObjectForPostWithType:title:image:url:description:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to create a graph object that&apos;s provisioned for POST, usually for use in posting a new Open Graph object.</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setStructName:</TokenIdentifier>
+			<Abstract type="html">Struct name if a struct</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (NSMutableDictionary&lt;FBOpenGraphObject&gt; *)openGraphObjectForPostWithType:(NSString *)type title:(NSString *)title image:(id)image url:(id)url description:(NSString *)description</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">the object type name, in the form namespace:typename</Abstract>
-				</Parameter><Parameter>
-					<Name>title</Name>
-					<Abstract type="html">a title for the object</Abstract>
-				</Parameter><Parameter>
-					<Name>image</Name>
-					<Abstract type="html">the image property for the object</Abstract>
-				</Parameter><Parameter>
-					<Name>url</Name>
-					<Abstract type="html">the url property for the object</Abstract>
-				</Parameter><Parameter>
-					<Name>description</Name>
-					<Abstract type="html">the description for the object</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (strong, nonatomic) NSString *structName</Declaration>
 			
-			<Anchor>//api/name/openGraphObjectForPostWithType:title:image:url:description:</Anchor>
+			
+			<Anchor>//api/name/structName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/FBGraphObject/isGraphObjectID:sameAs:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Used to compare two FBGraphObjects to determine if represent the same object. We do not overload
-the concept of equality as there are various types of equality that may be important for an FBGraphObject
-(for instance, two different FBGraphObjects could represent the same object, but contain different
-subsets of fields).</Abstract>
-			<DeclaredIn>FBGraphObject.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/structName</TokenIdentifier>
+			<Abstract type="html">Struct name if a struct</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>+ (BOOL)isGraphObjectID:(id&lt;FBGraphObject&gt;)anObject sameAs:(id&lt;FBGraphObject&gt;)anotherObject</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>anObject</Name>
-					<Abstract type="html">an FBGraphObject to test</Abstract>
-				</Parameter><Parameter>
-					<Name>anotherObject</Name>
-					<Abstract type="html">the FBGraphObject to compare it against</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (strong, nonatomic) NSString *structName</Declaration>
 			
-			<Anchor>//api/name/isGraphObjectID:sameAs:</Anchor>
+			
+			<Anchor>//api/name/structName</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/provisionedForPost</TokenIdentifier>
-			<Abstract type="html">@abstract
-This property signifies that the current graph object is provisioned for POST (as a definition
-for a new or updated graph object), and should be posted AS-IS in its JSON encoded form, whereas
-some graph objects (usually those embedded in other graph objects as references to existing objects)
-may only have their &quot;id&quot; or &quot;url&quot; posted.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setProtocol:</TokenIdentifier>
+			<Abstract type="html">The name of the protocol the property conforms to (or nil)</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (BOOL)provisionedForPost</Declaration>
+			<Declaration>@property (copy, nonatomic) NSString *protocol</Declaration>
 			
 			
-			<Anchor>//api/name/provisionedForPost</Anchor>
+			<Anchor>//api/name/protocol</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/setProvisionedForPost:</TokenIdentifier>
-			<Abstract type="html">@abstract
-This property signifies that the current graph object is provisioned for POST (as a definition
-for a new or updated graph object), and should be posted AS-IS in its JSON encoded form, whereas
-some graph objects (usually those embedded in other graph objects as references to existing objects)
-may only have their &quot;id&quot; or &quot;url&quot; posted.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/protocol</TokenIdentifier>
+			<Abstract type="html">The name of the protocol the property conforms to (or nil)</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (void)setProvisionedForPost:(BOOL)provisionedForPost</Declaration>
+			<Declaration>@property (copy, nonatomic) NSString *protocol</Declaration>
 			
 			
-			<Anchor>//api/name/setProvisionedForPost:</Anchor>
+			<Anchor>//api/name/protocol</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/count</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns the number of properties on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setIsOptional:</TokenIdentifier>
+			<Abstract type="html">If YES, it can be missing in the input data, and the input would be still valid</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (NSUInteger)count</Declaration>
+			<Declaration>@property (assign, nonatomic) BOOL isOptional</Declaration>
 			
 			
-			<Anchor>//api/name/count</Anchor>
+			<Anchor>//api/name/isOptional</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/objectForKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/isOptional</TokenIdentifier>
+			<Abstract type="html">If YES, it can be missing in the input data, and the input would be still valid</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (id)objectForKey:(id)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to return</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (assign, nonatomic) BOOL isOptional</Declaration>
 			
-			<Anchor>//api/name/objectForKey:</Anchor>
+			
+			<Anchor>//api/name/isOptional</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/keyEnumerator</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Returns an enumerator of the property naems on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setIsStandardJSONType:</TokenIdentifier>
+			<Abstract type="html">If YES - don&apos;t call any transformers on this property&apos;s value</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (NSEnumerator *)keyEnumerator</Declaration>
+			<Declaration>@property (assign, nonatomic) BOOL isStandardJSONType</Declaration>
 			
 			
-			<Anchor>//api/name/keyEnumerator</Anchor>
+			<Anchor>//api/name/isStandardJSONType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/setObject:forKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Sets the value of a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/isStandardJSONType</TokenIdentifier>
+			<Abstract type="html">If YES - don&apos;t call any transformers on this property&apos;s value</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (void)setObject:(id)object forKey:(id)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>anObject</Name>
-					<Abstract type="html">the new value of the property</Abstract>
-				</Parameter><Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to set</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (assign, nonatomic) BOOL isStandardJSONType</Declaration>
 			
-			<Anchor>//api/name/setObject:forKey:</Anchor>
+			
+			<Anchor>//api/name/isStandardJSONType</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBGraphObject/removeObjectForKey:</TokenIdentifier>
-			<Abstract type="html">@method
-@abstract
-Removes a property on this FBGraphObject.</Abstract>
-			<DeclaredIn>FBGraphObject.m</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setIsMutable:</TokenIdentifier>
+			<Abstract type="html">If YES - create a mutable object for the value of the property</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
 			
-			<Declaration>- (void)removeObjectForKey:(id)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>aKey</Name>
-					<Abstract type="html">name of the property to remove</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (assign, nonatomic) BOOL isMutable</Declaration>
 			
-			<Anchor>//api/name/removeObjectForKey:</Anchor>
+			
+			<Anchor>//api/name/isMutable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/isMutable</TokenIdentifier>
+			<Abstract type="html">If YES - create a mutable object for the value of the property</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL isMutable</Declaration>
+			
+			
+			<Anchor>//api/name/isMutable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setConvertsOnDemand:</TokenIdentifier>
+			<Abstract type="html">If YES - create models on demand for the array members</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL convertsOnDemand</Declaration>
+			
+			
+			<Anchor>//api/name/convertsOnDemand</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/convertsOnDemand</TokenIdentifier>
+			<Abstract type="html">If YES - create models on demand for the array members</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL convertsOnDemand</Declaration>
+			
+			
+			<Anchor>//api/name/convertsOnDemand</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setIsIndex:</TokenIdentifier>
+			<Abstract type="html">If YES - the value of this property determines equality to other models</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL isIndex</Declaration>
+			
+			
+			<Anchor>//api/name/isIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/isIndex</TokenIdentifier>
+			<Abstract type="html">If YES - the value of this property determines equality to other models</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL isIndex</Declaration>
+			
+			
+			<Anchor>//api/name/isIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setGetterType:</TokenIdentifier>
+			<Abstract type="html">The status of property getter introspection in a model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) PropertyGetterType getterType</Declaration>
+			
+			
+			<Anchor>//api/name/getterType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/getterType</TokenIdentifier>
+			<Abstract type="html">The status of property getter introspection in a model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) PropertyGetterType getterType</Declaration>
+			
+			
+			<Anchor>//api/name/getterType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setCustomGetter:</TokenIdentifier>
+			<Abstract type="html">a custom getter for this property, found in the owning model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) SEL customGetter</Declaration>
+			
+			
+			<Anchor>//api/name/customGetter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/customGetter</TokenIdentifier>
+			<Abstract type="html">a custom getter for this property, found in the owning model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) SEL customGetter</Declaration>
+			
+			
+			<Anchor>//api/name/customGetter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setSetterType:</TokenIdentifier>
+			<Abstract type="html">The status of property setter introspection in a model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) PropertySetterType setterType</Declaration>
+			
+			
+			<Anchor>//api/name/setterType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/setterType</TokenIdentifier>
+			<Abstract type="html">The status of property setter introspection in a model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) PropertySetterType setterType</Declaration>
+			
+			
+			<Anchor>//api/name/setterType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JSONModelClassProperty/setCustomSetter:</TokenIdentifier>
+			<Abstract type="html">a custom setter for this property, found in the owning model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) SEL customSetter</Declaration>
+			
+			
+			<Anchor>//api/name/customSetter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JSONModelClassProperty/customSetter</TokenIdentifier>
+			<Abstract type="html">a custom setter for this property, found in the owning model</Abstract>
+			<DeclaredIn>JSONModelClassProperty.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) SEL customSetter</Declaration>
+			
+			
+			<Anchor>//api/name/customSetter</Anchor>
 		</Token>
 		
 	</File>

@@ -1,140 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/FBFrictionlessRequestSettings.html">
+	<File path="Classes/JSONKeyMapper.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/FBFrictionlessRequestSettings</TokenIdentifier>
-			<Abstract type="html">Do not use this interface directly, instead, use methods in Facebook.h</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/JSONKeyMapper</TokenIdentifier>
+			<Abstract type="html">You won&apos;t need to create or store instances of this class yourself. If you want your model
+to have different property names than the JSON feed keys, look below on how to
+make your model use a key mapper.</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>
 			
 			<NodeRef refid="70"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/setEnabled:</TokenIdentifier>
-			<Abstract type="html">BOOL indicating whether frictionless request sending has been enabled</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONKeyMapper/setJSONToModelKeyBlock:</TokenIdentifier>
+			<Abstract type="html">Block, which takes in a JSON key and converts it to the corresponding property name</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL enabled</Declaration>
+			<Declaration>@property (readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/JSONToModelKeyBlock</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FBFrictionlessRequestSettings/enabled</TokenIdentifier>
-			<Abstract type="html">BOOL indicating whether frictionless request sending has been enabled</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONKeyMapper/JSONToModelKeyBlock</TokenIdentifier>
+			<Abstract type="html">Block, which takes in a JSON key and converts it to the corresponding property name</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) BOOL enabled</Declaration>
+			<Declaration>@property (readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/JSONToModelKeyBlock</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/setRecipientIDs:</TokenIdentifier>
-			<Abstract type="html">NSArray of recipients</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONKeyMapper/setModelToJSONKeyBlock:</TokenIdentifier>
+			<Abstract type="html">Block, which takes in a property name and converts it to the corresponding JSON key name</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *recipientIDs</Declaration>
+			<Declaration>@property (readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock</Declaration>
 			
 			
-			<Anchor>//api/name/recipientIDs</Anchor>
+			<Anchor>//api/name/modelToJSONKeyBlock</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/FBFrictionlessRequestSettings/recipientIDs</TokenIdentifier>
-			<Abstract type="html">NSArray of recipients</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JSONKeyMapper/modelToJSONKeyBlock</TokenIdentifier>
+			<Abstract type="html">Block, which takes in a property name and converts it to the corresponding JSON key name</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *recipientIDs</Declaration>
+			<Declaration>@property (readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock</Declaration>
 			
 			
-			<Anchor>//api/name/recipientIDs</Anchor>
+			<Anchor>//api/name/modelToJSONKeyBlock</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/enableWithFacebook:</TokenIdentifier>
-			<Abstract type="html">Enable frictionless request sending by the sdk; this means:
-1. query and cache the current set of frictionless recipients
-2. flag other facets of the sdk to behave in a frictionless way</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONKeyMapper/initWithJSONToModelBlock:modelToJSONBlock:</TokenIdentifier>
+			<Abstract type="html">Creates a JSONKeyMapper instance, based on the two blocks you provide this initializer.
+The two parameters take in a JSONModelKeyMapBlock block:
+&lt;pre&gt;NSString (^JSONModelKeyMapBlock)(NSString keyName)&lt;/pre&gt;
+The block takes in a string and returns the transformed (if at all) string.</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>- (void)enableWithFacebook:(Facebook *)facebook</Declaration>
+			<Declaration>- (instancetype)initWithJSONToModelBlock:(JSONModelKeyMapBlock)toModel modelToJSONBlock:(JSONModelKeyMapBlock)toJSON</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>toModel</Name>
+					<Abstract type="html">transforms JSON key name to your model property name</Abstract>
+				</Parameter><Parameter>
+					<Name>toJSON</Name>
+					<Abstract type="html">transforms your model property name to a JSON key</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/enableWithFacebook:</Anchor>
+			<Anchor>//api/name/initWithJSONToModelBlock:modelToJSONBlock:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/reloadRecipientCacheWithFacebook:</TokenIdentifier>
-			<Abstract type="html">Reload recipient cache; called by the sdk to keep the cache fresh;
-method makes graph request: me/apprequestformerrecipients</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JSONKeyMapper/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Creates a JSONKeyMapper instance, based on the mapping you provide
+in the map parameter. Use the JSON key names as keys, your JSONModel
+property names as values.</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>- (void)reloadRecipientCacheWithFacebook:(Facebook *)facebook</Declaration>
-			
-			
-			<Anchor>//api/name/reloadRecipientCacheWithFacebook:</Anchor>
+			<Declaration>- (instancetype)initWithDictionary:(NSDictionary *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">map dictionary, in the format: &lt;pre&gt;@{@&quot;crazyJSONname&quot;:@&quot;myCamelCaseName&quot;}&lt;/pre&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">JSONKeyMapper instance</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDictionary:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/updateRecipientCacheWithRecipients:</TokenIdentifier>
-			<Abstract type="html">Update the recipient cache; called by the sdk to keep the cache fresh;</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/JSONKeyMapper/mapperFromUnderscoreCaseToCamelCase</TokenIdentifier>
+			<Abstract type="html">Creates a JSONKeyMapper, which converts underscore_case to camelCase and vice versa.</Abstract>
+			<DeclaredIn>JSONKeyMapper.h</DeclaredIn>			
 			
-			<Declaration>- (void)updateRecipientCacheWithRecipients:(NSArray *)ids</Declaration>
-			
-			
-			<Anchor>//api/name/updateRecipientCacheWithRecipients:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/updateRecipientCacheWithRequestResult:</TokenIdentifier>
-			<Abstract type="html">Update the recipient cache, using a request result</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
-			
-			<Declaration>- (void)updateRecipientCacheWithRequestResult:(id)result</Declaration>
+			<Declaration>+ (instancetype)mapperFromUnderscoreCaseToCamelCase</Declaration>
 			
 			
-			<Anchor>//api/name/updateRecipientCacheWithRequestResult:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/isFrictionlessEnabledForRecipient:</TokenIdentifier>
-			<Abstract type="html">Given an fbID for a user, indicates whether user is enabled for
-frictionless calls</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isFrictionlessEnabledForRecipient:(id)fbid</Declaration>
-			
-			
-			<Anchor>//api/name/isFrictionlessEnabledForRecipient:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/isFrictionlessEnabledForRecipients:</TokenIdentifier>
-			<Abstract type="html">Given an array of user fbIDs, indicates whether they are enabled for
-frictionless calls</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isFrictionlessEnabledForRecipients:(NSArray *)fbids</Declaration>
-			
-			
-			<Anchor>//api/name/isFrictionlessEnabledForRecipients:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/FBFrictionlessRequestSettings/init</TokenIdentifier>
-			<Abstract type="html">init the frictionless cache object</Abstract>
-			<DeclaredIn>FBFrictionlessRequestSettings.h</DeclaredIn>			
-			
-			<Declaration>- (id)init</Declaration>
-			
-			
-			<Anchor>//api/name/init</Anchor>
+			<Anchor>//api/name/mapperFromUnderscoreCaseToCamelCase</Anchor>
 		</Token>
 		
 	</File>

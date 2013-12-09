@@ -1,30 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSLinkedInApiStandardProfileRequest.html">
+	<File path="Classes/SSYouDaoNoteCredential.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSLinkedInApiStandardProfileRequest</TokenIdentifier>
-			<Abstract type="html">	@brief	标准个人信息请求</Abstract>
-			<DeclaredIn>SSLinkedInApiStandardProfileRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SSYouDaoNoteCredential</TokenIdentifier>
+			<Abstract type="html">	@brief	有道云笔记授权凭证</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>
 			
 			<NodeRef refid="294"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSLinkedInApiStandardProfileRequest/requestWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建请求实例</Abstract>
-			<DeclaredIn>SSLinkedInApiStandardProfileRequest.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/setSourceData:</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
 			
-			<Declaration>+ (SSLinkedInApiStandardProfileRequest *)requestWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteCredential/sourceData</TokenIdentifier>
+			<Abstract type="html">	@brief	源数据</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
+			
+			
+			<Anchor>//api/name/sourceData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/setOauthToken:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteCredential/oauthToken</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthToken</Declaration>
+			
+			
+			<Anchor>//api/name/oauthToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/setOauthTokenSecret:</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteCredential/oauthTokenSecret</TokenIdentifier>
+			<Abstract type="html">	@brief	OAuth令牌密钥</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *oauthTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/oauthTokenSecret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/setUid:</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteCredential/uid</TokenIdentifier>
+			<Abstract type="html">	@brief	用户ID</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *uid</Declaration>
+			
+			
+			<Anchor>//api/name/uid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/setAvailable:</TokenIdentifier>
+			<Abstract type="html">	@brief	凭证有效性</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SSYouDaoNoteCredential/available</TokenIdentifier>
+			<Abstract type="html">	@brief	凭证有效性</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL available</Declaration>
+			
+			
+			<Anchor>//api/name/available</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/initWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权信息</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithData:(NSDictionary *)sourceData</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">回复数据</Abstract>
+					<Name>sourceData</Name>
+					<Abstract type="html">源授权数据</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">请求实例对象</Abstract></ReturnValue>
-			<Anchor>//api/name/requestWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">授权信息</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SSYouDaoNoteCredential/initWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	初始化授权凭证</Abstract>
+			<DeclaredIn>SSYouDaoNoteCredential.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权凭证数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCredentialData:</Anchor>
 		</Token>
 		
 	</File>

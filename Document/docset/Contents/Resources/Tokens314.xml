@@ -1,206 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSQZoneAlbumImage.html">
+	<File path="Classes/T163WeiboConnection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSQZoneAlbumImage</TokenIdentifier>
-			<Abstract type="html">	@brief	相册图片</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/T163WeiboConnection</TokenIdentifier>
+			<Abstract type="html">	@brief	网易微博链接器</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>
 			
 			<NodeRef refid="314"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSourceData:</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/registerApp:appKey:appSecret:redirectUri:</TokenIdentifier>
+			<Abstract type="html">	@brief	注册应用,同一个AppKey只需要注册一次。</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sourceData</TokenIdentifier>
-			<Abstract type="html">	@brief	源数据</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, retain) NSDictionary *sourceData</Declaration>
-			
-			
-			<Anchor>//api/name/sourceData</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setAlbumid:</TokenIdentifier>
-			<Abstract type="html">	@brief	相册ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
-			
-			
-			<Anchor>//api/name/albumid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/albumid</TokenIdentifier>
-			<Abstract type="html">	@brief	相册ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *albumid</Declaration>
-			
-			
-			<Anchor>//api/name/albumid</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLloc:</TokenIdentifier>
-			<Abstract type="html">	@brief	大图ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
-			
-			
-			<Anchor>//api/name/lloc</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/lloc</TokenIdentifier>
-			<Abstract type="html">	@brief	大图ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *lloc</Declaration>
-			
-			
-			<Anchor>//api/name/lloc</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSloc:</TokenIdentifier>
-			<Abstract type="html">	@brief	小图ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
-			
-			
-			<Anchor>//api/name/sloc</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/sloc</TokenIdentifier>
-			<Abstract type="html">	@brief	小图ID</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *sloc</Declaration>
-			
-			
-			<Anchor>//api/name/sloc</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setLargeUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	大图地址</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
-			
-			
-			<Anchor>//api/name/largeUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/largeUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	大图地址</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *largeUrl</Declaration>
-			
-			
-			<Anchor>//api/name/largeUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setSmallUrl:</TokenIdentifier>
-			<Abstract type="html">	@brief	小图地址</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
-			
-			
-			<Anchor>//api/name/smallUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/smallUrl</TokenIdentifier>
-			<Abstract type="html">	@brief	小图地址</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSString *smallUrl</Declaration>
-			
-			
-			<Anchor>//api/name/smallUrl</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setHeight:</TokenIdentifier>
-			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
-			
-			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/height</TokenIdentifier>
-			<Abstract type="html">	@brief	图片高（单位：像素）</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger height</Declaration>
-			
-			
-			<Anchor>//api/name/height</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSQZoneAlbumImage/setWidth:</TokenIdentifier>
-			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSQZoneAlbumImage/width</TokenIdentifier>
-			<Abstract type="html">	@brief	图片宽（单位：像素）</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) NSInteger width</Declaration>
-			
-			
-			<Anchor>//api/name/width</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SSQZoneAlbumImage/albumWithResponse:</TokenIdentifier>
-			<Abstract type="html">	@brief	创建相册图片信息</Abstract>
-			<DeclaredIn>SSQZoneAlbumImage.h</DeclaredIn>			
-			
-			<Declaration>+ (SSQZoneAlbumImage *)albumWithResponse:(NSDictionary *)response</Declaration>
+			<Declaration>+ (id&lt;ISS163WeiboApp&gt;)registerApp:(id&lt;ISSCAccount&gt;)account appKey:(NSString *)appKey appSecret:(NSString *)appSecret redirectUri:(NSString *)redirectUri</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>response</Name>
-					<Abstract type="html">服务器返回数据</Abstract>
+					<Name>account</Name>
+					<Abstract type="html">授权帐号，使用ShareSDK注册的应用Key换取。</Abstract>
+				</Parameter><Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter><Parameter>
+					<Name>appSecret</Name>
+					<Abstract type="html">应用密钥</Abstract>
+				</Parameter><Parameter>
+					<Name>redirectUri</Name>
+					<Abstract type="html">回调地址</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">用户信息对象</Abstract></ReturnValue>
-			<Anchor>//api/name/albumWithResponse:</Anchor>
+			<ReturnValue><Abstract type="html">应用对象,返回nil则表示应用注册失败。</Abstract></ReturnValue>
+			<Anchor>//api/name/registerApp:appKey:appSecret:redirectUri:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/unregisterApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	注销应用</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)unregisterApp:(id&lt;ISS163WeiboApp&gt;)app</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>app</Name>
+					<Abstract type="html">应用对象</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES表示注销成功，NO表示注销失败</Abstract></ReturnValue>
+			<Anchor>//api/name/unregisterApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/getApp:</TokenIdentifier>
+			<Abstract type="html">	@brief	取的已注册新浪应用</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;ISS163WeiboApp&gt;)getApp:(NSString *)appKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">应用Key</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">应用对象，返回nil则表示应用尚未注册</Abstract></ReturnValue>
+			<Anchor>//api/name/getApp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/credentialWithData:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权凭证</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (SS163WeiboCredential *)credentialWithData:(NSDictionary *)sourceData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">源数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/credentialWithCredentialData:</TokenIdentifier>
+			<Abstract type="html">	@brief	创建授权凭证</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (SS163WeiboCredential *)credentialWithCredentialData:(NSDictionary *)credentialData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credentialData</Name>
+					<Abstract type="html">授权数据</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">授权凭证</Abstract></ReturnValue>
+			<Anchor>//api/name/credentialWithCredentialData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/T163WeiboConnection/getErrorDescriptionWithCode:</TokenIdentifier>
+			<Abstract type="html">	@brief	根据新浪微博错误码返回错误描述</Abstract>
+			<DeclaredIn>T163WeiboConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getErrorDescriptionWithCode:(NSInteger)code</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>code</Name>
+					<Abstract type="html">错误码</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">错误描述</Abstract></ReturnValue>
+			<Anchor>//api/name/getErrorDescriptionWithCode:</Anchor>
 		</Token>
 		
 	</File>

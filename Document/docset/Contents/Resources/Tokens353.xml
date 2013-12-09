@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SSTencentWeiboErrorInfo.html">
+	<File path="Classes/WBBaseRequest.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SSTencentWeiboErrorInfo</TokenIdentifier>
-			<Abstract type="html">	@brief	腾讯微博错误信息</Abstract>
-			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/WBBaseRequest</TokenIdentifier>
+			<Abstract type="html">微博SDK所有请求类的基类</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>
 			
 			<NodeRef refid="353"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SSTencentWeiboErrorInfo/setRet:</TokenIdentifier>
-			<Abstract type="html">	@brief	返回值</Abstract>
-			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/clm/WBBaseRequest/request</TokenIdentifier>
+			<Abstract type="html">返回一个 WBBaseRequest 对象</Abstract>
+			<DeclaredIn>WeiboSDK.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
+			<Declaration>+ (id)request</Declaration>
 			
-			
-			<Anchor>//api/name/ret</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SSTencentWeiboErrorInfo/ret</TokenIdentifier>
-			<Abstract type="html">	@brief	返回值</Abstract>
-			<DeclaredIn>SSTencentWeiboErrorInfo.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic) NSInteger ret</Declaration>
-			
-			
-			<Anchor>//api/name/ret</Anchor>
+			<ReturnValue><Abstract type="html">返回一个自动释放的WBBaseRequest对象</Abstract></ReturnValue>
+			<Anchor>//api/name/request</Anchor>
 		</Token>
 		
 	</File>

@@ -48,7 +48,7 @@
 	
 	<option value="//api/name/errorInputIsNil">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInputIsNil</option>
 	
-	<option value="//api/name/errorInvalidData">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidData</option>
+	<option value="//api/name/errorInvalidDataWithMessage:">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidDataWithMessage:</option>
 	
 	<option value="//api/name/errorInvalidDataWithMissingKeys:">&nbsp;&nbsp;&nbsp;&nbsp;+ errorInvalidDataWithMissingKeys:</option>
 	
@@ -57,6 +57,11 @@
 	<option value="//api/name/errorModelIsInvalid">&nbsp;&nbsp;&nbsp;&nbsp;+ errorModelIsInvalid</option>
 	
 	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/errorByPrependingKeyPathComponent:">&nbsp;&nbsp;&nbsp;&nbsp;- errorByPrependingKeyPathComponent:</option>
 	
 	
 	
@@ -90,7 +95,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInputIsNil">errorInputIsNil</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidData">errorInvalidData</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidDataWithMessage:">errorInvalidDataWithMessage:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorInvalidDataWithMissingKeys:">errorInvalidDataWithMissingKeys:</a></span></li>
 	
@@ -101,6 +106,12 @@
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorByPrependingKeyPathComponent:">errorByPrependingKeyPathComponent:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -156,7 +167,7 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/errorInvalidData">+&nbsp;errorInvalidData</a></code>
+		<code><a href="#//api/name/errorInvalidDataWithMessage:">+&nbsp;errorInvalidDataWithMessage:</a></code>
 		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1</p></span>
 	</span>
 	
@@ -200,6 +211,17 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/errorInputIsNil">+&nbsp;errorInputIsNil</a></code>
 		<span class="tooltip"><p>Creates a JSONModelError instance with code kJSONModelErrorNilInput = 5</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorByPrependingKeyPathComponent:">&ndash;&nbsp;errorByPrependingKeyPathComponent:</a></code>
+		<span class="tooltip"><p>Creates a new JSONModelError with the same values plus information about the key-path of the error.
+Properties in the new error object are the same as those from the receiver,
+except that a new key kJSONModelKeyPath is added to the userInfo dictionary.
+This key contains the component string parameter. If the key is already present
+then the new error object has the component string prepended to the existing value.</p></span>
 	</span>
 	
 	
@@ -327,8 +349,8 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/errorInvalidData" title="errorInvalidData"></a>
-	<h3 class="subsubtitle method-title">errorInvalidData</h3>
+	<a name="//api/name/errorInvalidDataWithMessage:" title="errorInvalidDataWithMessage:"></a>
+	<h3 class="subsubtitle method-title">errorInvalidDataWithMessage:</h3>
 	
 	
 	
@@ -338,7 +360,7 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>+ (id)errorInvalidData</code></div>
+	<div class="method-subsection method-declaration"><code>+ (id)errorInvalidDataWithMessage:(NSString *)<em>message</em></code></div>
 
     
 	
@@ -494,6 +516,52 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/errorByPrependingKeyPathComponent:" title="errorByPrependingKeyPathComponent:"></a>
+	<h3 class="subsubtitle method-title">errorByPrependingKeyPathComponent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new JSONModelError with the same values plus information about the key-path of the error.
+Properties in the new error object are the same as those from the receiver,
+except that a new key kJSONModelKeyPath is added to the userInfo dictionary.
+This key contains the component string parameter. If the key is already present
+then the new error object has the component string prepended to the existing value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)errorByPrependingKeyPathComponent:(NSString *)<em>component</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JSONModelError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 				</div>
 				<div class="main-navigation navigation-bottom">
@@ -505,7 +573,7 @@ the common <a href="../Classes/JSONModel.html">JSONModel</a> errors</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-10-23)</span><br />
+						<p><span class="copyright">&copy; 2013 CouldHll. All rights reserved. (Last updated: 2013-12-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
