@@ -1,1 +1,0 @@
-../../Analytics/Analytics.framework/Versions/A/Headers/Private/SegmentioProvider.h
